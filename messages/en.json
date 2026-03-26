@@ -1,0 +1,286 @@
+{
+  "site": {
+    "metadata": {
+      "defaultTitle": "Alessio Quagliara | Systems Developer, AI-powered SaaS, Automation",
+      "defaultDescription": "I build pragmatic software systems for SaaS, automation, and AI-powered products with a focus on reliability and operational simplicity.",
+      "ogTitle": "Alessio Quagliara",
+      "ogDescription": "AI-powered SaaS, automation, and pragmatic software systems for real operations.",
+      "locale": "en_US"
+    },
+    "layout": {
+      "navbar": {
+        "brand": "Alessio Quagliara",
+        "about": "About",
+        "education": "Education",
+        "projects": "Projects",
+        "contact": "Contact",
+        "languageLabel": "Language",
+        "languageIt": "IT",
+        "languageEn": "EN"
+      },
+      "footer": {
+        "copyrightName": "Alessio Quagliara",
+        "allRightsReserved": "All rights reserved.",
+        "builtWith": "Built with Next.js, TypeScript and Tailwind CSS",
+        "email": "ciao@alessioquagliara.com",
+        "brandName": "Alessio Quagliara",
+        "brandSubtitle": "Full Stack Developer | AI Engineering Student",
+        "brandDescription": "I build scalable and secure SaaS solutions with a focus on innovation, operational reliability, and technical excellence. Specialized in automation, integration, and intelligent systems.",
+        "section": {
+          "legal": "Legal",
+          "contacts": "Contacts"
+        },
+        "links": {
+          "privacyPolicy": "Privacy Policy",
+          "contact": "Contact"
+        },
+        "location": "Como (CO), Italy",
+        "social": {
+          "linkedin": {
+            "name": "LinkedIn",
+            "description": "Professional profile"
+          },
+          "github": {
+            "name": "GitHub",
+            "description": "Open source projects"
+          },
+          "youtube": {
+            "name": "YouTube",
+            "description": "Videos and tutorials"
+          },
+          "instagram": {
+            "name": "Instagram",
+            "description": "Daily moments"
+          }
+        }
+      }
+    },
+    "home": {
+      "metadata": {
+        "title": "Home | Alessio Quagliara",
+        "description": "AI-powered SaaS development, automation, and pragmatic software systems for real processes, integration, and operational reliability."
+      },
+      "badge": "AI-powered SaaS · Automation · Industrial Software",
+      "title": "I build AI-powered SaaS and software systems for real processes.",
+      "description": "Design and develop SaaS software, industrial automation, and real operational workflows. I choose pragmatic architectures to reduce unnecessary complexity, improve data speed, and build integrations that truly serve business needs.",
+      "ctaProjects": "View Projects",
+      "ctaContact": "Book a Call",
+      "sections": {
+        "whatIBuild": {
+          "title": "What I Build",
+          "subtitle": "I design software systems built around real processes, integration, and operational reliability.",
+          "cards": [
+            {
+              "title": "AI-powered SaaS",
+              "text": "I build SaaS products focused on multi-tenancy, scalability, integration, and concrete use cases. AI only enters where it genuinely improves the product and operational flow."
+            },
+            {
+              "title": "Automation & Integration",
+              "text": "I develop automations and connections between systems, data, and people to reduce manual steps, operational friction, and bottlenecks."
+            },
+            {
+              "title": "Software + Hardware Systems",
+              "text": "When needed, I also build prototypes and integrations with ESP32, Arduino, and modules to connect software to the physical world in a useful and measurable way."
+            }
+          ]
+        },
+        "howIWork": {
+          "title": "How I Work",
+          "subtitle": "I choose architectures and tools based on complexity, maintainability, data speed, and operational context. Not based on the trend of the month.",
+          "quote": "I do not use complexity to impress. I only use it when it is needed.",
+          "cards": [
+            {
+              "title": "Architecture over hype",
+              "text": "I start from the problem and the constraints. If a server-side solution is simpler, easier to maintain, and more reliable, it is often the right choice."
+            },
+            {
+              "title": "Performance when it matters",
+              "text": "Value does not always live in the flashiest interface, but in how quickly data arrives, how stable the system is, and how much perceived latency is reduced."
+            },
+            {
+              "title": "Built for real operations",
+              "text": "I work best on problems where software meets logistics, production, monitoring, integration, and real operational workflows."
+            }
+          ]
+        },
+        "selectedProjects": {
+          "title": "Selected Projects",
+          "subtitle": "A selection of projects that shows how I think about product, architecture, automation, and real systems.",
+          "intro": "I am not interested in filling a portfolio with disconnected experiments. I would rather show a few projects that genuinely represent how I build software.",
+          "eyebrow": "Each project is selected to represent a clear direction: SaaS, integration, automation, useful AI.",
+          "allProjects": "View all projects"
+        },
+        "technicalFocus": {
+          "title": "Technical Focus",
+          "subtitle": "I use different tools depending on the problem. I care about the right combination of simplicity, integration, reliability, and development speed.",
+          "blocks": [
+            {
+              "title": "Application Layer",
+              "text": "Next.js, FastAPI, Node.js, HTMX, Tailwind CSS"
+            },
+            {
+              "title": "Systems & Infrastructure",
+              "text": "Docker, Traefik, PostgreSQL, multi-tenant architectures, deployment workflows"
+            },
+            {
+              "title": "Automation & AI",
+              "text": "n8n, LiteLLM, API integrations, workflow automation, AI applied to processes and products"
+            },
+            {
+              "title": "Hardware & Prototyping",
+              "text": "ESP32, Arduino, modules, and bridges between software and the physical world"
+            }
+          ]
+        },
+        "contactCta": {
+          "title": "Let's talk",
+          "text": "If you are working on a SaaS product, an automation system, or an operational workflow that is more complicated than it needs to be, we can talk. I am most interested in concrete problems: integration, reliability, operational simplicity, and technical product direction.",
+          "primary": "Book a call",
+          "secondary": "Go to contacts"
+        }
+      }
+    },
+    "about": {
+      "metadata": {
+        "title": "About | Alessio Quagliara",
+        "description": "Alessio Quagliara's background, approach, and technical focus on SaaS, automation, pragmatic software systems, and applied AI."
+      },
+      "title": "About",
+      "intro": "I work across software development, industrial operations, and computer engineering studies, with a growing focus on SaaS, automation, intelligent systems, and integration between software and the physical world.",
+      "sections": [
+        {
+          "title": "My approach",
+          "text": "I am not interested in adding complexity just to follow a trend. I prefer technologies and architectures that reduce friction, improve maintainability, and keep systems close to real business and operational needs."
+        },
+        {
+          "title": "What I want to build",
+          "text": "I care about building SaaS products, multi-tenant systems, automations, and tools that improve real workflows: production, logistics, data integration, monitoring, operational reliability, and processes."
+        },
+        {
+          "title": "Software and the real world",
+          "text": "When the problem requires it, I also build prototypes and integrations with ESP32, Arduino, and modules to connect software to the physical world in a practical, simple, and measurable way."
+        }
+      ],
+      "focusAreasTitle": "Focus Areas",
+      "focusAreas": [
+        "AI-powered SaaS",
+        "Automation & Integration",
+        "Multi-tenant Systems",
+        "ESP32 / Arduino Prototyping"
+      ],
+      "closing": "My goal is to move further toward pragmatic software systems, AI-powered products, and solutions that are not only nice to look at, but truly useful to use and maintain.",
+      "cta": {
+        "title": "Want to discuss a project?",
+        "text": "If you are working on a SaaS product, a complex operational workflow, or a software-physical integration, we can talk.",
+        "primary": "Book a call",
+        "secondary": "Go to contacts"
+      }
+    },
+    "contact": {
+      "metadata": {
+        "title": "Contact | Alessio Quagliara",
+        "description": "Contact for consulting and collaboration on SaaS, automation, integrations, software systems, and applied AI."
+      },
+      "title": "Let's talk",
+      "intro": "If you are working on a SaaS, an automation system, or an operational workflow that is more complicated than necessary today, we can discuss it.",
+      "description": "I am mainly interested in concrete problems: integration, reliability, operational simplicity, architecture, and technical product direction.",
+      "helpTitle": "I can help if...",
+      "bullets": [
+        "You are building or rethinking a SaaS",
+        "You need automation and integration across systems and data",
+        "You want architecture validation and technical direction",
+        "You are working on operational workflows, industrial software, and software-to-physical integrations"
+      ],
+      "directContactsTitle": "Direct contacts",
+      "emailLabel": "Email me",
+      "email": "quagliara.alessio@gmail.com",
+      "githubLabel": "GitHub",
+      "githubUrl": "https://github.com/AlessioQuagliara",
+      "linkedinLabel": "LinkedIn",
+      "linkedinUrl": "https://www.linkedin.com/in/alessio-quagliara-a1a91b1a8/",
+      "calendlyLabel": "Book a call",
+      "calendlyUrl": "https://calendly.com/quagliara-alessio/meeting-conoscitivo",
+      "secondaryCta": "Prefer writing first? Send me an email."
+    },
+    "projects": {
+      "metadata": {
+        "title": "Projects | Alessio Quagliara",
+        "description": "Curated selection of GitHub repositories and projects focused on SaaS, automation, software systems, and applied AI."
+      },
+      "title": "Projects",
+      "description": "A curated selection of repositories and projects focused on SaaS, automation, systems, and applied AI.",
+      "empty": "No featured repositories found. Add the `featured` topic to your GitHub repositories and set `GITHUB_USERNAME` in `.env.local`.",
+      "cardNoDescription": "No description available.",
+      "viewRepository": "View repository on GitHub",
+      "readmeUnavailable": "README not available for this project.",
+      "notFoundTitle": "Project not found | Alessio Quagliara",
+      "notFoundDescription": "Details for this project are not available.",
+      "detailsFallbackDescription": "Repository details, architectural notes, and implementation highlights."
+    },
+    "education": {
+      "metadata": {
+        "title": "Education | Alessio Quagliara",
+        "description": "Continuous education path across automation, software development, business perspective, and a Computer Engineering degree focused on intelligent systems."
+      },
+      "eyebrow": "Education Path",
+      "title": "An education built across engineering, software, and real systems",
+      "intro": "My education comes from the intersection of engineering, software development, operational processes, and business perspective. Today it continues with an even stronger focus on AI, intelligent systems, automation, and real solution design.",
+      "learningStatement": "For me, continuous learning is not filler work: it is how I connect technical growth, design capability, and long-term vision. For {years} years I have invested in study with this mindset.",
+      "pillars": ["Engineering", "Software", "Business"],
+      "items": [
+        {
+          "institution": "Universita Telematica Internazionale UNINETTUNO",
+          "period": "2025 - Ongoing",
+          "status": "Ongoing",
+          "title": "Bachelor's Degree in Computer Engineering - Intelligent Systems",
+          "description": "University path focused on advanced programming, artificial intelligence, machine learning, neural networks, embedded systems, IoT, cybersecurity, and databases, with attention to intelligent systems and software design.",
+          "topics": ["AI & Machine Learning", "Embedded Systems", "Cybersecurity", "Databases"],
+          "image": "/uninettuno.png"
+        },
+        {
+          "institution": "ITES Caio Plinio Secondo",
+          "period": "2022 - 2025",
+          "status": "",
+          "title": "Diploma in Administration, Finance and Marketing",
+          "description": "A path that strengthened my understanding of accounting, marketing, business logic, and project sustainability, adding a perspective that is useful when building software products and services.",
+          "topics": ["Economics", "Marketing", "Business Logic", "Accounting"],
+          "image": "/caioplinio.png"
+        },
+        {
+          "institution": "MUSA Formazione",
+          "period": "2017 - 2018",
+          "status": "",
+          "title": "Full Stack Web Developer Certification",
+          "description": "An intensive path focused on end-to-end web application design and development, which consolidated practical foundations across frontend, backend, databases, and product logic.",
+          "topics": ["PHP", "JavaScript", "HTML/CSS", "Databases"],
+          "image": "/musaformazione.png"
+        },
+        {
+          "institution": "Istituto Tecnico Padri Somaschi",
+          "period": "2012 - 2016",
+          "status": "",
+          "title": "Diploma in Automation Technology",
+          "description": "Technical training that built the foundations of my relationship with industrial automation, electronics, networks, and programming, and still shapes how I think about systems, hardware, and real-world integration.",
+          "topics": ["Automation", "Electronics", "Networks", "PLC Programming"],
+          "image": "/padrisomaschi.png"
+        }
+      ]
+    }
+  },
+  "cookie": {
+    "title": "Your privacy matters",
+    "subtitle": "This site uses only strictly necessary cookies and, if enabled, anonymous measurement tools.",
+    "description": "Necessary cookies help the site function properly. Any additional cookies, if present, are used only to understand in aggregate how the site is used and improve it over time.",
+    "whatAreCookiesTitle": "What are cookies?",
+    "whatAreCookiesText": "Cookies are small text files saved on your device while browsing. They can serve site functionality, save preferences, or in some cases, measure service usage.",
+    "necessaryLabel": "Necessary cookies",
+    "necessaryHint": "Always active",
+    "performanceLabel": "Measurement cookies",
+    "performanceHint": "Help improve the site",
+    "marketingLabel": "Third-party cookies",
+    "marketingHint": "Active only if actually used",
+    "acceptAll": "Accept",
+    "reject": "Reject non-necessary",
+    "privacyLink": "Read the full Privacy Policy"
+  }
+}

@@ -1,26 +1,262 @@
 @import "tailwindcss";
+@import "github-markdown-css/github-markdown-dark.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #2664eb;
+  --primary-strong: #1f55ca;
+  --surface: #0f2c6f;
+  --surface-2: #12347d;
+  --foreground: #eef4ff;
+  --muted-foreground: #c9ddff;
+  --border-soft: rgba(198, 220, 255, 0.3);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background-color: #0b1f4b;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+}
+
+.site-shell {
+  min-height: 100vh;
+  background-image:
+    radial-gradient(
+      1200px circle at 12% -10%,
+      rgba(38, 100, 235, 0.5),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px circle at 88% 8%,
+      rgba(38, 100, 235, 0.4),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #06112a 0%, #0f2f75 46%, #2664eb 100%);
+}
+
+.hero-stage {
+  position: relative;
+  overflow: clip;
+}
+
+.hero-floating-field {
+  position: absolute;
+  z-index: 0;
+  inset: 5% 38% 8% 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem 1.3rem;
+  align-content: center;
+  justify-items: center;
+  pointer-events: none;
+}
+
+.hero-copy {
+  will-change: transform, opacity;
+}
+
+.hero-ambient-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(48px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.hero-ambient-glow-one {
+  inset: 10% auto auto 4%;
+  width: 9rem;
+  height: 9rem;
+  background: rgba(88, 168, 255, 0.5);
+}
+
+.hero-ambient-glow-two {
+  right: 6%;
+  bottom: 18%;
+  width: 11rem;
+  height: 11rem;
+  background: rgba(23, 92, 223, 0.42);
+}
+
+.hero-portrait-shell,
+.hero-bg-logo {
+  will-change: transform, opacity;
+}
+
+.hero-portrait-grid {
+  background-image:
+    linear-gradient(rgba(233, 242, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(233, 242, 255, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 88%);
+}
+
+.hero-portrait-image {
+  transform: translateY(2%);
+  filter: drop-shadow(0 38px 50px rgba(5, 16, 40, 0.7));
+}
+
+.hero-bg-logo {
+  opacity: 0.28;
+  filter: blur(2px);
+}
+
+.hero-bg-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+
+.fa-icon-shell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+@keyframes faFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes faPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.92;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes faOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes faShimmer {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(162, 199, 255, 0));
+    opacity: 0.85;
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(162, 199, 255, 0.55));
+    opacity: 1;
+  }
+}
+
+.fa-icon-float {
+  animation: faFloat 4.8s ease-in-out infinite;
+}
+
+.fa-icon-pulse {
+  animation: faPulse 3.8s ease-in-out infinite;
+}
+
+.fa-icon-orbit {
+  animation: faOrbit 13s linear infinite;
+}
+
+.fa-icon-shimmer {
+  animation: faShimmer 4.6s ease-in-out infinite;
+}
+
+.mobile-menu-link {
+  color: #ffffff;
+  font-size: clamp(1.6rem, 7vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 6px 22px rgba(0, 0, 0, 0.42);
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 350ms ease, opacity 350ms ease, color 250ms ease;
+}
+
+.mobile-menu-link:hover {
+  color: #bfd5ff;
+  transform: translateX(8px);
+}
+
+
+.github-markdown-shell {
+  margin-top: 2rem;
+  border: 1px solid #30363d;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #0d1117;
+  box-shadow: 0 20px 45px -28px rgba(4, 12, 32, 0.9);
+}
+
+.github-markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  background: #0d1117;
+}
+
+.github-markdown-body pre {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.github-markdown-body pre code {
+  background: transparent;
+}
+
+@media (max-width: 640px) {
+  .hero-stage {
+    overflow: visible;
+  }
+
+  .hero-floating-field {
+    inset: 4% 44% 8% -2%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .hero-bg-logo {
+    opacity: 0.22;
+    filter: blur(2.8px);
+  }
+
+  .github-markdown-body {
+    padding: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-bg-logo,
+  .mobile-menu-link,
+  .fa-icon-float,
+  .fa-icon-pulse,
+  .fa-icon-orbit,
+  .fa-icon-shimmer {
+    animation: none !important;
+    transition: none !important;
+  }
 }

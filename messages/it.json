@@ -1,0 +1,286 @@
+{
+  "site": {
+    "metadata": {
+      "defaultTitle": "Alessio Quagliara | Systems Developer per SaaS, Automazione e AI",
+      "defaultDescription": "Sviluppo software, SaaS multi-tenant, automazione e sistemi digitali pragmatici per industria, flussi operativi concreti e prodotti AI-powered.",
+      "ogTitle": "Alessio Quagliara | AI-powered SaaS, Automation, Systems",
+      "ogDescription": "SaaS basati su AI, automazione e sistemi software pragmatici per contesti concreti, collegamento tra sistemi e dati, stabilità e manutenibilità.",
+      "locale": "it_IT"
+    },
+    "layout": {
+      "navbar": {
+        "brand": "Alessio Quagliara",
+        "about": "About",
+        "education": "Formazione",
+        "projects": "Progetti",
+        "contact": "Contatti",
+        "languageLabel": "Lingua",
+        "languageIt": "IT",
+        "languageEn": "EN"
+      },
+      "footer": {
+        "copyrightName": "Alessio Quagliara",
+        "allRightsReserved": "Tutti i diritti riservati.",
+        "builtWith": "Costruito con Next.js, TypeScript e Tailwind CSS",
+        "email": "quagliara.alessio@gmail.com",
+        "brandName": "Alessio Quagliara",
+        "brandSubtitle": "Building AI-powered SaaS | Systems Developer | AI Engineering Student",
+        "brandDescription": "Sviluppo software, SaaS multi-tenant, automazione e sistemi digitali pragmatici per industria, workflow operativi reali e prodotti AI-powered.",
+        "section": {
+          "legal": "Legale",
+          "contacts": "Contatti"
+        },
+        "links": {
+          "privacyPolicy": "Privacy Policy",
+          "contact": "Contatti"
+        },
+        "location": "Como (CO), Italia",
+        "social": {
+          "linkedin": {
+            "name": "LinkedIn",
+            "description": "Profilo professionale"
+          },
+          "github": {
+            "name": "GitHub",
+            "description": "Progetti open source"
+          },
+          "youtube": {
+            "name": "YouTube",
+            "description": "Video e tutorial"
+          },
+          "instagram": {
+            "name": "Instagram",
+            "description": "Momenti quotidiani"
+          }
+        }
+      }
+    },
+    "home": {
+      "metadata": {
+        "title": "Home | Alessio Quagliara",
+        "description": "Sviluppo SaaS basati su AI, automazione e sistemi software pragmatici per contesti concreti, collegamento tra sistemi e dati, stabilità e manutenibilità."
+      },
+      "badge": "SaaS basati su AI · Automazione · Software Industriale",
+      "title": "Costruisco SaaS basati su AI e sistemi software per processi reali.",
+      "description": "Progetto e sviluppo software SaaS, automazione industriale e flussi operativi concreti. Scelgo architetture pragmatiche per ridurre complessità inutile, migliorare la velocità del dato e costruire integrazioni che servono davvero al business.",
+      "ctaProjects": "Vedi i Progetti",
+      "ctaContact": "Prenota una Chiamata",
+      "sections": {
+        "whatIBuild": {
+          "title": "What I Build",
+          "subtitle": "Progetto sistemi software orientati a contesti concreti, collegamento tra sistemi e dati, stabilità e manutenibilità.",
+          "cards": [
+            {
+              "title": "AI-powered SaaS",
+              "text": "Costruisco prodotti SaaS con focus su multi-tenancy, scalabilità, integrazione e casi d'uso concreti. L'AI entra dove migliora davvero il prodotto e il flusso operativo."
+            },
+            {
+              "title": "Automation & Integration",
+              "text": "Sviluppo automazioni e collegamenti tra sistemi, dati e persone per ridurre passaggi manuali, attrito operativo e colli di bottiglia."
+            },
+            {
+              "title": "Software + Hardware Systems",
+              "text": "Quando serve, sviluppo anche prototipi e integrazioni con ESP32, Arduino e moduli per collegare il software al mondo fisico in modo utile e misurabile."
+            }
+          ]
+        },
+        "howIWork": {
+          "title": "How I Work",
+          "subtitle": "Scelgo architetture e strumenti in base a complessità, manutenzione, velocità del dato e contesto operativo. Non in base al trend del mese.",
+          "quote": "Non uso complessità per impressionare. La uso solo quando serve.",
+          "cards": [
+            {
+              "title": "Architecture over hype",
+              "text": "Parto dal problema e dai vincoli. Se una soluzione server-side è più semplice, più veloce da mantenere e più affidabile, per me è spesso la scelta giusta."
+            },
+            {
+              "title": "Performance when it matters",
+              "text": "Il valore non sta sempre nell'interfaccia più scenica, ma nella velocità con cui il dato arriva, nella stabilità del sistema e nella riduzione della latenza percepita."
+            },
+            {
+              "title": "Built for real operations",
+              "text": "Mi trovo bene nei problemi dove il software incontra logistica, produzione, monitoraggio, integrazione e workflow reali."
+            }
+          ]
+        },
+        "selectedProjects": {
+          "title": "Selected Projects",
+          "subtitle": "Una selezione di progetti che raccontano come ragiono su prodotto, architettura, automazione e sistemi reali.",
+          "intro": "Non mi interessa riempire il portfolio di esperimenti scollegati. Preferisco mostrare pochi progetti che rappresentano davvero il mio modo di costruire software.",
+          "eyebrow": "Ogni progetto è selezionato per rappresentare una direzione precisa: SaaS, integrazione, automazione, AI utile.",
+          "allProjects": "Vedi tutti i progetti"
+        },
+        "technicalFocus": {
+          "title": "Technical Focus",
+          "subtitle": "Uso strumenti diversi in base al tipo di problema. Mi interessa la combinazione giusta tra semplicità, integrazione, affidabilità e velocità di sviluppo.",
+          "blocks": [
+            {
+              "title": "Application Layer",
+              "text": "Next.js, FastAPI, Node.js, HTMX, Tailwind CSS"
+            },
+            {
+              "title": "Systems & Infrastructure",
+              "text": "Docker, Traefik, PostgreSQL, architetture multi-tenant, deployment workflows"
+            },
+            {
+              "title": "Automation & AI",
+              "text": "n8n, LiteLLM, integrazioni API, workflow automation, AI applicata a processi e prodotti"
+            },
+            {
+              "title": "Hardware & Prototyping",
+              "text": "ESP32, Arduino, moduli e collegamenti tra software e mondo fisico"
+            }
+          ]
+        },
+        "contactCta": {
+          "title": "Parliamone",
+          "text": "Se stai lavorando a un SaaS, a un sistema di automazione o a un flusso operativo che oggi è più complicato del necessario, possiamo parlarne. Mi interessano soprattutto i problemi concreti: integrazione, affidabilità, semplicità operativa e direzione tecnica del prodotto.",
+          "primary": "Prenota una chiamata",
+          "secondary": "Vai ai contatti"
+        }
+      }
+    },
+    "about": {
+      "metadata": {
+        "title": "About | Alessio Quagliara",
+        "description": "Percorso, approccio e focus tecnico di Alessio Quagliara su SaaS, automazione, sistemi software pragmatici e AI applicata."
+      },
+      "title": "About",
+      "intro": "Lavoro tra sviluppo software, operatività industriale e studio dell'ingegneria informatica, con un interesse crescente per SaaS, automazione, sistemi intelligenti e integrazione tra software e mondo fisico.",
+      "sections": [
+        {
+          "title": "Il mio approccio",
+          "text": "Non mi interessa aggiungere complessità solo per seguire un trend. Preferisco scegliere tecnologie e architetture che riducono attrito, migliorano manutenzione e tengono il sistema vicino ai bisogni reali del business e delle operations."
+        },
+        {
+          "title": "Cosa mi interessa costruire",
+          "text": "Mi interessa costruire SaaS, sistemi multi-tenant, automazioni e strumenti che migliorano flussi operativi concreti: produzione, logistica, collegamento tra sistemi e dati, monitoraggio, stabilità e manutenibilità."
+        },
+        {
+          "title": "Software e mondo reale",
+          "text": "Quando il problema lo richiede, sviluppo anche prototipi e integrazioni con ESP32, Arduino e moduli, per collegare il software al mondo fisico in modo utile, semplice e misurabile."
+        }
+      ],
+      "focusAreasTitle": "Focus Areas",
+      "focusAreas": [
+        "AI-powered SaaS",
+        "Automation & Integration",
+        "Multi-tenant Systems",
+        "ESP32 / Arduino Prototyping"
+      ],
+      "closing": "Il mio obiettivo è muovermi sempre di più verso sistemi software pragmatici, prodotti AI-powered e soluzioni che non siano solo belle da vedere, ma davvero utili da usare e mantenere.",
+      "cta": {
+        "title": "Vuoi confrontarti su un progetto?",
+        "text": "Se stai lavorando a un prodotto SaaS, a un flusso operativo complesso o a un'integrazione tra software e mondo fisico, possiamo parlarne.",
+        "primary": "Prenota una chiamata",
+        "secondary": "Vai ai contatti"
+      }
+    },
+    "contact": {
+      "metadata": {
+        "title": "Contatti | Alessio Quagliara",
+        "description": "Contatti per consulenze e collaborazioni su SaaS, automazione, integrazioni, sistemi software e AI applicata."
+      },
+      "title": "Parliamone",
+      "intro": "Se stai lavorando a un SaaS, a un sistema di automazione o a un flusso operativo che oggi è più complicato del necessario, possiamo parlarne.",
+      "description": "Mi interessano soprattutto problemi concreti: collegamento tra sistemi e dati, stabilità e manutenibilità, semplicità operativa, architettura e direzione tecnica del prodotto.",
+      "helpTitle": "Posso esserti utile se...",
+      "bullets": [
+        "Costruzione o ripensamento di un SaaS",
+        "Automazione e integrazione tra sistemi e dati",
+        "Validazione architetturale e direzione tecnica",
+        "Flussi operativi, software industriale e collegamento tra digitale e fisico"
+      ],
+      "directContactsTitle": "Contatti diretti",
+      "emailLabel": "Scrivimi via email",
+      "email": "quagliara.alessio@gmail.com",
+      "githubLabel": "GitHub",
+      "githubUrl": "https://github.com/AlessioQuagliara",
+      "linkedinLabel": "LinkedIn",
+      "linkedinUrl": "https://www.linkedin.com/in/alessio-quagliara-a1a91b1a8/",
+      "calendlyLabel": "Prenota una chiamata",
+      "calendlyUrl": "https://calendly.com/quagliara-alessio/meeting-conoscitivo",
+      "secondaryCta": "Preferisci scrivere prima? Mandami una mail."
+    },
+    "projects": {
+      "metadata": {
+        "title": "Progetti | Alessio Quagliara",
+        "description": "Selezione di repository GitHub e progetti focalizzati su SaaS, automazione, sistemi software e AI applicata."
+      },
+      "title": "Progetti",
+      "description": "Una selezione curata di repository e progetti focalizzati su SaaS, automazione, sistemi e AI applicata.",
+      "empty": "Nessun repository in evidenza trovato. Aggiungi il topic `featured` ai tuoi repository GitHub e imposta `GITHUB_USERNAME` in `.env.local`.",
+      "cardNoDescription": "Nessuna descrizione disponibile.",
+      "viewRepository": "Visualizza repository su GitHub",
+      "readmeUnavailable": "README non disponibile per questo progetto.",
+      "notFoundTitle": "Progetto non trovato | Alessio Quagliara",
+      "notFoundDescription": "I dettagli di questo progetto non sono disponibili.",
+      "detailsFallbackDescription": "Dettagli del repository, note architetturali e punti salienti dell'implementazione."
+    },
+    "education": {
+      "metadata": {
+        "title": "Formazione | Alessio Quagliara",
+        "description": "Percorso di formazione continua tra automazione, sviluppo software, visione di business e laurea in Ingegneria Informatica orientata ai sistemi intelligenti."
+      },
+      "eyebrow": "Percorso di Formazione",
+      "title": "Una formazione costruita tra tecnica, software e sistemi reali",
+      "intro": "La mia formazione nasce dall'incontro tra tecnica, sviluppo software, processi e visione di business. Oggi continua con un focus sempre più forte su AI, sistemi intelligenti, automazione e progettazione di soluzioni reali.",
+      "learningStatement": "La formazione continua per me non è un riempitivo: è il modo con cui tengo insieme crescita tecnica, capacità progettuale e visione di lungo periodo. Da {years} anni investo nello studio con questa logica.",
+      "pillars": ["Tecnica", "Software", "Business"],
+      "items": [
+        {
+          "institution": "Università Telematica Internazionale UNINETTUNO",
+          "period": "2025 - In Corso",
+          "status": "In Corso",
+          "title": "Laurea triennale in Ingegneria Informatica - Sistemi Intelligenti",
+          "description": "Percorso universitario orientato a programmazione avanzata, intelligenza artificiale, machine learning, reti neurali, sistemi embedded, IoT, cybersecurity e database, con attenzione ai sistemi intelligenti e alla progettazione software.",
+          "topics": ["AI & Machine Learning", "Sistemi Embedded", "Cybersecurity", "Database"],
+          "image": "/uninettuno.png"
+        },
+        {
+          "institution": "ITES Caio Plinio Secondo",
+          "period": "2022 - 2025",
+          "status": "",
+          "title": "Diploma in Amministrazione, Finanza e Marketing",
+          "description": "Percorso che ha rafforzato la comprensione di contabilità, marketing, logiche aziendali e sostenibilità economica dei progetti, aggiungendo una prospettiva utile anche nella costruzione di prodotti e servizi software.",
+          "topics": ["Economia", "Marketing", "Business Logic", "Contabilità"],
+          "image": "/caioplinio.png"
+        },
+        {
+          "institution": "MUSA Formazione",
+          "period": "2017 - 2018",
+          "status": "",
+          "title": "Certificazione Full Stack Web Developer",
+          "description": "Percorso intensivo orientato alla progettazione e allo sviluppo end-to-end di applicazioni web, che ha consolidato le basi pratiche su frontend, backend, database e logiche di prodotto.",
+          "topics": ["PHP", "JavaScript", "HTML/CSS", "Database"],
+          "image": "/musaformazione.png"
+        },
+        {
+          "institution": "Istituto Tecnico Padri Somaschi",
+          "period": "2012 - 2016",
+          "status": "",
+          "title": "Diploma in Tecnico Automazione",
+          "description": "Formazione tecnica che ha costruito le basi del mio rapporto con automazione industriale, elettronica, reti e programmazione, e che ancora oggi influenza il mio modo di ragionare su sistemi, hardware e integrazione col mondo reale.",
+          "topics": ["Automazione", "Elettronica", "Reti", "Programmazione PLC"],
+          "image": "/padrisomaschi.png"
+        }
+      ]
+    }
+  },
+  "cookie": {
+    "title": "La tua privacy è importante",
+    "subtitle": "Questo sito utilizza solo i cookie strettamente necessari e, se attivati, eventuali strumenti di misurazione anonima.",
+    "description": "I cookie necessari aiutano il sito a funzionare correttamente. Eventuali cookie aggiuntivi, se presenti, vengono usati solo per capire in modo aggregato come viene utilizzato il sito e migliorarlo nel tempo.",
+    "whatAreCookiesTitle": "Cosa sono i cookie?",
+    "whatAreCookiesText": "I cookie sono piccoli file di testo salvati sul tuo dispositivo durante la navigazione. Possono servire al funzionamento del sito, al salvataggio di preferenze o, in alcuni casi, alla misurazione dell'utilizzo del servizio.",
+    "necessaryLabel": "Cookie necessari",
+    "necessaryHint": "Sempre attivi",
+    "performanceLabel": "Cookie di misurazione",
+    "performanceHint": "Aiutano a migliorare il sito",
+    "marketingLabel": "Cookie di terze parti",
+    "marketingHint": "Attivi solo se realmente utilizzati",
+    "acceptAll": "Accetta",
+    "reject": "Rifiuta non necessari",
+    "privacyLink": "Leggi la Privacy Policy completa"
+  }
+}
