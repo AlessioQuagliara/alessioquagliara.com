@@ -1,0 +1,18 @@
+{
+  "slug": "flask-warehouse-app",
+  "publishedAt": "2026-05-01",
+  "cover": "/sviluppo.jpg",
+  "tags": ["Flask", "Warehouse", "QR", "Build in Public"],
+  "title": {
+    "it": "Costruire una piccola app Flask per problemi reali di magazzino",
+    "en": "Building a small Flask app for real warehouse problems"
+  },
+  "description": {
+    "it": "Un diario tecnico su come trasformare un problema operativo vissuto in magazzino in una piccola applicazione backend con Flask.",
+    "en": "A technical build log about turning a warehouse problem into a small Flask backend application."
+  },
+  "body": {
+    "it": "## Da dove nasce l'idea\n\nMolti progetti software partono da un framework. Questo parte da un problema molto piu semplice: in magazzino le informazioni si perdono facilmente quando passano da carta, persone, codici e fogli scollegati.\n\nL'obiettivo non e costruire subito un SaaS enorme. L'obiettivo e capire se una piccola app Flask puo rendere piu chiaro un flusso reale: registrare un movimento, associare un QR, vedere lo stato e ridurre passaggi manuali.\n\n## Stack iniziale\n\nParto da strumenti che posso capire e mantenere:\n\n- Flask per il backend\n- HTML/CSS per le prime schermate\n- SQLite o PostgreSQL quando il modello dati diventa piu stabile\n- QR code per collegare oggetti fisici e dati\n\n## Cosa voglio validare\n\nLa prima versione deve rispondere a poche domande:\n\n1. Il dato viene inserito piu velocemente?\n2. Il QR rende il flusso piu semplice o aggiunge attrito?\n3. La schermata e utile a chi lavora davvero, non solo a chi sviluppa?\n\n## Lezione principale\n\nPer ora la cosa piu importante e non overingegnerizzare. Se il problema e piccolo, anche la prima soluzione deve restare piccola. Poi si misura, si ascolta e si migliora.",
+    "en": "## Where the idea comes from\n\nMany software projects start from a framework. This one starts from a simpler problem: in warehouse work, information is easy to lose when it moves between paper, people, codes, and disconnected sheets.\n\nThe goal is not to build a huge SaaS immediately. The goal is to understand whether a small Flask app can clarify a real workflow: register a movement, attach a QR code, check status, and reduce manual steps.\n\n## Initial stack\n\nI am starting with tools I can understand and maintain:\n\n- Flask for the backend\n- HTML/CSS for the first screens\n- SQLite or PostgreSQL once the data model becomes clearer\n- QR codes to connect physical objects and data\n\n## What I want to validate\n\nThe first version must answer a few questions:\n\n1. Is data entered faster?\n2. Does the QR workflow simplify the process or add friction?\n3. Is the screen useful to the person doing the work, not only to the developer?\n\n## Main lesson\n\nFor now, the most important thing is not to overengineer. If the problem is small, the first solution should stay small too. Then I can measure, listen, and improve."
+  }
+}

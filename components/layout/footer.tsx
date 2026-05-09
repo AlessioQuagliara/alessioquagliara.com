@@ -112,6 +112,12 @@ export function Footer() {
                 {footer.links.privacyPolicy}
               </Link>
               <Link
+                href={withLang("/blog", locale)}
+                className="block text-sm text-[#c8dcff] transition-colors duration-300 hover:text-[#5f95ff]"
+              >
+                {footer.links.blog}
+              </Link>
+              <Link
                 href={withLang("/contact", locale)}
                 className="block text-sm text-[#c8dcff] transition-colors duration-300 hover:text-[#5f95ff]"
               >

@@ -36,12 +36,12 @@ export function HeroScene({ locale, content }: HeroSceneProps) {
 
   const stackItems = useMemo<StackItem[]>(
     () => [
-      { label: "Docker", logoPath: "/assets/img/docker.svg" },
       { label: "C", logoPath: "/assets/img/c.svg" },
+      { label: "Arduino", logoPath: "/assets/img/arduino.svg" },
       { label: "Python", logoPath: "/assets/img/python.svg" },
       { label: "n8n", logoPath: "/assets/img/N8n.svg" },
-      { label: "Arduino", logoPath: "/assets/img/arduino.svg" },
-      { label: "Traefik", logoPath: "/assets/img/traefikproxy.svg" },
+      { label: "HTML/CSS", logoPath: "/globe.svg" },
+      { label: "Tooling", logoPath: "/file.svg" },
     ],
     []
   );

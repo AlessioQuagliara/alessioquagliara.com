@@ -89,6 +89,12 @@ export function Navbar() {
             {navbar.projects}
           </Link>
           <Link
+            href={withLang("/blog", locale)}
+            className="hover:text-white transition-colors"
+          >
+            {navbar.blog}
+          </Link>
+          <Link
             href={withLang("/contact", locale)}
             className="hover:text-white transition-colors"
           >
@@ -170,10 +176,18 @@ export function Navbar() {
               {navbar.projects}
             </Link>
             <Link
+              href={withLang("/blog", locale)}
+              className="mobile-menu-link"
+              onClick={() => setIsMenuOpen(false)}
+              style={{ transitionDelay: isMenuOpen ? "210ms" : "0ms" }}
+            >
+              {navbar.blog}
+            </Link>
+            <Link
               href={withLang("/contact", locale)}
               className="mobile-menu-link"
               onClick={() => setIsMenuOpen(false)}
-              style={{ transitionDelay: isMenuOpen ? "220ms" : "0ms" }}
+              style={{ transitionDelay: isMenuOpen ? "250ms" : "0ms" }}
             >
               {navbar.contact}
             </Link>

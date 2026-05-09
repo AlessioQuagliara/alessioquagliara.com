@@ -1,0 +1,18 @@
+{
+  "slug": "why-i-stopped-overengineering",
+  "publishedAt": "2026-04-12",
+  "cover": "/database.jpg",
+  "tags": ["SaaS", "Architecture", "Simplicity", "Build in Public"],
+  "title": {
+    "it": "Perche ho smesso di overingegnerizzare i miei progetti",
+    "en": "Why I stopped overengineering my projects"
+  },
+  "description": {
+    "it": "Una nota sul passaggio da architetture troppo ambiziose a prototipi piccoli, misurabili e piu vicini ai problemi reali.",
+    "en": "A note about moving from oversized architectures to small, measurable prototypes closer to real problems."
+  },
+  "body": {
+    "it": "## Il vecchio errore\n\nQuando vuoi dimostrare di essere tecnico, la tentazione e aggiungere pezzi: multi-tenant, code, gateway, microservizi, dashboard, automazioni, deploy complessi.\n\nIl risultato sembra piu professionale, ma spesso nasconde una domanda non risolta: qualcuno ha davvero bisogno di questa cosa?\n\n## La nuova regola\n\nPrima costruisco la versione piu piccola che rende il problema visibile.\n\nSe devo validare un tool per un flusso di magazzino, non mi serve partire da un'infrastruttura enorme. Mi serve capire il dato, il punto di attrito e la persona che usera lo strumento.\n\n## Cosa tengo\n\nNon significa ignorare la qualita. Significa spostarla dove conta:\n\n- modello dati chiaro\n- codice leggibile\n- interfacce semplici\n- logica testabile\n- deploy comprensibile\n\n## Cosa tolgo\n\nTolgo parole che oggi mi fanno sembrare piu grande del progetto: enterprise, production-ready, scalable infrastructure. Le rimettero quando saranno vere, non quando serviranno a decorare una pagina.",
+    "en": "## The old mistake\n\nWhen you want to prove you are technical, the temptation is to add pieces: multi-tenancy, queues, gateways, microservices, dashboards, automations, complex deployments.\n\nThe result may look more professional, but it often hides an unanswered question: does anyone really need this thing?\n\n## The new rule\n\nFirst I build the smallest version that makes the problem visible.\n\nIf I need to validate a tool for a warehouse workflow, I do not need a huge infrastructure first. I need to understand the data, the friction point, and the person who will use the tool.\n\n## What I keep\n\nThis does not mean ignoring quality. It means moving quality where it matters:\n\n- clear data model\n- readable code\n- simple interfaces\n- testable logic\n- understandable deployment\n\n## What I remove\n\nI remove words that currently make me sound bigger than the project: enterprise, production-ready, scalable infrastructure. I will bring them back when they are true, not when they decorate a page."
+  }
+}

@@ -23,10 +23,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://alessioquagliara.com"),
   title:
     siteMetadata.defaultTitle ??
-    "Building AI-powered SaaS | Systems Developer | AI Engineering Student",
+    "Indie Hacker Building SaaS in Public | AI Engineering Student",
   description:
     siteMetadata.defaultDescription ??
-    "Sviluppo software, SaaS multi-tenant, automazione e sistemi digitali pragmatici per workflow reali, industria e prodotti AI-powered.",
+    "Studente di Ingegneria Informatica appassionato di software, automazione industriale e AI. Documento in pubblico piccoli SaaS, esperimenti software e strumenti operativi.",
   alternates: {
     canonical: "/",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: siteMetadata.ogTitle ?? "Alessio Quagliara",
     description:
       siteMetadata.ogDescription ??
-      "AI-powered SaaS, automazione e sistemi software pragmatici per workflow reali.",
+      "Indie hacker che costruisce in pubblico piccoli SaaS, esperimenti software, automazioni e tooling AI.",
     url: "https://alessioquagliara.com",
     siteName: siteMetadata.ogTitle ?? "Alessio Quagliara",
     locale: siteMetadata.locale ?? "it_IT",

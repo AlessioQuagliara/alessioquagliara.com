@@ -1,0 +1,18 @@
+{
+  "slug": "rebuilding-my-skills",
+  "publishedAt": "2026-04-20",
+  "cover": "/server.jpg",
+  "tags": ["Learning", "AI Engineering", "Flask", "Quart"],
+  "title": {
+    "it": "Ricostruire le skill senza fingere seniority",
+    "en": "Rebuilding my skills without pretending seniority"
+  },
+  "description": {
+    "it": "Perche sto spostando il mio personal branding da claim troppo grandi a un percorso piu credibile: imparare seriamente costruendo in pubblico.",
+    "en": "Why I am moving my personal branding from oversized claims to a more credible path: learning seriously by building in public."
+  },
+  "body": {
+    "it": "## Il punto\n\nIl problema non e essere scarso. Il problema e comunicare un livello di stack, seniority o architettura che oggi non sento davvero mio.\n\nQuesta differenza pesa. Se il sito promette enterprise architecture ma io sto consolidando le fondamenta, ogni pagina diventa una piccola fonte di pressione invece che un supporto.\n\n## La nuova direzione\n\nVoglio comunicare una cosa piu vera:\n\n- studio Ingegneria Informatica\n- costruisco piccoli SaaS in pubblico\n- uso Flask e Quart per applicazioni backend\n- tengo viva la parte C, Arduino, ESP32 e automazione\n- sperimento con tooling AI/LLM in modo pratico\n\nNon voglio scrivere esperto Flask. Preferisco dire: sto costruendo applicazioni backend con Flask e Quart.\n\n## Perche funziona meglio\n\nUn posizionamento credibile crea fiducia. Anche quando e piu umile, e piu forte perche non costringe a recitare.\n\nDa qui in avanti usero il blog per mostrare progresso reale: cosa costruisco, cosa capisco, cosa sbaglio, cosa rifarei meglio.",
+    "en": "## The point\n\nThe problem is not being bad. The problem is communicating a level of stack, seniority, or architecture that I do not fully feel as mine yet.\n\nThat mismatch is heavy. If the site promises enterprise architecture while I am consolidating foundations, every page becomes a small source of pressure instead of support.\n\n## The new direction\n\nI want to communicate something more true:\n\n- I study Computer Engineering\n- I build small SaaS products in public\n- I use Flask and Quart for backend applications\n- I keep C, Arduino, ESP32, and automation close\n- I experiment with practical AI/LLM tooling\n\nI do not want to write Flask expert. I prefer to say: I am building backend applications with Flask and Quart.\n\n## Why it works better\n\nA credible positioning creates trust. Even when it is humbler, it is stronger because it does not force me to perform.\n\nFrom now on, I will use the blog to show real progress: what I build, what I understand, what I get wrong, and what I would do better."
+  }
+}
