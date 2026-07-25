@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Alessio Quagliara | Indie Hacker Building SaaS in Public | AI Engineering Student",
-      "defaultDescription": "Computer Engineering student interested in software, industrial automation, and AI. I document the public process of building small SaaS products, software experiments, and operational tools inspired by real warehouse and production problems.",
+      "defaultTitle": "Alessio Quagliara — Indie Hacker & AI Engineering Student",
+      "defaultDescription": "Computer Engineering student. I build small SaaS products and operational tools in public, born from real warehouse and production problems.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "Indie hacker building small SaaS products, software experiments, AI tooling, and operational automation in public.",
+      "ogDescription": "I study AI engineering and build small SaaS products, automations, and operational tools in public.",
       "locale": "en_US"
     },
     "layout": {
@@ -25,8 +25,8 @@
         "builtWith": "Built with Next.js, TypeScript and Tailwind CSS",
         "email": "ciao@alessioquagliara.com",
         "brandName": "Alessio Quagliara",
-        "brandSubtitle": "Indie Hacker Building SaaS in Public | AI Engineering Student",
-        "brandDescription": "Computer Engineering student documenting small SaaS products, software experiments, AI/LLM tooling, and automation inspired by real warehouse, production, and physical-systems problems.",
+        "brandSubtitle": "Indie Hacker & AI Engineering Student",
+        "brandDescription": "Computer Engineering student. I document small SaaS products, AI/LLM tooling, and automations born from real warehouse and production problems, in public.",
         "section": {
           "legal": "Legal",
           "contacts": "Contacts"
@@ -62,81 +62,81 @@
         "title": "Home | Alessio Quagliara",
         "description": "Indie hacker and AI engineering student building small SaaS products, automation experiments, and operational tools in public."
       },
-      "badge": "Indie Hacker · Building SaaS in Public · AI Engineering Student",
-      "title": "Indie Hacker Building SaaS in Public | AI Engineering Student",
-      "description": "Computer Engineering student interested in software, industrial automation, and AI. I publicly document the process of building small SaaS products, software experiments, and operational tools inspired by real warehouse and production problems.",
-      "ctaProjects": "View Projects",
-      "ctaContact": "Book a Call",
+      "badge": "Build in Public · SaaS · AI Engineering",
+      "title": "I build small SaaS in public, while studying AI engineering.",
+      "description": "Computer Engineering student interested in automation and physical systems. I document every experiment: decisions, mistakes, iterations.",
+      "ctaProjects": "View projects",
+      "ctaContact": "Book a call",
       "sections": {
         "whatIBuild": {
           "title": "What I Build",
-          "subtitle": "I build and document small, concrete software experiments connected to real operational problems.",
+          "subtitle": "Three areas, three different ways of solving problems with code.",
           "cards": [
             {
               "title": "SaaS built in public",
-              "text": "I am building small SaaS products and documenting the process: technical choices, mistakes, iterations, and lessons learned without pretending to be more senior than I am."
+              "text": "Small SaaS products built and shared step by step: technical choices, mistakes, iterations."
             },
             {
               "title": "Operational tools",
-              "text": "I care about simple tools for warehouses, production, QR workflows, tracking, and daily operations where software can remove manual friction."
+              "text": "Simple tools for warehouse, production, QR and tracking — software that removes manual steps."
             },
             {
               "title": "Physical automation",
-              "text": "I keep Arduino, ESP32, and basic embedded systems close because they connect code, sensors, modules, and real problems outside the screen."
+              "text": "Arduino, ESP32 and embedded systems: code that talks to sensors and problems outside the screen."
             }
           ]
         },
         "howIWork": {
           "title": "How I Work",
-          "subtitle": "I am learning seriously by building in public: fewer claims, more practice, more clarity about what I can really do.",
+          "subtitle": "Fewer claims, more practice: I'm learning seriously by building in public.",
           "quote": "I do not use complexity to impress. I remove it until the project breathes better.",
           "cards": [
             {
               "title": "Build before claiming",
-              "text": "I prefer showing real progress, prototypes, and development notes instead of presenting myself as an expert in things I am still consolidating."
+              "text": "I'd rather show real progress and prototypes than call myself an expert in things I'm still learning."
             },
             {
               "title": "Simplicity before stack",
-              "text": "I choose tools I understand and can maintain. If Flask, Quart, or HTML/CSS are enough, I start there and add complexity only when it is needed."
+              "text": "I choose tools I understand and can maintain. I add complexity only when it's actually needed."
             },
             {
               "title": "Real problems",
-              "text": "I work best where software, automation, logistics, and physical systems meet: warehouse, production, monitoring, and small daily inefficiencies."
+              "text": "Where software, automation and physical systems meet: warehouse, production, small daily inefficiencies."
             }
           ]
         },
         "selectedProjects": {
           "title": "Selected Projects",
-          "subtitle": "A selection of projects showing what I am building and learning across product, automation, and real systems.",
-          "intro": "I am not interested in filling a portfolio with disconnected experiments. I would rather show a few projects that genuinely represent how I build software.",
-          "eyebrow": "Each project points in a clear direction: small SaaS, automation, AI/LLM tooling, or operational software.",
+          "subtitle": "A few projects, chosen carefully: product, automation, real systems.",
+          "intro": "I'd rather show a few real projects than a portfolio full of disconnected experiments.",
+          "eyebrow": "SaaS · automation · AI/LLM tooling · operational software",
           "allProjects": "View all projects"
         },
         "technicalFocus": {
           "title": "Technical Focus",
-          "subtitle": "No stack flexing: these are the areas I am using, studying, and consolidating through actual projects.",
+          "subtitle": "The areas I'm using and consolidating in real projects — no stack flexing.",
           "blocks": [
             {
               "title": "Backend & Web",
-              "text": "I am building backend applications with Flask and Quart, plus simple and maintainable HTML/CSS interfaces"
+              "text": "Backend apps with Flask and Quart, plus simple, maintainable HTML/CSS interfaces"
             },
             {
               "title": "Core Skills",
-              "text": "C, systems fundamentals, data structures, application logic, and disciplined code reading"
+              "text": "C, systems fundamentals, data structures, application logic, disciplined code reading"
             },
             {
               "title": "AI & Tooling",
-              "text": "AI/LLM tooling, API automations, small agents, assisted workflows, and AI engineering study"
+              "text": "AI/LLM tooling, API automations, small agents, assisted workflows"
             },
             {
               "title": "Hardware & Automation",
-              "text": "Arduino, ESP32, Raspberry Pi, sensors, QR workflows, basic embedded prototypes, and physical operations"
+              "text": "Arduino, ESP32, Raspberry Pi, sensors, QR workflows, basic embedded prototypes"
             }
           ]
         },
         "contactCta": {
           "title": "Let's talk",
-          "text": "If you want to follow the process, discuss a real operational problem, or exchange ideas about automation, AI, and physical systems, send me a message.",
+          "text": "Small SaaS, a real operational problem, automation or AI — send me a message.",
           "primary": "Book a call",
           "secondary": "Go to contacts"
         }
@@ -145,22 +145,22 @@
     "about": {
       "metadata": {
         "title": "About | Alessio Quagliara",
-        "description": "Alessio Quagliara's background and technical focus: Computer Engineering student, indie hacker, and public builder of small SaaS products, automation, and operational tools."
+        "description": "Alessio Quagliara's background and approach: a Computer Engineering student building small SaaS products and operational tools in public."
       },
       "title": "About",
-      "intro": "I am a Computer Engineering student interested in software, industrial automation, and AI. I am rebuilding my positioning around something more true: learning seriously by building in public.",
+      "intro": "I study Computer Engineering and build software: small SaaS, automations, tools born from real problems. I'd rather show what I'm learning than sell a more senior version of myself.",
       "sections": [
         {
           "title": "My approach",
-          "text": "I do not want to communicate more seniority than I actually feel. I prefer showing what I am building, what I am learning, and how I choose pragmatic solutions."
+          "text": "I document in public: build logs, technical decisions, mistakes included. It's the most honest way I know to measure progress."
         },
         {
           "title": "What I want to build",
-          "text": "I care about small SaaS products, automations, warehouse and production tools, QR workflows, operational dashboards, and tools born from concrete problems."
+          "text": "Small SaaS, automations, warehouse and production tools, operational dashboards: projects born from concrete problems on the ground."
         },
         {
           "title": "Software and the real world",
-          "text": "Arduino, ESP32, and automation differentiate me from a typical web-only developer: I like when software touches sensors, modules, physical objects, and operational processes."
+          "text": "Arduino, ESP32 and automation set me apart from a web-only dev: I like when software touches sensors, physical objects and real processes."
         }
       ],
       "focusAreasTitle": "Focus Areas",
@@ -172,10 +172,10 @@
         "Warehouse & Production Tools",
         "Embedded Systems Basics"
       ],
-      "closing": "My goal is to become stronger by building real things, documenting the path, and connecting software, AI, automation, and concrete operational problems.",
+      "closing": "My goal is to get stronger by building real things and documenting the path.",
       "cta": {
         "title": "Want to talk?",
-        "text": "If you want to follow the path or discuss a concrete problem across software, automation, and physical systems, we can talk.",
+        "text": "If you want to discuss a concrete problem or follow the journey, reach out.",
         "primary": "Book a call",
         "secondary": "Go to contacts"
       }
@@ -186,8 +186,8 @@
         "description": "Contact to discuss small SaaS products, automation, AI/LLM tooling, warehouse, production, and operational software."
       },
       "title": "Let's talk",
-      "intro": "If you want to follow the journey, exchange ideas, or tell me about a real operational problem, send me a message.",
-      "description": "I am mainly interested in small SaaS products, industrial automation, QR workflows, warehouse and production tools, AI/LLM tooling, and bridges between software and the physical world.",
+      "intro": "Reach out if you want to talk about a project, an operational problem, or just exchange ideas.",
+      "description": "Below you'll find where I can help and how to reach me directly.",
       "helpTitle": "I can help if...",
       "bullets": [
         "You want to follow the public build of small SaaS products",
@@ -227,7 +227,7 @@
         "description": "Build in public articles about small SaaS products, Flask, Quart, AI tooling, automation, warehouse, production, and physical systems."
       },
       "title": "Blog",
-      "description": "Public notes while I build: small SaaS products, software experiments, automation, AI, and operational tools born from real problems.",
+      "description": "Public notes while I build: SaaS, automation, AI, operational tools born from real problems.",
       "empty": "No posts published yet.",
       "readPost": "Read post",
       "published": "Published",
@@ -242,9 +242,9 @@
         "description": "Continuous education path across automation, software development, business perspective, and a Computer Engineering degree focused on intelligent systems."
       },
       "eyebrow": "Education Path",
-      "title": "An education built across engineering, software, and real systems",
-      "intro": "My education comes from the intersection of engineering, software development, operational processes, and business perspective. Today it continues with an even stronger focus on AI, intelligent systems, automation, and real solution design.",
-      "learningStatement": "For me, continuous learning is not filler work: it is how I connect technical growth, design capability, and long-term vision. For {years} years I have invested in study with this mindset.",
+      "title": "Education built across engineering, software, and real systems",
+      "intro": "It comes from the intersection of engineering, software development, and business perspective. Today the focus is AI, intelligent systems, and real solution design.",
+      "learningStatement": "Continuous learning is not filler work: it's how I connect technical growth and long-term vision. For {years} years I've invested in study with this mindset.",
       "pillars": ["Engineering", "Software", "Business"],
       "items": [
         {

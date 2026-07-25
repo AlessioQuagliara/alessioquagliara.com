@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Alessio Quagliara | Indie Hacker Building SaaS in Public | AI Engineering Student",
-      "defaultDescription": "Studente di Ingegneria Informatica appassionato di software, automazione industriale e AI. Documento in pubblico la costruzione di piccoli SaaS, esperimenti software e strumenti operativi ispirati a problemi reali vissuti in magazzino e produzione.",
-      "ogTitle": "Alessio Quagliara | Indie Hacker Building SaaS in Public",
-      "ogDescription": "Studio AI engineering e costruisco in pubblico piccoli SaaS, esperimenti software, automazioni e strumenti operativi collegati a problemi reali.",
+      "defaultTitle": "Alessio Quagliara — Indie Hacker & AI Engineering Student",
+      "defaultDescription": "Studente di Ingegneria Informatica. Costruisco in pubblico piccoli SaaS e strumenti operativi nati da problemi reali di magazzino e produzione.",
+      "ogTitle": "Alessio Quagliara",
+      "ogDescription": "Studio AI engineering e costruisco in pubblico piccoli SaaS, automazioni e strumenti operativi nati da problemi reali.",
       "locale": "it_IT"
     },
     "layout": {
@@ -25,8 +25,8 @@
         "builtWith": "Costruito con Next.js, TypeScript e Tailwind CSS",
         "email": "quagliara.alessio@gmail.com",
         "brandName": "Alessio Quagliara",
-        "brandSubtitle": "Indie Hacker Building SaaS in Public | AI Engineering Student",
-        "brandDescription": "Studente di Ingegneria Informatica. Documento in pubblico piccoli SaaS, esperimenti software, tooling AI/LLM e automazioni ispirate a problemi reali di magazzino, produzione e sistemi fisici.",
+        "brandSubtitle": "Indie Hacker & AI Engineering Student",
+        "brandDescription": "Studente di Ingegneria Informatica. Documento in pubblico piccoli SaaS, tooling AI/LLM e automazioni nate da problemi reali di magazzino e produzione.",
         "section": {
           "legal": "Legale",
           "contacts": "Contatti"
@@ -62,81 +62,81 @@
         "title": "Home | Alessio Quagliara",
         "description": "Indie hacker e studente di AI engineering che costruisce in pubblico piccoli SaaS, automazioni e strumenti operativi ispirati a problemi reali."
       },
-      "badge": "Indie Hacker · Building SaaS in Public · AI Engineering Student",
-      "title": "Indie Hacker Building SaaS in Public | AI Engineering Student",
-      "description": "Studente di Ingegneria Informatica appassionato di software, automazione industriale e AI. Documento pubblicamente la costruzione di piccoli SaaS, esperimenti software e strumenti operativi ispirati a problemi reali vissuti in magazzino e produzione.",
-      "ctaProjects": "Vedi i Progetti",
-      "ctaContact": "Prenota una Chiamata",
+      "badge": "Build in Public · SaaS · AI Engineering",
+      "title": "Costruisco piccoli SaaS in pubblico, mentre studio AI engineering.",
+      "description": "Studente di Ingegneria Informatica, appassionato di automazione e sistemi fisici. Documento ogni esperimento: scelte tecniche, errori, iterazioni.",
+      "ctaProjects": "Vedi i progetti",
+      "ctaContact": "Prenota una chiamata",
       "sections": {
         "whatIBuild": {
           "title": "What I Build",
-          "subtitle": "Costruisco e documento esperimenti software piccoli, concreti e collegati a problemi operativi reali.",
+          "subtitle": "Tre aree, tre modi diversi di risolvere problemi con codice.",
           "cards": [
             {
               "title": "SaaS costruiti in pubblico",
-              "text": "Sto costruendo piccoli prodotti SaaS e documentando il processo: scelte tecniche, errori, iterazioni e lezioni utili per crescere senza fingere seniority."
+              "text": "Piccoli prodotti SaaS costruiti e raccontati passo dopo passo: scelte tecniche, errori, iterazioni."
             },
             {
               "title": "Strumenti operativi",
-              "text": "Mi interessano tool semplici per magazzino, produzione, QR, tracciamento e flussi quotidiani dove il software riduce passaggi manuali."
+              "text": "Tool semplici per magazzino, produzione, QR e tracciamento, dove il software toglie passaggi manuali."
             },
             {
               "title": "Automazione fisica",
-              "text": "Tengo forte la parte Arduino, ESP32 e sistemi embedded di base perché collega codice, sensori, moduli e problemi reali fuori dallo schermo."
+              "text": "Arduino, ESP32 e sistemi embedded: codice che parla con sensori e problemi fuori dallo schermo."
             }
           ]
         },
         "howIWork": {
           "title": "How I Work",
-          "subtitle": "Sto imparando seriamente costruendo in pubblico: meno claim, più pratica, più chiarezza su cosa so fare davvero.",
+          "subtitle": "Meno claim, più pratica: sto imparando seriamente costruendo in pubblico.",
           "quote": "Non uso complessità per impressionare. La tolgo finché il progetto respira meglio.",
           "cards": [
             {
               "title": "Costruire prima di dichiarare",
-              "text": "Preferisco mostrare progressi reali, prototipi e note di sviluppo invece di presentarmi come esperto di cose che sto ancora consolidando."
+              "text": "Preferisco mostrare progressi reali e prototipi invece di dichiararmi esperto di cose che sto ancora consolidando."
             },
             {
               "title": "Semplicità prima dello stack",
-              "text": "Scelgo strumenti che capisco e riesco a mantenere. Se Flask, Quart o HTML/CSS bastano, parto da lì e aumento complessità solo quando serve."
+              "text": "Scelgo strumenti che capisco e riesco a mantenere. Aggiungo complessità solo quando serve davvero."
             },
             {
               "title": "Problemi reali",
-              "text": "Mi trovo bene dove software, automazione, logistica e sistemi fisici si incontrano: magazzino, produzione, monitoraggio e piccole inefficienze quotidiane."
+              "text": "Software, automazione e sistemi fisici che si incontrano: magazzino, produzione, piccole inefficienze quotidiane."
             }
           ]
         },
         "selectedProjects": {
           "title": "Selected Projects",
-          "subtitle": "Una selezione di progetti che raccontano cosa sto costruendo e imparando tra prodotto, automazione e sistemi reali.",
-          "intro": "Non mi interessa riempire il portfolio di esperimenti scollegati. Preferisco mostrare pochi progetti che rappresentano davvero il mio modo di costruire software.",
-          "eyebrow": "Ogni progetto rappresenta una direzione precisa: piccoli SaaS, automazione, tooling AI/LLM o software operativo.",
+          "subtitle": "Pochi progetti, ma rappresentativi: prodotto, automazione, sistemi reali.",
+          "intro": "Preferisco pochi progetti veri a un portfolio pieno di esperimenti scollegati.",
+          "eyebrow": "SaaS · automazione · tooling AI/LLM · software operativo",
           "allProjects": "Vedi tutti i progetti"
         },
         "technicalFocus": {
           "title": "Technical Focus",
-          "subtitle": "Niente flexing di stack: queste sono le aree che sto usando, studiando e consolidando sul campo.",
+          "subtitle": "Le aree che sto usando e consolidando sul campo, senza flexing di stack.",
           "blocks": [
             {
               "title": "Backend & Web",
-              "text": "Sto costruendo applicazioni backend con Flask e Quart, più interfacce HTML/CSS semplici e mantenibili"
+              "text": "Applicazioni backend con Flask e Quart, interfacce HTML/CSS semplici e mantenibili"
             },
             {
               "title": "Core Skills",
-              "text": "C, basi di sistemi, strutture dati, logica applicativa e lettura disciplinata del codice"
+              "text": "C, basi di sistemi, strutture dati, logica applicativa, lettura disciplinata del codice"
             },
             {
               "title": "AI & Tooling",
-              "text": "Tooling AI/LLM, automazioni con API, piccoli agenti, workflow assistiti e studio dell'AI engineering"
+              "text": "Tooling AI/LLM, automazioni via API, piccoli agenti, workflow assistiti"
             },
             {
               "title": "Hardware & Automation",
-              "text": "Arduino, ESP32, Raspberry Pi, sensori, QR, prototipi embedded di base e sistemi operativi fisici"
+              "text": "Arduino, ESP32, Raspberry Pi, sensori, QR, prototipi embedded di base"
             }
           ]
         },
         "contactCta": {
           "title": "Parliamone",
-          "text": "Se ti interessa seguire la costruzione di piccoli SaaS, discutere un problema operativo reale o scambiare idee su automazione, AI e sistemi fisici, scrivimi.",
+          "text": "Piccoli SaaS, un problema operativo reale, automazione o AI: scrivimi.",
           "primary": "Prenota una chiamata",
           "secondary": "Vai ai contatti"
         }
@@ -145,22 +145,22 @@
     "about": {
       "metadata": {
         "title": "About | Alessio Quagliara",
-        "description": "Percorso, approccio e focus tecnico di Alessio Quagliara: studente di Ingegneria Informatica, indie hacker e builder pubblico di piccoli SaaS, automazioni e strumenti operativi."
+        "description": "Percorso e approccio di Alessio Quagliara: studente di Ingegneria Informatica che costruisce in pubblico piccoli SaaS e strumenti operativi."
       },
-      "title": "About",
-      "intro": "Sono uno studente di Ingegneria Informatica appassionato di software, automazione industriale e AI. Sto ricostruendo il mio posizionamento attorno a una cosa più vera: imparare seriamente costruendo in pubblico.",
+      "title": "Chi sono",
+      "intro": "Studio Ingegneria Informatica e costruisco software: piccoli SaaS, automazioni, strumenti nati da problemi reali. Preferisco mostrare quello che imparo piuttosto che vendere una versione più esperta di me.",
       "sections": [
         {
           "title": "Il mio approccio",
-          "text": "Non voglio comunicare più seniority di quella che sento davvero mia. Preferisco mostrare cosa sto costruendo, cosa sto imparando e come scelgo soluzioni pragmatiche."
+          "text": "Documento in pubblico: build log, decisioni tecniche, errori inclusi. È il modo più onesto che ho per misurare i progressi."
         },
         {
           "title": "Cosa mi interessa costruire",
-          "text": "Mi interessano piccoli SaaS, automazioni, strumenti per magazzino e produzione, QR, dashboard operative e tool che nascono da problemi concreti vissuti sul campo."
+          "text": "Piccoli SaaS, automazioni, strumenti per magazzino e produzione, dashboard operative: progetti nati da problemi concreti sul campo."
         },
         {
           "title": "Software e mondo reale",
-          "text": "La parte Arduino, ESP32 e automazione mi differenzia dal classico dev web: mi piace quando il software tocca sensori, moduli, oggetti fisici e processi operativi."
+          "text": "Arduino, ESP32 e automazione mi distinguono da un dev solo-web: mi piace quando il software tocca sensori, oggetti fisici e processi reali."
         }
       ],
       "focusAreasTitle": "Focus Areas",
@@ -170,12 +170,12 @@
         "AI/LLM Tooling",
         "Arduino / ESP32 Prototyping",
         "Warehouse & Production Tools",
-        "Embedded Systems Base"
+        "Basi di Sistemi Embedded"
       ],
-      "closing": "Il mio obiettivo è diventare più forte costruendo cose vere, documentando il percorso e tenendo insieme software, AI, automazione e problemi operativi reali.",
+      "closing": "Il mio obiettivo è diventare più forte costruendo cose vere e documentando il percorso.",
       "cta": {
         "title": "Vuoi confrontarti?",
-        "text": "Se ti interessa seguire il percorso o parlare di un problema concreto tra software, automazione e sistemi fisici, possiamo sentirci.",
+        "text": "Se vuoi parlare di un problema concreto o seguire il percorso, scrivimi.",
         "primary": "Prenota una chiamata",
         "secondary": "Vai ai contatti"
       }
@@ -186,8 +186,8 @@
         "description": "Contatti per confrontarsi su piccoli SaaS, automazione, tooling AI/LLM, magazzino, produzione e software operativo."
       },
       "title": "Parliamone",
-      "intro": "Se vuoi seguire il percorso, scambiare idee o parlarmi di un problema operativo reale, scrivimi.",
-      "description": "Mi interessano soprattutto piccoli SaaS, automazione industriale, QR, strumenti per magazzino e produzione, tooling AI/LLM e collegamenti tra software e mondo fisico.",
+      "intro": "Scrivimi se vuoi parlare di un progetto, un problema operativo o semplicemente scambiare idee.",
+      "description": "Qui sotto trovi dove posso essere utile e come contattarmi direttamente.",
       "helpTitle": "Posso esserti utile se...",
       "bullets": [
         "Vuoi seguire la costruzione pubblica di piccoli SaaS",
@@ -227,7 +227,7 @@
         "description": "Articoli build in public su piccoli SaaS, Flask, Quart, AI tooling, automazione, magazzino, produzione e sistemi fisici."
       },
       "title": "Blog",
-      "description": "Note pubbliche mentre costruisco: piccoli SaaS, esperimenti software, automazione, AI e strumenti operativi nati da problemi reali.",
+      "description": "Note pubbliche mentre costruisco: SaaS, automazione, AI, strumenti operativi nati da problemi reali.",
       "empty": "Nessun articolo pubblicato.",
       "readPost": "Leggi articolo",
       "published": "Pubblicato",
@@ -242,9 +242,9 @@
         "description": "Percorso di formazione continua tra automazione, sviluppo software, visione di business e laurea in Ingegneria Informatica orientata ai sistemi intelligenti."
       },
       "eyebrow": "Percorso di Formazione",
-      "title": "Una formazione costruita tra tecnica, software e sistemi reali",
-      "intro": "La mia formazione nasce dall'incontro tra tecnica, sviluppo software, processi e visione di business. Oggi continua con un focus sempre più forte su AI, sistemi intelligenti, automazione e progettazione di soluzioni reali.",
-      "learningStatement": "La formazione continua per me non è un riempitivo: è il modo con cui tengo insieme crescita tecnica, capacità progettuale e visione di lungo periodo. Da {years} anni investo nello studio con questa logica.",
+      "title": "Formazione costruita tra tecnica, software e sistemi reali",
+      "intro": "Nasce dall'incontro tra tecnica, sviluppo software e visione di business. Oggi il focus è AI, sistemi intelligenti e progettazione di soluzioni reali.",
+      "learningStatement": "La formazione continua non è un riempitivo: è come tengo insieme crescita tecnica e visione di lungo periodo. Da {years} anni investo nello studio con questa logica.",
       "pillars": ["Tecnica", "Software", "Business"],
       "items": [
         {
