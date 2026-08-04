@@ -90,8 +90,38 @@ export default async function BlogPostPage({
 
   const localizedPost = getLocalizedBlogPost(post, locale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: localizedPost.title,
+    description: localizedPost.description,
+    image: [new URL(localizedPost.cover, "https://alessioquagliara.com").toString()],
+    datePublished: localizedPost.publishedAt,
+    dateModified: localizedPost.updatedAt ?? localizedPost.publishedAt,
+    author: {
+      "@type": "Person",
+      name: "Alessio Quagliara",
+      url: "https://alessioquagliara.com",
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Alessio Quagliara",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://alessioquagliara.com/blog/${localizedPost.slug}`,
+    },
+  };
+
   return (
     <article className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <SectionReveal motionPreset="dynamic" className="space-y-10">
         <Link
           href={withLang("/blog", locale)}
