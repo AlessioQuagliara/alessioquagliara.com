@@ -1,0 +1,175 @@
+{
+  "slug": "perche-una-software-house-puo-fallire-anche-quando-sa-costruire-software",
+  "publishedAt": "2026-08-12",
+  "updatedAt": "",
+  "cover": "/spotex-srl-cover.png",
+  "youtubeUrl": "",
+  "tags": [
+    "software house",
+    "imprenditoria",
+    "startup",
+    "governance",
+    "organizzazione",
+    "burnout",
+    "post-mortem",
+    "build-in-public"
+  ],
+  "title": {
+    "it": "Perché una software house può fallire anche quando sa costruire software",
+    "en": "Why a Software House Can Fail Even When It Knows How to Build Software"
+  },
+  "description": {
+    "it": "Una post-mortem organizzativa sulla chiusura di una software house: governance debole, comunicazione inefficace, amministrazione confusa, sovraccarico operativo e mancanza di visione condivisa.",
+    "en": "An organizational post-mortem on the closure of a software house: weak governance, ineffective communication, unclear administration, operational overload, and a lack of shared vision."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Ora che la società è in liquidazione, ha più senso raccontarne la storia non come uno sfogo contro le persone, ma come un’analisi di come una società tecnologica possa diventare insostenibile attraverso una somma di problemi organizzativi.\n\nLe difficoltà non erano isolate. Si alimentavano a vicenda: una governance debole rendeva più difficile comunicare, la comunicazione inefficace peggiorava l’amministrazione, l’amministrazione poco chiara rallentava le decisioni e il sovraccarico operativo finiva per deteriorare ulteriormente i rapporti.\n\nQuesta non è la storia di chi abbia avuto torto. È una post-mortem aziendale: abbiamo costruito una società, abbiamo commesso errori e questi sono gli errori che, nel tempo, l’hanno resa insostenibile."
+      },
+      {
+        "id": "governance-e-gestione-societaria",
+        "title": "Governance e gestione societaria",
+        "image": "",
+        "body": "Uno dei problemi principali è stata la mancanza di una struttura decisionale realmente efficace.\n\nI ruoli formali esistevano, ma non sempre corrispondevano ai poteri e alle responsabilità effettivamente esercitati. Le decisioni importanti non seguivano sempre un processo chiaro, documentato e condiviso tra i soci.\n\nCon il tempo, questo ha portato a una situazione nella quale alcune persone si occupavano concretamente dell’operatività, mentre altre mantenevano ruoli societari senza contribuire in modo equivalente alla gestione.\n\nIl risultato è stato un progressivo deterioramento della governance."
+      },
+      {
+        "id": "quando-i-soci-smettono-di-comunicare",
+        "title": "Quando i soci smettono di comunicare",
+        "image": "",
+        "body": "Quando i soci smettono di parlarsi in maniera efficace, ogni altro problema diventa più difficile da risolvere.\n\nLe comunicazioni importanti diventano sporadiche, alcune richieste restano senza risposta e diverse questioni vengono trascinate per settimane o mesi. In una società piccola, questo è devastante.\n\nNon servono cento dipendenti per avere problemi di governance: bastano poche persone che non riescono più a comunicare tra loro in modo chiaro e costante.\n\n> [!TAKEAWAY]\n> Nelle aziende piccole, la comunicazione tra soci non è un dettaglio organizzativo: è parte dell’infrastruttura aziendale."
+      },
+      {
+        "id": "amministrazione-contabilita-e-finanze",
+        "title": "Amministrazione, contabilità e finanze",
+        "image": "",
+        "body": "La parte amministrativa è diventata progressivamente più difficile da gestire. Mancava una visione semplice e condivisa della situazione economica: quali clienti fossero attivi, quali avessero crediti aperti, quali fossero i costi ricorrenti, quali servizi fossero davvero profittevoli e quale fosse il valore effettivo degli asset.\n\nQuesto rendeva difficile prendere decisioni razionali. Una società tecnologica può avere codice, clienti, domini, server e contratti, ma se nessuno riesce a quantificare correttamente questi elementi, diventa quasi impossibile capire quanto valga davvero l’attività.\n\nLa gestione finanziaria ha sofferto dello stesso problema. Crediti, costi e flussi finanziari non venivano sempre monitorati con la sistematicità necessaria.\n\nUn errore tipico delle piccole aziende è confondere il fatturato con la sostenibilità economica:\n\n- Un cliente che deve pagare non equivale a liquidità disponibile.\n- Un contratto non equivale a margine.\n- Un progetto che genera fatturato non necessariamente genera profitto."
+      },
+      {
+        "id": "clienti-e-redditivita-reale",
+        "title": "Clienti e redditività reale",
+        "image": "",
+        "body": "Anche il portafoglio clienti ha contribuito alla situazione. Alcuni clienti pagavano in ritardo, altri richiedevano una quantità di assistenza sproporzionata rispetto al loro valore economico.\n\nIl problema non era semplicemente che un cliente non pagasse. Spesso era il rapporto tra quanto il cliente produceva e quanto lavoro operativo richiedeva.\n\nPer una software house piccola, un cliente da poche centinaia di euro all’anno può richiedere decine di ore di lavoro, assistenza, manutenzione e gestione delle urgenze. A quel punto, quello che sulla carta sembra un cliente diventa in realtà un costo.\n\n> [!NOTE]\n> Il numero dei clienti non dice molto, da solo. Conta il margine effettivo dopo supporto, manutenzione, infrastruttura e tempo operativo."
+      },
+      {
+        "id": "hosting-e-infrastruttura",
+        "title": "Hosting e infrastruttura",
+        "image": "",
+        "body": "La gestione dell’infrastruttura è stata un altro punto debole. Nel tempo si sono accumulati domini, hosting, VPS, database, applicazioni e configurazioni differenti, senza arrivare a una standardizzazione realmente efficace.\n\nC’erano applicazioni non containerizzate, infrastrutture distribuite e sistemi che richiedevano manutenzione manuale. Questo rendeva difficile:\n\n- Sapere esattamente dove fosse ogni applicazione.\n- Effettuare backup affidabili.\n- Trasferire rapidamente i servizi.\n- Documentare l’infrastruttura.\n- Ridurre i costi.\n- Intervenire rapidamente in caso di problemi.\n\nA un certo punto è diventato necessario razionalizzare l’infrastruttura e spostare parte dei servizi verso soluzioni più economiche. Il problema è che queste operazioni sono arrivate quando la situazione era già molto complessa."
+      },
+      {
+        "id": "gestione-tecnica-e-sovraccarico-operativo",
+        "title": "Gestione tecnica e sovraccarico operativo",
+        "image": "",
+        "body": "Il problema non era necessariamente la capacità tecnica di sviluppare software. Il problema era l’assenza di una gestione tecnica strutturata.\n\nSi lavorava spesso sui problemi quando emergevano, anziché costruire processi in grado di prevenirli. C’erano progetti, tecnologie, configurazioni e codice sviluppati in momenti diversi, senza standard sufficientemente rigidi per deployment, documentazione, backup, monitoraggio e manutenzione.\n\nIl tecnico finiva quindi per diventare anche sistemista, DevOps, supporto clienti e, spesso, la persona che doveva ricordarsi come funzionasse ogni singolo servizio.\n\nQuesto modello può funzionare per qualche cliente. Non è scalabile.\n\n> [!WARNING]\n> Se il funzionamento dell’azienda dipende dalla memoria e dalla disponibilità costante di una sola persona, non esiste una vera infrastruttura: esiste un punto critico umano."
+      },
+      {
+        "id": "il-valore-della-documentazione",
+        "title": "Il valore della documentazione",
+        "image": "",
+        "body": "Quando una società possiede domini, server, applicazioni, database, account, contratti e clienti, queste informazioni devono essere documentate. Altrimenti una parte importante del valore dell’azienda rimane nella testa delle persone.\n\nQuesto crea una dipendenza enorme dai singoli individui. Se una persona lascia la società o semplicemente non è disponibile, improvvisamente diventano difficili domande che dovrebbero avere una risposta immediata:\n\n- Questo dominio dove punta?\n- Questo cliente è ospitato su quale server?\n- Chi ha accesso a questo account?\n- Come viene effettuato il backup?\n- Quale applicazione utilizza questo database?\n- Quanto paga questo cliente?\n\nLa documentazione non è burocrazia superflua. È ciò che rende trasferibili, manutenibili e valutabili gli asset dell’azienda."
+      },
+      {
+        "id": "comunicazione-e-responsabilita",
+        "title": "Comunicazione e responsabilità",
+        "image": "",
+        "body": "La comunicazione interna ed esterna può degradarsi in modo quasi invisibile: email senza risposta, messaggi persi, informazioni comunicate informalmente e decisioni mai formalizzate.\n\nIl problema non è soltanto che le persone non si parlano. Senza comunicazione documentata, diventa impossibile stabilire:\n\n- Chi ha deciso cosa.\n- Quando è stata presa una decisione.\n- Chi era responsabile.\n- Quali informazioni fossero conosciute.\n- Quali attività dovessero essere svolte.\n\nA questo si collega la confusione tra lavoro operativo e responsabilità societarie. Quando manca una struttura organizzativa, subentra il principio: “qualcuno deve farlo”. E quel qualcuno finisce quasi sempre per essere la persona più disponibile o competente.\n\nQuesto crea responsabilità operative senza il corrispondente potere decisionale."
+      },
+      {
+        "id": "asset-strategia-e-costi",
+        "title": "Asset, strategia e costi",
+        "image": "",
+        "body": "Nel corso della vita di una società vengono prese decisioni che, col senno di poi, possono rivelarsi economicamente o strategicamente poco sostenibili.\n\nUna delle difficoltà è distinguere tra ciò che rappresenta davvero un asset e ciò che è semplicemente lavoro tecnico necessario per mantenere in piedi l’attività. Un portafoglio composto da domini, clienti, contratti, hosting e applicazioni ha un valore, ma quel valore deve essere analizzato correttamente.\n\nRidurre tutto a “quanto incassiamo di canoni” può ignorare il valore di clienti custom, software proprietario, manutenzione, infrastruttura e know-how.\n\nAllo stesso tempo, hosting, servizi, domini e altri costi ricorrenti devono essere confrontati continuamente con i ricavi effettivamente prodotti. Quando questa analisi arriva tardi, razionalizzare l’infrastruttura diventa un intervento d’emergenza anziché una scelta strategica."
+      },
+      {
+        "id": "nessuno-aveva-una-visione-completa",
+        "title": "Nessuno aveva una visione completa",
+        "image": "",
+        "body": "Guardando tutto insieme, questo è probabilmente il cuore della storia.\n\nNon c’è stato un singolo problema che ha fatto fallire la società. C’è stata una concatenazione:\n\n**governance debole → comunicazione scarsa → amministrazione confusa → poca visibilità finanziaria → decisioni lente → problemi con clienti → infrastruttura difficile da gestire → sovraccarico operativo → ulteriore deterioramento dei rapporti.**\n\nOgni problema rendeva più difficile risolvere quello successivo. E alla fine la società si è trovata in una situazione nella quale continuare l’attività non aveva più senso."
+      },
+      {
+        "id": "la-liquidazione-e-la-lezione",
+        "title": "La liquidazione e la lezione",
+        "image": "",
+        "body": "La liquidazione non rappresenta tanto la fine improvvisa di un’azienda, quanto il punto conclusivo di un processo iniziato molto prima.\n\nPrima si deteriora la collaborazione. Poi la governance. Poi la gestione economica. Poi l’organizzazione operativa. Infine, diventa necessario prendere atto che non esistono più le condizioni per proseguire normalmente.\n\nLa lezione più importante è semplice: il prodotto può essere tecnicamente valido e la società può comunque fallire.\n\nPuoi avere codice, clienti, competenze e idee valide, ma se mancano governance, contabilità, comunicazione, processi e controllo finanziario, stai costruendo qualcosa che funziona tecnicamente ma non regge come azienda.\n\n> [!TAKEAWAY]\n> Una software house non è soltanto il software che produce. È l’insieme dei processi, delle responsabilità, delle informazioni e delle decisioni che permettono a quel software di continuare a esistere."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Now that the company is in liquidation, it makes more sense to tell its story not as a rant against individuals, but as an analysis of how a technology company can become unsustainable through a combination of organizational problems.\n\nThe difficulties were not isolated. They fed into one another: weak governance made communication harder, ineffective communication worsened administration, unclear administration slowed decisions, and operational overload further damaged relationships.\n\nThis is not a story about who was right or wrong. It is a business post-mortem: we built a company, we made mistakes, and these are the mistakes that eventually made it unsustainable."
+      },
+      {
+        "id": "governance-e-gestione-societaria",
+        "title": "Governance and Company Management",
+        "image": "",
+        "body": "One of the main problems was the lack of a truly effective decision-making structure.\n\nFormal roles existed, but they did not always match the authority and responsibilities actually exercised. Important decisions did not always follow a clear, documented process shared among the partners.\n\nOver time, this created a situation in which some people handled day-to-day operations, while others retained company roles without contributing equally to management.\n\nThe result was a gradual deterioration of governance."
+      },
+      {
+        "id": "quando-i-soci-smettono-di-comunicare",
+        "title": "When Partners Stop Communicating",
+        "image": "",
+        "body": "When partners stop communicating effectively, every other problem becomes harder to solve.\n\nImportant communications become sporadic, some requests go unanswered, and several issues are left unresolved for weeks or months. In a small company, that is devastating.\n\nYou do not need one hundred employees to have governance problems: a few people who can no longer communicate clearly and consistently are enough.\n\n> [!TAKEAWAY]\n> In small companies, communication between partners is not an organizational detail: it is part of the company infrastructure."
+      },
+      {
+        "id": "amministrazione-contabilita-e-finanze",
+        "title": "Administration, Accounting, and Finance",
+        "image": "",
+        "body": "Administration became progressively harder to manage. There was no simple, shared view of the financial situation: which clients were active, which receivables were still open, what recurring costs existed, which services were truly profitable, and what the actual value of the company assets was.\n\nThis made rational decision-making difficult. A technology company can own code, clients, domains, servers, and contracts, but if nobody can properly quantify these elements, it becomes almost impossible to understand what the business is really worth.\n\nFinancial management suffered from the same problem. Receivables, costs, and cash flows were not always monitored with the necessary consistency.\n\nA common mistake in small businesses is confusing revenue with financial sustainability:\n\n- A client who owes you money is not the same as available cash.\n- A contract is not the same as margin.\n- A project that produces revenue does not necessarily produce profit."
+      },
+      {
+        "id": "clienti-e-redditivita-reale",
+        "title": "Clients and Real Profitability",
+        "image": "",
+        "body": "The client portfolio also contributed to the situation. Some clients paid late, while others required an amount of support disproportionate to their economic value.\n\nThe issue was not simply that a client did not pay. It was often the relationship between what the client generated and how much operational work it required.\n\nFor a small software house, a client worth a few hundred euros per year may require dozens of hours of work, support, maintenance, and urgent interventions. At that point, what looks like a client on paper is actually a cost.\n\n> [!NOTE]\n> The number of clients alone says very little. What matters is the real margin after support, maintenance, infrastructure, and operational time."
+      },
+      {
+        "id": "hosting-e-infrastruttura",
+        "title": "Hosting and Infrastructure",
+        "image": "",
+        "body": "Infrastructure management was another weak point. Over time, domains, hosting accounts, VPS instances, databases, applications, and different configurations accumulated without achieving truly effective standardization.\n\nThere were non-containerized applications, distributed infrastructure, and systems that required manual maintenance. This made it difficult to:\n\n- Know exactly where every application was hosted.\n- Perform reliable backups.\n- Transfer services quickly.\n- Document the infrastructure.\n- Reduce costs.\n- Respond quickly when problems occurred.\n\nAt a certain point, it became necessary to rationalize the infrastructure and move part of the services to more affordable solutions. The problem was that these changes came when the situation was already highly complex."
+      },
+      {
+        "id": "gestione-tecnica-e-sovraccarico-operativo",
+        "title": "Technical Management and Operational Overload",
+        "image": "",
+        "body": "The problem was not necessarily the technical ability to build software. The problem was the absence of structured technical management.\n\nWork was often done reactively, when problems emerged, instead of building processes designed to prevent them. There were projects, technologies, configurations, and codebases developed at different times, without sufficiently strict standards for deployment, documentation, backups, monitoring, and maintenance.\n\nThe technical person ended up acting as a system administrator, DevOps engineer, customer support, and often the person who had to remember how every individual service worked.\n\nThis model may work for a few clients. It does not scale.\n\n> [!WARNING]\n> If a company's operations depend on the memory and constant availability of one person, there is no real infrastructure: there is a human single point of failure."
+      },
+      {
+        "id": "il-valore-della-documentazione",
+        "title": "The Value of Documentation",
+        "image": "",
+        "body": "When a company owns domains, servers, applications, databases, accounts, contracts, and client relationships, this information must be documented. Otherwise, an important part of the company's value remains inside people's heads.\n\nThis creates an enormous dependency on individual people. If someone leaves the company or is simply unavailable, questions that should have immediate answers suddenly become difficult:\n\n- Where does this domain point?\n- Which server hosts this client?\n- Who has access to this account?\n- How is the backup performed?\n- Which application uses this database?\n- How much does this client pay?\n\nDocumentation is not unnecessary bureaucracy. It is what makes company assets transferable, maintainable, and assessable."
+      },
+      {
+        "id": "comunicazione-e-responsabilita",
+        "title": "Communication and Responsibility",
+        "image": "",
+        "body": "Internal and external communication can degrade almost invisibly: unanswered emails, missed messages, informally shared information, and decisions that are never formally recorded.\n\nThe problem is not only that people stop talking. Without documented communication, it becomes impossible to establish:\n\n- Who decided what.\n- When a decision was made.\n- Who was responsible.\n- Which information was known.\n- Which tasks had to be completed.\n\nThis connects to the confusion between operational work and corporate responsibility. When an organizational structure is missing, the rule becomes: “someone has to do it.” And that person is almost always the most available or capable one.\n\nThis creates operational responsibility without the corresponding decision-making authority."
+      },
+      {
+        "id": "asset-strategia-e-costi",
+        "title": "Assets, Strategy, and Costs",
+        "image": "",
+        "body": "Over the life of a company, decisions are made that may later prove economically or strategically unsustainable.\n\nOne challenge is distinguishing between what is genuinely an asset and what is simply technical work required to keep the business alive. A portfolio made up of domains, clients, contracts, hosting, and applications has value, but that value must be assessed properly.\n\nReducing everything to “how much recurring revenue we collect” can ignore the value of custom clients, proprietary software, maintenance, infrastructure, and know-how.\n\nAt the same time, hosting, services, domains, and other recurring costs must be continuously compared with the revenue actually generated. When this analysis comes too late, infrastructure rationalization becomes an emergency response rather than a strategic decision."
+      },
+      {
+        "id": "nessuno-aveva-una-visione-completa",
+        "title": "No One Had a Complete View",
+        "image": "",
+        "body": "Looking at everything together, this is probably the core of the story.\n\nThere was not one single problem that caused the company to fail. There was a chain reaction:\n\n**weak governance → poor communication → unclear administration → limited financial visibility → slow decisions → client problems → difficult infrastructure management → operational overload → further deterioration of relationships.**\n\nEvery issue made the next one harder to solve. Eventually, the company reached a point where continuing operations no longer made sense."
+      },
+      {
+        "id": "la-liquidazione-e-la-lezione",
+        "title": "Liquidation and the Lesson",
+        "image": "",
+        "body": "Liquidation does not represent the sudden end of a company as much as the final point of a process that began much earlier.\n\nFirst, collaboration deteriorates. Then governance. Then financial management. Then operational organization. Finally, it becomes necessary to recognize that the conditions to continue normally no longer exist.\n\nThe most important lesson is simple: a product can be technically valid while the company behind it still fails.\n\nYou can have code, clients, skills, and valid ideas, but if governance, accounting, communication, processes, and financial control are missing, you are building something that works technically but does not hold up as a business.\n\n> [!TAKEAWAY]\n> A software house is not only the software it produces. It is the combination of processes, responsibilities, information, and decisions that allow that software to continue existing."
+      }
+    ]
+  }
+}

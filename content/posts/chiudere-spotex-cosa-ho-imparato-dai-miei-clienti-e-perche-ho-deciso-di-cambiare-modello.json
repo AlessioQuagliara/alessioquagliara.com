@@ -1,0 +1,151 @@
+{
+  "slug": "chiudere-spotex-cosa-ho-imparato-dai-miei-clienti-e-perche-ho-deciso-di-cambiare-modello",
+  "publishedAt": "2026-08-12",
+  "updatedAt": "",
+  "cover": "/spotex-srl-cover.png",
+  "youtubeUrl": "",
+  "tags": [
+    "Spotex",
+    "imprenditoria",
+    "software house",
+    "clienti",
+    "consulenza",
+    "hosting",
+    "SaaS",
+    "build-in-public"
+  ],
+  "title": {
+    "it": "Chiudere Spotex: cosa ho imparato dai miei clienti e perché ho deciso di cambiare modello",
+    "en": "Closing Spotex: What I Learned from My Clients and Why I Decided to Change My Model"
+  },
+  "description": {
+    "it": "Dalla chiusura di Spotex a un modello più sostenibile: cosa mi hanno insegnato clienti, progetti custom, assistenza indefinita e anni di sviluppo software.",
+    "en": "From closing Spotex to building a more sustainable model: what clients, custom projects, undefined support, and years of software development taught me."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Dopo diversi anni passati a costruire siti web, piattaforme custom e sistemi software per clienti molto diversi tra loro, ho deciso di mettere la parola fine a un capitolo importante della mia vita professionale: Spotex SRL.\n\nLa società è stata messa in liquidazione e, nella fase di transizione, alcuni clienti e relativi rapporti sono passati sotto Delta Software SRLS.\n\nPer me, però, questa non è stata semplicemente una questione societaria. È stata l’occasione per fermarmi e guardare con lucidità tutto quello che avevo costruito, soprattutto il modo in cui avevo gestito i rapporti con i clienti.\n\nE devo ammettere che ho imparato moltissimo."
+      },
+      {
+        "id": "clienti-progetti-e-rapporti-a-lungo-termine",
+        "title": "Clienti, progetti e rapporti a lungo termine",
+        "image": "",
+        "body": "Nel corso degli anni ho avuto a che fare con realtà molto differenti: piccole attività locali, aziende industriali, startup, professionisti e persone che avevano semplicemente bisogno di un sito web.\n\nIn alcuni casi ho realizzato semplici siti vetrina. In altri ho sviluppato vere e proprie piattaforme software da zero.\n\nHo lavorato con Shopify, Express.js, EJS, PHP, MySQL, PostgreSQL, Socket.IO, Nginx e sistemi custom progettati praticamente da zero.\n\nAlcuni progetti sono durati poche settimane. Altri sono diventati veri e propri percorsi di mesi.\n\nEd è proprio questa differenza che mi ha fatto capire una cosa: realizzare un progetto e gestire un cliente nel lungo periodo sono due lavori completamente diversi."
+      },
+      {
+        "id": "il-caso-delle-piattaforme-custom",
+        "title": "Il caso delle piattaforme custom",
+        "image": "",
+        "body": "Uno dei progetti più impegnativi che ho seguito è stata una piattaforma per una startup operante nel settore dei fondi pensione.\n\nIl progetto era partito con un budget molto contenuto rispetto alla quantità di lavoro richiesta, ma nel corso degli otto mesi di sviluppo è diventato un sistema decisamente articolato.\n\nHo sviluppato un backend in Express.js, un frontend personalizzato con EJS, database PostgreSQL, autenticazione tramite JWT, gestione delle sessioni e delle autorizzazioni, sistemi di sicurezza, reverse proxy con Nginx, protezioni a livello server e un sistema di comunicazione realtime basato su Socket.IO.\n\nLa piattaforma comprendeva anche un sistema a camere, con utenti che potevano interagire solamente in determinate condizioni e dopo aver accettato specifici documenti.\n\nParallelamente ho seguito anche la parte SEO, il personal branding e l’identità visiva del progetto.\n\nIl risultato tecnico mi ha dato moltissimo. Dal punto di vista commerciale, invece, mi ha insegnato una lezione ancora più importante: un progetto sottoprezzato può diventare rapidamente un rapporto commerciale difficile da sostenere.\n\nIl problema non è solamente quanto si viene pagati per sviluppare il software. È tutto ciò che viene dopo: hosting, manutenzione, richieste, modifiche, spiegazioni, aggiornamenti e aspettative continuano ad esistere anche quando il progetto è stato consegnato."
+      },
+      {
+        "id": "cosa-mi-hanno-insegnato-i-piccoli-clienti",
+        "title": "Cosa mi hanno insegnato i piccoli clienti",
+        "image": "",
+        "body": "Paradossalmente, alcune delle esperienze più formative non sono arrivate dai progetti tecnicamente più complessi.\n\nHo seguito piccoli e-commerce, attività locali, siti per ristoranti, erboristerie, artigiani e aziende familiari.\n\nIn alcuni casi il progetto iniziale valeva poche centinaia di euro. In altri qualche migliaio. Ma il problema ricorrente era sempre lo stesso: una volta consegnato il sito, il confine tra “progetto” e “assistenza” diventava molto sfumato.\n\nUna modifica al testo.\nUna fotografia da sostituire.\nUn problema con una PEC.\nUna spiegazione da dare al cliente.\nUna modifica al menu.\nUn piccolo intervento grafico.\n\n“Ci metti cinque minuti.”\n\nEd è proprio quella frase che, con il tempo, ho imparato a temere. Perché cinque minuti oggi diventano mezz’ora domani. E mezz’ora moltiplicata per decine di richieste diventa una parte significativa della propria vita professionale.\n\n> [!TAKEAWAY]\n> Il problema non è la singola richiesta urgente. È l’accumulo di piccole eccezioni non previste dal modello economico."
+      },
+      {
+        "id": "il-problema-non-erano-i-clienti",
+        "title": "Il problema non erano i clienti",
+        "image": "",
+        "body": "Oggi non penso che il problema fossero semplicemente i clienti. In molti casi ero stato io a creare involontariamente quelle aspettative.\n\nAvevo accettato prezzi troppo bassi. Avevo incluso attività che avrebbero dovuto essere fatturate separatamente. Avevo risposto su WhatsApp. Avevo fatto modifiche “al volo”. Avevo trasformato l’assistenza in qualcosa di indefinito.\n\nE soprattutto, non avevo sempre stabilito chiaramente dove finiva il progetto e dove iniziava un nuovo lavoro.\n\nQuando sei giovane, tecnicamente capace e hai voglia di dimostrare quello che sai fare, è facile cadere in questa trappola. Vuoi risolvere il problema. Vuoi aiutare il cliente. Vuoi che sia soddisfatto.\n\nPoi ti accorgi che stai lavorando continuamente, ma il modello economico non cresce insieme al lavoro."
+      },
+      {
+        "id": "i-clienti-che-voglio-avere",
+        "title": "I clienti che voglio avere",
+        "image": "",
+        "body": "Non tutto, naturalmente, è stato negativo.\n\nHo avuto clienti che hanno pagato correttamente, hanno rispettato il lavoro svolto e hanno continuato a fidarsi di me nel tempo. Alcuni hanno semplicemente avuto bisogno di un sito e, una volta terminato il progetto, il rapporto è rimasto tranquillo. Altri hanno avuto bisogno di hosting e di pochissima assistenza.\n\nQuesti rapporti mi hanno fatto capire quale tipo di clientela voglio avere in futuro.\n\nNon cerco necessariamente il cliente che paga di più. Cerco il cliente con cui esiste un rapporto chiaro.\n\nCi sono stati anche rapporti più complicati: clienti che chiedevano continuamente modifiche, che consideravano ogni intervento incluso nel prezzo iniziale, che contestavano piccoli aumenti, che chiedevano assistenza su strumenti che non avevo nemmeno sviluppato o che contattavano per questioni estranee al servizio acquistato.\n\nAnche questi rapporti, però, mi hanno lasciato qualcosa. Mi hanno insegnato che non tutti i clienti sono clienti che voglio avere.\n\nÈ una frase che qualche anno fa avrei fatto fatica ad accettare. Oggi la considero fondamentale."
+      },
+      {
+        "id": "la-liquidazione-mi-ha-costretto-a-fare-ordine",
+        "title": "La liquidazione mi ha costretto a fare ordine",
+        "image": "",
+        "body": "La liquidazione della società ha trasformato questa riflessione in qualcosa di concreto.\n\nHo dovuto guardare uno per uno i clienti, i domini, i server, gli hosting, i progetti, i pagamenti e tutto ciò che negli anni era stato costruito.\n\nE mi sono posto una domanda molto semplice:\n\n> “Se dovessi ricominciare oggi, costruirei nuovamente l’azienda nello stesso modo?”\n\nLa risposta è stata no.\n\nNon perché tutto quello che abbiamo fatto fosse sbagliato. Anzi. Tecnicamente ho imparato enormemente. Ho costruito sistemi complessi, lavorato su architetture backend, sicurezza, database, realtime, SEO, infrastrutture e applicazioni custom.\n\nMa ho anche imparato che essere tecnicamente bravi non basta per costruire un’attività sostenibile. Serve progettare anche il modello di business."
+      },
+      {
+        "id": "il-nuovo-modello",
+        "title": "Il nuovo modello",
+        "image": "",
+        "body": "Per il futuro voglio muovermi in una direzione molto diversa. Sto pensando a tre livelli distinti.\n\n### Hosting\n\nIl primo è l’hosting: un servizio semplice, standardizzato e possibilmente gestito con infrastruttura italiana. Pochi piani, poche eccezioni e confini molto chiari.\n\nL’hosting deve generare una base di ricavi ricorrenti senza trasformarsi in un secondo lavoro.\n\n### Consulenza\n\nIl secondo livello è la consulenza. Non voglio più vendere il mio tempo indiscriminatamente.\n\nLa consulenza deve essere selettiva, con prezzi e scope definiti. Se qualcuno vuole una modifica, una nuova funzionalità o un intervento tecnico, quello è un nuovo lavoro.\n\n### SaaS\n\nIl terzo livello è quello sul quale voglio concentrarmi maggiormente: i SaaS.\n\nProdotti piccoli, verticali e possibilmente nati da problemi che ho realmente incontrato. Non voglio costruire l’ennesimo software enorme che cerca di fare tutto. Voglio costruire strumenti che risolvano bene un problema specifico."
+      },
+      {
+        "id": "la-lezione-piu-importante",
+        "title": "La lezione più importante",
+        "image": "",
+        "body": "La cosa più importante che mi porto dietro da Spotex non è una tecnologia.\n\nNon è Express.js.\nNon è PostgreSQL.\nNon è Docker.\nNon è Socket.IO.\n\nÈ una consapevolezza molto più semplice:\n\n**un’azienda deve essere progettata per non dipendere continuamente dalle persone che la mandano avanti.**\n\nSe ogni cliente deve parlare con me, non ho costruito un sistema.\n\nSe ogni problema richiede il mio intervento, non ho costruito un sistema.\n\nSe ogni richiesta diventa un’eccezione, non ho costruito un sistema.\n\nHo semplicemente costruito un lavoro.\n\nE io, dopo Spotex, voglio costruire qualcosa di diverso."
+      },
+      {
+        "id": "chiudere-non-significa-buttare-via-tutto",
+        "title": "Chiudere non significa buttare via tutto",
+        "image": "",
+        "body": "La liquidazione di Spotex non cancella quello che ho fatto.\n\nMi porto dietro anni di esperienza, centinaia di problemi risolti, architetture progettate, errori commessi, clienti conosciuti e soprattutto una quantità enorme di lezioni che difficilmente avrei potuto imparare studiando solamente sui libri.\n\nAlcuni rapporti continueranno attraverso Delta Software SRLS. Altri termineranno. Altri ancora verranno ridefiniti con regole più chiare.\n\nEd è probabilmente la cosa più sana che potesse succedere.\n\nPerché questa volta non voglio semplicemente cambiare società. Voglio cambiare il modo in cui costruisco il mio lavoro.\n\nMeno personalizzazione inutile.\nMeno dipendenza dal mio tempo.\nMeno “ci penso io”.\n\nPiù sistemi.\nPiù prodotti.\nPiù ricavi ricorrenti.\nE soprattutto, più libertà.\n\nSpotex è stata una parte importante del mio percorso. Ma non deve essere il modello del mio futuro."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "After several years spent building websites, custom platforms, and software systems for very different clients, I decided to close an important chapter of my professional life: Spotex SRL.\n\nThe company has entered liquidation, and during the transition some clients and related business relationships moved under Delta Software SRLS.\n\nFor me, however, this was not simply a corporate matter. It was an opportunity to pause and look clearly at everything I had built, especially the way I had managed client relationships.\n\nAnd I have to admit: I learned a great deal."
+      },
+      {
+        "id": "clienti-progetti-e-rapporti-a-lungo-termine",
+        "title": "Clients, Projects, and Long-Term Relationships",
+        "image": "",
+        "body": "Over the years, I worked with very different kinds of organizations: small local businesses, industrial companies, startups, professionals, and people who simply needed a website.\n\nIn some cases, I built straightforward showcase websites. In others, I developed full software platforms from scratch.\n\nI worked with Shopify, Express.js, EJS, PHP, MySQL, PostgreSQL, Socket.IO, Nginx, and custom systems designed almost entirely from the ground up.\n\nSome projects lasted a few weeks. Others became genuine journeys that lasted months.\n\nThat difference taught me something important: delivering a project and managing a client over the long term are two completely different jobs."
+      },
+      {
+        "id": "il-caso-delle-piattaforme-custom",
+        "title": "The Case of Custom Platforms",
+        "image": "",
+        "body": "One of the most demanding projects I worked on was a platform for a startup operating in the pension fund sector.\n\nThe project began with a very limited budget compared with the amount of work required, but over eight months of development it became a considerably complex system.\n\nI developed an Express.js backend, a custom EJS frontend, a PostgreSQL database, JWT authentication, session and authorization management, security systems, an Nginx reverse proxy, server-level protections, and a real-time communication system based on Socket.IO.\n\nThe platform also included a room-based system, where users could interact only under specific conditions and after accepting particular documents.\n\nAt the same time, I handled SEO, personal branding, and the visual identity of the project.\n\nThe technical outcome gave me a lot. From a commercial perspective, however, it taught me an even more important lesson: an underpriced project can quickly become a difficult business relationship to sustain.\n\nThe issue is not only how much you are paid to develop the software. It is everything that comes after: hosting, maintenance, requests, changes, explanations, updates, and expectations continue to exist even when the project has been delivered."
+      },
+      {
+        "id": "cosa-mi-hanno-insegnato-i-piccoli-clienti",
+        "title": "What Small Clients Taught Me",
+        "image": "",
+        "body": "Paradoxically, some of my most formative experiences did not come from the technically most complex projects.\n\nI worked with small e-commerce businesses, local companies, restaurant websites, herbal shops, artisans, and family businesses.\n\nIn some cases, the initial project was worth a few hundred euros. In others, a few thousand. But the recurring problem was always the same: once the website was delivered, the line between “project” and “support” became very blurred.\n\nA text change.\nA photo replacement.\nAn issue with a certified email account.\nAn explanation for the client.\nA menu update.\nA small visual adjustment.\n\n“It will only take five minutes.”\n\nThat is exactly the sentence I learned to fear over time. Because five minutes today become half an hour tomorrow. And half an hour multiplied by dozens of requests becomes a significant part of your professional life.\n\n> [!TAKEAWAY]\n> The problem is not the individual urgent request. It is the accumulation of small exceptions that the business model never accounted for."
+      },
+      {
+        "id": "il-problema-non-erano-i-clienti",
+        "title": "The Clients Were Not the Problem",
+        "image": "",
+        "body": "Today, I do not think clients themselves were simply the problem. In many cases, I had unintentionally created those expectations.\n\nI had accepted prices that were too low. I had included work that should have been invoiced separately. I had answered on WhatsApp. I had made changes “on the fly.” I had turned support into something undefined.\n\nAnd above all, I had not always clearly established where a project ended and where new work began.\n\nWhen you are young, technically capable, and eager to prove what you can do, it is easy to fall into this trap. You want to solve the problem. You want to help the client. You want them to be satisfied.\n\nThen you realize that you are working all the time, but the economic model is not growing with the amount of work."
+      },
+      {
+        "id": "i-clienti-che-voglio-avere",
+        "title": "The Clients I Want to Work With",
+        "image": "",
+        "body": "Not everything was negative, of course.\n\nI had clients who paid correctly, respected the work delivered, and continued trusting me over time. Some simply needed a website and, once the project was complete, the relationship remained quiet. Others needed hosting and very little support.\n\nThese relationships helped me understand the kind of clients I want to work with in the future.\n\nI am not necessarily looking for the client who pays the most. I am looking for the client with whom there is a clear relationship.\n\nThere were also more complicated relationships: clients who constantly requested changes, who considered every intervention included in the original price, who challenged small price increases, who asked for support on tools I had not even built, or who contacted me about matters unrelated to the service they had purchased.\n\nThose relationships also taught me something. They taught me that not every client is a client I want to have.\n\nA few years ago, I would have struggled to accept that. Today, I consider it fundamental."
+      },
+      {
+        "id": "la-liquidazione-mi-ha-costretto-a-fare-ordine",
+        "title": "Liquidation Forced Me to Put Things in Order",
+        "image": "",
+        "body": "The company liquidation turned this reflection into something concrete.\n\nI had to look at clients, domains, servers, hosting accounts, projects, payments, and everything that had been built over the years, one by one.\n\nAnd I asked myself a very simple question:\n\n> “If I had to start again today, would I build the company in the same way?”\n\nThe answer was no.\n\nNot because everything we did was wrong. On the contrary, I learned an enormous amount technically. I built complex systems and worked on backend architectures, security, databases, real-time applications, SEO, infrastructure, and custom software.\n\nBut I also learned that technical ability alone is not enough to build a sustainable business. You need to design the business model too."
+      },
+      {
+        "id": "il-nuovo-modello",
+        "title": "The New Model",
+        "image": "",
+        "body": "For the future, I want to move in a very different direction. I am thinking about three distinct levels.\n\n### Hosting\n\nThe first is hosting: a simple, standardized service, preferably managed with Italian infrastructure. Few plans, few exceptions, and very clear boundaries.\n\nHosting should create a base of recurring revenue without turning into a second job.\n\n### Consulting\n\nThe second level is consulting. I no longer want to sell my time indiscriminately.\n\nConsulting needs to be selective, with defined prices and scope. If someone wants a change, a new feature, or a technical intervention, that is new work.\n\n### SaaS\n\nThe third level is where I want to focus most: SaaS products.\n\nSmall, vertical products, ideally born from problems I have genuinely encountered. I do not want to build another huge piece of software trying to do everything. I want to build tools that solve one specific problem well."
+      },
+      {
+        "id": "la-lezione-piu-importante",
+        "title": "The Most Important Lesson",
+        "image": "",
+        "body": "The most important thing I take away from Spotex is not a technology.\n\nIt is not Express.js.\nIt is not PostgreSQL.\nIt is not Docker.\nIt is not Socket.IO.\n\nIt is a much simpler realization:\n\n**a company must be designed so that it does not constantly depend on the people running it.**\n\nIf every client has to talk to me, I have not built a system.\n\nIf every problem requires my intervention, I have not built a system.\n\nIf every request becomes an exception, I have not built a system.\n\nI have simply built myself a job.\n\nAnd after Spotex, I want to build something different."
+      },
+      {
+        "id": "chiudere-non-significa-buttare-via-tutto",
+        "title": "Closing Does Not Mean Throwing Everything Away",
+        "image": "",
+        "body": "The liquidation of Spotex does not erase what I have done.\n\nI carry with me years of experience, hundreds of solved problems, designed architectures, mistakes made, clients met, and above all an enormous number of lessons that I could hardly have learned by studying books alone.\n\nSome relationships will continue through Delta Software SRLS. Others will end. Others will simply be redefined with clearer rules.\n\nAnd that is probably the healthiest thing that could have happened.\n\nBecause this time I do not want to simply change companies. I want to change the way I build my work.\n\nLess unnecessary customization.\nLess dependency on my time.\nLess “I’ll take care of it.”\n\nMore systems.\nMore products.\nMore recurring revenue.\nAnd above all, more freedom.\n\nSpotex was an important part of my journey. But it does not have to be the model for my future."
+      }
+    ]
+  }
+}

@@ -1,7 +1,9 @@
 {
   "slug": "erp-custom-vs-licenza-pragmatica-scelta-per-piccole-imprese",
   "publishedAt": "2026-07-25",
+  "updatedAt": "",
   "cover": "/sviluppo.jpg",
+  "youtubeUrl": "",
   "tags": [
     "ERP",
     "freelance",
@@ -17,8 +19,70 @@
     "it": "Quando un’azienda piccola chiede un ERP in tempi rapidi, la vera domanda non è solo tecnica: è strategica. In questo articolo spiego perché partire da una soluzione già esistente può essere spesso la scelta più sostenibile.",
     "en": "When a small company asks for an ERP on a short timeline, the question is not only technical: it is strategic. In this article I explain why starting from an existing solution is often the most sustainable choice."
   },
-  "body": {
-    "it": "Spesso nei gruppi di freelance capita di leggere richieste come questa: qualcuno ha bisogno di un ERP per la propria piccola società, magari ha già iniziato a generare codice con l’AI, e cerca una persona che lo aiuti a definire il progetto, portarlo online e testarlo. All’apparenza sembra un classico lavoro da sviluppatore. In realtà, prima ancora del codice, il vero tema è quasi sempre un altro: capire se abbia senso costruire tutto da zero.\n\nQuando un cliente immagina un ERP in un mese, funzionante senza problemi, il primo rischio è creare aspettative irrealistiche. Un ERP non è solo una web app con qualche schermata in più: significa definire processi, ruoli, dati, permessi, flussi operativi, test, manutenzione e gestione degli imprevisti. Più il progetto è piccolo dal lato aziendale, più è importante evitare scelte che introducono complessità inutile.\n\nPer questo, nella maggior parte dei casi, la domanda giusta non è “possiamo svilupparlo?”, ma “conviene davvero svilupparlo?”. Se esiste già una soluzione su licenza che copre buona parte delle necessità, spesso è molto più sensato partire da lì e personalizzarla. Questo riduce tempi, costi, rischio tecnico e soprattutto rischio di fallimento operativo. Per una piccola impresa, il valore non sta nell’avere un software unico al mondo, ma nell’avere uno strumento affidabile che funzioni davvero nel contesto reale.\n\nLo sviluppo custom ha senso quando il processo è davvero specifico, quando il vantaggio competitivo nasce proprio da quel flusso, oppure quando le soluzioni esistenti non riescono a coprire i requisiti chiave. In tutti gli altri casi, partire da una base esistente è spesso la scelta più razionale. Questo non significa rinunciare alla qualità: significa concentrare le energie dove servono davvero, evitando di spendere mesi a ricostruire funzioni già mature in altri prodotti.\n\nC’è poi un altro aspetto che spesso viene sottovalutato: l’operatività. Portare un ERP online non vuol dire solo “mettere il progetto su un server”. Vuol dire gestire hosting, database, backup, test, permessi, monitoraggio e manutenzione continua. Se una persona parte da codice generato dall’AI senza una direzione solida, il rischio è ritrovarsi con un sistema difficile da mantenere e fragile nel tempo. L’AI può accelerare, ma non sostituisce la progettazione.\n\nNel mio approccio, parto quasi sempre da una valutazione molto semplice: qual è il problema reale, quanto tempo c’è, quale budget è sensato, e quanta complessità il cliente è davvero pronto a gestire. Da lì si capisce se serve un ERP da personalizzare, un modulo da integrare, oppure un progetto più ampio. La tecnologia viene dopo, non prima.\n\nPer questo, quando vedo richieste di questo tipo, tendo a rispondere in modo diretto: prima valutiamo se conviene comprare una soluzione già pronta o adattarne una esistente. È un punto di partenza più onesto, più sostenibile e spesso anche più economico. E soprattutto evita di confondere la voglia di costruire con la necessità reale del cliente.\n\nAlla fine, il miglior software non è quello più impressionante da raccontare. È quello che un’azienda riesce davvero a usare, mantenere e far crescere nel tempo.",
-    "en": "In freelance groups, it is common to see requests like this: someone needs an ERP for a small company, may already have started generating code with AI, and is looking for help to define the project, get it online, and test it. On the surface, it looks like a standard development job. In reality, before the code, the real question is usually different: does it make sense to build everything from scratch?\n\nWhen a client expects an ERP in one month, fully working and without problems, the first risk is unrealistic expectations. An ERP is not just another web app with a few extra screens: it requires defining processes, roles, data, permissions, workflows, testing, maintenance, and handling unexpected issues. The smaller the business, the more important it becomes to avoid choices that introduce unnecessary complexity.\n\nThat is why, in most cases, the right question is not “can we build it?”, but “should we really build it?”. If there is already a licensed solution that covers most of the needs, it is often much more sensible to start there and customize it. This reduces time, cost, technical risk, and above all operational failure risk. For a small business, the value does not lie in having a unique piece of software in the world, but in having a reliable tool that actually works in the real environment.\n\nCustom development makes sense when the process is truly specific, when the competitive advantage comes from that workflow, or when existing solutions cannot cover the key requirements. In all other cases, starting from an existing base is often the most rational choice. This does not mean giving up quality: it means focusing effort where it really matters, instead of spending months rebuilding features that are already mature in other products.\n\nThere is another aspect that is often underestimated: operations. Putting an ERP online does not just mean “deploying the project on a server.” It means managing hosting, databases, backups, tests, permissions, monitoring, and ongoing maintenance. If someone starts from AI-generated code without solid direction, the result can easily become a system that is hard to maintain and fragile over time. AI can accelerate work, but it cannot replace design.\n\nIn my approach, I usually start from a very simple evaluation: what is the real problem, how much time is available, what budget makes sense, and how much complexity is the client truly ready to manage? From there, it becomes clear whether a customizable ERP is needed, a module integration is enough, or a broader project is justified. Technology comes after that, not before.\n\nThat is why, when I see requests like this, I tend to answer directly: first we should evaluate whether it is better to buy an existing solution or adapt one that is already available. It is a more honest, more sustainable, and often more economical starting point. And above all, it avoids confusing the desire to build with the client’s real need.\n\nIn the end, the best software is not the one that sounds most impressive. It is the one a business can actually use, maintain, and grow over time."
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Spesso nei gruppi di freelance capita di leggere richieste come questa: qualcuno ha bisogno di un ERP per la propria piccola società, magari ha già iniziato a generare codice con l’AI, e cerca una persona che lo aiuti a definire il progetto, portarlo online e testarlo. All’apparenza sembra un classico lavoro da sviluppatore. In realtà, prima ancora del codice, il vero tema è quasi sempre un altro: capire se abbia senso costruire tutto da zero."
+      },
+      {
+        "id": "un-erp-non-e-una-semplice-web-app",
+        "title": "Un ERP non è una semplice web app",
+        "image": "",
+        "body": "Quando un cliente immagina un ERP in un mese, funzionante senza problemi, il primo rischio è creare aspettative irrealistiche. Un ERP non è solo una web app con qualche schermata in più: significa definire processi, ruoli, dati, permessi, flussi operativi, test, manutenzione e gestione degli imprevisti. Più il progetto è piccolo dal lato aziendale, più è importante evitare scelte che introducono complessità inutile."
+      },
+      {
+        "id": "la-domanda-giusta-non-e-possiamo-svilupparlo",
+        "title": "La domanda giusta non è “possiamo svilupparlo?”",
+        "image": "",
+        "body": "Per questo, nella maggior parte dei casi, la domanda giusta non è “possiamo svilupparlo?”, ma “conviene davvero svilupparlo?”. Se esiste già una soluzione su licenza che copre buona parte delle necessità, spesso è molto più sensato partire da lì e personalizzarla. Questo riduce tempi, costi, rischio tecnico e soprattutto rischio di fallimento operativo. Per una piccola impresa, il valore non sta nell’avere un software unico al mondo, ma nell’avere uno strumento affidabile che funzioni davvero nel contesto reale.\n\nLo sviluppo custom ha senso quando il processo è davvero specifico, quando il vantaggio competitivo nasce proprio da quel flusso, oppure quando le soluzioni esistenti non riescono a coprire i requisiti chiave. In tutti gli altri casi, partire da una base esistente è spesso la scelta più razionale. Questo non significa rinunciare alla qualità: significa concentrare le energie dove servono davvero, evitando di spendere mesi a ricostruire funzioni già mature in altri prodotti."
+      },
+      {
+        "id": "ai-e-operativita-non-sostituiscono-la-progettazione",
+        "title": "AI e operatività non sostituiscono la progettazione",
+        "image": "",
+        "body": "C’è poi un altro aspetto che spesso viene sottovalutato: l’operatività. Portare un ERP online non vuol dire solo “mettere il progetto su un server”. Vuol dire gestire hosting, database, backup, test, permessi, monitoraggio e manutenzione continua. Se una persona parte da codice generato dall’AI senza una direzione solida, il rischio è ritrovarsi con un sistema difficile da mantenere e fragile nel tempo. L’AI può accelerare, ma non sostituisce la progettazione."
+      },
+      {
+        "id": "partire-dal-problema-reale",
+        "title": "Partire dal problema reale",
+        "image": "",
+        "body": "Nel mio approccio, parto quasi sempre da una valutazione molto semplice: qual è il problema reale, quanto tempo c’è, quale budget è sensato, e quanta complessità il cliente è davvero pronto a gestire. Da lì si capisce se serve un ERP da personalizzare, un modulo da integrare, oppure un progetto più ampio. La tecnologia viene dopo, non prima.\n\nPer questo, quando vedo richieste di questo tipo, tendo a rispondere in modo diretto: prima valutiamo se conviene comprare una soluzione già pronta o adattarne una esistente. È un punto di partenza più onesto, più sostenibile e spesso anche più economico. E soprattutto evita di confondere la voglia di costruire con la necessità reale del cliente.\n\nAlla fine, il miglior software non è quello più impressionante da raccontare. È quello che un’azienda riesce davvero a usare, mantenere e far crescere nel tempo."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "In freelance groups, it is common to see requests like this: someone needs an ERP for a small company, may already have started generating code with AI, and is looking for help to define the project, get it online, and test it. On the surface, it looks like a standard development job. In reality, before the code, the real question is usually different: does it make sense to build everything from scratch?"
+      },
+      {
+        "id": "un-erp-non-e-una-semplice-web-app",
+        "title": "An ERP Is Not Just a Web App",
+        "image": "",
+        "body": "When a client expects an ERP in one month, fully working and without problems, the first risk is unrealistic expectations. An ERP is not just another web app with a few extra screens: it requires defining processes, roles, data, permissions, workflows, testing, maintenance, and handling unexpected issues. The smaller the business, the more important it becomes to avoid choices that introduce unnecessary complexity."
+      },
+      {
+        "id": "la-domanda-giusta-non-e-possiamo-svilupparlo",
+        "title": "The Right Question Is Not “Can We Build It?”",
+        "image": "",
+        "body": "That is why, in most cases, the right question is not “can we build it?”, but “should we really build it?”. If there is already a licensed solution that covers most of the needs, it is often much more sensible to start there and customize it. This reduces time, cost, technical risk, and above all operational failure risk. For a small business, the value does not lie in having a unique piece of software in the world, but in having a reliable tool that actually works in the real environment.\n\nCustom development makes sense when the process is truly specific, when the competitive advantage comes from that workflow, or when existing solutions cannot cover the key requirements. In all other cases, starting from an existing base is often the most rational choice. This does not mean giving up quality: it means focusing effort where it really matters, instead of spending months rebuilding features that are already mature in other products."
+      },
+      {
+        "id": "ai-e-operativita-non-sostituiscono-la-progettazione",
+        "title": "AI and Operations Cannot Replace Design",
+        "image": "",
+        "body": "There is another aspect that is often underestimated: operations. Putting an ERP online does not just mean “deploying the project on a server.” It means managing hosting, databases, backups, tests, permissions, monitoring, and ongoing maintenance. If someone starts from AI-generated code without solid direction, the result can easily become a system that is hard to maintain and fragile over time. AI can accelerate work, but it cannot replace design."
+      },
+      {
+        "id": "partire-dal-problema-reale",
+        "title": "Start from the Real Problem",
+        "image": "",
+        "body": "In my approach, I usually start from a very simple evaluation: what is the real problem, how much time is available, what budget makes sense, and how much complexity is the client truly ready to manage? From there, it becomes clear whether a customizable ERP is needed, a module integration is enough, or a broader project is justified. Technology comes after that, not before.\n\nThat is why, when I see requests like this, I tend to answer directly: first we should evaluate whether it is better to buy an existing solution or adapt one that is already available. It is a more honest, more sustainable, and often more economical starting point. And above all, it avoids confusing the desire to build with the client’s real need.\n\nIn the end, the best software is not the one that sounds most impressive. It is the one a business can actually use, maintain, and grow over time."
+      }
+    ]
   }
 }
