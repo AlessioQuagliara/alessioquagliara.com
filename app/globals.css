@@ -260,3 +260,507 @@ body {
     transition: none !important;
   }
 }
+
+/* =========================================================================
+   ESPERIENZA DI LETTURA DEL BLOG
+   Design system dedicato agli articoli: tipografia, colori soft dark/light,
+   progress bar, TOC, callout e CTA. Tutto guidato da variabili CSS così che
+   il toggle [data-theme] possa cambiare palette senza toccare il markup.
+   ========================================================================= */
+
+:root {
+  /* --- Palette di lettura: DARK soft di default (non blu-quasi-nero) --- */
+  --article-bg: #0f172a; /* superficie principale dell'articolo */
+  --article-surface: #1e293b; /* card interne, code inline, callout base */
+  --article-surface-2: #172033; /* superfici alternative più scure */
+  --article-text: #e2e8f0; /* testo body (mai bianco puro) */
+  --article-heading: #f1f5f9; /* titoli */
+  --article-muted: #94a3b8; /* meta/secondari, contrasto >= 4.5:1 su --article-bg */
+  --article-link: #7ab7ff; /* link leggibile su dark */
+  --article-link-hover: #a9d1ff;
+  --article-accent: #3b82f6; /* accent blu, coerente col brand */
+  --article-border: rgba(148, 163, 184, 0.18);
+  --article-border-strong: rgba(148, 163, 184, 0.32);
+  --article-shadow: 0 30px 70px -50px rgba(2, 8, 23, 0.9);
+
+  /* --- Tipografia di lettura --- */
+  --article-font-size: 1.125rem; /* 18px */
+  --article-line-height: 1.75;
+  --article-measure: 70ch; /* line length ottimale desktop */
+
+  /* --- Callout: accenti per tipo --- */
+  --callout-takeaway: #f6c445;
+  --callout-note: #60a5fa;
+  --callout-tip: #34d399;
+  --callout-warning: #fb923c;
+}
+
+/* Light mode: attivato dal toggle via <html data-theme="light"> */
+:root[data-theme="light"] {
+  --article-bg: #f8fafc;
+  --article-surface: #eef2f7;
+  --article-surface-2: #e7edf5;
+  --article-text: #1f2937;
+  --article-heading: #0f172a;
+  --article-muted: #52607a; /* >= 4.5:1 su --article-bg */
+  --article-link: #1d4ed8;
+  --article-link-hover: #1e40af;
+  --article-accent: #2563eb;
+  --article-border: rgba(15, 23, 42, 0.12);
+  --article-border-strong: rgba(15, 23, 42, 0.2);
+  --article-shadow: 0 30px 70px -55px rgba(15, 23, 42, 0.35);
+  --callout-takeaway: #b7791f;
+  --callout-note: #2563eb;
+  --callout-tip: #059669;
+  --callout-warning: #c2410c;
+}
+
+/* --- Progress bar di lettura --------------------------------------------- */
+.reading-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 3px;
+  z-index: 70;
+  background: transparent;
+  pointer-events: none;
+}
+
+.reading-progress__bar {
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa 60%, #93c5fd);
+  box-shadow: 0 0 12px rgba(96, 165, 250, 0.6);
+  will-change: transform;
+}
+
+/* --- Layout articolo con TOC laterale ------------------------------------ */
+.article-layout {
+  display: block;
+}
+
+/* La griglia a due colonne scatta solo quando c'è una TOC da mostrare */
+@media (min-width: 1024px) {
+  .article-layout--with-toc {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 15rem;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+.article-aside {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .article-aside {
+    display: block;
+    position: sticky;
+    top: 6rem;
+  }
+}
+
+/* --- Card/superficie dell'articolo --------------------------------------- */
+.article-shell {
+  background: var(--article-bg);
+  border: 1px solid var(--article-border);
+  border-radius: 1.5rem;
+  padding: clamp(1.25rem, 4vw, 3.5rem);
+  box-shadow: var(--article-shadow);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] .article-shell {
+  color-scheme: light;
+}
+
+/* --- Prosa: tipografia e ritmo verticale --------------------------------- */
+.article-prose {
+  max-width: var(--article-measure);
+  margin-inline: auto;
+  font-size: var(--article-font-size);
+  line-height: var(--article-line-height);
+  color: var(--article-text);
+  overflow-wrap: break-word;
+}
+
+.article-prose > *:first-child {
+  margin-top: 0;
+}
+
+.article-prose p {
+  margin: 0 0 1.35em;
+}
+
+/* Gerarchia heading con spazio sopra/sotto aumentato */
+.article-prose h2 {
+  font-size: clamp(1.55rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--article-heading);
+  margin: 2.5em 0 0.7em;
+  scroll-margin-top: 6rem;
+  letter-spacing: -0.01em;
+}
+
+.article-prose h3 {
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--article-heading);
+  margin: 2em 0 0.55em;
+  scroll-margin-top: 6rem;
+}
+
+.article-prose h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--article-heading);
+  margin: 1.6em 0 0.5em;
+}
+
+.article-prose a {
+  color: var(--article-link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease;
+}
+
+.article-prose a:hover {
+  color: var(--article-link-hover);
+}
+
+.article-prose strong {
+  color: var(--article-heading);
+  font-weight: 700;
+}
+
+/* Liste con respiro */
+.article-prose ul,
+.article-prose ol {
+  margin: 0 0 1.35em;
+  padding-left: 1.4em;
+}
+
+.article-prose li {
+  margin: 0.4em 0;
+  padding-left: 0.2em;
+}
+
+.article-prose li::marker {
+  color: var(--article-accent);
+}
+
+.article-prose ul li::marker {
+  color: var(--article-muted);
+}
+
+/* Blockquote "semplice" (senza marcatore callout) */
+.article-prose blockquote {
+  margin: 1.8em 0;
+  padding: 0.4em 0 0.4em 1.25em;
+  border-left: 3px solid var(--article-accent);
+  color: var(--article-muted);
+  font-style: italic;
+}
+
+.article-prose blockquote p {
+  margin-bottom: 0.6em;
+}
+
+/* Separatore fra sezioni: più aria */
+.article-prose hr {
+  border: 0;
+  height: 1px;
+  background: var(--article-border-strong);
+  margin: 3em auto;
+  max-width: 60%;
+}
+
+/* Codice inline */
+.article-prose :not(pre) > code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--article-surface);
+  border: 1px solid var(--article-border);
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+  color: var(--article-heading);
+}
+
+/* Blocchi di codice (SyntaxHighlighter genera un div) */
+.article-prose pre,
+.article-prose div[class*="language-"] {
+  margin: 1.8em 0;
+  font-size: 0.95rem;
+}
+
+/* Immagini */
+.article-prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  border: 1px solid var(--article-border);
+  margin: 1.8em 0;
+}
+
+/* Tabelle */
+.article-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8em 0;
+  font-size: 0.95em;
+  display: block;
+  overflow-x: auto;
+}
+
+.article-prose th,
+.article-prose td {
+  border: 1px solid var(--article-border-strong);
+  padding: 0.6em 0.9em;
+  text-align: left;
+}
+
+.article-prose th {
+  background: var(--article-surface);
+  color: var(--article-heading);
+}
+
+/* --- Callout / box "Takeaway" -------------------------------------------- */
+.callout {
+  --callout-color: var(--article-accent);
+  margin: 2em 0;
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--article-border-strong);
+  border-left: 4px solid var(--callout-color);
+  background: var(--article-surface);
+}
+
+.callout--takeaway {
+  --callout-color: var(--callout-takeaway);
+}
+.callout--note {
+  --callout-color: var(--callout-note);
+}
+.callout--tip {
+  --callout-color: var(--callout-tip);
+}
+.callout--warning {
+  --callout-color: var(--callout-warning);
+}
+
+.callout__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--callout-color);
+}
+
+.callout__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.callout__body p {
+  margin: 0 0 0.6em;
+  color: var(--article-text);
+}
+
+/* --- Table of Contents ---------------------------------------------------- */
+.toc {
+  border-left: 1px solid var(--article-border-strong);
+  padding-left: 1.1rem;
+}
+
+.toc__title {
+  margin: 0 0 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--article-muted);
+}
+
+.toc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.toc__item--sub {
+  padding-left: 0.9rem;
+}
+
+.toc__link {
+  display: block;
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--article-muted);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  margin-left: -1.1rem;
+  padding-left: 1.1rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.toc__link:hover {
+  color: var(--article-link-hover);
+}
+
+.toc__link--active {
+  color: var(--article-heading);
+  font-weight: 600;
+  border-left-color: var(--article-accent);
+}
+
+/* --- Toggle tema ---------------------------------------------------------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.08);
+  color: #eaf2ff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(198, 220, 255, 0.55);
+}
+
+.theme-toggle__icon {
+  height: 1.05rem;
+  width: 1.05rem;
+}
+
+/* --- CTA finale ----------------------------------------------------------- */
+.article-cta {
+  margin: 3.5rem auto 0;
+  max-width: var(--article-measure);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border-radius: 1.25rem;
+  border: 1px solid var(--article-border-strong);
+  background:
+    radial-gradient(120% 120% at 0% 0%, rgba(59, 130, 246, 0.16), transparent 55%),
+    var(--article-surface);
+}
+
+.article-cta__heading {
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--article-heading);
+}
+
+.article-cta__subtitle {
+  margin: 0;
+  color: var(--article-muted);
+  line-height: 1.6;
+}
+
+.article-cta__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 1.5rem 0;
+}
+
+.article-cta__newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.9rem;
+  border: 1px dashed var(--article-border-strong);
+  background: var(--article-surface-2);
+}
+
+.article-cta__newsletter-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+  color: var(--article-heading);
+}
+
+.article-cta__newsletter-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--article-muted);
+}
+
+/* --- Focus states visibili ovunque --------------------------------------- */
+.article-prose a:focus-visible,
+.toc__link:focus-visible,
+.theme-toggle:focus-visible,
+.blog-card:focus-within {
+  outline: 2px solid var(--article-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* --- Card lista blog: altezze uniformi + hover più evidente -------------- */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(140, 180, 255, 0.6);
+  box-shadow: 0 34px 80px -50px rgba(2, 12, 32, 1);
+}
+
+.blog-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-card__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+/* L'estratto occupa lo spazio flessibile così il pulsante resta allineato */
+.blog-card__excerpt {
+  flex: 1 1 auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress__bar,
+  .blog-card,
+  .theme-toggle {
+    transition: none !important;
+  }
+}
+

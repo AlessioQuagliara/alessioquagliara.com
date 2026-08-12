@@ -234,7 +234,27 @@
       "readingTime": "{minutes} min di lettura",
       "youtube": "Video YouTube",
       "back": "Torna al blog",
-      "allPosts": "Tutti gli articoli"
+      "allPosts": "Tutti gli articoli",
+      "toc": "Contenuti",
+      "theme": {
+        "toLight": "Passa al tema chiaro",
+        "toDark": "Passa al tema scuro"
+      },
+      "callouts": {
+        "takeaway": "Lezione chiave",
+        "note": "Nota",
+        "tip": "Consiglio",
+        "warning": "Attenzione"
+      },
+      "cta": {
+        "heading": "Ti è stato utile?",
+        "subtitle": "Costruisco in pubblico: video, esperimenti e articoli come questo.",
+        "watchVideo": "Guarda il video completo",
+        "newsletterTitle": "Resta aggiornato",
+        "newsletterText": "Ricevi i nuovi articoli e i dietro le quinte dei progetti.",
+        "newsletterCta": "Iscriviti",
+        "nextLabel": "Leggi il prossimo articolo"
+      }
     },
     "education": {
       "metadata": {
@@ -245,7 +265,11 @@
       "title": "Formazione costruita tra tecnica, software e sistemi reali",
       "intro": "Nasce dall'incontro tra tecnica, sviluppo software e visione di business. Oggi il focus è AI, sistemi intelligenti e progettazione di soluzioni reali.",
       "learningStatement": "La formazione continua non è un riempitivo: è come tengo insieme crescita tecnica e visione di lungo periodo. Da {years} anni investo nello studio con questa logica.",
-      "pillars": ["Tecnica", "Software", "Business"],
+      "pillars": [
+        "Tecnica",
+        "Software",
+        "Business"
+      ],
       "items": [
         {
           "institution": "Università Telematica Internazionale UNINETTUNO",
@@ -253,7 +277,12 @@
           "status": "In Corso",
           "title": "Laurea triennale in Ingegneria Informatica - Sistemi Intelligenti",
           "description": "Percorso universitario orientato a programmazione avanzata, intelligenza artificiale, machine learning, reti neurali, sistemi embedded, IoT, cybersecurity e database, con attenzione ai sistemi intelligenti e alla progettazione software.",
-          "topics": ["AI & Machine Learning", "Sistemi Embedded", "Cybersecurity", "Database"],
+          "topics": [
+            "AI & Machine Learning",
+            "Sistemi Embedded",
+            "Cybersecurity",
+            "Database"
+          ],
           "image": "/uninettuno.png"
         },
         {
@@ -262,7 +291,12 @@
           "status": "",
           "title": "Diploma in Amministrazione, Finanza e Marketing",
           "description": "Percorso che ha rafforzato la comprensione di contabilità, marketing, logiche aziendali e sostenibilità economica dei progetti, aggiungendo una prospettiva utile anche nella costruzione di prodotti e servizi software.",
-          "topics": ["Economia", "Marketing", "Business Logic", "Contabilità"],
+          "topics": [
+            "Economia",
+            "Marketing",
+            "Business Logic",
+            "Contabilità"
+          ],
           "image": "/caioplinio.png"
         },
         {
@@ -271,7 +305,12 @@
           "status": "",
           "title": "Certificazione Full Stack Web Developer",
           "description": "Percorso intensivo orientato alla progettazione e allo sviluppo end-to-end di applicazioni web, che ha consolidato le basi pratiche su frontend, backend, database e logiche di prodotto.",
-          "topics": ["PHP", "JavaScript", "HTML/CSS", "Database"],
+          "topics": [
+            "PHP",
+            "JavaScript",
+            "HTML/CSS",
+            "Database"
+          ],
           "image": "/musaformazione.png"
         },
         {
@@ -280,7 +319,12 @@
           "status": "",
           "title": "Diploma in Tecnico Automazione",
           "description": "Formazione tecnica che ha costruito le basi del mio rapporto con automazione industriale, elettronica, reti e programmazione, e che ancora oggi influenza il mio modo di ragionare su sistemi, hardware e integrazione col mondo reale.",
-          "topics": ["Automazione", "Elettronica", "Reti", "Programmazione PLC"],
+          "topics": [
+            "Automazione",
+            "Elettronica",
+            "Reti",
+            "Programmazione PLC"
+          ],
           "image": "/padrisomaschi.png"
         }
       ]

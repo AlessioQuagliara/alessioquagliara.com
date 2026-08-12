@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { SectionReveal } from "@/components/home/section-reveal";
+import { ThemeToggle } from "@/components/blog/theme-toggle";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { buttonClass } from "@/components/ui/button";
 import { getLocalizedBlogPosts } from "@/lib/blog";
@@ -49,17 +50,22 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
       <SectionReveal motionPreset="dynamic" className="space-y-12">
-        <div className="max-w-3xl" data-reveal-item>
-          <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c9ddff]">
-            <AnimatedFaIcon icon={faBookOpen} animation="shimmer" className="text-[#d8e8ff]" />
-            <span>{blog.allPosts}</span>
-          </p>
-          <h1 className="mt-5 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            {blog.title}
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#e6f0ff]">
-            {blog.description}
-          </p>
+        <div className="flex items-start justify-between gap-4" data-reveal-item>
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c9ddff]">
+              <AnimatedFaIcon icon={faBookOpen} animation="shimmer" className="text-[#d8e8ff]" />
+              <span>{blog.allPosts}</span>
+            </p>
+            <h1 className="mt-5 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              {blog.title}
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#e6f0ff]">
+              {blog.description}
+            </p>
+          </div>
+          <ThemeToggle
+            labels={{ toDark: blog.theme.toDark, toLight: blog.theme.toLight }}
+          />
         </div>
 
         {posts.length > 0 ? (
@@ -67,11 +73,14 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             {posts.map((post, index) => (
               <article
                 key={post.slug}
-                className="overflow-hidden rounded-3xl border border-[#8cb4ff]/24 bg-[#081d48]/55 shadow-[0_28px_70px_-58px_rgba(2,12,32,1)]"
+                className="blog-card overflow-hidden rounded-3xl border border-[#8cb4ff]/24 bg-[#081d48]/55 shadow-[0_28px_70px_-58px_rgba(2,12,32,1)]"
                 data-reveal-item
                 data-parallax
               >
-                <Link href={withLang(`/blog/${post.slug}`, locale)} className="group block">
+                <Link
+                  href={withLang(`/blog/${post.slug}`, locale)}
+                  className="group blog-card__link"
+                >
                   <div className="relative aspect-[16/9] overflow-hidden bg-[#07173c]">
                     <Image
                       src={post.cover}
@@ -83,12 +92,12 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#06112a]/76 to-transparent" />
                   </div>
-                  <div className="p-6">
+                  <div className="blog-card__body p-6">
                     <div className="flex flex-wrap gap-2">
                       {post.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-full border border-[#8cb4ff]/28 bg-white/8 px-3 py-1 text-xs text-[#cfe1ff]"
+                          className="rounded-full border border-[#8cb4ff]/28 bg-white/8 px-3 py-1 text-xs text-[#d6e6ff]"
                         >
                           {tag}
                         </span>
@@ -98,11 +107,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                     <h2 className="mt-5 text-xl font-semibold leading-7 text-white">
                       {post.title}
                     </h2>
-                    <p className="mt-3 text-sm leading-7 text-[#c8dcff]">
+                    <p className="blog-card__excerpt mt-3 text-[0.95rem] leading-7 text-[#d3e3ff]">
                       {post.description}
                     </p>
 
-                    <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-[#aecaef]">
+                    <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-[#c3d8f5]">
                       <span className="inline-flex items-center gap-2">
                         <AnimatedFaIcon icon={faCalendarDays} animation="pulse" />
                         {formatDate(post.publishedAt, locale)}

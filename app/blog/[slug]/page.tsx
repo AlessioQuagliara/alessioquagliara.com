@@ -10,14 +10,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { SectionReveal } from "@/components/home/section-reveal";
-import { MarkdownContent } from "@/components/projects/markdown-content";
+import { ArticleContent } from "@/components/blog/article-content";
+import { ArticleCta } from "@/components/blog/article-cta";
+import { ReadingProgress } from "@/components/blog/reading-progress";
+import { TableOfContents } from "@/components/blog/table-of-contents";
+import { ThemeToggle } from "@/components/blog/theme-toggle";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { buttonClass } from "@/components/ui/button";
 import {
   getAllBlogPosts,
   getBlogPost,
   getLocalizedBlogPost,
+  getLocalizedBlogPosts,
 } from "@/lib/blog";
+import { extractToc } from "@/lib/toc";
 import { getLocaleFromLang, getMessages, withLang, type Locale } from "@/lib/i18n";
 
 type BlogPostPageProps = {
@@ -90,6 +96,18 @@ export default async function BlogPostPage({
 
   const localizedPost = getLocalizedBlogPost(post, locale);
 
+  // TOC dagli heading H2/H3 del corpo (mostrata solo con >= 3 H2)
+  const toc = extractToc(localizedPost.body);
+  const hasToc = toc.filter((item) => item.level === 2).length >= 3;
+
+  // "Prossimo articolo": quello successivo in ordine cronologico, con wrap
+  const allPosts = getLocalizedBlogPosts(locale);
+  const currentIndex = allPosts.findIndex((item) => item.slug === localizedPost.slug);
+  const nextPost =
+    allPosts.length > 1
+      ? allPosts[(currentIndex + 1) % allPosts.length]
+      : undefined;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -114,25 +132,29 @@ export default async function BlogPostPage({
   };
 
   return (
-    <article className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
+    <article className="mx-auto max-w-5xl px-6 py-12 sm:py-20">
+      <ReadingProgress />
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
       <SectionReveal motionPreset="dynamic" className="space-y-10">
-        <Link
-          href={withLang("/blog", locale)}
-          className={buttonClass({ variant: "secondary", className: "w-fit" })}
-          data-reveal-item
-        >
-          <span className="inline-flex items-center gap-2">
-            <AnimatedFaIcon icon={faArrowLeft} animation="float" />
-            <span>{blog.back}</span>
-          </span>
-        </Link>
+        <div className="flex items-center justify-between gap-4" data-reveal-item>
+          <Link
+            href={withLang("/blog", locale)}
+            className={buttonClass({ variant: "secondary", className: "w-fit" })}
+          >
+            <span className="inline-flex items-center gap-2">
+              <AnimatedFaIcon icon={faArrowLeft} animation="float" />
+              <span>{blog.back}</span>
+            </span>
+          </Link>
+          <ThemeToggle
+            labels={{ toDark: blog.theme.toDark, toLight: blog.theme.toLight }}
+          />
+        </div>
 
         <header className="max-w-4xl" data-reveal-item>
           <div className="flex flex-wrap gap-2">
@@ -194,7 +216,54 @@ export default async function BlogPostPage({
           <div className="absolute inset-0 bg-gradient-to-t from-[#06112a]/66 to-transparent" />
         </div>
 
-        <MarkdownContent content={localizedPost.body} />
+        <div
+          className={
+            hasToc ? "article-layout article-layout--with-toc" : "article-layout"
+          }
+          data-reveal-item
+        >
+          <div className="article-main">
+            <div className="article-shell">
+              <ArticleContent
+                content={localizedPost.body}
+                calloutLabels={{
+                  takeaway: blog.callouts.takeaway,
+                  note: blog.callouts.note,
+                  tip: blog.callouts.tip,
+                  warning: blog.callouts.warning,
+                }}
+              />
+            </div>
+
+            <ArticleCta
+              youtubeUrl={localizedPost.youtubeUrl}
+              nextPost={
+                nextPost
+                  ? {
+                      href: withLang(`/blog/${nextPost.slug}`, locale),
+                      title: nextPost.title,
+                    }
+                  : undefined
+              }
+              newsletterHref={withLang("/contact", locale)}
+              labels={{
+                heading: blog.cta.heading,
+                subtitle: blog.cta.subtitle,
+                watchVideo: blog.cta.watchVideo,
+                newsletterTitle: blog.cta.newsletterTitle,
+                newsletterText: blog.cta.newsletterText,
+                newsletterCta: blog.cta.newsletterCta,
+                nextLabel: blog.cta.nextLabel,
+              }}
+            />
+          </div>
+
+          {hasToc ? (
+            <aside className="article-aside">
+              <TableOfContents items={toc} title={blog.toc} />
+            </aside>
+          ) : null}
+        </div>
       </SectionReveal>
     </article>
   );

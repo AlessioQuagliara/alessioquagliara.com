@@ -74,12 +74,12 @@ function CookieConsent() {
   }
 
   return (
-    <div className="fixed inset-0 z-90 flex items-end justify-center px-4 py-6 sm:p-6 sm:items-start sm:justify-end">
-      {/* Overlay */}
-      <div className="absolute inset-0 z-90 bg-[#020b1f]/55 backdrop-blur-[1px] transition-opacity"></div>
-      
+    // Banner ancorato in basso, non bloccante: nessun overlay a tutto schermo.
+    // pointer-events-none sul wrapper lascia il sito utilizzabile; il banner
+    // riattiva i click su di sé con pointer-events-auto.
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-90 flex justify-center px-4 pb-4 sm:justify-end sm:px-6 sm:pb-6">
       {/* Cookie Banner */}
-      <div className="relative z-91 w-full max-w-lg transform rounded-2xl border border-[#b9d2ff] bg-[#f7faff] shadow-xl transition-all duration-300 ease-in-out">
+      <div className="pointer-events-auto relative z-91 w-full max-w-md transform rounded-2xl border border-[#b9d2ff] bg-[#f7faff] shadow-2xl transition-all duration-300 ease-in-out">
         <div className="p-6">
           {/* Header */}
           <div className="flex items-start space-x-3 mb-4">

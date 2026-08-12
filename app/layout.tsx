@@ -69,6 +69,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        {/* Applica il tema di lettura salvato prima del paint per evitare il flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('reading-theme');document.documentElement.setAttribute('data-theme', t==='light'?'light':'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
+          }}
+        />
+      </head>
       <body className="text-slate-50 antialiased">
         <div className="site-shell flex min-h-screen flex-col">
           <ScrollToTop />

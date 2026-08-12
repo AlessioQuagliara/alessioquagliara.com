@@ -234,7 +234,27 @@
       "readingTime": "{minutes} min read",
       "youtube": "YouTube video",
       "back": "Back to blog",
-      "allPosts": "All posts"
+      "allPosts": "All posts",
+      "toc": "Contents",
+      "theme": {
+        "toLight": "Switch to light theme",
+        "toDark": "Switch to dark theme"
+      },
+      "callouts": {
+        "takeaway": "Key takeaway",
+        "note": "Note",
+        "tip": "Tip",
+        "warning": "Warning"
+      },
+      "cta": {
+        "heading": "Found this useful?",
+        "subtitle": "I build in public: videos, experiments and articles like this one.",
+        "watchVideo": "Watch the full video",
+        "newsletterTitle": "Stay in the loop",
+        "newsletterText": "Get new articles and behind-the-scenes of the projects.",
+        "newsletterCta": "Subscribe",
+        "nextLabel": "Read the next article"
+      }
     },
     "education": {
       "metadata": {
@@ -245,7 +265,11 @@
       "title": "Education built across engineering, software, and real systems",
       "intro": "It comes from the intersection of engineering, software development, and business perspective. Today the focus is AI, intelligent systems, and real solution design.",
       "learningStatement": "Continuous learning is not filler work: it's how I connect technical growth and long-term vision. For {years} years I've invested in study with this mindset.",
-      "pillars": ["Engineering", "Software", "Business"],
+      "pillars": [
+        "Engineering",
+        "Software",
+        "Business"
+      ],
       "items": [
         {
           "institution": "Universita Telematica Internazionale UNINETTUNO",
@@ -253,7 +277,12 @@
           "status": "Ongoing",
           "title": "Bachelor's Degree in Computer Engineering - Intelligent Systems",
           "description": "University path focused on advanced programming, artificial intelligence, machine learning, neural networks, embedded systems, IoT, cybersecurity, and databases, with attention to intelligent systems and software design.",
-          "topics": ["AI & Machine Learning", "Embedded Systems", "Cybersecurity", "Databases"],
+          "topics": [
+            "AI & Machine Learning",
+            "Embedded Systems",
+            "Cybersecurity",
+            "Databases"
+          ],
           "image": "/uninettuno.png"
         },
         {
@@ -262,7 +291,12 @@
           "status": "",
           "title": "Diploma in Administration, Finance and Marketing",
           "description": "A path that strengthened my understanding of accounting, marketing, business logic, and project sustainability, adding a perspective that is useful when building software products and services.",
-          "topics": ["Economics", "Marketing", "Business Logic", "Accounting"],
+          "topics": [
+            "Economics",
+            "Marketing",
+            "Business Logic",
+            "Accounting"
+          ],
           "image": "/caioplinio.png"
         },
         {
@@ -271,7 +305,12 @@
           "status": "",
           "title": "Full Stack Web Developer Certification",
           "description": "An intensive path focused on end-to-end web application design and development, which consolidated practical foundations across frontend, backend, databases, and product logic.",
-          "topics": ["PHP", "JavaScript", "HTML/CSS", "Databases"],
+          "topics": [
+            "PHP",
+            "JavaScript",
+            "HTML/CSS",
+            "Databases"
+          ],
           "image": "/musaformazione.png"
         },
         {
@@ -280,7 +319,12 @@
           "status": "",
           "title": "Diploma in Automation Technology",
           "description": "Technical training that built the foundations of my relationship with industrial automation, electronics, networks, and programming, and still shapes how I think about systems, hardware, and real-world integration.",
-          "topics": ["Automation", "Electronics", "Networks", "PLC Programming"],
+          "topics": [
+            "Automation",
+            "Electronics",
+            "Networks",
+            "PLC Programming"
+          ],
           "image": "/padrisomaschi.png"
         }
       ]
