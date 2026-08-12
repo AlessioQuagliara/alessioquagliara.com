@@ -63,13 +63,13 @@
         "description": "Indie hacker e studente di AI engineering che costruisce in pubblico piccoli SaaS, automazioni e strumenti operativi ispirati a problemi reali."
       },
       "badge": "Build in Public · SaaS · AI Engineering",
-      "title": "Costruisco piccoli SaaS in pubblico, mentre studio AI engineering.",
-      "description": "Studente di Ingegneria Informatica, appassionato di automazione e sistemi fisici. Documento ogni esperimento: scelte tecniche, errori, iterazioni.",
-      "ctaProjects": "Vedi i progetti",
-      "ctaContact": "Prenota una chiamata",
+      "title": "Costruisco piccoli SaaS e strumenti operativi per rendere più semplici i flussi reali.",
+      "description": "Studio Ingegneria Informatica e trasformo problemi di magazzino, produzione e lavoro quotidiano in prototipi software, automazioni e sistemi connessi.",
+      "ctaProjects": "Esplora i progetti",
+      "ctaContact": "Scrivimi",
       "sections": {
         "whatIBuild": {
-          "title": "What I Build",
+          "title": "Cosa costruisco",
           "subtitle": "Tre aree, tre modi diversi di risolvere problemi con codice.",
           "cards": [
             {
@@ -87,7 +87,7 @@
           ]
         },
         "howIWork": {
-          "title": "How I Work",
+          "title": "Come lavoro",
           "subtitle": "Meno claim, più pratica: sto imparando seriamente costruendo in pubblico.",
           "quote": "Non uso complessità per impressionare. La tolgo finché il progetto respira meglio.",
           "cards": [
@@ -106,14 +106,14 @@
           ]
         },
         "selectedProjects": {
-          "title": "Selected Projects",
+          "title": "Progetti selezionati",
           "subtitle": "Pochi progetti, ma rappresentativi: prodotto, automazione, sistemi reali.",
           "intro": "Preferisco pochi progetti veri a un portfolio pieno di esperimenti scollegati.",
           "eyebrow": "SaaS · automazione · tooling AI/LLM · software operativo",
           "allProjects": "Vedi tutti i progetti"
         },
         "technicalFocus": {
-          "title": "Technical Focus",
+          "title": "Focus tecnico",
           "subtitle": "Le aree che sto usando e consolidando sul campo, senza flexing di stack.",
           "blocks": [
             {
@@ -163,16 +163,16 @@
           "text": "Arduino, ESP32 e automazione mi distinguono da un dev solo-web: mi piace quando il software tocca sensori, oggetti fisici e processi reali."
         }
       ],
-      "focusAreasTitle": "Focus Areas",
+      "focusAreasTitle": "Aree di focus",
       "focusAreas": [
-        "Building SaaS in Public",
-        "Flask & Quart Backend",
-        "AI/LLM Tooling",
-        "Arduino / ESP32 Prototyping",
-        "Warehouse & Production Tools",
-        "Basi di Sistemi Embedded"
+        "SaaS costruiti in pubblico",
+        "Backend Flask & Quart",
+        "Tooling AI/LLM",
+        "Prototipi Arduino / ESP32",
+        "Strumenti magazzino & produzione",
+        "Basi di sistemi embedded"
       ],
-      "closing": "Il mio obiettivo è diventare più forte costruendo cose vere e documentando il percorso.",
+      "closing": "Il mio obiettivo è diventare più solido costruendo cose vere e documentando il percorso, con un interesse crescente per AI e sistemi intelligenti applicati a problemi operativi.",
       "cta": {
         "title": "Vuoi confrontarti?",
         "text": "Se vuoi parlare di un problema concreto o seguire il percorso, scrivimi.",
@@ -186,7 +186,7 @@
         "description": "Contatti per confrontarsi su piccoli SaaS, automazione, tooling AI/LLM, magazzino, produzione e software operativo."
       },
       "title": "Parliamone",
-      "intro": "Scrivimi se vuoi parlare di un progetto, un problema operativo o semplicemente scambiare idee.",
+      "intro": "Hai un processo manuale, un'idea SaaS o un'integrazione tra software e hardware da esplorare? Scrivimi con il contesto: ti rispondo con domande concrete, un primo confronto o una possibile direzione tecnica.",
       "description": "Qui sotto trovi dove posso essere utile e come contattarmi direttamente.",
       "helpTitle": "Posso esserti utile se...",
       "bullets": [
@@ -219,7 +219,8 @@
       "readmeUnavailable": "README non disponibile per questo progetto.",
       "notFoundTitle": "Progetto non trovato | Alessio Quagliara",
       "notFoundDescription": "I dettagli di questo progetto non sono disponibili.",
-      "detailsFallbackDescription": "Dettagli del repository, note di sviluppo e punti salienti dell'implementazione."
+      "detailsFallbackDescription": "Dettagli del repository, note di sviluppo e punti salienti dell'implementazione.",
+      "featured": "In evidenza"
     },
     "blog": {
       "metadata": {
@@ -236,10 +237,6 @@
       "back": "Torna al blog",
       "allPosts": "Tutti gli articoli",
       "toc": "Contenuti",
-      "theme": {
-        "toLight": "Passa al tema chiaro",
-        "toDark": "Passa al tema scuro"
-      },
       "callouts": {
         "takeaway": "Lezione chiave",
         "note": "Nota",
@@ -254,7 +251,8 @@
         "newsletterText": "Ricevi i nuovi articoli e i dietro le quinte dei progetti.",
         "newsletterCta": "Iscriviti",
         "nextLabel": "Leggi il prossimo articolo"
-      }
+      },
+      "microcopy": "Diario di bordo su validazione, sviluppo e iterazioni."
     },
     "education": {
       "metadata": {
@@ -264,7 +262,7 @@
       "eyebrow": "Percorso di Formazione",
       "title": "Formazione costruita tra tecnica, software e sistemi reali",
       "intro": "Nasce dall'incontro tra tecnica, sviluppo software e visione di business. Oggi il focus è AI, sistemi intelligenti e progettazione di soluzioni reali.",
-      "learningStatement": "La formazione continua non è un riempitivo: è come tengo insieme crescita tecnica e visione di lungo periodo. Da {years} anni investo nello studio con questa logica.",
+      "learningStatement": "La formazione continua non è un riempitivo: è il modo in cui tengo insieme crescita tecnica e visione di lungo periodo.",
       "pillars": [
         "Tecnica",
         "Software",

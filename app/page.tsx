@@ -45,6 +45,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         locale={locale}
         repos={repos}
         noDescriptionLabel={projects.cardNoDescription}
+        featuredLabel={projects.featured}
         content={home.sections}
       />
     </>

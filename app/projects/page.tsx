@@ -44,13 +44,14 @@ export default async function ProjectsPage({ searchParams }: ProjectsPageProps) 
           {projects.description}
         </p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid items-stretch gap-6 md:grid-cols-2">
           {repos.map((repo) => (
             <ProjectCard
               key={repo.id}
               repo={repo}
               locale={locale}
               noDescriptionLabel={projects.cardNoDescription}
+              featuredLabel={projects.featured}
             />
           ))}
         </div>

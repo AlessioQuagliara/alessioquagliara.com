@@ -1,4 +1,4 @@
-type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "danger" | "outline";
 type ButtonSize = "sm" | "md" | "lg";
 
 type ButtonClassOptions = {
@@ -17,6 +17,9 @@ const variantClasses: Record<ButtonVariant, string> = {
     "border border-transparent bg-transparent text-[#c9ddff] hover:bg-[#d7e5ff]/15 hover:text-white",
   danger:
     "border border-[#e23a5e] bg-[#e23a5e] text-white hover:bg-[#bf2e4d] hover:border-[#bf2e4d]",
+  // Variante per superfici chiare (blog light-only): bordo tenue, testo blu.
+  outline:
+    "border border-[#d0d7e2] bg-white text-[#1d4ed8] hover:border-[#1d4ed8] hover:bg-[#f1f5ff]",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

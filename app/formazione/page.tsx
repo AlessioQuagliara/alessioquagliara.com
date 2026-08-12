@@ -35,10 +35,7 @@ export async function generateMetadata({
 export default async function FormazionePage({ searchParams }: FormazionePageProps) {
   const locale = getLocaleFromLang((await searchParams).lang);
   const education = getMessages(locale).site.education;
-  const learningYears = new Date().getFullYear() - 1998;
-  const learningStatement = education.learningStatement.includes("{years}")
-    ? education.learningStatement.replace("{years}", String(learningYears))
-    : education.learningStatement;
+  const learningStatement = education.learningStatement;
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">

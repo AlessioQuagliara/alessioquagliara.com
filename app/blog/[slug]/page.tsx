@@ -10,11 +10,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { SectionReveal } from "@/components/home/section-reveal";
-import { ArticleContent } from "@/components/blog/article-content";
 import { ArticleCta } from "@/components/blog/article-cta";
 import { ReadingProgress } from "@/components/blog/reading-progress";
+import { SectionBlocks } from "@/components/blog/section-blocks";
 import { TableOfContents } from "@/components/blog/table-of-contents";
-import { ThemeToggle } from "@/components/blog/theme-toggle";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { buttonClass } from "@/components/ui/button";
 import {
@@ -96,9 +95,14 @@ export default async function BlogPostPage({
 
   const localizedPost = getLocalizedBlogPost(post, locale);
 
-  // TOC dagli heading H2/H3 del corpo (mostrata solo con >= 3 H2)
-  const toc = extractToc(localizedPost.body);
-  const hasToc = toc.filter((item) => item.level === 2).length >= 3;
+  // TOC costruita dalle sezioni (H2 = titolo sezione) + eventuali H3 nel body.
+  // Mostrata solo quando ci sono >= 3 sezioni con titolo.
+  const titledSections = localizedPost.sections.filter((section) => section.title);
+  const toc = titledSections.flatMap((section) => [
+    { id: section.id, text: section.title, level: 2 as const },
+    ...extractToc(section.body).filter((item) => item.level === 3),
+  ]);
+  const hasToc = titledSections.length >= 3;
 
   // "Prossimo articolo": quello successivo in ordine cronologico, con wrap
   const allPosts = getLocalizedBlogPosts(locale);
@@ -141,19 +145,16 @@ export default async function BlogPostPage({
         }}
       />
       <SectionReveal motionPreset="dynamic" className="space-y-10">
-        <div className="flex items-center justify-between gap-4" data-reveal-item>
+        <div data-reveal-item>
           <Link
             href={withLang("/blog", locale)}
-            className={buttonClass({ variant: "secondary", className: "w-fit" })}
+            className={buttonClass({ variant: "outline", className: "w-fit" })}
           >
             <span className="inline-flex items-center gap-2">
               <AnimatedFaIcon icon={faArrowLeft} animation="float" />
               <span>{blog.back}</span>
             </span>
           </Link>
-          <ThemeToggle
-            labels={{ toDark: blog.theme.toDark, toLight: blog.theme.toLight }}
-          />
         </div>
 
         <header className="max-w-4xl" data-reveal-item>
@@ -161,21 +162,21 @@ export default async function BlogPostPage({
             {localizedPost.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-[#8cb4ff]/28 bg-white/8 px-3 py-1 text-xs text-[#cfe1ff]"
+                className="rounded-full border border-[#e5e7eb] bg-[#f1f5f9] px-3 py-1 text-xs font-medium text-[#1d4ed8]"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          <h1 className="mt-6 text-4xl font-black leading-tight text-white sm:text-6xl">
+          <h1 className="mt-6 text-4xl font-black leading-tight text-[#0f172a] sm:text-6xl">
             {localizedPost.title}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#e6f0ff]">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4b5563]">
             {localizedPost.description}
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-[#bdd5ff]">
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-[#6b7280]">
             <span className="inline-flex items-center gap-2">
               <AnimatedFaIcon icon={faCalendarDays} animation="pulse" />
               {blog.published} {formatDate(localizedPost.publishedAt, locale)}
@@ -192,7 +193,7 @@ export default async function BlogPostPage({
                 href={localizedPost.youtubeUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-[#d8e8ff] hover:text-white"
+                className="inline-flex items-center gap-2 font-medium text-[#1d4ed8] hover:text-[#1e3a8a]"
               >
                 <AnimatedFaIcon icon={faVideo} animation="shimmer" />
                 {blog.youtube}
@@ -202,7 +203,7 @@ export default async function BlogPostPage({
         </header>
 
         <div
-          className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-[#8cb4ff]/24 bg-[#07173c] shadow-[0_32px_80px_-58px_rgba(2,12,32,1)]"
+          className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-[#e5e7eb] bg-[#f1f5f9] shadow-[0_24px_60px_-45px_rgba(15,23,42,0.4)]"
           data-reveal-item
         >
           <Image
@@ -213,7 +214,6 @@ export default async function BlogPostPage({
             sizes="(max-width: 1152px) 100vw, 1152px"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#06112a]/66 to-transparent" />
         </div>
 
         <div
@@ -223,17 +223,15 @@ export default async function BlogPostPage({
           data-reveal-item
         >
           <div className="article-main">
-            <div className="article-shell">
-              <ArticleContent
-                content={localizedPost.body}
-                calloutLabels={{
-                  takeaway: blog.callouts.takeaway,
-                  note: blog.callouts.note,
-                  tip: blog.callouts.tip,
-                  warning: blog.callouts.warning,
-                }}
-              />
-            </div>
+            <SectionBlocks
+              sections={localizedPost.sections}
+              calloutLabels={{
+                takeaway: blog.callouts.takeaway,
+                note: blog.callouts.note,
+                tip: blog.callouts.tip,
+                warning: blog.callouts.warning,
+              }}
+            />
 
             <ArticleCta
               youtubeUrl={localizedPost.youtubeUrl}

@@ -260,59 +260,53 @@ body {
     transition: none !important;
   }
 }
-
 /* =========================================================================
-   ESPERIENZA DI LETTURA DEL BLOG
-   Design system dedicato agli articoli: tipografia, colori soft dark/light,
-   progress bar, TOC, callout e CTA. Tutto guidato da variabili CSS così che
-   il toggle [data-theme] possa cambiare palette senza toccare il markup.
+   ESPERIENZA DI LETTURA DEL BLOG — LIGHT ONLY
+   Design system dedicato agli articoli: tema chiaro permanente, tipografia,
+   struttura a "blocchi da quaderno" collegati, TOC scura, callout e CTA.
+   Guidato da variabili CSS su :root (nessun toggle, nessun data-theme).
    ========================================================================= */
 
 :root {
-  /* --- Palette di lettura: DARK soft di default (non blu-quasi-nero) --- */
-  --article-bg: #0f172a; /* superficie principale dell'articolo */
-  --article-surface: #1e293b; /* card interne, code inline, callout base */
-  --article-surface-2: #172033; /* superfici alternative più scure */
-  --article-text: #e2e8f0; /* testo body (mai bianco puro) */
-  --article-heading: #f1f5f9; /* titoli */
-  --article-muted: #94a3b8; /* meta/secondari, contrasto >= 4.5:1 su --article-bg */
-  --article-link: #7ab7ff; /* link leggibile su dark */
-  --article-link-hover: #a9d1ff;
-  --article-accent: #3b82f6; /* accent blu, coerente col brand */
-  --article-border: rgba(148, 163, 184, 0.18);
-  --article-border-strong: rgba(148, 163, 184, 0.32);
-  --article-shadow: 0 30px 70px -50px rgba(2, 8, 23, 0.9);
+  /* --- Palette di lettura: LIGHT permanente --- */
+  --article-bg: #f8fafc; /* superficie di lettura */
+  --article-surface: #ffffff; /* card/blocchi */
+  --article-surface-2: #f1f5f9; /* superfici alternative */
+  --article-text: #1f2937; /* testo body */
+  --article-heading: #0f172a; /* titoli */
+  --article-muted: #4b5563; /* secondari (contrasto elevato su bg) */
+  --article-muted-2: #6b7280; /* meta (contrasto >= 4.5:1 su bg) */
+  --article-link: #1d4ed8; /* link/accent blu scuro leggibile */
+  --article-link-hover: #1e3a8a;
+  --article-accent: #1d4ed8;
+  --article-border: #e5e7eb; /* bordi leggeri */
+  --article-border-strong: #d1d9e6;
+  --article-shadow: 0 24px 60px -45px rgba(15, 23, 42, 0.4);
 
   /* --- Tipografia di lettura --- */
   --article-font-size: 1.125rem; /* 18px */
   --article-line-height: 1.75;
   --article-measure: 70ch; /* line length ottimale desktop */
 
-  /* --- Callout: accenti per tipo --- */
-  --callout-takeaway: #f6c445;
-  --callout-note: #60a5fa;
-  --callout-tip: #34d399;
-  --callout-warning: #fb923c;
-}
+  /* --- TOC scura --- */
+  --toc-bg: #0f172a;
+  --toc-surface: #1e293b;
+  --toc-text: #cbd5e1;
+  --toc-title: #94a3b8;
+  --toc-active: #93c5fd;
 
-/* Light mode: attivato dal toggle via <html data-theme="light"> */
-:root[data-theme="light"] {
-  --article-bg: #f8fafc;
-  --article-surface: #eef2f7;
-  --article-surface-2: #e7edf5;
-  --article-text: #1f2937;
-  --article-heading: #0f172a;
-  --article-muted: #52607a; /* >= 4.5:1 su --article-bg */
-  --article-link: #1d4ed8;
-  --article-link-hover: #1e40af;
-  --article-accent: #2563eb;
-  --article-border: rgba(15, 23, 42, 0.12);
-  --article-border-strong: rgba(15, 23, 42, 0.2);
-  --article-shadow: 0 30px 70px -55px rgba(15, 23, 42, 0.35);
+  /* --- Callout: accenti per tipo --- */
   --callout-takeaway: #b7791f;
   --callout-note: #2563eb;
   --callout-tip: #059669;
   --callout-warning: #c2410c;
+}
+
+/* Superficie chiara del segmento /blog (vedi app/blog/layout.tsx) */
+.blog-surface {
+  background: var(--article-bg);
+  color: var(--article-text);
+  min-height: 100vh;
 }
 
 /* --- Progress bar di lettura --------------------------------------------- */
@@ -330,8 +324,8 @@ body {
   width: 100%;
   transform: scaleX(0);
   transform-origin: 0 50%;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa 60%, #93c5fd);
-  box-shadow: 0 0 12px rgba(96, 165, 250, 0.6);
+  background: linear-gradient(90deg, #1d4ed8, #3b82f6 60%, #60a5fa);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.45);
   will-change: transform;
 }
 
@@ -340,46 +334,155 @@ body {
   display: block;
 }
 
-/* La griglia a due colonne scatta solo quando c'è una TOC da mostrare */
+/* La griglia a due colonne scatta solo quando c'e una TOC da mostrare */
 @media (min-width: 1024px) {
   .article-layout--with-toc {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 15rem;
+    grid-template-columns: minmax(0, 1fr) 16rem;
     gap: 3rem;
     align-items: start;
   }
 }
 
 .article-aside {
-  display: none;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 1024px) {
   .article-aside {
-    display: block;
     position: sticky;
     top: 6rem;
+    margin-top: 0;
   }
 }
 
-/* --- Card/superficie dell'articolo --------------------------------------- */
-.article-shell {
-  background: var(--article-bg);
-  border: 1px solid var(--article-border);
-  border-radius: 1.5rem;
-  padding: clamp(1.25rem, 4vw, 3.5rem);
-  box-shadow: var(--article-shadow);
-  color-scheme: dark;
+/* =========================================================================
+   STRUTTURA A "BLOCCHI DA QUADERNO"
+   Ogni sezione (H2) e un blocco staccato ma collegato da una linea verticale
+   sottile che scorre lungo il flusso, come uno schema scolastico.
+   ========================================================================= */
+.section-flow {
+  position: relative;
+  padding-left: 2.75rem; /* spazio per la linea + i nodi */
 }
 
-:root[data-theme="light"] .article-shell {
-  color-scheme: light;
+/* Linea verticale continua che collega i blocchi */
+.section-flow::before {
+  content: "";
+  position: absolute;
+  left: 0.95rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--article-border-strong) 6%,
+    var(--article-border-strong) 94%,
+    transparent
+  );
+}
+
+.section-block {
+  position: relative;
+  background: var(--article-surface);
+  border: 1px solid var(--article-border);
+  border-radius: 1.25rem;
+  padding: clamp(1.25rem, 3.5vw, 2.25rem);
+  box-shadow: var(--article-shadow);
+  margin-bottom: 2.75rem; /* respiro ampio tra blocchi */
+}
+
+.section-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Nodo sulla linea, allineato al titolo del blocco */
+.section-block::before {
+  content: "";
+  position: absolute;
+  left: -1.9rem;
+  top: 2rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 999px;
+  background: var(--article-accent);
+  border: 3px solid var(--article-bg);
+  box-shadow: 0 0 0 1px var(--article-border-strong);
+}
+
+/* Raccordo orizzontale dal nodo al blocco */
+.section-block::after {
+  content: "";
+  position: absolute;
+  left: -1.15rem;
+  top: 2.35rem;
+  width: 1.15rem;
+  height: 2px;
+  background: var(--article-border-strong);
+}
+
+/* Blocco intro (testo prima del primo H2): niente nodo, lead piu grande */
+.section-block--intro::before,
+.section-block--intro::after {
+  display: none;
+}
+
+.section-block--intro {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0 0 0.5rem;
+}
+
+.section-block--intro .article-prose {
+  font-size: 1.2rem;
+  color: var(--article-muted);
+}
+
+.section-block__title {
+  font-size: clamp(1.5rem, 3.5vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--article-heading);
+  margin: 0 0 1rem;
+  scroll-margin-top: 6rem;
+}
+
+/* Immagine opzionale della sezione */
+.section-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.85rem;
+  border: 1px solid var(--article-border);
+  margin: 0 0 1.5rem;
+}
+
+@media (max-width: 640px) {
+  /* Su mobile la linea si assottiglia e i blocchi restano pieni */
+  .section-flow {
+    padding-left: 1.4rem;
+  }
+  .section-flow::before {
+    left: 0.35rem;
+    width: 1px;
+  }
+  .section-block::before {
+    left: -1.2rem;
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .section-block::after {
+    display: none;
+  }
 }
 
 /* --- Prosa: tipografia e ritmo verticale --------------------------------- */
 .article-prose {
   max-width: var(--article-measure);
-  margin-inline: auto;
   font-size: var(--article-font-size);
   line-height: var(--article-line-height);
   color: var(--article-text);
@@ -390,35 +493,38 @@ body {
   margin-top: 0;
 }
 
+.article-prose > *:last-child {
+  margin-bottom: 0;
+}
+
 .article-prose p {
   margin: 0 0 1.35em;
 }
 
-/* Gerarchia heading con spazio sopra/sotto aumentato */
+/* Eventuali heading residui dentro il body sezione */
 .article-prose h2 {
-  font-size: clamp(1.55rem, 4vw, 2rem);
-  font-weight: 700;
-  line-height: 1.25;
-  color: var(--article-heading);
-  margin: 2.5em 0 0.7em;
-  scroll-margin-top: 6rem;
-  letter-spacing: -0.01em;
-}
-
-.article-prose h3 {
-  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  font-size: clamp(1.4rem, 3.5vw, 1.7rem);
   font-weight: 700;
   line-height: 1.3;
   color: var(--article-heading);
-  margin: 2em 0 0.55em;
+  margin: 2em 0 0.6em;
+  scroll-margin-top: 6rem;
+}
+
+.article-prose h3 {
+  font-size: clamp(1.15rem, 3vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--article-heading);
+  margin: 1.8em 0 0.5em;
   scroll-margin-top: 6rem;
 }
 
 .article-prose h4 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--article-heading);
-  margin: 1.6em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 
 .article-prose a {
@@ -438,7 +544,6 @@ body {
   font-weight: 700;
 }
 
-/* Liste con respiro */
 .article-prose ul,
 .article-prose ol {
   margin: 0 0 1.35em;
@@ -455,7 +560,7 @@ body {
 }
 
 .article-prose ul li::marker {
-  color: var(--article-muted);
+  color: var(--article-muted-2);
 }
 
 /* Blockquote "semplice" (senza marcatore callout) */
@@ -471,12 +576,11 @@ body {
   margin-bottom: 0.6em;
 }
 
-/* Separatore fra sezioni: più aria */
 .article-prose hr {
   border: 0;
   height: 1px;
   background: var(--article-border-strong);
-  margin: 3em auto;
+  margin: 2.5em auto;
   max-width: 60%;
 }
 
@@ -484,11 +588,11 @@ body {
 .article-prose :not(pre) > code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.9em;
-  background: var(--article-surface);
+  background: var(--article-surface-2);
   border: 1px solid var(--article-border);
   padding: 0.15em 0.4em;
   border-radius: 6px;
-  color: var(--article-heading);
+  color: #0f172a;
 }
 
 /* Blocchi di codice (SyntaxHighlighter genera un div) */
@@ -498,7 +602,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Immagini */
 .article-prose img {
   max-width: 100%;
   height: auto;
@@ -507,7 +610,6 @@ body {
   margin: 1.8em 0;
 }
 
-/* Tabelle */
 .article-prose table {
   width: 100%;
   border-collapse: collapse;
@@ -525,19 +627,19 @@ body {
 }
 
 .article-prose th {
-  background: var(--article-surface);
+  background: var(--article-surface-2);
   color: var(--article-heading);
 }
 
 /* --- Callout / box "Takeaway" -------------------------------------------- */
 .callout {
   --callout-color: var(--article-accent);
-  margin: 2em 0;
+  margin: 1.8em 0;
   padding: 1.1rem 1.25rem;
   border-radius: 0.9rem;
-  border: 1px solid var(--article-border-strong);
+  border: 1px solid var(--article-border);
   border-left: 4px solid var(--callout-color);
-  background: var(--article-surface);
+  background: var(--article-surface-2);
 }
 
 .callout--takeaway {
@@ -574,10 +676,13 @@ body {
   color: var(--article-text);
 }
 
-/* --- Table of Contents ---------------------------------------------------- */
+/* --- Table of Contents (scura) ------------------------------------------- */
 .toc {
-  border-left: 1px solid var(--article-border-strong);
-  padding-left: 1.1rem;
+  background: var(--toc-bg);
+  border: 1px solid var(--toc-surface);
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1.35rem;
+  box-shadow: 0 24px 55px -40px rgba(15, 23, 42, 0.55);
 }
 
 .toc__title {
@@ -586,7 +691,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--article-muted);
+  color: var(--toc-title);
+}
+
+.toc__toggle {
+  display: none;
 }
 
 .toc__list {
@@ -604,62 +713,73 @@ body {
 
 .toc__link {
   display: block;
-  padding: 0.3rem 0;
+  padding: 0.35rem 0.6rem;
   font-size: 0.85rem;
   line-height: 1.4;
-  color: var(--article-muted);
+  color: var(--toc-text);
   text-decoration: none;
+  border-radius: 0.4rem;
   border-left: 2px solid transparent;
-  margin-left: -1.1rem;
-  padding-left: 1.1rem;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
 .toc__link:hover {
-  color: var(--article-link-hover);
+  color: #ffffff;
+  background: rgba(148, 163, 184, 0.14);
 }
 
 .toc__link--active {
-  color: var(--article-heading);
+  color: #f8fafc;
   font-weight: 600;
-  border-left-color: var(--article-accent);
+  border-left-color: var(--toc-active);
+  background: rgba(147, 197, 253, 0.14);
 }
 
-/* --- Toggle tema ---------------------------------------------------------- */
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 999px;
-  border: 1px solid var(--border-soft);
-  background: rgba(255, 255, 255, 0.08);
-  color: #eaf2ff;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
-}
+/* TOC su mobile: diventa un pannello collassabile */
+@media (max-width: 1023px) {
+  .toc__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--article-border-strong);
+    border-radius: 0.75rem;
+    background: var(--toc-bg);
+    color: #f8fafc;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
 
-.theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(198, 220, 255, 0.55);
-}
+  .toc__toggle-icon {
+    transition: transform 0.2s ease;
+  }
 
-.theme-toggle__icon {
-  height: 1.05rem;
-  width: 1.05rem;
+  .toc__toggle[aria-expanded="true"] .toc__toggle-icon {
+    transform: rotate(180deg);
+  }
+
+  .toc {
+    margin-top: 0.5rem;
+  }
+
+  .toc[data-open="false"] {
+    display: none;
+  }
 }
 
 /* --- CTA finale ----------------------------------------------------------- */
 .article-cta {
-  margin: 3.5rem auto 0;
-  max-width: var(--article-measure);
+  margin: 3rem 0 0;
   padding: clamp(1.5rem, 4vw, 2.25rem);
   border-radius: 1.25rem;
-  border: 1px solid var(--article-border-strong);
+  border: 1px solid var(--article-border);
   background:
-    radial-gradient(120% 120% at 0% 0%, rgba(59, 130, 246, 0.16), transparent 55%),
+    radial-gradient(120% 120% at 0% 0%, rgba(37, 99, 235, 0.08), transparent 55%),
     var(--article-surface);
+  box-shadow: var(--article-shadow);
 }
 
 .article-cta__heading {
@@ -706,20 +826,24 @@ body {
 .article-cta__newsletter-text {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--article-muted);
+  color: var(--article-muted-2);
 }
 
 /* --- Focus states visibili ovunque --------------------------------------- */
 .article-prose a:focus-visible,
 .toc__link:focus-visible,
-.theme-toggle:focus-visible,
+.toc__toggle:focus-visible,
 .blog-card:focus-within {
   outline: 2px solid var(--article-accent);
   outline-offset: 3px;
   border-radius: 6px;
 }
 
-/* --- Card lista blog: altezze uniformi + hover più evidente -------------- */
+.toc__link:focus-visible {
+  outline-color: var(--toc-active);
+}
+
+/* --- Card lista blog: altezze uniformi + hover piu evidente -------------- */
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -730,8 +854,8 @@ body {
 
 .blog-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(140, 180, 255, 0.6);
-  box-shadow: 0 34px 80px -50px rgba(2, 12, 32, 1);
+  border-color: #c7d2fe;
+  box-shadow: 0 30px 60px -35px rgba(29, 78, 216, 0.4);
 }
 
 .blog-card__link {
@@ -746,7 +870,6 @@ body {
   flex-direction: column;
 }
 
-/* L'estratto occupa lo spazio flessibile così il pulsante resta allineato */
 .blog-card__excerpt {
   flex: 1 1 auto;
   display: -webkit-box;
@@ -759,8 +882,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .reading-progress__bar,
   .blog-card,
-  .theme-toggle {
+  .toc__toggle-icon {
     transition: none !important;
   }
 }
-

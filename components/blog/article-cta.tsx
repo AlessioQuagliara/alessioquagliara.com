@@ -61,7 +61,7 @@ export function ArticleCta({
         {nextPost ? (
           <Link
             href={nextPost.href}
-            className={buttonClass({ variant: "secondary", className: "gap-2" })}
+            className={buttonClass({ variant: "outline", className: "gap-2" })}
           >
             {labels.nextLabel}
             <AnimatedFaIcon icon={faArrowRight} animation="float" />

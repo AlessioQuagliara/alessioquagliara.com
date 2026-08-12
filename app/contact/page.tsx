@@ -70,18 +70,20 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             <span>{contact.directContactsTitle}</span>
           </h2>
           <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {/* CTA primaria: email in evidenza (riempita) */}
             <a
               href={`mailto:${contact.email}`}
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center text-[#24498f] transition-colors hover:text-[#0d2d72]"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[#2664eb] bg-[#2664eb] px-4 py-3 text-center font-semibold text-white transition-colors hover:bg-[#1f55ca] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2664eb] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <AnimatedFaIcon icon={faEnvelope} animation="pulse" className="text-sm" />
               <span>{contact.emailLabel}</span>
             </a>
+            {/* CTA secondarie: canali social e chiamata */}
             <a
               href={contact.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center text-[#24498f] transition-colors hover:text-[#0d2d72]"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center text-[#24498f] transition-colors hover:border-[#2664eb] hover:text-[#0d2d72] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2664eb] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <AnimatedFaIcon icon={faGithub} animation="float" className="text-sm" />
               <span>{contact.githubLabel}</span>
@@ -90,7 +92,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               href={contact.linkedinUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center text-[#24498f] transition-colors hover:text-[#0d2d72]"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center text-[#24498f] transition-colors hover:border-[#2664eb] hover:text-[#0d2d72] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2664eb] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <AnimatedFaIcon icon={faLinkedin} animation="float" className="text-sm" />
               <span>{contact.linkedinLabel}</span>
@@ -98,7 +100,8 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             <Link
               href={contact.calendlyUrl}
               target="_blank"
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center font-medium text-[#24498f] transition-colors hover:text-[#0d2d72]"
+              rel="noreferrer"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center font-medium text-[#24498f] transition-colors hover:border-[#2664eb] hover:text-[#0d2d72] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2664eb] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <AnimatedFaIcon icon={faCalendarDays} animation="pulse" className="text-sm" />
               <span>{contact.calendlyLabel}</span>

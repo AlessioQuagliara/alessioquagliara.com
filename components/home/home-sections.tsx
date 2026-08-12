@@ -27,10 +27,11 @@ type HomeSectionsProps = {
   locale: Locale;
   repos: GithubRepo[];
   noDescriptionLabel: string;
+  featuredLabel: string;
   content: Messages["site"]["home"]["sections"];
 };
 
-export function HomeSections({ locale, repos, noDescriptionLabel, content }: HomeSectionsProps) {
+export function HomeSections({ locale, repos, noDescriptionLabel, featuredLabel, content }: HomeSectionsProps) {
   const whatIBuildIcons = [faRocket, faLink, faMicrochip];
   const howIWorkIcons = [faScaleBalanced, faGaugeHigh, faIndustry];
   const technicalFocusIcons = [faCode, faServer, faBrain, faMicrochip];
@@ -140,11 +141,12 @@ export function HomeSections({ locale, repos, noDescriptionLabel, content }: Hom
 
         <div className="mt-10 grid gap-6 xl:grid-cols-3">
           {repos.map((repo) => (
-            <div key={repo.id} data-reveal-item data-parallax>
+            <div key={repo.id} data-reveal-item data-parallax className="h-full">
               <ProjectCard
                 repo={repo}
                 locale={locale}
                 noDescriptionLabel={noDescriptionLabel}
+                featuredLabel={featuredLabel}
               />
             </div>
           ))}

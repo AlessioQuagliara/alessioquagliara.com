@@ -63,10 +63,10 @@
         "description": "Indie hacker and AI engineering student building small SaaS products, automation experiments, and operational tools in public."
       },
       "badge": "Build in Public · SaaS · AI Engineering",
-      "title": "I build small SaaS in public, while studying AI engineering.",
-      "description": "Computer Engineering student interested in automation and physical systems. I document every experiment: decisions, mistakes, iterations.",
-      "ctaProjects": "View projects",
-      "ctaContact": "Book a call",
+      "title": "I build small SaaS and operational tools to make real-world workflows simpler.",
+      "description": "I study Computer Engineering and turn warehouse, production and everyday work problems into software prototypes, automations and connected systems.",
+      "ctaProjects": "Explore the projects",
+      "ctaContact": "Get in touch",
       "sections": {
         "whatIBuild": {
           "title": "What I Build",
@@ -172,7 +172,7 @@
         "Warehouse & Production Tools",
         "Embedded Systems Basics"
       ],
-      "closing": "My goal is to get stronger by building real things and documenting the path.",
+      "closing": "My goal is to get stronger by building real things and documenting the journey, with a growing interest in AI and intelligent systems applied to operational problems.",
       "cta": {
         "title": "Want to talk?",
         "text": "If you want to discuss a concrete problem or follow the journey, reach out.",
@@ -186,7 +186,7 @@
         "description": "Contact to discuss small SaaS products, automation, AI/LLM tooling, warehouse, production, and operational software."
       },
       "title": "Let's talk",
-      "intro": "Reach out if you want to talk about a project, an operational problem, or just exchange ideas.",
+      "intro": "Got a manual process, a SaaS idea, or a software-hardware integration to explore? Write to me with the context: I'll reply with concrete questions, a first exchange, or a possible technical direction.",
       "description": "Below you'll find where I can help and how to reach me directly.",
       "helpTitle": "I can help if...",
       "bullets": [
@@ -219,7 +219,8 @@
       "readmeUnavailable": "README not available for this project.",
       "notFoundTitle": "Project not found | Alessio Quagliara",
       "notFoundDescription": "Details for this project are not available.",
-      "detailsFallbackDescription": "Repository details, development notes, and implementation highlights."
+      "detailsFallbackDescription": "Repository details, development notes, and implementation highlights.",
+      "featured": "Featured"
     },
     "blog": {
       "metadata": {
@@ -236,10 +237,6 @@
       "back": "Back to blog",
       "allPosts": "All posts",
       "toc": "Contents",
-      "theme": {
-        "toLight": "Switch to light theme",
-        "toDark": "Switch to dark theme"
-      },
       "callouts": {
         "takeaway": "Key takeaway",
         "note": "Note",
@@ -254,7 +251,8 @@
         "newsletterText": "Get new articles and behind-the-scenes of the projects.",
         "newsletterCta": "Subscribe",
         "nextLabel": "Read the next article"
-      }
+      },
+      "microcopy": "A build log on validation, development and iterations."
     },
     "education": {
       "metadata": {
@@ -264,7 +262,7 @@
       "eyebrow": "Education Path",
       "title": "Education built across engineering, software, and real systems",
       "intro": "It comes from the intersection of engineering, software development, and business perspective. Today the focus is AI, intelligent systems, and real solution design.",
-      "learningStatement": "Continuous learning is not filler work: it's how I connect technical growth and long-term vision. For {years} years I've invested in study with this mindset.",
+      "learningStatement": "Continuous learning is not filler work: it's how I connect technical growth and long-term vision.",
       "pillars": [
         "Engineering",
         "Software",
