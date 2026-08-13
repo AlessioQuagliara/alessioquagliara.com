@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  faBookOpen,
-  faCalendarDays,
-  faClock,
-  faVideo,
-} from "@fortawesome/free-solid-svg-icons";
+import { Suspense } from "react";
+import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 
+import { BlogExplorer, type BlogExplorerCopy } from "@/components/blog/blog-explorer";
+import { type BlogCardData } from "@/components/blog/blog-list";
+import { type PathFilterOption } from "@/components/blog/path-filters";
 import { SectionReveal } from "@/components/home/section-reveal";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
-import { buttonClass } from "@/components/ui/button";
+import { blogPaths, countPostsForPath } from "@/lib/blog-paths";
 import { getLocalizedBlogPosts } from "@/lib/blog";
 import { getLocaleFromLang, getMessages, withLang, type Locale } from "@/lib/i18n";
 
@@ -46,6 +43,36 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const blog = getMessages(locale).site.blog;
   const posts = getLocalizedBlogPosts(locale);
 
+  // Dati card serializzabili, gia' localizzati, pronti per il client.
+  const cards: BlogCardData[] = posts.map((post) => ({
+    slug: post.slug,
+    href: withLang(`/blog/${post.slug}`, locale),
+    cover: post.cover,
+    title: post.title,
+    description: post.description,
+    tags: post.tags,
+    dateLabel: formatDate(post.publishedAt, locale),
+    readingLabel: blog.readingTime.replace("{minutes}", String(post.readingMinutes)),
+    youtubeLabel: post.youtubeUrl ? blog.youtube : null,
+  }));
+
+  // Opzioni filtro con conteggio articoli per percorso (case-insensitive).
+  const options: PathFilterOption[] = blogPaths.map((path) => ({
+    id: path.id,
+    label: path.label[locale],
+    count: countPostsForPath(posts, path.id),
+  }));
+
+  const explorerCopy: BlogExplorerCopy = {
+    title: blog.explore.title,
+    subtitle: blog.explore.subtitle,
+    ariaLabel: blog.explore.ariaLabel,
+    readPost: blog.readPost,
+    emptyTitle: blog.emptyPath.title,
+    emptyText: blog.emptyPath.text,
+    emptyCta: blog.emptyPath.cta,
+  };
+
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
       <SectionReveal motionPreset="dynamic" className="space-y-12">
@@ -66,80 +93,10 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         </div>
 
         {posts.length > 0 ? (
-          <div className="grid gap-6 lg:grid-cols-3">
-            {posts.map((post, index) => (
-              <article
-                key={post.slug}
-                className="blog-card overflow-hidden rounded-3xl border border-[#e5e7eb] bg-white shadow-[0_20px_45px_-30px_rgba(15,23,42,0.35)]"
-                data-reveal-item
-                data-parallax
-              >
-                <Link
-                  href={withLang(`/blog/${post.slug}`, locale)}
-                  className="group blog-card__link"
-                >
-                  <div className="relative aspect-[16/9] overflow-hidden bg-[#07173c]">
-                    <Image
-                      src={post.cover}
-                      alt={post.title}
-                      fill
-                      priority={index === 0}
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-cover transition duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#06112a]/76 to-transparent" />
-                  </div>
-                  <div className="blog-card__body p-6">
-                    <div className="flex flex-wrap gap-2">
-                      {post.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full border border-[#e5e7eb] bg-[#f1f5f9] px-3 py-1 text-xs font-medium text-[#1d4ed8]"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    <h2 className="mt-5 text-xl font-semibold leading-7 text-[#111827]">
-                      {post.title}
-                    </h2>
-                    <p className="blog-card__excerpt mt-3 text-[0.95rem] leading-7 text-[#4b5563]">
-                      {post.description}
-                    </p>
-
-                    <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-[#6b7280]">
-                      <span className="inline-flex items-center gap-2">
-                        <AnimatedFaIcon icon={faCalendarDays} animation="pulse" />
-                        {formatDate(post.publishedAt, locale)}
-                      </span>
-                      <span className="inline-flex items-center gap-2">
-                        <AnimatedFaIcon icon={faClock} animation="float" />
-                        {blog.readingTime.replace(
-                          "{minutes}",
-                          String(post.readingMinutes)
-                        )}
-                      </span>
-                      {post.youtubeUrl ? (
-                        <span className="inline-flex items-center gap-2">
-                          <AnimatedFaIcon icon={faVideo} animation="shimmer" />
-                          {blog.youtube}
-                        </span>
-                      ) : null}
-                    </div>
-
-                    <span
-                      className={buttonClass({
-                        variant: "outline",
-                        className: "mt-6",
-                      })}
-                    >
-                      {blog.readPost}
-                    </span>
-                  </div>
-                </Link>
-              </article>
-            ))}
+          <div data-reveal-item>
+            <Suspense fallback={null}>
+              <BlogExplorer cards={cards} options={options} copy={explorerCopy} />
+            </Suspense>
           </div>
         ) : (
           <p className="rounded-2xl border border-[#e5e7eb] bg-white p-6 text-[#4b5563]">

@@ -252,7 +252,18 @@
         "newsletterCta": "Subscribe",
         "nextLabel": "Read the next article"
       },
-      "microcopy": "A build log on validation, development and iterations."
+      "microcopy": "A build log on validation, development and iterations.",
+      "explore": {
+        "title": "What do you want to explore today?",
+        "subtitle": "From e-commerce failures to SaaS built in public: choose a path and follow the experiments.",
+        "ariaLabel": "Filter articles by editorial path",
+        "articles": "{count} articles"
+      },
+      "emptyPath": {
+        "title": "This path is just getting started.",
+        "text": "I am still collecting experiments, mistakes, and results to document. Come back soon or explore every article.",
+        "cta": "View all articles"
+      }
     },
     "education": {
       "metadata": {

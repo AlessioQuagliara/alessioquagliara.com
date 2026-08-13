@@ -879,10 +879,109 @@ body {
   overflow: hidden;
 }
 
+/* --- Filtri editoriali (percorsi) ---------------------------------------- */
+
+/* Scroll orizzontale accessibile con scrollbar nascosta (mobile). */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Pillole/button orizzontali dei percorsi editoriali. */
+.blog-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-filter-pill:hover {
+  border-color: #1d4ed8;
+  background: #f1f5ff;
+  color: #1d4ed8;
+}
+
+.blog-filter-pill:active {
+  transform: translateY(1px);
+}
+
+.blog-filter-pill:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #8ab0ff;
+}
+
+.blog-filter-pill--active {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 12px 30px -14px rgba(29, 78, 216, 0.7);
+}
+
+.blog-filter-pill--active:hover {
+  background: #1b45c0;
+  border-color: #1b45c0;
+  color: #ffffff;
+}
+
+.blog-filter-pill__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  border-radius: 9999px;
+  background: #eef2f7;
+  padding: 0 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  color: #64748b;
+}
+
+.blog-filter-pill--active .blog-filter-pill__count {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+/* Fade leggero al cambio filtro, senza layout shift evidente. */
+@keyframes blogListFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.blog-list-enter {
+  animation: blogListFade 0.32s ease both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reading-progress__bar,
   .blog-card,
+  .blog-filter-pill,
   .toc__toggle-icon {
     transition: none !important;
+  }
+
+  .blog-list-enter {
+    animation: none;
   }
 }

@@ -252,7 +252,18 @@
         "newsletterCta": "Iscriviti",
         "nextLabel": "Leggi il prossimo articolo"
       },
-      "microcopy": "Diario di bordo su validazione, sviluppo e iterazioni."
+      "microcopy": "Diario di bordo su validazione, sviluppo e iterazioni.",
+      "explore": {
+        "title": "Cosa vuoi esplorare oggi?",
+        "subtitle": "Dai fallimenti e-commerce ai SaaS costruiti in pubblico: scegli un percorso e segui gli esperimenti.",
+        "ariaLabel": "Filtra gli articoli per percorso editoriale",
+        "articles": "{count} articoli"
+      },
+      "emptyPath": {
+        "title": "Questo percorso è appena iniziato.",
+        "text": "Sto ancora raccogliendo esperimenti, errori e risultati da raccontare. Torna presto oppure esplora tutti gli articoli.",
+        "cta": "Vedi tutti gli articoli"
+      }
     },
     "education": {
       "metadata": {
