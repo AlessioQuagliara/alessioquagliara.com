@@ -1,0 +1,149 @@
+{
+  "slug": "quattro-soci-un-collo-di-bottiglia",
+  "publishedAt": "2026-09-23",
+  "updatedAt": "2026-09-23",
+  "cover": "/spotex_2.png",
+  "youtubeUrl": "",
+  "tags": [
+    "software house",
+    "governance",
+    "startup",
+    "saas",
+    "post-mortem",
+    "organizzazione"
+  ],
+  "title": {
+    "it": "Quattro soci, una software house e un solo collo di bottiglia",
+    "en": "Four Partners, One Software House, and a Single Bottleneck"
+  },
+  "description": {
+    "it": "Una post-mortem personale su ruoli formali, lavoro reale, comunicazione e sul costo umano di una software house in cui quasi ogni urgenza finiva sul CTO.",
+    "en": "A personal post-mortem on formal roles, real work, communication, and the human cost of a software house where almost every urgent task landed on the CTO."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Tra la fine del 2024 e la metà del 2025 ho vissuto la versione meno romantica possibile del costruire una software house.\n\nEravamo quattro soci. Sulla carta avevamo ruoli diversi, quote definite e una struttura che poteva sembrare sensata: tecnologia, finanza, operations e marketing. Nella pratica, quasi ogni problema operativo finiva nello stesso punto: io.\n\nClienti da seguire. Ticket da risolvere. Siti e applicazioni da consegnare. Infrastrutture da mantenere. Nuovi clienti da trovare. Un CMS da costruire per uscire dal lavoro puramente su commessa. Riunioni, richieste, test, messaggi, revisioni.\n\nE tutto questo mentre lavoravo anche come magazziniere per potermi mantenere, perché la società non mi garantiva un compenso sufficiente neppure per le spese più basilari.\n\nQuesto non è un articolo per decidere chi fosse il cattivo della storia. È una radiografia di un modello organizzativo che ha trasformato una persona disponibile nel punto di tenuta dell’intera azienda, fino a consumarla."
+      },
+      {
+        "id": "i-ruoli-sulla-carta",
+        "title": "I ruoli sulla carta",
+        "image": "",
+        "body": "Per ragioni di privacy userò nomi fittizi. I ruoli, le quote e le dinamiche descritte restano però quelli che ho vissuto direttamente.\n\nLa società era composta da quattro soci:\n\n- **Andrea**, CTO, con il 35%: sviluppo software, infrastruttura, assistenza tecnica, consegne e prodotti interni;\n- **Marco**, CFO e presidente del consiglio di amministrazione, con il 35%: finanza, rapporto con il commercialista e presidio societario;\n- **Luca**, COO, con il 15%: organizzazione operativa, coordinamento e rapporto con i clienti;\n- **Davide**, indicato come CMO e talvolta come socio finanziatore, con il 15% attraverso una sua società: marketing, commerciale e supporto alla crescita.\n\nA prima vista la struttura aveva una logica. Il problema non era l’assenza di titoli, ma la distanza tra i titoli e il lavoro che veniva effettivamente svolto ogni settimana.\n\nIn una piccola società, un ruolo non vale per come è scritto in un organigramma. Vale per ciò che succede quando arriva una scadenza, un cliente chiama, un pagamento è in ritardo, un server ha un problema o serve prendere una decisione scomoda.\n\n> [!NOTE]\n> I nomi sono fittizi. L’obiettivo non è identificare persone, ma raccontare un sistema organizzativo e le conseguenze che ha avuto sul lavoro quotidiano."
+      },
+      {
+        "id": "una-giornata-tipo",
+        "title": "Una giornata tipo",
+        "image": "",
+        "body": "Una giornata tipo non iniziava con una roadmap ordinata, un blocco di deep work o la costruzione tranquilla di un prodotto SaaS.\n\nIniziava con messaggi dei clienti. Richieste di modifiche. Ticket. Errori da riprodurre. Siti da aggiornare. Preventivi da preparare. Servizi da tenere online. Un cliente con una necessità urgente non aspetta che una piccola software house abbia messo in ordine le proprie responsabilità interne. Vuole una risposta. E quella risposta, quasi sempre, arrivava dal CTO.\n\nNel frattempo cercavo di sviluppare il prodotto che avrebbe dovuto cambiare il modello della società: un CMS proprietario. L’idea era semplice: smettere gradualmente di vivere soltanto di lavori su misura e costruire qualcosa di replicabile.\n\nMa quel prodotto non aveva un team dedicato, un budget dedicato, una roadmap protetta o una divisione reale del carico operativo. Veniva costruito tra un ticket e l’altro, tra una consegna e l’altra, tra un problema cliente e l’altro.\n\nDopo il lavoro tecnico arrivava il lavoro commerciale minimo necessario per non far morire l’attività: cercare potenziali clienti, rispondere ai contatti, capire se un progetto poteva sostenere cassa e costi. Poi tornavo ai clienti già acquisiti, perché un contratto non elimina manutenzione, supporto, aggiornamenti e richieste fuori perimetro.\n\nE dopo tutto questo, la sera, iniziava il secondo turno: quello in magazzino, necessario per vivere. Quando finiva il turno regolare, ricominciava quello al computer.\n\nCi sono state notti in cui ho continuato fino alle tre. Altre fino alle quattro. Per poi alzarmi alle sette e andare di nuovo al lavoro.\n\nNon è disciplina. Non è mentalità da founder. Non è sacrificio virtuoso. È debito di sonno trasformato in modello operativo."
+      },
+      {
+        "id": "il-cto-come-reparto-intero",
+        "title": "Quando il CTO diventa un reparto intero",
+        "image": "",
+        "body": "Il problema non era lavorare tanto. In una fase iniziale, lavorare tanto può anche essere normale. Il problema era la natura del lavoro: non c’era una funzione che potesse assorbire il caos senza scaricarlo sempre sulla stessa persona.\n\nIl CTO diventava contemporaneamente:\n\n- sviluppatore dei progetti dei clienti;\n- supporto tecnico e gestione ticket;\n- manutentore di hosting, domini, database e applicazioni;\n- persona che interveniva nelle urgenze;\n- project manager di fatto delle consegne;\n- interlocutore tecnico dei clienti;\n- persona che cercava nuovi lavori;\n- sviluppatore del prodotto proprietario che avrebbe dovuto far evolvere l’azienda.\n\nQuesta struttura ha un difetto enorme: può sembrare che funzioni finché la persona centrale riesce a compensare tutto. Poi, improvvisamente, ogni ritardo, ogni errore e ogni nuova richiesta dimostrano che non esisteva un sistema. Esisteva solo una persona che cercava di non farlo cadere.\n\n> [!TAKEAWAY]\n> Se un CTO è anche supporto, delivery, DevOps, account manager, commerciale e piano di continuità aziendale, non hai una struttura agile. Hai un singolo punto di rottura."
+      },
+      {
+        "id": "gli-altri-ruoli-nei-momenti-migliori",
+        "title": "Gli altri ruoli, nei momenti migliori",
+        "image": "",
+        "body": "Raccontare una situazione difficile in modo onesto significa anche riconoscere ciò che gli altri hanno fatto nei momenti in cui erano presenti e utili.\n\nNei periodi migliori, Marco inviava al commercialista gli estratti conto dall’app bancaria, così da permettergli di predisporre gli F24 dell’IVA, e provvedeva ai bonifici per pagare il commercialista. Era un’attività concreta e necessaria, anche se non bastava da sola a dare alla società una visione finanziaria completa e aggiornata.\n\nDavide portò almeno un piccolo lavoro da circa 40 euro. L’importo era simbolico rispetto al fabbisogno dell’azienda, ma il punto non è ridicolizzare un singolo cliente: il punto è capire la sproporzione tra ciò che serviva alla struttura e ciò che effettivamente entrava con continuità.\n\nLuca, nei suoi momenti migliori, contattava alcuni clienti al posto mio e cercava di organizzare le attività che dovevo svolgere. Era un aiuto reale: avere qualcuno che assorbe parte della comunicazione può alleggerire il tecnico. Ma organizzare il lavoro di una persona sovraccarica non equivale a creare capacità operativa aggiuntiva.\n\nIl problema non era che nessuno facesse mai nulla. Il problema era che i contributi non erano abbastanza costanti, coordinati o proporzionati da cambiare il centro di gravità del lavoro. Il sistema restava dipendente da una sola persona per la maggior parte delle attività che facevano avanzare o sopravvivere la società."
+      },
+      {
+        "id": "riunioni-test-e-pressione",
+        "title": "Riunioni, test e pressione",
+        "image": "",
+        "body": "Una delle dinamiche più logoranti era la distanza tra chiedere visibilità e contribuire a creare le condizioni perché il lavoro finisse.\n\nIl CMS veniva chiesto come prodotto da commercializzare. Venivano richiesti test, aggiornamenti, dimostrazioni e verifiche. Si discuteva di logo, slogan, posizionamento e di cosa avrebbe dovuto vendere l’azienda.\n\nSono discussioni legittime. Branding, marketing e qualità del prodotto contano. Ma diventano tossiche quando vengono aggiunte sopra un sistema in cui chi deve costruire il prodotto è già sommerso da clienti, supporto, consegne e lavoro esterno.\n\nUna domanda come “quando è pronto?” è utile solo se si accompagna a una seconda domanda: “cosa togliamo dal tuo carico per renderlo possibile?”.\n\nTestare un lavoro può migliorarlo. Pressare continuamente una persona già al limite, invece, può soltanto frammentare ulteriormente il poco tempo che ha per finirlo.\n\n> [!TIP]\n> Ogni richiesta di roadmap, demo o avanzamento dovrebbe avere accanto un proprietario del blocco e una scelta esplicita: aggiungiamo risorse, rimuoviamo attività, oppure spostiamo la data. Senza una di queste tre cose, la richiesta è solo pressione."
+      },
+      {
+        "id": "finanza-senza-visione-completa",
+        "title": "Finanza senza una visione completa",
+        "image": "",
+        "body": "Le riunioni periodiche avrebbero dovuto essere il momento per guardare l’azienda in faccia: clienti attivi, crediti da incassare, costi ricorrenti, spese previste, entrate, margini, scadenze fiscali, valore degli asset e priorità.\n\nTroppo spesso, però, la fotografia economica si riduceva al saldo del conto corrente e alla difficoltà di ottenere aggiornamenti dal commercialista.\n\nIl saldo bancario è un dato. Non è una strategia finanziaria.\n\nNon dice quali fatture devono ancora essere incassate. Non dice quali costi arriveranno il mese successivo. Non dice quali servizi si possono tagliare. Non dice quali progetti stanno bruciando ore senza margine. Non dice quanto costa davvero un cliente che apre ticket continuamente. Non dice se un prodotto interno ha un budget o viene finanziato con notti insonni.\n\nSenza una lettura completa, ogni decisione diventa reattiva. Si interviene quando arriva il problema, non quando i dati mostrano che il problema sta crescendo.\n\n> [!TAKEAWAY]\n> Fatturato non è liquidità. Saldo in banca non è margine. Un contratto non è un modello sostenibile."
+      },
+      {
+        "id": "le-quote-non-distribuiscono-il-lavoro",
+        "title": "Le quote non distribuiscono il lavoro",
+        "image": "",
+        "body": "Avere quattro soci non significa avere quattro persone che sostengono l’azienda in modo equivalente. Le quote distribuiscono proprietà, diritti e potenziali risultati economici. Non distribuiscono automaticamente lavoro, rischio operativo, responsabilità quotidiana o pressione psicologica.\n\nQuesto è uno degli errori più pericolosi nelle piccole società tecnologiche: confondere l’organigramma con il sistema operativo reale.\n\nPuoi avere un CTO, un CFO, un COO e un CMO. Ma se il CTO continua a essere l’unico che chiude le consegne, risolve le urgenze, parla con i clienti, tiene in vita l’infrastruttura e costruisce il prodotto futuro, gli altri ruoli non stanno creando una rete. Stanno ruotando intorno al collo di bottiglia.\n\nLa domanda che avremmo dovuto farci prima non era: “che ruolo vogliamo avere?”. Era: “quale risultato produce ogni ruolo, ogni settimana, senza che una sola persona debba ricordarlo, sollecitarlo o compensarlo?”.\n\n> [!WARNING]\n> In una società piccola, i ruoli non misurati e senza output verificabili diventano aspettative. E le aspettative non consegnano progetti, non gestiscono clienti e non pagano costi."
+      },
+      {
+        "id": "cosa-avrei-fatto-diversamente",
+        "title": "Cosa avrei fatto diversamente",
+        "image": "",
+        "body": "Con il senno di poi, non credo che avrei risolto tutto lavorando più ore. Quello era esattamente il riflesso che dovevo smettere di avere.\n\nAvrei imposto prima alcune regole semplici:\n\n1. **Un responsabile per ogni area**, con output concreti e una frequenza di aggiornamento: vendite, finanza, clienti, infrastruttura, prodotto.\n2. **Un bilancio operativo mensile**, non solo il saldo in banca: ricavi, crediti, costi ricorrenti, margini, ore spese, scadenze e cassa prevista.\n3. **Un perimetro di supporto clienti**, con tempi, priorità e attività fatturabili, invece di trattare ogni richiesta come urgente.\n4. **Tempo protetto per il prodotto**, finanziato e sottratto esplicitamente alla delivery per i clienti.\n5. **Documentazione di accessi, infrastruttura, contratti e responsabilità**, perché il valore dell’azienda non resti chiuso nella testa di una persona.\n6. **Decisioni scritte**, con responsabile, data e conseguenza se l’attività non viene svolta.\n7. **Una soglia di sostenibilità personale**: nessun progetto dovrebbe richiedere che una persona lavori di notte fino alle quattro e poi inizi un secondo lavoro alle sette per restare in piedi.\n\nQueste non sono regole da grande azienda. Sono regole minime per non fondare una società sul sacrificio invisibile di chi è più disposto a reggere."
+      },
+      {
+        "id": "la-lezione",
+        "title": "La lezione che porto via",
+        "image": "",
+        "body": "Non penso che questa esperienza dimostri che le società con soci siano destinate a fallire. Dimostra però che un gruppo di persone non diventa un’azienda solo perché ha quote, ruoli e una visura camerale.\n\nUn’azienda esiste davvero quando le responsabilità sono chiare, gli impegni sono verificabili, i numeri sono condivisi, i clienti hanno un perimetro, l’infrastruttura è documentata e il lavoro non dipende dall’eroismo di una singola persona.\n\nIl punto più doloroso è che per un po’ Spotex ha funzionato tecnicamente. I clienti avevano servizi. I progetti venivano consegnati. Le urgenze venivano risolte. Il CMS cresceva.\n\nMa funzionava perché qualcuno compensava continuamente i difetti del sistema con il proprio tempo, il proprio sonno e la propria disponibilità. Nessun modello del genere dura davvero.\n\nOggi non voglio più costruire software in quel modo. Voglio costruire prodotti e sistemi che possano essere mantenuti domani, con confini più chiari, costi più leggibili, responsabilità più concrete e meno complessità nascosta.\n\n> [!TAKEAWAY]\n> Una software house non crolla solo quando manca il codice o mancano i clienti. Può crollare anche quando una sola persona tiene insieme tutto troppo a lungo."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Between late 2024 and mid-2025, I lived through the least romantic version of building a software house.\n\nThere were four partners. On paper, we had different roles, defined ownership stakes, and a structure that could look reasonable: technology, finance, operations, and marketing. In practice, almost every operational problem ended up in the same place: with me.\n\nClients to support. Tickets to resolve. Websites and applications to deliver. Infrastructure to maintain. New clients to find. A CMS to build so we could move beyond purely custom work. Meetings, requests, tests, messages, and reviews.\n\nAnd all of this while I also worked in a warehouse to support myself, because the company could not provide compensation sufficient even for basic expenses.\n\nThis is not an article meant to decide who was the villain. It is an anatomy of an organizational model that turned one available person into the company’s main point of stability, until it consumed them."
+      },
+      {
+        "id": "roles-on-paper",
+        "title": "The roles on paper",
+        "image": "",
+        "body": "For privacy reasons, I will use fictional names. The roles, ownership stakes, and dynamics described here are the ones I experienced directly.\n\nThe company had four partners:\n\n- **Andrea**, CTO, holding 35%: software development, infrastructure, technical support, delivery, and internal products;\n- **Marco**, CFO and chair of the board, holding 35%: finance, the relationship with the accountant, and corporate oversight;\n- **Luca**, COO, holding 15%: operations, coordination, and client relationships;\n- **Davide**, described as CMO and at times as a financial partner, holding 15% through his own company: marketing, sales, and growth support.\n\nAt first glance, the structure made sense. The problem was not a lack of titles, but the gap between titles and the work that was actually done every week.\n\nIn a small company, a role is not defined by an organization chart. It is defined by what happens when a deadline arrives, a client calls, a payment is late, a server has a problem, or an uncomfortable decision has to be made.\n\n> [!NOTE]\n> The names are fictional. The purpose is not to identify people, but to describe an organizational system and the consequences it had on everyday work."
+      },
+      {
+        "id": "a-typical-day",
+        "title": "A typical day",
+        "image": "",
+        "body": "A typical day did not begin with an orderly roadmap, a block of deep work, or the quiet development of a SaaS product.\n\nIt began with client messages. Change requests. Tickets. Bugs to reproduce. Websites to update. Quotes to prepare. Services to keep online. A client with an urgent need does not wait for a small software house to sort out its internal responsibilities. They want an answer. And that answer, almost every time, came from the CTO.\n\nAt the same time, I was trying to develop the product that was supposed to change the company’s model: a proprietary CMS. The idea was simple: gradually stop living only on custom work and build something repeatable.\n\nBut that product had no dedicated team, dedicated budget, protected roadmap, or real division of operational workload. It was built between one ticket and another, one delivery and another, one client problem and another.\n\nAfter the technical work came the minimum commercial work needed to keep the business alive: looking for potential clients, answering leads, and figuring out whether a project could sustain cash flow and costs. Then I returned to existing clients, because signing a contract does not eliminate maintenance, support, updates, and out-of-scope requests.\n\nAnd after all that, in the evening, a second shift began: the warehouse shift that was necessary to live. Once the regular shift ended, the computer shift started again.\n\nThere were nights when I continued until 3 a.m. Others until 4 a.m. Then I would get up at 7 a.m. and go back to work.\n\nThat is not discipline. It is not founder mentality. It is not virtuous sacrifice. It is sleep debt turned into an operating model."
+      },
+      {
+        "id": "the-cto-as-a-whole-department",
+        "title": "When the CTO becomes an entire department",
+        "image": "",
+        "body": "The problem was not working hard. In an early-stage company, working hard can be normal. The problem was the nature of the work: there was no function capable of absorbing chaos without always pushing it onto the same person.\n\nThe CTO became, at the same time:\n\n- developer for client projects;\n- technical support and ticket management;\n- maintainer of hosting, domains, databases, and applications;\n- the person who handled emergencies;\n- de facto delivery project manager;\n- technical contact for clients;\n- the person looking for new work;\n- developer of the internal product that was supposed to evolve the company.\n\nThis structure has a huge flaw: it can appear to work as long as the central person can compensate for everything. Then, suddenly, every delay, error, and new request proves that there never was a system. There was only a person trying to stop it from collapsing.\n\n> [!TAKEAWAY]\n> If a CTO is also support, delivery, DevOps, account management, sales, and the business continuity plan, you do not have an agile structure. You have a single point of failure."
+      },
+      {
+        "id": "the-other-roles-at-their-best",
+        "title": "The other roles, at their best",
+        "image": "",
+        "body": "Telling a difficult situation honestly also means recognizing what others did when they were present and helpful.\n\nDuring the better periods, Marco sent bank statements from the banking app to the accountant, enabling the preparation of VAT tax payments, and made bank transfers to pay the accountant. This was concrete and necessary work, even if it was not enough on its own to give the company a complete and up-to-date financial picture.\n\nDavide brought in at least one small job worth around 40 euros. The amount was symbolic compared with the company’s needs, but the point is not to mock a single client. The point is to understand the gap between what the structure required and what consistently came in.\n\nAt his best, Luca contacted some clients on my behalf and tried to organize the work I had to do. That was real help: having someone absorb part of the communication can reduce the technical burden. But organizing the work of an overloaded person is not the same as creating additional operational capacity.\n\nThe problem was not that nobody ever did anything. The problem was that contributions were not consistent, coordinated, or proportionate enough to change the center of gravity of the work. The system remained dependent on one person for most of the activities that kept the company moving or surviving."
+      },
+      {
+        "id": "meetings-tests-and-pressure",
+        "title": "Meetings, tests, and pressure",
+        "image": "",
+        "body": "One of the most exhausting dynamics was the gap between asking for visibility and helping create the conditions for work to be finished.\n\nThe CMS was discussed as a product to commercialize. Tests, updates, demonstrations, and checks were requested. There were discussions about logo, slogan, positioning, and what the company should sell.\n\nThese are legitimate discussions. Branding, marketing, and product quality matter. But they become toxic when they are added on top of a system where the person building the product is already overwhelmed by clients, support, delivery, and external work.\n\nA question like “when will it be ready?” is useful only if it comes with a second question: “what do we remove from your workload to make it possible?”\n\nTesting work can improve it. Continuously pressing a person who is already at their limit can only fragment the little time they have left to finish it.\n\n> [!TIP]\n> Every request for a roadmap, demo, or progress update should come with an owner for the blocker and an explicit choice: add resources, remove work, or move the deadline. Without one of those three, the request is only pressure."
+      },
+      {
+        "id": "finance-without-a-full-picture",
+        "title": "Finance without a full picture",
+        "image": "",
+        "body": "Periodic meetings should have been the moment to look the company in the face: active clients, receivables, recurring costs, planned expenses, revenue, margins, tax deadlines, asset value, and priorities.\n\nToo often, however, the financial picture was reduced to the bank balance and the difficulty of obtaining updates from the accountant.\n\nA bank balance is a data point. It is not a financial strategy.\n\nIt does not tell you which invoices still need to be collected. It does not tell you which costs will arrive next month. It does not tell you which services can be cut. It does not tell you which projects are burning hours without margin. It does not tell you what a client who constantly opens tickets really costs. It does not tell you whether an internal product has a budget or is being financed with sleepless nights.\n\nWithout a complete view, every decision becomes reactive. You act when a problem arrives, not when the numbers show that the problem is growing.\n\n> [!TAKEAWAY]\n> Revenue is not cash. A bank balance is not margin. A contract is not a sustainable model."
+      },
+      {
+        "id": "ownership-does-not-distribute-work",
+        "title": "Ownership does not distribute work",
+        "image": "",
+        "body": "Having four partners does not mean having four people supporting the company equally. Ownership shares distribute property, rights, and potential economic results. They do not automatically distribute work, operational risk, daily responsibility, or psychological pressure.\n\nThis is one of the most dangerous mistakes in small technology companies: confusing the organization chart with the real operating system.\n\nYou can have a CTO, CFO, COO, and CMO. But if the CTO remains the only person who closes deliveries, resolves emergencies, speaks with clients, keeps infrastructure alive, and builds the future product, the other roles are not creating a network. They are orbiting the bottleneck.\n\nThe question we should have asked earlier was not: “which role do we want to have?” It was: “what result does each role produce every week without one person having to remember it, chase it, or compensate for it?”\n\n> [!WARNING]\n> In a small company, unmeasured roles without verifiable outputs become expectations. And expectations do not deliver projects, manage clients, or pay costs."
+      },
+      {
+        "id": "what-i-would-do-differently",
+        "title": "What I would do differently",
+        "image": "",
+        "body": "In hindsight, I do not think I would have solved everything by working more hours. That was exactly the reflex I needed to stop having.\n\nI would have imposed a few simple rules earlier:\n\n1. **One owner for every area**, with concrete outputs and a reporting cadence: sales, finance, clients, infrastructure, and product.\n2. **A monthly operating financial statement**, not just the bank balance: revenue, receivables, recurring costs, margins, hours spent, deadlines, and expected cash.\n3. **A client-support boundary**, with timelines, priorities, and billable work, instead of treating every request as urgent.\n4. **Protected product time**, funded and explicitly removed from client delivery work.\n5. **Documentation for access, infrastructure, contracts, and responsibilities**, so the company’s value does not remain locked inside one person’s head.\n6. **Written decisions**, with an owner, date, and consequence if an activity is not completed.\n7. **A personal sustainability threshold**: no project should require someone to work until 4 a.m. and then start another job at 7 a.m. just to remain standing.\n\nThese are not big-company rules. They are minimum rules for not building a company on the invisible sacrifice of the person most willing to carry it."
+      },
+      {
+        "id": "the-lesson-i-take-away",
+        "title": "The lesson I take away",
+        "image": "",
+        "body": "I do not think this experience proves that companies with partners are doomed to fail. It does show that a group of people does not become a company simply because it has ownership shares, job titles, and corporate filings.\n\nA company truly exists when responsibilities are clear, commitments are verifiable, numbers are shared, clients have boundaries, infrastructure is documented, and work does not depend on the heroics of a single person.\n\nThe most painful part is that Spotex worked technically for a while. Clients had services. Projects were delivered. Emergencies were resolved. The CMS grew.\n\nBut it worked because someone continuously compensated for the system’s flaws with their time, sleep, and availability. No model like that truly lasts.\n\nToday, I do not want to build software that way anymore. I want to build products and systems that can still be maintained tomorrow, with clearer boundaries, more readable costs, more concrete responsibility, and less hidden complexity.\n\n> [!TAKEAWAY]\n> A software house does not collapse only when it lacks code or clients. It can also collapse when one person holds everything together for too long."
+      }
+    ]
+  }
+}

@@ -2,6 +2,7 @@
 
 import { Children, isValidElement, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import remarkEmoji from "remark-emoji";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -54,6 +55,7 @@ export function ArticleContent({ content, calloutLabels }: ArticleContentProps) 
     <div className="article-prose">
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkEmoji]}
+        rehypePlugins={[rehypeRaw]}
         components={{
           h2({ children }) {
             return <h2 id={slugify(nodeToText(children))}>{children}</h2>;

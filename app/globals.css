@@ -610,6 +610,14 @@ body {
   margin: 1.8em 0;
 }
 
+.article-prose iframe {
+  display: block;
+  width: min(100%, 504px);
+  max-width: 100%;
+  margin: 1.5rem auto;
+  border: 0;
+}
+
 .article-prose table {
   width: 100%;
   border-collapse: collapse;
