@@ -1,0 +1,138 @@
+{
+  "slug": "pivotcut-da-progetto-personale-a-release-su-itchio",
+  "publishedAt": "2026-09-22",
+  "updatedAt": "",
+  "cover": "/pivotcut.png",
+  "youtubeUrl": "",
+  "tags": [
+    "PivotCut",
+    "Indie Development",
+    "macOS",
+    "Python",
+    "PySide6",
+    "Animation",
+    "Software Development"
+  ],
+  "title": {
+    "it": "PivotCut: portare un progetto personale dal codice a una release pubblica",
+    "en": "PivotCut: taking a personal project from code to a public release"
+  },
+  "description": {
+    "it": "Il percorso dietro PivotCut, un'app macOS per l'animazione 2D cut-out: dai vincoli tecnici all'architettura, fino alla preparazione di una prima release pubblica su itch.io.",
+    "en": "The story behind PivotCut, a macOS app for 2D cut-out animation: from technical constraints and architecture to preparing a first public release on itch.io."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Molti progetti personali restano per mesi — o per sempre — in una zona grigia: funzionano sul computer di chi li ha creati, hanno una repository ordinata, magari una suite di test, ma non sono ancora qualcosa che un'altra persona può scaricare, provare e capire.\n\nCon **PivotCut** sto lavorando proprio su quel passaggio. È un'app desktop per macOS Apple Silicon pensata per creare animazioni 2D cut-out: personaggi costruiti con parti PNG riutilizzabili, pose organizzate su una timeline e scene composte con layer, camera e parallasse.\n\nIn questo articolo racconto non solo cosa fa il progetto, ma soprattutto il ragionamento che porta un'app personale verso una prima release pubblica: cosa definire, cosa lasciare fuori, quali limiti dichiarare e perché pubblicare anche prima della versione “perfetta” può essere la scelta più utile."
+      },
+      {
+        "id": "il-problema-che-voglio-risolvere",
+        "title": "Il problema che voglio risolvere",
+        "image": "",
+        "body": "L'animazione 2D cut-out parte da un'idea semplice: invece di ridisegnare un personaggio intero in ogni fotogramma, si compone il personaggio con elementi separati — testa, torso, braccia, gambe e altri dettagli — e si modifica la posa nel tempo.\n\nÈ un workflow diretto, particolarmente utile per bozzetti animati, studi di movimento, storyboard, brevi scene e sperimentazione visiva. Ma per essere davvero piacevole richiede strumenti chiari: importare asset non deve creare attrito, costruire una gerarchia deve essere comprensibile e la timeline deve restituire subito il senso dell'animazione.\n\nPivotCut nasce da qui: creare un ambiente focalizzato sul **pose-to-pose**, con un'interfaccia desktop e un modello tecnico abbastanza solido da non diventare fragile appena il progetto cresce.\n\n> [!TAKEAWAY]\n> Il valore di un piccolo software non dipende dal numero di feature: dipende da quanto bene riduce l'attrito in un flusso di lavoro specifico."
+      },
+      {
+        "id": "cosa-fa-pivotcut-oggi",
+        "title": "Cosa fa PivotCut oggi",
+        "image": "",
+        "body": "La versione attuale è un'app nativa per macOS Apple Silicon. Il nucleo del progetto copre un workflow completo, dalla costruzione della scena fino all'export.\n\n### Rig e asset PNG\n\nÈ possibile importare PNG trasparenti e riutilizzarli nel progetto. Le parti di un personaggio possono essere organizzate in un rig gerarchico: quando si ruota un segmento, i figli seguono la trasformazione del genitore attraverso forward kinematics.\n\nOgni parte ha pivot, punto di aggancio, posizione, rotazione, scala, ordine visivo, opacità e visibilità. Il Character Rig Builder serve a costruire e modificare questa struttura senza dover alterare i file PNG originali.\n\n### Timeline e pose\n\nL'animazione è organizzata come sequenza di pose. La timeline mostra miniature renderizzate dalla scena reale, permette di aggiungere, duplicare, eliminare e riordinare i frame e supporta FPS ed exposure.\n\nIn questa fase non c'è interpolazione automatica tra pose: ogni posa rimane visibile per il numero di frame video definito dall'exposure. È una limitazione intenzionale dell'MVP, ma anche una scelta che mantiene il comportamento semplice e prevedibile.\n\n### Layer, camera e parallasse\n\nOltre ai personaggi, una scena può contenere layer di background, midground e foreground. Una camera virtuale salvata per frame controlla posizione e zoom, mentre i layer più lontani reagiscono con una parallasse minore.\n\nQuesto non trasforma PivotCut in un motore 3D: resta un modello 2D con profondità semplificata. Però è sufficiente per aggiungere movimento e leggibilità a una composizione senza introdurre shader, prospettiva o infrastruttura inutile.\n\n### Export\n\nL'app può esportare una sequenza PNG e, quando FFmpeg è installato, un video MP4 H.264. La sequenza PNG preserva la trasparenza; l'MP4 usa invece uno sfondo opaco, perché il formato di encoding scelto non conserva il canale alpha."
+      },
+      {
+        "id": "architettura-prima-della-grafica",
+        "title": "Architettura prima della grafica",
+        "image": "",
+        "body": "Un progetto creativo può sembrare un candidato naturale per il classico approccio “prima faccio funzionare l'interfaccia, poi sistemo il resto”. Per PivotCut ho scelto il percorso opposto: separare presto il dominio dell'applicazione dalla GUI.\n\nIl modello di progetto — frame, rig, ossa, layer, camera, asset e operazioni sulla timeline — non dipende da Qt. Questo rende la logica testabile senza avviare l'interfaccia e impedisce che gli oggetti grafici diventino accidentalmente la fonte di verità dei dati.\n\nLa UI PySide6 traduce le interazioni dell'utente in operazioni sul dominio. Il canvas può essere ricostruito dal modello, la timeline può rigenerare le sue miniature e l'export può renderizzare una scena senza dipendere dalla finestra principale.\n\n### Perché questa separazione conta\n\nQuando un editor cresce, le eccezioni arrivano rapidamente: Undo/Redo, salvataggio, caricamento, export, anteprime, riproduzione, asset mancanti e modifiche annullate. Se queste responsabilità vivono tutte nella GUI, ogni feature nuova può trasformarsi in una catena di effetti collaterali difficili da prevedere.\n\nSeparare il dominio non elimina la complessità, ma la rende localizzata. Per esempio, la stessa matematica delle trasformazioni può essere usata dal canvas, dal renderer di export e dai test automatici.\n\n> [!NOTE]\n> Non è un invito a sovra-ingegnerizzare ogni prototipo. È una scelta proporzionata a un editor che deve salvare dati, modificare scene e produrre output ripetibili."
+      },
+      {
+        "id": "undo-redo-e-affidabilita",
+        "title": "Undo/Redo: una feature piccola che cambia tutto",
+        "image": "",
+        "body": "In un software di editing, la fiducia dell'utente passa spesso da un gesto banale: poter annullare un errore senza paura.\n\nPivotCut usa un sistema di comandi per operazioni come creare, eliminare, spostare e riordinare frame; creare rig e layer; modificare la trasformazione di una parte; cambiare layer e camera. L'obiettivo non è registrare ogni singolo pixel di movimento, ma catturare un'azione significativa come un unico passo nella cronologia.\n\nQuesto dettaglio ha conseguenze pratiche importanti:\n\n- trascinare un osso produce una sola azione annullabile al rilascio del mouse;\n- una modifica strutturale nel Rig Builder viene salvata come operazione atomica;\n- eseguire una nuova azione dopo un Undo elimina correttamente il ramo di Redo;\n- i cambiamenti invalidano solo le miniature che devono essere aggiornate.\n\nUndo/Redo è anche un buon test di architettura: se è difficile implementarlo in modo coerente, spesso significa che le mutazioni dello stato sono troppo disperse."
+      },
+      {
+        "id": "costruire-con-limiti-espliciti",
+        "title": "Costruire con limiti espliciti",
+        "image": "",
+        "body": "La parte più difficile di un progetto indipendente non è aggiungere idee. È scegliere quali idee non implementare ancora.\n\nPivotCut ha limiti dichiarati: niente inverse kinematics, niente tweening automatico, niente audio, niente selezione multipla, niente shader, niente prospettiva 3D e nessuna sincronizzazione automatica delle modifiche strutturali tra le pose.\n\nQuesti limiti non sono nascosti. Sono parte del perimetro della release. Dichiararli permette di evitare due errori comuni: vendere una promessa troppo grande e rendere l'architettura più complessa prima che esista un reale bisogno.\n\nL'app supporta forward kinematics: ruotando un braccio, avambraccio e mano seguono la gerarchia. Per un MVP questo è un comportamento chiaro, testabile e già utile. Un solver IK richiederebbe invece scelte di UX, vincoli, casi limite e manutenzione che meritano una fase dedicata.\n\n> [!TIP]\n> Definire un “non ancora” esplicito è una forma di qualità. Protegge il prodotto, il tempo di sviluppo e le aspettative di chi lo prova."
+      },
+      {
+        "id": "dal-repository-alla-release",
+        "title": "Dal repository alla release pubblica",
+        "image": "",
+        "body": "Avere il codice su GitHub non equivale ad avere un prodotto distribuibile. Per trasformare PivotCut in qualcosa che un'altra persona possa provare servono almeno tre livelli distinti: build, distribuzione e comunicazione.\n\n### 1. Build ripetibile\n\nLa build per macOS viene prodotta con PyInstaller. Lo script di build verifica l'ambiente, controlla l'architettura arm64, esegue i test e genera il bundle `.app`. Una build ripetibile riduce il rischio di distribuire un risultato creato per caso solo sulla macchina di sviluppo.\n\n### 2. Distribuzione chiara\n\nLa prima destinazione pubblica scelta è itch.io. Anche se viene associato soprattutto ai giochi, itch.io è utile anche per strumenti creativi e software indipendente: offre una pagina di progetto, screenshot, descrizione, commenti, versioni scaricabili e un contesto adatto a chi prova progetti sperimentali.\n\nLa release viene presentata correttamente come app macOS per Apple Silicon, non come software universale. L'onestà sui requisiti evita una cattiva esperienza a chi usa un Mac Intel o si aspetta una versione Windows.\n\n### 3. Comunicazione dei vincoli\n\nLa build iniziale non è ancora firmata né notarizzata. Questo significa che macOS può richiedere un'apertura manuale tramite click destro e “Apri” al primo avvio. Inoltre FFmpeg resta opzionale, ma necessario per generare MP4.\n\nSono dettagli tecnici, ma fanno parte dell'esperienza del prodotto. Pubblicarli chiaramente nella pagina di download è molto meglio che lasciare l'utente davanti a un messaggio di sicurezza o a un export non disponibile senza spiegazione.\n\n> [!WARNING]\n> Non dichiarare supporto per una piattaforma che non hai testato. Una release più piccola ma accurata vale più di una pagina ambiziosa che genera installazioni fallite."
+      },
+      {
+        "id": "cosa-significa-pubblicare-presto",
+        "title": "Cosa significa pubblicare presto",
+        "image": "",
+        "body": "Pubblicare una prima build non significa fingere che il progetto sia concluso. Significa dare al software una forma verificabile fuori dal proprio ambiente di sviluppo.\n\nUna release iniziale permette di osservare domande concrete: il setup è comprensibile? La terminologia è chiara? Il Rig Builder risulta naturale? Le persone cercano feature diverse da quelle previste? L'export soddisfa il caso d'uso reale?\n\nQueste risposte non arrivano soltanto dalla pianificazione. Arrivano quando qualcuno scarica l'app, prova a creare una scena e racconta dove si è fermato.\n\nPer questo una prima release pubblica di PivotCut non è il traguardo finale. È il momento in cui il progetto smette di essere solo una codebase e diventa un prodotto che può ricevere feedback."
+      },
+      {
+        "id": "prossimi-passi",
+        "title": "I prossimi passi",
+        "image": "",
+        "body": "La direzione non è aggiungere tutto subito. Le priorità sono rendere l'esperienza più affidabile e più facile da provare.\n\n- Preparare una distribuzione macOS più rifinita, con firma, notarizzazione e packaging dedicato.\n- Creare esempi di progetto e asset demo per ridurre il tempo necessario al primo risultato visibile.\n- Raccogliere feedback sul workflow di rigging, timeline ed export.\n- Valutare le feature successive in base all'uso reale, non soltanto a una lista di desideri.\n- Continuare a migliorare documentazione, onboarding e messaggi di errore, perché sono parte integrante del prodotto.\n\nIl principio resta semplice: costruire strumenti che funzionino oggi e siano mantenibili domani. Per un progetto indipendente, sostenibilità tecnica e chiarezza del perimetro non sono dettagli secondari: sono ciò che rende possibile continuare a migliorarlo.\n\n> [!TAKEAWAY]\n> Una release pubblica efficace non richiede perfezione. Richiede un perimetro onesto, un percorso di prova chiaro e una base tecnica abbastanza solida da poter evolvere senza rompersi."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Many personal projects stay in a grey area for months — or forever. They work on their creator's computer, have an organised repository and perhaps a test suite, but they are not yet something another person can download, try and understand.\n\nWith **PivotCut**, I am working on exactly that transition. It is a desktop app for macOS Apple Silicon designed for 2D cut-out animation: characters built from reusable PNG parts, poses organised on a timeline, and scenes composed with layers, camera movement and parallax.\n\nThis article is not only about what the project does. It is about the reasoning behind taking a personal app towards a first public release: what to define, what to leave out, which limitations to state openly, and why publishing before a product feels “perfect” can be the most useful choice."
+      },
+      {
+        "id": "the-problem-i-want-to-solve",
+        "title": "The problem I want to solve",
+        "image": "",
+        "body": "2D cut-out animation starts with a simple idea: instead of redrawing a whole character in every frame, you assemble a character from separate elements — head, torso, arms, legs and details — then change its pose over time.\n\nIt is a direct workflow, useful for animated sketches, movement studies, storyboards, short scenes and visual experimentation. To feel good in practice, though, it needs clear tools: importing assets should not create friction, building a hierarchy should remain understandable, and the timeline should immediately communicate motion.\n\nPivotCut starts there: create a focused **pose-to-pose** environment with a desktop interface and a technical model solid enough not to become fragile as the project grows.\n\n> [!TAKEAWAY]\n> The value of small software does not come from its feature count. It comes from how well it removes friction from a specific workflow."
+      },
+      {
+        "id": "what-pivotcut-does-today",
+        "title": "What PivotCut does today",
+        "image": "",
+        "body": "The current version is a native app for macOS Apple Silicon. Its core supports a complete workflow, from scene construction to export.\n\n### PNG assets and rigs\n\nYou can import transparent PNG files and reuse them across a project. Character parts can be organised into a hierarchical rig: when a segment rotates, its children follow the parent transformation through forward kinematics.\n\nEvery part has a pivot, attachment point, position, rotation, scale, drawing order, opacity and visibility. The Character Rig Builder is used to create and edit this structure without modifying the original PNG files.\n\n### Timeline and poses\n\nAnimation is organised as a sequence of poses. The timeline displays thumbnails rendered from the actual scene, lets you add, duplicate, delete and reorder frames, and supports FPS and exposure settings.\n\nThere is no automatic interpolation between poses at this stage: each pose stays visible for the configured number of video frames. That is an intentional MVP limitation, but it also keeps the behaviour simple and predictable.\n\n### Layers, camera and parallax\n\nIn addition to characters, a scene can contain background, midground and foreground layers. A virtual camera stored per frame controls position and zoom, while more distant layers react with less parallax.\n\nThis does not turn PivotCut into a 3D engine. It remains a 2D model with simplified depth. Still, it is enough to add motion and readability to a composition without introducing shaders, perspective or unnecessary infrastructure.\n\n### Export\n\nThe app can export a PNG sequence and, when FFmpeg is installed, an H.264 MP4 video. PNG sequences preserve transparency; MP4 export uses an opaque background because the selected encoding format does not retain an alpha channel."
+      },
+      {
+        "id": "architecture-before-graphics",
+        "title": "Architecture before graphics",
+        "image": "",
+        "body": "A creative project can seem like a natural candidate for the usual approach: make the interface work first, then clean up everything else. For PivotCut, I chose the opposite route: separate the application domain from the GUI early.\n\nThe project model — frames, rigs, bones, layers, camera, assets and timeline operations — does not depend on Qt. This makes the logic testable without launching the interface and prevents graphical objects from accidentally becoming the source of truth for the data.\n\nThe PySide6 UI translates user interactions into domain operations. The canvas can be rebuilt from the model, the timeline can regenerate its thumbnails, and export can render a scene without relying on the main window.\n\n### Why this separation matters\n\nAs an editor grows, exceptions arrive quickly: Undo/Redo, saving, loading, exporting, previews, playback, missing assets and cancelled edits. If all of these responsibilities live inside the GUI, each new feature can become a chain of hard-to-predict side effects.\n\nSeparating the domain does not remove complexity, but it keeps complexity local. For example, the same transformation mathematics can serve the canvas, the export renderer and automated tests.\n\n> [!NOTE]\n> This is not an argument for over-engineering every prototype. It is a proportional choice for an editor that must save data, modify scenes and produce repeatable output."
+      },
+      {
+        "id": "undo-redo-and-reliability",
+        "title": "Undo/Redo: a small feature that changes everything",
+        "image": "",
+        "body": "In editing software, user trust often depends on a simple gesture: being able to undo a mistake without fear.\n\nPivotCut uses a command system for operations such as creating, deleting, moving and reordering frames; creating rigs and layers; transforming a part; and changing layers or camera settings. The goal is not to record every pixel of movement, but to capture a meaningful action as one history entry.\n\nThis detail has important practical consequences:\n\n- dragging a bone creates one undoable action when the mouse is released;\n- a structural edit in the Rig Builder is saved as an atomic operation;\n- performing a new action after Undo correctly clears the Redo branch;\n- changes invalidate only the thumbnails that need refreshing.\n\nUndo/Redo is also a useful architecture test: if it is hard to implement coherently, state mutations are often too scattered."
+      },
+      {
+        "id": "building-with-explicit-limits",
+        "title": "Building with explicit limits",
+        "image": "",
+        "body": "The hardest part of an independent project is not adding ideas. It is deciding which ideas not to implement yet.\n\nPivotCut has explicit limits: no inverse kinematics, no automatic tweening, no audio, no multi-selection, no shaders, no 3D perspective and no automatic propagation of structural edits across poses.\n\nThese limits are not hidden. They are part of the release boundary. Naming them avoids two common mistakes: selling an overly large promise and making the architecture more complex before a real need exists.\n\nThe app supports forward kinematics: when an arm rotates, the forearm and hand follow the hierarchy. For an MVP, this is clear, testable and already useful behaviour. An IK solver would require UX decisions, constraints, edge cases and maintenance that deserve a dedicated phase.\n\n> [!TIP]\n> Defining an explicit “not yet” is a form of quality. It protects the product, development time and the expectations of people who try it."
+      },
+      {
+        "id": "from-repository-to-public-release",
+        "title": "From repository to public release",
+        "image": "",
+        "body": "Having code on GitHub is not the same as having a distributable product. Turning PivotCut into something another person can try requires at least three separate layers: build, distribution and communication.\n\n### 1. Repeatable builds\n\nThe macOS build is produced with PyInstaller. The build script validates the environment, checks the arm64 architecture, runs tests and generates the `.app` bundle. A repeatable build reduces the risk of distributing a result that only happened to work on the development machine.\n\n### 2. Clear distribution\n\nThe first public destination is itch.io. Although it is mostly associated with games, itch.io is also useful for creative tools and independent software: it provides a project page, screenshots, descriptions, comments, downloadable versions and a context that suits experimental projects.\n\nThe release is presented accurately as a macOS Apple Silicon app, not as universal software. Being honest about requirements prevents a poor experience for people using Intel Macs or expecting a Windows version.\n\n### 3. Communicating constraints\n\nThe initial build is not signed or notarised yet. That means macOS may require manual approval through right-click and “Open” on the first launch. FFmpeg is optional, but it is required to create MP4 files.\n\nThese are technical details, but they are part of the product experience. Explaining them clearly on the download page is much better than leaving users in front of a security warning or an unavailable export option with no context.\n\n> [!WARNING]\n> Do not claim support for a platform you have not tested. A smaller but accurate release is better than an ambitious page that leads to failed installations."
+      },
+      {
+        "id": "what-publishing-early-means",
+        "title": "What publishing early means",
+        "image": "",
+        "body": "Publishing an early build does not mean pretending the project is finished. It means giving the software a form that can be tested outside its development environment.\n\nAn initial release makes concrete questions observable: is setup understandable? Is the terminology clear? Does the Rig Builder feel natural? Do people look for different features than expected? Does export solve a real use case?\n\nThose answers do not come from planning alone. They appear when someone downloads the app, tries to create a scene and explains where they got stuck.\n\nThat is why a first public PivotCut release is not the final milestone. It is the moment when the project stops being only a codebase and becomes a product that can receive feedback."
+      },
+      {
+        "id": "next-steps",
+        "title": "Next steps",
+        "image": "",
+        "body": "The direction is not to add everything at once. The priorities are to make the experience more reliable and easier to try.\n\n- Prepare a more polished macOS distribution with signing, notarisation and dedicated packaging.\n- Create sample projects and demo assets to reduce the time needed to get a first visible result.\n- Gather feedback on rigging, timeline and export workflows.\n- Evaluate future features through real use, not only through a wish list.\n- Keep improving documentation, onboarding and error messages, because they are integral parts of the product.\n\nThe principle remains simple: build tools that work today and can still be maintained tomorrow. For an independent project, technical sustainability and a clear scope are not secondary details — they are what makes continued improvement possible.\n\n> [!TAKEAWAY]\n> An effective public release does not require perfection. It requires an honest scope, a clear way to try the product and a technical foundation strong enough to evolve without breaking."
+      }
+    ]
+  }
+}

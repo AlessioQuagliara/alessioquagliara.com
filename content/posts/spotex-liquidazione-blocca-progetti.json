@@ -1,0 +1,125 @@
+{
+  "slug": "spotex-liquidazione-blocca-progetti",
+  "publishedAt": "2026-09-22",
+  "updatedAt": "2026-09-22",
+  "cover": "/spotex-srl-cover.png",
+  "youtubeUrl": "",
+  "tags": [
+    "imprenditoria",
+    "software house",
+    "saas",
+    "governance",
+    "post-mortem",
+    "spotex"
+  ],
+  "title": {
+    "it": "Spotex è finita, ma la sua liquidazione sta ancora bloccando il mio futuro",
+    "en": "Spotex Is Over, but Its Liquidation Is Still Blocking My Future"
+  },
+  "description": {
+    "it": "Abbiamo venduto i clienti e fermato l’operatività. Eppure la chiusura di Spotex S.r.l. continua a generare costi e a bloccare il lancio dei miei prodotti software.",
+    "en": "We sold the clients and stopped operating. Yet the closure of Spotex S.r.l. keeps generating costs and blocking the launch of my software products."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Spotex, per me, è già finita. I clienti sono stati ceduti a un’altra azienda IT, l’operatività è sostanzialmente terminata e la decisione di chiudere è stata presa da tempo.\n\nSulla carta dovrebbe essere l’ultima fase: sistemare le pendenze, pagare ciò che resta da pagare, chiudere il conto, depositare gli atti e archiviare una storia che ha già insegnato abbastanza.\n\nNella pratica, invece, la liquidazione è diventata un altro pezzo dello stesso problema che ha contribuito a logorare la società: decisioni lente, comunicazioni senza seguito, responsabilità poco chiare e qualcuno che deve inseguire tutti gli altri per far avanzare anche le cose più ovvie.\n\nLa parte più amara è questa: non sto aspettando di avere un’idea. Non sto aspettando di imparare a programmare. Non sto aspettando di costruire un prodotto. I prodotti li ho già costruiti. Sto aspettando di poterli vendere in modo pulito e sostenibile."
+      },
+      {
+        "id": "la-societa-non-opera-piu",
+        "title": "La società non opera più",
+        "image": "",
+        "body": "I clienti sono stati ceduti circa due mesi fa. Era il passaggio che doveva rendere possibile una chiusura ordinata: niente nuova operatività da sostenere, niente portafoglio clienti da gestire, niente ragione strategica per tenere aperta una struttura societaria che non aveva più il compito di far crescere un’attività.\n\nEppure Spotex continua a esistere come una macchina amministrativa minima che consuma risorse:\n\n- un conto corrente ancora attivo, con canoni e movimenti;\n- servizi e fatture da verificare;\n- IVA, F24, dichiarazioni e comunicazioni da ricostruire;\n- documenti da controllare, adempimenti da programmare, somme da accantonare;\n- una liquidità residua che non è capitale libero, ma un cuscinetto destinato prima a chiudere correttamente tutto il resto.\n\nQuesta non è più impresa. Non è più sviluppo. Non è più una fase di crescita. È una coda amministrativa che, se ignorata, continua a mangiare soldi e tempo.\n\n> [!WARNING]\n> Una società inattiva non è una società senza costi. Finché resta aperta può continuare a produrre canoni, fatture, obblighi fiscali e rischio organizzativo."
+      },
+      {
+        "id": "il-danno-non-e-solo-economico",
+        "title": "Il danno non è solo economico",
+        "image": "",
+        "body": "Il danno più evidente è la liquidità che si riduce. Ogni mese aperto può aggiungere un canone bancario, un abbonamento dimenticato, una fattura, una pratica, una parcella, un adempimento tardivo.\n\nMa per me il danno più grave non è neppure quello. È il costo opportunità.\n\nHo già tre prodotti arrivati a un punto in cui possono essere commercializzati:\n\n- **Linkbay CMS**, pronto per essere impostato su AppSumo e portato live tramite Paddle;\n- **Rstudy**, già in una prima release stabile;\n- **PivotCut**, completato e pronto per la pubblicazione.\n\nNon parlo di cartelle piene di idee, wireframe o prototipi lasciati a metà. Parlo di software costruito, rifinito e pronto a essere messo davanti a utenti reali.\n\nIl problema è che, finché resta la situazione societaria attuale, non posso aprire con serenità la posizione fiscale individuale necessaria per avviare questa fase. Il paradosso è brutale: una società che non genera più entrate sta impedendo l’avvio di prodotti che potrebbero finalmente generarne.\n\n> [!TAKEAWAY]\n> Il costo di una chiusura rimandata non è soltanto quanto spendi per restare aperto. È anche quanto non puoi costruire, vendere o validare mentre aspetti."
+      },
+      {
+        "id": "lo-stesso-errore-che-si-ripete",
+        "title": "Lo stesso errore che si ripete",
+        "image": "",
+        "body": "Ho già scritto di come una software house possa fallire anche quando sa costruire software. Spotex non è arrivata qui perché mancassero competenze tecniche, codice o persone capaci di risolvere problemi.\n\nÈ arrivata qui perché i problemi organizzativi si sono accumulati più velocemente della capacità di gestirli:\n\n- governance debole;\n- ruoli e responsabilità non allineati;\n- decisioni importanti senza un processo affidabile;\n- comunicazioni sparse tra messaggi, telefonate e silenzi;\n- poca visibilità condivisa su clienti, costi, crediti, infrastruttura e priorità;\n- una dipendenza continua dalla persona più disponibile per far succedere le cose.\n\nLa liquidazione avrebbe dovuto essere il momento in cui interrompere questo schema. Invece rischia di riprodurlo perfettamente.\n\nSi dice che si procede. Si risponde che si può procedere. Si dà il consenso a procedere. Poi passano settimane. Intanto nessuno sa con precisione quale atto sia stato depositato, quale passaggio manchi, quali somme servano davvero, cosa sia già stato fatto e chi sia responsabile della prossima azione.\n\nQuesta è la forma più sterile del fallimento organizzativo: l’azienda non produce più, ma continua comunque a richiedere energia per essere tenuta in sospensione.\n\n> [!NOTE]\n> Il problema non è una singola persona che ritarda una pratica. Il problema è un sistema in cui un’attività critica non ha un proprietario, una scadenza, un piano scritto e un output verificabile."
+      },
+      {
+        "id": "non-voglio-trasformarla-in-una-guerra",
+        "title": "Non voglio trasformarla in una guerra",
+        "image": "",
+        "body": "Questo non è un articolo per attribuire pubblicamente colpe individuali, fare nomi o trasformare una chiusura societaria in uno sfogo. Sarebbe facile. E sarebbe anche poco utile.\n\nLe responsabilità in una società raramente sono comode, lineari e distribuite in modo perfetto. Io stesso ho commesso errori, ho sottovalutato segnali, ho continuato a coprire buchi operativi e ho accettato troppo a lungo che la disponibilità sostituisse processi, confini e responsabilità formali.\n\nMa assumersi la propria parte non significa accettare l’immobilismo come destino.\n\nQuando un’attività ha cessato l’operatività, i clienti sono stati ceduti e i soci hanno manifestato la volontà di chiudere, la pratica deve avere un percorso chiaro:\n\n1. situazione economica e fiscale aggiornata;\n2. elenco completo di debiti, crediti e adempimenti;\n3. costo stimato della chiusura;\n4. documenti e firme richiesti;\n5. responsabili;\n6. scadenze;\n7. data prevista per arrivare alla cancellazione.\n\nNon è aggressività. È il minimo necessario per evitare che una società morente diventi un costo permanente per chi ci è ancora formalmente legato."
+      },
+      {
+        "id": "la-paura-del-capitale-che-non-basta",
+        "title": "La paura del capitale che non basta",
+        "image": "",
+        "body": "C’è anche una paura molto concreta: che la liquidità rimasta non sia sufficiente a coprire tutto.\n\nQuando una società smette di incassare ma continua a sostenere costi, ogni mese rende più difficile chiudere. Il denaro sul conto non è un premio finale da dividere: prima deve coprire imposte, fornitori, banca, servizi, professionisti, dichiarazioni e ogni altra pendenza reale.\n\nIl rischio non va drammatizzato senza numeri, ma nemmeno ignorato. Serve un prospetto. Non frasi rassicuranti, non "vediamo", non "poi ci sentiamo". Un prospetto con importi e voci verificabili:\n\n- liquidità disponibile;\n- crediti ancora esigibili;\n- debiti certi;\n- fatture e costi ricorrenti;\n- IVA e F24;\n- costi professionali e camerali;\n- importo da accantonare;\n- eventuale deficit stimato.\n\nFinché questi numeri non esistono in modo condiviso, nessuno può dire con onestà se la chiusura sarà semplice, costosa o problematica. E più si aspetta, più quei numeri peggiorano.\n\n> [!WARNING]\n> Non distribuire denaro ai soci e non svuotare il conto finché le pendenze non sono state verificate e gestite correttamente."
+      },
+      {
+        "id": "i-miei-progetti-non-devono-ereditarne-il-caos",
+        "title": "I miei progetti non devono ereditarne il caos",
+        "image": "",
+        "body": "La lezione più importante che porto via da Spotex non è che bisogna evitare per sempre le società, i soci o i clienti. È più semplice e più dura: non bisogna costruire sistemi in cui le decisioni critiche dipendono dalla memoria, dalla buona volontà o dalla disponibilità momentanea delle persone.\n\nLinkbay CMS, Rstudy e PivotCut nascono anche come risposta a questa esperienza. Voglio prodotti costruiti con confini chiari, costi comprensibili, infrastrutture documentate e una responsabilità tecnica che non venga dispersa tra chat, urgenze e silenzi.\n\nNon significa fare tutto da solo per orgoglio. Significa sapere chi decide, chi possiede cosa, dove sono i dati, come si paga un servizio, come si interrompe un costo, come si consegna un sistema e cosa succede se una persona non risponde per settimane.\n\nSoprattutto, significa non confondere la capacità di costruire software con la capacità di sostenere un’azienda. Il codice è solo una parte del prodotto. Un’impresa regge anche su contabilità, contratti, comunicazione, processi, accessi, documentazione e disciplina nel prendere decisioni quando sono ancora piccole."
+      },
+      {
+        "id": "chiudere-per-poter-ripartire",
+        "title": "Chiudere per poter ripartire",
+        "image": "",
+        "body": "Non sto chiedendo che Spotex torni a funzionare. Non voglio riaprire discussioni su un modello che ha già dimostrato di non essere sostenibile. Non voglio nemmeno trasformare il passato in un nemico permanente.\n\nVoglio chiudere bene.\n\nChiudere bene significa avere i numeri, rispettare gli adempimenti, pagare ciò che è dovuto, salvare la documentazione necessaria e arrivare a una fine formale che permetta a tutti di smettere di trascinarsi dietro questa struttura.\n\nPer me, però, chiudere non è soltanto archiviare un capitolo. È liberare la possibilità di lavorare sui prodotti che ho già costruito e di avviare una nuova attività senza dover convivere con un vincolo nato da un modello che non rappresenta più ciò che voglio fare.\n\nSpotex mi ha insegnato molto. Mi ha insegnato che il talento tecnico non compensa una governance fragile. Che un cliente non è sempre un asset. Che fatturato non significa salute. Che la disponibilità non è un ruolo. Che la documentazione non è burocrazia inutile. E che continuare a tenere in vita una struttura senza futuro può essere più costoso che riconoscere la fine.\n\nAdesso la lezione deve finire dove dovrebbe finire ogni post-mortem serio: con un’azione. Una situazione aggiornata. Un piano. Una data. E una chiusura vera.\n\n> [!TAKEAWAY]\n> Chiudere un’azienda non significa cancellare il lavoro fatto. Significa impedire che un modello ormai concluso continui a consumare il futuro di chi vuole costruire altro."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "For me, Spotex is already over. Its clients were transferred to another IT company, operations have essentially stopped, and the decision to close the company was made a long time ago.\n\nOn paper, this should be the final stage: settle outstanding matters, pay what remains to be paid, close the bank account, file the required documents, and archive a story that has already taught enough lessons.\n\nIn practice, however, liquidation has become another version of the same problem that wore the company down: slow decisions, communications with no follow-through, unclear ownership, and someone having to chase everyone else to move even the obvious things forward.\n\nThe bitter part is this: I am not waiting for an idea. I am not waiting to learn how to code. I am not waiting to build a product. I have already built the products. I am waiting to be able to sell them in a clean and sustainable way."
+      },
+      {
+        "id": "the-company-no-longer-operates",
+        "title": "The company no longer operates",
+        "image": "",
+        "body": "The clients were transferred around two months ago. That was supposed to make an orderly closure possible: no new operations to support, no client portfolio to manage, and no strategic reason to keep a corporate structure open when it no longer had the job of growing a business.\n\nYet Spotex still exists as a minimal administrative machine that consumes resources:\n\n- an active bank account, with fees and transactions;\n- services and invoices that must be checked;\n- VAT, tax payments, filings, and official communications to reconcile;\n- documents to review, requirements to schedule, and funds to set aside;\n- remaining liquidity that is not free capital, but a buffer that must first be used to close everything properly.\n\nThis is no longer entrepreneurship. It is no longer product development. It is no longer a growth phase. It is an administrative tail that, if ignored, keeps consuming money and time.\n\n> [!WARNING]\n> An inactive company is not a cost-free company. As long as it remains open, it can keep generating fees, invoices, tax obligations, and organizational risk."
+      },
+      {
+        "id": "the-damage-is-not-only-financial",
+        "title": "The damage is not only financial",
+        "image": "",
+        "body": "The most visible damage is declining liquidity. Every month can add a bank fee, a forgotten subscription, an invoice, a filing, a professional fee, or a late compliance cost.\n\nBut for me, the most serious damage is not even that. It is opportunity cost.\n\nI already have three products that have reached the point where they can be commercialized:\n\n- **Linkbay CMS**, ready to be set up on AppSumo and launched through Paddle;\n- **Rstudy**, already in a stable first release;\n- **PivotCut**, finished and ready for publication.\n\nThese are not folders full of ideas, wireframes, or half-finished prototypes. They are built, refined products ready to be put in front of real users.\n\nThe problem is that, as long as the current corporate situation remains unresolved, I cannot safely open the individual tax position needed to start this phase. The paradox is brutal: a company that no longer generates revenue is preventing products that could generate revenue from launching.\n\n> [!TAKEAWAY]\n> The cost of a delayed closure is not only what you spend to remain open. It is also what you cannot build, sell, or validate while you wait."
+      },
+      {
+        "id": "the-same-failure-repeating",
+        "title": "The same failure repeating",
+        "image": "",
+        "body": "I have already written about how a software house can fail even when it knows how to build software. Spotex did not get here because it lacked technical skills, code, or people who could solve problems.\n\nIt got here because organizational problems accumulated faster than the company’s ability to manage them:\n\n- weak governance;\n- roles and responsibilities that did not match;\n- major decisions without a reliable process;\n- communication scattered across messages, calls, and silence;\n- limited shared visibility into clients, costs, receivables, infrastructure, and priorities;\n- an ongoing dependence on the most available person to make things happen.\n\nLiquidation should have been the moment to stop repeating that pattern. Instead, it risks reproducing it perfectly.\n\nSomeone says the process can move forward. Someone gives consent to move forward. Then weeks pass. Meanwhile, no one knows exactly which filing has been made, what step is still missing, what funds are actually needed, what has already been done, or who owns the next action.\n\nThis is the most sterile form of organizational failure: the company no longer produces, yet it still requires energy to be kept in suspension.\n\n> [!NOTE]\n> The problem is not a single person delaying a task. The problem is a system where a critical activity has no owner, no deadline, no written plan, and no verifiable output."
+      },
+      {
+        "id": "not-a-public-war",
+        "title": "I do not want to turn this into a war",
+        "image": "",
+        "body": "This is not an article written to assign public blame, name people, or turn a corporate closure into a rant. That would be easy. It would also be unhelpful.\n\nResponsibility in a company is rarely comfortable, linear, or perfectly distributed. I made mistakes too. I underestimated warning signs, kept covering operational gaps, and accepted for too long that availability could replace processes, boundaries, and formal responsibility.\n\nBut owning my part does not mean accepting paralysis as destiny.\n\nWhen a business has stopped operating, clients have been transferred, and the partners have expressed the will to close, the process needs a clear path:\n\n1. an updated financial and tax position;\n2. a complete list of debts, credits, and obligations;\n3. an estimated cost of closure;\n4. required documents and signatures;\n5. accountable owners;\n6. deadlines;\n7. an expected date for deregistration.\n\nThis is not aggression. It is the minimum required to prevent a dying company from becoming a permanent cost for the people still formally connected to it."
+      },
+      {
+        "id": "fear-that-cash-is-not-enough",
+        "title": "The fear that the remaining cash is not enough",
+        "image": "",
+        "body": "There is also a very concrete fear: that the remaining liquidity will not be enough to cover everything.\n\nWhen a company stops collecting revenue but continues to incur costs, every month makes closure harder. The money in the bank is not a final prize to distribute: it must first cover taxes, suppliers, bank fees, services, professionals, filings, and every other real outstanding obligation.\n\nThe risk should not be dramatized without numbers, but it should not be ignored either. What is needed is a statement. Not reassuring phrases, not "we will see," not "we will speak later." A statement with verifiable amounts and line items:\n\n- available liquidity;\n- outstanding receivables;\n- certain debts;\n- invoices and recurring costs;\n- VAT and tax payments;\n- professional and registry costs;\n- the amount that must be reserved;\n- any estimated deficit.\n\nUntil these numbers exist in a shared and documented form, no one can honestly say whether the closure will be simple, expensive, or problematic. And the longer it takes, the worse those numbers become.\n\n> [!WARNING]\n> Do not distribute cash to shareholders or empty the account until all outstanding obligations have been checked and handled correctly."
+      },
+      {
+        "id": "my-products-must-not-inherit-the-chaos",
+        "title": "My products must not inherit the chaos",
+        "image": "",
+        "body": "The most important lesson I am taking from Spotex is not that companies, partners, or clients should be avoided forever. It is simpler and harsher: do not build systems where critical decisions depend on memory, goodwill, or someone’s momentary availability.\n\nLinkbay CMS, Rstudy, and PivotCut are also a response to this experience. I want products built with clear boundaries, understandable costs, documented infrastructure, and technical ownership that is not scattered across chats, emergencies, and silence.\n\nThat does not mean doing everything alone out of pride. It means knowing who decides, who owns what, where the data is, how a service is paid for, how a cost is stopped, how a system is handed over, and what happens if someone does not answer for weeks.\n\nAbove all, it means not confusing the ability to build software with the ability to sustain a company. Code is only one part of a product. A business also stands on accounting, contracts, communication, processes, access, documentation, and the discipline to make decisions while they are still small."
+      },
+      {
+        "id": "closing-to-start-again",
+        "title": "Closing in order to start again",
+        "image": "",
+        "body": "I am not asking for Spotex to work again. I do not want to reopen discussions about a model that has already proven unsustainable. I do not even want to turn the past into a permanent enemy.\n\nI want to close it properly.\n\nClosing properly means having the numbers, meeting the obligations, paying what is due, preserving the necessary documentation, and reaching a formal ending that allows everyone to stop carrying this structure around.\n\nFor me, however, closing is not just about archiving a chapter. It is about freeing the possibility to work on the products I have already built and to start a new activity without living with a constraint created by a model that no longer represents what I want to do.\n\nSpotex taught me a lot. It taught me that technical talent does not compensate for fragile governance. That a client is not always an asset. That revenue does not mean health. That availability is not a role. That documentation is not useless bureaucracy. And that keeping a structure alive when it has no future can cost more than recognizing the end.\n\nNow the lesson needs to end where every serious post-mortem should end: with action. An updated situation. A plan. A date. And a real closure.\n\n> [!TAKEAWAY]\n> Closing a company does not mean erasing the work that was done. It means preventing a concluded model from continuing to consume the future of the people who want to build something else."
+      }
+    ]
+  }
+}
