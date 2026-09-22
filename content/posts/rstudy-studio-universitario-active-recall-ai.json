@@ -1,0 +1,77 @@
+{
+  "slug": "rstudy-studio-universitario-active-recall-ai",
+  "publishedAt": "2026-09-22",
+  "updatedAt": "2026-09-22",
+  "cover": "/rstudy.png",
+  "youtubeUrl": "",
+  "tags": [
+    "SaaS",
+    "IndieDev",
+    "Productivity",
+    "AI",
+    "LocalFirst",
+    "Electron"
+  ],
+  "title": {
+    "it": "RStudy: come trasformare il caos dello studio universitario in ripasso attivo (e locale-first)",
+    "en": "RStudy: Turning University Study Chaos into Active Recall with Local-First AI"
+  },
+  "description": {
+    "it": "L'avvento dell'AI ha moltiplicato le informazioni ma aumentato il disordine nello studio. Ecco come è nata RStudy, un'app desktop locale-first per memorizzare davvero senza abbonamenti ricorrenti.",
+    "en": "AI multiplied information access but increased study overload. How RStudy was built as a local-first desktop app for active recall without recurring subscriptions."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "L'avvento dell'intelligenza artificiale ha moltiplicato a dismisura le fonti e le risposte a nostra disposizione, ma quando arriva la sessione d'esame il risultato è quasi sempre lo stesso: **il caos totale**. Centinaia di pagine di dispense frammentate, decine di slide accumulate e una rilettura passiva che ruba ore senza fissare davvero i concetti nella memoria a lungo termine.\n\nPer rispondere a questa frizione quotidiana ho iniziato a progettare [RStudy](https://alessioquagliara.github.io/RStudy/), un'applicazione desktop pensata per mettere ordine metodologico e trasformare gli appunti in ripasso attivo, proteggendo al contempo la riservatezza dei propri materiali.\n\n<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7507005242148945921?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Post incorporato\"></iframe>"
+      },
+      {
+        "id": "il-problema-dello-studio-passivo",
+        "title": "Il paradosso dell'AI e i limiti della rilettura passiva",
+        "image": "",
+        "body": "Spesso si confonde la consultazione rapida con l'apprendimento profondo. Avere un chatbot pronto a spiegare un teorema non equivale a saperlo dimostrare durante la prova scritta o all'orale.\n\nLe scienze cognitive dimostrano che l'apprendimento solido poggia su due pilastri fondamentali:\n- **Active Recall**: sforzarsi attivamente di recuperare un concetto dalla memoria prima di leggerne la risposta.\n- **Spaced Repetition (SRS)**: distribuire i ripassi a intervalli calcolati in base alla difficoltà percepita.\n\nMolti software moderni presentano due barriere: impongono abbonamenti mensili continui e richiedono di caricare documenti privati su server remoti di terze parti.\n\n> [!TAKEAWAY]\n> Rileggere le dispense dieci volte dà una falsa sicurezza di padronanza. L'unica metrica che conta prima di un esame è la capacità di autovalutarsi tramite domande e verifiche continue."
+      },
+      {
+        "id": "architettura-e-funzionalita",
+        "title": "Come funziona RStudy: dal testo al test in un click",
+        "image": "",
+        "body": "RStudy integra l'intero ciclo di preparazione in un'unica interfaccia reattiva e priva di distrazioni:\n\n### 1. Dashboard e Gestione Corsi\nUna panoramica che tiene traccia di CFU, calendario degli appelli, avanzamento delle lezioni e carico di flashcard giornaliere.\n\n### 2. Editor Appunti e Studio AI\nUn editor di scrittura in stile blocco note con supporto al dettato vocale. Dalla sezione **Studio AI**, il contenuto della lezione viene elaborato per generare:\n- **Riepilogo e Punti salienti**: sintesi strutturata dei concetti cardine.\n- **Diagrammi Mermaid**: mappe concettuali e schemi logici generati in tempo reale.\n- **Presentazioni di ripasso**: slide a schermo intero per ripetere ad alta voce.\n- **Esercizi e Quiz**: domande a risposta multipla, quesiti aperti e frammenti di codice con correzione automatica.\n\n### 3. Sistema di Flashcard Spaziato\nLe schede generate alimentano una coda di revisione giornaliera (divisa per difficoltà *Facile*, *Media*, *Difficile*), assicurando che i concetti più ostici vengano riproposti al momento giusto.\n\n> [!TIP]\n> Suddividere gli argomenti d'esame in piccoli moduli indipendenti facilita la generazione di quiz mirati e previene il sovraccarico cognitivo."
+      },
+      {
+        "id": "approccio-locale-first-e-lancio",
+        "title": "Architettura locale-first e verso il lancio ufficiale",
+        "image": "",
+        "body": "Fin dalla prima riga di codice, la priorità di RStudy è stata la sostenibilità tecnica e il rispetto dei dati:\n\n- **Database locale**: appunti, materie e progressi rimangono memorizzati sul tuo computer in SQLite.\n- **AI flessibile (Offline o Cloud)**: il motore di default lavora al 100% offline tramite modelli locali compatti (llama.cpp). Chi desidera maggiore velocità può collegare in qualsiasi momento la propria chiave API (OpenAI-compatible / DeepSeek) senza intermediari.\n- **Nessun abbonamento ricorrente**: licenza one-time per possedere il software.\n\nIl progetto è in fase finale di rifinitura e il lancio ufficiale avverrà a breve.\n\n> [!NOTE]\n> Puoi visualizzare le caratteristiche complete, la roadmap e i dettagli di rilascio direttamente sul sito ufficiale di [RStudy](https://alessioquagliara.github.io/RStudy/)."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "The rapid rise of AI tools has drastically multiplied the amount of information available, yet when exam week approaches, students face familiar friction: **overwhelming chaos**. Fragmented notes, scattered presentation slides, and passive re-reading routines consume hours without building long-term memory retention.\n\nTo solve this problem, I started building [RStudy](https://alessioquagliara.github.io/RStudy/), a local-first desktop application designed to bring order to study sessions by transforming regular notes into active recall systems while keeping personal materials private.\n\n<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7507005242148945921?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
+      },
+      {
+        "id": "il-problema-dello-studio-passivo",
+        "title": "The AI overload paradox and passive learning limits",
+        "image": "",
+        "body": "Instant access to summaries is often mistaken for actual learning. Having a chatbot explain a mathematical theorem does not mean you can solve it under exam conditions.\n\nCognitive science highlights two critical methods for durable learning:\n- **Active Recall**: challenging the brain to retrieve answers before looking at the solution.\n- **Spaced Repetition (SRS)**: scheduling reviews at calculated intervals based on self-reported difficulty.\n\nMost existing SaaS tools introduce two major drawbacks: mandatory monthly subscriptions and forced cloud uploads of proprietary course materials.\n\n> [!TAKEAWAY]\n> Re-reading slides creates an illusion of competence. The only real measure of exam readiness is continuous self-testing through structured questions."
+      },
+      {
+        "id": "architettura-e-funzionalita",
+        "title": "Inside RStudy: From raw notes to active quizzes",
+        "image": "",
+        "body": "RStudy unifies the study preparation workflow into a clean, distraction-free environment:\n\n### 1. Course & Exam Dashboard\nA central overview to track academic credits (CFU), exam deadlines, lesson progress, and pending daily flashcard reviews.\n\n### 2. Note Editor & AI Study Pack\nA distraction-free rich-text editor supporting voice dictation. From the **AI Study** tab, notes are processed into:\n- **Executive Summaries & Key Points**: structured outlines of fundamental principles.\n- **Mermaid Diagrams**: interactive flowcharts and concept maps rendered on the fly.\n- **Presentation Slides**: full-screen decks tailored for oral rehearsal.\n- **Progressive Exercises**: multiple-choice questions, open-ended tests, and code exercises with immediate feedback.\n\n### 3. Spaced Flashcard Queue\nGenerated flashcards are automatically organized by subject and difficulty (*Easy*, *Medium*, *Hard*) for efficient daily retention.\n\n> [!TIP]\n> Breaking down complex syllabus topics into focused, modular notes improves AI test precision and prevents cognitive fatigue."
+      },
+      {
+        "id": "approccio-locale-first-e-lancio",
+        "title": "Local-first architecture and upcoming launch",
+        "image": "",
+        "body": "RStudy is designed around operational sustainability, privacy, and user ownership:\n\n- **Local-first SQLite DB**: notes, subjects, and study history stay strictly on your local disk.\n- **Flexible AI Execution**: runs 100% offline via local compact models (llama.cpp) or connects directly to personal OpenAI-compatible API endpoints (e.g. DeepSeek).\n- **No Recurring Subscriptions**: one-time license model.\n\nDevelopment is in its final polishing stages, with the official launch arriving soon.\n\n> [!NOTE]\n> Explore the full feature set, roadmap, and release updates on the official [RStudy website](https://alessioquagliara.github.io/RStudy/)."
+      }
+    ]
+  }
+}
