@@ -6,19 +6,17 @@
   "youtubeUrl": "",
   "tags": [
     "automazione freelancer",
-    "automazione freelance",
     "gestione clienti freelance",
     "workflow freelance",
-    "AI per freelance",
-    "automazione preventivi"
+    "AI per freelance"
   ],
   "title": {
-    "it": "Automazione per freelancer: smetti di rincorrere email, preventivi e clienti",
-    "en": "Automation for freelancers: stop chasing emails, quotes and clients"
+    "it": "Automazione per freelancer: meno email, più lavoro pagato",
+    "en": "Automation for freelancers: fewer emails, more paid work"
   },
   "description": {
-    "it": "Come automatizzare il flusso di lavoro di un freelance: dal contatto al preventivo, dall'onboarding alle scadenze, senza trasformare il business in un sistema complicato.",
-    "en": "How to automate a freelancer workflow: from first contact to proposal, onboarding and deadlines, without turning the business into a complicated system."
+    "it": "Un flusso semplice per freelance: contatti, preventivi, onboarding e fatture senza rifare ogni volta le stesse cose.",
+    "en": "A simple workflow for freelancers: leads, proposals, onboarding and invoices without repeating the same work every time."
   },
   "sections": {
     "it": [
@@ -26,43 +24,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Fare il freelance non significa solo fare bene il proprio lavoro. Significa anche rispondere alle email, capire cosa vuole un potenziale cliente, preparare preventivi, rincorrere conferme, creare cartelle, mandare fatture e ricordarsi i follow-up.\n\nIl problema non è che queste attività esistano. Il problema è rifarle da zero ogni volta. Se il tuo processo cambia a ogni cliente, non stai lavorando in modo più personalizzato: spesso stai semplicemente perdendo tempo e aumentando la possibilità di dimenticare qualcosa."
+        "body": "Da freelance perdi più tempo di quanto pensi tra email, preventivi, messaggi, cartelle progetto e fatture. Non perché lavori male: perché rifai le stesse attività per ogni cliente.\n\nL'automazione serve a questo: togliere di mezzo le ripetizioni, non rendere impersonale il tuo lavoro."
       },
       {
-        "id": "non-automatizzare-tutto",
-        "title": "Non automatizzare tutto: automatizza le ripetizioni",
-        "image": "/images/posts/automazione-freelancer-clienti-flussi/workflow-freelance.jpg",
-        "body": "L'automazione utile non serve a rendere impersonale il rapporto con il cliente. Serve a togliere dal tuo tavolo i passaggi uguali per tutti, così puoi dedicare attenzione a strategia, lavoro creativo e decisioni importanti.\n\nDi solito il flusso è questo:\n\n**Contatto → raccolta informazioni → call → preventivo → conferma → onboarding → lavoro → fattura → follow-up**\n\nSe in questi passaggi copi dati da un'email a un foglio, da un foglio a un preventivo e dal preventivo a una fattura, hai già un processo da migliorare. L'onboarding è spesso il primo flusso da sistemare, perché ogni nuovo cliente richiede sempre le stesse informazioni, documenti e comunicazioni.[web:17][web:22]\n\n> [!TAKEAWAY]\n> Non automatizzare ciò che richiede giudizio. Automatizza ciò che fai nello stesso modo, ogni settimana."
+        "id": "flusso-semplice",
+        "title": "Un flusso semplice",
+        "image": "/workflow-freelance.jpeg",
+        "body": "Ti basta un percorso chiaro:\n\n**Contatto → call → preventivo → conferma → lavoro → fattura**\n\nOgni fase deve avere una prossima azione. Se arriva un contatto, raccogli le informazioni con un modulo breve. Se accetta il preventivo, parte una checklist. Se consegni, parte il promemoria per la fattura.\n\n> [!TAKEAWAY]\n> Se un passaggio lo fai nello stesso modo ogni settimana, puoi trasformarlo in un modello o in un'automazione."
       },
       {
-        "id": "flusso-base",
-        "title": "Il flusso base che userei per un freelance",
+        "id": "tre-cose-da-automatizzare",
+        "title": "Tre cose da automatizzare",
         "image": "",
-        "body": "### 1. Il contatto entra da un modulo, non solo da WhatsApp\n\nUn modulo breve raccoglie le informazioni minime: nome, attività, obiettivo, budget indicativo, scadenza e contatti. Non deve essere un interrogatorio. Deve evitarti tre email solo per capire cosa ti sta chiedendo la persona.\n\n### 2. Il contatto finisce in un'unica lista\n\nOgni richiesta diventa una scheda in un CRM leggero, in un database o in una board. Devi poter vedere in pochi secondi: chi è il cliente, da dove arriva, a che punto è e qual è la prossima azione.\n\n### 3. Il preventivo parte da un modello\n\nNon copiare l'ultimo PDF e sperare di non dimenticare pezzi. Crea 2-3 modelli per i servizi più frequenti, con scope, esclusioni, tempi, revisioni e condizioni chiare. L'AI può aiutarti a preparare una prima bozza dal brief, ma il prezzo e gli impegni finali li decidi tu.\n\n### 4. L'accettazione avvia l'onboarding\n\nQuando il preventivo è accettato o arriva l'acconto, il sistema può creare cartella progetto, checklist, task iniziali e email di benvenuto. Il collegamento tra proposta accettata, progetto e fatturazione evita di riscrivere più volte gli stessi dati.[web:17][web:23]\n\n### 5. Le scadenze non restano nella tua testa\n\nFollow-up, richiesta materiali, consegne e fatture devono avere una data e un promemoria. Non devi ricordarti tutto: devi costruire un sistema che ti segnali la prossima cosa importante."
+        "body": "### 1. Nuovi contatti\n\nUn modulo raccoglie nome, richiesta, budget indicativo e contatto. Così non perdi tre messaggi solo per capire cosa serve.\n\n### 2. Onboarding\n\nDopo conferma o acconto, invia un messaggio con i prossimi passi e crea una checklist: materiali, accessi, call e scadenze.\n\n### 3. Fatture\n\nImposta un promemoria prima della scadenza e uno dopo. Le fatture non devono restare nascoste in mezzo alle email."
       },
       {
-        "id": "tre-automazioni",
-        "title": "Tre automazioni da fare subito",
+        "id": "ai-solo-per-bozze",
+        "title": "L'AI può aiutare, ma non decide",
         "image": "/images/posts/automazione-freelancer-clienti-flussi/automazioni-freelance.jpg",
-        "body": "### Follow-up per nuovi contatti\n\nSe una persona compila un modulo e non prenota una call, puoi inviare un messaggio automatico dopo qualche giorno. Non un testo aggressivo: un promemoria semplice con il link per scegliere un orario o aggiungere informazioni.\n\n### Onboarding dopo conferma o acconto\n\nQuando un cliente conferma, invia automaticamente il messaggio di benvenuto con cosa succede ora, cosa deve inviarti e quali sono i tempi. Poi crea la checklist interna: accessi, materiali, call iniziale, cartella e milestone. Un pagamento ricevuto è un trigger particolarmente pulito, perché indica in modo chiaro che il flusso può avanzare.[web:28]\n\n### Promemoria per fatture e pagamenti\n\nUna fattura inviata non dovrebbe sparire in una conversazione email. Imposta promemoria prima della scadenza, un follow-up gentile dopo la scadenza e uno stato visibile per sapere subito cosa è da incassare. Le automazioni di onboarding, fatturazione e sollecito eliminano molte attività manuali ricorrenti.[web:17]\n\n> [!TIP]\n> Parti dall'automazione che ti fa perdere più tempo ogni settimana. Non installare dieci strumenti prima di aver sistemato un solo flusso."
+        "body": "Usa l'AI per riassumere un brief, preparare una bozza di email, trasformare una call in una checklist o partire da un modello di preventivo.\n\nMa controlla sempre prezzo, condizioni, contratto e messaggi importanti prima di inviarli. L'AI ti fa partire più veloce: la responsabilità resta tua.\n\n> [!WARNING]\n> Non inserire dati riservati dei clienti in strumenti esterni senza sapere dove vengono conservati e chi può accedervi."
       },
       {
-        "id": "ai-nel-workflow",
-        "title": "Dove l'AI aiuta davvero",
+        "id": "inizia-ora",
+        "title": "Inizia da una sola cosa",
         "image": "",
-        "body": "L'AI è utile come assistente dentro un flusso ordinato, non come sostituto del tuo giudizio professionale. Può aiutarti a:\n\n- Riassumere il brief di un cliente e indicare le informazioni mancanti.\n- Preparare una bozza di email o preventivo partendo da un modello approvato.\n- Trasformare gli appunti di una call in una checklist di attività.\n- Creare un aggiornamento settimanale sullo stato del progetto.\n- Cercare tra note, documenti e conversazioni autorizzate.\n\nNon delegare all'AI prezzi, clausole contrattuali, promesse di risultato o comunicazioni delicate senza una revisione. E se inserisci dati dei clienti in strumenti esterni, valuta con attenzione privacy, accessi, conservazione dei dati e fornitori coinvolti. Per chi lavora con clienti UE, il trattamento dei dati personali resta soggetto al GDPR; quando tratti dati per conto di un cliente possono servire accordi e istruzioni di trattamento adeguati.[web:25][web:27]\n\n> [!WARNING]\n> L'AI può accelerare una bozza. Non può assumersi la responsabilità di ciò che invii a un cliente."
-      },
-      {
-        "id": "stack-semplice",
-        "title": "Uno stack semplice batte dieci app scollegate",
-        "image": "",
-        "body": "Non esiste lo strumento perfetto. Esiste uno stack che usi davvero. Per iniziare bastano quattro pezzi:\n\n- Un punto di ingresso: modulo di contatto o calendario.\n- Un posto dove gestire clienti e opportunità: CRM leggero, database o board.\n- Un sistema per preventivi, contratti e fatture.\n- Un'automazione che collega gli eventi principali: nuovo contatto, conferma, pagamento, scadenza.\n\nLe piattaforme dedicate ai freelancer spesso uniscono proposte, contratti, fatture, pagamenti e workflow; in alternativa puoi collegare strumenti più semplici che già usi. La scelta dipende da quanti clienti gestisci, da come fatturi e dal livello di personalizzazione di cui hai davvero bisogno.[web:16][web:26]\n\nPrima di scegliere una nuova app, disegna su carta il flusso attuale. Se non è chiaro cosa deve succedere dopo una richiesta cliente, nessuna automazione potrà risolverlo."
-      },
-      {
-        "id": "inizia-questa-settimana",
-        "title": "Cosa automatizzare questa settimana",
-        "image": "",
-        "body": "Fai questo esercizio in 20 minuti:\n\n1. Scrivi le ultime cinque attività amministrative ripetitive che hai svolto.\n2. Segna quante volte le ripeti in un mese.\n3. Scegli quella più noiosa, frequente e standardizzabile.\n4. Crea un modello o una checklist prima ancora di collegare strumenti.\n5. Automatizza il trigger più semplice: invio modulo, appuntamento fissato, preventivo accettato o fattura in scadenza.\n\nUn freelance non scala lavorando il doppio per ricordarsi tutto. Scala quando i passaggi ripetibili diventano affidabili, mentre lui resta concentrato sul lavoro che il cliente paga davvero."
+        "body": "Non installare dieci app. Scegli l'attività amministrativa che ripeti più spesso e crea prima un modello semplice.\n\nPoi automatizza un solo trigger: nuovo contatto, preventivo accettato o fattura in scadenza.\n\nUn sistema minimo, che usi davvero, vale più di una mega-dashboard che abbandoni dopo una settimana."
       }
     ],
     "en": [
@@ -70,43 +56,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Freelancing is not only client work. It also means replying to emails, preparing proposals, following up, creating project folders and managing invoices. The problem is not that these tasks exist: it is rebuilding the same process from scratch for every client."
+        "body": "As a freelancer, you lose time across emails, proposals, messages, project folders and invoices because the same administrative work is repeated for every client. Automation removes repetition without making your work impersonal."
       },
       {
-        "id": "automate-repetition",
-        "title": "Automate repetition, not judgment",
-        "image": "/images/posts/automazione-freelancer-clienti-flussi/workflow-freelance.jpg",
-        "body": "Useful automation removes repeated operational steps so you can spend attention on strategy, creative work and important decisions. A typical workflow is: contact, qualification, call, proposal, approval, onboarding, delivery, invoice and follow-up.\n\n> [!TAKEAWAY]\n> Automate the steps you perform the same way every week, not the decisions that require professional judgment."
-      },
-      {
-        "id": "base-workflow",
-        "title": "A practical freelance workflow",
-        "image": "",
-        "body": "Use a short intake form, place every lead in one clear client list, create proposals from templates, trigger onboarding after approval or deposit, and keep every deadline in a system instead of in your head."
+        "id": "simple-flow",
+        "title": "A simple workflow",
+        "image": "/workflow-freelance.jpeg",
+        "body": "Use one clear path: **Lead → call → proposal → approval → work → invoice**. Each stage needs a next action.\n\n> [!TAKEAWAY]\n> If you perform a step the same way every week, turn it into a template or automation."
       },
       {
         "id": "three-automations",
-        "title": "Three automations to set up first",
-        "image": "/images/posts/automazione-freelancer-clienti-flussi/automazioni-freelance.jpg",
-        "body": "Automate a gentle lead follow-up, onboarding after confirmation or payment, and invoice/payment reminders. Start with the repeatable task that costs you the most time every week."
+        "title": "Three things to automate",
+        "image": "",
+        "body": "Automate a short lead intake form, an onboarding message and checklist after approval or deposit, and reminders for upcoming or overdue invoices."
       },
       {
-        "id": "ai-in-workflow",
-        "title": "Where AI actually helps",
-        "image": "",
-        "body": "AI can summarize a brief, identify missing information, draft a proposal from an approved template, turn call notes into a checklist and prepare project updates. Review anything related to pricing, contracts, commitments or sensitive communication before sending it."
+        "id": "ai-for-drafts",
+        "title": "AI helps, but does not decide",
+        "image": "/automazioni-freelance.jpeg",
+        "body": "Use AI to summarize a brief, draft an email, turn a call into a checklist or start a proposal from a template. Review price, conditions, contracts and important messages before sending."
       },
       {
-        "id": "simple-stack",
-        "title": "A simple stack beats ten disconnected apps",
+        "id": "start-now",
+        "title": "Start with one thing",
         "image": "",
-        "body": "Start with one entry point, one client-management space, one system for proposals/contracts/invoices and a small set of automations connecting the key events. Map your process before adding tools."
-      },
-      {
-        "id": "start-this-week",
-        "title": "What to automate this week",
-        "image": "",
-        "body": "List your last five repetitive administrative tasks, choose the most frequent and standardized one, create a template or checklist, then automate one simple trigger such as a form submission, a booked call, an accepted proposal or an upcoming invoice."
+        "body": "Do not install ten apps. Choose the administrative task you repeat most often, create a simple template, then automate one trigger: a new lead, an accepted proposal or an upcoming invoice."
       }
     ]
   }
