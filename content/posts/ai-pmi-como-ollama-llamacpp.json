@@ -1,0 +1,132 @@
+{
+  "slug": "ai-pmi-como-ollama-llamacpp",
+  "publishedAt": "2026-09-30",
+  "updatedAt": "",
+  "cover": "/ai-pmi-como-ollama-llamacpp.jpeg",
+  "youtubeUrl": "",
+  "tags": [
+    "intelligenza artificiale Como",
+    "AI PMI Como",
+    "automazione aziendale Lombardia",
+    "Ollama",
+    "llama.cpp",
+    "AI locale",
+    "PMI manifatturiere"
+  ],
+  "title": {
+    "it": "Integrare l'AI nella tua PMI a Como non deve costare una fortuna: parti da un problema reale",
+    "en": "AI for SMEs in Como does not have to be expensive: start from a real problem"
+  },
+  "description": {
+    "it": "Guida pratica per PMI di Como, Lecco e Lombardia: come usare AI locale con Ollama e llama.cpp per documenti, preventivi, magazzino e processi operativi, partendo da un piccolo progetto misurabile.",
+    "en": "A practical guide for SMEs in Como, Lecco and Lombardy: use local AI with Ollama and llama.cpp for documents, quotes, warehouses and operational processes, starting with a small measurable project."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Se hai una PMI a Como, Lecco o in Lombardia, probabilmente senti parlare di Intelligenza Artificiale ogni settimana. Il problema è che quasi sempre viene presentata come una cosa da grandi aziende: consulenze infinite, dati da sistemare per mesi, software in abbonamento e promesse poco chiare.\n\nNon deve funzionare così. L'AI utile in azienda può iniziare da un problema piccolo ma ripetitivo: cercare informazioni nei manuali, leggere richieste clienti, preparare una prima bozza di preventivo, classificare documenti oppure aiutare il magazzino a registrare un'operazione. L'obiettivo non è “mettere l'AI in azienda”. L'obiettivo è togliere minuti, errori e passaggi inutili da un processo che oggi blocca persone competenti.\n\nNell'area lariana la manifattura resta centrale, con comparti come meccanica, tessile e legno-arredo; nello stesso tempo, in Lombardia molte piccole imprese sono ancora nella fase in cui l'AI è conosciuta ma non realmente integrata nei processi. Questo apre spazio a progetti concreti, piccoli e misurabili, invece delle solite demo da fiera.[web:1][web:4]"
+      },
+      {
+        "id": "non-comprare-ai-comprare-risultato",
+        "title": "Non comprare “l'AI”: compra un risultato misurabile",
+        "image": "/images/posts/ai-pmi-como-ollama-llamacpp/problema-processo-ai.jpg",
+        "body": "La domanda sbagliata è: *“Come possiamo usare ChatGPT in azienda?”*\n\nLa domanda giusta è: *“Quale attività ripetitiva ci fa perdere tempo, genera errori o rallenta una vendita?”*\n\nUn buon primo progetto ha quattro caratteristiche:\n\n- Succede spesso: ogni giorno o ogni settimana, non due volte l'anno.\n- È abbastanza standard: ci sono documenti, regole, esempi storici o passaggi ripetibili.\n- Ha un responsabile che conosce bene il lavoro e può dire se la risposta è utile.\n- Si può misurare prima e dopo: minuti risparmiati, errori evitati, richieste gestite o tempo di risposta.\n\n> [!TAKEAWAY]\n> L'AI non è il progetto. Il progetto è ridurre un collo di bottiglia concreto dell'azienda.\n\n### Un esempio semplice\n\nImmagina un ufficio tecnico o commerciale che riceve richieste via email con PDF, codici prodotto e note del cliente. Oggi una persona apre gli allegati, cerca informazioni tra listini, vecchi preventivi e manuali, poi prepara una bozza. Un assistente AI può leggere i documenti autorizzati, recuperare le informazioni rilevanti e produrre una **bozza da verificare**, non un preventivo inviato in automatico.\n\nIl risultato da misurare non è “l'assistente è intelligente”. Può essere: “riduciamo da 25 a 8 minuti il tempo medio per preparare la prima bozza, lasciando sempre l'approvazione finale a un commerciale”."
+      },
+      {
+        "id": "perche-ai-locale",
+        "title": "Perché usare un'AI locale con Ollama e llama.cpp",
+        "image": "",
+        "body": "Per molte PMI il punto non è solo ottenere una risposta generata dall'AI. Il punto è capire **dove finiscono documenti, listini, procedure interne, disegni e dati dei clienti**.\n\nCon un modello linguistico eseguito localmente, l'elaborazione può restare su un PC dedicato o su un server interno dell'azienda. **Ollama** rende più semplice scaricare e avviare modelli locali tramite API; **llama.cpp** è un motore leggero, adatto anche a modelli compressi in formato GGUF e a installazioni con risorse controllate. Se l'architettura è configurata correttamente, l'applicazione può parlare con il modello nella rete aziendale senza inviare automaticamente prompt e documenti a un servizio cloud esterno.[web:5][web:8]\n\nQuesto non significa “privacy risolta magicamente”. Restano fondamentali ruoli di accesso, backup, aggiornamenti, cifratura del disco, log minimizzati, controllo delle fonti dei modelli e separazione tra il sistema AI e i sistemi più critici. In particolare, la porta del servizio non dovrebbe essere esposta pubblicamente: il modello va raggiunto attraverso un backend autenticato o limitato alla rete interna.[web:11][web:15]\n\n### In parole normali\n\n- **Ollama**: il modo pratico per far girare e chiamare un modello locale da una piccola applicazione.\n- **llama.cpp**: il motore efficiente sotto il cofano, utile quando servono controllo, modelli GGUF e hardware contenuto.\n- **La tua app**: la parte che mette ordine nei documenti, applica i permessi, mostra le risposte e chiede conferma a una persona.\n\n> [!NOTE]\n> Un modello locale non sostituisce ERP, MES, WMS o gestionali. Li affianca: legge dati autorizzati, propone una risposta o prepara un'azione che una persona o una regola aziendale convalida."
+      },
+      {
+        "id": "casi-uso-pmi-como",
+        "title": "Quattro casi d'uso utili per PMI di Como",
+        "image": "/images/posts/ai-pmi-como-ollama-llamacpp/casi-uso-pmi-como.jpg",
+        "body": "Non partirei da un robot che prende decisioni da solo. Partirei da un assistente circoscritto, con dati selezionati e una persona che mantiene l'ultima parola.\n\n### 1. Assistente per manuali, procedure e schede tecniche\n\nL'azienda carica manuali macchina, procedure di sicurezza, istruzioni di manutenzione e schede prodotto in un archivio controllato. Un operatore può chiedere: “Qual è la procedura di cambio formato della linea X?” oppure “Quale manutenzione è prevista per questo allarme?”.\n\nL'assistente dovrebbe rispondere indicando sempre la fonte: file, pagina o sezione. Se non trova una fonte, deve dirlo chiaramente invece di inventare. È spesso il caso d'uso migliore per iniziare perché non modifica nulla e non richiede integrazioni profonde.\n\n### 2. Bozze di preventivo e risposta alle richieste clienti\n\nUn flusso può estrarre dati dalle email e dagli allegati, confrontarli con listini o lavori storici autorizzati e preparare una checklist: informazioni mancanti, prodotti compatibili, rischi da verificare e testo della bozza.\n\nIl commerciale controlla e approva. Così l'AI accelera la preparazione, ma prezzo, margine e impegni contrattuali restano sotto controllo umano.\n\n### 3. Magazzino: ricerca e registrazioni più semplici\n\nPrima di pensare alla voce, partirei da un'interfaccia molto semplice su telefono industriale o tablet: ricerca per linguaggio naturale, suggerimento dell'ubicazione, verifica del codice e compilazione guidata di un movimento.\n\nSolo dopo aver stabilizzato dati e procedure ha senso aggiungere comandi vocali. In logistica, un'AI può essere utile, ma non può correggere anagrafiche incoerenti, ubicazioni sbagliate o flussi non standardizzati. I dati restano la base del progetto.\n\n### 4. Controllo qualità visivo assistito\n\nUna telecamera e un modello di visione possono segnalare anomalie ripetitive: etichetta mancante, componente assente, colore non conforme o difetto evidente. Non è un progetto “da 30 euro” pronto per la produzione: illuminazione, posizionamento, campioni rappresentativi, falsi scarti e sicurezza della linea contano quanto il modello.\n\nPer questo lo imposterei come prova controllata su un difetto specifico, senza sostituire subito il controllo umano.\n\n> [!TIP]\n> Per la maggior parte delle PMI, l'ordine giusto è: documenti e ufficio tecnico/commerciale → dati di magazzino → integrazioni operative → visione artificiale o IoT. Si parte dove il rischio è più basso e il valore è più facile da dimostrare."
+      },
+      {
+        "id": "metodo-in-5-passaggi",
+        "title": "Come partire: un progetto pilota in 5 passaggi",
+        "image": "",
+        "body": "### 1. Scegli un processo, non un reparto intero\n\nNon dire “digitalizziamo il magazzino”. Di': “riduciamo il tempo necessario per trovare la procedura di gestione delle anomalie di ricevimento”. Un perimetro piccolo evita mesi di discussioni e permette di arrivare a una prima prova utile.\n\n### 2. Misura la situazione attuale\n\nPer una o due settimane raccogli dati semplici: quante richieste arrivano, quanto tempo impiegano, quanti passaggi manuali servono, quante volte manca un'informazione e dove nascono gli errori. Non servono dashboard complesse: un foglio condiviso può bastare.\n\n### 3. Prepara poche fonti affidabili\n\nMeglio 30 documenti aggiornati, nominati bene e autorizzati, che 3.000 file vecchi e confusi. Per ogni fonte definisci proprietario, data, permessi e validità. L'AI deve cercare in un archivio controllato, non in una cartella caotica accessibile a tutti.\n\n### 4. Costruisci una prova con approvazione umana\n\nIl flusso minimo può essere: documento o domanda → ricerca nelle fonti → risposta con riferimenti → revisione dell'addetto → eventuale invio o registrazione. L'assistente propone; una persona autorizza.\n\n### 5. Decidi con numeri, non con entusiasmo\n\nDopo alcune settimane, confronta prima e dopo: tempo medio, tasso di correzione, soddisfazione dell'operatore, richieste evase e casi in cui l'assistente non ha saputo rispondere. Se crea valore, si integra meglio. Se non lo crea, si corregge il processo o si interrompe senza aver buttato mesi e budget.\n\n> [!TAKEAWAY]\n> Un buon pilota deve poter fallire in piccolo, senza bloccare produzione, logistica o vendite."
+      },
+      {
+        "id": "architettura-semplice",
+        "title": "L'architettura semplice che userei",
+        "image": "/images/posts/ai-pmi-como-ollama-llamacpp/architettura-ai-locale.jpg",
+        "body": "Non serve costruire una piattaforma enorme al primo giorno. Per un assistente documentale o per bozze operative, una base sostenibile può essere questa:\n\n1. Un PC o server interno dedicato esegue il modello locale con Ollama oppure llama.cpp.\n2. Un backend interno gestisce utenti, permessi, log essenziali e chiamate al modello.\n3. Un archivio indicizzato contiene soltanto documenti approvati e accessibili a quel ruolo.\n4. Una piccola interfaccia web permette di fare domande, vedere le fonti e dare feedback.\n5. Le integrazioni con ERP, WMS, MES o email arrivano dopo la validazione del pilota e con regole precise.\n\nIl concetto importante è che il modello non deve “sapere tutto”. Deve ricevere solo il contesto utile per quella domanda e produrre una risposta vincolata alle fonti disponibili. Questa è la differenza tra una chat generica e uno strumento aziendale che puoi mantenere nel tempo.\n\n### Cosa evitare\n\n- Collegare subito l'AI in scrittura al gestionale.\n- Dare accesso indistinto a cartelle, preventivi e documenti HR.\n- Usare risposte non verificate per prezzi, norme, sicurezza o decisioni disciplinari.\n- Valutare il progetto solo sulla qualità di una demo.\n- Esporre direttamente il servizio del modello su Internet senza autenticazione e protezioni.\n\n> [!WARNING]\n> Se una risposta può causare un ordine sbagliato, un rischio di sicurezza, un prezzo errato o la diffusione di dati riservati, deve esserci una verifica umana e una regola di blocco."
+      },
+      {
+        "id": "costi-realisti",
+        "title": "Quanto costa davvero iniziare?",
+        "image": "",
+        "body": "La risposta onesta è: dipende dal problema, dai dati e dall'integrazione richiesta. Non esiste un prezzo serio senza capire il processo. Ma non è necessario partire con un progetto da decine di migliaia di euro.\n\nUn primo pilota può avere costi controllati se limita il perimetro: un caso d'uso, pochi utenti, fonti documentali scelte, una semplice interfaccia e nessuna automazione irreversibile. Il budget cresce quando entrano in gioco integrazioni profonde con software legacy, alta disponibilità, grandi volumi di documenti, GPU dedicate, sicurezza enterprise o computer vision in linea.\n\nL'esecuzione locale può ridurre la dipendenza da API a consumo e mantenere i dati nell'infrastruttura aziendale, ma non rende il progetto gratuito: rimangono hardware, sviluppo, monitoraggio, manutenzione e soprattutto il tempo delle persone che conoscono il processo. I vantaggi attesi dei modelli locali includono controllo dei dati e minori costi ricorrenti, purché l'installazione sia protetta e dimensionata correttamente.[web:8][web:15]\n\n### Il modo corretto di parlare di budget\n\nNon: “Con 500 euro automatizziamo tutto il magazzino”.\n\nSì: “Con un pilota limitato verifichiamo se questo assistente riduce davvero il tempo di risposta. Se il risultato c'è, stimiamo insieme l'integrazione successiva”.\n\nQuesto approccio è più credibile per un imprenditore e più sostenibile per chi sviluppa il progetto."
+      },
+      {
+        "id": "ai-industriale-o-ufficio",
+        "title": "AI per macchinari o agenti per l'ufficio?",
+        "image": "",
+        "body": "Per le PMI meccaniche, tessili, logistiche e manifatturiere di Como e Lombardia, il messaggio “AI applicata ai processi industriali” ha molta più presa di un generico “sviluppo chatbot”. Parla di tempi, margini, qualità, consegne e competenze che mancano: problemi che un titolare riconosce subito. L'area lariana ha inoltre una forte base manifatturiera, inclusi meccanica, tessile e legno-arredo.[web:1]\n\nMa come offerta iniziale, spesso partirei dagli **agenti assistivi per ufficio tecnico, commerciale, qualità e documenti**, non dall'hardware o dalla linea di produzione. Sono più facili da provare, richiedono meno fermo operativo, producono evidenze rapidamente e fanno emergere i limiti reali dei dati aziendali.\n\nL'IoT e la computer vision diventano il passo successivo quando esiste un problema fisico specifico, i dati sono disponibili e il ritorno economico giustifica il lavoro su telecamere, PLC, sicurezza, ambiente di fabbrica e affidabilità.\n\n> [!TAKEAWAY]\n> Il posizionamento migliore non è “vendo agenti AI” e nemmeno “faccio IoT”. È: **progetto strumenti AI privati per ridurre sprechi operativi nelle PMI manifatturiere e logistiche di Como e Lombardia**.\n\nI dati regionali mostrano una distanza netta tra grandi imprese e piccole realtà nell'adozione di progetti AI strutturati; questo rende ancora più importante proporre percorsi pragmatici, non trasformazioni astratte.[web:4][web:12]"
+      },
+      {
+        "id": "call-to-action",
+        "title": "Da dove cominciare nella tua azienda",
+        "image": "",
+        "body": "Se gestisci una PMI a Como, Lecco o in Lombardia e vuoi capire se un processo è adatto a un pilota AI, non partire dal software. Parti da questa mini-checklist:\n\n- Quale attività manuale fa perdere più tempo ogni settimana?\n- Quali documenti o dati servono per svolgerla?\n- Chi la conosce abbastanza bene da validare una prova?\n- Quale risultato possiamo misurare entro 30-60 giorni?\n- Quali dati devono rimanere obbligatoriamente dentro l'azienda?\n\nUn confronto iniziale serio serve proprio a questo: scegliere un problema concreto, stimare complessità e rischio, e capire se una soluzione con AI locale basata su Ollama e llama.cpp è sensata oppure se prima bisogna sistemare processo e dati.\n\nL'AI utile non è quella che fa più rumore. È quella che una persona in ufficio, in produzione o in magazzino usa davvero perché le fa risparmiare tempo senza farle perdere controllo."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "If you run an SME in Como, Lecco or Lombardy, you probably hear about Artificial Intelligence every week. The useful starting point is not a large, vague transformation: it is one real, repetitive operational problem that can be measured and improved."
+      },
+      {
+        "id": "start-from-a-problem",
+        "title": "Start from a measurable business problem",
+        "image": "",
+        "body": "Do not buy “AI” as an abstract concept. Choose a recurring task that wastes time, creates mistakes or delays a customer response. A good pilot has a clear owner, reliable input data and a measurable before-and-after result.\n\n> [!TAKEAWAY]\n> The project is not AI itself. The project is removing a concrete bottleneck."
+      },
+      {
+        "id": "local-ai-ollama-llamacpp",
+        "title": "Why local AI with Ollama and llama.cpp",
+        "image": "",
+        "body": "For document-heavy or sensitive workflows, a local language model can run on a dedicated PC or internal server. Ollama makes local model execution and API integration straightforward, while llama.cpp is a lightweight inference engine commonly used with quantized GGUF models.\n\nLocal deployment does not automatically solve security: access controls, backups, network isolation, trusted model sources and human approval are still required."
+      },
+      {
+        "id": "practical-use-cases",
+        "title": "Practical SME use cases",
+        "image": "",
+        "body": "Start with an assistant that answers from approved manuals and procedures with sources, drafts quote responses for a salesperson to approve, helps warehouse staff find information, or flags a narrowly defined visual quality issue.\n\nDo not let the first version make irreversible changes to ERP, WMS or production systems."
+      },
+      {
+        "id": "five-step-pilot",
+        "title": "A five-step pilot",
+        "image": "",
+        "body": "1. Select one process.\n2. Measure the current baseline.\n3. Prepare a small set of trustworthy sources.\n4. Build a human-in-the-loop proof of concept.\n5. Evaluate results with numbers, then decide whether to integrate further."
+      },
+      {
+        "id": "simple-architecture",
+        "title": "A simple sustainable architecture",
+        "image": "",
+        "body": "A maintainable setup can include an internal model server, an authenticated backend, a permissioned document index and a small web interface that displays sources and collects feedback. Integrate with ERP, WMS, MES or email only after the pilot proves value."
+      },
+      {
+        "id": "office-agents-or-industrial-iot",
+        "title": "Office agents or industrial IoT?",
+        "image": "",
+        "body": "The industrial positioning resonates strongly with manufacturing and logistics SMEs, but office, technical-document and commercial assistants are usually the most practical first project. They are easier to test, less disruptive and reveal the quality of company data before deeper IoT or computer-vision work."
+      },
+      {
+        "id": "final-checklist",
+        "title": "Where to begin",
+        "image": "",
+        "body": "Ask which manual task consumes time every week, what approved documents support it, who can validate the output, what metric should improve within 30–60 days, and which data must stay inside the company. That is the basis of a useful local-AI pilot."
+      }
+    ]
+  }
+}
