@@ -78,7 +78,8 @@
             },
             {
               "title": "Strumenti operativi",
-              "text": "Tool semplici per magazzino, produzione, QR e tracciamento, dove il software toglie passaggi manuali."
+              "text": "Tool semplici per magazzino, produzione, QR e tracciamento, dove il software toglie passaggi manuali.",
+              "badge": "Disponibile per progetti pilota di automazione flussi e AI per PMI locali."
             },
             {
               "title": "Automazione fisica",
@@ -136,7 +137,8 @@
         },
         "contactCta": {
           "title": "Parliamone",
-          "text": "Piccoli SaaS, un problema operativo reale, automazione o AI: scrivimi.",
+          "badge": "Sperimentazione gratuita · Ottobre 2026",
+          "text": "Hai una PMI o sei un freelancer e perdi ore tra documenti, magazzino o preventivi? Sto selezionando due sole realtà per mappare i flussi e integrare automazioni o AI locale gratis, in cambio di un caso studio. Parliamone prima che si riempiano i posti.",
           "primary": "Prenota una chiamata",
           "secondary": "Vai ai contatti"
         }

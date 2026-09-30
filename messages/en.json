@@ -78,7 +78,8 @@
             },
             {
               "title": "Operational tools",
-              "text": "Simple tools for warehouse, production, QR and tracking — software that removes manual steps."
+              "text": "Simple tools for warehouse, production, QR and tracking — software that removes manual steps.",
+              "badge": "Available for pilot projects on workflow automation and AI for local SMEs."
             },
             {
               "title": "Physical automation",
@@ -136,7 +137,8 @@
         },
         "contactCta": {
           "title": "Let's talk",
-          "text": "Small SaaS, a real operational problem, automation or AI — send me a message.",
+          "badge": "Free pilot program · October 2026",
+          "text": "Running a small business or freelancing and losing hours on documents, inventory or quotes? I'm selecting just two teams to map their workflows and integrate automation or local AI for free, in exchange for a case study. Let's talk before the spots fill up.",
           "primary": "Book a call",
           "secondary": "Go to contacts"
         }

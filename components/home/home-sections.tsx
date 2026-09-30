@@ -67,6 +67,15 @@ export function HomeSections({ locale, repos, noDescriptionLabel, featuredLabel,
                 <span>{card.title}</span>
               </h2>
               <p className="mt-4 text-sm leading-7 text-[#35548c]">{card.text}</p>
+              {"badge" in card && card.badge ? (
+                <p className="mt-5 inline-flex items-start gap-2 rounded-2xl border border-[#9fc0ff] bg-[#eaf2ff] px-3 py-2 text-xs font-medium leading-5 text-[#1d4596] shadow-[0_12px_30px_-20px_rgba(31,85,202,0.7)]">
+                  <span className="relative mt-1.5 flex h-2 w-2 shrink-0">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#2e5bb6] opacity-60" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#2e5bb6]" />
+                  </span>
+                  <span>{card.badge}</span>
+                </p>
+              ) : null}
             </article>
           ))}
         </div>
@@ -195,6 +204,16 @@ export function HomeSections({ locale, repos, noDescriptionLabel, featuredLabel,
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c9ddff]" data-reveal-item>
             <AnimatedFaIcon icon={faEnvelope} animation="pulse" className="text-[#d7e8ff]" />
             <span>{content.contactCta.title}</span>
+          </p>
+          <p
+            className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#8cb4ff]/40 bg-[#1f55ca]/25 px-3 py-1 text-xs font-medium text-[#edf4ff]"
+            data-reveal-item
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#8cb4ff] opacity-70" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#8cb4ff]" />
+            </span>
+            <span>{content.contactCta.badge}</span>
           </p>
           <p className="mt-5 text-lg leading-8 text-[#edf4ff]" data-reveal-item>
             {content.contactCta.text}
