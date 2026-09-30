@@ -15,8 +15,8 @@
     "en": "Rebuilding my skills without pretending seniority"
   },
   "description": {
-    "it": "Perché sto spostando il mio personal branding da claim troppo grandi a un percorso più credibile: imparare seriamente costruendo in pubblico.",
-    "en": "Why I am moving my personal branding from oversized claims to a more credible path: learning seriously by building in public."
+    "it": "Il mio sito prometteva enterprise architecture. Io stavo consolidando le basi. Ho smesso di recitare.",
+    "en": "My site promised enterprise architecture. I was consolidating the basics. I stopped pretending."
   },
   "sections": {
     "it": [
@@ -24,19 +24,19 @@
         "id": "il-punto",
         "title": "Il punto",
         "image": "",
-        "body": "Il problema non e essere scarso. Il problema e comunicare un livello di stack, seniority o architettura che oggi non sento davvero mio.\n\nQuesta differenza pesa. Se il sito promette enterprise architecture ma io sto consolidando le fondamenta, ogni pagina diventa una piccola fonte di pressione invece che un supporto."
+        "body": "Il problema non è che sono scarso. Il problema è che stavo comunicando un livello di stack, seniority e architettura che non sento mio.\n\nE questa differenza pesa. Se il sito promette enterprise architecture e io sto ancora consolidando le fondamenta, ogni pagina diventa una piccola fonte di pressione. Non un supporto.\n\nIn pratica mi stavo mettendo in posa. E la posa, prima o poi, ti sgama."
       },
       {
         "id": "la-nuova-direzione",
         "title": "La nuova direzione",
         "image": "",
-        "body": "Voglio comunicare una cosa piu vera:\n\n- studio Ingegneria Informatica\n- costruisco piccoli SaaS in pubblico\n- uso Flask e Quart per applicazioni backend\n- tengo viva la parte C, Arduino, ESP32 e automazione\n- sperimento con tooling AI/LLM in modo pratico\n\nNon voglio scrivere esperto Flask. Preferisco dire: sto costruendo applicazioni backend con Flask e Quart."
+        "body": "Voglio comunicare una cosa più vera:\n\n- studio Ingegneria Informatica\n- costruisco piccoli SaaS in pubblico\n- uso Flask e Quart per applicazioni backend\n- tengo viva la parte C, Arduino, ESP32 e automazione\n- sperimento con tooling AI/LLM in modo pratico\n\nNon voglio scrivere \"esperto Flask\". Preferisco dire: sto costruendo applicazioni backend con Flask e Quart.\n\nChe è una frase meno figa. E più onesta. E, guarda un po', anche più utile a chi legge."
       },
       {
         "id": "perche-funziona-meglio",
-        "title": "Perche funziona meglio",
+        "title": "Perché funziona meglio",
         "image": "",
-        "body": "Un posizionamento credibile crea fiducia. Anche quando e piu umile, e piu forte perche non costringe a recitare.\n\nDa qui in avanti usero il blog per mostrare progresso reale: cosa costruisco, cosa capisco, cosa sbaglio, cosa rifarei meglio."
+        "body": "Un posizionamento credibile crea fiducia. Anche quando è più umile. Anzi: è più forte proprio perché non ti costringe a recitare.\n\nDa qui in avanti userò il blog per mostrare progresso reale. Cosa costruisco. Cosa capisco. Cosa sbaglio. Cosa rifarei meglio.\n\nNiente vetrina. Niente claim gonfiati. Solo roba che posso difendere se qualcuno mi fa una domanda."
       }
     ],
     "en": [
@@ -44,19 +44,19 @@
         "id": "il-punto",
         "title": "The Point",
         "image": "",
-        "body": "The problem is not being bad. The problem is communicating a level of stack, seniority, or architecture that I do not fully feel as mine yet.\n\nThat mismatch is heavy. If the site promises enterprise architecture while I am consolidating foundations, every page becomes a small source of pressure instead of support."
+        "body": "The problem isn't that I'm bad. The problem is I was communicating a level of stack, seniority and architecture I don't actually feel is mine.\n\nAnd that mismatch weighs on you. If the site promises enterprise architecture while I'm still consolidating foundations, every page becomes a small source of pressure. Not support.\n\nBasically, I was posing. And the pose, sooner or later, gets caught."
       },
       {
         "id": "la-nuova-direzione",
         "title": "The New Direction",
         "image": "",
-        "body": "I want to communicate something more true:\n\n- I study Computer Engineering\n- I build small SaaS products in public\n- I use Flask and Quart for backend applications\n- I keep C, Arduino, ESP32, and automation close\n- I experiment with practical AI/LLM tooling\n\nI do not want to write Flask expert. I prefer to say: I am building backend applications with Flask and Quart."
+        "body": "I want to communicate something more true:\n\n- I study Computer Engineering\n- I build small SaaS products in public\n- I use Flask and Quart for backend applications\n- I keep C, Arduino, ESP32 and automation close\n- I experiment with practical AI/LLM tooling\n\nI don't want to write \"Flask expert\". I'd rather say: I'm building backend applications with Flask and Quart.\n\nLess impressive on paper. More honest. And, funny enough, more useful to whoever reads it."
       },
       {
         "id": "perche-funziona-meglio",
         "title": "Why It Works Better",
         "image": "",
-        "body": "A credible positioning creates trust. Even when it is humbler, it is stronger because it does not force me to perform.\n\nFrom now on, I will use the blog to show real progress: what I build, what I understand, what I get wrong, and what I would do better."
+        "body": "A credible positioning creates trust. Even when it's humbler. Actually: it's stronger precisely because it doesn't force you to perform.\n\nFrom now on I'll use the blog to show real progress. What I build. What I understand. What I get wrong. What I'd do better next time.\n\nNo showcase. No inflated claims. Just stuff I can defend if someone asks."
       }
     ]
   }

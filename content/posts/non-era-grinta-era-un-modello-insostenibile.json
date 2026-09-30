@@ -17,8 +17,8 @@
     "en": "It Was Not Grit, It Was an Unsustainable Model"
   },
   "description": {
-    "it": "Per un periodo ho lavorato di giorno in magazzino e di notte sulla software house. Non era mentalità da founder: era un sistema che usava le mie ore di sonno per restare in piedi.",
-    "en": "For a while, I worked in a warehouse during the day and on a software house at night. It was not founder mindset: it was a system using my sleep to stay alive."
+    "it": "Di giorno magazzino. Di notte la software house. Mi dicevo che era grinta. Era un sistema che pagava l'azienda con le mie ore di sonno.",
+    "en": "Warehouse by day. Software house by night. I told myself it was grit. It was a system paying the company with my sleep."
   },
   "sections": {
     "it": [
@@ -26,49 +26,49 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Di giorno magazzino, di notte Spotex. Credevo fosse grinta; era un modello insostenibile: la società usava le mie notti per coprire ruoli, processi e margini mancanti."
+        "body": "Di giorno magazzino. Di notte Spotex. Poi tre ore di sonno, se andava bene.\n\nMi dicevo che era grinta. Che era quello che fanno i founder veri. Che prima o poi avrebbe pagato.\n\nNo. Era un modello insostenibile che copriva ruoli mancanti, processi mancanti e margini mancanti con le mie notti. E io, bravo coglione, gliele davo."
       },
       {
         "id": "la-giornata-non-finiva-mai",
         "title": "La giornata non finiva mai",
         "image": "",
-        "body": "Spotex non mi manteneva: doppia giornata. Le urgenze erano la normalità. Se per consegnare rubi ore al sonno, stai finanziando l’azienda col tuo corpo.\n\n> [!WARNING]\n> Se ogni settimana devi togliere ore al sonno, non è uno sforzo temporaneo: è un modello senza margine."
+        "body": "Spotex non mi manteneva. Quindi doppia giornata: magazzino e software house.\n\nLe urgenze erano la normalità. Se per consegnare devi rubare ore al sonno, non stai facendo impresa: stai finanziando l'azienda col tuo corpo. E nessuno ti dice grazie, perché \"tanto sei tu che sai fare\".\n\n> [!WARNING]\n> Se ogni settimana devi togliere ore al sonno, non è uno sforzo temporaneo. È un modello senza margine. E prima o poi il conto lo paghi tu, non l'azienda."
       },
       {
         "id": "non-facevo-solo-sviluppo",
         "title": "Non facevo solo sviluppo",
         "image": "",
-        "body": "Dentro Spotex avevo due lavori: esecuzione e lavoro invisibile. Fuori, il magazzino. Le ore erano finite prima ancora di iniziare: non poteva durare."
+        "body": "Dentro Spotex avevo due lavori: quello che si vede (scrivere codice, consegnare) e quello che non si vede (decidere, ricordare, coprire, aggiustare).\n\nFuori, il magazzino.\n\nLe ore erano finite prima ancora di iniziare. Non poteva durare. Nessun modello regge quando l'unica variabile elastica sei tu."
       },
       {
         "id": "il-problema-era-anche-l-iniziativa",
-        "title": "Il problema era anche l’iniziativa",
+        "title": "Il problema era anche l'iniziativa",
         "image": "",
-        "body": "Mi stancava essere il punto di partenza: se non iniziavo io, molte cose non partivano. Mancava una struttura operativa, non solo soci.\n\n> [!TAKEAWAY]\n> Non mi stancava solo il lavoro. Mi stancava dover essere il punto da cui il lavoro iniziava."
+        "body": "Mi stancava essere il punto di partenza. Se non iniziavo io, spesso le cose non partivano. Punto.\n\nNon mi mancava la voglia. Mi mancava una struttura operativa. Soci sì, ma senza un sistema che facesse muovere le cose anche quando io non spingevo.\n\n> [!TAKEAWAY]\n> Non mi stancava solo il lavoro. Mi stancava dover essere il punto da cui il lavoro iniziava. Ogni volta. Sempre."
       },
       {
         "id": "il-cms-non-poteva-nascere-cosi",
         "title": "Il CMS non poteva nascere così",
         "image": "",
-        "body": "Un prodotto richiede tempo protetto, utenti reali e una strada per venderlo. Costruirlo tra urgenze e notti lo rendeva impossibile.\n\n> [!TIP]\n> Se chiedi “quando è pronto?”, chiediti anche: “quale lavoro togliamo per permettergli di finirlo?”."
+        "body": "Un prodotto vuole tre cose: tempo protetto, utenti veri, una strada per venderlo.\n\nIo avevo: urgenze, notti, e nessuno che mi togliesse carico. Costruire il CMS in quelle condizioni non era difficile. Era impossibile. E lo sapevo mentre lo facevo.\n\n> [!TIP]\n> Quando chiedi \"quando è pronto?\", chiediti anche: \"quale lavoro togliamo per permettergli di finirlo?\". Se non hai una risposta alla seconda, la prima non vale niente."
       },
       {
         "id": "il-mito-del-founder-che-non-dorme",
         "title": "Il mito del founder che non dorme",
         "image": "",
-        "body": "Lo sprint continuo non è motivazione: è assenza di margine economico, di tempo e umano. Se smetto di lavorare di notte e la società non consegna, il problema è la società."
+        "body": "Lo sprint continuo non è motivazione. È assenza di margine: economico, di tempo, umano.\n\nSe smetto di lavorare di notte e la società non consegna più, il problema non è che io dormo. Il problema è la società. Che viveva sul mio sonno.\n\nFa ridere detto così. Ma è esattamente quello che succedeva."
       },
       {
         "id": "cosa-ho-imparato",
         "title": "Cosa ho imparato",
         "image": "",
-        "body": "Nuovi limiti: no supporto illimitato, no soci senza output, no sviluppo sul sonno, no decisioni in chat, no prodotto senza tempo protetto. Il duro lavoro deve costruire un asset, non compensare un sistema fragile."
+        "body": "Ho tirato dei limiti. Non belli, non motivazionali, non condivisibili su LinkedIn:\n\n- no supporto illimitato\n- no soci senza output\n- no sviluppo sul sonno\n- no decisioni in chat\n- no prodotto senza tempo protetto\n\nIl duro lavoro deve costruire un asset, non compensare un sistema fragile. Se non costruisce niente, non è duro lavoro. È solo autolesionismo con la scusa dell'imprenditoria."
       },
       {
         "id": "non-era-grinta",
         "title": "Non era grinta",
         "image": "",
-        "body": "Era debito di ore, attenzione, sonno e salute. Un sistema che richiede sacrificio estremo ogni settimana va cambiato o chiuso.\n\n> [!TAKEAWAY]\n> Non voglio più costruire aziende che sopravvivono grazie alle mie notti. Voglio prodotti che restano in piedi anche quando dormo."
+        "body": "Era debito di ore. Debito di attenzione. Debito di sonno. Debito di salute.\n\nUn sistema che richiede sacrificio estremo ogni settimana va cambiato o chiuso. Non c'è una terza opzione. E io l'ho scoperto tardi.\n\n> [!TAKEAWAY]\n> Non voglio più costruire aziende che sopravvivono grazie alle mie notti. Voglio prodotti che restano in piedi anche quando dormo. Otto ore. Come le persone normali."
       }
     ],
     "en": [
@@ -76,49 +76,49 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Warehouse by day, Spotex by night. I called it grit; it was an unsustainable model: the company used my nights to cover missing roles, processes, and margin."
+        "body": "Warehouse by day. Spotex by night. Then three hours of sleep, if I was lucky.\n\nI told myself it was grit. That this is what real founders do. That it would pay off eventually.\n\nNo. It was an unsustainable model covering missing roles, missing processes and missing margin with my nights. And I, good idiot that I am, kept handing them over."
       },
       {
         "id": "the-day-never-ended",
         "title": "The day never ended",
         "image": "",
-        "body": "Spotex did not support me: double day. Urgencies were normal. If delivering requires stealing sleep, you are financing the company with your body.\n\n> [!WARNING]\n> If every week requires taking hours from sleep, it is not a temporary effort: it is a model with no margin."
+        "body": "Spotex didn't support me. So double shift: warehouse and software house.\n\nEmergencies were the norm. If delivering means stealing sleep hours, you're not doing business: you're financing the company with your body. And nobody thanks you, because \"you're the one who knows how to do it.\"\n\n> [!WARNING]\n> If every week you take hours from sleep, it's not temporary effort. It's a model with no margin. And sooner or later you pay the bill, not the company."
       },
       {
         "id": "i-did-not-only-develop",
         "title": "I did not only develop software",
         "image": "",
-        "body": "Inside Spotex I had two jobs: execution and invisible work. Outside, the warehouse. Available hours were over before starting: it could not last."
+        "body": "Inside Spotex I had two jobs: the visible one (writing code, shipping) and the invisible one (deciding, remembering, covering, fixing).\n\nOutside, the warehouse.\n\nThe hours were gone before I even started. It couldn't last. No model holds when the only elastic variable is you."
       },
       {
         "id": "initiative-was-also-the-problem",
         "title": "Initiative was also the problem",
         "image": "",
-        "body": "It exhausted me to be where work began: if I did not start it, often it did not start. Missing an operating structure, not just partners.\n\n> [!TAKEAWAY]\n> It was not only the work that exhausted me. It was having to be the place where work began."
+        "body": "Being the starting point exhausted me. If I didn't start it, things often didn't start. Period.\n\nI wasn't missing willpower. I was missing an operating structure. Partners, yes. But no system that moved things even when I wasn't pushing.\n\n> [!TAKEAWAY]\n> It wasn't just the work that exhausted me. It was having to be the place where work began. Every time. Always."
       },
       {
         "id": "the-cms-could-not-be-built-like-that",
         "title": "The CMS could not be built that way",
         "image": "",
-        "body": "A product needs protected time, real users, and a route to sell it. Building it between urgencies and nights made it impossible.\n\n> [!TIP]\n> If you ask “when will it be ready?”, also ask: “which work are we removing so you can finish it?”."
+        "body": "A product needs three things: protected time, real users, a route to sell it.\n\nI had: emergencies, nights, and nobody to take load off me. Building the CMS in those conditions wasn't hard. It was impossible. And I knew it while I was doing it.\n\n> [!TIP]\n> When you ask \"when will it be ready?\", also ask: \"what work do we remove so you can finish it?\" If you don't have an answer to the second, the first is worthless."
       },
       {
         "id": "the-myth-of-the-founder-who-does-not-sleep",
         "title": "The myth of the founder who does not sleep",
         "image": "",
-        "body": "Continuous sprint is not motivation: it is lack of financial, time, and human margin. If I stop working nights and the company stops delivering, the problem is the company."
+        "body": "Continuous sprint isn't motivation. It's lack of margin: financial, time, human.\n\nIf I stop working nights and the company stops shipping, the problem isn't that I sleep. The problem is the company. That lived on my sleep.\n\nFunny when you say it like that. But that's exactly what was happening."
       },
       {
         "id": "what-i-learned",
         "title": "What I learned",
         "image": "",
-        "body": "New limits: no unlimited support, no partners without outputs, no development on sleep, no decisions in chat, no product without protected time. Hard work must build an asset, not compensate a fragile system."
+        "body": "I set limits. Not pretty, not motivational, not LinkedIn-friendly:\n\n- no unlimited support\n- no partners without output\n- no development on sleep\n- no decisions in chat\n- no product without protected time\n\nHard work must build an asset, not compensate a fragile system. If it doesn't build anything, it's not hard work. It's just self-harm dressed up as entrepreneurship."
       },
       {
         "id": "it-was-not-grit",
         "title": "It was not grit",
         "image": "",
-        "body": "It was debt of hours, attention, sleep, and health. A system requiring extreme sacrifice every week must be changed or closed.\n\n> [!TAKEAWAY]\n> I do not want to build companies that survive thanks to my nights anymore. I want products that stay standing even when I sleep."
+        "body": "It was debt. Debt of hours. Debt of attention. Debt of sleep. Debt of health.\n\nA system requiring extreme sacrifice every week has to be changed or closed. There's no third option. And I found out too late.\n\n> [!TAKEAWAY]\n> I don't want to build companies that survive thanks to my nights anymore. I want products that stay standing even when I sleep. Eight hours. Like normal people."
       }
     ]
   }

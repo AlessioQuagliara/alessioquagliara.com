@@ -17,8 +17,8 @@
     "en": "If You Do Not Assign the Work, You Will Do It Yourself"
   },
   "description": {
-    "it": "La lezione più frustrante di una società con più soci: se nessuno possiede un’azione, una scadenza e un risultato, il lavoro finisce sempre sulla persona che non riesce a ignorarlo.",
-    "en": "The most frustrating lesson of a company with multiple partners: if nobody owns an action, a deadline, and an outcome, the work always ends up with the person who cannot ignore it."
+    "it": "Se un'attività non ha un nome sopra, non sparisce. Diventa urgente e finisce su chi non riesce a ignorarla. Indovina chi.",
+    "en": "If a task has no name on it, it does not disappear. It becomes urgent and lands on whoever cannot ignore it. Guess who."
   },
   "sections": {
     "it": [
@@ -26,55 +26,55 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Se un’attività non ha proprietario, data e risultato atteso, non sparisce: diventa urgente e finisce su chi non riesce a ignorarla. Nella mia esperienza, quella persona ero io. La zona grigia aveva il mio nome."
+        "body": "Se un'attività non ha proprietario, data e risultato atteso, non sparisce. Diventa urgente e finisce su chi non riesce a ignorarla.\n\nNella mia esperienza quella persona ero io. La zona grigia aveva il mio nome sopra, pure se nessuno me l'aveva scritto."
       },
       {
         "id": "il-silenzio-non-e-neutralita",
         "title": "Il silenzio non è neutralità",
         "image": "",
-        "body": "In una società piccola il silenzio sembra innocuo, ma è una decisione: chi non risponde lascia che qualcun altro assorba l’incertezza. La frustrazione non è fare una cosa in più, ma sapere che senza il tuo sollecito nessuno la farebbe.\n\n> [!TAKEAWAY]\n> In un team piccolo, l’assenza di risposta non lascia un vuoto: trasferisce il costo dell’azione alla persona più responsabile o più ansiosa."
+        "body": "In una società piccola il silenzio sembra innocuo. Non lo è. È una decisione: chi non risponde lascia che qualcun altro si assorba l'incertezza.\n\nLa frustrazione non è fare una cosa in più. È sapere che senza il tuo sollecito nessuno la farebbe. Mai. Nemmeno per sbaglio.\n\n> [!TAKEAWAY]\n> In un team piccolo, il silenzio non lascia un vuoto. Trasferisce il costo dell'azione sulla persona più responsabile o più ansiosa. Di solito la stessa."
       },
       {
         "id": "una-chat-non-e-un-processo",
         "title": "Una chat non è un processo",
         "image": "",
-        "body": "Le piccole aziende vivono in chat, ma la chat registra intenzioni, non risultati. Un’attività reale richiede: risultato osservabile, un solo proprietario, una scadenza, dipendenze esplicite e prova di completamento. Senza questi elementi è solo un’intenzione che resta aperta finché qualcuno non se ne assume il peso.\n\n> [!NOTE]\n> “Procediamo” in chat è un inizio. Un’attività è reale solo con responsabile, data e traccia verificabile del completamento."
+        "body": "Le piccole aziende vivono in chat. Peccato che la chat registri intenzioni, non risultati.\n\nUn'attività vera vuole cinque cose: risultato osservabile, un solo proprietario, una scadenza, dipendenze esplicite, prova di completamento. Senza queste è solo un'intenzione che resta lì aperta finché qualcuno non se la prende in carico.\n\nE quel qualcuno, indovina un po', sei tu.\n\n> [!NOTE]\n> \"Procediamo\" in chat non è un'attività. È un modo gentile per non dire chi deve fare cosa."
       },
       {
         "id": "il-costo-di-essere-quello-che-si-sbatte",
         "title": "Il costo di essere quello che si sbatte",
         "image": "",
-        "body": "Essere affidabili diventa un servizio invisibile atteso da tutti: attenzione costante, tempo sottratto, rabbia accumulata, difficoltà a staccare. È iper-responsabilità: produce risultati nel breve, ma abitua il sistema a compensare i suoi difetti con una persona.\n\n> [!WARNING]\n> Se un’organizzazione funziona solo perché qualcuno ricorda tutto e tappa ogni buco, non è organizzata. È dipendente da una persona."
+        "body": "Essere affidabili sembra un complimento. In realtà diventa un servizio invisibile che tutti si aspettano: attenzione costante, tempo rubato, rabbia accumulata, difficoltà a staccare.\n\nSi chiama iper-responsabilità. Nel breve produce risultati. Nel medio abitua il sistema a compensare i suoi difetti con una persona sola.\n\nSpoiler: quella persona sei tu.\n\n> [!WARNING]\n> Se un'organizzazione funziona solo perché qualcuno ricorda tutto e tappa ogni buco, non è organizzata. È dipendente da una persona."
       },
       {
         "id": "assegnare-non-significa-controllare",
         "title": "Assegnare non significa controllare tutti",
         "image": "",
-        "body": "Assegnare non è essere autoritari: è rendere visibile il confine tra responsabilità e aspettativa. “Dobbiamo sentire il commercialista” è un desiderio; “Marco chiama entro mercoledì alle 18 e manda il riepilogo” è una responsabilità. Le piccole società falliscono perché nessuno vuole essere nominato responsabile di un risultato verificabile."
+        "body": "Assegnare non è fare il capo. È rendere visibile il confine tra responsabilità e aspettativa.\n\n\"Dobbiamo sentire il commercialista\" è un desiderio. \"Marco chiama entro mercoledì alle 18 e manda il riepilogo\" è una responsabilità.\n\nLe piccole società falliscono perché nessuno vuole essere quello col nome sopra un risultato verificabile. Troppo comodo dire \"dobbiamo\"."
       },
       {
         "id": "la-regola-dell-unico-proprietario",
-        "title": "La regola dell’unico proprietario",
+        "title": "La regola dell'unico proprietario",
         "image": "",
-        "body": "Ogni attività importante deve avere un solo proprietario: quando è un gruppo, il proprietario è nessuno. Serve una tabella brutale con attività, proprietario, scadenza e prova di completamento. Non risolve la mancanza di volontà, ma le impedisce di nascondersi dietro “vediamo”, “ci sentiamo”, “dobbiamo”.\n\n> [!TIP]\n> Se devi chiedere “chi lo fa?” dopo una riunione, l’attività non è stata assegnata. Se devi chiedere “a che punto siamo?” senza scadenza, non è stata pianificata."
+        "body": "Ogni attività importante ha un solo proprietario. Quando è un gruppo, il proprietario è nessuno.\n\nServe una tabella brutale: attività, proprietario, scadenza, prova di completamento. Non risolve la mancanza di volontà, ma le impedisce di nascondersi dietro \"vediamo\", \"ci sentiamo\", \"dobbiamo\".\n\nTre parole che in una società morente valgono come un \"arrivederci\" buttato lì.\n\n> [!TIP]\n> Se dopo una riunione devi chiedere \"chi lo fa?\", non è stato assegnato niente. Se devi chiedere \"a che punto siamo?\" senza scadenza, non è stato pianificato niente. Hai solo fatto una chiacchierata."
       },
       {
         "id": "non-trasformarti-nel-liquidatore-ombra",
         "title": "Non trasformarti nel liquidatore ombra",
         "image": "",
-        "body": "Nella chiusura di una società è facile diventare “liquidatore ombra”: fai il coordinamento senza ruolo, poteri, informazioni o riconoscimento. Contribuire è giusto, ma se c’è un liquidatore nominato il passo successivo deve avere il suo nome.\n\n> [!WARNING]\n> Aiutare una procedura non significa diventare responsabile di tutto ciò che gli altri ritardano."
+        "body": "Chiudere una società è il posto perfetto per diventare \"liquidatore ombra\": fai il coordinamento senza ruolo, senza poteri, senza informazioni, senza che nessuno ti riconosca niente.\n\nContribuire è giusto. Ma se c'è un liquidatore nominato, il passo successivo deve avere il suo nome. Non il tuo.\n\n> [!WARNING]\n> Aiutare una procedura non significa diventare responsabile di tutto quello che gli altri ritardano. Anche se è esattamente quello che succede."
       },
       {
         "id": "come-avrei-dovuto-lavorare",
         "title": "Come avrei dovuto lavorare",
         "image": "",
-        "body": "Avrei trasformato ogni problema in un’azione assegnata, scritta e misurabile. Rituale settimanale di 30 minuti: ogni punto termina in azione assegnata, decisione presa o blocco esplicito. Chiusura con riepilogo standard: chi fa cosa, entro quando, prossimo controllo."
+        "body": "Avrei trasformato ogni problema in un'azione assegnata, scritta e misurabile. Punto.\n\nRituale settimanale da 30 minuti. Ogni punto finisce in una di tre cose: azione assegnata, decisione presa, blocco esplicito. Nessuna quarta opzione tipo \"ne riparliamo\".\n\nChiusura con riepilogo standard: chi fa cosa, entro quando, prossimo controllo.\n\nSembra burocrazia. In realtà è quello che separa un'azienda da un gruppo WhatsApp."
       },
       {
         "id": "la-lezione-piu-scomoda",
         "title": "La lezione più scomoda",
         "image": "",
-        "body": "Se compensi tutto in silenzio, insegni al sistema che può funzionare senza responsabilità distribuite. Ogni emergenza risolta senza rendere visibile chi doveva occuparsene trasforma un difetto strutturale in un tuo compito. La responsabilità non è punizione: è ciò che trasforma un gruppo da chat a organizzazione.\n\n> [!TAKEAWAY]\n> Se non assegni il lavoro, finirai per farlo tu. Ma se continui a farlo tu, gli altri non avranno mai motivo di costruire un sistema che non dipenda da te."
+        "body": "Se compensi tutto in silenzio, insegni al sistema che può funzionare senza responsabilità distribuite.\n\nOgni emergenza risolta senza rendere visibile chi doveva occuparsene trasforma un difetto strutturale in un tuo compito. Per sempre.\n\nLa responsabilità non è una punizione. È quello che trasforma un gruppo da chat a organizzazione. Il resto è teatro.\n\n> [!TAKEAWAY]\n> Se non assegni il lavoro, lo farai tu. Ma se continui a farlo tu, gli altri non avranno mai un motivo per costruire un sistema che non dipenda da te. E tu non avrai mai un motivo per smettere di fare il martire."
       }
     ],
     "en": [
@@ -82,55 +82,55 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "If an activity has no owner, date, and expected outcome, it does not disappear: it becomes urgent and lands on whoever cannot ignore it. In my experience, that person was me. The gray area had my name on it."
+        "body": "If a task has no owner, date and expected outcome, it doesn't disappear. It becomes urgent and lands on whoever can't ignore it.\n\nIn my experience that person was me. The gray area had my name on it, even though nobody wrote it there."
       },
       {
         "id": "silence-is-not-neutrality",
         "title": "Silence is not neutrality",
         "image": "",
-        "body": "In a small company silence looks harmless, but it is a decision: whoever does not reply lets someone else absorb the uncertainty. The frustration is not doing one more thing, but knowing that without your reminder nobody would do it.\n\n> [!TAKEAWAY]\n> In a small team, the absence of a response does not leave a void: it transfers the cost of action to the most responsible or most anxious person."
+        "body": "In a small company silence looks harmless. It isn't. It's a decision: whoever doesn't reply lets someone else absorb the uncertainty.\n\nThe frustration isn't doing one more thing. It's knowing that without your reminder nobody would do it. Ever. Not even by accident.\n\n> [!TAKEAWAY]\n> In a small team, silence doesn't leave a void. It transfers the cost of action to the most responsible or most anxious person. Usually the same one."
       },
       {
         "id": "a-chat-is-not-a-process",
         "title": "A chat is not a process",
         "image": "",
-        "body": "Small companies live in chats, but a chat records intentions, not results. A real activity requires: an observable outcome, a single owner, a deadline, explicit dependencies, and proof of completion. Without these it is just an intention that stays open until someone takes its weight.\n\n> [!NOTE]\n> “Let’s proceed” in a chat is a start. An activity is real only with an owner, a date, and verifiable evidence of completion."
+        "body": "Small companies live in chats. Too bad a chat records intentions, not results.\n\nA real activity needs five things: an observable outcome, a single owner, a deadline, explicit dependencies, proof of completion. Without them it's just an intention sitting there open until someone picks it up.\n\nAnd that someone, guess what, is you.\n\n> [!NOTE]\n> \"Let's proceed\" in chat isn't an activity. It's a polite way of not saying who does what."
       },
       {
         "id": "the-cost-of-being-the-one-who-pushes",
         "title": "The cost of being the one who pushes",
         "image": "",
-        "body": "Being reliable becomes an invisible service everyone expects: constant attention, time taken away, accumulated anger, difficulty disconnecting. It is hyper-responsibility: it produces short-term results but trains the system to compensate its flaws with one person.\n\n> [!WARNING]\n> If an organization works only because someone remembers everything and fills every gap, it is not organized. It is dependent on one person."
+        "body": "Being reliable sounds like a compliment. In reality it becomes an invisible service everyone expects: constant attention, time stolen, accumulated anger, trouble disconnecting.\n\nIt's called hyper-responsibility. Short term it produces results. Medium term it trains the system to compensate its flaws with one person.\n\nSpoiler: that person is you.\n\n> [!WARNING]\n> If an organization works only because someone remembers everything and fills every gap, it isn't organized. It's dependent on one person."
       },
       {
         "id": "assigning-is-not-controlling",
         "title": "Assigning is not controlling everyone",
         "image": "",
-        "body": "Assigning is not being authoritarian: it makes the boundary between responsibility and expectation visible. “We need to talk to the accountant” is a wish; “Marco calls by Wednesday at 6 p.m. and posts the summary” is a responsibility. Small companies fail because nobody wants to be named responsible for a verifiable outcome."
+        "body": "Assigning isn't being the boss. It's making the boundary between responsibility and expectation visible.\n\n\"We need to talk to the accountant\" is a wish. \"Marco calls by Wednesday at 6 p.m. and posts the summary\" is a responsibility.\n\nSmall companies fail because nobody wants to be the one with their name on a verifiable outcome. Too convenient to say \"we need to.\""
       },
       {
         "id": "the-single-owner-rule",
         "title": "The single-owner rule",
         "image": "",
-        "body": "Every important activity needs one owner: when it is a group, the owner is nobody. You need a brutally simple table with activity, owner, deadline, and proof of completion. It does not fix a lack of willingness, but it stops it from hiding behind “we will see,” “we will talk,” “we need to.”\n\n> [!TIP]\n> If you have to ask “who is doing it?” after a meeting, the activity was not assigned. If you have to ask “where are we?” without a deadline, it was not planned."
+        "body": "Every important activity has one owner. When it's a group, the owner is nobody.\n\nYou need a brutally simple table: activity, owner, deadline, proof of completion. It doesn't fix the lack of willingness, but it stops it from hiding behind \"we'll see\", \"we'll talk\", \"we need to.\"\n\nThree phrases that in a dying company are worth about as much as a casual \"see you around.\"\n\n> [!TIP]\n> If after a meeting you have to ask \"who's doing it?\", nothing was assigned. If you have to ask \"where are we?\" with no deadline, nothing was planned. You just had a chat."
       },
       {
         "id": "do-not-become-the-shadow-liquidator",
         "title": "Do not become the shadow liquidator",
         "image": "",
-        "body": "During a company closure it is easy to become a “shadow liquidator”: doing the coordination without the role, authority, information, or recognition. Contributing is right, but if a liquidator is appointed, the next step should carry their name.\n\n> [!WARNING]\n> Helping a procedure does not mean becoming responsible for everything others delay."
+        "body": "Closing a company is the perfect place to become a \"shadow liquidator\": doing the coordination without role, authority, information or anyone acknowledging it.\n\nContributing is right. But if there's a named liquidator, the next step should carry their name. Not yours.\n\n> [!WARNING]\n> Helping a procedure doesn't mean becoming responsible for everything others delay. Even if that's exactly what happens."
       },
       {
         "id": "how-i-should-have-worked",
         "title": "How I should have worked",
         "image": "",
-        "body": "I would have turned every problem into an assigned, written, measurable action. A 30-minute weekly ritual: every point ends in an assigned action, a decision made, or an explicit blocker. A standard closing summary: who does what, by when, next check-in."
+        "body": "I would have turned every problem into an assigned, written, measurable action. Period.\n\nA 30-minute weekly ritual. Every point ends in one of three things: assigned action, decision made, explicit blocker. No fourth option like \"let's discuss again later.\"\n\nClosing summary: who does what, by when, next check-in.\n\nSounds like bureaucracy. It's actually what separates a company from a WhatsApp group."
       },
       {
         "id": "the-most-uncomfortable-lesson",
         "title": "The most uncomfortable lesson",
         "image": "",
-        "body": "If you keep compensating silently, you teach the system it can work without distributed responsibility. Every emergency solved without making visible who should have handled it turns a structural defect into a personal task. Responsibility is not punishment: it is what turns a group from a chat into an organization.\n\n> [!TAKEAWAY]\n> If you do not assign the work, you will end up doing it yourself. But if you keep doing it yourself, nobody will ever have a reason to build a system that does not depend on you."
+        "body": "If you keep compensating silently, you teach the system it can work without distributed responsibility.\n\nEvery emergency solved without making visible who should have handled it turns a structural defect into a personal task. Forever.\n\nResponsibility isn't punishment. It's what turns a group from a chat into an organization. The rest is theater.\n\n> [!TAKEAWAY]\n> If you don't assign the work, you'll end up doing it yourself. But if you keep doing it yourself, nobody will ever have a reason to build a system that doesn't depend on you. And you'll never have a reason to stop playing the martyr."
       }
     ]
   }

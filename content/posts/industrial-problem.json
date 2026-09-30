@@ -10,12 +10,12 @@
     "Build in Public"
   ],
   "title": {
-    "it": "Quando ho capito che il problema non era l’ERP",
-    "en": "When I Realized the Problem Wasn’t the ERP"
+    "it": "Quando ho capito che il problema non era l'ERP",
+    "en": "When I Realized the Problem Wasn't the ERP"
   },
   "description": {
-    "it": "Un diario di bordo sul momento in cui ho smesso di vedere il software industriale come semplice codice e ho iniziato a capire davvero i flussi operativi delle aziende.",
-    "en": "A journal entry about the moment I stopped seeing industrial software as just code and started understanding real operational company flows."
+    "it": "Per anni ho pensato che il problema fosse il software. Poi ho messo piede in fabbrica e ho capito che stavo guardando dalla parte sbagliata.",
+    "en": "For years I thought the software was the problem. Then I set foot in a factory and realized I was looking at the wrong side."
   },
   "sections": {
     "it": [
@@ -23,31 +23,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Per anni ho pensato che il problema delle aziende fosse il software.\n\nERP lenti.\nInterfacce brutte.\nProcessi macchinosi.\n\nPensavo che bastasse sviluppare qualcosa di più moderno per migliorare tutto.\n\nPoi ho iniziato a lavorare davvero dentro una realtà industriale.\n\nE lì ho capito una cosa importante:\n\nil problema non era il gestionale.\n\nIl problema era la distanza tra quello che succede realmente in fabbrica e quello che il sistema riesce a vedere."
+        "body": "Per anni ho pensato che il problema delle aziende fosse il software.\n\nERP lenti.\nInterfacce orrende.\nProcessi che sembravano scritti da qualcuno che odiava gli esseri umani.\n\nEro convinto che bastasse fare qualcosa di più moderno e tutto si sarebbe sistemato.\n\nPoi sono entrato davvero in una realtà industriale.\n\nE ho capito una cosa semplice: il problema non era il gestionale.\n\nIl problema era la distanza tra quello che succede in fabbrica e quello che il sistema riesce a vedere. Che è tanta. Troppa."
       },
       {
         "id": "quello-che-il-sistema-non-vede",
         "title": "Quello che il sistema non vede",
         "image": "",
-        "body": "Nel magazzino e nella produzione ho iniziato a osservare cose che, da sviluppatore puro, non avrei mai notato.\n\nMateriali presenti ma non nel posto corretto.\nOrdini bloccati per componenti da pochi centesimi.\nProduzione ferma per giorni.\nAcquisti che scoprono i problemi troppo tardi.\nOperatori che sanno già che qualcosa sta andando male molto prima del sistema.\n\nEd è lì che ho iniziato a farmi delle domande.\n\nIl problema è davvero che manca il pezzo?\n\nOppure il problema è che l’informazione arriva troppo tardi?\n\nPerché nella maggior parte delle PMI il flusso reale non passa dal software.\n\nPassa dalle persone.\n\nPassa da:\n- telefonate\n- WhatsApp\n- fogli Excel\n- memoria degli operatori senior\n- urla tra magazzino e produzione"
+        "body": "In magazzino e in produzione ho visto cose che da sviluppatore puro non avrei mai notato.\n\nMateriali che ci sono ma non dove dovrebbero stare.\nOrdini bloccati per componenti da due centesimi.\nProduzione ferma per giorni.\nAcquisti che scoprono il problema quando è già troppo tardi.\nOperatori che sanno già che qualcosa sta andando storto molto prima che il sistema se ne accorga.\n\nEd è lì che ho iniziato a farmi la domanda vera.\n\nIl problema è che manca il pezzo?\n\nO il problema è che l'informazione arriva troppo tardi?\n\nPerché nella maggior parte delle PMI il flusso reale non passa dal software.\n\nPassa dalle persone.\n\nPassa da:\n- telefonate\n- WhatsApp\n- fogli Excel\n- memoria dell'operaio che è lì da trent'anni\n- urla tra magazzino e produzione"
       },
       {
         "id": "ridurre-la-latenza-operativa",
         "title": "Ridurre la latenza operativa",
         "image": "",
-        "body": "E questo mi ha completamente cambiato il modo di vedere il software industriale.\n\nHo capito che molte aziende non hanno bisogno dell’ennesimo ERP enorme.\n\nHanno bisogno di ridurre la latenza operativa.\n\nCioè il tempo che passa tra:\n- il momento in cui nasce il problema\n- e il momento in cui qualcuno prende una decisione"
+        "body": "E questo mi ha cambiato il modo di vedere il software industriale. Tutto.\n\nHo capito che molte aziende non hanno bisogno dell'ennesimo ERP gigantesco.\n\nHanno bisogno di ridurre la latenza operativa.\n\nCioè il tempo che passa tra:\n- il momento in cui nasce il problema\n- e il momento in cui qualcuno decide cosa fare\n\nTutto qui. Sembra banale. Non lo è."
       },
       {
         "id": "una-dashboard-semplice-che-funziona",
         "title": "Una dashboard semplice che funziona",
         "image": "",
-        "body": "Anni fa avevo sviluppato internamente una dashboard molto semplice.\n\nNiente hype.\nNiente AI.\nNiente architetture assurde.\n\nFlask.\nJinja2.\nJavaScript basilare.\n\nGli operatori inserivano commessa, codice e quantità.\nProduzione e acquisti iniziavano finalmente a vedere gli stessi dati.\n\nE la cosa interessante è che la gente la usava davvero.\n\nVeniva aperta durante le riunioni.\nGli operatori ci lavoravano sopra.\nLe persone iniziavano a fidarsi del flusso."
+        "body": "Anni fa avevo fatto una dashboard interna. Molto semplice.\n\nNiente hype.\nNiente AI.\nNiente architetture assurde per fare scena su LinkedIn.\n\nFlask.\nJinja2.\nJavaScript basilare.\n\nGli operatori inserivano commessa, codice e quantità. Produzione e acquisti vedevano finalmente gli stessi dati.\n\nE la cosa strana è che la gente la usava davvero.\n\nLa aprivano durante le riunioni.\nGli operatori ci lavoravano sopra.\nIniziavano a fidarsi del flusso.\n\nNon era bella. Non era moderna. Funzionava."
       },
       {
         "id": "la-vera-validazione",
         "title": "La vera validazione",
         "image": "",
-        "body": "In quel momento ho capito una cosa fondamentale:\n\nla validazione non è quando un founder dice “bella idea”.\n\nLa validazione è quando un caporeparto apre spontaneamente il tuo software mentre sta cercando di evitare un fermo produzione.\n\nDa lì ho iniziato a vedere il software in modo diverso.\n\nNon più come pagine web.\nNon più come CRUD.\nNon più come frontend moderni.\n\nMa come sistemi che devono diminuire attrito, ritardi e caos operativo.\n\nEd è probabilmente lì che ho iniziato a smettere di ragionare da semplice sviluppatore web.\n\nE ho iniziato a ragionare da systems engineer."
+        "body": "Ed è lì che ho capito una cosa.\n\nLa validazione non è quando un founder ti dice \"bella idea\".\n\nLa validazione è quando un caporeparto apre spontaneamente il tuo software mentre sta cercando di evitare un fermo produzione. Senza che tu gliel'abbia chiesto. Senza che tu sappia nemmeno che lo sta aprendo.\n\nDa quel momento ho iniziato a vedere il software in modo diverso.\n\nNon più pagine web.\nNon più CRUD.\nNon più frontend moderni tanto per dire che li so fare.\n\nMa sistemi che devono ridurre attrito, ritardi e casino operativo.\n\nEd è probabilmente lì che ho smesso di ragionare da sviluppatore web.\n\nE ho iniziato a ragionare da qualcuno che prova a capire come funziona davvero un'azienda.\n\nNon so se è \"systems engineer\". So che è diverso."
       }
     ],
     "en": [
@@ -55,31 +55,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "For years, I thought the main problem inside companies was the software itself.\n\nSlow ERPs.\nTerrible interfaces.\nComplicated workflows.\n\nI believed that building something more modern would automatically solve everything.\n\nThen I started working inside a real industrial environment.\n\nAnd that’s where I realized something important:\n\nthe problem wasn’t the ERP.\n\nThe real problem was the distance between what was actually happening on the factory floor and what the system was capable of seeing."
+        "body": "For years I thought the software was the problem.\n\nSlow ERPs.\nUgly interfaces.\nProcesses that looked written by someone who hated human beings.\n\nI was convinced that building something more modern would fix everything.\n\nThen I actually stepped into an industrial environment.\n\nAnd I got something simple: the ERP wasn't the problem.\n\nThe problem was the distance between what happens on the factory floor and what the system can see. Which is a lot. Too much."
       },
       {
         "id": "quello-che-il-sistema-non-vede",
         "title": "What the System Cannot See",
         "image": "",
-        "body": "Working in warehouse operations and production exposed me to things I would have never noticed as a pure software developer.\n\nMaterials physically available but stored in the wrong place.\nOrders blocked because of components worth a few cents.\nProduction stopped for days.\nPurchasing teams discovering issues too late.\nOperators realizing something is wrong long before the system does.\n\nThat’s when I started asking myself deeper questions.\n\nIs the real issue that the part is missing?\n\nOr is the issue that the information arrives too late?\n\nBecause in most SMEs, the real operational flow does not go through the software.\n\nIt goes through people.\n\nThrough:\n- phone calls\n- WhatsApp messages\n- Excel sheets\n- senior operators’ memory\n- shouting between warehouse and production"
+        "body": "In the warehouse and in production I saw things a pure developer would never notice.\n\nMaterials that exist but aren't where they should be.\nOrders blocked by components worth two cents.\nProduction stopped for days.\nPurchasing finding out when it's already too late.\nOperators who already know something is going wrong long before the system does.\n\nAnd that's when I started asking the real question.\n\nIs the problem that the part is missing?\n\nOr is the problem that the information arrives too late?\n\nBecause in most SMEs, the real flow doesn't go through software.\n\nIt goes through people.\n\nThrough:\n- phone calls\n- WhatsApp\n- Excel sheets\n- the memory of the guy who's been there for thirty years\n- shouting between warehouse and production"
       },
       {
         "id": "ridurre-la-latenza-operativa",
         "title": "Reducing Operational Latency",
         "image": "",
-        "body": "And this completely changed how I started seeing industrial software.\n\nI realized many companies do not need another massive ERP.\n\nThey need lower operational latency.\n\nMeaning: reducing the time between:\n- the moment a problem appears\n- and the moment someone takes action"
+        "body": "And this changed how I see industrial software. All of it.\n\nI realized many companies don't need yet another giant ERP.\n\nThey need lower operational latency.\n\nMeaning: the time between:\n- the moment a problem appears\n- and the moment someone decides what to do\n\nThat's it. Sounds obvious. It isn't."
       },
       {
         "id": "una-dashboard-semplice-che-funziona",
         "title": "A Simple Dashboard That Works",
         "image": "",
-        "body": "Years ago I built a very simple internal dashboard.\n\nNo hype.\nNo AI.\nNo overengineered architecture.\n\nFlask.\nJinja2.\nBasic JavaScript.\n\nOperators entered job orders, item codes and quantities.\nProduction and purchasing finally started seeing the same operational data.\n\nAnd the interesting part was: people actually used it.\n\nIt was opened during meetings.\nOperators relied on it.\nTeams started trusting the flow."
+        "body": "Years ago I built a very simple internal dashboard.\n\nNo hype.\nNo AI.\nNo absurd architectures just to look cool on LinkedIn.\n\nFlask.\nJinja2.\nBasic JavaScript.\n\nOperators entered job orders, item codes and quantities. Production and purchasing finally saw the same data.\n\nAnd the weird part: people actually used it.\n\nThey opened it during meetings.\nOperators worked on it.\nThey started trusting the flow.\n\nIt wasn't pretty. Wasn't modern. It worked."
       },
       {
         "id": "la-vera-validazione",
         "title": "Real Validation",
         "image": "",
-        "body": "That’s when I understood something fundamental:\n\nvalidation is not when a founder says “great idea.”\n\nValidation is when a production manager opens your software on their own while trying to prevent a production stop.\n\nFrom that moment, I started seeing software differently.\n\nNot as web pages.\nNot as CRUD applications.\nNot as modern frontends.\n\nBut as systems designed to reduce friction, delays and operational chaos.\n\nAnd that was probably the moment I stopped thinking like just a web developer.\n\nAnd started thinking more like a systems engineer."
+        "body": "And that's when I got it.\n\nValidation isn't when a founder says \"great idea.\"\n\nValidation is when a production manager opens your software on their own while trying to prevent a production stop. Without you asking. Without you even knowing they're opening it.\n\nFrom that moment I started seeing software differently.\n\nNo more web pages.\nNo more CRUD.\nNo more modern frontends just to say I can build them.\n\nJust systems that have to reduce friction, delays and operational chaos.\n\nAnd that's probably when I stopped thinking like a web developer.\n\nAnd started thinking like someone trying to understand how a company actually works.\n\nI don't know if that's a \"systems engineer.\" I know it's different."
       }
     ]
   }

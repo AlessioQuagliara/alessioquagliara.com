@@ -17,8 +17,8 @@
     "en": "Spotex SRL: Four Partners, One Software House, and a Single Bottleneck"
   },
   "description": {
-    "it": "Una post-mortem personale su ruoli formali, lavoro reale, comunicazione e sul costo umano di una software house in cui quasi ogni urgenza finiva sul CTO.",
-    "en": "A personal post-mortem on formal roles, real work, communication, and the human cost of a software house where almost every urgent task landed on the CTO."
+    "it": "Quattro soci. Ruoli bellissimi sulla carta. Poi ogni urgenza finiva sul CTO. Che ero io. Ecco com'è andata.",
+    "en": "Four partners. Beautiful roles on paper. Then every emergency landed on the CTO. Which was me. Here is how it went."
   },
   "sections": {
     "it": [
@@ -26,61 +26,61 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Tra fine 2024 e metà 2025, quattro soci con ruoli diversi, ma quasi ogni urgenza finiva sul CTO. Lavoravo anche in magazzino perché la società non mi manteneva. Non è una caccia al colpevole: è la radiografia di un modello che ha consumato una persona."
+        "body": "Fine 2024, metà 2025. Quattro soci. Ruoli diversi. E ogni urgenza che finiva sempre sullo stesso tavolo: il mio.\n\nNel frattempo lavoravo anche in magazzino, perché la società non mi manteneva. Bella vita.\n\nNon è una caccia al colpevole. È l'autopsia di un modello che ha consumato una persona sola. Spoiler: quella persona ero io."
       },
       {
         "id": "i-ruoli-sulla-carta",
         "title": "I ruoli sulla carta",
         "image": "",
-        "body": "Quattro soci: Andrea CTO 35%, Marco CFO/presidente 35%, Luca COO 15%, Davide CMO/finanziatore 15%. Sulla carta ruoli sensati; nella pratica contava il lavoro reale, non l’organigramma. In una piccola società un ruolo si misura su scadenze, clienti, pagamenti e decisioni scomode.\n\n> [!NOTE]\n> Nomi fittizi; l’obiettivo è descrivere un sistema, non identificare persone."
+        "body": "Quattro soci: Andrea CTO 35%, Marco CFO/presidente 35%, Luca COO 15%, Davide CMO/finanziatore 15%.\n\nSulla carta ruoli sensati. Eleganti. Da presentazione per investitori.\n\nNella pratica contava il lavoro vero, non l'organigramma. In una società piccola un ruolo si misura su tre cose: scadenze rispettate, clienti gestiti, decisioni scomode prese. Il resto è decorazione.\n\n> [!NOTE]\n> Nomi fittizi. L'obiettivo è descrivere un sistema, non puntare il dito contro persone."
       },
       {
         "id": "una-giornata-tipo",
         "title": "Una giornata tipo",
         "image": "",
-        "body": "La giornata iniziava con messaggi clienti, ticket, modifiche, preventivi. Il CMS proprietario, unica via d’uscita, si costruiva tra urgenze, senza team, budget o roadmap protetta. La sera turno in magazzino; poi computer fino alle 3-4, sveglia alle 7. Non era disciplina: debito di sonno come modello operativo."
+        "body": "La giornata iniziava così: messaggi clienti, ticket, modifiche, preventivi. Il CMS proprietario — l'unica via d'uscita — si costruiva tra le urgenze, senza team, senza budget, senza roadmap protetta.\n\nLa sera turno in magazzino. Poi computer fino alle 3-4 di notte. Sveglia alle 7.\n\nNon era disciplina. Era debito di sonno usato come modello operativo.\n\nE nessuno diceva niente, perché tanto \"si va avanti\"."
       },
       {
         "id": "il-cto-come-reparto-intero",
         "title": "Quando il CTO diventa un reparto intero",
         "image": "",
-        "body": "Il CTO era sviluppatore, supporto, DevOps, project manager, commerciale, interlocutore clienti e sviluppatore prodotto. Finché compensava tutto sembrava funzionare; poi ogni ritardo dimostrava che non esisteva un sistema, solo una persona.\n\n> [!TAKEAWAY]\n> Se il CTO è anche supporto, delivery, DevOps, account e continuità aziendale, non hai una struttura agile: hai un singolo punto di rottura."
+        "body": "Il CTO era: sviluppatore, supporto, DevOps, project manager, commerciale, interlocutore clienti e sviluppatore prodotto. Nove persone in una.\n\nFinché compensavo tutto, sembrava funzionare. Poi ogni ritardo dimostrava la verità: non esisteva un sistema. Esisteva una persona.\n\n> [!TAKEAWAY]\n> Se il CTO è anche supporto, delivery, DevOps, account e continuità aziendale, non hai una struttura agile. Hai un singolo punto di rottura. E prima o poi si rompe."
       },
       {
         "id": "gli-altri-ruoli-nei-momenti-migliori",
         "title": "Gli altri ruoli, nei momenti migliori",
         "image": "",
-        "body": "Marco inviava estratti conto e pagava il commercialista; Davide portò un lavoro da circa 40€; Luca contattava clienti e organizzava attività. Contributi reali ma non costanti né proporzionati: il centro di gravità restava su una persona."
+        "body": "Marco mandava estratti conto e pagava il commercialista. Davide ha portato un lavoro da circa 40€. Luca contattava clienti e organizzava attività.\n\nContributi reali. Ma non costanti e non proporzionati. Il centro di gravità restava sempre su una persona sola. Indovina quale."
       },
       {
         "id": "riunioni-test-e-pressione",
         "title": "Riunioni, test e pressione",
         "image": "",
-        "body": "Si chiedeva CMS, test, logo, slogan, posizionamento, ma senza togliere carico a chi costruiva. 'Quando è pronto?' è utile solo con 'cosa togliamo per renderlo possibile?'. Altrimenti è solo pressione.\n\n> [!TIP]\n> A ogni richiesta di roadmap o demo servono risorse, lavoro rimosso o data spostata; altrimenti è pressione."
+        "body": "Si chiedeva CMS, test, logo, slogan, posizionamento. Tutto bello. Tutto giusto. Peccato che nessuno togliesse carico a chi costruiva.\n\n\"Quando è pronto?\" è una domanda utile solo se accompagnata da \"cosa togliamo per renderlo possibile?\". Altrimenti è solo pressione con la faccia gentile.\n\n> [!TIP]\n> Ogni richiesta di roadmap o demo ha bisogno di risorse, lavoro rimosso o una data spostata. Se non c'è nessuna delle tre, non è una richiesta. È pressione."
       },
       {
         "id": "finanza-senza-visione-completa",
         "title": "Finanza senza una visione completa",
         "image": "",
-        "body": "Le riunioni riducevano la finanza al saldo bancario e agli aggiornamenti del commercialista. Il saldo non dice crediti, costi futuri, margini, ore bruciate o budget del prodotto. Senza visione completa, ogni decisione è reattiva.\n\n> [!TAKEAWAY]\n> Fatturato non è liquidità. Saldo non è margine. Contratto non è modello sostenibile."
+        "body": "Le riunioni riducevano la finanza al saldo bancario e agli aggiornamenti del commercialista. Come guardare il cruscotto e pensare di saper guidare.\n\nIl saldo non dice crediti, costi futuri, margini, ore bruciate, budget del prodotto. Senza visione completa, ogni decisione è reattiva. Sempre. E si finisce a rincorrere i problemi invece di deciderli.\n\n> [!TAKEAWAY]\n> Fatturato non è liquidità. Saldo non è margine. Contratto non è modello sostenibile. Tre frasi che sembrano ovvie e che nessuno applicava."
       },
       {
         "id": "le-quote-non-distribuiscono-il-lavoro",
         "title": "Le quote non distribuiscono il lavoro",
         "image": "",
-        "body": "Le quote distribuiscono proprietà, non lavoro, rischio e pressione. Avere CTO, CFO, COO e CMO non basta se il CTO resta l’unico a chiudere consegne, urgenze, clienti e prodotto. Gli altri ruoli ruotano intorno al collo di bottiglia.\n\n> [!WARNING]\n> Ruoli non misurati e senza output verificabili diventano aspettative; le aspettative non consegnano progetti né pagano costi."
+        "body": "Le quote distribuiscono proprietà. Non lavoro. Non rischio. Non pressione.\n\nAvere CTO, CFO, COO e CMO non basta se il CTO resta l'unico a chiudere consegne, urgenze, clienti e prodotto. Gli altri ruoli ruotano intorno al collo di bottiglia. E il collo di bottiglia non può ruotare intorno a sé stesso.\n\n> [!WARNING]\n> Ruoli non misurati e senza output verificabili diventano aspettative. Le aspettative non consegnano progetti e non pagano i costi. Li spostano solo su qualcun altro."
       },
       {
         "id": "cosa-avrei-fatto-diversamente",
         "title": "Cosa avrei fatto diversamente",
         "image": "",
-        "body": "Avrei imposto: un responsabile per area; bilancio operativo mensile; perimetro supporto clienti; tempo protetto per il prodotto; documentazione di accessi e responsabilità; decisioni scritte; soglia di sostenibilità personale. Regole minime per non fondare una società sul sacrificio invisibile."
+        "body": "Avrei imposto, dal giorno zero:\n\n- un responsabile per area, con nome e cognome\n- bilancio operativo mensile, non solo saldo\n- perimetro chiaro del supporto clienti\n- tempo protetto per il prodotto\n- documentazione di accessi e responsabilità\n- decisioni scritte, non dette a voce\n- una soglia di sostenibilità personale, con numeri\n\nRegole minime per non fondare una società sul sacrificio invisibile di una persona.\n\nNon le ho imposte. Ho pagato il prezzo."
       },
       {
         "id": "la-lezione",
         "title": "La lezione che porto via",
         "image": "",
-        "body": "Spotex funzionava tecnicamente perché una persona compensava i difetti del sistema con tempo, sonno e disponibilità. Un’azienda esiste quando responsabilità, numeri, perimetri e infrastruttura sono chiari e il lavoro non dipende da eroismi.\n\n> [!TAKEAWAY]\n> Una software house può crollare anche quando una sola persona tiene insieme tutto troppo a lungo."
+        "body": "Spotex funzionava tecnicamente perché una persona compensava i difetti del sistema con tempo, sonno e disponibilità. Quella persona ero io.\n\nUn'azienda esiste quando responsabilità, numeri, perimetri e infrastruttura sono chiari. E quando il lavoro non dipende da eroismi. Fino a quel momento non è un'azienda. È una scommessa su quanto a lungo resiste una persona sola.\n\n> [!TAKEAWAY]\n> Una software house può crollare anche quando una sola persona tiene insieme tutto troppo a lungo. Anzi: crolla proprio per quello."
       }
     ],
     "en": [
@@ -88,61 +88,61 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Between late 2024 and mid-2025, four partners had different roles, but almost every urgent task landed on the CTO. I also worked in a warehouse because the company did not support me. This is not about finding a villain: it is an anatomy of a model that consumed one person."
+        "body": "Late 2024, mid-2025. Four partners. Different roles. And every emergency landing on the same desk: mine.\n\nMeanwhile I was also working warehouse shifts, because the company didn't support me. Great life.\n\nThis isn't about finding a villain. It's the autopsy of a model that consumed one person. Spoiler: that person was me."
       },
       {
         "id": "roles-on-paper",
         "title": "The roles on paper",
         "image": "",
-        "body": "Four partners: Andrea CTO 35%, Marco CFO/chair 35%, Luca COO 15%, Davide CMO/financial partner 15%. Sensible roles on paper; in practice, real work mattered, not the org chart. In a small company, a role is measured by deadlines, clients, payments, and uncomfortable decisions.\n\n> [!NOTE]\n> Names are fictional; the goal is to describe a system, not identify people."
+        "body": "Four partners: Andrea CTO 35%, Marco CFO/chair 35%, Luca COO 15%, Davide CMO/financial partner 15%.\n\nSensible roles on paper. Elegant. Investor-deck ready.\n\nIn practice, real work mattered, not the org chart. In a small company a role is measured by three things: met deadlines, handled clients, uncomfortable decisions taken. Everything else is decoration.\n\n> [!NOTE]\n> Names are fictional. The goal is to describe a system, not point fingers at people."
       },
       {
         "id": "a-typical-day",
         "title": "A typical day",
         "image": "",
-        "body": "The day began with client messages, tickets, changes, quotes. The proprietary CMS, the only way out, was built between emergencies, with no dedicated team, budget, or protected roadmap. In the evening, the warehouse shift; then the computer until 3-4 a.m., waking at 7. It was not discipline: sleep debt as an operating model."
+        "body": "The day started like this: client messages, tickets, changes, quotes. The proprietary CMS — the only way out — was built between emergencies, with no team, no budget, no protected roadmap.\n\nEvening: warehouse shift. Then computer until 3-4 a.m. Alarm at 7.\n\nThat wasn't discipline. That was sleep debt used as an operating model.\n\nAnd nobody said anything, because \"we keep going.\""
       },
       {
         "id": "the-cto-as-a-whole-department",
         "title": "When the CTO becomes an entire department",
         "image": "",
-        "body": "The CTO was developer, support, DevOps, project manager, sales, client contact, and product developer. As long as he compensated for everything, it seemed to work; then every delay proved there was no system, only a person.\n\n> [!TAKEAWAY]\n> If the CTO is also support, delivery, DevOps, account management, and business continuity, you do not have an agile structure: you have a single point of failure."
+        "body": "The CTO was: developer, support, DevOps, project manager, sales, client contact and product developer. Nine people in one.\n\nAs long as I compensated for everything, it seemed to work. Then every delay proved the truth: there was no system. There was one person.\n\n> [!TAKEAWAY]\n> If the CTO is also support, delivery, DevOps, account management and business continuity, you don't have an agile structure. You have a single point of failure. And sooner or later, it breaks."
       },
       {
         "id": "the-other-roles-at-their-best",
         "title": "The other roles, at their best",
         "image": "",
-        "body": "Marco sent bank statements and paid the accountant; Davide brought in a job worth about €40; Luca contacted clients and organized activities. Real but inconsistent and disproportionate contributions: the center of gravity remained on one person."
+        "body": "Marco sent bank statements and paid the accountant. Davide brought in a job worth about €40. Luca contacted clients and organized activities.\n\nReal contributions. But not steady, not proportional. The center of gravity stayed on one person. Guess which one."
       },
       {
         "id": "meetings-tests-and-pressure",
         "title": "Meetings, tests, and pressure",
         "image": "",
-        "body": "People asked for CMS, tests, logo, slogan, positioning, but without removing load from the builder. 'When will it be ready?' is useful only with 'what do we remove to make it possible?'. Otherwise it is just pressure.\n\n> [!TIP]\n> Every roadmap or demo request needs resources, removed work, or a moved deadline; otherwise it is pressure."
+        "body": "People asked for CMS, tests, logo, slogan, positioning. All fine. All fair. Except nobody was removing load from whoever was building.\n\n\"When will it be ready?\" is only useful if paired with \"what do we remove to make it possible?\" Otherwise it's just pressure wearing a friendly face.\n\n> [!TIP]\n> Every roadmap or demo request needs resources, removed work, or a moved deadline. If none of the three is there, it's not a request. It's pressure."
       },
       {
         "id": "finance-without-a-full-picture",
         "title": "Finance without a full picture",
         "image": "",
-        "body": "Meetings reduced finance to the bank balance and accountant updates. The balance does not show receivables, future costs, margins, burned hours, or product budget. Without a full picture, every decision is reactive.\n\n> [!TAKEAWAY]\n> Revenue is not cash. A bank balance is not margin. A contract is not a sustainable model."
+        "body": "Meetings reduced finance to the bank balance and accountant updates. Like staring at the dashboard and thinking you can drive.\n\nThe balance doesn't show receivables, future costs, margins, burned hours, product budget. Without the full picture, every decision is reactive. Always. You end up chasing problems instead of deciding them.\n\n> [!TAKEAWAY]\n> Revenue isn't cash. A bank balance isn't margin. A contract isn't a sustainable model. Three sentences that sound obvious and that nobody was applying."
       },
       {
         "id": "ownership-does-not-distribute-work",
         "title": "Ownership does not distribute work",
         "image": "",
-        "body": "Ownership shares distribute property, not work, risk, and pressure. Having CTO, CFO, COO, and CMO is not enough if the CTO remains the only one closing deliveries, emergencies, clients, and product. Other roles orbit the bottleneck.\n\n> [!WARNING]\n> Unmeasured roles without verifiable outputs become expectations; expectations do not deliver projects or pay costs."
+        "body": "Ownership shares distribute property. Not work. Not risk. Not pressure.\n\nHaving CTO, CFO, COO and CMO isn't enough if the CTO remains the only one closing deliveries, emergencies, clients and product. Other roles orbit the bottleneck. And the bottleneck can't orbit itself.\n\n> [!WARNING]\n> Unmeasured roles without verifiable outputs become expectations. Expectations don't deliver projects and don't pay costs. They just move them onto someone else."
       },
       {
         "id": "what-i-would-do-differently",
         "title": "What I would do differently",
         "image": "",
-        "body": "I would have imposed: one owner per area; monthly operating financials; client-support boundaries; protected product time; documentation of access and responsibilities; written decisions; a personal sustainability threshold. Minimum rules to avoid building a company on invisible sacrifice."
+        "body": "I would have imposed, from day zero:\n\n- one owner per area, first and last name\n- monthly operating financials, not just the balance\n- clear boundaries around client support\n- protected product time\n- documentation of access and responsibilities\n- written decisions, not verbal\n- a personal sustainability threshold, with numbers\n\nMinimum rules to avoid founding a company on one person's invisible sacrifice.\n\nI didn't impose them. I paid the price."
       },
       {
         "id": "the-lesson-i-take-away",
         "title": "The lesson I take away",
         "image": "",
-        "body": "Spotex worked technically because one person compensated for the system’s flaws with time, sleep, and availability. A company exists when responsibilities, numbers, boundaries, and infrastructure are clear and work does not depend on heroics.\n\n> [!TAKEAWAY]\n> A software house can also collapse when one person holds everything together for too long."
+        "body": "Spotex worked technically because one person compensated for the system's flaws with time, sleep and availability. That person was me.\n\nA company exists when responsibilities, numbers, boundaries and infrastructure are clear. And when work doesn't depend on heroics. Until then it's not a company. It's a bet on how long one person can hold.\n\n> [!TAKEAWAY]\n> A software house can collapse even when one person holds everything together for too long. Actually: it collapses because of that."
       }
     ]
   }

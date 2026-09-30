@@ -15,8 +15,8 @@
     "en": "Automation for freelancers: fewer emails, more paid work"
   },
   "description": {
-    "it": "Un flusso semplice per freelance: contatti, preventivi, onboarding e fatture senza rifare ogni volta le stesse cose.",
-    "en": "A simple workflow for freelancers: leads, proposals, onboarding and invoices without repeating the same work every time."
+    "it": "Il flusso minimo per smettere di rifare le stesse cose ogni volta: contatti, preventivi, onboarding e fatture.",
+    "en": "The minimum workflow to stop repeating the same stuff every time: leads, proposals, onboarding and invoices."
   },
   "sections": {
     "it": [
@@ -24,31 +24,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Da freelance perdi più tempo di quanto pensi tra email, preventivi, messaggi, cartelle progetto e fatture. Non perché lavori male: perché rifai le stesse attività per ogni cliente.\n\nL'automazione serve a questo: togliere di mezzo le ripetizioni, non rendere impersonale il tuo lavoro."
+        "body": "Da freelance perdi più tempo di quanto pensi. Tra email, preventivi, messaggi, cartelle progetto e fatture.\n\nNon perché lavori male. Perché rifai le stesse cose per ogni cliente. Ogni volta. Da zero.\n\nL'automazione serve a questo: togliere le ripetizioni. Non a rendere impersonale il tuo lavoro."
       },
       {
         "id": "flusso-semplice",
         "title": "Un flusso semplice",
         "image": "/workflow-freelance.jpeg",
-        "body": "Ti basta un percorso chiaro:\n\n**Contatto → call → preventivo → conferma → lavoro → fattura**\n\nOgni fase deve avere una prossima azione. Se arriva un contatto, raccogli le informazioni con un modulo breve. Se accetta il preventivo, parte una checklist. Se consegni, parte il promemoria per la fattura.\n\n> [!TAKEAWAY]\n> Se un passaggio lo fai nello stesso modo ogni settimana, puoi trasformarlo in un modello o in un'automazione."
+        "body": "Ti serve un percorso chiaro:\n\n**Contatto → call → preventivo → conferma → lavoro → fattura**\n\nOgni fase ha una prossima azione. Punto.\n\nArriva un contatto? Modulo breve, raccogli le info. Accetta il preventivo? Parte una checklist. Consegni? Parte il promemoria fattura.\n\nSe ogni volta improvvisi, il problema non è il cliente. Sei tu.\n\n> [!TAKEAWAY]\n> Se un passaggio lo fai sempre nello stesso modo, puoi trasformarlo in un modello o in un'automazione. Se lo fai sempre diverso, hai un problema a monte."
       },
       {
         "id": "tre-cose-da-automatizzare",
         "title": "Tre cose da automatizzare",
         "image": "",
-        "body": "### 1. Nuovi contatti\n\nUn modulo raccoglie nome, richiesta, budget indicativo e contatto. Così non perdi tre messaggi solo per capire cosa serve.\n\n### 2. Onboarding\n\nDopo conferma o acconto, invia un messaggio con i prossimi passi e crea una checklist: materiali, accessi, call e scadenze.\n\n### 3. Fatture\n\nImposta un promemoria prima della scadenza e uno dopo. Le fatture non devono restare nascoste in mezzo alle email."
+        "body": "### 1. Nuovi contatti\n\nUn modulo raccoglie nome, richiesta, budget indicativo e contatto. Così non perdi tre messaggi solo per capire cosa serve. E non perdi il quarto perché ti eri dimenticato di rispondere.\n\n### 2. Onboarding\n\nDopo conferma o acconto, parte un messaggio con i prossimi passi e una checklist: materiali, accessi, call, scadenze.\n\nIl cliente sa cosa aspettarsi. Tu sai cosa manca. Nessuno dei due deve scrivere \"a che punto siamo?\" per la quinta volta.\n\n### 3. Fatture\n\nPromemoria prima della scadenza. E uno dopo. Le fatture non devono restare nascoste in mezzo alle email. Che è esattamente dove finiscono sempre."
       },
       {
         "id": "ai-solo-per-bozze",
         "title": "L'AI può aiutare, ma non decide",
         "image": "/automazioni-freelance.jpeg",
-        "body": "Usa l'AI per riassumere un brief, preparare una bozza di email, trasformare una call in una checklist o partire da un modello di preventivo.\n\nMa controlla sempre prezzo, condizioni, contratto e messaggi importanti prima di inviarli. L'AI ti fa partire più veloce: la responsabilità resta tua.\n\n> [!WARNING]\n> Non inserire dati riservati dei clienti in strumenti esterni senza sapere dove vengono conservati e chi può accedervi."
+        "body": "Usa l'AI per riassumere un brief, preparare una bozza di email, trasformare una call in una checklist o partire da un modello di preventivo.\n\nMa controlla sempre prezzo, condizioni, contratto e messaggi importanti prima di inviarli. L'AI ti fa partire più veloce. La responsabilità resta tua. Sempre.\n\nSe sbaglia, non puoi dire \"l'ha scritto l'AI\". Non è una scusa che tiene.\n\n> [!WARNING]\n> Non mettere dati riservati dei clienti in strumenti esterni se non sai dove finiscono e chi ci può accedere. Non è paranoia. È il minimo."
       },
       {
         "id": "inizia-ora",
         "title": "Inizia da una sola cosa",
         "image": "",
-        "body": "Non installare dieci app. Scegli l'attività amministrativa che ripeti più spesso e crea prima un modello semplice.\n\nPoi automatizza un solo trigger: nuovo contatto, preventivo accettato o fattura in scadenza.\n\nUn sistema minimo, che usi davvero, vale più di una mega-dashboard che abbandoni dopo una settimana."
+        "body": "Non installare dieci app. Non montare una dashboard da startup che poi apri due volte e abbandoni.\n\nScegli l'attività amministrativa che ripeti più spesso. Crea prima un modello semplice. Poi automatizza un solo trigger: nuovo contatto, preventivo accettato, fattura in scadenza.\n\nUn sistema minimo che usi davvero vale più di una mega-dashboard che abbandoni dopo una settimana. E lo sai già. Perché l'hai già fatto."
       }
     ],
     "en": [
@@ -56,31 +56,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "As a freelancer, you lose time across emails, proposals, messages, project folders and invoices because the same administrative work is repeated for every client. Automation removes repetition without making your work impersonal."
+        "body": "As a freelancer you lose more time than you think. Emails, proposals, messages, project folders, invoices.\n\nNot because you work badly. Because you redo the same stuff for every client. Every time. From scratch.\n\nThat's what automation is for: killing repetition. Not making your work impersonal."
       },
       {
         "id": "simple-flow",
         "title": "A simple workflow",
         "image": "/workflow-freelance.jpeg",
-        "body": "Use one clear path: **Lead → call → proposal → approval → work → invoice**. Each stage needs a next action.\n\n> [!TAKEAWAY]\n> If you perform a step the same way every week, turn it into a template or automation."
+        "body": "You need one clear path:\n\n**Lead → call → proposal → approval → work → invoice**\n\nEvery stage has a next action. Period.\n\nNew lead? Short form, collect info. Proposal accepted? A checklist kicks off. Delivered? Invoice reminder kicks off.\n\nIf you improvise every time, the problem isn't the client. It's you.\n\n> [!TAKEAWAY]\n> If you do a step the same way every time, turn it into a template or an automation. If you always do it differently, you have a problem upstream."
       },
       {
         "id": "three-automations",
         "title": "Three things to automate",
         "image": "",
-        "body": "Automate a short lead intake form, an onboarding message and checklist after approval or deposit, and reminders for upcoming or overdue invoices."
+        "body": "### 1. New leads\n\nA form collects name, request, rough budget and contact. No more losing three messages just to understand what they need. And no more losing the fourth because you forgot to reply.\n\n### 2. Onboarding\n\nAfter approval or deposit, a message goes out with next steps and a checklist: materials, access, calls, deadlines.\n\nThe client knows what to expect. You know what's missing. Nobody has to write \"where are we?\" for the fifth time.\n\n### 3. Invoices\n\nReminder before due date. And one after. Invoices shouldn't hide in your inbox. Which is exactly where they always end up."
       },
       {
         "id": "ai-for-drafts",
         "title": "AI helps, but does not decide",
         "image": "/automazioni-freelance.jpeg",
-        "body": "Use AI to summarize a brief, draft an email, turn a call into a checklist or start a proposal from a template. Review price, conditions, contracts and important messages before sending."
+        "body": "Use AI to summarize a brief, draft an email, turn a call into a checklist or start a proposal from a template.\n\nBut always check price, conditions, contract and important messages before sending. AI gets you moving faster. Responsibility stays yours. Always.\n\nIf it gets it wrong, \"AI wrote it\" isn't a defense that holds.\n\n> [!WARNING]\n> Don't put client data into external tools if you don't know where it ends up and who can access it. That's not paranoia. It's the baseline."
       },
       {
         "id": "start-now",
         "title": "Start with one thing",
         "image": "",
-        "body": "Do not install ten apps. Choose the administrative task you repeat most often, create a simple template, then automate one trigger: a new lead, an accepted proposal or an upcoming invoice."
+        "body": "Don't install ten apps. Don't build a startup dashboard you'll open twice and abandon.\n\nPick the admin task you repeat most. Build a simple template first. Then automate one trigger: new lead, accepted proposal, upcoming invoice.\n\nA minimal system you actually use beats a mega-dashboard you abandon after a week. And you already know that. Because you've already done it."
       }
     ]
   }
