@@ -88,21 +88,21 @@
           ]
         },
         "howIWork": {
-          "title": "Non costruisco roba per fare scena",
-          "subtitle": "Non mi interessa aggiungere l’ennesimo tool, agente AI o dashboard se il problema è una cartella fatta male, un passaggio inutile o un processo che nessuno ha mai scritto. Prima guardo dove si perde tempo. Poi cerco di togliere attrito con il minimo indispensabile: una web app, un’automazione, un’integrazione o, se serve davvero, un prototipo fisico.",
-          "quote": "Non faccio magie. Costruisco, testo, rompo, sistemo e documento quello che succede.",
+          "title": "Non costruisco roba per fare scena.",
+          "subtitle": "Prima guardo dove si perde tempo. Poi provo a toglierlo di mezzo con il minimo indispensabile: una web app, un’automazione o, se serve davvero, un prototipo fisico.",
+          "quote": "Costruisco, testo, rompo, sistemo. Poi ne parlo.",
           "cards": [
             {
-              "title": "Prima lo costruisco, poi ne parlo",
-              "text": "Preferisco mostrare un prototipo, un test o un errore risolto piuttosto che dichiararmi esperto prima di averci messo le mani."
+              "title": "Problemi veri, non demo",
+              "text": "Magazzino, documenti, dati sparsi, passaggi ripetuti e roba che fa perdere tempo alle persone."
             },
             {
-              "title": "Se è complicato da mantenere, non è una vittoria",
-              "text": "Scelgo strumenti che capisco e che posso sistemare domani. La complessità entra solo quando porta un vantaggio reale."
+              "title": "Meno complessità possibile",
+              "text": "Se una cosa è difficile da capire e mantenere, non è una vittoria."
             },
             {
-              "title": "Il codice deve sporcarsi le mani",
-              "text": "Mi interessano processi operativi: magazzino, produzione, QR, documenti, dati sparsi e tutto ciò che fa perdere tempo alle persone."
+              "title": "Prima prove, poi parole",
+              "text": "Un prototipo che funziona vale più di una pagina piena di claim."
             }
           ]
         },
