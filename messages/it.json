@@ -62,11 +62,11 @@
         "title": "Home | Alessio Quagliara",
         "description": "Indie hacker e studente di AI engineering che costruisce in pubblico piccoli SaaS, automazioni e strumenti operativi ispirati a problemi reali."
       },
-      "badge": "Build in Public · SaaS · AI Engineering",
-      "title": "Costruisco piccoli SaaS e strumenti operativi per rendere più semplici i flussi reali.",
-      "description": "Studio Ingegneria Informatica e trasformo problemi di magazzino, produzione e lavoro quotidiano in prototipi software, automazioni e sistemi connessi.",
-      "ctaProjects": "Esplora i progetti",
-      "ctaContact": "Scrivimi",
+      "badge": "Build in Public · Web app · Automazioni · Sistemi reali",
+      "title": "Sviluppo cose, miglioro processi, automatizzo.",
+      "description": "Costruisco web app, piccoli SaaS, automazioni e prototipi per togliere passaggi inutili da problemi reali: documenti, flussi operativi, magazzino, produzione e lavoro quotidiano.",
+      "ctaProjects": "Guarda cosa sto costruendo",
+      "ctaContact": "Hai un processo che ti fa perdere tempo? Raccontamelo.",
       "sections": {
         "whatIBuild": {
           "title": "Cosa costruisco",
@@ -88,21 +88,21 @@
           ]
         },
         "howIWork": {
-          "title": "Come lavoro",
-          "subtitle": "Meno claim, più pratica: sto imparando seriamente costruendo in pubblico.",
-          "quote": "Non uso complessità per impressionare. La tolgo finché il progetto respira meglio.",
+          "title": "Non costruisco roba per fare scena",
+          "subtitle": "Non mi interessa aggiungere l’ennesimo tool, agente AI o dashboard se il problema è una cartella fatta male, un passaggio inutile o un processo che nessuno ha mai scritto. Prima guardo dove si perde tempo. Poi cerco di togliere attrito con il minimo indispensabile: una web app, un’automazione, un’integrazione o, se serve davvero, un prototipo fisico.",
+          "quote": "Non faccio magie. Costruisco, testo, rompo, sistemo e documento quello che succede.",
           "cards": [
             {
-              "title": "Costruire prima di dichiarare",
-              "text": "Preferisco mostrare progressi reali e prototipi invece di dichiararmi esperto di cose che sto ancora consolidando."
+              "title": "Prima lo costruisco, poi ne parlo",
+              "text": "Preferisco mostrare un prototipo, un test o un errore risolto piuttosto che dichiararmi esperto prima di averci messo le mani."
             },
             {
-              "title": "Semplicità prima dello stack",
-              "text": "Scelgo strumenti che capisco e riesco a mantenere. Aggiungo complessità solo quando serve davvero."
+              "title": "Se è complicato da mantenere, non è una vittoria",
+              "text": "Scelgo strumenti che capisco e che posso sistemare domani. La complessità entra solo quando porta un vantaggio reale."
             },
             {
-              "title": "Problemi reali",
-              "text": "Software, automazione e sistemi fisici che si incontrano: magazzino, produzione, piccole inefficienze quotidiane."
+              "title": "Il codice deve sporcarsi le mani",
+              "text": "Mi interessano processi operativi: magazzino, produzione, QR, documenti, dati sparsi e tutto ciò che fa perdere tempo alle persone."
             }
           ]
         },
