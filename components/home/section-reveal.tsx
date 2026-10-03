@@ -11,6 +11,8 @@ type SectionRevealProps = {
   itemSelector?: string;
   parallaxSelector?: string;
   motionPreset?: "base" | "dynamic";
+  id?: string;
+  labelledBy?: string;
 };
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,6 +23,8 @@ export function SectionReveal({
   itemSelector = "[data-reveal-item]",
   parallaxSelector = "[data-parallax]",
   motionPreset = "base",
+  id,
+  labelledBy,
 }: SectionRevealProps) {
   const rootRef = useRef<HTMLElement | null>(null);
 
@@ -104,7 +108,7 @@ export function SectionReveal({
   }, [itemSelector, motionPreset, parallaxSelector]);
 
   return (
-    <section ref={rootRef} className={className}>
+    <section ref={rootRef} id={id} aria-labelledby={labelledBy} className={className}>
       {children}
     </section>
   );

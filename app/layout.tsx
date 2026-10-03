@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
+import { headers } from "next/headers";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
@@ -8,7 +9,7 @@ import CookieConsent from "@/components/layout/cookie-consent";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import { getMessages } from "@/lib/i18n";
+import { getLocaleFromLang, getMessages, LOCALE_HEADER } from "@/lib/i18n";
 
 config.autoAddCss = false;
 
@@ -62,13 +63,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Le landing /en/... arrivano con l'header impostato da proxy.ts.
+  const lang = getLocaleFromLang((await headers()).get(LOCALE_HEADER));
+
   return (
-    <html lang="it" data-scroll-behavior="smooth">
+    <html lang={lang} data-scroll-behavior="smooth">
       <body className="text-slate-50 antialiased">
         <div className="site-shell flex min-h-screen flex-col">
           <ScrollToTop />

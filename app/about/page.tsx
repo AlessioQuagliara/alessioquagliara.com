@@ -10,9 +10,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { SectionReveal } from "@/components/home/section-reveal";
+import { ServiceLinks } from "@/components/landing/service-links";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { buttonClass } from "@/components/ui/button";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
+import { CALENDLY_URL } from "@/lib/site-config";
 
 type AboutPageProps = {
   searchParams: Promise<{ lang?: string }>;
@@ -84,6 +86,9 @@ export default async function AboutPage({ searchParams }: AboutPageProps) {
             ))}
           </ul>
           <p className="mt-8 max-w-4xl leading-8 text-[#21467f]">{about.closing}</p>
+          <div className="mt-8">
+            <ServiceLinks locale={locale} showIntro={false} />
+          </div>
         </div>
 
         <div className="mt-10 rounded-3xl border border-[#8cb4ff]/28 bg-[#0a2152]/38 p-6 shadow-[0_24px_50px_-40px_rgba(2,12,32,1)] sm:p-8" data-reveal-item>
@@ -94,7 +99,7 @@ export default async function AboutPage({ searchParams }: AboutPageProps) {
           <p className="mt-4 max-w-3xl leading-8 text-blue-100/90">{about.cta.text}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="https://calendly.com/quagliara-alessio/meeting-conoscitivo"
+              href={CALENDLY_URL}
               target="_blank"
               rel="noreferrer"
               className={buttonClass({ variant: "primary", size: "lg" })}

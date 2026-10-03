@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/blog";
 import { getFeaturedRepos } from "@/lib/github";
+import { LANDING_PATHS, X_DEFAULT_LOCALE } from "@/lib/landings";
+import { locales } from "@/lib/i18n";
 
 function toDateOrNull(value: unknown): Date | null {
   if (value === null || value === undefined) return null;
@@ -55,6 +57,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         };
   });
 
+  // Landing servizi: una voce per lingua, con le alternate hreflang reciproche.
+  const landingUrls: MetadataRoute.Sitemap = Object.values(LANDING_PATHS).flatMap((paths) =>
+    locales.map((locale) => ({
+      url: `${baseUrl}${paths[locale]}`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          it: `${baseUrl}${paths.it}`,
+          en: `${baseUrl}${paths.en}`,
+          "x-default": `${baseUrl}${paths[X_DEFAULT_LOCALE]}`,
+        },
+      },
+    }))
+  );
+
   return [
     {
       url: `${baseUrl}/`,
@@ -80,6 +97,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
     },
+    ...landingUrls,
     ...projectUrls,
     ...blogUrls,
   ];

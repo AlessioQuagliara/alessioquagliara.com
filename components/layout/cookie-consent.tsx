@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-import { getLocaleFromLang, getMessages, type Locale, withLang } from "@/lib/i18n";
+import { getLocaleFromLang, getLocaleFromPathname, getMessages, type Locale, withLang } from "@/lib/i18n";
 import { buttonClass } from "@/components/ui/button";
 
 function CookieConsent() {
@@ -16,9 +16,9 @@ function CookieConsent() {
     const hasConsent = localStorage.getItem('cookieConsent');
     
     if (!hasConsent) {
-      const currentLocale = getLocaleFromLang(
-        new URLSearchParams(window.location.search).get("lang")
-      );
+      const currentLocale =
+        getLocaleFromPathname(window.location.pathname) ??
+        getLocaleFromLang(new URLSearchParams(window.location.search).get("lang"));
 
       // Mostra il banner dopo un piccolo delay
       const timer = setTimeout(() => {

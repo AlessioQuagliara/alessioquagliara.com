@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { CALENDLY_URL } from "@/lib/site-config";
 
 declare global {
   interface Window {
@@ -18,7 +19,6 @@ declare global {
 
 const CALENDLY_SCRIPT_ID = "calendly-widget-script";
 const CALENDLY_STYLESHEET_ID = "calendly-widget-stylesheet";
-const CALENDLY_URL = "https://calendly.com/quagliara-alessio/meeting-conoscitivo";
 
 function cleanupCalendlyBadge() {
   document

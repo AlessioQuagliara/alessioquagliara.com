@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
+import { getLocaleSwitchHref, resolveLocale } from "@/lib/landings";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const searchParams = useSearchParams();
   const pathname = usePathname();
-  const locale = getLocaleFromLang(searchParams.get("lang"));
-  const navbar = getMessages(locale).site.layout.navbar;
   const currentPath = pathname || "/";
+  const locale = resolveLocale(currentPath, getLocaleFromLang(searchParams.get("lang")));
+  const navbar = getMessages(locale).site.layout.navbar;
   const openMenuLabel = locale === "it" ? "Apri menu" : "Open menu";
   const closeMenuLabel = locale === "it" ? "Chiudi menu" : "Close menu";
 
@@ -103,7 +104,7 @@ export function Navbar() {
           <div className="flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-2 py-1 text-xs">
             <span className="text-[#bfd5ff]">{navbar.languageLabel}</span>
             <Link
-              href={withLang(currentPath, "it")}
+              href={getLocaleSwitchHref(currentPath, "it")}
               className={
                 locale === "it"
                   ? "text-white font-semibold"
@@ -114,7 +115,7 @@ export function Navbar() {
             </Link>
             <span className="text-[#9cbcff]">/</span>
             <Link
-              href={withLang(currentPath, "en")}
+              href={getLocaleSwitchHref(currentPath, "en")}
               className={
                 locale === "en"
                   ? "text-white font-semibold"
@@ -197,7 +198,7 @@ export function Navbar() {
             <span className="text-xs uppercase tracking-[0.2em] text-[#bfd5ff]">Lang</span>
             <div className="flex items-center gap-4 text-sm">
               <Link
-                href={withLang(currentPath, "it")}
+                href={getLocaleSwitchHref(currentPath, "it")}
                 onClick={() => setIsMenuOpen(false)}
                 className={locale === "it" ? "font-semibold text-white" : "text-[#bfd5ff]"}
               >
@@ -205,7 +206,7 @@ export function Navbar() {
               </Link>
               <span className="text-[#9cbcff]">/</span>
               <Link
-                href={withLang(currentPath, "en")}
+                href={getLocaleSwitchHref(currentPath, "en")}
                 onClick={() => setIsMenuOpen(false)}
                 className={locale === "en" ? "font-semibold text-white" : "text-[#bfd5ff]"}
               >

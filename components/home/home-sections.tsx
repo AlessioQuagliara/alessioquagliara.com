@@ -17,10 +17,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { SectionReveal } from "@/components/home/section-reveal";
+import { ServiceLinks } from "@/components/landing/service-links";
 import { ProjectCard } from "@/components/projects/project-card";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { buttonClass } from "@/components/ui/button";
 import { type Messages, withLang, type Locale } from "@/lib/i18n";
+import { CALENDLY_URL } from "@/lib/site-config";
 import type { GithubRepo } from "@/types/github";
 
 type HomeSectionsProps = {
@@ -78,6 +80,10 @@ export function HomeSections({ locale, repos, noDescriptionLabel, featuredLabel,
               ) : null}
             </article>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <ServiceLinks locale={locale} />
         </div>
         </div>
       </SectionReveal>
@@ -222,7 +228,7 @@ export function HomeSections({ locale, repos, noDescriptionLabel, featuredLabel,
 
         <div className="mt-10 flex flex-wrap gap-4" data-reveal-item>
           <Link
-            href="https://calendly.com/quagliara-alessio/meeting-conoscitivo"
+            href={CALENDLY_URL}
             target="_blank"
             rel="noreferrer"
             className={buttonClass({ variant: "primary", size: "lg" })}

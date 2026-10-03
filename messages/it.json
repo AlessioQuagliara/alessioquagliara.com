@@ -2,9 +2,9 @@
   "site": {
     "metadata": {
       "defaultTitle": "Alessio Quagliara — Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
-      "defaultDescription": "Studente di Ingegneria Informatica. Costruisco in pubblico piccoli SaaS e strumenti operativi nati da problemi reali di magazzino e produzione.",
+      "defaultDescription": "Automazioni e AI per freelance e aziende industriali. Sviluppo cose, miglioro processi, automatizzo.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "Sviluppo cose, miglioro processi, automatizzo. Studio ingegneria AI e costruisco in pubblico piccoli SaaS e strumenti nati da problemi reali.",
+      "ogDescription": "Sviluppo cose, miglioro processi, automatizzo. Studio ingegneria AI e integro automazioni e AI in aziende industriali.",
       "locale": "it_IT"
     },
     "layout": {
@@ -26,7 +26,7 @@
         "email": "quagliara.alessio@gmail.com",
         "brandName": "Alessio Quagliara",
         "brandSubtitle": "Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
-        "brandDescription": "Studente di Ingegneria Informatica. Documento in pubblico piccoli SaaS, tooling AI/LLM e automazioni nate da problemi reali di magazzino e produzione.",
+        "brandDescription": "Automazioni e AI per freelance e aziende industriali. Sviluppo, automatizzo, tolgo passaggi inutili.",
         "section": {
           "legal": "Legale",
           "contacts": "Contatti"
@@ -70,35 +70,35 @@
       "sections": {
         "whatIBuild": {
           "title": "Cosa costruisco",
-          "subtitle": "Tre aree, tre modi diversi di risolvere problemi con codice.",
+          "subtitle": "Tre modi di togliere passaggi inutili.",
           "cards": [
             {
               "title": "SaaS costruiti in pubblico",
-              "text": "Piccoli prodotti SaaS costruiti e raccontati passo dopo passo: scelte tecniche, errori, iterazioni."
+              "text": "Piccoli SaaS costruiti e raccontati: scelte, errori, iterazioni."
             },
             {
               "title": "Strumenti operativi",
-              "text": "Tool semplici per magazzino, produzione, QR e tracciamento, dove il software toglie passaggi manuali.",
-              "badge": "Disponibile per progetti pilota di automazione flussi e AI per PMI locali."
+              "text": "Tool per magazzino, produzione, QR e tracciamento.",
+              "badge": "Automazioni e AI per PMI e freelance."
             },
             {
               "title": "Automazione fisica",
-              "text": "Arduino, ESP32 e sistemi embedded: codice che parla con sensori e problemi fuori dallo schermo."
+              "text": "Arduino, ESP32 e embedded: codice che parla con sensori e macchine."
             }
           ]
         },
         "howIWork": {
           "title": "Non costruisco roba per fare scena.",
-          "subtitle": "Prima guardo dove si perde tempo. Poi provo a toglierlo di mezzo con il minimo indispensabile: una web app, un’automazione o, se serve davvero, un prototipo fisico.",
+          "subtitle": "Prima guardo dove si perde tempo. Poi lo tolgo con il minimo indispensabile.",
           "quote": "Costruisco, testo, rompo, sistemo. Poi ne parlo.",
           "cards": [
             {
-              "title": "Problemi veri, non demo",
-              "text": "Magazzino, documenti, dati sparsi, passaggi ripetuti e roba che fa perdere tempo alle persone."
+              "title": "Problemi veri",
+              "text": "Magazzino, documenti, passaggi ripetuti: roba che fa perdere tempo."
             },
             {
-              "title": "Meno complessità possibile",
-              "text": "Se una cosa è difficile da capire e mantenere, non è una vittoria."
+              "title": "Meno complessità",
+              "text": "Se è difficile da capire e mantenere, non è una vittoria."
             },
             {
               "title": "Prima prove, poi parole",
@@ -108,37 +108,37 @@
         },
         "selectedProjects": {
           "title": "Progetti selezionati",
-          "subtitle": "Pochi progetti, ma rappresentativi: prodotto, automazione, sistemi reali.",
-          "intro": "Preferisco pochi progetti veri a un portfolio pieno di esperimenti scollegati.",
+          "subtitle": "Pochi progetti, ma veri: prodotto, automazione, sistemi.",
+          "intro": "Preferisco pochi progetti veri a un portfolio pieno di esperimenti.",
           "eyebrow": "SaaS · automazione · tooling AI/LLM · software operativo",
           "allProjects": "Vedi tutti i progetti"
         },
         "technicalFocus": {
           "title": "Focus tecnico",
-          "subtitle": "Le aree che sto usando e consolidando sul campo, senza flexing di stack.",
+          "subtitle": "Quello che uso davvero, senza flexing di stack.",
           "blocks": [
             {
               "title": "Backend & Web",
-              "text": "Applicazioni backend con Flask e Quart, interfacce HTML/CSS semplici e mantenibili"
+              "text": "Flask e Quart, interfacce semplici e mantenibili"
             },
             {
               "title": "Core Skills",
-              "text": "C, basi di sistemi, strutture dati, logica applicativa, lettura disciplinata del codice"
+              "text": "C, strutture dati, logica applicativa, lettura del codice"
             },
             {
               "title": "AI & Tooling",
-              "text": "Tooling AI/LLM, automazioni via API, piccoli agenti, workflow assistiti"
+              "text": "Tooling AI/LLM, automazioni via API, piccoli agenti"
             },
             {
               "title": "Hardware & Automation",
-              "text": "Arduino, ESP32, Raspberry Pi, sensori, QR, prototipi embedded di base"
+              "text": "Arduino, ESP32, sensori, QR, prototipi embedded"
             }
           ]
         },
         "contactCta": {
           "title": "Parliamone",
           "badge": "Sperimentazione gratuita · Ottobre 2026",
-          "text": "Hai una PMI o sei un freelancer e perdi ore tra documenti, magazzino o preventivi? Sto selezionando due sole realtà per mappare i flussi e integrare automazioni o AI locale gratis, in cambio di un caso studio. Parliamone prima che si riempiano i posti.",
+          "text": "Freelancer o PMI che perdi ore tra documenti, magazzino o preventivi? Seleziono due realtà per mappare i flussi e integrare automazioni o AI gratis, in cambio di un caso studio.",
           "primary": "Prenota una chiamata",
           "secondary": "Vai ai contatti"
         }
@@ -150,34 +150,34 @@
         "description": "Chi sono: uno che ha gestito una software house e fatto l'operaio, ora studia Ingegneria Informatica e costruisce software e automazioni senza troppe cerimonie."
       },
       "title": "Chi sono",
-      "intro": "Studio Ingegneria Informatica, indirizzo Sistemi Intelligenti. Prima ho gestito una software house SRL con poche risorse, clienti e urgenze, mentre facevo l'operaio. Quindi so come gira il software — e come girano le persone quando le cose devono funzionare davvero.",
+      "intro": "Studio Ingegneria Informatica (Sistemi Intelligenti). Prima ho gestito una software house e facevo l'operaio. So come gira il software — e come girano le persone quando le cose devono funzionare.",
       "sections": [
         {
-          "title": "Software house e lavoro vero",
-          "text": "Ho gestito una software house SRL con poche risorse: clienti, urgenze, richieste al volo e burocrazia a manovella. Nel frattempo facevo l'operaio, imparando sul campo come funzionano i processi produttivi. Non è la strada più pulita, ma ti insegna a tenere i piedi per terra."
+          "title": "Software house e operaio",
+          "text": "Ho gestito una SRL con poche risorse e urgenze, e intanto facevo l'operaio. I processi li ho visti dal basso."
         },
         {
-          "title": "Cosa uso davvero",
-          "text": "Sviluppo web full stack. Python lo mastico, ma con il C mi diverto molto di più. Uso n8n e Node-RED per le automazioni. Quando avanza tempo saldo Arduino ed ESP32 e metto in produzione roba con Docker — tipo LinkBayCMS."
+          "title": "Cosa uso",
+          "text": "Full stack web. Python lo mastico, col C mi diverto. n8n e Node-RED per le automazioni. Arduino ed ESP32 quando avanza tempo."
         },
         {
           "title": "Perché scrivo",
-          "text": "Scrivo di software, automazioni, leadership, startup ed errori veri: sistemi che devono restare in piedi anche fuori dalla teoria. Seguimi: non ti annoierai."
+          "text": "Software, automazioni, leadership, startup, errori veri. Sistemi che devono restare in piedi anche fuori dalla teoria."
         }
       ],
       "focusAreasTitle": "Dove metto le mani",
       "focusAreas": [
         "Sviluppo web full stack",
-        "C (quello che mi diverto)",
-        "Python (quello che mastico)",
+        "C (mi diverto)",
+        "Python (lo mastico)",
         "Automazioni n8n & Node-RED",
         "Arduino & ESP32",
         "Docker in produzione"
       ],
-      "closing": "Non voglio venderti una versione più esperta di me. Costruisco, rompo, sistemo e scrivo quello che imparo — soprattutto quando sbaglio. Se dopo un po' non ti sei ancora annoiato, sto facendo qualcosa di giusto.",
+      "closing": "Costruisco, rompo, sistemo e scrivo quello che imparo. Se dopo un po' non ti annoi, sto facendo qualcosa di giusto.",
       "cta": {
         "title": "Vuoi confrontarti?",
-        "text": "Hai un processo che ti fa perdere tempo, o vuoi solo guardare il casino dall'esterno? Scrivimi.",
+        "text": "Hai un processo che ti fa perdere tempo? Scrivimi.",
         "primary": "Prenota una chiamata",
         "secondary": "Vai ai contatti"
       }
@@ -185,17 +185,17 @@
     "contact": {
       "metadata": {
         "title": "Contatti | Alessio Quagliara",
-        "description": "Contatti per confrontarsi su piccoli SaaS, automazione, tooling AI/LLM, magazzino, produzione e software operativo."
+        "description": "Contatti per automazioni, AI e integrazione software-hardware: freelance e aziende industriali."
       },
       "title": "Parliamone",
-      "intro": "Hai un processo manuale, un'idea SaaS o un'integrazione tra software e hardware da esplorare? Scrivimi con il contesto: ti rispondo con domande concrete, un primo confronto o una possibile direzione tecnica.",
-      "description": "Qui sotto trovi dove posso essere utile e come contattarmi direttamente.",
+      "intro": "Perdi ore tra documenti, magazzino o preventivi? O devi far parlare software e macchine in produzione? Scrivimi con il contesto. Ti rispondo con domande, non con una presentazione.",
+      "description": "Qui sotto dove posso esserti utile e come scrivermi.",
       "helpTitle": "Posso esserti utile se...",
       "bullets": [
-        "Vuoi seguire la costruzione pubblica di piccoli SaaS",
-        "Hai un flusso manuale in magazzino o produzione da rendere più chiaro",
-        "Vuoi scambiare idee su Flask, Quart, AI tooling o automazioni",
-        "Ti interessa collegare software, Arduino, ESP32 e sistemi fisici"
+        "Sei un freelance e perdi tempo in passaggi manuali",
+        "Vuoi integrare automazioni o AI in azienda",
+        "Devi collegare software, Arduino, ESP32 e macchine",
+        "Vuoi seguire il percorso, errori inclusi"
       ],
       "directContactsTitle": "Contatti diretti",
       "emailLabel": "Scrivimi via email",
@@ -227,10 +227,10 @@
     "blog": {
       "metadata": {
         "title": "Blog | Alessio Quagliara",
-        "description": "Articoli build in public su piccoli SaaS, Flask, Quart, AI tooling, automazione, magazzino, produzione e sistemi fisici."
+        "description": "Articoli su software, automazioni, AI e sistemi reali. Errori inclusi."
       },
       "title": "Blog",
-      "description": "Note pubbliche mentre costruisco: SaaS, automazione, AI, strumenti operativi nati da problemi reali.",
+      "description": "Scrivo mentre costruisco: software, automazioni, AI, errori veri.",
       "empty": "Nessun articolo pubblicato.",
       "readPost": "Leggi articolo",
       "published": "Pubblicato",
@@ -247,23 +247,23 @@
       },
       "cta": {
         "heading": "Ti è stato utile?",
-        "subtitle": "Costruisco in pubblico: video, esperimenti e articoli come questo.",
+        "subtitle": "Video, esperimenti e articoli come questo.",
         "watchVideo": "Guarda il video completo",
         "newsletterTitle": "Resta aggiornato",
-        "newsletterText": "Ricevi i nuovi articoli e i dietro le quinte dei progetti.",
+        "newsletterText": "Nuovi articoli e dietro le quinte dei progetti.",
         "newsletterCta": "Iscriviti",
         "nextLabel": "Leggi il prossimo articolo"
       },
-      "microcopy": "Diario di bordo su validazione, sviluppo e iterazioni.",
+      "microcopy": "Diario di bordo, senza filtri.",
       "explore": {
-        "title": "Cosa vuoi esplorare oggi?",
-        "subtitle": "Dai fallimenti e-commerce ai SaaS costruiti in pubblico: scegli un percorso e segui gli esperimenti.",
+        "title": "Cosa vuoi esplorare?",
+        "subtitle": "Fallimenti e-commerce, SaaS, AI, side projects: scegli un percorso.",
         "ariaLabel": "Filtra gli articoli per percorso editoriale",
         "articles": "{count} articoli"
       },
       "emptyPath": {
         "title": "Questo percorso è appena iniziato.",
-        "text": "Sto ancora raccogliendo esperimenti, errori e risultati da raccontare. Torna presto oppure esplora tutti gli articoli.",
+        "text": "Sto ancora raccogliendo esperimenti ed errori. Torna presto o esplora tutto.",
         "cta": "Vedi tutti gli articoli"
       }
     },
@@ -339,6 +339,582 @@
           "image": "/padrisomaschi.png"
         }
       ]
+    },
+    "services": {
+      "title": "Servizi",
+      "intro": "Due pagine, due mondi. Scegli il tuo.",
+      "freelance": {
+        "label": "Automazioni per freelance e piccole agenzie",
+        "text": "Meno copia-incolla tra lead, clienti, preventivi e report."
+      },
+      "industrial": {
+        "label": "Automazione e AI per PMI industriali",
+        "text": "Meno passaggi a mano tra magazzino, produzione e uffici."
+      }
+    },
+    "landingCommon": {
+      "pilotBadge": "Pilota gratuito per {slots} realtà — {deadline}",
+      "pilotCta": "Candidati al pilota gratuito",
+      "callCta": "Prenota una call esplorativa",
+      "contactCta": "Vai alla pagina contatti",
+      "newTab": "(si apre in una nuova scheda)",
+      "faqEyebrow": "Domande frequenti",
+      "fitFor": "Fa per te se",
+      "fitNotFor": "Lascia stare se",
+      "illustrativeLabel": "Esempio illustrativo, non case study",
+      "photoAlt": "Ritratto di Alessio Quagliara",
+      "linksTitle": "Non fidarti, controlla",
+      "aboutLink": "Il mio percorso",
+      "projectsLink": "Progetti e repository",
+      "githubLink": "Profilo GitHub",
+      "blogLink": "Blog: diario di bordo, errori inclusi",
+      "contactLink": "Contatti",
+      "readArticle": "Ne ho scritto qui"
+    },
+    "landings": {
+      "freelance": {
+        "metadata": {
+          "title": "Automazioni per freelance e agenzie | Alessio Quagliara",
+          "description": "Automazioni pratiche per freelance, consulenti e piccole agenzie: meno attività manuali tra lead, clienti, email, file e report. Si parte da un flusso reale."
+        },
+        "schema": {
+          "serviceName": "Automazioni per freelance, consulenti e piccole agenzie",
+          "serviceType": "Automazione dei processi e integrazione di strumenti"
+        },
+        "hero": {
+          "eyebrow": "Freelance · consulenti · micro-agenzie",
+          "title": "Automazioni per freelance: meno lavoro manuale, più tempo sul lavoro che conta.",
+          "subtitle": "Collego gli strumenti che usi già e tolgo i passaggi a mano tra lead, clienti, email, preventivi e report. Si parte da un flusso. Uno.",
+          "microcopy": "Niente audit da 40 pagine. Niente slide. Un flusso vero.",
+          "secondaryCta": "Mappa il tuo processo",
+          "emailSubject": "Automazioni freelance: il flusso che vorrei sistemare",
+          "visualTitle": "Un flusso, non un progetto infinito",
+          "visualSteps": [
+            "Richiesta",
+            "Qualifica",
+            "Task",
+            "Cartella",
+            "Risposta",
+            "CRM"
+          ]
+        },
+        "problem": {
+          "eyebrow": "Il problema non è la tua disciplina",
+          "title": "Se copi gli stessi dati due volte, il problema non sei tu. È il processo.",
+          "paragraphs": [
+            "Non ti manca il lavoro. Ti manca il tempo. Più clienti hai, più ore finiscono in copia-incolla, promemoria e fogli che capisci solo tu."
+          ],
+          "symptomsTitle": "Ti suona familiare?",
+          "symptoms": [
+            "Copi lo stesso contatto in tre posti.",
+            "Rifai lo stesso report ogni mese, da zero.",
+            "Insegui follow-up invece di lavorare."
+          ],
+          "chaosTitle": "Il tuo flusso oggi",
+          "chaosCaption": "Ogni strumento funziona. In mezzo ci sei tu, a fare da cavo.",
+          "chaosTools": [
+            "Form",
+            "Email",
+            "Fogli",
+            "CRM",
+            "Task",
+            "Drive",
+            "Chat",
+            "Fatture"
+          ],
+          "chaosCenter": "Tu, il cavo umano"
+        },
+        "automations": {
+          "eyebrow": "Cosa possiamo automatizzare",
+          "title": "Dove si perde tempo (di solito)",
+          "intro": "Parto da quello che fai ogni settimana. La tecnologia viene dopo.",
+          "changeLabel": "Cosa cambia",
+          "cards": [
+            {
+              "title": "Lead e richieste",
+              "flow": "Form / email / DM → CRM + task",
+              "change": "La richiesta arriva già in ordine. Tu decidi solo cosa rispondere."
+            },
+            {
+              "title": "Onboarding cliente",
+              "flow": "Firma → domande, cartella, checklist",
+              "change": "Il cliente riceve le domande giuste. Tu non dimentichi il passo quattro."
+            },
+            {
+              "title": "Follow-up",
+              "flow": "Silenzio dopo il preventivo → promemoria",
+              "change": "Ti ricorda chi sentire, con lo storico davanti. Il messaggio lo scrivi tu."
+            },
+            {
+              "title": "Preventivi e report",
+              "flow": "Dati inseriti una volta → riusati",
+              "change": "Scrivi una volta, ritrovi tutto nel preventivo e nel report."
+            },
+            {
+              "title": "Operations",
+              "flow": "Strumenti che hai → collegati",
+              "change": "Non cambi tool. Cambia quello che passa tra uno e l'altro."
+            }
+          ]
+        },
+        "method": {
+          "eyebrow": "Come lavoro",
+          "title": "Piccolo, testabile. Poi si vede.",
+          "intro": "Prima capire il problema. Poi decidere se costruire.",
+          "steps": [
+            {
+              "title": "Troviamo il collo di bottiglia",
+              "text": "Una call. Qual è il flusso che ti mangia più ore?"
+            },
+            {
+              "title": "Lo mappiamo",
+              "text": "Chi tocca cosa, dove si duplica, dove si sbaglia."
+            },
+            {
+              "title": "Costruiamo un pezzo piccolo",
+              "text": "Sui tuoi strumenti. Spesso n8n, a volte due righe di Python."
+            },
+            {
+              "title": "Vediamo se serve",
+              "text": "Nel tuo lavoro vero, non in una demo."
+            },
+            {
+              "title": "Solo se funziona, si allarga",
+              "text": "Se non regge, lo diciamo e ci fermiamo."
+            }
+          ],
+          "notes": [
+            "Niente cambio di piattaforma forzato.",
+            "Niente automazioni per fare scena.",
+            "Se non conviene, te lo dico."
+          ]
+        },
+        "example": {
+          "eyebrow": "Esempio di flusso",
+          "title": "Dal form al cliente pronto, senza copia-incolla",
+          "flowTitle": "Il flusso",
+          "flow": [
+            "Form compilato",
+            "Qualifica",
+            "Task",
+            "Cartella cliente",
+            "Prima risposta",
+            "CRM aggiornato"
+          ],
+          "before": {
+            "title": "Prima",
+            "items": [
+              "Copi i dati nel CRM a mano.",
+              "Crei task e cartella a mano.",
+              "Speri di ricordarti il follow-up."
+            ]
+          },
+          "after": {
+            "title": "Dopo",
+            "items": [
+              "I dati sono già nel CRM.",
+              "Task e cartella sono già pronti.",
+              "Il follow-up è in calendario. Tu rispondi e basta."
+            ]
+          },
+          "aiTitle": "AI: dove aiuta e dove no",
+          "aiCan": {
+            "title": "Aiuta a",
+            "items": [
+              "smistare e riassumere richieste;",
+              "preparare bozze."
+            ]
+          },
+          "aiCannot": {
+            "title": "Decidi tu",
+            "items": [
+              "clienti, prezzi, scadenze;",
+              "cosa parte a tuo nome."
+            ]
+          }
+        },
+        "fit": {
+          "eyebrow": "Per chi è",
+          "title": "Non è per tutti. Meglio dirlo subito.",
+          "forItems": [
+            "Hai un flusso che si ripete ogni settimana.",
+            "Usi già qualche strumento, anche se non si parlano.",
+            "Vuoi sistemare il processo, non solo nasconderlo."
+          ],
+          "notForItems": [
+            "Vuoi un chatbot sul sito e via.",
+            "Vuoi \"fare AI\" senza sapere per cosa.",
+            "Vuoi un progetto enorme senza un problema preciso."
+          ],
+          "crossLinkText": "Hai un magazzino o una produzione?",
+          "crossLinkLabel": "La pagina giusta è questa"
+        },
+        "credibility": {
+          "eyebrow": "Chi c'è dietro",
+          "title": "Niente linguaggio da consulente",
+          "paragraphs": [
+            "Ho visto troppe soluzioni eleganti che non usa nessuno. Qualcuna l'ho fatta io.",
+            "Full Stack Developer, studente di Ingegneria Informatica (sistemi intelligenti), un passato in una software house SRL con poche risorse e tante urgenze. L'AI la uso per lavorare meglio, non per saltare le competenze."
+          ],
+          "principles": [
+            "Non serve AI per ogni problema.",
+            "Una buona automazione funziona anche quando io non ci sono."
+          ]
+        },
+        "faq": {
+          "title": "Domande prima di iniziare",
+          "items": [
+            {
+              "question": "Da dove si parte?",
+              "answer": "Da un flusso che ripeti spesso e ti pesa. Lo guardiamo in call e capiamo se vale la pena.",
+              "pilot": false
+            },
+            {
+              "question": "Devo cambiare gli strumenti che uso?",
+              "answer": "Quasi mai. Lavoro su quello che passa tra uno strumento e l'altro. Se un tool è il problema, te lo dico.",
+              "pilot": false
+            },
+            {
+              "question": "È possibile automatizzare anche senza AI?",
+              "answer": "Sì, e spesso è meglio. Regole chiare e integrazioni risolvono più di quanto pensi.",
+              "pilot": false
+            },
+            {
+              "question": "L'AI prenderà decisioni al posto mio?",
+              "answer": "No. Prepara bozze e mette in ordine. Le decisioni restano tue.",
+              "pilot": false
+            },
+            {
+              "question": "Quanto deve essere strutturato il mio processo?",
+              "answer": "Non serve perfetto, serve che esista. Se è solo nella tua testa, lo scriviamo insieme.",
+              "pilot": false
+            },
+            {
+              "question": "Cosa comprende il pilota gratuito?",
+              "answer": "{slots} posti fino a {deadline}. Mappo un flusso, ti propongo un intervento e, se ha senso, costruisco una prima automazione. Non è un progetto completo gratis. In cambio racconto il percorso come caso studio, solo con quello che approvi tu.",
+              "pilot": true
+            },
+            {
+              "question": "Cosa succede dopo il pilota?",
+              "answer": "Decidi tu. Si continua con un preventivo chiaro, oppure ti lascio tutto per gestirlo da solo. Nessun obbligo.",
+              "pilot": true
+            },
+            {
+              "question": "Lavori solo con freelance italiani?",
+              "answer": "No. Lavoro da remoto, in italiano o in inglese.",
+              "pilot": false
+            }
+          ]
+        },
+        "finalCta": {
+          "title": "Hai un processo che ti fa perdere tempo ogni settimana? Vediamo se vale la pena automatizzarlo.",
+          "text": "Una call. Se non conviene, te lo dico. A me costa un cliente, a te risparmia soldi."
+        },
+        "relatedPosts": [
+          "automazione-freelancer-clienti-flussi",
+          "why-i-stopped-overengineering"
+        ]
+      },
+      "industrial": {
+        "metadata": {
+          "title": "Automazione e AI per PMI industriali | Alessio Quagliara",
+          "description": "Integrazioni, automazioni e AI applicata per PMI industriali, logistica e magazzino. Riduci passaggi manuali e rendi i processi più visibili."
+        },
+        "schema": {
+          "serviceName": "Automazione dei processi e AI applicata per PMI industriali",
+          "serviceType": "Automazione dei processi aziendali e integrazione software"
+        },
+        "hero": {
+          "eyebrow": "PMI industriali · logistica · magazzino",
+          "title": "Automazione e AI per PMI industriali: meno passaggi manuali, più controllo sui processi.",
+          "subtitle": "Prendo un flusso reale — magazzino, produzione, dati, comunicazioni — e lo collego a persone e sistemi che hai già. Senza rifare tutto.",
+          "microcopy": "Non fermiamo niente. Non rifacciamo tutto da zero.",
+          "secondaryCta": "Mappa il tuo processo",
+          "emailSubject": "Automazione PMI: il flusso operativo da analizzare",
+          "visualTitle": "Uno strato sopra quello che hai",
+          "visualSystems": [
+            "ERP / gestionale",
+            "Excel",
+            "Email e chat",
+            "Terminali e scanner"
+          ],
+          "visualLayer": "Integrazioni · notifiche · dashboard",
+          "visualOutcome": "Dato inserito una volta, visto da chi serve"
+        },
+        "problem": {
+          "eyebrow": "Quando il processo regge solo perché le persone compensano",
+          "title": "Se il processo vive in Excel, chat e memoria delle persone, non hai un processo: hai una dipendenza.",
+          "intro": "Il lavoro va avanti perché le persone compensano. Il problema non sono loro: è il sistema che le usa come ponte.",
+          "frictions": [
+            {
+              "title": "Lo stesso dato riscritto tre volte",
+              "text": "Ogni passaggio, un errore possibile."
+            },
+            {
+              "title": "L'informazione resta in chat",
+              "text": "La sa uno. Gli altri lo scoprono tardi."
+            },
+            {
+              "title": "Il controllo dipende dalla memoria",
+              "text": "Funziona finché quella persona non va in ferie."
+            },
+            {
+              "title": "L'Excel parallelo all'ERP",
+              "text": "Nato per comodità, ora è la verità ufficiosa."
+            },
+            {
+              "title": "La segnalazione arriva tardi",
+              "text": "Il problema si vedeva ore prima."
+            },
+            {
+              "title": "Bisogna sempre chiedere a qualcuno",
+              "text": "Se serve una telefonata, il processo dipende da chi risponde."
+            }
+          ],
+          "closing": "Piccoli attriti. Ogni giorno. Diventano ritardi e lavoro rifatto."
+        },
+        "build": {
+          "eyebrow": "Cosa posso costruire",
+          "title": "Risultati operativi, non tecnologia da esposizione",
+          "intro": "Non sostituisco ERP, MES o WMS. Ci lavoro accanto e tappo i buchi tra un sistema e l'altro.",
+          "cards": [
+            {
+              "title": "Collegare dati e strumenti",
+              "text": "API, webhook, file. Niente copia a mano."
+            },
+            {
+              "title": "Meno doppio inserimento",
+              "text": "Il dato entra una volta, dove nasce."
+            },
+            {
+              "title": "Stato ed eccezioni visibili",
+              "text": "Cosa è fermo, cosa è in ritardo, dove si accumula."
+            },
+            {
+              "title": "Notifiche tra reparti",
+              "text": "Richieste e approvazioni con un percorso, non su chat e carta."
+            },
+            {
+              "title": "Tracciabilità",
+              "text": "QR, scansioni, moduli da tablet: chi, cosa, quando."
+            },
+            {
+              "title": "AI dove serve",
+              "text": "Leggere documenti, smistare richieste, riassumere anomalie. Con una persona che controlla."
+            },
+            {
+              "title": "Segnali dal reparto",
+              "text": "Arduino, ESP32, sensori. Quando servono davvero."
+            }
+          ],
+          "iotNote": "L'hardware non lo vendo a peso. Lo propongo solo se un dato fisico manca e non c'è un modo più semplice."
+        },
+        "constraint": {
+          "eyebrow": "Dal reparto al software",
+          "title": "Prima il vincolo, poi la tecnologia",
+          "paragraphs": [
+            "Lavoro anche in logistica. Un flusso non si giudica da una dashboard: deve reggere turni, urgenze, assenze ed eccezioni.",
+            "E vengo da una software house, dove manutenzione e poche risorse erano la norma. Progetto per chi usa lo strumento alle sei del mattino e per chi dovrà mantenerlo tra due anni."
+          ],
+          "points": [
+            "Se rallenta l'operatore, non lo userà nessuno.",
+            "Ogni eccezione gestita a voce è un dato perso.",
+            "Meno pezzi da mantenere batte una funzione in più."
+          ]
+        },
+        "method": {
+          "eyebrow": "Metodo di lavoro",
+          "title": "Sei passi. Anche fermarsi è un'opzione.",
+          "intro": "Nessun passo richiede di fermare la produzione.",
+          "steps": [
+            {
+              "title": "Sopralluogo o call",
+              "text": "Guardo il processo vero, non quello in procedura."
+            },
+            {
+              "title": "Un solo punto critico",
+              "text": "Quello con più errori, attese o domande ripetute."
+            },
+            {
+              "title": "Vincoli",
+              "text": "Sistemi, dati, sicurezza, persone, budget."
+            },
+            {
+              "title": "Prototipo",
+              "text": "Piccolo, verificabile, collegato al reale dove si può."
+            },
+            {
+              "title": "Test sul campo",
+              "text": "Lo provano gli operatori. La loro opinione conta più della mia."
+            },
+            {
+              "title": "Decisione",
+              "text": "Estendere, correggere o fermare."
+            }
+          ],
+          "stopNote": "Fermarsi dopo un pilota costa meno che fermarsi dopo un progetto."
+        },
+        "scenarios": {
+          "eyebrow": "Esempi di intervento",
+          "title": "Quattro scenari tipici",
+          "label": "Scenari possibili, non case study",
+          "intro": "",
+          "items": [
+            {
+              "title": "Richieste e anomalie",
+              "steps": [
+                "Segnalazione",
+                "Modulo",
+                "Assegnazione",
+                "Notifica",
+                "Dashboard"
+              ],
+              "text": "Chi vede il problema lo segnala. Arriva a chi deve intervenire e resta tracciato."
+            },
+            {
+              "title": "Dati sparsi",
+              "steps": [
+                "File e sistemi",
+                "Validazione",
+                "Database unico",
+                "Report"
+              ],
+              "text": "Un archivio controllato, un report sempre aggiornato."
+            },
+            {
+              "title": "Eventi fisici",
+              "steps": [
+                "Scansione o sensore",
+                "Trigger",
+                "Registrazione",
+                "Avviso"
+              ],
+              "text": "L'evento si registra da solo e avvisa il reparto."
+            },
+            {
+              "title": "Documenti",
+              "steps": [
+                "Documento",
+                "Estrazione",
+                "Verifica umana",
+                "Approvazione"
+              ],
+              "text": "L'AI precompila, una persona approva."
+            }
+          ],
+          "disclaimer": "Quanto si risparmia? Lo dicono i tuoi dati, non questa pagina."
+        },
+        "ai": {
+          "eyebrow": "AI: utile, ma non magica",
+          "title": "L'AI non aggiusta un processo rotto",
+          "statement": "Prima dati, responsabilità e passaggi chiari. Poi l'AI, solo dove toglie lavoro vero.",
+          "usesTitle": "Dove aiuta",
+          "uses": [
+            "Smistare le richieste.",
+            "Estrarre dati da ordini, DDT, certificati.",
+            "Riassumere le anomalie.",
+            "Cercare nella documentazione interna, con la fonte."
+          ],
+          "guardrailsTitle": "A che condizioni",
+          "guardrails": [
+            "Una persona controlla prima che diventi una decisione.",
+            "Decidiamo insieme quali dati escono dall'azienda. Se serve, modelli in locale.",
+            "Accessi minimi e documentati."
+          ]
+        },
+        "fit": {
+          "eyebrow": "Per chi è",
+          "title": "Serve un problema, non una moda",
+          "forItems": [
+            "Avete un problema operativo concreto che si ripete.",
+            "Qualcuno può spiegarmi come funziona davvero.",
+            "Siete disposti a provare un pilota piccolo."
+          ],
+          "notForItems": [
+            "Volete cambiare tutti i sistemi in una settimana.",
+            "Volete \"una soluzione AI\" da far vedere.",
+            "Volete comprare tecnologia prima di capire il problema."
+          ],
+          "crossLinkText": "Sei un freelance o una piccola agenzia?",
+          "crossLinkLabel": "Di qua"
+        },
+        "credibility": {
+          "eyebrow": "Chi c'è dietro",
+          "title": "Scrivo software, ma il magazzino lo conosco",
+          "paragraphs": [
+            "Tempi, passaggi, informazioni che non arrivano: li ho visti dal vivo, non in una slide.",
+            "Full Stack Developer (Python, Flask, Quart, Docker in produzione), n8n e Node-RED per le automazioni, studente di Ingegneria Informatica. Ho anche scritto di un'app Flask nata da problemi veri di magazzino."
+          ],
+          "principles": [
+            "Prima capire il problema. Poi decidere se costruire.",
+            "Una buona automazione funziona anche quando io non ci sono."
+          ]
+        },
+        "faq": {
+          "title": "Domande che fanno le aziende",
+          "items": [
+            {
+              "question": "Dovete sostituire il nostro ERP, WMS o MES?",
+              "answer": "No. Ci lavoro accanto: collego, raccolgo dati, aggiungo quello che manca.",
+              "pilot": false
+            },
+            {
+              "question": "Possiamo partire da un solo processo?",
+              "answer": "Sì, ed è il modo giusto. Un flusso, un risultato verificabile.",
+              "pilot": false
+            },
+            {
+              "question": "Serve già avere dati puliti?",
+              "answer": "No, ma bisogna sapere dove sono. Spesso il primo lavoro è proprio pulirli.",
+              "pilot": false
+            },
+            {
+              "question": "L'AI è necessaria?",
+              "answer": "No. Spesso bastano integrazioni, regole e notifiche.",
+              "pilot": false
+            },
+            {
+              "question": "Potete lavorare con Excel, email e software esistenti?",
+              "answer": "Sì, è il caso più comune. Si parte da lì.",
+              "pilot": false
+            },
+            {
+              "question": "Fate anche hardware e IoT?",
+              "answer": "Sì, quando serve: Arduino, ESP32, sensori. Solo se non c'è un modo più semplice.",
+              "pilot": false
+            },
+            {
+              "question": "Come gestite dati e accessi?",
+              "answer": "Solo gli accessi necessari, concordati per iscritto e documentati. Quali dati possono uscire lo decidiamo insieme. Eventuali requisiti di conformità li verifichiamo con voi prima di partire.",
+              "pilot": false
+            },
+            {
+              "question": "Cosa comprende il pilota gratuito?",
+              "answer": "{slots} posti fino a {deadline}. Mappatura di un flusso, proposta di intervento e, se ha senso, una prima integrazione. Non è un progetto completo gratis. In cambio racconto il percorso come caso studio, solo con quello che approvate.",
+              "pilot": true
+            },
+            {
+              "question": "Quanto tempo richiede un primo test?",
+              "answer": "Dipende da flusso e accessi. L'obiettivo è avere qualcosa da provare in poche settimane. La stima precisa arriva dopo la mappatura.",
+              "pilot": false
+            },
+            {
+              "question": "Cosa succede dopo il pilota?",
+              "answer": "Decidete voi: estendere con un preventivo chiaro, correggere o fermarvi. Nessun vincolo.",
+              "pilot": true
+            }
+          ]
+        },
+        "finalCta": {
+          "title": "C'è un passaggio che rallenta ogni giorno il tuo reparto? Mappiamolo e capiamo se conviene automatizzarlo.",
+          "text": "Call o sopralluogo. Se non conviene, te lo dico. Lo so, come tecnica di vendita fa schifo."
+        },
+        "relatedPosts": [
+          "quando-ho-capito-che-il-problema-non-era-lerp",
+          "flask-warehouse-app",
+          "ai-pmi-como-ollama-llamacpp"
+        ]
+      }
     }
   },
   "cookie": {

@@ -2,9 +2,9 @@
   "site": {
     "metadata": {
       "defaultTitle": "Alessio Quagliara — I build things | Improve processes | Automate | AI engineering student",
-      "defaultDescription": "Computer Engineering student. I build small SaaS products and operational tools in public, born from real warehouse and production problems.",
+      "defaultDescription": "Automations and AI for freelancers and industrial companies. I build things, improve processes, automate.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "I build things, improve processes, automate. I study AI engineering and build small SaaS products and operational tools in public.",
+      "ogDescription": "I build things, improve processes, automate. I study AI engineering and bring automations and AI into industrial companies.",
       "locale": "en_US"
     },
     "layout": {
@@ -26,7 +26,7 @@
         "email": "ciao@alessioquagliara.com",
         "brandName": "Alessio Quagliara",
         "brandSubtitle": "I build things | Improve processes | Automate | AI engineering student",
-        "brandDescription": "Computer Engineering student. I document small SaaS products, AI/LLM tooling, and automations born from real warehouse and production problems, in public.",
+        "brandDescription": "Automations and AI for freelancers and industrial companies. I build, automate, and strip the useless steps.",
         "section": {
           "legal": "Legal",
           "contacts": "Contacts"
@@ -70,75 +70,75 @@
       "sections": {
         "whatIBuild": {
           "title": "What I Build",
-          "subtitle": "Three areas, three different ways of solving problems with code.",
+          "subtitle": "Three ways to remove useless steps.",
           "cards": [
             {
               "title": "SaaS built in public",
-              "text": "Small SaaS products built and shared step by step: technical choices, mistakes, iterations."
+              "text": "Small SaaS built and shared: choices, mistakes, iterations."
             },
             {
               "title": "Operational tools",
-              "text": "Simple tools for warehouse, production, QR and tracking — software that removes manual steps.",
-              "badge": "Available for pilot projects on workflow automation and AI for local SMEs."
+              "text": "Tools for warehouse, production, QR and tracking.",
+              "badge": "Automations and AI for SMEs and freelancers."
             },
             {
               "title": "Physical automation",
-              "text": "Arduino, ESP32 and embedded systems: code that talks to sensors and problems outside the screen."
+              "text": "Arduino, ESP32 and embedded: code that talks to sensors and machines."
             }
           ]
         },
         "howIWork": {
           "title": "How I Work",
-          "subtitle": "Fewer claims, more practice: I'm learning seriously by building in public.",
+          "subtitle": "Fewer claims, more practice.",
           "quote": "I do not use complexity to impress. I remove it until the project breathes better.",
           "cards": [
             {
               "title": "Build before claiming",
-              "text": "I'd rather show real progress and prototypes than call myself an expert in things I'm still learning."
+              "text": "I'd rather show real prototypes than call myself an expert."
             },
             {
               "title": "Simplicity before stack",
-              "text": "I choose tools I understand and can maintain. I add complexity only when it's actually needed."
+              "text": "Tools I understand and can maintain. Complexity only when needed."
             },
             {
               "title": "Real problems",
-              "text": "Where software, automation and physical systems meet: warehouse, production, small daily inefficiencies."
+              "text": "Where software, automation and physical systems meet."
             }
           ]
         },
         "selectedProjects": {
           "title": "Selected Projects",
-          "subtitle": "A few projects, chosen carefully: product, automation, real systems.",
-          "intro": "I'd rather show a few real projects than a portfolio full of disconnected experiments.",
+          "subtitle": "A few projects, but real: product, automation, systems.",
+          "intro": "I'd rather show a few real projects than a portfolio of experiments.",
           "eyebrow": "SaaS · automation · AI/LLM tooling · operational software",
           "allProjects": "View all projects"
         },
         "technicalFocus": {
           "title": "Technical Focus",
-          "subtitle": "The areas I'm using and consolidating in real projects — no stack flexing.",
+          "subtitle": "What I actually use — no stack flexing.",
           "blocks": [
             {
               "title": "Backend & Web",
-              "text": "Backend apps with Flask and Quart, plus simple, maintainable HTML/CSS interfaces"
+              "text": "Flask and Quart, simple, maintainable interfaces"
             },
             {
               "title": "Core Skills",
-              "text": "C, systems fundamentals, data structures, application logic, disciplined code reading"
+              "text": "C, data structures, application logic, code reading"
             },
             {
               "title": "AI & Tooling",
-              "text": "AI/LLM tooling, API automations, small agents, assisted workflows"
+              "text": "AI/LLM tooling, API automations, small agents"
             },
             {
               "title": "Hardware & Automation",
-              "text": "Arduino, ESP32, Raspberry Pi, sensors, QR workflows, basic embedded prototypes"
+              "text": "Arduino, ESP32, sensors, QR, embedded prototypes"
             }
           ]
         },
         "contactCta": {
           "title": "Let's talk",
           "badge": "Free pilot program · October 2026",
-          "text": "Running a small business or freelancing and losing hours on documents, inventory or quotes? I'm selecting just two teams to map their workflows and integrate automation or local AI for free, in exchange for a case study. Let's talk before the spots fill up.",
+          "text": "Freelancer or small business losing hours on documents, inventory or quotes? I'm selecting two teams to map workflows and integrate automation or AI for free, in exchange for a case study.",
           "primary": "Book a call",
           "secondary": "Go to contacts"
         }
@@ -150,34 +150,34 @@
         "description": "Who I am: someone who ran a software house and worked as a factory worker, now studying Computer Engineering and building software and automations without much ceremony."
       },
       "title": "About",
-      "intro": "I study Computer Engineering, Intelligent Systems track. Before that I ran a small software house (SRL) with few resources, clients and urgencies, while working as a factory worker. So I know how software runs — and how people run when things actually have to work.",
+      "intro": "I study Computer Engineering (Intelligent Systems). Before that I ran a software house and worked as a factory worker. I know how software runs — and how people run when things have to work.",
       "sections": [
         {
-          "title": "Software house and real work",
-          "text": "I ran a small software house (SRL) with few resources: clients, urgencies, requests on the fly and manual bureaucracy. Meanwhile I worked as a factory worker, learning production processes on the ground. Not the cleanest path, but it teaches you to keep your feet on the ground."
+          "title": "Software house and factory",
+          "text": "I ran a small SRL with few resources and urgencies, and worked as a factory worker. I've seen processes from the bottom."
         },
         {
-          "title": "What I actually use",
-          "text": "Full stack web development. I can chew Python, but C is way more fun. n8n and Node-RED for automations. When time's left over, I solder Arduino and ESP32 and ship Docker to production — like LinkBayCMS."
+          "title": "What I use",
+          "text": "Full stack web. I can chew Python, but C is more fun. n8n and Node-RED for automations. Arduino and ESP32 when time's left."
         },
         {
           "title": "Why I write",
-          "text": "I write about software, automation, leadership, startups and real mistakes: systems that have to hold up outside of theory. Follow along: you won't get bored."
+          "text": "Software, automation, leadership, startups, real mistakes. Systems that have to hold up outside of theory."
         }
       ],
       "focusAreasTitle": "Where I get my hands dirty",
       "focusAreas": [
         "Full stack web",
-        "C (the one I enjoy)",
-        "Python (the one I get by with)",
+        "C (more fun)",
+        "Python (I get by)",
         "n8n & Node-RED automations",
         "Arduino & ESP32",
         "Docker in production"
       ],
-      "closing": "I'm not trying to sell you a more senior version of me. I build, break, fix and write down what I learn — especially when I get it wrong. If you're still not bored after a while, I'm doing something right.",
+      "closing": "I build, break, fix and write down what I learn. If you're still not bored, I'm doing something right.",
       "cta": {
         "title": "Want to talk?",
-        "text": "Got a process that's wasting your time, or just want to watch the chaos from outside? Reach out.",
+        "text": "Got a process that wastes your time? Reach out.",
         "primary": "Book a call",
         "secondary": "Go to contacts"
       }
@@ -185,17 +185,17 @@
     "contact": {
       "metadata": {
         "title": "Contact | Alessio Quagliara",
-        "description": "Contact to discuss small SaaS products, automation, AI/LLM tooling, warehouse, production, and operational software."
+        "description": "Contact for automations, AI, and software-hardware integration: freelancers and industrial companies."
       },
       "title": "Let's talk",
-      "intro": "Got a manual process, a SaaS idea, or a software-hardware integration to explore? Write to me with the context: I'll reply with concrete questions, a first exchange, or a possible technical direction.",
-      "description": "Below you'll find where I can help and how to reach me directly.",
+      "intro": "Losing hours on documents, inventory or quotes? Or need software to talk to machines in production? Write with context. I reply with questions, not a pitch.",
+      "description": "Below: where I can help and how to reach me.",
       "helpTitle": "I can help if...",
       "bullets": [
-        "You want to follow the public build of small SaaS products",
-        "You have a manual warehouse or production workflow to clarify",
-        "You want to exchange ideas about Flask, Quart, AI tooling, or automation",
-        "You care about connecting software, Arduino, ESP32, and physical systems"
+        "You're a freelancer losing time on manual steps",
+        "You want to bring automations or AI into a company",
+        "You need software, Arduino, ESP32 and machines to talk",
+        "You want to follow the journey, mistakes included"
       ],
       "directContactsTitle": "Direct contacts",
       "emailLabel": "Email me",
@@ -227,10 +227,10 @@
     "blog": {
       "metadata": {
         "title": "Blog | Alessio Quagliara",
-        "description": "Build in public articles about small SaaS products, Flask, Quart, AI tooling, automation, warehouse, production, and physical systems."
+        "description": "Articles on software, automations, AI and real systems. Mistakes included."
       },
       "title": "Blog",
-      "description": "Public notes while I build: SaaS, automation, AI, operational tools born from real problems.",
+      "description": "I write while I build: software, automations, AI, real mistakes.",
       "empty": "No posts published yet.",
       "readPost": "Read post",
       "published": "Published",
@@ -247,23 +247,23 @@
       },
       "cta": {
         "heading": "Found this useful?",
-        "subtitle": "I build in public: videos, experiments and articles like this one.",
+        "subtitle": "Videos, experiments and articles like this one.",
         "watchVideo": "Watch the full video",
         "newsletterTitle": "Stay in the loop",
-        "newsletterText": "Get new articles and behind-the-scenes of the projects.",
+        "newsletterText": "New articles and behind-the-scenes of the projects.",
         "newsletterCta": "Subscribe",
         "nextLabel": "Read the next article"
       },
-      "microcopy": "A build log on validation, development and iterations.",
+      "microcopy": "A build log, no filters.",
       "explore": {
-        "title": "What do you want to explore today?",
-        "subtitle": "From e-commerce failures to SaaS built in public: choose a path and follow the experiments.",
+        "title": "What do you want to explore?",
+        "subtitle": "E-commerce failures, SaaS, AI, side projects: pick a path.",
         "ariaLabel": "Filter articles by editorial path",
         "articles": "{count} articles"
       },
       "emptyPath": {
         "title": "This path is just getting started.",
-        "text": "I am still collecting experiments, mistakes, and results to document. Come back soon or explore every article.",
+        "text": "I'm still collecting experiments and mistakes. Come back soon or explore everything.",
         "cta": "View all articles"
       }
     },
@@ -339,6 +339,582 @@
           "image": "/padrisomaschi.png"
         }
       ]
+    },
+    "services": {
+      "title": "Services",
+      "intro": "Two pages, two worlds. Pick yours.",
+      "freelance": {
+        "label": "Workflow automation for freelancers and small agencies",
+        "text": "Less copy-paste between leads, clients, proposals and reports."
+      },
+      "industrial": {
+        "label": "Industrial automation and AI for SMEs",
+        "text": "Fewer manual handoffs between warehouse, production and office."
+      }
+    },
+    "landingCommon": {
+      "pilotBadge": "Free pilot for {slots} teams — {deadline}",
+      "pilotCta": "Apply for the free pilot",
+      "callCta": "Book an exploratory call",
+      "contactCta": "Go to the contact page",
+      "newTab": "(opens in a new tab)",
+      "faqEyebrow": "FAQ",
+      "fitFor": "A fit if",
+      "fitNotFor": "Skip it if",
+      "illustrativeLabel": "Illustrative example, not a case study",
+      "photoAlt": "Portrait of Alessio Quagliara",
+      "linksTitle": "Don't trust me, check",
+      "aboutLink": "My background",
+      "projectsLink": "Projects and repositories",
+      "githubLink": "GitHub profile",
+      "blogLink": "Blog: build log, mistakes included",
+      "contactLink": "Contact",
+      "readArticle": "I wrote about it"
+    },
+    "landings": {
+      "freelance": {
+        "metadata": {
+          "title": "Workflow Automation for Freelancers | Alessio Quagliara",
+          "description": "Practical workflow automation for freelancers, consultants and small agencies. Remove repetitive admin work across leads, clients, email, files and reporting."
+        },
+        "schema": {
+          "serviceName": "Workflow automation for freelancers, consultants and small agencies",
+          "serviceType": "Business process automation and tool integration"
+        },
+        "hero": {
+          "eyebrow": "Freelancers · consultants · small agencies",
+          "title": "Workflow automation for freelancers: less admin, more time for real work.",
+          "subtitle": "I connect the tools you already use and remove the manual steps between leads, clients, email, proposals and reports. We start with one workflow. Just one.",
+          "microcopy": "No 40-page audit. No slides. One real workflow.",
+          "secondaryCta": "Map your workflow",
+          "emailSubject": "Freelancer automation: the workflow I want to fix",
+          "visualTitle": "One workflow, not an endless project",
+          "visualSteps": [
+            "Enquiry",
+            "Qualify",
+            "Task",
+            "Folder",
+            "Reply",
+            "CRM"
+          ]
+        },
+        "problem": {
+          "eyebrow": "It's not a discipline problem",
+          "title": "If you type the same data twice, the problem isn't you. It's the process.",
+          "paragraphs": [
+            "You don't lack work. You lack time. More clients means more hours of copy-paste, reminders and spreadsheets only you understand."
+          ],
+          "symptomsTitle": "Sound familiar?",
+          "symptoms": [
+            "You copy the same contact into three places.",
+            "You rebuild the same report every month, from scratch.",
+            "You chase follow-ups instead of working."
+          ],
+          "chaosTitle": "Your workflow today",
+          "chaosCaption": "Every tool works. You're the cable in between.",
+          "chaosTools": [
+            "Forms",
+            "Email",
+            "Sheets",
+            "CRM",
+            "Tasks",
+            "Drive",
+            "Chat",
+            "Invoices"
+          ],
+          "chaosCenter": "You, the human cable"
+        },
+        "automations": {
+          "eyebrow": "What we can automate",
+          "title": "Where time usually leaks",
+          "intro": "I start from what you do every week. Technology comes later.",
+          "changeLabel": "What changes",
+          "cards": [
+            {
+              "title": "Leads and enquiries",
+              "flow": "Form / email / DM → CRM + task",
+              "change": "Enquiries arrive sorted. You just decide what to reply."
+            },
+            {
+              "title": "Client onboarding",
+              "flow": "Signature → questions, folder, checklist",
+              "change": "The client gets the right questions. You stop forgetting step four."
+            },
+            {
+              "title": "Follow-ups",
+              "flow": "Silence after a proposal → reminder",
+              "change": "It tells you who to chase, with the history in front of you. You write the message."
+            },
+            {
+              "title": "Proposals and reports",
+              "flow": "Data entered once → reused",
+              "change": "Type it once, find it in the proposal and the report."
+            },
+            {
+              "title": "Operations",
+              "flow": "Your tools → connected",
+              "change": "You keep your tools. What moves between them changes."
+            }
+          ]
+        },
+        "method": {
+          "eyebrow": "How I work",
+          "title": "Small, testable. Then we'll see.",
+          "intro": "Understand the problem first. Then decide whether to build.",
+          "steps": [
+            {
+              "title": "Find the bottleneck",
+              "text": "One call. Which workflow eats the most hours?"
+            },
+            {
+              "title": "Map it",
+              "text": "Who touches what, where it's duplicated, where it breaks."
+            },
+            {
+              "title": "Build one small piece",
+              "text": "On your tools. Often n8n, sometimes a few lines of Python."
+            },
+            {
+              "title": "Check it helps",
+              "text": "In your real work, not in a demo."
+            },
+            {
+              "title": "Grow it only if it works",
+              "text": "If it doesn't hold up, we say so and stop."
+            }
+          ],
+          "notes": [
+            "No forced replatforming.",
+            "No automation for show.",
+            "If it's not worth it, I'll tell you."
+          ]
+        },
+        "example": {
+          "eyebrow": "Example workflow",
+          "title": "From form to ready client, no copy-paste",
+          "flowTitle": "The workflow",
+          "flow": [
+            "Form submitted",
+            "Qualify",
+            "Task",
+            "Client folder",
+            "First reply",
+            "CRM updated"
+          ],
+          "before": {
+            "title": "Before",
+            "items": [
+              "You copy the data into the CRM by hand.",
+              "You create task and folder by hand.",
+              "You hope you remember the follow-up."
+            ]
+          },
+          "after": {
+            "title": "After",
+            "items": [
+              "The data is already in the CRM.",
+              "Task and folder are already there.",
+              "The follow-up is on the calendar. You just reply."
+            ]
+          },
+          "aiTitle": "AI: where it helps and where it doesn't",
+          "aiCan": {
+            "title": "It helps to",
+            "items": [
+              "sort and summarise enquiries;",
+              "prepare drafts."
+            ]
+          },
+          "aiCannot": {
+            "title": "You decide",
+            "items": [
+              "clients, prices, deadlines;",
+              "what goes out in your name."
+            ]
+          }
+        },
+        "fit": {
+          "eyebrow": "Who it's for",
+          "title": "Not for everyone. Better to say it now.",
+          "forItems": [
+            "You have a workflow that repeats every week.",
+            "You already use some tools, even if they don't talk.",
+            "You want to fix the process, not just hide it."
+          ],
+          "notForItems": [
+            "You want a chatbot on your site and that's it.",
+            "You want to \"do AI\" without knowing what for.",
+            "You want a huge project without a clear problem."
+          ],
+          "crossLinkText": "Got a warehouse or a production floor?",
+          "crossLinkLabel": "This is your page"
+        },
+        "credibility": {
+          "eyebrow": "Who's behind this",
+          "title": "No consultant talk",
+          "paragraphs": [
+            "I've seen too many elegant solutions nobody uses. I built a couple of them myself.",
+            "Full stack developer, Computer Engineering student (intelligent systems), past life in a small software company with few resources and lots of fires. I use AI to work better, not to skip the skills."
+          ],
+          "principles": [
+            "Not every problem needs AI.",
+            "A good automation keeps working when I'm not around."
+          ]
+        },
+        "faq": {
+          "title": "Questions before we start",
+          "items": [
+            {
+              "question": "Where do we start?",
+              "answer": "With a workflow you repeat often and hate. We look at it on a call and decide if it's worth it.",
+              "pilot": false
+            },
+            {
+              "question": "Do I have to change the tools I use?",
+              "answer": "Rarely. I work on what moves between tools. If a tool is the problem, I'll tell you.",
+              "pilot": false
+            },
+            {
+              "question": "Can we automate without AI?",
+              "answer": "Yes, and it's often better. Clear rules and integrations solve more than you'd think.",
+              "pilot": false
+            },
+            {
+              "question": "Will AI make decisions for me?",
+              "answer": "No. It drafts and tidies up. Decisions stay with you.",
+              "pilot": false
+            },
+            {
+              "question": "How structured does my process need to be?",
+              "answer": "Not perfect, it just has to exist. If it only lives in your head, we write it down together.",
+              "pilot": false
+            },
+            {
+              "question": "What does the free pilot include?",
+              "answer": "{slots} spots until {deadline}. I map one workflow, propose a change and, if it makes sense, build a first automation. It's not a full project for free. In return I share the journey as a case study, only with what you approve.",
+              "pilot": true
+            },
+            {
+              "question": "What happens after the pilot?",
+              "answer": "Your call. We continue with a clear quote, or I hand everything over so you can run it yourself. No obligation.",
+              "pilot": true
+            },
+            {
+              "question": "Do you only work with Italian freelancers?",
+              "answer": "No. I work remotely, in English or Italian.",
+              "pilot": false
+            }
+          ]
+        },
+        "finalCta": {
+          "title": "Have a recurring workflow that steals time every week? Let's see whether it is worth automating.",
+          "text": "One call. If it's not worth it, I'll tell you. Costs me a client, saves you money."
+        },
+        "relatedPosts": [
+          "automazione-freelancer-clienti-flussi",
+          "why-i-stopped-overengineering"
+        ]
+      },
+      "industrial": {
+        "metadata": {
+          "title": "Industrial Automation & AI for SMEs | Alessio Quagliara",
+          "description": "Practical automation and AI for manufacturing, logistics and industrial SMEs. Reduce manual handoffs and make operations easier to track."
+        },
+        "schema": {
+          "serviceName": "Process automation and applied AI for industrial SMEs",
+          "serviceType": "Industrial process automation and software integration"
+        },
+        "hero": {
+          "eyebrow": "Manufacturing · logistics · warehouse",
+          "title": "Industrial automation and AI for SMEs: fewer manual handoffs, clearer operations.",
+          "subtitle": "I take one real workflow — warehouse, production, data, communication — and connect it to the people and systems you already have. Without rebuilding everything.",
+          "microcopy": "Nothing stops. Nothing gets rebuilt from scratch.",
+          "secondaryCta": "Map your process",
+          "emailSubject": "SME automation: an operational workflow to review",
+          "visualTitle": "A layer on top of what you have",
+          "visualSystems": [
+            "ERP",
+            "Excel",
+            "Email and chat",
+            "Scanners and terminals"
+          ],
+          "visualLayer": "Integrations · alerts · dashboards",
+          "visualOutcome": "Data entered once, seen by whoever needs it"
+        },
+        "problem": {
+          "eyebrow": "When the process only holds because people compensate",
+          "title": "If your process lives in spreadsheets, chats and people's memory, it isn't a process. It's a dependency.",
+          "intro": "Work keeps moving because people compensate. They aren't the problem: the system using them as a bridge is.",
+          "frictions": [
+            {
+              "title": "The same data typed three times",
+              "text": "Every handoff, a possible mistake."
+            },
+            {
+              "title": "Information stuck in a chat",
+              "text": "One person knows. Everyone else finds out late."
+            },
+            {
+              "title": "Checks that rely on memory",
+              "text": "Works until that person goes on holiday."
+            },
+            {
+              "title": "The spreadsheet next to the ERP",
+              "text": "Started for convenience, now the unofficial truth."
+            },
+            {
+              "title": "Alerts that arrive late",
+              "text": "The problem was visible hours earlier."
+            },
+            {
+              "title": "Always having to ask someone",
+              "text": "If it takes a phone call, the process depends on who picks up."
+            }
+          ],
+          "closing": "Small frictions. Every day. They turn into delays and rework."
+        },
+        "build": {
+          "eyebrow": "What I can build",
+          "title": "Operational results, not tech for show",
+          "intro": "I don't replace your ERP, MES or WMS. I work next to them and plug the gaps between systems.",
+          "cards": [
+            {
+              "title": "Connect data and tools",
+              "text": "APIs, webhooks, files. No copying by hand."
+            },
+            {
+              "title": "Less double entry",
+              "text": "Data goes in once, where it starts."
+            },
+            {
+              "title": "Visible status and exceptions",
+              "text": "What's stuck, what's late, where work piles up."
+            },
+            {
+              "title": "Cross-team alerts",
+              "text": "Requests and approvals with a path, not chats and paper."
+            },
+            {
+              "title": "Traceability",
+              "text": "QR codes, scans, tablet forms: who, what, when."
+            },
+            {
+              "title": "AI where it helps",
+              "text": "Reading documents, routing requests, summarising issues. With a person checking."
+            },
+            {
+              "title": "Signals from the floor",
+              "text": "Arduino, ESP32, sensors. When they're actually needed."
+            }
+          ],
+          "iotNote": "I don't sell hardware by the kilo. I only suggest it when a physical data point is missing and there's no simpler way."
+        },
+        "constraint": {
+          "eyebrow": "From the floor to the software",
+          "title": "Constraints first, technology second",
+          "paragraphs": [
+            "I also work in logistics. You can't judge a workflow from a dashboard: it has to survive shifts, rush orders, absences and exceptions.",
+            "And I come from a software company where maintenance and thin resources were normal. I design for whoever uses the tool at 6 a.m. and whoever maintains it two years from now."
+          ],
+          "points": [
+            "If it slows operators down, nobody will use it.",
+            "Every exception handled by word of mouth is lost data.",
+            "Fewer moving parts beat one more feature."
+          ]
+        },
+        "method": {
+          "eyebrow": "How we work",
+          "title": "Six steps. Stopping is an option too.",
+          "intro": "No step requires stopping production.",
+          "steps": [
+            {
+              "title": "Site visit or call",
+              "text": "I look at the real process, not the one in the procedure."
+            },
+            {
+              "title": "One pain point",
+              "text": "The one with the most errors, waiting or repeated questions."
+            },
+            {
+              "title": "Constraints",
+              "text": "Systems, data, security, people, budget."
+            },
+            {
+              "title": "Prototype",
+              "text": "Small, testable, connected to real systems where possible."
+            },
+            {
+              "title": "Field test",
+              "text": "Operators try it. Their opinion beats mine."
+            },
+            {
+              "title": "Decision",
+              "text": "Extend, adjust or stop."
+            }
+          ],
+          "stopNote": "Stopping after a pilot costs less than stopping after a project."
+        },
+        "scenarios": {
+          "eyebrow": "Example interventions",
+          "title": "Four typical scenarios",
+          "label": "Possible scenarios, not case studies",
+          "intro": "",
+          "items": [
+            {
+              "title": "Requests and issues",
+              "steps": [
+                "Report",
+                "Form",
+                "Assignment",
+                "Alert",
+                "Dashboard"
+              ],
+              "text": "Whoever spots the problem reports it. It reaches whoever must act, and stays tracked."
+            },
+            {
+              "title": "Scattered data",
+              "steps": [
+                "Files and systems",
+                "Validation",
+                "Single database",
+                "Report"
+              ],
+              "text": "One controlled store, one always up-to-date report."
+            },
+            {
+              "title": "Physical events",
+              "steps": [
+                "Scan or sensor",
+                "Trigger",
+                "Record",
+                "Alert"
+              ],
+              "text": "The event records itself and alerts the team."
+            },
+            {
+              "title": "Documents",
+              "steps": [
+                "Document",
+                "Extraction",
+                "Human review",
+                "Approval"
+              ],
+              "text": "AI pre-fills, a person approves."
+            }
+          ],
+          "disclaimer": "How much will you save? Your data will tell, not this page."
+        },
+        "ai": {
+          "eyebrow": "AI: useful, not magic",
+          "title": "AI doesn't fix a broken process",
+          "statement": "First clear data, responsibilities and handoffs. Then AI, only where it removes real work.",
+          "usesTitle": "Where it helps",
+          "uses": [
+            "Routing requests.",
+            "Extracting data from orders, delivery notes, certificates.",
+            "Summarising issues.",
+            "Searching internal docs, with the source."
+          ],
+          "guardrailsTitle": "On what terms",
+          "guardrails": [
+            "A person checks before it becomes a decision.",
+            "We decide together which data leaves the company. If needed, models run locally.",
+            "Minimal, documented access."
+          ]
+        },
+        "fit": {
+          "eyebrow": "Who it's for",
+          "title": "You need a problem, not a trend",
+          "forItems": [
+            "You have a concrete operational problem that keeps coming back.",
+            "Someone can explain how it really works.",
+            "You're willing to try a small pilot."
+          ],
+          "notForItems": [
+            "You want to replace every system in a week.",
+            "You want \"an AI solution\" to show off.",
+            "You want to buy technology before understanding the problem."
+          ],
+          "crossLinkText": "Freelancer or small agency?",
+          "crossLinkLabel": "This way"
+        },
+        "credibility": {
+          "eyebrow": "Who's behind this",
+          "title": "I write software, but I know the warehouse",
+          "paragraphs": [
+            "Timings, handoffs, information that never arrives: I've seen them live, not on a slide.",
+            "Full stack developer (Python, Flask, Quart, Docker in production), n8n and Node-RED for automation, Computer Engineering student. I've also written about a Flask app born from real warehouse problems."
+          ],
+          "principles": [
+            "Understand the problem first. Then decide whether to build.",
+            "A good automation keeps working when I'm not around."
+          ]
+        },
+        "faq": {
+          "title": "Questions companies ask",
+          "items": [
+            {
+              "question": "Do we need to replace our ERP, WMS or MES?",
+              "answer": "No. I work next to them: connecting, collecting data, adding what's missing.",
+              "pilot": false
+            },
+            {
+              "question": "Can we start with a single process?",
+              "answer": "Yes, that's the right way. One workflow, one result you can check.",
+              "pilot": false
+            },
+            {
+              "question": "Do we need clean data first?",
+              "answer": "No, but we need to know where it is. Often the first job is cleaning it.",
+              "pilot": false
+            },
+            {
+              "question": "Is AI required?",
+              "answer": "No. Integrations, rules and alerts are often enough.",
+              "pilot": false
+            },
+            {
+              "question": "Can you work with Excel, email and our existing software?",
+              "answer": "Yes, that's the most common case. We start there.",
+              "pilot": false
+            },
+            {
+              "question": "Do you do hardware and IoT as well?",
+              "answer": "Yes, when needed: Arduino, ESP32, sensors. Only if there's no simpler way.",
+              "pilot": false
+            },
+            {
+              "question": "How do you handle data and access?",
+              "answer": "Only the access needed, agreed in writing and documented. We decide together which data can leave. Any compliance requirements are checked with you before we start.",
+              "pilot": false
+            },
+            {
+              "question": "What does the free pilot include?",
+              "answer": "{slots} spots until {deadline}. Mapping one workflow, a proposed change and, if it makes sense, a first integration. It's not a full project for free. In return I share the journey as a case study, only with what you approve.",
+              "pilot": true
+            },
+            {
+              "question": "How long does a first test take?",
+              "answer": "Depends on the workflow and access. The goal is something to try within a few weeks. A precise estimate comes after the mapping.",
+              "pilot": false
+            },
+            {
+              "question": "What happens after the pilot?",
+              "answer": "You decide: extend with a clear quote, adjust, or stop. No commitment.",
+              "pilot": true
+            }
+          ]
+        },
+        "finalCta": {
+          "title": "Is one recurring handoff slowing your operations every day? Let's map it and decide whether automation is worth it.",
+          "text": "Call or site visit. If it's not worth it, I'll tell you. Yes, I know it's a terrible sales technique."
+        },
+        "relatedPosts": [
+          "quando-ho-capito-che-il-problema-non-era-lerp",
+          "flask-warehouse-app",
+          "ai-pmi-como-ollama-llamacpp"
+        ]
+      }
     }
   },
   "cookie": {

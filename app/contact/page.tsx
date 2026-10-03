@@ -10,6 +10,7 @@ import {
   faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
 import { SectionReveal } from "@/components/home/section-reveal";
+import { ServiceLinks } from "@/components/landing/service-links";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { getLocaleFromLang, getMessages } from "@/lib/i18n";
 
@@ -62,6 +63,9 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               </li>
             ))}
           </ul>
+          <div className="mt-8">
+            <ServiceLinks locale={locale} tone="dark" />
+          </div>
         </div>
 
         <div className="mt-10 rounded-3xl border border-[#c8dbff]/75 bg-white/90 p-6 text-[#12347d] shadow-[0_22px_46px_-36px_rgba(18,52,125,0.35)] sm:p-8" data-reveal-item>
