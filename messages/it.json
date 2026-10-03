@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Alessio Quagliara — Indie Hacker & AI Engineering Student",
+      "defaultTitle": "Alessio Quagliara — Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
       "defaultDescription": "Studente di Ingegneria Informatica. Costruisco in pubblico piccoli SaaS e strumenti operativi nati da problemi reali di magazzino e produzione.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "Studio AI engineering e costruisco in pubblico piccoli SaaS, automazioni e strumenti operativi nati da problemi reali.",
+      "ogDescription": "Sviluppo cose, miglioro processi, automatizzo. Studio ingegneria AI e costruisco in pubblico piccoli SaaS e strumenti nati da problemi reali.",
       "locale": "it_IT"
     },
     "layout": {
@@ -25,7 +25,7 @@
         "builtWith": "Costruito con Next.js, TypeScript e Tailwind CSS",
         "email": "quagliara.alessio@gmail.com",
         "brandName": "Alessio Quagliara",
-        "brandSubtitle": "Indie Hacker & AI Engineering Student",
+        "brandSubtitle": "Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
         "brandDescription": "Studente di Ingegneria Informatica. Documento in pubblico piccoli SaaS, tooling AI/LLM e automazioni nate da problemi reali di magazzino e produzione.",
         "section": {
           "legal": "Legale",
@@ -60,7 +60,7 @@
     "home": {
       "metadata": {
         "title": "Home | Alessio Quagliara",
-        "description": "Indie hacker e studente di AI engineering che costruisce in pubblico piccoli SaaS, automazioni e strumenti operativi ispirati a problemi reali."
+        "description": "Sviluppo cose, miglioro processi, automatizzo. Studente di ingegneria AI che costruisce in pubblico piccoli SaaS, automazioni e strumenti operativi nati da problemi reali."
       },
       "badge": "Build in Public · Web app · Automazioni · Sistemi reali",
       "title": "Sviluppo cose, miglioro processi, automatizzo.",
@@ -147,37 +147,37 @@
     "about": {
       "metadata": {
         "title": "About | Alessio Quagliara",
-        "description": "Percorso e approccio di Alessio Quagliara: studente di Ingegneria Informatica che costruisce in pubblico piccoli SaaS e strumenti operativi."
+        "description": "Chi sono: uno che ha gestito una software house e fatto l'operaio, ora studia Ingegneria Informatica e costruisce software e automazioni senza troppe cerimonie."
       },
       "title": "Chi sono",
-      "intro": "Studio Ingegneria Informatica e costruisco software: piccoli SaaS, automazioni, strumenti nati da problemi reali. Preferisco mostrare quello che imparo piuttosto che vendere una versione più esperta di me.",
+      "intro": "Studio Ingegneria Informatica, indirizzo Sistemi Intelligenti. Prima ho gestito una software house SRL con poche risorse, clienti e urgenze, mentre facevo l'operaio. Quindi so come gira il software — e come girano le persone quando le cose devono funzionare davvero.",
       "sections": [
         {
-          "title": "Il mio approccio",
-          "text": "Documento in pubblico: build log, decisioni tecniche, errori inclusi. È il modo più onesto che ho per misurare i progressi."
+          "title": "Software house e lavoro vero",
+          "text": "Ho gestito una software house SRL con poche risorse: clienti, urgenze, richieste al volo e burocrazia a manovella. Nel frattempo facevo l'operaio, imparando sul campo come funzionano i processi produttivi. Non è la strada più pulita, ma ti insegna a tenere i piedi per terra."
         },
         {
-          "title": "Cosa mi interessa costruire",
-          "text": "Piccoli SaaS, automazioni, strumenti per magazzino e produzione, dashboard operative: progetti nati da problemi concreti sul campo."
+          "title": "Cosa uso davvero",
+          "text": "Sviluppo web full stack. Python lo mastico, ma con il C mi diverto molto di più. Uso n8n e Node-RED per le automazioni. Quando avanza tempo saldo Arduino ed ESP32 e metto in produzione roba con Docker — tipo LinkBayCMS."
         },
         {
-          "title": "Software e mondo reale",
-          "text": "Arduino, ESP32 e automazione mi distinguono da un dev solo-web: mi piace quando il software tocca sensori, oggetti fisici e processi reali."
+          "title": "Perché scrivo",
+          "text": "Scrivo di software, automazioni, leadership, startup ed errori veri: sistemi che devono restare in piedi anche fuori dalla teoria. Seguimi: non ti annoierai."
         }
       ],
-      "focusAreasTitle": "Aree di focus",
+      "focusAreasTitle": "Dove metto le mani",
       "focusAreas": [
-        "SaaS costruiti in pubblico",
-        "Backend Flask & Quart",
-        "Tooling AI/LLM",
-        "Prototipi Arduino / ESP32",
-        "Strumenti magazzino & produzione",
-        "Basi di sistemi embedded"
+        "Sviluppo web full stack",
+        "C (quello che mi diverto)",
+        "Python (quello che mastico)",
+        "Automazioni n8n & Node-RED",
+        "Arduino & ESP32",
+        "Docker in produzione"
       ],
-      "closing": "Il mio obiettivo è diventare più solido costruendo cose vere e documentando il percorso, con un interesse crescente per AI e sistemi intelligenti applicati a problemi operativi.",
+      "closing": "Non voglio venderti una versione più esperta di me. Costruisco, rompo, sistemo e scrivo quello che imparo — soprattutto quando sbaglio. Se dopo un po' non ti sei ancora annoiato, sto facendo qualcosa di giusto.",
       "cta": {
         "title": "Vuoi confrontarti?",
-        "text": "Se vuoi parlare di un problema concreto o seguire il percorso, scrivimi.",
+        "text": "Hai un processo che ti fa perdere tempo, o vuoi solo guardare il casino dall'esterno? Scrivimi.",
         "primary": "Prenota una chiamata",
         "secondary": "Vai ai contatti"
       }

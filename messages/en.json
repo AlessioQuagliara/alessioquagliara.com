@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Alessio Quagliara — Indie Hacker & AI Engineering Student",
+      "defaultTitle": "Alessio Quagliara — I build things | Improve processes | Automate | AI engineering student",
       "defaultDescription": "Computer Engineering student. I build small SaaS products and operational tools in public, born from real warehouse and production problems.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "I study AI engineering and build small SaaS products, automations, and operational tools in public.",
+      "ogDescription": "I build things, improve processes, automate. I study AI engineering and build small SaaS products and operational tools in public.",
       "locale": "en_US"
     },
     "layout": {
@@ -25,7 +25,7 @@
         "builtWith": "Built with Next.js, TypeScript and Tailwind CSS",
         "email": "ciao@alessioquagliara.com",
         "brandName": "Alessio Quagliara",
-        "brandSubtitle": "Indie Hacker & AI Engineering Student",
+        "brandSubtitle": "I build things | Improve processes | Automate | AI engineering student",
         "brandDescription": "Computer Engineering student. I document small SaaS products, AI/LLM tooling, and automations born from real warehouse and production problems, in public.",
         "section": {
           "legal": "Legal",
@@ -60,7 +60,7 @@
     "home": {
       "metadata": {
         "title": "Home | Alessio Quagliara",
-        "description": "Indie hacker and AI engineering student building small SaaS products, automation experiments, and operational tools in public."
+        "description": "I build things, improve processes, automate. AI engineering student building small SaaS products, automations, and operational tools in public."
       },
       "badge": "Build in Public · SaaS · AI Engineering",
       "title": "I build small SaaS and operational tools to make real-world workflows simpler.",
@@ -147,37 +147,37 @@
     "about": {
       "metadata": {
         "title": "About | Alessio Quagliara",
-        "description": "Alessio Quagliara's background and approach: a Computer Engineering student building small SaaS products and operational tools in public."
+        "description": "Who I am: someone who ran a software house and worked as a factory worker, now studying Computer Engineering and building software and automations without much ceremony."
       },
       "title": "About",
-      "intro": "I study Computer Engineering and build software: small SaaS, automations, tools born from real problems. I'd rather show what I'm learning than sell a more senior version of myself.",
+      "intro": "I study Computer Engineering, Intelligent Systems track. Before that I ran a small software house (SRL) with few resources, clients and urgencies, while working as a factory worker. So I know how software runs — and how people run when things actually have to work.",
       "sections": [
         {
-          "title": "My approach",
-          "text": "I document in public: build logs, technical decisions, mistakes included. It's the most honest way I know to measure progress."
+          "title": "Software house and real work",
+          "text": "I ran a small software house (SRL) with few resources: clients, urgencies, requests on the fly and manual bureaucracy. Meanwhile I worked as a factory worker, learning production processes on the ground. Not the cleanest path, but it teaches you to keep your feet on the ground."
         },
         {
-          "title": "What I want to build",
-          "text": "Small SaaS, automations, warehouse and production tools, operational dashboards: projects born from concrete problems on the ground."
+          "title": "What I actually use",
+          "text": "Full stack web development. I can chew Python, but C is way more fun. n8n and Node-RED for automations. When time's left over, I solder Arduino and ESP32 and ship Docker to production — like LinkBayCMS."
         },
         {
-          "title": "Software and the real world",
-          "text": "Arduino, ESP32 and automation set me apart from a web-only dev: I like when software touches sensors, physical objects and real processes."
+          "title": "Why I write",
+          "text": "I write about software, automation, leadership, startups and real mistakes: systems that have to hold up outside of theory. Follow along: you won't get bored."
         }
       ],
-      "focusAreasTitle": "Focus Areas",
+      "focusAreasTitle": "Where I get my hands dirty",
       "focusAreas": [
-        "Building SaaS in Public",
-        "Flask & Quart Backend",
-        "AI/LLM Tooling",
-        "Arduino / ESP32 Prototyping",
-        "Warehouse & Production Tools",
-        "Embedded Systems Basics"
+        "Full stack web",
+        "C (the one I enjoy)",
+        "Python (the one I get by with)",
+        "n8n & Node-RED automations",
+        "Arduino & ESP32",
+        "Docker in production"
       ],
-      "closing": "My goal is to get stronger by building real things and documenting the journey, with a growing interest in AI and intelligent systems applied to operational problems.",
+      "closing": "I'm not trying to sell you a more senior version of me. I build, break, fix and write down what I learn — especially when I get it wrong. If you're still not bored after a while, I'm doing something right.",
       "cta": {
         "title": "Want to talk?",
-        "text": "If you want to discuss a concrete problem or follow the journey, reach out.",
+        "text": "Got a process that's wasting your time, or just want to watch the chaos from outside? Reach out.",
         "primary": "Book a call",
         "secondary": "Go to contacts"
       }
