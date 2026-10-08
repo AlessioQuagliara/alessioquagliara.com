@@ -80,7 +80,7 @@ export function buildLandingMetadata(
       alternateLocale: [OG_LOCALES[otherLocale]],
       images: [
         {
-          url: "/profile_image.jpeg",
+          url: "/profile_image.jpg",
           width: 800,
           height: 800,
           alt: "Alessio Quagliara",
@@ -92,7 +92,7 @@ export function buildLandingMetadata(
       card: "summary",
       title: seo.title,
       description: seo.description,
-      images: ["/profile_image.jpeg"],
+      images: ["/profile_image.jpg"],
     },
     robots: { index: true, follow: true },
   };
@@ -132,7 +132,7 @@ export function buildLandingJsonLd({
         "@id": personId,
         name: "Alessio Quagliara",
         url: `${SITE_URL}/`,
-        image: `${SITE_URL}/profile_image.jpeg`,
+        image: `${SITE_URL}/profile_image.jpg`,
         jobTitle: "Full Stack Developer",
         knowsLanguage: ["it", "en"],
         sameAs: SAME_AS,

@@ -406,7 +406,7 @@ export function CredibilityBlock({
       <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <div data-reveal-item>
           <Image
-            src="/profile_image.jpeg"
+            src="/profile_image.jpg"
             alt={photoAlt}
             width={800}
             height={800}
