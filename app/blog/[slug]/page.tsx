@@ -59,7 +59,11 @@ export async function generateMetadata({
   const localizedPost = getLocalizedBlogPost(post, locale);
 
   return {
-    title: `${localizedPost.title} | Alessio Quagliara`,
+    // Su Google oltre ~60 caratteri il titolo viene tagliato: meglio perdere il nome che il gancio.
+    title:
+      localizedPost.title.length > 40
+        ? localizedPost.title
+        : `${localizedPost.title} | Alessio Quagliara`,
     description: localizedPost.description,
     alternates: {
       canonical: `/blog/${localizedPost.slug}`,

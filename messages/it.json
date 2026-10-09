@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Alessio Quagliara — Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
-      "defaultDescription": "Automazioni e AI per freelance e aziende industriali. Sviluppo cose, miglioro processi, automatizzo.",
+      "defaultTitle": "Software e automazioni per PMI e freelance | Alessio Quagliara",
+      "defaultDescription": "Sviluppo software e automazioni per PMI e freelance. Mi prendo le cose noiose: documenti, magazzino, preventivi. Quelle che ti mangiano le ore.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "Sviluppo cose, miglioro processi, automatizzo. Studio ingegneria AI e integro automazioni e AI in aziende industriali.",
+      "ogDescription": "Sviluppo software e automazioni che sono ancora in piedi. Aiuto PMI e freelance con le cose noiose.",
       "locale": "it_IT"
     },
     "layout": {
@@ -25,8 +25,8 @@
         "builtWith": "Costruito con Next.js, TypeScript e Tailwind CSS",
         "email": "quagliara.alessio@gmail.com",
         "brandName": "Alessio Quagliara",
-        "brandSubtitle": "Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
-        "brandDescription": "Automazioni e AI per freelance e aziende industriali. Sviluppo, automatizzo, tolgo passaggi inutili.",
+        "brandSubtitle": "Sviluppo software e automazioni che sono ancora in piedi",
+        "brandDescription": "Aiuto PMI e freelance con le cose noiose. Quelle che rimandi da mesi.",
         "section": {
           "legal": "Legale",
           "contacts": "Contatti"
@@ -59,12 +59,12 @@
     },
     "home": {
       "metadata": {
-        "title": "Home | Alessio Quagliara",
-        "description": "Sviluppo cose, miglioro processi, automatizzo. Studente di ingegneria AI che costruisce in pubblico piccoli SaaS, automazioni e strumenti operativi nati da problemi reali."
+        "title": "Software e automazioni per PMI e freelance | Alessio Quagliara",
+        "description": "Sviluppo software e automazioni per PMI e freelance. Mi prendo le cose noiose: documenti, magazzino, preventivi. Quelle che ti mangiano le ore."
       },
       "badge": "Build in Public · Web app · Automazioni · Sistemi reali",
-      "title": "Sviluppo cose, miglioro processi, automatizzo.",
-      "description": "Costruisco web app, piccoli SaaS, automazioni e prototipi per togliere passaggi inutili da problemi reali: documenti, flussi operativi, magazzino, produzione e lavoro quotidiano.",
+      "title": "Sviluppo software e automazioni che sono ancora in piedi.",
+      "description": "Aiuto PMI e freelance con le cose noiose: documenti, magazzino, preventivi, passaggi ripetuti. Le tolgo di mezzo, senza fare scena.",
       "ctaProjects": "Guarda cosa sto costruendo",
       "ctaContact": "Hai un processo che ti fa perdere tempo? Raccontamelo.",
       "sections": {

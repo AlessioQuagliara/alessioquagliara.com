@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Alessio Quagliara — I build things | Improve processes | Automate | AI engineering student",
-      "defaultDescription": "Automations and AI for freelancers and industrial companies. I build things, improve processes, automate.",
+      "defaultTitle": "Software and automations for SMEs and freelancers | Alessio Quagliara",
+      "defaultDescription": "Software and automations for small businesses and freelancers. I take the boring stuff: documents, inventory, quotes. The stuff that eats your hours.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "I build things, improve processes, automate. I study AI engineering and bring automations and AI into industrial companies.",
+      "ogDescription": "I build software and automations that are still standing. I help small businesses and freelancers with the boring stuff.",
       "locale": "en_US"
     },
     "layout": {
@@ -25,8 +25,8 @@
         "builtWith": "Built with Next.js, TypeScript and Tailwind CSS",
         "email": "ciao@alessioquagliara.com",
         "brandName": "Alessio Quagliara",
-        "brandSubtitle": "I build things | Improve processes | Automate | AI engineering student",
-        "brandDescription": "Automations and AI for freelancers and industrial companies. I build, automate, and strip the useless steps.",
+        "brandSubtitle": "I build software and automations that are still standing",
+        "brandDescription": "I help small businesses and freelancers with the boring stuff. The stuff you keep putting off.",
         "section": {
           "legal": "Legal",
           "contacts": "Contacts"
@@ -59,12 +59,12 @@
     },
     "home": {
       "metadata": {
-        "title": "Home | Alessio Quagliara",
-        "description": "I build things, improve processes, automate. AI engineering student building small SaaS products, automations, and operational tools in public."
+        "title": "Software and automations for SMEs and freelancers | Alessio Quagliara",
+        "description": "Software and automations for small businesses and freelancers. I take the boring stuff: documents, inventory, quotes. The stuff that eats your hours."
       },
       "badge": "Build in Public · SaaS · AI Engineering",
-      "title": "I build small SaaS and operational tools to make real-world workflows simpler.",
-      "description": "I study Computer Engineering and turn warehouse, production and everyday work problems into software prototypes, automations and connected systems.",
+      "title": "I build software and automations that are still standing.",
+      "description": "I help small businesses and freelancers with the boring stuff: documents, inventory, quotes, repeated steps. I get rid of them, no show.",
       "ctaProjects": "Explore the projects",
       "ctaContact": "Get in touch",
       "sections": {

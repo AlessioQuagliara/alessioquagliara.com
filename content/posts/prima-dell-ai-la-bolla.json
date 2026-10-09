@@ -1,0 +1,100 @@
+{
+  "slug": "prima-dell-ai-la-bolla",
+  "publishedAt": "2026-10-09",
+  "updatedAt": "",
+  "cover": "/prima-dell-ai-la-bolla.jpeg",
+  "youtubeUrl": "",
+  "tags": [
+    "automazione",
+    "processi",
+    "AI",
+    "PMI",
+    "logistica"
+  ],
+  "title": {
+    "it": "Prima di parlarmi di AI, guarda come carichiamo una bolla",
+    "en": "Before you talk to me about AI, look at how we enter a delivery note"
+  },
+  "description": {
+    "it": "Un magazzino, una bolla da caricare a mano e un gestionale lento: perché prima di mettere l’AI conviene togliere passaggi dal flusso. Un’ipotesi, non un risultato.",
+    "en": "A warehouse, a delivery note entered by hand and a slow management system: why it’s worth removing steps from the flow before adding AI. A hypothesis, not a result."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Sento spesso imprenditori, founder e senior engineer dire che, per automatizzare i processi aziendali, la scelta giusta è l’AI.\n\nOttimo. Ma giusta per cosa? E per chi?"
+      },
+      {
+        "id": "il-problema",
+        "title": "Il problema: una bolla da caricare a mano",
+        "image": "",
+        "body": "Restiamo con i piedi per terra. Una PMI, un magazzino, un camion che arriva. Qualcuno deve far risultare a sistema che la merce è entrata.\n\nSpesso lo fa il magazziniere, partendo dal Documento di Trasporto, la cosiddetta bolla. Inserisce codici e quantità, riga per riga, in un gestionale vecchio, lento, con una procedura piena di passaggi. Non li ho contati: diciamo una quarantina, e il numero serve a dare l’idea, non è una misura.\n\nSe arriva molta merce con una packing list lunga, mezza giornata se ne va lì. E per tutto quel tempo il magazziniere non fa il magazziniere. Non è colpa sua, e nemmeno di chi ha scritto la procedura anni fa con gli strumenti che aveva.\n\n> [!NOTE]\n> Questo l’ho visto con i miei occhi. Quello che segue è un’ipotesi: non l’ho costruita."
+      },
+      {
+        "id": "la-mia-ipotesi",
+        "title": "La mia ipotesi: prima il flusso",
+        "image": "",
+        "body": "Prima dell’innovazione, io spacchetterei il problema. Metterei un layer sopra il gestionale che riduca i passaggi a pochi: carichi il file, controlli, confermi. Senza AI, con un semplice flusso che lavora sopra un altro, ma fa meno strada.\n\nCome si fa davvero, non lo so ancora. Dipende dal gestionale: può avere un import da file, un’API, oppure l’unica strada è automatizzare l’interfaccia, che è la più fragile. È lì che sta la parte difficile, non nell’idea."
+      },
+      {
+        "id": "lobiezione",
+        "title": "L’obiezione: l’AI può leggere la bolla",
+        "image": "",
+        "body": "Mi direte: l’AI può leggere la bolla (PDF o foto) ed estrarre i dati. Vero, ed è un uso sensato.\n\nMa se il flusso dietro resta lento e a passaggi infiniti, ho solo un’AI che legge meglio la bolla e poi mi lascia con lo stesso casino. Prima il flusso, poi l’AI dove serve. Magari proprio per leggere la bolla."
+      },
+      {
+        "id": "il-rischio",
+        "title": "Il rischio che non ho risolto",
+        "image": "",
+        "body": "Se il software sbaglia un codice, chi se ne accorge?\n\n> [!WARNING]\n> Serve un controllo umano prima della conferma, altrimenti trasformo un lavoro lento in un errore veloce."
+      },
+      {
+        "id": "chiusura",
+        "title": "Non è contro l’AI",
+        "image": "",
+        "body": "Non è un post contro l’AI. È contro l’AI come prima mossa.\n\n> [!TAKEAWAY]\n> Se non so dov’è il collo di bottiglia, cosa sto automatizzando?"
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "I often hear business owners, founders and senior engineers say that AI is the right choice for automating business processes.\n\nGreat. But right for what? And for whom?"
+      },
+      {
+        "id": "il-problema",
+        "title": "The problem: a delivery note typed by hand",
+        "image": "",
+        "body": "Let’s stay grounded. A small company, a warehouse, a truck arriving. Someone has to make the system show that the goods have come in.\n\nOften it’s the warehouse worker, starting from the delivery note (the “bolla”). They enter codes and quantities, line by line, into an old, slow management system with a procedure full of steps. I haven’t counted them: let’s say about forty, and the number is there to give the idea, not a measurement.\n\nWhen a lot of goods arrive with a long packing list, half a day disappears there. And for all that time the warehouse worker isn’t doing warehouse work. It’s not their fault, nor the fault of whoever wrote the procedure years ago with the tools they had.\n\n> [!NOTE]\n> I’ve seen this with my own eyes. What follows is a hypothesis: I haven’t built it."
+      },
+      {
+        "id": "la-mia-ipotesi",
+        "title": "My hypothesis: flow first",
+        "image": "",
+        "body": "Before innovation, I would break the problem down. I’d put a layer on top of the management system that cuts the steps to a few: upload the file, check, confirm. No AI, just a simple flow running on top of another one, but covering less ground.\n\nHow to actually do it, I don’t know yet. It depends on the system: it may have a file import, an API, or the only option is automating the interface, which is the most fragile. That’s where the hard part is, not in the idea."
+      },
+      {
+        "id": "lobiezione",
+        "title": "The objection: AI can read the delivery note",
+        "image": "",
+        "body": "You’ll tell me: AI can read the delivery note (PDF or photo) and extract the data. True, and it’s a sensible use.\n\nBut if the flow behind it stays slow and full of steps, I just have an AI that reads the note better and leaves me with the same mess. Flow first, then AI where it helps. Maybe even to read the delivery note."
+      },
+      {
+        "id": "il-rischio",
+        "title": "The risk I haven’t solved",
+        "image": "",
+        "body": "If the software gets a code wrong, who notices?\n\n> [!WARNING]\n> A human check is needed before confirmation, otherwise I turn a slow job into a fast mistake."
+      },
+      {
+        "id": "chiusura",
+        "title": "It’s not against AI",
+        "image": "",
+        "body": "This isn’t a post against AI. It’s against AI as the first move.\n\n> [!TAKEAWAY]\n> If I don’t know where the bottleneck is, what am I automating?"
+      }
+    ]
+  }
+}

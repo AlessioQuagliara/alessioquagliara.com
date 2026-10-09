@@ -24,13 +24,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://alessioquagliara.com"),
   title:
     siteMetadata.defaultTitle ??
-    "Sviluppo e creo cose | Miglioro processi | Automatizzo | Studente di ingegneria AI",
+    "Software e automazioni per PMI e freelance | Alessio Quagliara",
   description:
     siteMetadata.defaultDescription ??
     "Studente di Ingegneria Informatica appassionato di software, automazione industriale e AI. Documento in pubblico piccoli SaaS, esperimenti software e strumenti operativi.",
-  alternates: {
-    canonical: "/",
-  },
   icons: {
     icon: [
       { url: "/assets/favicon.ico" },
@@ -47,7 +44,7 @@ export const metadata: Metadata = {
     title: siteMetadata.ogTitle ?? "Alessio Quagliara",
     description:
       siteMetadata.ogDescription ??
-      "Sviluppo cose, miglioro processi, automatizzo. Costruisco in pubblico piccoli SaaS, automazioni e strumenti nati da problemi reali.",
+      "Sviluppo software e automazioni che sono ancora in piedi. Aiuto PMI e freelance con le cose noiose.",
     url: "https://alessioquagliara.com",
     siteName: siteMetadata.ogTitle ?? "Alessio Quagliara",
     locale: siteMetadata.locale ?? "it_IT",

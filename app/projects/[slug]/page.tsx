@@ -37,6 +37,9 @@ export async function generateMetadata({
   return {
     title: `${repo.name} | ${projects.title} | ${messages.layout.navbar.brand}`,
     description: repo.description ?? projects.detailsFallbackDescription,
+    alternates: {
+      canonical: `/projects/${encodeURIComponent(repo.name)}`,
+    },
   };
 }
 

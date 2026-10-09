@@ -13,8 +13,8 @@
     "Electron"
   ],
   "title": {
-    "it": "RStudy: come trasformare il caos dello studio universitario in ripasso attivo (e locale-first)",
-    "en": "RStudy: Turning University Study Chaos into Active Recall with Local-First AI"
+    "it": "RStudy: studiavo nel caos, così mi sono scritto un'app",
+    "en": "RStudy: my studying was chaos, so I wrote myself an app"
   },
   "description": {
     "it": "L'AI doveva farci studiare meglio. Ci ha solo dato più roba da leggere. Ho costruito RStudy per mettere ordine, senza abbonamenti e senza caricare i tuoi appunti sul server di qualcun altro.",
