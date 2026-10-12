@@ -95,7 +95,7 @@
         "code": {
           "kicker": "Dal sensore al server",
           "title": "Codice pulito. Anche quando non guarda nessuno.",
-          "text": "FastAPI che accetta i dati, TypeScript che li smista per cliente. Roba che si legge e si mantiene, anche fra un anno.",
+          "text": "Flask che accetta i dati, C che toglie il rumore. Roba che si legge e si mantiene, anche fra un anno.",
           "servicesLabel": "Servizi"
         }
       },

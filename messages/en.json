@@ -95,7 +95,7 @@
         "code": {
           "kicker": "From sensor to server",
           "title": "Clean code. Even when nobody's looking.",
-          "text": "FastAPI takes the data in, TypeScript routes it per client. Code you can read and maintain, even a year from now.",
+          "text": "Flask takes the data in, C cleans up the noise. Code you can read and maintain, even a year from now.",
           "servicesLabel": "Services"
         }
       },
