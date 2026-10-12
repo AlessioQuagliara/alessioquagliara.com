@@ -13,6 +13,7 @@
         "about": "About",
         "education": "Education",
         "projects": "Projects",
+        "caseStudies": "Case studies",
         "blog": "Blog",
         "contact": "Contact",
         "languageLabel": "Language",
@@ -266,6 +267,41 @@
         "text": "I'm still collecting experiments and mistakes. Come back soon or explore everything.",
         "cta": "View all articles"
       }
+    },
+    "caseStudies": {
+      "metadata": {
+        "title": "Case studies | Alessio Quagliara",
+        "description": "Real projects for real clients, built with Spotex S.r.l. Problem, solution, numbers. No fluff."
+      },
+      "title": "Case studies",
+      "description": "Real projects, real clients. The problem, what I did, what changed. If a number is missing, I didn't measure it.",
+      "eyebrow": "Work done",
+      "empty": "Nothing yet. I'm collecting the numbers, not making them up.",
+      "readCase": "Read the case",
+      "back": "Back to case studies",
+      "breadcrumb": "Case studies",
+      "problem": "The problem",
+      "solution": "What I did",
+      "results": "Results",
+      "source": "Source",
+      "noResults": "Numbers coming. I'll publish them once they're verified.",
+      "spotexCredit": "Built with {company}{period}.",
+      "spotexNote": "Spotex is in liquidation. I handled the project myself, as the developer.",
+      "related": "Further reading",
+      "draft": "Draft: not published",
+      "constraints": "Constraints",
+      "lessons": "What I learned",
+      "anonymousNote": "The client stays anonymous: no names, no screenshots. The cover shows the architecture, not their site.",
+      "microcopy": "Anonymous clients, real code.",
+      "cta": {
+        "heading": "Need something similar?",
+        "subtitle": "Tell me what's broken. I'll tell you if I can fix it.",
+        "nextLabel": "Read the next case",
+        "contactTitle": "Let's talk",
+        "contactText": "One call, no slides.",
+        "contactCta": "Get in touch"
+      },
+      "servicesLinks": "If this sounds familiar:"
     },
     "education": {
       "metadata": {

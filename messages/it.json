@@ -13,6 +13,7 @@
         "about": "About",
         "education": "Formazione",
         "projects": "Progetti",
+        "caseStudies": "Casi studio",
         "blog": "Blog",
         "contact": "Contatti",
         "languageLabel": "Lingua",
@@ -266,6 +267,41 @@
         "text": "Sto ancora raccogliendo esperimenti ed errori. Torna presto o esplora tutto.",
         "cta": "Vedi tutti gli articoli"
       }
+    },
+    "caseStudies": {
+      "metadata": {
+        "title": "Casi studio | Alessio Quagliara",
+        "description": "Progetti veri per clienti veri, fatti con Spotex S.r.l. Problema, soluzione, numeri. Niente fuffa."
+      },
+      "title": "Casi studio",
+      "description": "Progetti veri, clienti veri. Problema, cosa ho fatto, cosa è cambiato. Se un numero non c'è, è perché non l'ho misurato.",
+      "eyebrow": "Lavori fatti",
+      "empty": "Ancora niente. Sto raccogliendo i numeri, non li invento.",
+      "readCase": "Leggi il caso",
+      "back": "Torna ai casi studio",
+      "breadcrumb": "Casi studio",
+      "problem": "Il problema",
+      "solution": "Cosa ho fatto",
+      "results": "Risultati",
+      "source": "Fonte",
+      "noResults": "Numeri in arrivo. Li pubblico quando sono verificati.",
+      "spotexCredit": "Realizzato con {company}{period}.",
+      "spotexNote": "Spotex è in liquidazione. Il progetto l'ho seguito io, come sviluppatore.",
+      "related": "Approfondimenti",
+      "draft": "Bozza: non pubblicata",
+      "constraints": "Vincoli",
+      "lessons": "Cosa ho imparato",
+      "anonymousNote": "Il cliente resta anonimo: niente nomi, niente screenshot. Lo schema in copertina è l'architettura, non il loro sito.",
+      "microcopy": "Clienti anonimi, codice vero.",
+      "cta": {
+        "heading": "Ti serve qualcosa di simile?",
+        "subtitle": "Dimmi cosa non va. Ti dico se lo so sistemare.",
+        "nextLabel": "Leggi il prossimo caso",
+        "contactTitle": "Parliamone",
+        "contactText": "Una call, niente slide.",
+        "contactCta": "Scrivimi"
+      },
+      "servicesLinks": "Se ti suona familiare:"
     },
     "education": {
       "metadata": {

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<defs><radialGradient id="g" cx="15%" cy="0%" r="90%"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#07173c"/></radialGradient>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8cb4ff"/></marker></defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<text x="80" y="110" fill="#cee1ff" font-size="28" letter-spacing="6" font-weight="600">ARCHITETTURA</text>
+<text x="80" y="170" fill="#ffffff" font-size="52" font-weight="800">Piattaforma B2B con chat realtime</text>
+<line x1="400" y1="440" x2="558" y2="385" stroke="#8cb4ff" stroke-width="4" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="400" y1="500" x2="558" y2="620" stroke="#8cb4ff" stroke-width="4" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="980" y1="385" x2="1158" y2="440" stroke="#8cb4ff" stroke-width="4" marker-start="url(#a)" marker-end="url(#a)"/>
+<line x1="980" y1="630" x2="1158" y2="500" stroke="#8cb4ff" stroke-width="4" marker-start="url(#a)" marker-end="url(#a)"/>
+<rect x="80" y="380" width="320" height="170" rx="22" fill="#0b2559" stroke="#8cb4ff" stroke-opacity="0.6" stroke-width="2"/>
+<text x="240.0" y="459.0" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="700">Browser</text>
+<text x="240.0" y="501.0" text-anchor="middle" fill="#bfd5ff" font-size="24">pagine EJS</text>
+<rect x="560" y="300" width="420" height="150" rx="22" fill="#0b2559" stroke="#8cb4ff" stroke-opacity="0.6" stroke-width="2"/>
+<text x="770.0" y="369.0" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="700">Express API</text>
+<text x="770.0" y="411.0" text-anchor="middle" fill="#bfd5ff" font-size="24">JWT · Bcrypt · CORS</text>
+<rect x="560" y="560" width="420" height="150" rx="22" fill="#0b2559" stroke="#8cb4ff" stroke-opacity="0.6" stroke-width="2"/>
+<text x="770.0" y="629.0" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="700">Socket.io</text>
+<text x="770.0" y="671.0" text-anchor="middle" fill="#bfd5ff" font-size="24">chat a stanze</text>
+<rect x="1160" y="380" width="360" height="170" rx="22" fill="#0b2559" stroke="#8cb4ff" stroke-opacity="0.6" stroke-width="2"/>
+<text x="1340.0" y="459.0" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="700">PostgreSQL</text>
+<text x="1340.0" y="501.0" text-anchor="middle" fill="#bfd5ff" font-size="24">via Knex.js</text>
+</svg>

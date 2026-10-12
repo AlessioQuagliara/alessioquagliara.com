@@ -90,6 +90,12 @@ export function Navbar() {
             {navbar.projects}
           </Link>
           <Link
+            href={withLang("/casi-studio", locale)}
+            className="hover:text-white transition-colors"
+          >
+            {navbar.caseStudies}
+          </Link>
+          <Link
             href={withLang("/blog", locale)}
             className="hover:text-white transition-colors"
           >
@@ -175,6 +181,14 @@ export function Navbar() {
               style={{ transitionDelay: isMenuOpen ? "170ms" : "0ms" }}
             >
               {navbar.projects}
+            </Link>
+            <Link
+              href={withLang("/casi-studio", locale)}
+              className="mobile-menu-link"
+              onClick={() => setIsMenuOpen(false)}
+              style={{ transitionDelay: isMenuOpen ? "190ms" : "0ms" }}
+            >
+              {navbar.caseStudies}
             </Link>
             <Link
               href={withLang("/blog", locale)}

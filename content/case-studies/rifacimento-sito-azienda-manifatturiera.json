@@ -1,0 +1,86 @@
+{
+  "slug": "rifacimento-sito-azienda-manifatturiera",
+  "published": true,
+  "anonymous": true,
+  "client": {
+    "it": "Azienda manifatturiera artigianale lombarda",
+    "en": "Artisan manufacturing company, Lombardy"
+  },
+  "company": "Spotex S.r.l.",
+  "period": {
+    "from": null,
+    "to": null
+  },
+  "cover": "/case-studies/rifacimento-sito-azienda-manifatturiera.svg",
+  "publishedAt": "2026-10-12",
+  "updatedAt": "2026-10-12",
+  "stack": [
+    "Node.js"
+  ],
+  "title": {
+    "it": "Da Joomla a Node.js: nuovo sito per un'azienda manifatturiera",
+    "en": "From Joomla to Node.js: a new site for a manufacturing company"
+  },
+  "summary": {
+    "it": "Via il vecchio Joomla, dentro una piattaforma Node.js su misura. Con SEO e hosting gestito.",
+    "en": "Out with the old Joomla, in with a custom Node.js platform. SEO and managed hosting included."
+  },
+  "role": {
+    "it": "",
+    "en": ""
+  },
+  "problem": {
+    "it": "Il sito era in Joomla e non diceva chi fosse l'azienda. Mission, vision, valori: non pervenuti.\n\nE chi arrivava sul sito non trovava una strada verso il contatto.",
+    "en": "The site ran on Joomla and said nothing about who the company was. Mission, vision, values: missing.\n\nAnd visitors had no clear path to getting in touch."
+  },
+  "constraints": {
+    "it": [
+      "Budget da PMI",
+      "Design affidato a un designer esterno",
+      "Tempi compatibili con l'attività dell'azienda"
+    ],
+    "en": [
+      "SME budget",
+      "Design handed to an external designer",
+      "Timeline that fit around the company's day-to-day work"
+    ]
+  },
+  "solution": {
+    "it": "Rifatto da zero su una piattaforma Node.js proprietaria.\n\n- Design su misura, fatto da un designer vero\n- Struttura SEO dalla base, non aggiunta dopo\n- Pagine pensate per portare al contatto\n- Hosting su server gestito, per sicurezza e velocità",
+    "en": "Rebuilt from scratch on a proprietary Node.js platform.\n\n- Custom design, by an actual designer\n- SEO structure from the ground up, not bolted on later\n- Pages built to lead to the contact form\n- Managed server hosting, for security and speed"
+  },
+  "results": [
+    {
+      "label": {
+        "it": "Traffico organico",
+        "en": "Organic traffic"
+      },
+      "value": "",
+      "source": ""
+    },
+    {
+      "label": {
+        "it": "Visite dall'estero",
+        "en": "Visits from abroad"
+      },
+      "value": "",
+      "source": ""
+    },
+    {
+      "label": {
+        "it": "Richieste di contatto",
+        "en": "Contact requests"
+      },
+      "value": "",
+      "source": ""
+    }
+  ],
+  "lessons": {
+    "it": "",
+    "en": ""
+  },
+  "relatedPosts": [
+    "chiusura-spotex-srl-perche-abbiamo-deciso-di-chiudere",
+    "spotex-liquidazione-blocca-progetti"
+  ]
+}

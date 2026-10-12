@@ -1,0 +1,85 @@
+{
+  "slug": "piattaforma-b2b-networking-finanza",
+  "published": true,
+  "anonymous": true,
+  "client": {
+    "it": "Realtà del settore finanziario e previdenziale",
+    "en": "Organisation in the finance and pensions sector"
+  },
+  "company": "Spotex S.r.l.",
+  "period": {
+    "from": null,
+    "to": null
+  },
+  "cover": "/case-studies/piattaforma-b2b-networking-finanza.svg",
+  "publishedAt": "2026-10-12",
+  "updatedAt": "2026-10-12",
+  "stack": [
+    "Node.js",
+    "Express",
+    "EJS",
+    "Socket.io",
+    "JWT",
+    "Bcrypt",
+    "PostgreSQL",
+    "Knex.js"
+  ],
+  "title": {
+    "it": "Piattaforma B2B custom con chat in tempo reale",
+    "en": "Custom B2B platform with real-time chat"
+  },
+  "summary": {
+    "it": "Web app da zero per far parlare professionisti e fondatore, e gestire eventi. Senza un CMS a fare da tappo.",
+    "en": "A web app built from scratch so professionals can talk to the founder and join events. No CMS getting in the way."
+  },
+  "role": {
+    "it": "",
+    "en": ""
+  },
+  "problem": {
+    "it": "Non serviva un sito vetrina. Serviva un ecosistema: un posto per promuovere un laboratorio di idee e un canale diretto tra professionisti e fondatore.",
+    "en": "A brochure site wasn't going to cut it. They needed an ecosystem: a place to promote an ideas lab and a direct line between professionals and the founder."
+  },
+  "constraints": {
+    "it": [
+      "Dati sensibili degli utenti",
+      "Informazioni accurate e affidabili",
+      "Il cliente doveva gestirla in autonomia"
+    ],
+    "en": [
+      "Sensitive user data",
+      "Accurate, reliable information",
+      "The client had to run it on their own"
+    ]
+  },
+  "solution": {
+    "it": "- Backend Node.js con Express, pagine con template EJS\n- Chat a stanze in tempo reale con Socket.io\n- Autenticazione JWT, password cifrate con Bcrypt, politiche CORS\n- Database PostgreSQL, gestito con Knex.js",
+    "en": "- Node.js backend with Express, EJS templates for the pages\n- Real-time room-based chat with Socket.io\n- JWT auth, Bcrypt-hashed passwords, CORS policies\n- PostgreSQL database, managed with Knex.js"
+  },
+  "results": [
+    {
+      "label": {
+        "it": "Utenti attivi",
+        "en": "Active users"
+      },
+      "value": "",
+      "source": ""
+    },
+    {
+      "label": {
+        "it": "Eventi gestiti sulla piattaforma",
+        "en": "Events run on the platform"
+      },
+      "value": "",
+      "source": ""
+    }
+  ],
+  "lessons": {
+    "it": "",
+    "en": ""
+  },
+  "relatedPosts": [
+    "chiusura-spotex-srl-perche-abbiamo-deciso-di-chiudere",
+    "spotex-liquidazione-blocca-progetti"
+  ]
+}

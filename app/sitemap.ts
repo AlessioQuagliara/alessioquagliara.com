@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllBlogPosts } from "@/lib/blog";
+import { getAllCaseStudies } from "@/lib/case-studies";
 import { getFeaturedRepos } from "@/lib/github";
 import { LANDING_PATHS, X_DEFAULT_LOCALE } from "@/lib/landings";
 import { locales } from "@/lib/i18n";
@@ -14,6 +15,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://alessioquagliara.com";
   const repos = await getFeaturedRepos();
   const posts = getAllBlogPosts();
+  // Le bozze restano fuori anche se la sitemap viene generata in dev.
+  const caseStudies = getAllCaseStudies().filter((caseStudy) => caseStudy.published);
 
   const projectUrls: MetadataRoute.Sitemap = repos.map((repo) => {
     const lastModified = toDateOrNull(repo.updated_at);
@@ -57,6 +60,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         };
   });
 
+  const caseStudyUrls: MetadataRoute.Sitemap = caseStudies.map((caseStudy) => ({
+    url: `${baseUrl}/casi-studio/${encodeURIComponent(caseStudy.slug)}`,
+    lastModified: toDateOrNull(caseStudy.updatedAt) ?? new Date(),
+  }));
+
+  // L'indice entra in sitemap solo quando c'è almeno un caso pubblicato.
+  const caseStudiesIndex: MetadataRoute.Sitemap =
+    caseStudyUrls.length > 0
+      ? [
+          {
+            url: `${baseUrl}/casi-studio`,
+            lastModified: new Date(
+              Math.max(...caseStudyUrls.map((item) => new Date(item.lastModified!).getTime()))
+            ),
+          },
+        ]
+      : [];
+
   // Landing servizi: una voce per lingua, con le alternate hreflang reciproche.
   const landingUrls: MetadataRoute.Sitemap = Object.values(LANDING_PATHS).flatMap((paths) =>
     locales.map((locale) => ({
@@ -97,7 +118,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
     },
+    ...caseStudiesIndex,
     ...landingUrls,
+    ...caseStudyUrls,
     ...projectUrls,
     ...blogUrls,
   ];

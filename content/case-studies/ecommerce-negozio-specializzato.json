@@ -1,0 +1,68 @@
+{
+  "slug": "ecommerce-negozio-specializzato",
+  "published": true,
+  "anonymous": true,
+  "client": {
+    "it": "Negozio specializzato di elettronica di consumo, Lombardia",
+    "en": "Specialist consumer electronics shop, Lombardy"
+  },
+  "company": "Spotex S.r.l.",
+  "period": {
+    "from": null,
+    "to": null
+  },
+  "cover": "/case-studies/ecommerce-negozio-specializzato.svg",
+  "publishedAt": "2026-10-12",
+  "updatedAt": "2026-10-12",
+  "stack": [],
+  "title": {
+    "it": "E-commerce da zero per un negozio specializzato",
+    "en": "E-commerce from scratch for a specialist shop"
+  },
+  "summary": {
+    "it": "Un negozio fisico che va online. E-commerce costruito da zero.",
+    "en": "A physical shop goes online. E-commerce built from scratch."
+  },
+  "role": {
+    "it": "",
+    "en": ""
+  },
+  "problem": {
+    "it": "",
+    "en": ""
+  },
+  "constraints": {
+    "it": [],
+    "en": []
+  },
+  "solution": {
+    "it": "",
+    "en": ""
+  },
+  "results": [
+    {
+      "label": {
+        "it": "Traffico organico",
+        "en": "Organic traffic"
+      },
+      "value": "",
+      "source": ""
+    },
+    {
+      "label": {
+        "it": "Pagamenti rateali",
+        "en": "Instalment payments"
+      },
+      "value": "",
+      "source": ""
+    }
+  ],
+  "lessons": {
+    "it": "",
+    "en": ""
+  },
+  "relatedPosts": [
+    "chiusura-spotex-srl-perche-abbiamo-deciso-di-chiudere",
+    "spotex-liquidazione-blocca-progetti"
+  ]
+}

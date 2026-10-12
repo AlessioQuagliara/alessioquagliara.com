@@ -302,7 +302,7 @@ body {
   --callout-warning: #c2410c;
 }
 
-/* Superficie chiara del segmento /blog (vedi app/blog/layout.tsx) */
+/* Superficie chiara di /blog e /casi-studio (vedi i rispettivi layout.tsx) */
 .blog-surface {
   background: var(--article-bg);
   color: var(--article-text);
