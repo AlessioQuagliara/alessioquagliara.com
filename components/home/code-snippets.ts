@@ -1,7 +1,8 @@
 /**
  * Snippet "digitati" sullo schermo del MacBook nello scrollytelling.
- * Codice vero e funzionante: `python app.py` (con Flask installato) e
- * `cc sensor.c && ./a.out`. Max ~20 righe, righe corte per lo schermo.
+ * Codice vero e funzionante: `python app.py` (con Flask installato) riceve la
+ * telemetria dell'ESP32; `cc sensor.c && ./a.out` pulisce il segnale con una
+ * media mobile su buffer circolare. Max ~23 righe, righe corte per lo schermo.
  */
 
 export type TokenKind = "plain" | "keyword" | "string" | "comment" | "accent";
@@ -14,42 +15,53 @@ export type CodeSnippet = {
   tokens: Token[];
 };
 
-const APP_PY = `from random import uniform
-from flask import Flask, jsonify
+const APP_PY = `from statistics import mean
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
+readings = []  # last values sent by the ESP32
 
-def read_sensor():
-    # stand-in for the ESP32 reading
-    return round(uniform(20.0, 25.0), 2)
+@app.post("/api/sensor")
+def receive():
+    data = request.get_json(silent=True) or {}
+    if "temp" not in data:
+        return jsonify(error="temp missing"), 400
+    readings.append(float(data["temp"]))
+    del readings[:-50]  # keep the last 50
+    return jsonify(ok=True), 201
 
-@app.route("/")
-def index():
-    return jsonify(status="ok")
-
-@app.route("/api/sensor")
-def sensor():
-    return jsonify(temperature=read_sensor())
+@app.get("/api/sensor")
+def summary():
+    if not readings:
+        return jsonify(count=0)
+    avg = round(mean(readings), 2)
+    return jsonify(count=len(readings), avg=avg)
 
 if __name__ == "__main__":
-    app.run(debug=True)`;
+    app.run(host="0.0.0.0")`;
 
 const SENSOR_C = `#include <stdio.h>
 
 #define WINDOW 5
 
-int main(void) {
-  /* raw readings from the sensor */
-  int raw[] = {512, 530, 498, 801, 505, 515, 520, 509};
-  int n = sizeof raw / sizeof raw[0];
-  int sum = 0;
+/* circular buffer: the oldest reading gets overwritten */
+static int buf[WINDOW];
+static int head = 0, count = 0;
+static long sum = 0;
 
-  for (int i = 0; i < n; i++) {
-    sum += raw[i];
-    if (i >= WINDOW) sum -= raw[i - WINDOW];
-    int count = i < WINDOW ? i + 1 : WINDOW;
-    printf("raw=%d avg=%.1f\\n", raw[i], (double)sum / count);
-  }
+double smooth(int raw) {
+  if (count == WINDOW) sum -= buf[head];
+  else count++;
+  buf[head] = raw;
+  sum += raw;
+  head = (head + 1) % WINDOW;
+  return (double)sum / count;
+}
+
+int main(void) {
+  int raw[] = {512, 530, 498, 801, 505, 515, 520};
+  for (int i = 0; i < 7; i++)
+    printf("raw=%d avg=%.1f\\n", raw[i], smooth(raw[i]));
   return 0;
 }`;
 
@@ -61,7 +73,7 @@ const PYTHON_RULES: Rule[] = [
   { kind: "accent", pattern: "@[\\w.]+|\\b\\d+(?:\\.\\d+)?\\b" },
   {
     kind: "keyword",
-    pattern: "\\b(?:from|import|def|return|if|else|for|in|not|and|or|None|True|False)\\b",
+    pattern: "\\b(?:from|import|def|return|if|else|for|in|not|and|or|del|None|True|False)\\b",
   },
 ];
 
@@ -71,7 +83,7 @@ const C_RULES: Rule[] = [
   { kind: "accent", pattern: "#\\w+|\\b\\d+(?:\\.\\d+)?\\b" },
   {
     kind: "keyword",
-    pattern: "\\b(?:int|double|float|char|void|for|while|if|else|return|sizeof|const)\\b",
+    pattern: "\\b(?:int|long|double|float|char|void|static|for|while|if|else|return|sizeof|const)\\b",
   },
 ];
 

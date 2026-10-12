@@ -68,93 +68,44 @@
       "description": "Aiuto PMI e freelance con le cose noiose: documenti, magazzino, preventivi, passaggi ripetuti. Le tolgo di mezzo, senza fare scena.",
       "ctaProjects": "Guarda cosa sto costruendo",
       "ctaContact": "Hai un processo che ti fa perdere tempo? Raccontamelo.",
+      "experience": {
+        "canvasLabel": "Animazione 3D: dal ritratto di Alessio al banco da lavoro con un ESP32 su un tappetino da taglio, fino a un MacBook sulla scrivania dove compare il codice.",
+        "skip": "Salta l'animazione",
+        "hardware": {
+          "kicker": "Automazione fisica & embedded",
+          "title": "Codice che parla con le macchine.",
+          "text": "Sensori, relè, PLC, microcontrollori. Firmware compatto, zero complessità inutile. Se non serve, non lo scrivo.",
+          "metrics": [
+            {
+              "value": "520 KB",
+              "label": "di RAM sull'ESP32. Bastano, se scrivi bene."
+            },
+            {
+              "value": "Fail-safe",
+              "label": "Salta il Wi-Fi? La macchina non si pianta."
+            }
+          ]
+        },
+        "saas": {
+          "kicker": "Strumenti operativi & micro-SaaS",
+          "title": "Dai numeri grezzi a qualcosa che si usa.",
+          "text": "Il sensore manda dati. Io ci costruisco sopra l'interfaccia per magazzino, logistica e tracciamento. Niente Excel da 40 colonne.",
+          "tags": [
+            "Magazzino",
+            "Logistica",
+            "Tracciamento",
+            "Dashboard"
+          ]
+        },
+        "code": {
+          "kicker": "Dal sensore al server",
+          "title": "Codice pulito. Anche quando non guarda nessuno.",
+          "text": "Python che riceve la telemetria, C che toglie il rumore. Roba che si legge e si mantiene, anche fra un anno.",
+          "servicesLabel": "Servizi",
+          "projectsLabel": "Cosa sto costruendo"
+        }
+      },
       "sections": {
-        "whatIBuild": {
-          "title": "Cosa costruisco",
-          "subtitle": "Tre modi di togliere passaggi inutili.",
-          "canvasLabel": "Animazione: una scheda ESP32 ruota, si trasforma in un MacBook e sullo schermo si scrive codice.",
-          "steps": [
-            {
-              "kicker": "Automazione fisica",
-              "title": "Codice che parla con le macchine",
-              "text": "Arduino, ESP32 ed embedded. Sensori, relè, motori: roba che si muove davvero."
-            },
-            {
-              "kicker": "Automazione fisica",
-              "title": "Il sensore legge, il firmware decide",
-              "text": "Logica piccola e chiara. Se sbaglio un pin me ne accorgo subito. A volte dall'odore."
-            },
-            {
-              "kicker": "Automazione fisica",
-              "title": "520 KB di RAM",
-              "text": "Su un ESP32 il codice brutto non si nasconde. Ottima palestra."
-            },
-            {
-              "kicker": "Strumenti operativi",
-              "title": "Tool per chi lavora davvero",
-              "text": "Magazzino, produzione, QR e tracciamento. Meno Excel che girano per email.",
-              "badge": "Automazioni e AI per PMI e freelance."
-            },
-            {
-              "kicker": "SaaS costruiti in pubblico",
-              "title": "Piccoli SaaS, raccontati",
-              "text": "Scelte, errori, iterazioni. Tutto in pubblico, anche quando va male."
-            },
-            {
-              "kicker": "Dal sensore al server",
-              "title": "Poi si scrive codice",
-              "text": "Un'API Flask che espone il dato. Un po' di C che lo ripulisce. Il resto è manutenzione."
-            }
-          ]
-        },
-        "howIWork": {
-          "title": "Non costruisco roba per fare scena.",
-          "subtitle": "Prima guardo dove si perde tempo. Poi lo tolgo con il minimo indispensabile.",
-          "quote": "Costruisco, testo, rompo, sistemo. Poi ne parlo.",
-          "cards": [
-            {
-              "title": "Problemi veri",
-              "text": "Magazzino, documenti, passaggi ripetuti: roba che fa perdere tempo."
-            },
-            {
-              "title": "Meno complessità",
-              "text": "Se è difficile da capire e mantenere, non è una vittoria."
-            },
-            {
-              "title": "Prima prove, poi parole",
-              "text": "Un prototipo che funziona vale più di una pagina piena di claim."
-            }
-          ]
-        },
-        "selectedProjects": {
-          "title": "Progetti selezionati",
-          "subtitle": "Pochi progetti, ma veri: prodotto, automazione, sistemi.",
-          "intro": "Preferisco pochi progetti veri a un portfolio pieno di esperimenti.",
-          "eyebrow": "SaaS · automazione · tooling AI/LLM · software operativo",
-          "allProjects": "Vedi tutti i progetti"
-        },
-        "technicalFocus": {
-          "title": "Focus tecnico",
-          "subtitle": "Quello che uso davvero, senza flexing di stack.",
-          "blocks": [
-            {
-              "title": "Backend & Web",
-              "text": "Flask e Quart, interfacce semplici e mantenibili"
-            },
-            {
-              "title": "Core Skills",
-              "text": "C, strutture dati, logica applicativa, lettura del codice"
-            },
-            {
-              "title": "AI & Tooling",
-              "text": "Tooling AI/LLM, automazioni via API, piccoli agenti"
-            },
-            {
-              "title": "Hardware & Automation",
-              "text": "Arduino, ESP32, sensori, QR, prototipi embedded"
-            }
-          ]
-        },
         "contactCta": {
           "title": "Parliamone",
           "badge": "Sperimentazione gratuita · Ottobre 2026",

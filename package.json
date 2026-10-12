@@ -7,7 +7,7 @@
     "build": "node --import ./scripts/tailwind-register-hooks.mjs ./node_modules/next/dist/bin/next build",
     "start": "node --import ./scripts/tailwind-register-hooks.mjs ./node_modules/next/dist/bin/next start",
     "lint": "eslint",
-    "frames": "bash scripts/convert-frames.sh"
+    "frames": "bash scripts/convert-site-frames.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",

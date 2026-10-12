@@ -39,80 +39,6 @@ body {
     linear-gradient(135deg, #06112a 0%, #0f2f75 46%, #2664eb 100%);
 }
 
-.hero-stage {
-  position: relative;
-  overflow: clip;
-}
-
-.hero-floating-field {
-  position: absolute;
-  z-index: 0;
-  inset: 5% 38% 8% 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.1rem 1.3rem;
-  align-content: center;
-  justify-items: center;
-  pointer-events: none;
-}
-
-.hero-copy {
-  will-change: transform, opacity;
-}
-
-.hero-ambient-glow {
-  position: absolute;
-  border-radius: 999px;
-  filter: blur(48px);
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.hero-ambient-glow-one {
-  inset: 10% auto auto 4%;
-  width: 9rem;
-  height: 9rem;
-  background: rgba(88, 168, 255, 0.5);
-}
-
-.hero-ambient-glow-two {
-  right: 6%;
-  bottom: 18%;
-  width: 11rem;
-  height: 11rem;
-  background: rgba(23, 92, 223, 0.42);
-}
-
-.hero-portrait-shell,
-.hero-bg-logo {
-  will-change: transform, opacity;
-}
-
-.hero-portrait-grid {
-  background-image:
-    linear-gradient(rgba(233, 242, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(233, 242, 255, 0.08) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 88%);
-}
-
-.hero-portrait-image {
-  transform: translateY(2%);
-  filter: drop-shadow(0 38px 50px rgba(5, 16, 40, 0.7));
-}
-
-.hero-bg-logo {
-  opacity: 0.28;
-  filter: blur(2px);
-}
-
-.hero-bg-logo-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  mix-blend-mode: screen;
-}
-
 .fa-icon-shell {
   display: inline-flex;
   align-items: center;
@@ -225,21 +151,6 @@ body {
 }
 
 @media (max-width: 640px) {
-  .hero-stage {
-    overflow: visible;
-  }
-
-  .hero-floating-field {
-    inset: 4% 44% 8% -2%;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.8rem;
-  }
-
-  .hero-bg-logo {
-    opacity: 0.22;
-    filter: blur(2.8px);
-  }
-
   .github-markdown-body {
     padding: 15px;
   }
@@ -250,7 +161,6 @@ body {
     scroll-behavior: auto;
   }
 
-  .hero-bg-logo,
   .mobile-menu-link,
   .fa-icon-float,
   .fa-icon-pulse,
@@ -994,100 +904,183 @@ body {
   }
 }
 
-/* --- Scrollytelling home: "Cosa costruisco" (components/home/scroll-sequence.tsx) --- */
+/* --- Scrollytelling home a tutto schermo (components/home/scroll-experience.tsx) --- */
 
 /* Lenis gestisce lo scroll morbido: lo smooth nativo lo farebbe "doppio". */
 html.lenis {
   scroll-behavior: auto;
 }
 
-.scrolly__track {
+.experience {
+  /* Altezza della navbar sticky: lo stage ci passa sotto. */
+  --nav-h: 4.5rem;
+  --experience-bg: #06112a;
+  --chapter-left: clamp(1.25rem, 5vw, 5rem);
+  position: relative;
+  margin-top: calc(-1 * var(--nav-h));
+  background: var(--experience-bg);
+}
+
+.experience__track {
   position: relative;
 }
 
-.scrolly__stage {
+.experience__stage {
   position: sticky;
   top: 0;
   height: 100vh;
   height: 100svh;
-  display: flex;
-  align-items: center;
-  /* Spazio per la navbar sticky */
-  padding: 6rem 3rem 2.5rem;
   overflow: hidden;
 }
 
-.scrolly__copy {
-  position: relative;
-  z-index: 1;
-  width: min(34%, 24rem);
-}
-
-.scrolly__steps {
-  position: relative;
-  min-height: 15rem;
-}
-
-/* Chi esce sparisce in fretta, chi entra arriva dopo: niente testi sovrapposti. */
-.scrolly__step {
-  position: absolute;
-  inset: 0 0 auto 0;
-  opacity: 0;
-  transform: translateY(18px);
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-}
-
-.scrolly__step[data-active="true"] {
-  opacity: 1;
-  transform: none;
-  transition:
-    opacity 0.45s ease 0.18s,
-    transform 0.45s ease 0.18s;
-}
-
-/* Il canvas occupa la parte destra dello stage, il testo ci sta sopra a sinistra. */
-.scrolly__media {
-  position: absolute;
-  top: 5rem;
-  right: 0;
-  bottom: 1.5rem;
-  left: 22%;
-  /* Quando il MacBook si allarga, il bordo sinistro sfuma sotto al testo. */
-  mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
-}
-
-.scrolly__canvas {
+.experience__canvas {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
-.scrolly__fallback {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-
-.scrolly__progress {
+/* Hero: velo a sinistra, il testo resta leggibile sopra le icone del frame. */
+.experience__stage::before {
+  content: "";
   position: absolute;
-  left: 20%;
-  right: 20%;
-  bottom: 0;
-  height: 2px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: rgba(38, 100, 235, 0.14);
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(6, 17, 42, 0.78) 0%, rgba(6, 17, 42, 0.35) 38%, transparent 58%);
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 0.5s ease;
 }
 
-.scrolly__progress[data-done="true"] {
+.experience__stage[data-chapter="hero"]::before {
+  opacity: 1;
+}
+
+.experience__chapters {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Chi esce sparisce in fretta, chi entra arriva dopo: niente testi sovrapposti. */
+.experience__chapter {
+  position: absolute;
+  top: calc(50% + var(--nav-h) / 2);
+  left: var(--chapter-left);
+  width: min(34rem, 42vw);
+  opacity: 0;
+  transform: translateY(calc(-50% + 18px));
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.experience__chapter[data-active="true"] {
+  opacity: 1;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  transition:
+    opacity 0.5s ease 0.15s,
+    transform 0.5s ease 0.15s;
+}
+
+.experience__chapter--hero {
+  width: min(40rem, 50vw);
+}
+
+/* Lo schermo del MacBook sta a destra del centro: la card resta stretta. */
+.experience__chapter--code {
+  width: min(25rem, 33vw);
+}
+
+.experience__card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.75rem;
+  background: rgba(6, 17, 42, 0.74);
+  padding: 1.75rem;
+  box-shadow: 0 40px 90px -50px rgba(2, 12, 32, 1);
+  backdrop-filter: blur(14px);
+}
+
+.experience__kicker,
+.experience__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #9fc2ff;
+}
+
+.experience__title {
+  margin-top: 0.75rem;
+  font-size: clamp(1.5rem, 2.4vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.experience__body {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d8e7ff;
+}
+
+.experience__link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.55rem 0.85rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.experience__link:hover {
+  border-color: rgba(140, 180, 255, 0.6);
+  background: rgba(38, 100, 235, 0.25);
+}
+
+.experience__chip {
+  display: inline-flex;
+  border: 1px solid rgba(140, 180, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(31, 85, 202, 0.25);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  color: #edf4ff;
+  transition: background 0.2s ease;
+}
+
+.experience__chip:hover {
+  background: rgba(38, 100, 235, 0.55);
+}
+
+.experience__progress {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: rgba(140, 180, 255, 0.12);
+  transition: opacity 0.5s ease;
+}
+
+.experience__progress[data-done="true"] {
   opacity: 0;
 }
 
-.scrolly__progress span {
+.experience__progress span {
   display: block;
   height: 100%;
   background: #2664eb;
@@ -1095,65 +1088,115 @@ html.lenis {
   transform-origin: left;
 }
 
-/* Reduced motion: niente scroll lungo, tutto visibile */
-.scrolly[data-mode="static"] .scrolly__stage {
-  position: relative;
-  height: auto;
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.45fr);
-  align-items: start;
-  gap: 2rem;
+/* "Salta l'animazione": visibile solo col focus da tastiera. */
+.experience__skip {
+  position: absolute;
+  z-index: 70;
+  top: calc(var(--nav-h) + 0.75rem);
+  left: var(--chapter-left);
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #12347d;
+  transform: translateY(-200%);
+  opacity: 0;
 }
 
-.scrolly[data-mode="static"] .scrolly__copy {
-  width: auto;
-}
-
-.scrolly[data-mode="static"] .scrolly__steps {
-  display: grid;
-  gap: 2rem;
-  min-height: 0;
-}
-
-.scrolly[data-mode="static"] .scrolly__step {
-  position: static;
-  opacity: 1;
+.experience__skip:focus-visible {
   transform: none;
+  opacity: 1;
 }
 
-.scrolly__static {
-  display: grid;
-  gap: 1rem;
+.experience__poster {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
 }
 
-.scrolly__static img {
+.experience__poster img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-@media (max-width: 767px) {
-  /* Mobile: testo in alto, canvas sotto. */
-  .scrolly__stage {
-    align-items: flex-start;
-    padding: 5.5rem 1.25rem 1.5rem;
+/* Mobile in verticale (stesso rapporto di NARROW_ASPECT): testo in alto, frame in una fascia sotto. */
+@media (max-aspect-ratio: 11/10) {
+  .experience__chapter,
+  .experience__chapter--hero,
+  .experience__chapter--code {
+    top: calc(var(--nav-h) + 1rem);
+    right: 1rem;
+    left: 1rem;
+    width: auto;
+    transform: translateY(18px);
   }
 
-  .scrolly__copy {
-    width: 100%;
+  .experience__chapter[data-active="true"] {
+    transform: none;
   }
 
-  .scrolly__steps {
-    min-height: 13rem;
+  .experience__stage::before {
+    background: linear-gradient(180deg, rgba(6, 17, 42, 0.7) 0%, transparent 60%);
   }
 
-  .scrolly__media {
-    top: 45%;
-    left: 0;
-    mask-image: none;
+  .experience__card {
+    border-radius: 1.25rem;
+    padding: 1.1rem 1.2rem;
   }
 
-  .scrolly[data-mode="static"] .scrolly__stage {
-    grid-template-columns: minmax(0, 1fr);
+  .experience__body {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  /* Ultimo capitolo: la card deve finire sopra lo schermo del MacBook. */
+  .experience[data-mode="scroll"] .experience__chapter--code .experience__title {
+    font-size: 1.3rem;
+  }
+
+  .experience[data-mode="scroll"] .experience__chapter--code .experience__body {
+    display: none;
+  }
+
+  .experience[data-mode="scroll"] .experience__chapter--code .experience__link {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Reduced motion: niente scrub, card verticali con i frame statici. */
+.experience[data-mode="static"] .experience__stage {
+  position: relative;
+  height: auto;
+}
+
+.experience[data-mode="static"] .experience__chapters {
+  position: relative;
+  display: grid;
+  gap: 3rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + 3rem) 1.25rem 4rem;
+}
+
+.experience[data-mode="static"] .experience__chapter {
+  position: relative;
+  inset: auto;
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+  width: auto;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+@media (min-width: 900px) {
+  .experience[data-mode="static"] .experience__chapter {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   }
 }
 
@@ -1161,6 +1204,9 @@ html.lenis {
 
 .code-overlay {
   position: absolute;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   container-type: size;
   overflow: hidden;
   border-radius: 0.35rem;
@@ -1177,7 +1223,7 @@ html.lenis {
   opacity: 1;
 }
 
-/* ?debug=1: area dello schermo sempre visibile, per calibrare SCREEN_RECT */
+/* ?debug=1: area dello schermo sempre visibile, per calibrare SCREEN_BOUNDS */
 .code-overlay[data-debug="true"] {
   opacity: 1;
   outline: 2px solid red;
@@ -1199,6 +1245,10 @@ html.lenis {
 .code-overlay__tab {
   padding: 0.45em 1em;
   color: #8b949e;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .code-overlay__tab[data-active="true"] {
@@ -1208,7 +1258,10 @@ html.lenis {
 }
 
 .code-overlay__code {
-  display: none;
+  /* I due file stanno nella stessa cella: il cambio è una dissolvenza. */
+  grid-area: 2 / 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   margin: 0;
   padding: 0.7em 1em;
   line-height: 1.4;
@@ -1216,7 +1269,7 @@ html.lenis {
 }
 
 .code-overlay__code[data-active="true"] {
-  display: block;
+  opacity: 1;
 }
 
 .code-overlay .tok-keyword {

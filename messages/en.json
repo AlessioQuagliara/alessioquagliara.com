@@ -63,98 +63,49 @@
         "title": "Software and automations for SMEs and freelancers | Alessio Quagliara",
         "description": "Software and automations for small businesses and freelancers. I take the boring stuff: documents, inventory, quotes. The stuff that eats your hours."
       },
-      "badge": "Build in Public · SaaS · AI Engineering",
+      "badge": "Build in Public · Web apps · Automation · Real systems",
       "title": "I build software and automations that are still standing.",
       "description": "I help small businesses and freelancers with the boring stuff: documents, inventory, quotes, repeated steps. I get rid of them, no show.",
-      "ctaProjects": "Explore the projects",
-      "ctaContact": "Get in touch",
+      "ctaProjects": "See what I'm building",
+      "ctaContact": "Got a process eating your time? Tell me.",
+      "experience": {
+        "canvasLabel": "3D animation: from Alessio's portrait to a workbench with an ESP32 on a cutting mat, then a MacBook on the desk where the code shows up.",
+        "skip": "Skip the animation",
+        "hardware": {
+          "kicker": "Physical automation & embedded",
+          "title": "Code that talks to machines.",
+          "text": "Sensors, relays, PLCs, microcontrollers. Small firmware, zero pointless complexity. If it's not needed, I don't write it.",
+          "metrics": [
+            {
+              "value": "520 KB",
+              "label": "of RAM on the ESP32. Plenty, if you write well."
+            },
+            {
+              "value": "Fail-safe",
+              "label": "Wi-Fi drops? The machine keeps going."
+            }
+          ]
+        },
+        "saas": {
+          "kicker": "Operational tools & micro-SaaS",
+          "title": "From raw numbers to something people use.",
+          "text": "The sensor sends data. I build the interface on top: warehouse, logistics, tracking. No 40-column spreadsheets.",
+          "tags": [
+            "Warehouse",
+            "Logistics",
+            "Tracking",
+            "Dashboards"
+          ]
+        },
+        "code": {
+          "kicker": "From sensor to server",
+          "title": "Clean code. Even when nobody's looking.",
+          "text": "Python takes the telemetry, C cleans up the noise. Code you can read and maintain, even a year from now.",
+          "servicesLabel": "Services",
+          "projectsLabel": "What I'm building"
+        }
+      },
       "sections": {
-        "whatIBuild": {
-          "title": "What I Build",
-          "subtitle": "Three ways to remove useless steps.",
-          "canvasLabel": "Animation: an ESP32 board spins, turns into a MacBook, and code gets typed on the screen.",
-          "steps": [
-            {
-              "kicker": "Physical automation",
-              "title": "Code that talks to machines",
-              "text": "Arduino, ESP32 and embedded. Sensors, relays, motors: stuff that actually moves."
-            },
-            {
-              "kicker": "Physical automation",
-              "title": "The sensor reads, the firmware decides",
-              "text": "Small, clear logic. Wire the wrong pin and I know right away. Sometimes by the smell."
-            },
-            {
-              "kicker": "Physical automation",
-              "title": "520 KB of RAM",
-              "text": "On an ESP32, ugly code has nowhere to hide. Great gym."
-            },
-            {
-              "kicker": "Operational tools",
-              "title": "Tools for people who actually work",
-              "text": "Warehouse, production, QR and tracking. Fewer spreadsheets bouncing around by email.",
-              "badge": "Automations and AI for SMEs and freelancers."
-            },
-            {
-              "kicker": "SaaS built in public",
-              "title": "Small SaaS, shared openly",
-              "text": "Choices, mistakes, iterations. All in public, even when it goes wrong."
-            },
-            {
-              "kicker": "From sensor to server",
-              "title": "Then we write code",
-              "text": "A Flask API that exposes the reading. A bit of C that cleans it up. The rest is maintenance."
-            }
-          ]
-        },
-        "howIWork": {
-          "title": "How I Work",
-          "subtitle": "Fewer claims, more practice.",
-          "quote": "I do not use complexity to impress. I remove it until the project breathes better.",
-          "cards": [
-            {
-              "title": "Build before claiming",
-              "text": "I'd rather show real prototypes than call myself an expert."
-            },
-            {
-              "title": "Simplicity before stack",
-              "text": "Tools I understand and can maintain. Complexity only when needed."
-            },
-            {
-              "title": "Real problems",
-              "text": "Where software, automation and physical systems meet."
-            }
-          ]
-        },
-        "selectedProjects": {
-          "title": "Selected Projects",
-          "subtitle": "A few projects, but real: product, automation, systems.",
-          "intro": "I'd rather show a few real projects than a portfolio of experiments.",
-          "eyebrow": "SaaS · automation · AI/LLM tooling · operational software",
-          "allProjects": "View all projects"
-        },
-        "technicalFocus": {
-          "title": "Technical Focus",
-          "subtitle": "What I actually use — no stack flexing.",
-          "blocks": [
-            {
-              "title": "Backend & Web",
-              "text": "Flask and Quart, simple, maintainable interfaces"
-            },
-            {
-              "title": "Core Skills",
-              "text": "C, data structures, application logic, code reading"
-            },
-            {
-              "title": "AI & Tooling",
-              "text": "AI/LLM tooling, API automations, small agents"
-            },
-            {
-              "title": "Hardware & Automation",
-              "text": "Arduino, ESP32, sensors, QR, embedded prototypes"
-            }
-          ]
-        },
         "contactCta": {
           "title": "Let's talk",
           "badge": "Free pilot program · October 2026",
