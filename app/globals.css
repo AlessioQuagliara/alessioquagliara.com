@@ -1456,7 +1456,7 @@ html.lenis {
 }
 
 /* Tab della timeline e filtri dello stack. */
-.about-tab,
+.ui-tab,
 .about-filter {
   border-radius: 0.75rem;
   padding: 0.55rem 1rem;
@@ -1468,13 +1468,13 @@ html.lenis {
     color 0.2s ease;
 }
 
-.about-tab:hover,
+.ui-tab:hover,
 .about-filter:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.06);
 }
 
-.about-tab[aria-selected="true"],
+.ui-tab[aria-selected="true"],
 .about-filter[aria-pressed="true"] {
   background: #2664eb;
   color: #fff;
@@ -1489,7 +1489,7 @@ html.lenis {
   border-color: #2664eb;
 }
 
-.about-tab:focus-visible,
+.ui-tab:focus-visible,
 .about-filter:focus-visible,
 .about-chip:focus-visible {
   outline: 2px solid #8ab0ff;
@@ -1611,6 +1611,396 @@ html.lenis {
   .about-bento:hover,
   .about-chip:hover,
   .about-chip[aria-pressed="true"] {
+    transform: none;
+  }
+}
+
+/* ---------- Landing servizi ---------- */
+
+/* Calcolatore ore: righe-checkbox cliccabili per intero. */
+.calc-task {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.6rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #e6f0ff;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.calc-task:hover {
+  border-color: rgba(140, 180, 255, 0.4);
+}
+
+.calc-task:has(:checked) {
+  border-color: rgba(124, 240, 181, 0.45);
+  background: rgba(124, 240, 181, 0.08);
+}
+
+.calc-task:has(:focus-visible) {
+  outline: 2px solid #8ab0ff;
+  outline-offset: 2px;
+}
+
+.calc-task__input {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: none;
+  accent-color: #2664eb;
+}
+
+/* Casi d'uso: tre riquadri problema → soluzione → risultato. */
+.usecase-step {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.4rem;
+  animation: about-step-in 0.4s ease both;
+}
+
+.usecase-step__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.usecase-step--problem {
+  background: rgba(255, 120, 150, 0.08);
+  border-color: rgba(255, 150, 175, 0.25);
+  color: #ffe3ea;
+}
+
+.usecase-step--problem .usecase-step__label {
+  color: #ffb4c4;
+}
+
+.usecase-step--solution {
+  background: rgba(38, 100, 235, 0.22);
+  border-color: rgba(140, 180, 255, 0.35);
+  color: #edf4ff;
+}
+
+.usecase-step--solution .usecase-step__label {
+  color: #9fc2ff;
+}
+
+.usecase-step--result {
+  background: rgba(124, 240, 181, 0.1);
+  border-color: rgba(124, 240, 181, 0.35);
+  color: #e3fff2;
+}
+
+.usecase-step--result .usecase-step__label {
+  color: #7cf0b5;
+}
+
+.usecase-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #9cbcff;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 1024px) {
+  .usecase-arrow {
+    transform: none;
+  }
+}
+
+/* Prima / dopo. */
+.compare-toggle {
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #35548c;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.compare-toggle[data-variant="before"][aria-pressed="true"] {
+  background: #b4234a;
+  color: #fff;
+}
+
+.compare-toggle[data-variant="after"][aria-pressed="true"] {
+  background: #2664eb;
+  color: #fff;
+}
+
+.compare-toggle:focus-visible {
+  outline: 2px solid #2664eb;
+  outline-offset: 2px;
+}
+
+.compare-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 0.5rem;
+}
+
+.compare-flow__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: about-step-in 0.35s ease both;
+}
+
+.compare-flow__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 0.8rem;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.compare-flow__mark {
+  font-size: 0.75rem;
+}
+
+.compare-flow[data-state="before"] .compare-flow__chip {
+  border: 1px dashed #e2a3b3;
+  background: #fff1f4;
+  color: #8a1a37;
+}
+
+.compare-flow[data-state="before"] .compare-flow__item:nth-child(odd) .compare-flow__chip {
+  transform: rotate(-2deg);
+}
+
+.compare-flow[data-state="before"] .compare-flow__item:nth-child(even) .compare-flow__chip {
+  transform: rotate(2deg) translateY(4px);
+}
+
+.compare-flow[data-state="before"] .compare-flow__arrow {
+  color: #d16a86;
+}
+
+.compare-flow[data-state="after"] .compare-flow__chip {
+  border: 1px solid #b9d0ff;
+  background: #eaf2ff;
+  color: #12347d;
+}
+
+.compare-flow[data-state="after"] .compare-flow__mark {
+  color: #1a9a63;
+}
+
+.compare-flow[data-state="after"] .compare-flow__arrow {
+  font-weight: 700;
+  color: #2664eb;
+}
+
+/* Processo: freccia tra le card, solo su desktop. */
+.process-step__arrow {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .process-step__arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: -1.05rem;
+    display: flex;
+    width: 1.6rem;
+    height: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #2664eb;
+    font-size: 0.8rem;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+}
+
+/* Garanzie: bento chiaro. */
+.guarantee-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d8e6ff;
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(38, 100, 235, 0.08), transparent 50%),
+    #fff;
+  padding: 1.75rem;
+  box-shadow: 0 25px 65px -52px rgba(15, 52, 125, 0.55);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.guarantee-card:hover {
+  transform: translateY(-4px);
+  border-color: #9fc0ff;
+}
+
+.guarantee-card__icon {
+  display: inline-flex;
+  align-self: flex-start;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.9rem;
+  background: #2664eb;
+  color: #fff;
+}
+
+/* Form rapido nel box CTA. */
+.quick-form__field {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.8rem;
+  background: rgba(4, 14, 38, 0.45);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.quick-form__field::placeholder {
+  color: #8fa8d6;
+}
+
+.quick-form__field:focus {
+  outline: 2px solid #8ab0ff;
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .usecase-step,
+  .compare-flow__item {
+    animation: none;
+  }
+
+  .guarantee-card {
+    transition: none;
+  }
+
+  .guarantee-card:hover {
+    transform: none;
+  }
+}
+
+/* Selezione rapida del form: radio nascosti, etichette a pillola. */
+.quick-form__choice {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #dbe8ff;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.quick-form__choice:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.quick-form__choice:has(:checked) {
+  border-color: #fff;
+  background: #fff;
+  color: #0b2a6b;
+}
+
+.quick-form__choice:has(:focus-visible) {
+  outline: 2px solid #8ab0ff;
+  outline-offset: 2px;
+}
+
+/* Landing SaaS: roadmap orizzontale su desktop, verticale su mobile. */
+.roadmap {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.roadmap__step {
+  position: relative;
+  padding-left: 3.25rem;
+}
+
+.roadmap__dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #2664eb;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 0 6px rgba(38, 100, 235, 0.15);
+}
+
+.roadmap__step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 1.1rem;
+  top: 2.5rem;
+  bottom: -1.5rem;
+  width: 2px;
+  background: linear-gradient(180deg, #2664eb, rgba(38, 100, 235, 0.15));
+}
+
+@media (min-width: 1024px) {
+  .roadmap {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .roadmap__step {
+    padding-left: 0;
+    padding-top: 3.5rem;
+  }
+
+  .roadmap__step:not(:last-child)::before {
+    left: 2.75rem;
+    right: -1.25rem;
+    top: 1.1rem;
+    bottom: auto;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(90deg, #2664eb, rgba(38, 100, 235, 0.2));
+  }
+}
+
+/* Card di prodotto: immagine che si avvicina in hover. */
+.product-card img {
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card img {
+    transition: none;
+  }
+
+  .product-card:hover img {
     transform: none;
   }
 }

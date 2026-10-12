@@ -29,8 +29,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   const { experience } = home;
   const { projects, ...saas } = experience.saas;
 
-  // Servizi: automazioni → contatti della landing freelance/agenzie; web app & SaaS → contatti.
-  const serviceHrefs = [`${getLandingPath("freelance", locale)}#contact`, withLang("/contact", locale)];
+  // Servizi: dritti al box contatti delle landing (automazioni, web app & SaaS).
+  const serviceHrefs = [
+    `${getLandingPath("freelance", locale)}#contact`,
+    `${getLandingPath("saas", locale)}#contact`,
+  ];
   const services = home.sections.services.items.map((item, index) => ({
     ...item,
     href: serviceHrefs[index],

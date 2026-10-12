@@ -13,6 +13,7 @@
         "about": "About",
         "education": "Formazione",
         "projects": "Progetti",
+        "saas": "Web App & SaaS",
         "caseStudies": "Casi studio",
         "blog": "Blog",
         "contact": "Contatti",
@@ -29,6 +30,7 @@
         "brandSubtitle": "Sviluppo software e automazioni che sono ancora in piedi",
         "brandDescription": "Micro-SaaS, web app e automazioni per agenzie, freelance e PMI. Le cose noiose che rimandi da mesi.",
         "section": {
+          "services": "Servizi",
           "legal": "Legale",
           "contacts": "Contatti"
         },
@@ -556,7 +558,7 @@
     },
     "services": {
       "title": "Servizi",
-      "intro": "Due pagine, due mondi. Scegli il tuo.",
+      "intro": "Tre pagine, tre lavori diversi. Scegli il tuo.",
       "freelance": {
         "label": "Automazioni per freelance e piccole agenzie",
         "text": "Meno copia-incolla tra lead, clienti, preventivi e report."
@@ -564,216 +566,170 @@
       "industrial": {
         "label": "Automazione e AI per PMI industriali",
         "text": "Meno passaggi a mano tra gestionale, produzione e uffici."
+      },
+      "saas": {
+        "label": "Sviluppo web app e SaaS",
+        "text": "Dall'idea al deploy: piattaforme solide e facili da mantenere."
       }
     },
     "landingCommon": {
       "pilotBadge": "Pilota gratuito per {slots} realtà — {deadline}",
-      "pilotCta": "Candidati al pilota gratuito",
-      "callCta": "Prenota una call esplorativa",
-      "contactCta": "Vai alla pagina contatti",
       "newTab": "(si apre in una nuova scheda)",
       "faqEyebrow": "Domande frequenti",
-      "fitFor": "Fa per te se",
-      "fitNotFor": "Lascia stare se",
       "illustrativeLabel": "Esempio illustrativo, non case study",
-      "photoAlt": "Ritratto di Alessio Quagliara",
-      "linksTitle": "Non fidarti, controlla",
-      "aboutLink": "Il mio percorso",
-      "projectsLink": "Progetti e repository",
-      "githubLink": "Profilo GitHub",
-      "blogLink": "Blog: diario di bordo, errori inclusi",
-      "contactLink": "Contatti",
-      "readArticle": "Ne ho scritto qui"
+      "contactLink": "Contatti"
     },
     "landings": {
       "freelance": {
         "metadata": {
-          "title": "Automazioni per freelance e agenzie | Alessio Quagliara",
-          "description": "Automazioni pratiche per freelance, consulenti e piccole agenzie: meno attività manuali tra lead, clienti, email, file e report. Si parte da un flusso reale."
+          "title": "Automazioni per freelance e agenzie digitali | Alessio Quagliara",
+          "description": "Basta copia-incolla tra lead, preventivi, clienti e report. Automazioni su misura per freelance, studi e agenzie digitali: si parte da un flusso, in pochi giorni."
         },
         "schema": {
-          "serviceName": "Automazioni per freelance, consulenti e piccole agenzie",
+          "serviceName": "Automazioni per freelance, studi e agenzie digitali",
           "serviceType": "Automazione dei processi e integrazione di strumenti"
         },
         "hero": {
-          "eyebrow": "Freelance · consulenti · micro-agenzie",
-          "title": "Automazioni per freelance: meno lavoro manuale, più tempo sul lavoro che conta.",
-          "subtitle": "Collego gli strumenti che usi già e tolgo i passaggi a mano tra lead, clienti, email, preventivi e report. Si parte da un flusso. Uno.",
-          "microcopy": "Niente audit da 40 pagine. Niente slide. Un flusso vero.",
-          "secondaryCta": "Mappa il tuo processo",
-          "emailSubject": "Automazioni freelance: il flusso che vorrei sistemare",
-          "visualTitle": "Un flusso, non un progetto infinito",
-          "visualSteps": [
-            "Richiesta",
-            "Qualifica",
-            "Task",
-            "Cartella",
-            "Risposta",
-            "CRM"
-          ]
+          "eyebrow": "Freelance · studi · agenzie digitali",
+          "title": "Basta copia-incolla tra lead, preventivi, clienti e report.",
+          "subtitle": "Collego i tool che usi già e tolgo i passaggi a mano che ti mangiano ore ogni settimana. Tu e il tuo team tornate a lavorare per i clienti, non per i fogli di calcolo.",
+          "microcopy": "Niente audit da 40 pagine. Un flusso, in pochi giorni.",
+          "primaryCta": "Prenota una call di mappatura",
+          "secondaryCta": "Scrivimi il tuo flusso",
+          "emailSubject": "Automazioni freelance: il flusso che vorrei sistemare"
         },
-        "problem": {
-          "eyebrow": "Il problema non è la tua disciplina",
-          "title": "Se copi gli stessi dati due volte, il problema non sei tu. È il processo.",
-          "paragraphs": [
-            "Non ti manca il lavoro. Ti manca il tempo. Più clienti hai, più ore finiscono in copia-incolla, promemoria e fogli che capisci solo tu."
+        "calculator": {
+          "title": "Quante ore ti stanno rubando?",
+          "intro": "Spunta quello che fai ancora a mano.",
+          "tasks": [
+            {
+              "label": "Copiare i lead da form ed email al CRM",
+              "hours": 1.5
+            },
+            {
+              "label": "Preparare preventivi partendo da un vecchio file",
+              "hours": 2
+            },
+            {
+              "label": "Onboarding clienti: cartelle, accessi, email",
+              "hours": 1.5
+            },
+            {
+              "label": "Rincorrere firme e pagamenti",
+              "hours": 1
+            },
+            {
+              "label": "Report mensili per i clienti",
+              "hours": 2
+            },
+            {
+              "label": "Aggiornare il team su chat e tool diversi",
+              "hours": 1
+            }
           ],
-          "symptomsTitle": "Ti suona familiare?",
-          "symptoms": [
-            "Copi lo stesso contatto in tre posti.",
-            "Rifai lo stesso report ogni mese, da zero.",
-            "Insegui follow-up invece di lavorare."
-          ],
-          "chaosTitle": "Il tuo flusso oggi",
-          "chaosCaption": "Ogni strumento funziona. In mezzo ci sei tu, a fare da cavo.",
-          "chaosTools": [
-            "Form",
-            "Email",
-            "Fogli",
-            "CRM",
-            "Task",
-            "Drive",
-            "Chat",
-            "Fatture"
-          ],
-          "chaosCenter": "Tu, il cavo umano"
+          "perWeek": "ore a settimana",
+          "perMonth": "≈ {hours} ore al mese da riprendersi",
+          "empty": "Spunta almeno una voce.",
+          "note": "Stima indicativa: dipende da volumi e strumenti. In call la facciamo sui tuoi numeri."
         },
-        "automations": {
-          "eyebrow": "Cosa possiamo automatizzare",
-          "title": "Dove si perde tempo (di solito)",
-          "intro": "Parto da quello che fai ogni settimana. La tecnologia viene dopo.",
-          "changeLabel": "Cosa cambia",
-          "cards": [
+        "useCases": {
+          "eyebrow": "Casi d'uso",
+          "title": "Tre flussi che si automatizzano quasi sempre",
+          "labels": {
+            "problem": "Oggi, a mano",
+            "solution": "Automatizzato",
+            "result": "Risultato"
+          },
+          "items": [
             {
-              "title": "Lead e richieste",
-              "flow": "Form / email / DM → CRM + task",
-              "change": "La richiesta arriva già in ordine. Tu decidi solo cosa rispondere."
+              "id": "onboarding",
+              "label": "Onboarding",
+              "problem": "Contratto firmato, poi: cartella su Drive, accessi, email di benvenuto, task nel project manager. Ogni volta a mano, e qualcosa salta.",
+              "solution": "La firma o il pagamento fanno partire tutto: cartella, accessi, email e task si creano da soli, sempre uguali.",
+              "result": "Il cliente parte il giorno stesso. Nessuno deve ricordarsi la checklist."
             },
             {
-              "title": "Onboarding cliente",
-              "flow": "Firma → domande, cartella, checklist",
-              "change": "Il cliente riceve le domande giuste. Tu non dimentichi il passo quattro."
+              "id": "leads",
+              "label": "Lead Management",
+              "problem": "Lead da form, email e DM. Finiscono nel CRM quando qualcuno se lo ricorda. Qualcuno resta senza risposta.",
+              "solution": "Ogni lead entra nel CRM da solo, con fonte e priorità. L'AI prepara una bozza di risposta, tu la approvi.",
+              "result": "Nessun lead perso, prima risposta in giornata."
             },
             {
-              "title": "Follow-up",
-              "flow": "Silenzio dopo il preventivo → promemoria",
-              "change": "Ti ricorda chi sentire, con lo storico davanti. Il messaggio lo scrivi tu."
-            },
-            {
-              "title": "Preventivi e report",
-              "flow": "Dati inseriti una volta → riusati",
-              "change": "Scrivi una volta, ritrovi tutto nel preventivo e nel report."
-            },
-            {
-              "title": "Operations",
-              "flow": "Strumenti che hai → collegati",
-              "change": "Non cambi tool. Cambia quello che passa tra uno e l'altro."
+              "id": "reports",
+              "label": "Report automatici",
+              "problem": "Fine mese: export da Analytics, Ads e fogli, copia nelle slide, impagina. Per ogni cliente.",
+              "solution": "I dati si raccolgono da soli in un report con lo stesso formato per tutti. Tu aggiungi solo il commento.",
+              "result": "Il report è pronto il primo del mese. Tu scrivi due righe e lo mandi."
             }
           ]
         },
-        "method": {
-          "eyebrow": "Come lavoro",
-          "title": "Piccolo, testabile. Poi si vede.",
-          "intro": "Prima capire il problema. Poi decidere se costruire.",
-          "steps": [
-            {
-              "title": "Troviamo il collo di bottiglia",
-              "text": "Una call. Qual è il flusso che ti mangia più ore?"
-            },
-            {
-              "title": "Lo mappiamo",
-              "text": "Chi tocca cosa, dove si duplica, dove si sbaglia."
-            },
-            {
-              "title": "Costruiamo un pezzo piccolo",
-              "text": "Sui tuoi strumenti. Spesso n8n, a volte due righe di Python."
-            },
-            {
-              "title": "Vediamo se serve",
-              "text": "Nel tuo lavoro vero, non in una demo."
-            },
-            {
-              "title": "Solo se funziona, si allarga",
-              "text": "Se non regge, lo diciamo e ci fermiamo."
-            }
-          ],
-          "notes": [
-            "Niente cambio di piattaforma forzato.",
-            "Niente automazioni per fare scena.",
-            "Se non conviene, te lo dico."
-          ]
-        },
-        "example": {
-          "eyebrow": "Esempio di flusso",
-          "title": "Dal form al cliente pronto, senza copia-incolla",
-          "flowTitle": "Il flusso",
-          "flow": [
-            "Form compilato",
-            "Qualifica",
-            "Task",
-            "Cartella cliente",
-            "Prima risposta",
-            "CRM aggiornato"
-          ],
+        "compare": {
+          "eyebrow": "Prima / dopo",
+          "title": "Lo stesso cliente, due flussi",
+          "beforeLabel": "Prima",
+          "afterLabel": "Dopo",
           "before": {
-            "title": "Prima",
-            "items": [
-              "Copi i dati nel CRM a mano.",
-              "Crei task e cartella a mano.",
-              "Speri di ricordarti il follow-up."
+            "summary": "Sei passaggi a mano, quattro tool, una persona che deve ricordarsi tutto.",
+            "steps": [
+              "Lead via email",
+              "Copia nel foglio",
+              "Preventivo da vecchio file",
+              "Rincorri la firma",
+              "Cartelle e accessi",
+              "Avvisi il team in chat"
             ]
           },
           "after": {
-            "title": "Dopo",
-            "items": [
-              "I dati sono già nel CRM.",
-              "Task e cartella sono già pronti.",
-              "Il follow-up è in calendario. Tu rispondi e basta."
-            ]
-          },
-          "aiTitle": "AI: dove aiuta e dove no",
-          "aiCan": {
-            "title": "Aiuta a",
-            "items": [
-              "smistare e riassumere richieste;",
-              "preparare bozze."
-            ]
-          },
-          "aiCannot": {
-            "title": "Decidi tu",
-            "items": [
-              "clienti, prezzi, scadenze;",
-              "cosa parte a tuo nome."
+            "summary": "Un solo passaggio a mano: approvi il preventivo.",
+            "steps": [
+              "Lead dal form",
+              "CRM aggiornato",
+              "Preventivo da template",
+              "Firma digitale",
+              "Onboarding automatico",
+              "Team avvisato"
             ]
           }
         },
-        "fit": {
-          "eyebrow": "Per chi è",
-          "title": "Non è per tutti. Meglio dirlo subito.",
-          "forItems": [
-            "Hai un flusso che si ripete ogni settimana.",
-            "Usi già qualche strumento, anche se non si parlano.",
-            "Vuoi sistemare il processo, non solo nasconderlo."
-          ],
-          "notForItems": [
-            "Vuoi un chatbot sul sito e via.",
-            "Vuoi \"fare AI\" senza sapere per cosa.",
-            "Vuoi un progetto enorme senza un problema preciso."
-          ],
-          "crossLinkText": "Hai un'azienda con processi più strutturati?",
-          "crossLinkLabel": "La pagina giusta è questa"
-        },
-        "credibility": {
-          "eyebrow": "Chi c'è dietro",
-          "title": "Niente linguaggio da consulente",
-          "paragraphs": [
-            "Ho visto troppe soluzioni eleganti che non usa nessuno. Qualcuna l'ho fatta io.",
-            "Full Stack Developer, studente di Ingegneria Informatica (sistemi intelligenti), un passato in una software house SRL con poche risorse e tante urgenze. L'AI la uso per lavorare meglio, non per saltare le competenze."
-          ],
-          "principles": [
-            "Non serve AI per ogni problema.",
-            "Una buona automazione funziona anche quando io non ci sono."
+        "process": {
+          "eyebrow": "Come funziona",
+          "title": "Tre step. Niente progetti infiniti.",
+          "steps": [
+            {
+              "title": "Mappatura del collo di bottiglia",
+              "meta": "20 min",
+              "text": "Una call: mi mostri il flusso vero e scegliamo il passaggio che ti costa di più."
+            },
+            {
+              "title": "Costruzione e test dell'integrazione",
+              "meta": "3–5 giorni",
+              "text": "Collego i tool che usi già e lo provo con i tuoi dati, non con una demo."
+            },
+            {
+              "title": "Consegna chiavi in mano",
+              "meta": "Documentazione pulita",
+              "text": "Ti lascio l'automazione funzionante e una documentazione che si capisce anche senza di me."
+            }
           ]
+        },
+        "finalCta": {
+          "title": "Qual è il passaggio che ti costa più ore?",
+          "text": "Prenota una call di mappatura: guardiamo il flusso e ti dico se conviene automatizzarlo. Se non conviene, te lo dico. A me costa un cliente, a te risparmia soldi.",
+          "primaryCta": "Prenota una call di mappatura",
+          "form": {
+            "title": "Preferisci scrivere?",
+            "nameLabel": "Nome",
+            "flowLabel": "Il flusso che ti fa perdere tempo",
+            "flowPlaceholder": "Es. copio i lead dal form al CRM e poi preparo il preventivo a mano",
+            "submit": "Prepara l'email",
+            "note": "Si apre il tuo programma di posta con il messaggio pronto. Qui non salvo niente.",
+            "subject": "Automazioni: il flusso di {name}"
+          }
+        },
+        "crossLink": {
+          "text": "Hai un'azienda con produzione o macchinari?",
+          "label": "La pagina giusta è questa"
         },
         "faq": {
           "title": "Domande prima di iniziare",
@@ -794,16 +750,6 @@
               "pilot": false
             },
             {
-              "question": "L'AI prenderà decisioni al posto mio?",
-              "answer": "No. Prepara bozze e mette in ordine. Le decisioni restano tue.",
-              "pilot": false
-            },
-            {
-              "question": "Quanto deve essere strutturato il mio processo?",
-              "answer": "Non serve perfetto, serve che esista. Se è solo nella tua testa, lo scriviamo insieme.",
-              "pilot": false
-            },
-            {
               "question": "Cosa comprende il pilota gratuito?",
               "answer": "{slots} posti fino a {deadline}. Mappo un flusso, ti propongo un intervento e, se ha senso, costruisco una prima automazione. Non è un progetto completo gratis. In cambio racconto il percorso come caso studio, solo con quello che approvi tu.",
               "pilot": true
@@ -819,31 +765,25 @@
               "pilot": false
             }
           ]
-        },
-        "finalCta": {
-          "title": "Hai un processo che ti fa perdere tempo ogni settimana? Vediamo se vale la pena automatizzarlo.",
-          "text": "Una call. Se non conviene, te lo dico. A me costa un cliente, a te risparmia soldi."
-        },
-        "relatedPosts": [
-          "automazione-freelancer-clienti-flussi",
-          "why-i-stopped-overengineering"
-        ]
+        }
       },
       "industrial": {
         "metadata": {
           "title": "Automazione e AI per PMI industriali | Alessio Quagliara",
-          "description": "Integrazioni, automazioni e AI applicata per PMI. Riduci passaggi manuali e rendi i processi più visibili."
+          "description": "Automazioni mirate per PMI industriali e manifatturiere: ordini da PDF, dati dalle macchine, tracking commesse. Prototipo pilota in 7–10 giorni, senza toccare ciò che funziona."
         },
         "schema": {
           "serviceName": "Automazione dei processi e AI applicata per PMI industriali",
           "serviceType": "Automazione dei processi aziendali e integrazione software"
         },
         "hero": {
-          "eyebrow": "PMI · integrazioni · AI applicata",
-          "title": "Automazione e AI per PMI industriali: meno passaggi manuali, più controllo sui processi.",
-          "subtitle": "Prendo un flusso reale — gestionale, produzione, dati, comunicazioni — e lo collego a persone e sistemi che hai già. Senza rifare tutto.",
+          "eyebrow": "PMI industriali e manifatturiere",
+          "badge": "Niente progetti da 18 mesi: prototipi rapidi che risolvono colli di bottiglia reali",
+          "title": "Meno passaggi a mano tra ordini, macchine e ufficio.",
+          "subtitle": "Automazioni mirate che collegano ordini, macchinari e il gestionale che avete già. Un collo di bottiglia alla volta, senza rifare tutto e senza complicare la vita a chi lavora.",
           "microcopy": "Non fermiamo niente. Non rifacciamo tutto da zero.",
-          "secondaryCta": "Mappa il tuo processo",
+          "primaryCta": "Prenota un audit tecnico di 30 minuti",
+          "secondaryCta": "Scrivimi il flusso",
           "emailSubject": "Automazione PMI: il flusso operativo da analizzare",
           "visualTitle": "Uno strato sopra quello che hai",
           "visualSystems": [
@@ -855,214 +795,64 @@
           "visualLayer": "Integrazioni · notifiche · dashboard",
           "visualOutcome": "Dato inserito una volta, visto da chi serve"
         },
-        "problem": {
-          "eyebrow": "Quando il processo regge solo perché le persone compensano",
-          "title": "Se il processo vive in Excel, chat e memoria delle persone, non hai un processo: hai una dipendenza.",
-          "intro": "Il lavoro va avanti perché le persone compensano. Il problema non sono loro: è il sistema che le usa come ponte.",
-          "frictions": [
-            {
-              "title": "Lo stesso dato riscritto tre volte",
-              "text": "Ogni passaggio, un errore possibile."
-            },
-            {
-              "title": "L'informazione resta in chat",
-              "text": "La sa uno. Gli altri lo scoprono tardi."
-            },
-            {
-              "title": "Il controllo dipende dalla memoria",
-              "text": "Funziona finché quella persona non va in ferie."
-            },
-            {
-              "title": "L'Excel parallelo all'ERP",
-              "text": "Nato per comodità, ora è la verità ufficiosa."
-            },
-            {
-              "title": "La segnalazione arriva tardi",
-              "text": "Il problema si vedeva ore prima."
-            },
-            {
-              "title": "Bisogna sempre chiedere a qualcuno",
-              "text": "Se serve una telefonata, il processo dipende da chi risponde."
-            }
-          ],
-          "closing": "Piccoli attriti. Ogni giorno. Diventano ritardi e lavoro rifatto."
-        },
-        "build": {
-          "eyebrow": "Cosa posso costruire",
-          "title": "Risultati operativi, non tecnologia da esposizione",
-          "intro": "Non sostituisco ERP, MES o gestionali. Ci lavoro accanto e tappo i buchi tra un sistema e l'altro.",
-          "cards": [
-            {
-              "title": "Collegare dati e strumenti",
-              "text": "API, webhook, file. Niente copia a mano."
-            },
-            {
-              "title": "Meno doppio inserimento",
-              "text": "Il dato entra una volta, dove nasce."
-            },
-            {
-              "title": "Stato ed eccezioni visibili",
-              "text": "Cosa è fermo, cosa è in ritardo, dove si accumula."
-            },
-            {
-              "title": "Notifiche tra reparti",
-              "text": "Richieste e approvazioni con un percorso, non su chat e carta."
-            },
-            {
-              "title": "Tracciabilità",
-              "text": "QR, scansioni, moduli da tablet: chi, cosa, quando."
-            },
-            {
-              "title": "AI dove serve",
-              "text": "Leggere documenti, smistare richieste, riassumere anomalie. Con una persona che controlla."
-            },
-            {
-              "title": "Segnali dal mondo fisico",
-              "text": "Arduino, ESP32, sensori. Quando servono davvero."
-            }
-          ],
-          "iotNote": "L'hardware non lo vendo a peso. Lo propongo solo se un dato fisico manca e non c'è un modo più semplice."
-        },
-        "constraint": {
-          "eyebrow": "Dal processo al software",
-          "title": "Prima il vincolo, poi la tecnologia",
-          "paragraphs": [
-            "Un flusso non si giudica da una dashboard: deve reggere urgenze, assenze ed eccezioni.",
-            "E vengo da una software house, dove manutenzione e poche risorse erano la norma. Progetto per chi usa lo strumento alle sei del mattino e per chi dovrà mantenerlo tra due anni."
-          ],
-          "points": [
-            "Se rallenta l'operatore, non lo userà nessuno.",
-            "Ogni eccezione gestita a voce è un dato perso.",
-            "Meno pezzi da mantenere batte una funzione in più."
-          ]
-        },
-        "method": {
-          "eyebrow": "Metodo di lavoro",
-          "title": "Sei passi. Anche fermarsi è un'opzione.",
-          "intro": "Nessun passo richiede di fermare la produzione.",
-          "steps": [
-            {
-              "title": "Sopralluogo o call",
-              "text": "Guardo il processo vero, non quello in procedura."
-            },
-            {
-              "title": "Un solo punto critico",
-              "text": "Quello con più errori, attese o domande ripetute."
-            },
-            {
-              "title": "Vincoli",
-              "text": "Sistemi, dati, sicurezza, persone, budget."
-            },
-            {
-              "title": "Prototipo",
-              "text": "Piccolo, verificabile, collegato al reale dove si può."
-            },
-            {
-              "title": "Test sul campo",
-              "text": "Lo provano gli operatori. La loro opinione conta più della mia."
-            },
-            {
-              "title": "Decisione",
-              "text": "Estendere, correggere o fermare."
-            }
-          ],
-          "stopNote": "Fermarsi dopo un pilota costa meno che fermarsi dopo un progetto."
-        },
-        "scenarios": {
-          "eyebrow": "Esempi di intervento",
-          "title": "Quattro scenari tipici",
-          "label": "Scenari possibili, non case study",
-          "intro": "",
+        "useCases": {
+          "eyebrow": "Casi d'uso",
+          "title": "Tre colli di bottiglia che vedo spesso",
+          "labels": {
+            "problem": "Problema sul campo",
+            "solution": "Soluzione tecnica",
+            "result": "Risultato misurabile"
+          },
           "items": [
             {
-              "title": "Richieste e anomalie",
-              "steps": [
-                "Segnalazione",
-                "Modulo",
-                "Assegnazione",
-                "Notifica",
-                "Dashboard"
-              ],
-              "text": "Chi vede il problema lo segnala. Arriva a chi deve intervenire e resta tracciato."
+              "id": "orders",
+              "label": "Ordini da PDF",
+              "problem": "Gli ordini dei clienti arrivano in PDF, ognuno col suo formato. Qualcuno li riscrive nel gestionale, riga per riga.",
+              "solution": "L'AI legge il PDF (con OCR dove serve), estrae codici, quantità e date e li confronta con anagrafiche e listini. Una persona approva prima dell'import.",
+              "result": "Tempo di inserimento per ordine ed errori di battitura, prima e dopo. Il dato entra una volta sola, già controllato."
             },
             {
-              "title": "Dati sparsi",
-              "steps": [
-                "File e sistemi",
-                "Validazione",
-                "Database unico",
-                "Report"
-              ],
-              "text": "Un archivio controllato, un report sempre aggiornato."
+              "id": "machines",
+              "label": "Dati dalle macchine",
+              "problem": "Pezzi prodotti e fermi si segnano a fine giornata, a memoria o su carta. Il dato arriva tardi e sporco.",
+              "solution": "Un ESP32 con sensori legge contapezzi e stato macchina e manda i dati a un piccolo backend. Il PLC non si tocca, se non serve.",
+              "result": "Pezzi e fermi in tempo reale, misurati invece che stimati. Dopo due settimane si confrontano col dato scritto a mano."
             },
             {
-              "title": "Eventi fisici",
-              "steps": [
-                "Scansione o sensore",
-                "Trigger",
-                "Registrazione",
-                "Avviso"
-              ],
-              "text": "L'evento si registra da solo e avvisa chi deve intervenire."
-            },
-            {
-              "title": "Documenti",
-              "steps": [
-                "Documento",
-                "Estrazione",
-                "Verifica umana",
-                "Approvazione"
-              ],
-              "text": "L'AI precompila, una persona approva."
+              "id": "jobs",
+              "label": "Tracking commesse",
+              "problem": "Lo stato di una commessa vive in Excel, in chat e nella testa di chi la segue. Per sapere a che punto è, si telefona.",
+              "solution": "Un micro-tool web: ogni reparto aggiorna lo stato con un tap, da PC, tablet o QR. L'ufficio vede tutto in una pagina.",
+              "result": "Telefonate per chiedere lo stato e ritardi scoperti tardi, contati prima e dopo."
             }
-          ],
-          "disclaimer": "Quanto si risparmia? Lo dicono i tuoi dati, non questa pagina."
-        },
-        "ai": {
-          "eyebrow": "AI: utile, ma non magica",
-          "title": "L'AI non aggiusta un processo rotto",
-          "statement": "Prima dati, responsabilità e passaggi chiari. Poi l'AI, solo dove toglie lavoro vero.",
-          "usesTitle": "Dove aiuta",
-          "uses": [
-            "Smistare le richieste.",
-            "Estrarre dati da ordini, DDT, certificati.",
-            "Riassumere le anomalie.",
-            "Cercare nella documentazione interna, con la fonte."
-          ],
-          "guardrailsTitle": "A che condizioni",
-          "guardrails": [
-            "Una persona controlla prima che diventi una decisione.",
-            "Decidiamo insieme quali dati escono dall'azienda. Se serve, modelli in locale.",
-            "Accessi minimi e documentati."
           ]
         },
-        "fit": {
-          "eyebrow": "Per chi è",
-          "title": "Serve un problema, non una moda",
-          "forItems": [
-            "Avete un problema operativo concreto che si ripete.",
-            "Qualcuno può spiegarmi come funziona davvero.",
-            "Siete disposti a provare un pilota piccolo."
-          ],
-          "notForItems": [
-            "Volete cambiare tutti i sistemi in una settimana.",
-            "Volete \"una soluzione AI\" da far vedere.",
-            "Volete comprare tecnologia prima di capire il problema."
-          ],
-          "crossLinkText": "Sei un freelance o una piccola agenzia?",
-          "crossLinkLabel": "Di qua"
-        },
-        "credibility": {
-          "eyebrow": "Chi c'è dietro",
-          "title": "Scrivo software, ma parto dal processo",
-          "paragraphs": [
-            "Tempi, passaggi, informazioni che non arrivano: li ho visti dal vivo, non in una slide.",
-            "Full Stack Developer (Python, Flask, Quart, Docker in produzione), n8n e Node-RED per le automazioni, studente di Ingegneria Informatica."
-          ],
-          "principles": [
-            "Prima capire il problema. Poi decidere se costruire.",
-            "Una buona automazione funziona anche quando io non ci sono."
+        "guarantees": {
+          "eyebrow": "Metodo & garanzie",
+          "title": "Come lavoro con le aziende",
+          "items": [
+            {
+              "title": "Non tocchiamo ciò che funziona",
+              "text": "Lavoro accanto al gestionale e all'ERP che avete: collego, non sostituisco. Nessun cambio di sistema, nessun fermo."
+            },
+            {
+              "title": "Prototipo pilota in 7–10 giorni",
+              "text": "Un flusso, collegato ai dati veri. Si valida sul campo prima di spendere su larga scala."
+            },
+            {
+              "title": "Zero lock-in",
+              "text": "Codice pulito e documentato, sul vostro server o cloud. Se domani cambiate fornitore, non ripartite da zero."
+            }
           ]
+        },
+        "finalCta": {
+          "title": "30 minuti per capire se il vostro collo di bottiglia si può automatizzare.",
+          "text": "Audit tecnico o call esplorativa: guardiamo un flusso reale, vi dico cosa farei e in quanto tempo. Se non conviene, ve lo dico.",
+          "primaryCta": "Prenota l'audit di 30 minuti"
+        },
+        "crossLink": {
+          "text": "Sei un freelance o un'agenzia digitale?",
+          "label": "Di qua"
         },
         "faq": {
           "title": "Domande che fanno le aziende",
@@ -1078,23 +868,8 @@
               "pilot": false
             },
             {
-              "question": "Serve già avere dati puliti?",
-              "answer": "No, ma bisogna sapere dove sono. Spesso il primo lavoro è proprio pulirli.",
-              "pilot": false
-            },
-            {
               "question": "L'AI è necessaria?",
               "answer": "No. Spesso bastano integrazioni, regole e notifiche.",
-              "pilot": false
-            },
-            {
-              "question": "Potete lavorare con Excel, email e software esistenti?",
-              "answer": "Sì, è il caso più comune. Si parte da lì.",
-              "pilot": false
-            },
-            {
-              "question": "Fate anche hardware e IoT?",
-              "answer": "Sì, quando serve: Arduino, ESP32, sensori. Solo se non c'è un modo più semplice.",
               "pilot": false
             },
             {
@@ -1109,7 +884,7 @@
             },
             {
               "question": "Quanto tempo richiede un primo test?",
-              "answer": "Dipende da flusso e accessi. L'obiettivo è avere qualcosa da provare in poche settimane. La stima precisa arriva dopo la mappatura.",
+              "answer": "Un prototipo pilota in 7–10 giorni dalla mappatura, se gli accessi ci sono. Prima si valida, poi si decide se scalare.",
               "pilot": false
             },
             {
@@ -1118,15 +893,203 @@
               "pilot": true
             }
           ]
+        }
+      },
+      "saas": {
+        "metadata": {
+          "title": "Sviluppo web app e SaaS su misura | Alessio Quagliara",
+          "description": "Web app, micro-SaaS e gestionali su misura: dall'idea al deploy, con architetture solide, stack moderni e codice facile da mantenere."
+        },
+        "schema": {
+          "serviceName": "Sviluppo di web app e SaaS su misura",
+          "serviceType": "Sviluppo software web"
+        },
+        "hero": {
+          "eyebrow": "Web app · micro-SaaS · gestionali",
+          "badge": "Full Stack Web & SaaS Engineering",
+          "title": "Dall'idea al deploy: web app e SaaS che funzionano davvero.",
+          "subtitle": "Costruisco piattaforme web su misura, micro-SaaS e gestionali con architetture solide, stack moderni e zero complessità fragile.",
+          "microcopy": "Prima un MVP che si usa davvero. Poi si cresce.",
+          "primaryCta": "Parlami del tuo progetto",
+          "secondaryCta": "I progetti già online",
+          "emailSubject": "Web app / SaaS: il mio progetto",
+          "visualTitle": "Uno stack, quattro strati",
+          "visualLayers": [
+            {
+              "name": "Frontend",
+              "tech": "Next.js · Tailwind"
+            },
+            {
+              "name": "API",
+              "tech": "Python · Flask · REST"
+            },
+            {
+              "name": "Dati",
+              "tech": "PostgreSQL · Auth"
+            },
+            {
+              "name": "Deploy",
+              "tech": "Docker · CI/CD · VPS"
+            }
+          ]
+        },
+        "stack": {
+          "eyebrow": "Stack pragmatico",
+          "title": "Tecnologie noiose, scelte apposta",
+          "items": [
+            {
+              "title": "Frontend moderno",
+              "tags": [
+                "Next.js",
+                "Tailwind CSS"
+              ],
+              "text": "Interfacce veloci e facili da cambiare. Questo sito è fatto così."
+            },
+            {
+              "title": "Backend solido",
+              "tags": [
+                "Python",
+                "Flask",
+                "API REST"
+              ],
+              "text": "API chiare e logica di business che si testa. Niente framework scelti per moda."
+            },
+            {
+              "title": "Dati & sicurezza",
+              "tags": [
+                "PostgreSQL",
+                "Multi-tenant",
+                "Auth"
+              ],
+              "text": "Ogni cliente vede solo i suoi dati. Accessi, ruoli e backup pensati dal primo giorno."
+            },
+            {
+              "title": "Infrastruttura & deploy",
+              "tags": [
+                "Docker",
+                "CI/CD",
+                "Linux VPS"
+              ],
+              "text": "Stesso ambiente in locale e in produzione. Deploy ripetibili, niente \"da me funziona\"."
+            }
+          ]
+        },
+        "projects": {
+          "eyebrow": "Prodotti reali",
+          "title": "Non slide: prodotti che ho costruito",
+          "viewLabel": "Vedi il progetto",
+          "items": [
+            {
+              "name": "RStudy",
+              "image": "/rstudy.png",
+              "status": "Release in arrivo",
+              "text": "App desktop per studiare con active recall. Dati in SQLite sul tuo disco, AI offline o in cloud, niente abbonamento.",
+              "tags": [
+                "Desktop",
+                "SQLite",
+                "AI"
+              ]
+            },
+            {
+              "name": "PivotCut",
+              "image": "/pivotcut.png",
+              "status": "Verso la release su itch.io",
+              "text": "App macOS per l'animazione 2D cut-out: rig, ossa, timeline. Il core non dipende dall'interfaccia, quindi si testa.",
+              "tags": [
+                "macOS",
+                "Qt",
+                "2D"
+              ]
+            },
+            {
+              "name": "LinkBay-CMS",
+              "image": "/linkbayCMS.png",
+              "status": "In sviluppo",
+              "text": "Nata come piattaforma multi-tenant per agenzie, ora è un tool SEO che legge Search Console e trova le pagine che perdono traffico.",
+              "tags": [
+                "Multi-tenant",
+                "SEO",
+                "Search Console"
+              ]
+            }
+          ]
+        },
+        "roadmap": {
+          "eyebrow": "Roadmap",
+          "title": "Quattro step, dall'idea alla produzione",
+          "steps": [
+            {
+              "title": "Analisi requisiti & architettura MVP",
+              "text": "Cosa deve fare la versione 1, e cosa no. Scelgo lo stack più semplice che regge."
+            },
+            {
+              "title": "Sviluppo core & database",
+              "text": "Prima il modello dati, poi le schermate. Una funzione alla volta, sempre provabile."
+            },
+            {
+              "title": "Integrazione pagamenti/API & test",
+              "text": "Stripe, CRM, servizi esterni. Test sui flussi che, se si rompono, costano soldi."
+            },
+            {
+              "title": "Deploy in produzione & documentazione",
+              "text": "Online su un'infrastruttura che controlli tu, con la documentazione per chi verrà dopo."
+            }
+          ]
         },
         "finalCta": {
-          "title": "C'è un passaggio che rallenta ogni giorno il tuo team? Mappiamolo e capiamo se conviene automatizzarlo.",
-          "text": "Call o sopralluogo. Se non conviene, te lo dico. Lo so, come tecnica di vendita fa schifo."
+          "title": "Hai un'idea o un software da rifare?",
+          "text": "Scegli il tipo di progetto e scrivimi due righe. Oppure prenota direttamente una call tecnica: parliamo di requisiti e stack, senza impegno.",
+          "primaryCta": "Prenota una call tecnica",
+          "form": {
+            "title": "Che progetto hai in mente?",
+            "choiceLabel": "Tipo di progetto",
+            "options": [
+              "Nuovo SaaS",
+              "Web App interna",
+              "Rifacimento/Refactoring"
+            ],
+            "nameLabel": "Nome",
+            "flowLabel": "Due righe sul progetto",
+            "flowPlaceholder": "Es. un gestionale per le prenotazioni, oggi è tutto su Excel",
+            "submit": "Prepara l'email",
+            "note": "Si apre il tuo programma di posta con il messaggio pronto. Qui non salvo niente.",
+            "subject": "{choice}: il progetto di {name}"
+          }
         },
-        "relatedPosts": [
-          "quando-ho-capito-che-il-problema-non-era-lerp",
-          "ai-pmi-como-ollama-llamacpp"
-        ]
+        "crossLink": {
+          "text": "Ti basta collegare i tool che usi già?",
+          "label": "Guarda le automazioni"
+        },
+        "faq": {
+          "title": "Domande prima di iniziare",
+          "items": [
+            {
+              "question": "Quanto costa una web app?",
+              "answer": "Dipende da cosa deve fare la prima versione. Dopo la call ti mando un preventivo chiaro, con dentro solo quello che serve per partire.",
+              "pilot": false
+            },
+            {
+              "question": "Il codice resta mio?",
+              "answer": "Sì. Repository, accessi e documentazione restano a te. Niente lock-in.",
+              "pilot": false
+            },
+            {
+              "question": "Puoi lavorare su un software che esiste già?",
+              "answer": "Sì. Prima leggo il codice, poi ti dico se conviene sistemarlo o riscriverlo.",
+              "pilot": false
+            },
+            {
+              "question": "Segui anche la manutenzione dopo il deploy?",
+              "answer": "Se vuoi, sì. Altrimenti ti lascio tutto documentato per gestirlo con chi preferisci.",
+              "pilot": false
+            },
+            {
+              "question": "Lavori da remoto?",
+              "answer": "Sì, in italiano o in inglese.",
+              "pilot": false
+            }
+          ]
+        }
       }
     }
   },

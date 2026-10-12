@@ -1,14 +1,8 @@
 import type { ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faCheck,
-  faChevronDown,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import { SectionReveal } from "@/components/home/section-reveal";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
@@ -32,17 +26,12 @@ const introClasses: Record<Tone, string> = {
   dark: "text-[#edf4ff]",
 };
 
-const bodyClasses: Record<Tone, string> = {
-  light: "text-[#35548c]",
-  dark: "text-[#d8e7ff]",
-};
-
 /** Hero delle landing: niente animazione d'ingresso, il testo è l'LCP. */
 export function LandingHero({
   eyebrow,
   title,
   subtitle,
-  pilotBadge,
+  badge,
   microcopy,
   actions,
   visual,
@@ -50,7 +39,7 @@ export function LandingHero({
   eyebrow: string;
   title: string;
   subtitle: string;
-  pilotBadge: string | null;
+  badge: string | null;
   microcopy: string;
   actions: ReactNode;
   visual: ReactNode;
@@ -62,9 +51,9 @@ export function LandingHero({
     >
       <div>
         <p className="text-xs uppercase tracking-[0.28em] text-[#c9ddff]">{eyebrow}</p>
-        {pilotBadge ? (
+        {badge ? (
           <div className="mt-4">
-            <PilotBadge text={pilotBadge} />
+            <PilotBadge text={badge} />
           </div>
         ) : null}
         <h1
@@ -196,153 +185,37 @@ export function PilotBadge({ text }: { text: string }) {
   );
 }
 
-export function CheckList({
-  items,
-  tone,
-  negative = false,
-}: {
-  items: string[];
-  tone: Tone;
-  negative?: boolean;
-}) {
-  const iconColor = negative
-    ? tone === "light"
-      ? "text-[#b4234a]"
-      : "text-[#ffb4c4]"
-    : tone === "light"
-      ? "text-[#2d5ab5]"
-      : "text-[#bcd6ff]";
-
+/** Processo in pochi step: numero, durata/esito in evidenza, freccia tra uno step e l'altro. */
+export function ProcessSteps({ steps }: { steps: { title: string; meta: string; text: string }[] }) {
   return (
-    <ul className="space-y-3">
-      {items.map((item) => (
-        <li key={item} className={`flex items-start gap-3 text-sm leading-7 sm:text-base ${bodyClasses[tone]}`}>
-          <FontAwesomeIcon
-            icon={negative ? faXmark : faCheck}
-            aria-hidden="true"
-            className={`mt-2 shrink-0 text-xs ${iconColor}`}
-          />
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-/** Passi numerati (metodo di lavoro). */
-export function StepList({
-  steps,
-  tone,
-}: {
-  steps: { title: string; text: string }[];
-  tone: Tone;
-}) {
-  const card =
-    tone === "light"
-      ? "border-[#d8e6ff] bg-white"
-      : "border-white/10 bg-[#07173c]/40";
-
-  return (
-    <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <ol className="grid gap-4 lg:grid-cols-3">
       {steps.map((step, index) => (
         <li
           key={step.title}
           data-reveal-item
-          className={`relative rounded-3xl border p-6 ${card}`}
+          className="process-step relative rounded-3xl border border-white/10 bg-[#07173c]/50 p-6"
         >
-          <span
-            className={`inline-flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold ${
-              tone === "light" ? "bg-[#2664eb] text-white" : "bg-white/12 text-white"
-            }`}
-            aria-hidden="true"
-          >
-            {index + 1}
-          </span>
-          <h3
-            className={`mt-4 text-lg font-semibold ${tone === "light" ? "text-[#102e66]" : "text-white"}`}
-          >
-            {step.title}
-          </h3>
-          <p className={`mt-2 text-sm leading-7 ${bodyClasses[tone]}`}>{step.text}</p>
-        </li>
-      ))}
-    </ol>
-  );
-}
-
-/** Catena di passaggi A → B → C come lista ordinata. */
-export function FlowChain({ steps, tone }: { steps: string[]; tone: Tone }) {
-  const chip =
-    tone === "light"
-      ? "border-[#c9dbff] bg-white text-[#163670]"
-      : "border-[#8cb4ff]/30 bg-[#0a255d]/60 text-[#edf4ff]";
-
-  return (
-    <ol className="flex flex-wrap items-center gap-x-2 gap-y-3">
-      {steps.map((step, index) => (
-        <li key={step} className="flex items-center gap-2">
-          <span className={`rounded-xl border px-3 py-2 text-sm font-medium ${chip}`}>{step}</span>
-          {index < steps.length - 1 ? (
+          <div className="flex items-center justify-between gap-3">
             <span
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#2664eb] text-sm font-bold text-white"
               aria-hidden="true"
-              className={tone === "light" ? "text-[#5b7fc4]" : "text-[#9cbcff]"}
             >
+              {index + 1}
+            </span>
+            <span className="rounded-full border border-[#7cf0b5]/40 bg-[#7cf0b5]/10 px-3 py-1 text-xs font-semibold text-[#d9ffe9]">
+              {step.meta}
+            </span>
+          </div>
+          <h3 className="mt-5 text-lg font-semibold text-white">{step.title}</h3>
+          <p className="mt-2 text-sm leading-7 text-[#d8e7ff]">{step.text}</p>
+          {index < steps.length - 1 ? (
+            <span className="process-step__arrow" aria-hidden="true">
               →
             </span>
           ) : null}
         </li>
       ))}
     </ol>
-  );
-}
-
-export function FitColumns({
-  tone,
-  forTitle,
-  forItems,
-  notForTitle,
-  notForItems,
-  crossLink,
-}: {
-  tone: Tone;
-  forTitle: string;
-  forItems: string[];
-  notForTitle: string;
-  notForItems: string[];
-  crossLink: { text: string; label: string; href: string };
-}) {
-  const card =
-    tone === "light" ? "border-[#d8e6ff] bg-white" : "border-white/10 bg-white/5";
-  const heading = tone === "light" ? "text-[#102e66]" : "text-white";
-
-  return (
-    <>
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
-        <div className={`rounded-3xl border p-6 ${card}`} data-reveal-item>
-          <h3 className={`text-lg font-semibold ${heading}`}>{forTitle}</h3>
-          <div className="mt-4">
-            <CheckList items={forItems} tone={tone} />
-          </div>
-        </div>
-        <div className={`rounded-3xl border p-6 ${card}`} data-reveal-item>
-          <h3 className={`text-lg font-semibold ${heading}`}>{notForTitle}</h3>
-          <div className="mt-4">
-            <CheckList items={notForItems} tone={tone} negative />
-          </div>
-        </div>
-      </div>
-      <p className={`mt-8 text-sm leading-7 ${bodyClasses[tone]}`} data-reveal-item>
-        {crossLink.text}{" "}
-        <Link
-          href={crossLink.href}
-          className={`font-semibold underline underline-offset-4 ${
-            tone === "light" ? "text-[#1d4ed8] hover:text-[#1e3a8a]" : "text-white hover:text-[#bfd5ff]"
-          }`}
-        >
-          {crossLink.label}
-        </Link>
-      </p>
-    </>
   );
 }
 
@@ -369,113 +242,6 @@ export function FaqList({ items }: { items: { question: string; answer: string }
   );
 }
 
-type ProofLink = { label: string; href: string; external?: boolean };
-
-export function CredibilityBlock({
-  id,
-  eyebrow,
-  icon,
-  title,
-  paragraphs,
-  principles,
-  photoAlt,
-  linksTitle,
-  links,
-  relatedTitle,
-  related,
-  newTabLabel,
-}: {
-  id: string;
-  eyebrow: string;
-  icon: IconDefinition;
-  title: string;
-  paragraphs: string[];
-  principles: string[];
-  photoAlt: string;
-  linksTitle: string;
-  links: ProofLink[];
-  relatedTitle: string;
-  related: { title: string; href: string }[];
-  newTabLabel: string;
-}) {
-  const linkClass =
-    "inline-flex items-center gap-2 text-sm font-medium text-white underline-offset-4 hover:text-[#bfd5ff] hover:underline";
-
-  return (
-    <LandingSection id={id} tone="dark">
-      <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <div data-reveal-item>
-          <Image
-            src="/profile_image.jpg"
-            alt={photoAlt}
-            width={800}
-            height={800}
-            sizes="(min-width: 1024px) 360px, 70vw"
-            className="mx-auto w-full max-w-72 rounded-3xl border border-white/15 object-cover shadow-[0_30px_60px_-40px_rgba(2,12,32,1)] lg:max-w-sm"
-          />
-        </div>
-        <div>
-          <SectionHeader id={id} tone="dark" eyebrow={eyebrow} icon={icon} title={title} />
-          <div className="mt-6 space-y-4">
-            {paragraphs.map((paragraph) => (
-              <p key={paragraph} className="text-base leading-8 text-[#edf4ff]" data-reveal-item>
-                {paragraph}
-              </p>
-            ))}
-          </div>
-          <ul className="mt-6 space-y-2">
-            {principles.map((principle) => (
-              <li
-                key={principle}
-                className="border-l-2 border-[#8cb4ff]/60 pl-4 text-sm italic leading-7 text-[#d8e7ff]"
-                data-reveal-item
-              >
-                {principle}
-              </li>
-            ))}
-          </ul>
-
-          <nav aria-label={linksTitle} className="mt-8" data-reveal-item>
-            <p className="text-xs uppercase tracking-[0.24em] text-[#c9ddff]">{linksTitle}</p>
-            <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-3">
-              {links.map((link) => (
-                <li key={link.href}>
-                  {link.external ? (
-                    <a href={link.href} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                      {link.label}
-                      <span className="sr-only"> {newTabLabel}</span>
-                    </a>
-                  ) : (
-                    <Link href={link.href} className={linkClass}>
-                      {link.label}
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          {related.length > 0 ? (
-            <div className="mt-8" data-reveal-item>
-              <p className="text-xs uppercase tracking-[0.24em] text-[#c9ddff]">{relatedTitle}</p>
-              <ul className="mt-3 space-y-2">
-                {related.map((post) => (
-                  <li key={post.href}>
-                    <Link href={post.href} className={linkClass}>
-                      <AnimatedFaIcon icon={faArrowRight} animation="float" className="text-xs" />
-                      <span>{post.title}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-        </div>
-      </div>
-    </LandingSection>
-  );
-}
-
 export function FinalCta({
   id,
   eyebrow,
@@ -484,6 +250,7 @@ export function FinalCta({
   text,
   pilotBadge,
   children,
+  aside,
 }: {
   id: string;
   eyebrow: string;
@@ -492,6 +259,8 @@ export function FinalCta({
   text: string;
   pilotBadge: string | null;
   children: ReactNode;
+  /** Colonna a destra (es. form rapido). */
+  aside?: ReactNode;
 }) {
   return (
     <SectionReveal
@@ -499,27 +268,34 @@ export function FinalCta({
       labelledBy={`${id}-title`}
       className="rounded-[2.2rem] border border-white/10 bg-[linear-gradient(145deg,#06112a_0%,#0e2e73_55%,#1f55ca_100%)] shadow-[0_45px_100px_-70px_rgba(2,12,32,1)]"
     >
-      <div className="px-5 py-12 sm:px-10 lg:px-14 lg:py-16">
-        <div className="max-w-3xl">
-          <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c9ddff]" data-reveal-item>
-            <AnimatedFaIcon icon={icon} animation="pulse" />
-            <span>{eyebrow}</span>
-          </p>
-          <h2 id={`${id}-title`} className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl" data-reveal-item>
-            {title}
-          </h2>
-          {pilotBadge ? (
-            <div className="mt-5" data-reveal-item>
-              <PilotBadge text={pilotBadge} />
-            </div>
-          ) : null}
-          <p className="mt-5 text-base leading-8 text-[#edf4ff] sm:text-lg" data-reveal-item>
-            {text}
-          </p>
+      <div
+        className={`px-5 py-12 sm:px-10 lg:px-14 lg:py-16 ${
+          aside ? "grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center" : ""
+        }`}
+      >
+        <div>
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c9ddff]" data-reveal-item>
+              <AnimatedFaIcon icon={icon} animation="pulse" />
+              <span>{eyebrow}</span>
+            </p>
+            <h2 id={`${id}-title`} className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl" data-reveal-item>
+              {title}
+            </h2>
+            {pilotBadge ? (
+              <div className="mt-5" data-reveal-item>
+                <PilotBadge text={pilotBadge} />
+              </div>
+            ) : null}
+            <p className="mt-5 text-base leading-8 text-[#edf4ff] sm:text-lg" data-reveal-item>
+              {text}
+            </p>
+          </div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4" data-reveal-item>
+            {children}
+          </div>
         </div>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4" data-reveal-item>
-          {children}
-        </div>
+        {aside ? <div data-reveal-item>{aside}</div> : null}
       </div>
     </SectionReveal>
   );

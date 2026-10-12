@@ -1,38 +1,37 @@
+import Link from "next/link";
 import {
-  faBrain,
   faCircleQuestion,
-  faCompass,
+  faClock,
   faEnvelope,
-  faGears,
   faIndustry,
-  faLayerGroup,
-  faRoute,
-  faTriangleExclamation,
-  faUser,
+  faPlug,
+  faUnlock,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { getLandingData } from "@/components/landing/landing-data";
 import {
-  CheckList,
-  CredibilityBlock,
   CtaLink,
   FaqList,
   FinalCta,
-  FitColumns,
-  FlowChain,
   JsonLd,
   LandingHero,
   LandingSection,
   SectionHeader,
-  StepList,
 } from "@/components/landing/landing-ui";
+import { UseCaseTabs } from "@/components/landing/use-case-tabs";
+import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import type { Locale } from "@/lib/i18n";
 
+/** Icona e taglio della bento grid delle garanzie, nello stesso ordine dei testi. */
+const GUARANTEE_LAYOUT = [
+  { icon: faPlug, span: "lg:col-span-2 lg:row-span-2" },
+  { icon: faClock, span: "" },
+  { icon: faUnlock, span: "" },
+];
+
 export function IndustrialLanding({ locale }: { locale: Locale }) {
-  const { content, common, pilotBadge, faq, related, primaryCtaLabel, hrefs, jsonLd } =
-    getLandingData("industrial", locale);
-  const { hero, problem, build, constraint, method, scenarios, ai, fit, credibility, finalCta } =
-    content;
+  const { content, common, pilotBadge, faq, hrefs, jsonLd } = getLandingData("industrial", locale);
+  const { hero, useCases, guarantees, finalCta, crossLink } = content;
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-24 sm:gap-14 sm:px-6 sm:pb-28">
@@ -42,12 +41,12 @@ export function IndustrialLanding({ locale }: { locale: Locale }) {
         eyebrow={hero.eyebrow}
         title={hero.title}
         subtitle={hero.subtitle}
-        pilotBadge={pilotBadge}
+        badge={hero.badge}
         microcopy={hero.microcopy}
         actions={
           <>
             <CtaLink href={hrefs.calendly} newTabLabel={common.newTab}>
-              {primaryCtaLabel}
+              {hero.primaryCta}
             </CtaLink>
             <CtaLink href={hrefs.email} variant="secondary">
               {hero.secondaryCta}
@@ -86,202 +85,76 @@ export function IndustrialLanding({ locale }: { locale: Locale }) {
         }
       />
 
-      <LandingSection id="problem" tone="light">
+      <LandingSection id="use-cases" tone="dark">
         <SectionHeader
-          id="problem"
-          tone="light"
-          eyebrow={problem.eyebrow}
-          icon={faTriangleExclamation}
-          title={problem.title}
-          intro={problem.intro}
-        />
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {problem.frictions.map((friction, index) => (
-            <li key={friction.title} data-reveal-item>
-              <article className="h-full rounded-[1.7rem] border border-[#d8e6ff] bg-white p-6 shadow-[0_25px_65px_-52px_rgba(15,52,125,0.55)]">
-                <p className="font-mono text-xs text-[#3f63a8]" aria-hidden="true">
-                  {String.fromCharCode(97 + index)}.
-                </p>
-                <h3 className="mt-2 text-lg font-semibold text-[#102e66]">{friction.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#35548c]">{friction.text}</p>
-              </article>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-8 max-w-3xl text-base font-medium leading-8 text-[#163670]" data-reveal-item>
-          {problem.closing}
-        </p>
-      </LandingSection>
-
-      <LandingSection id="what-i-build" tone="dark">
-        <SectionHeader
-          id="what-i-build"
+          id="use-cases"
           tone="dark"
-          eyebrow={build.eyebrow}
-          icon={faLayerGroup}
-          title={build.title}
-          intro={build.intro}
+          eyebrow={useCases.eyebrow}
+          icon={faIndustry}
+          title={useCases.title}
         />
-        <ul className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {build.cards.map((card) => (
-            <li key={card.title} data-reveal-item>
-              <article className="h-full rounded-3xl border border-white/10 bg-[#07173c]/40 p-6">
-                <h3 className="text-lg font-semibold text-white">{card.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#d8e7ff]">{card.text}</p>
-              </article>
-            </li>
-          ))}
-        </ul>
         <p
-          className="mt-8 max-w-3xl rounded-2xl border border-[#8cb4ff]/30 bg-white/5 px-5 py-4 text-sm leading-7 text-[#d8e7ff]"
+          className="mt-5 inline-flex rounded-full border border-[#ffd59a]/50 bg-[#ffd59a]/10 px-3 py-1 text-xs font-medium text-[#ffe2b8]"
           data-reveal-item
         >
-          {build.iotNote}
+          {common.illustrativeLabel}
         </p>
-      </LandingSection>
-
-      <LandingSection id="constraints" tone="light">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <SectionHeader
-              id="constraints"
-              tone="light"
-              eyebrow={constraint.eyebrow}
-              icon={faGears}
-              title={constraint.title}
-            />
-            <div className="mt-6 space-y-4">
-              {constraint.paragraphs.map((paragraph) => (
-                <p key={paragraph} className="text-base leading-8 text-[#163670]" data-reveal-item>
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-          </div>
-          <ul className="space-y-4 self-center">
-            {constraint.points.map((point) => (
-              <li
-                key={point}
-                className="rounded-2xl border-l-4 border-[#2664eb] bg-white px-5 py-4 text-sm font-medium leading-7 text-[#163670] shadow-[0_25px_65px_-52px_rgba(15,52,125,0.55)]"
-                data-reveal-item
-              >
-                {point}
-              </li>
-            ))}
-          </ul>
+        <div className="mt-8" data-reveal-item>
+          <UseCaseTabs labels={useCases.labels} items={useCases.items} />
         </div>
       </LandingSection>
 
-      <LandingSection id="method" tone="dark">
+      <LandingSection id="method" tone="light">
         <SectionHeader
           id="method"
-          tone="dark"
-          eyebrow={method.eyebrow}
-          icon={faRoute}
-          title={method.title}
-          intro={method.intro}
-        />
-        <div className="mt-10">
-          <StepList steps={method.steps} tone="dark" />
-        </div>
-        <p className="mt-8 max-w-3xl text-base font-medium leading-8 text-white" data-reveal-item>
-          {method.stopNote}
-        </p>
-      </LandingSection>
-
-      <LandingSection id="scenarios" tone="light">
-        <SectionHeader
-          id="scenarios"
           tone="light"
-          eyebrow={scenarios.eyebrow}
-          icon={faIndustry}
-          title={scenarios.title}
-          intro={scenarios.intro}
+          eyebrow={guarantees.eyebrow}
+          icon={faPlug}
+          title={guarantees.title}
         />
-        <p
-          className="mt-5 inline-flex rounded-full border border-[#e0b25c] bg-[#fff6e5] px-3 py-1 text-xs font-medium text-[#7a4b00]"
-          data-reveal-item
-        >
-          {scenarios.label}
-        </p>
-        <ul className="mt-8 grid gap-5 lg:grid-cols-2">
-          {scenarios.items.map((scenario, index) => (
-            <li key={scenario.title} data-reveal-item>
-              <article className="h-full rounded-[1.7rem] border border-[#d8e6ff] bg-white p-6 shadow-[0_25px_65px_-52px_rgba(15,52,125,0.55)]">
-                <h3 className="text-lg font-semibold text-[#102e66]">
-                  <span className="mr-2 text-[#3f63a8]">{String.fromCharCode(65 + index)}.</span>
-                  {scenario.title}
+        <ul className="mt-10 grid gap-4 lg:grid-cols-3 lg:grid-rows-2">
+          {guarantees.items.map((item, index) => {
+            const layout = GUARANTEE_LAYOUT[index % GUARANTEE_LAYOUT.length];
+            return (
+              <li key={item.title} className={`guarantee-card ${layout.span}`} data-reveal-item>
+                <span className="guarantee-card__icon">
+                  <AnimatedFaIcon icon={layout.icon} animation="pulse" />
+                </span>
+                <h3 className={`mt-6 font-bold text-[#102e66] ${index === 0 ? "text-2xl sm:text-3xl" : "text-xl"}`}>
+                  {item.title}
                 </h3>
-                <div className="mt-4">
-                  <FlowChain steps={scenario.steps} tone="light" />
-                </div>
-                <p className="mt-4 text-sm leading-7 text-[#35548c]">{scenario.text}</p>
-              </article>
-            </li>
-          ))}
+                <p className={`mt-3 leading-7 text-[#35548c] ${index === 0 ? "max-w-md text-base sm:text-lg sm:leading-8" : "text-sm"}`}>
+                  {item.text}
+                </p>
+                {index === 0 ? (
+                  // I sistemi che restano dove sono, collegati da uno strato sopra.
+                  <div className="mt-8 lg:mt-auto lg:pt-8" aria-hidden="true">
+                    <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                      {hero.visualSystems.map((system) => (
+                        <li
+                          key={system}
+                          className="rounded-xl border border-[#d8e6ff] bg-[#f5f9ff] px-3 py-2.5 text-center text-xs font-semibold text-[#24498f]"
+                        >
+                          {system}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="my-2 hidden grid-cols-4 text-center text-[#5b7fc4] sm:grid">
+                      <span>↓</span>
+                      <span>↓</span>
+                      <span>↓</span>
+                      <span>↓</span>
+                    </div>
+                    <p className="rounded-xl bg-[#2664eb] px-4 py-3 text-center text-sm font-semibold text-white">
+                      {hero.visualLayer}
+                    </p>
+                  </div>
+                ) : null}
+              </li>
+            );
+          })}
         </ul>
-        <p className="mt-8 max-w-3xl text-sm leading-7 text-[#35548c]" data-reveal-item>
-          {scenarios.disclaimer}
-        </p>
       </LandingSection>
-
-      <LandingSection id="ai" tone="dark">
-        <SectionHeader
-          id="ai"
-          tone="dark"
-          eyebrow={ai.eyebrow}
-          icon={faBrain}
-          title={ai.title}
-          intro={ai.statement}
-        />
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6" data-reveal-item>
-            <h3 className="text-lg font-semibold text-white">{ai.usesTitle}</h3>
-            <div className="mt-4">
-              <CheckList items={ai.uses} tone="dark" />
-            </div>
-          </div>
-          <div className="rounded-3xl border border-[#8cb4ff]/35 bg-[#1f55ca]/20 p-6" data-reveal-item>
-            <h3 className="text-lg font-semibold text-white">{ai.guardrailsTitle}</h3>
-            <div className="mt-4">
-              <CheckList items={ai.guardrails} tone="dark" />
-            </div>
-          </div>
-        </div>
-      </LandingSection>
-
-      <LandingSection id="fit" tone="light">
-        <SectionHeader id="fit" tone="light" eyebrow={fit.eyebrow} icon={faCompass} title={fit.title} />
-        <FitColumns
-          tone="light"
-          forTitle={common.fitFor}
-          forItems={fit.forItems}
-          notForTitle={common.fitNotFor}
-          notForItems={fit.notForItems}
-          crossLink={{ text: fit.crossLinkText, label: fit.crossLinkLabel, href: hrefs.otherLanding }}
-        />
-      </LandingSection>
-
-      <CredibilityBlock
-        id="about"
-        eyebrow={credibility.eyebrow}
-        icon={faUser}
-        title={credibility.title}
-        paragraphs={credibility.paragraphs}
-        principles={credibility.principles}
-        photoAlt={common.photoAlt}
-        linksTitle={common.linksTitle}
-        links={[
-          { label: common.aboutLink, href: hrefs.about },
-          { label: common.projectsLink, href: hrefs.projects },
-          { label: common.githubLink, href: hrefs.github, external: true },
-          { label: common.blogLink, href: hrefs.blog },
-          { label: common.contactLink, href: hrefs.contact },
-        ]}
-        relatedTitle={common.readArticle}
-        related={related}
-        newTabLabel={common.newTab}
-      />
 
       <LandingSection id="faq" tone="light">
         <SectionHeader
@@ -292,6 +165,15 @@ export function IndustrialLanding({ locale }: { locale: Locale }) {
           title={content.faq.title}
         />
         <FaqList items={faq} />
+        <p className="mt-8 text-sm leading-7 text-[#35548c]" data-reveal-item>
+          {crossLink.text}{" "}
+          <Link
+            href={hrefs.otherLanding}
+            className="font-semibold text-[#1d4ed8] underline underline-offset-4 hover:text-[#1e3a8a]"
+          >
+            {crossLink.label}
+          </Link>
+        </p>
       </LandingSection>
 
       <FinalCta
@@ -303,10 +185,10 @@ export function IndustrialLanding({ locale }: { locale: Locale }) {
         pilotBadge={pilotBadge}
       >
         <CtaLink href={hrefs.calendly} newTabLabel={common.newTab}>
-          {primaryCtaLabel}
+          {finalCta.primaryCta}
         </CtaLink>
-        <CtaLink href={hrefs.contact} variant="secondary">
-          {common.contactCta}
+        <CtaLink href={hrefs.email} variant="secondary">
+          {hero.secondaryCta}
         </CtaLink>
       </FinalCta>
     </div>

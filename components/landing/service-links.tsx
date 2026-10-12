@@ -5,7 +5,7 @@ import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { getMessages, type Locale } from "@/lib/i18n";
 import { getLandingPath, type LandingKey } from "@/lib/landings";
 
-const SERVICE_KEYS: LandingKey[] = ["freelance", "industrial"];
+const SERVICE_KEYS: LandingKey[] = ["saas", "freelance", "industrial"];
 
 /** Link alle landing servizi, con anchor text descrittivo. */
 export function ServiceLinks({
@@ -30,7 +30,7 @@ export function ServiceLinks({
           {services.intro}
         </p>
       ) : null}
-      <ul className="mt-4 grid gap-4 md:grid-cols-2">
+      <ul className="mt-4 grid gap-4 md:grid-cols-3">
         {SERVICE_KEYS.map((key) => (
           <li key={key}>
             <Link

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
-import { getLocaleSwitchHref, resolveLocale } from "@/lib/landings";
+import { getLandingPath, getLocaleSwitchHref, resolveLocale } from "@/lib/landings";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,6 +88,12 @@ export function Navbar() {
             className="hover:text-white transition-colors"
           >
             {navbar.projects}
+          </Link>
+          <Link
+            href={getLandingPath("saas", locale)}
+            className="hover:text-white transition-colors"
+          >
+            {navbar.saas}
           </Link>
           <Link
             href={withLang("/casi-studio", locale)}
@@ -181,6 +187,14 @@ export function Navbar() {
               style={{ transitionDelay: isMenuOpen ? "170ms" : "0ms" }}
             >
               {navbar.projects}
+            </Link>
+            <Link
+              href={getLandingPath("saas", locale)}
+              className="mobile-menu-link"
+              onClick={() => setIsMenuOpen(false)}
+              style={{ transitionDelay: isMenuOpen ? "180ms" : "0ms" }}
+            >
+              {navbar.saas}
             </Link>
             <Link
               href={withLang("/casi-studio", locale)}

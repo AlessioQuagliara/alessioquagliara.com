@@ -122,6 +122,7 @@ export default async function CaseStudyPage({ params, searchParams }: CaseStudyP
     "",
     copy.servicesLinks,
     "",
+    `- [${messages.services.saas.label}](${getLandingPath("saas", locale)})`,
     `- [${messages.services.freelance.label}](${getLandingPath("freelance", locale)})`,
     `- [${messages.services.industrial.label}](${getLandingPath("industrial", locale)})`,
   ].join("\n");

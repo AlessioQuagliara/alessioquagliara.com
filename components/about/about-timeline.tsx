@@ -51,7 +51,7 @@ export function AboutTimeline({ tabs }: AboutTimelineProps) {
             aria-controls={`${baseId}-panel`}
             tabIndex={index === active ? 0 : -1}
             onClick={() => setActive(index)}
-            className="about-tab"
+            className="ui-tab"
           >
             {item.label}
           </button>

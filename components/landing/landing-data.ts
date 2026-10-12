@@ -1,16 +1,21 @@
-import { getBlogPost } from "@/lib/blog";
-import { fillTemplate, getMessages, withLang, type Locale } from "@/lib/i18n";
+import { fillTemplate, getMessages, type Locale } from "@/lib/i18n";
 import { buildLandingJsonLd, getLandingPath, type LandingKey } from "@/lib/landings";
 import {
   CALENDLY_URL,
-  GITHUB_URL,
   PILOT_OFFER,
   getPilotDeadlineLabel,
   isPilotOfferActive,
   mailtoWithSubject,
 } from "@/lib/site-config";
 
-/** Dati condivisi dalle due landing: copy, stato del pilota, CTA, link di prova, JSON-LD. */
+/** Landing suggerita in fondo a ciascuna ("non è per te? prova di qua"). */
+const CROSS_LINKS: Record<LandingKey, LandingKey> = {
+  freelance: "industrial",
+  industrial: "freelance",
+  saas: "freelance",
+};
+
+/** Dati condivisi dalle landing: copy, stato del pilota, link, JSON-LD. */
 export function getLandingData<K extends LandingKey>(key: K, locale: Locale) {
   const site = getMessages(locale).site;
   const content = site.landings[key];
@@ -31,29 +36,15 @@ export function getLandingData<K extends LandingKey>(key: K, locale: Locale) {
       answer: fillTemplate(item.answer, templateValues),
     }));
 
-  const otherKey: LandingKey = key === "freelance" ? "industrial" : "freelance";
-
-  const related = content.relatedPosts.flatMap((slug) => {
-    const post = getBlogPost(slug);
-    return post ? [{ title: post.title[locale], href: withLang(`/blog/${post.slug}`, locale) }] : [];
-  });
-
   return {
     content,
     common,
     pilotBadge,
     faq,
-    related,
-    primaryCtaLabel: pilotActive ? common.pilotCta : common.callCta,
     hrefs: {
       calendly: CALENDLY_URL,
       email: mailtoWithSubject(content.hero.emailSubject),
-      contact: withLang("/contact", locale),
-      about: withLang("/about", locale),
-      projects: withLang("/projects", locale),
-      blog: withLang("/blog", locale),
-      github: GITHUB_URL,
-      otherLanding: getLandingPath(otherKey, locale),
+      otherLanding: getLandingPath(CROSS_LINKS[key], locale),
     },
     jsonLd: buildLandingJsonLd({
       key,

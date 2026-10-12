@@ -4,14 +4,17 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
-import { resolveLocale } from "@/lib/landings";
+import { getLandingPath, resolveLocale, type LandingKey } from "@/lib/landings";
 import { GITHUB_URL, INSTAGRAM_URL, LINKEDIN_URL, YOUTUBE_URL } from "@/lib/site-config";
+
+const SERVICE_KEYS: LandingKey[] = ["saas", "freelance", "industrial"];
 
 export function Footer() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const locale = resolveLocale(pathname, getLocaleFromLang(searchParams.get("lang")));
-  const footer = getMessages(locale).site.layout.footer;
+  const { layout, services } = getMessages(locale).site;
+  const footer = layout.footer;
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
   const socialLinks = [
@@ -75,7 +78,7 @@ export function Footer() {
       ></div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-4">
+        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-center space-x-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-[#5f95ff] to-[#4080ff]">
@@ -101,6 +104,23 @@ export function Footer() {
             <p className="max-w-md text-sm leading-relaxed text-[#c8dcff]">
               {footer.brandDescription}
             </p>
+          </div>
+
+          <div>
+            <h4 className="mb-4 text-sm font-semibold tracking-wider text-white uppercase">
+              {footer.section.services}
+            </h4>
+            <div className="space-y-2">
+              {SERVICE_KEYS.map((key) => (
+                <Link
+                  key={key}
+                  href={getLandingPath(key, locale)}
+                  className="block text-sm text-[#c8dcff] transition-colors duration-300 hover:text-[#5f95ff]"
+                >
+                  {services[key].label}
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div>

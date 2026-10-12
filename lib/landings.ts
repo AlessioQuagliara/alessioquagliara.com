@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getLocaleFromPathname, withLang, type Locale } from "@/lib/i18n";
 import { CONTACT_EMAIL, SAME_AS, SITE_URL } from "@/lib/site-config";
 
-export type LandingKey = "freelance" | "industrial";
+export type LandingKey = "freelance" | "industrial" | "saas";
 
 /** URL canoniche delle landing servizi, per lingua. */
 export const LANDING_PATHS: Record<LandingKey, Record<Locale, string>> = {
@@ -13,6 +13,10 @@ export const LANDING_PATHS: Record<LandingKey, Record<Locale, string>> = {
   industrial: {
     it: "/it/automazione-ai-pmi-industriali",
     en: "/en/industrial-ai-automation",
+  },
+  saas: {
+    it: "/it/sviluppo-web-app-saas",
+    en: "/en/saas-web-app-development",
   },
 };
 
