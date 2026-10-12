@@ -46,15 +46,20 @@ export type ScrollExperienceContent = {
     text: string;
     metrics: { value: string; label: string }[];
   };
-  saas: { kicker: string; title: string; text: string; tags: string[] };
+  saas: {
+    kicker: string;
+    title: string;
+    text: string;
+    projectsLabel: string;
+    projects: ExperienceLink[];
+  };
   code: {
     kicker: string;
     title: string;
     text: string;
     servicesLabel: string;
+    /** Link alla sezione contatti delle landing servizi. */
     services: ExperienceLink[];
-    projectsLabel: string;
-    projects: ExperienceLink[];
   };
 };
 
@@ -430,7 +435,7 @@ export function ScrollExperience({ content, skipTo }: ScrollExperienceProps) {
                 <dl className="mt-5 grid grid-cols-2 gap-3">
                   {hardware.metrics.map((metric) => (
                     <div key={metric.value} className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                      <dt className="text-xl font-black text-white sm:text-2xl">{metric.value}</dt>
+                      <dt className="text-base font-bold leading-snug text-white sm:text-lg">{metric.value}</dt>
                       <dd className="mt-1 text-xs leading-5 text-[#c9ddff]">{metric.label}</dd>
                     </div>
                   ))}
@@ -444,16 +449,20 @@ export function ScrollExperience({ content, skipTo }: ScrollExperienceProps) {
                 <p className="experience__kicker">{saas.kicker}</p>
                 <h2 className="experience__title">{saas.title}</h2>
                 <p className="experience__body">{saas.text}</p>
-                <ul className="mt-5 flex flex-wrap gap-2">
-                  {saas.tags.map((tag) => (
-                    <li
-                      key={tag}
-                      className="rounded-full border border-[#8cb4ff]/30 bg-[#1f55ca]/25 px-3 py-1 text-xs text-[#edf4ff]"
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
+                <nav aria-label={saas.projectsLabel} className="mt-5">
+                  <p className="experience__label">{saas.projectsLabel}</p>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {saas.projects.map((link) => (
+                      <li key={link.href}>
+                        <Link href={link.href} className="experience__project">
+                          <span className="experience__project-dot" aria-hidden="true" />
+                          {link.label}
+                          <span aria-hidden="true">↗</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
               </div>
               {poster("saas")}
             </article>
@@ -471,19 +480,6 @@ export function ScrollExperience({ content, skipTo }: ScrollExperienceProps) {
                       <li key={link.href}>
                         <Link href={link.href} className="experience__link">
                           {link.label} <span aria-hidden="true">→</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-
-                <nav aria-label={code.projectsLabel} className="mt-4">
-                  <p className="experience__label">{code.projectsLabel}</p>
-                  <ul className="mt-2 flex flex-wrap gap-2">
-                    {code.projects.map((link) => (
-                      <li key={link.href}>
-                        <Link href={link.href} className="experience__chip">
-                          {link.label}
                         </Link>
                       </li>
                     ))}

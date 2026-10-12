@@ -72,37 +72,31 @@
         "canvasLabel": "Animazione 3D: dal ritratto di Alessio al banco da lavoro con un ESP32 su un tappetino da taglio, fino a un MacBook sulla scrivania dove compare il codice.",
         "skip": "Salta l'animazione",
         "hardware": {
-          "kicker": "Automazione fisica & embedded",
-          "title": "Codice che parla con le macchine.",
-          "text": "Sensori, relè, PLC, microcontrollori. Firmware compatto, zero complessità inutile. Se non serve, non lo scrivo.",
+          "kicker": "Hardware & sensori",
+          "title": "Acquisizione dati & IoT reale",
+          "text": "Dall'hardware alla rete: firmware essenziale su ESP32 e sensori per catturare metriche sul campo senza intermediari fragili.",
           "metrics": [
             {
-              "value": "520 KB",
-              "label": "di RAM sull'ESP32. Bastano, se scrivi bene."
+              "value": "Zero complessità",
+              "label": "Firmware essenziale: niente strati che si rompono."
             },
             {
-              "value": "Fail-safe",
+              "value": "Robustezza industriale",
               "label": "Salta il Wi-Fi? La macchina non si pianta."
             }
           ]
         },
         "saas": {
           "kicker": "Strumenti operativi & micro-SaaS",
-          "title": "Dai numeri grezzi a qualcosa che si usa.",
-          "text": "Il sensore manda dati. Io ci costruisco sopra l'interfaccia per magazzino, logistica e tracciamento. Niente Excel da 40 colonne.",
-          "tags": [
-            "Magazzino",
-            "Logistica",
-            "Tracciamento",
-            "Dashboard"
-          ]
+          "title": "Micro-SaaS & Piattaforme su misura",
+          "text": "Trasformo flussi complessi in interfacce pulite: software per logistica, magazzino e strumenti di automazione costruiti in pubblico.",
+          "projectsLabel": "Costruiti in pubblico"
         },
         "code": {
           "kicker": "Dal sensore al server",
           "title": "Codice pulito. Anche quando non guarda nessuno.",
-          "text": "Python che riceve la telemetria, C che toglie il rumore. Roba che si legge e si mantiene, anche fra un anno.",
-          "servicesLabel": "Servizi",
-          "projectsLabel": "Cosa sto costruendo"
+          "text": "FastAPI che accetta i dati, TypeScript che li smista per cliente. Roba che si legge e si mantiene, anche fra un anno.",
+          "servicesLabel": "Servizi"
         }
       },
       "sections": {

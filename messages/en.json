@@ -72,37 +72,31 @@
         "canvasLabel": "3D animation: from Alessio's portrait to a workbench with an ESP32 on a cutting mat, then a MacBook on the desk where the code shows up.",
         "skip": "Skip the animation",
         "hardware": {
-          "kicker": "Physical automation & embedded",
-          "title": "Code that talks to machines.",
-          "text": "Sensors, relays, PLCs, microcontrollers. Small firmware, zero pointless complexity. If it's not needed, I don't write it.",
+          "kicker": "Hardware & sensors",
+          "title": "Data acquisition & real-world IoT",
+          "text": "From hardware to the network: lean firmware on ESP32 and sensors that capture field metrics with no fragile middlemen.",
           "metrics": [
             {
-              "value": "520 KB",
-              "label": "of RAM on the ESP32. Plenty, if you write well."
+              "value": "Zero complexity",
+              "label": "Lean firmware: no layers waiting to break."
             },
             {
-              "value": "Fail-safe",
+              "value": "Industrial-grade robustness",
               "label": "Wi-Fi drops? The machine keeps going."
             }
           ]
         },
         "saas": {
           "kicker": "Operational tools & micro-SaaS",
-          "title": "From raw numbers to something people use.",
-          "text": "The sensor sends data. I build the interface on top: warehouse, logistics, tracking. No 40-column spreadsheets.",
-          "tags": [
-            "Warehouse",
-            "Logistics",
-            "Tracking",
-            "Dashboards"
-          ]
+          "title": "Micro-SaaS & custom platforms",
+          "text": "I turn messy workflows into clean interfaces: software for logistics, warehouses and automation tools, built in public.",
+          "projectsLabel": "Built in public"
         },
         "code": {
           "kicker": "From sensor to server",
           "title": "Clean code. Even when nobody's looking.",
-          "text": "Python takes the telemetry, C cleans up the noise. Code you can read and maintain, even a year from now.",
-          "servicesLabel": "Services",
-          "projectsLabel": "What I'm building"
+          "text": "FastAPI takes the data in, TypeScript routes it per client. Code you can read and maintain, even a year from now.",
+          "servicesLabel": "Services"
         }
       },
       "sections": {

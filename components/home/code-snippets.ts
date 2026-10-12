@@ -1,8 +1,9 @@
 /**
  * Snippet "digitati" sullo schermo del MacBook nello scrollytelling.
- * Codice vero e funzionante: `python app.py` (con Flask installato) riceve la
- * telemetria dell'ESP32; `cc sensor.c && ./a.out` pulisce il segnale con una
- * media mobile su buffer circolare. Max ~23 righe, righe corte per lo schermo.
+ * Codice vero e funzionante: `app.py` è un'API FastAPI che accetta le letture
+ * (validazione + API key); `webhook.ts` è un endpoint di automazione che
+ * verifica la firma HMAC e mette ogni evento nella coda del suo tenant.
+ * Max ~25 righe, righe corte per lo schermo.
  */
 
 export type TokenKind = "plain" | "keyword" | "string" | "comment" | "accent";
@@ -15,54 +16,52 @@ export type CodeSnippet = {
   tokens: Token[];
 };
 
-const APP_PY = `from statistics import mean
-from flask import Flask, jsonify, request
+const APP_PY = `import os
+from fastapi import FastAPI, Header, HTTPException
+from pydantic import BaseModel, Field
 
-app = Flask(__name__)
-readings = []  # last values sent by the ESP32
+app = FastAPI(title="ingest-api")
+API_KEY = os.environ.get("API_KEY", "")
 
-@app.post("/api/sensor")
-def receive():
-    data = request.get_json(silent=True) or {}
-    if "temp" not in data:
-        return jsonify(error="temp missing"), 400
-    readings.append(float(data["temp"]))
-    del readings[:-50]  # keep the last 50
-    return jsonify(ok=True), 201
+class Reading(BaseModel):
+    device: str = Field(min_length=1)
+    value: float
 
-@app.get("/api/sensor")
-def summary():
-    if not readings:
-        return jsonify(count=0)
-    avg = round(mean(readings), 2)
-    return jsonify(count=len(readings), avg=avg)
+@app.get("/health")
+def health():
+    return {"status": "ok"}
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")`;
+@app.post("/api/readings", status_code=202)
+def ingest(r: Reading, x_api_key: str = Header()):
+    if not API_KEY or x_api_key != API_KEY:
+        raise HTTPException(status_code=401)
+    # queued, then processed by the pipeline
+    return {"accepted": r.device}`;
 
-const SENSOR_C = `#include <stdio.h>
+const WEBHOOK_TS = `import { createHmac, timingSafeEqual } from "node:crypto";
 
-#define WINDOW 5
+type Event = { tenant: string; type: string; data: unknown };
+const SECRET = process.env.WEBHOOK_SECRET ?? "";
+const queues = new Map<string, Event[]>();
 
-/* circular buffer: the oldest reading gets overwritten */
-static int buf[WINDOW];
-static int head = 0, count = 0;
-static long sum = 0;
-
-double smooth(int raw) {
-  if (count == WINDOW) sum -= buf[head];
-  else count++;
-  buf[head] = raw;
-  sum += raw;
-  head = (head + 1) % WINDOW;
-  return (double)sum / count;
+function verify(body: string, signature: string) {
+  const hash = createHmac("sha256", SECRET).update(body);
+  const a = Buffer.from(hash.digest("hex"));
+  const b = Buffer.from(signature);
+  return a.length === b.length && timingSafeEqual(a, b);
 }
 
-int main(void) {
-  int raw[] = {512, 530, 498, 801, 505, 515, 520};
-  for (int i = 0; i < 7; i++)
-    printf("raw=%d avg=%.1f\\n", raw[i], smooth(raw[i]));
-  return 0;
+export async function POST(req: Request) {
+  const body = await req.text();
+  const sig = req.headers.get("x-signature") ?? "";
+  if (!SECRET || !verify(body, sig)) {
+    return new Response("bad signature", { status: 401 });
+  }
+  const event = JSON.parse(body) as Event;
+  // one queue per tenant: no data leaks between clients
+  const queue = queues.get(event.tenant) ?? [];
+  queues.set(event.tenant, [...queue, event]);
+  return Response.json({ queued: event.type }, { status: 202 });
 }`;
 
 type Rule = { kind: TokenKind; pattern: string };
@@ -73,17 +72,18 @@ const PYTHON_RULES: Rule[] = [
   { kind: "accent", pattern: "@[\\w.]+|\\b\\d+(?:\\.\\d+)?\\b" },
   {
     kind: "keyword",
-    pattern: "\\b(?:from|import|def|return|if|else|for|in|not|and|or|del|None|True|False)\\b",
+    pattern: "\\b(?:from|import|def|class|return|raise|if|else|for|in|not|and|or|None|True|False)\\b",
   },
 ];
 
-const C_RULES: Rule[] = [
+const TS_RULES: Rule[] = [
   { kind: "comment", pattern: "\\/\\*[\\s\\S]*?\\*\\/|\\/\\/[^\\n]*" },
-  { kind: "string", pattern: "\"(?:\\\\.|[^\"\\\\\\n])*\"|<\\w+\\.h>" },
-  { kind: "accent", pattern: "#\\w+|\\b\\d+(?:\\.\\d+)?\\b" },
+  { kind: "string", pattern: "\"[^\"\\n]*\"|'[^'\\n]*'" },
+  { kind: "accent", pattern: "\\b\\d+(?:\\.\\d+)?\\b|\\b[A-Z]\\w*\\b" },
   {
     kind: "keyword",
-    pattern: "\\b(?:int|long|double|float|char|void|static|for|while|if|else|return|sizeof|const)\\b",
+    pattern:
+      "\\b(?:import|from|export|async|await|function|return|const|let|type|if|new|as)\\b",
   },
 ];
 
@@ -112,7 +112,7 @@ function tokenize(code: string, rules: Rule[]): Token[] {
 
 export const CODE_SNIPPETS: CodeSnippet[] = [
   { file: "app.py", code: APP_PY, tokens: tokenize(APP_PY, PYTHON_RULES) },
-  { file: "sensor.c", code: SENSOR_C, tokens: tokenize(SENSOR_C, C_RULES) },
+  { file: "webhook.ts", code: WEBHOOK_TS, tokens: tokenize(WEBHOOK_TS, TS_RULES) },
 ];
 
 /** Righe e colonne massime: servono a scalare il font sulla larghezza dello schermo. */

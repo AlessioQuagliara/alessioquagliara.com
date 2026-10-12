@@ -1029,40 +1029,60 @@ html.lenis {
   color: #d8e7ff;
 }
 
+/* Servizi: pulsanti pieni, chiari sul fondo scuro. */
 .experience__link {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 0.9rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.55rem 0.85rem;
+  background: #fff;
+  padding: 0.65rem 0.95rem;
   font-size: 0.875rem;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 700;
+  color: #0b2a6b;
+  box-shadow: 0 14px 30px -18px rgba(0, 0, 0, 0.9);
   transition:
-    border-color 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .experience__link:hover {
-  border-color: rgba(140, 180, 255, 0.6);
-  background: rgba(38, 100, 235, 0.25);
+  background: #2664eb;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
-.experience__chip {
+/* Progetti: badge pieni e cliccabili. */
+.experience__project {
   display: inline-flex;
-  border: 1px solid rgba(140, 180, 255, 0.35);
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(140, 180, 255, 0.55);
   border-radius: 999px;
-  background: rgba(31, 85, 202, 0.25);
-  padding: 0.3rem 0.8rem;
-  font-size: 0.8rem;
-  color: #edf4ff;
-  transition: background 0.2s ease;
+  background: #2664eb;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 12px 28px -16px rgba(38, 100, 235, 0.9);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
-.experience__chip:hover {
-  background: rgba(38, 100, 235, 0.55);
+.experience__project:hover {
+  background: #1d4fc4;
+  transform: translateY(-1px);
+}
+
+.experience__project-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #7cf0b5;
+  box-shadow: 0 0 0 3px rgba(124, 240, 181, 0.25);
 }
 
 .experience__progress {

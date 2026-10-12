@@ -48,16 +48,19 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             secondary: { label: home.ctaContact, href: withLang("/contact", locale) },
           },
           hardware: experience.hardware,
-          saas: experience.saas,
-          code: {
-            ...experience.code,
-            services: SERVICE_KEYS.map((key) => ({
-              label: site.services[key].label,
-              href: getLandingPath(key, locale),
-            })),
+          saas: {
+            ...experience.saas,
             projects: FEATURED_PROJECTS.map((name) => ({
               label: name,
               href: withLang(`/projects/${name}`, locale),
+            })),
+          },
+          code: {
+            ...experience.code,
+            // Dritti alla sezione contatti della landing.
+            services: SERVICE_KEYS.map((key) => ({
+              label: site.services[key].label,
+              href: `${getLandingPath(key, locale)}#contact`,
             })),
           },
         }}
