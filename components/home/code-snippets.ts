@@ -1,9 +1,9 @@
 /**
  * Snippet "digitati" sullo schermo del MacBook nello scrollytelling.
- * Codice vero e funzionante: `app.py` è un'API Flask che accetta le letture
- * dell'ESP32 (API key + validazione); `cc sensor.c && ./a.out` pulisce il
- * segnale con una media mobile su buffer circolare.
- * Max ~24 righe, righe corte per lo schermo.
+ * Codice vero e funzionante (Flask): `webhook.py` verifica la firma dei webhook
+ * Stripe e manda il cliente al CRM; `api.py` è un endpoint multi-tenant che
+ * valida i dati con Pydantic e non mescola i clienti.
+ * Max ~27 righe, righe corte per lo schermo.
  */
 
 export type TokenKind = "plain" | "keyword" | "string" | "comment" | "accent";
@@ -16,53 +16,61 @@ export type CodeSnippet = {
   tokens: Token[];
 };
 
-const APP_PY = `import os
-from flask import Flask, abort, jsonify, request
+const WEBHOOK_PY = `import os
+import requests
+import stripe
+from flask import Flask, abort, request
 
 app = Flask(__name__)
-API_KEY = os.environ.get("API_KEY", "")
-readings = []  # last values sent by the ESP32
+SECRET = os.environ["STRIPE_WEBHOOK_SECRET"]
+CRM_URL = os.environ["CRM_URL"]  # HubSpot, Pipedrive, ...
 
-@app.get("/health")
-def health():
-    return jsonify(status="ok")
+@app.post("/webhooks/stripe")
+def stripe_webhook():
+    try:
+        event = stripe.Webhook.construct_event(
+            request.get_data(),
+            request.headers.get("Stripe-Signature", ""),
+            SECRET,
+        )
+    except (ValueError, stripe.SignatureVerificationError):
+        abort(400)  # fake or broken: not our problem
 
-@app.post("/api/readings")
-def ingest():
+    if event["type"] == "checkout.session.completed":
+        who = event["data"]["object"]["customer_details"]
+        requests.post(CRM_URL, timeout=5, json={
+            "email": who["email"], "name": who["name"],
+        }).raise_for_status()  # CRM down? Stripe retries
+    return "", 204`;
+
+const API_PY = `from flask import Flask, abort, g, jsonify, request
+from pydantic import BaseModel, Field, ValidationError
+
+app = Flask(__name__)
+TENANTS = {"key-acme": "acme", "key-studio": "studio"}
+leads = {}  # one list per tenant, never mixed
+
+class Lead(BaseModel):
+    name: str = Field(min_length=2, max_length=80)
+    email: str = Field(pattern=r"^[^@\\s]+@[^@\\s]+\\.\\w+$")
+    budget: int | None = Field(None, ge=0)
+
+@app.before_request
+def resolve_tenant():
     key = request.headers.get("X-API-Key")
-    if not API_KEY or key != API_KEY:
+    g.tenant = TENANTS.get(key)
+    if g.tenant is None:
         abort(401)
-    data = request.get_json(silent=True) or {}
-    if not isinstance(data.get("value"), (int, float)):
-        abort(422)
-    readings.append(float(data["value"]))
-    del readings[:-50]  # keep the last 50
-    return jsonify(accepted=len(readings)), 202`;
 
-const SENSOR_C = `#include <stdio.h>
-
-#define WINDOW 5
-
-/* circular buffer: the oldest reading gets overwritten */
-static int buf[WINDOW];
-static int head = 0, count = 0;
-static long sum = 0;
-
-double smooth(int raw) {
-  if (count == WINDOW) sum -= buf[head];
-  else count++;
-  buf[head] = raw;
-  sum += raw;
-  head = (head + 1) % WINDOW;
-  return (double)sum / count;
-}
-
-int main(void) {
-  int raw[] = {512, 530, 498, 801, 505, 515, 520};
-  for (int i = 0; i < 7; i++)
-    printf("raw=%d avg=%.1f\\n", raw[i], smooth(raw[i]));
-  return 0;
-}`;
+@app.post("/api/leads")
+def create_lead():
+    try:
+        data = request.get_json(force=True)
+        lead = Lead.model_validate(data)
+    except ValidationError as err:
+        return {"errors": err.errors()}, 422
+    leads.setdefault(g.tenant, []).append(lead)
+    return jsonify(lead.model_dump()), 201`;
 
 type Rule = { kind: TokenKind; pattern: string };
 
@@ -72,17 +80,7 @@ const PYTHON_RULES: Rule[] = [
   { kind: "accent", pattern: "@[\\w.]+|\\b\\d+(?:\\.\\d+)?\\b" },
   {
     kind: "keyword",
-    pattern: "\\b(?:from|import|def|return|if|else|for|in|not|and|or|del|None|True|False)\\b",
-  },
-];
-
-const C_RULES: Rule[] = [
-  { kind: "comment", pattern: "\\/\\*[\\s\\S]*?\\*\\/|\\/\\/[^\\n]*" },
-  { kind: "string", pattern: "\"(?:\\\\.|[^\"\\\\\\n])*\"|<\\w+\\.h>" },
-  { kind: "accent", pattern: "#\\w+|\\b\\d+(?:\\.\\d+)?\\b" },
-  {
-    kind: "keyword",
-    pattern: "\\b(?:int|long|double|float|char|void|static|for|while|if|else|return|sizeof|const)\\b",
+    pattern: "\\b(?:from|import|def|class|return|if|else|for|in|is|not|and|or|try|except|as|None|True|False)\\b",
   },
 ];
 
@@ -110,8 +108,8 @@ function tokenize(code: string, rules: Rule[]): Token[] {
 }
 
 export const CODE_SNIPPETS: CodeSnippet[] = [
-  { file: "app.py", code: APP_PY, tokens: tokenize(APP_PY, PYTHON_RULES) },
-  { file: "sensor.c", code: SENSOR_C, tokens: tokenize(SENSOR_C, C_RULES) },
+  { file: "webhook.py", code: WEBHOOK_PY, tokens: tokenize(WEBHOOK_PY, PYTHON_RULES) },
+  { file: "api.py", code: API_PY, tokens: tokenize(API_PY, PYTHON_RULES) },
 ];
 
 /** Righe e colonne massime: servono a scalare il font sulla larghezza dello schermo. */

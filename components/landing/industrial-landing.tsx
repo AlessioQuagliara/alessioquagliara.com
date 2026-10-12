@@ -3,12 +3,12 @@ import {
   faCircleQuestion,
   faCompass,
   faEnvelope,
+  faGears,
   faIndustry,
   faLayerGroup,
   faRoute,
   faTriangleExclamation,
   faUser,
-  faWarehouse,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { getLandingData } from "@/components/landing/landing-data";
@@ -147,7 +147,7 @@ export function IndustrialLanding({ locale }: { locale: Locale }) {
               id="constraints"
               tone="light"
               eyebrow={constraint.eyebrow}
-              icon={faWarehouse}
+              icon={faGears}
               title={constraint.title}
             />
             <div className="mt-6 space-y-4">

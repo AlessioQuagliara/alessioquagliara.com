@@ -2,11 +2,7 @@ import type { Metadata } from "next";
 import { HOME_CONTACT_ID, HomeSections } from "@/components/home/home-sections";
 import { ScrollExperience } from "@/components/home/scroll-experience";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
-import { getLandingPath, type LandingKey } from "@/lib/landings";
-
-/** Landing servizi e progetti linkati nell'ultimo capitolo dello scrollytelling. */
-const SERVICE_KEYS: LandingKey[] = ["freelance", "industrial"];
-const FEATURED_PROJECTS = ["RStudy", "PivotCut", "LinkBay-CMS"];
+import { getLandingPath } from "@/lib/landings";
 
 type HomePageProps = {
   searchParams: Promise<{ lang?: string }>;
@@ -29,9 +25,16 @@ export async function generateMetadata({
 
 export default async function HomePage({ searchParams }: HomePageProps) {
   const locale = getLocaleFromLang((await searchParams).lang);
-  const site = getMessages(locale).site;
-  const { home } = site;
+  const { home } = getMessages(locale).site;
   const { experience } = home;
+  const { projects, ...saas } = experience.saas;
+
+  // Servizi: automazioni → contatti della landing freelance/agenzie; web app & SaaS → contatti.
+  const serviceHrefs = [`${getLandingPath("freelance", locale)}#contact`, withLang("/contact", locale)];
+  const services = home.sections.services.items.map((item, index) => ({
+    ...item,
+    href: serviceHrefs[index],
+  }));
 
   return (
     <>
@@ -49,23 +52,20 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           },
           hardware: experience.hardware,
           saas: {
-            ...experience.saas,
-            projects: FEATURED_PROJECTS.map((name) => ({
+            ...saas,
+            projects: Object.entries(projects).map(([name, note]) => ({
               label: name,
+              note,
               href: withLang(`/projects/${name}`, locale),
             })),
           },
           code: {
             ...experience.code,
-            // Dritti alla sezione contatti della landing.
-            services: SERVICE_KEYS.map((key) => ({
-              label: site.services[key].label,
-              href: `${getLandingPath(key, locale)}#contact`,
-            })),
+            services: services.map(({ title, href }) => ({ label: title, href })),
           },
         }}
       />
-      <HomeSections locale={locale} content={home.sections} />
+      <HomeSections locale={locale} content={home.sections} services={services} />
     </>
   );
 }

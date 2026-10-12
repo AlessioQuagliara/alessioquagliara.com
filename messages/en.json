@@ -1,10 +1,10 @@
 {
   "site": {
     "metadata": {
-      "defaultTitle": "Software and automations for SMEs and freelancers | Alessio Quagliara",
-      "defaultDescription": "Software and automations for small businesses and freelancers. I take the boring stuff: documents, inventory, quotes. The stuff that eats your hours.",
+      "defaultTitle": "Micro-SaaS, web apps and automation | Alessio Quagliara",
+      "defaultDescription": "I build micro-SaaS products, custom web apps and API automation for agencies, freelancers and SMEs. I take the manual steps, the ones that eat your hours.",
       "ogTitle": "Alessio Quagliara",
-      "ogDescription": "I build software and automations that are still standing. I help small businesses and freelancers with the boring stuff.",
+      "ogDescription": "I build software and automations that are still standing. Micro-SaaS, web apps and integrations for agencies, freelancers and SMEs.",
       "locale": "en_US"
     },
     "layout": {
@@ -27,7 +27,7 @@
         "email": "ciao@alessioquagliara.com",
         "brandName": "Alessio Quagliara",
         "brandSubtitle": "I build software and automations that are still standing",
-        "brandDescription": "I help small businesses and freelancers with the boring stuff. The stuff you keep putting off.",
+        "brandDescription": "Micro-SaaS, web apps and automation for agencies, freelancers and SMEs. The boring stuff you keep putting off.",
         "section": {
           "legal": "Legal",
           "contacts": "Contacts"
@@ -60,50 +60,63 @@
     },
     "home": {
       "metadata": {
-        "title": "Software and automations for SMEs and freelancers | Alessio Quagliara",
-        "description": "Software and automations for small businesses and freelancers. I take the boring stuff: documents, inventory, quotes. The stuff that eats your hours."
+        "title": "Micro-SaaS, web apps and automation | Alessio Quagliara",
+        "description": "I build micro-SaaS products, custom web apps and API automation for agencies, freelancers and SMEs. I take the manual steps, the ones that eat your hours."
       },
-      "badge": "Build in Public · Web apps · Automation · Real systems",
+      "badge": "SaaS builder · Web apps · API automation",
       "title": "I build software and automations that are still standing.",
-      "description": "I help small businesses and freelancers with the boring stuff: documents, inventory, quotes, repeated steps. I get rid of them, no show.",
-      "ctaProjects": "See what I'm building",
-      "ctaContact": "Got a process eating your time? Tell me.",
+      "description": "I build micro-SaaS products, custom web apps and automated pipelines for agencies, freelancers and companies. I remove the manual steps and ship reliable tools, without fragile code.",
+      "ctaProjects": "My SaaS projects",
+      "ctaContact": "Automate a workflow",
       "experience": {
         "canvasLabel": "3D animation: from Alessio's portrait to a workbench with an ESP32 on a cutting mat, then a MacBook on the desk where the code shows up.",
         "skip": "Skip the animation",
         "hardware": {
-          "kicker": "Hardware & sensors",
-          "title": "Data acquisition & real-world IoT",
-          "text": "From hardware to the network: lean firmware on ESP32 and sensors that capture field metrics with no fragile middlemen.",
-          "metrics": [
-            {
-              "value": "Zero complexity",
-              "label": "Lean firmware: no layers waiting to break."
-            },
-            {
-              "value": "Industrial-grade robustness",
-              "label": "Wi-Fi drops? The machine keeps going."
-            }
+          "kicker": "IoT & embedded",
+          "title": "From hardware to the cloud",
+          "text": "IoT prototypes and embedded code: when you need to collect real-world data or connect physical devices to your software ecosystem.",
+          "tags": [
+            "Microcontrollers",
+            "Zero overhead",
+            "Reliability"
           ]
         },
         "saas": {
-          "kicker": "Operational tools & micro-SaaS",
-          "title": "Micro-SaaS & custom platforms",
-          "text": "I turn messy workflows into clean interfaces: software for logistics, warehouses and automation tools, built in public.",
-          "projectsLabel": "Built in public"
+          "kicker": "Products & internal tools",
+          "title": "Micro-SaaS & web platforms",
+          "text": "I build digital products and internal tools that solve specific problems: fast interfaces, sustainable architecture and minimal maintenance.",
+          "projectsLabel": "Featured projects",
+          "projects": {
+            "RStudy": "Focus & micro-goals",
+            "PivotCut": "Desktop 2D animation app",
+            "LinkBay-CMS": "Data-driven SEO monitoring"
+          }
         },
         "code": {
-          "kicker": "From sensor to server",
+          "kicker": "From webhook to database",
           "title": "Clean code. Even when nobody's looking.",
-          "text": "Flask takes the data in, C cleans up the noise. Code you can read and maintain, even a year from now.",
+          "text": "A Stripe webhook that updates the CRM on its own, a multi-tenant API that never mixes clients up. Code you can read and maintain, even a year from now.",
           "servicesLabel": "Services"
         }
       },
       "sections": {
+        "services": {
+          "title": "What I can do for you",
+          "items": [
+            {
+              "title": "Automation & integrations for agencies",
+              "text": "I connect tools, CRMs, APIs and AI to remove the manual work between clients and team."
+            },
+            {
+              "title": "Web app & SaaS development",
+              "text": "From idea to deploy: solid, scalable web platforms that are easy to maintain."
+            }
+          ]
+        },
         "contactCta": {
           "title": "Let's talk",
           "badge": "Free pilot program · October 2026",
-          "text": "Freelancer or small business losing hours on documents, inventory or quotes? I'm selecting two teams to map workflows and integrate automation or AI for free, in exchange for a case study.",
+          "text": "Agency, freelancer or SME losing hours copying data between tools, CRMs and clients? I'm selecting two teams to map workflows and integrate automation or AI for free, in exchange for a case study.",
           "primary": "Book a call",
           "secondary": "Go to contacts"
         }
@@ -112,34 +125,235 @@
     "about": {
       "metadata": {
         "title": "About | Alessio Quagliara",
-        "description": "Who I am: someone who ran a software house and worked as a factory worker, now studying Computer Engineering and building software and automations without much ceremony."
+        "description": "Who I am: someone who ran a software house, now studying Computer Engineering and building micro-SaaS, web apps and automations without much ceremony."
       },
-      "title": "About",
-      "intro": "I study Computer Engineering (Intelligent Systems). Before that I ran a software house and worked as a factory worker. I know how software runs — and how people run when things have to work.",
-      "sections": [
-        {
-          "title": "Software house and factory",
-          "text": "I ran a small SRL with few resources and urgencies, and worked as a factory worker. I've seen processes from the bottom."
+      "hero": {
+        "status": "Available for new projects",
+        "title": "I build software and micro-SaaS made to last",
+        "intro": "I'm Alessio. I study Computer Engineering (Intelligent Systems), I started a software house and closed it. Now I build micro-SaaS products, web apps and automations for agencies, freelancers and SMEs. Few promises, code that holds up.",
+        "photoAlt": "Portrait of Alessio Quagliara",
+        "primary": "Book a call",
+        "secondary": "See the projects",
+        "badges": [
+          "Python",
+          "Flask",
+          "C",
+          "ESP32",
+          "n8n",
+          "Docker"
+        ]
+      },
+      "principles": {
+        "eyebrow": "How I work",
+        "title": "Four rules. I learned them the hard way.",
+        "items": [
+          {
+            "title": "Architectural pragmatism",
+            "text": "The simplest solution that holds. No microservices for a contact form: I've done my time with overengineering."
+          },
+          {
+            "title": "Build in Public",
+            "text": "Projects, numbers and mistakes go on the blog. Even the ones that make me look bad."
+          },
+          {
+            "title": "Software & real-world IoT",
+            "text": "When the data starts outside the screen, I go lower: C, ESP32, sensors."
+          },
+          {
+            "title": "Long-term maintainability",
+            "text": "Code you can still read in two years, even if someone else opens it. Fewer parts, fewer surprises."
+          }
+        ]
+      },
+      "timeline": {
+        "eyebrow": "Journey",
+        "title": "Where I come from",
+        "tabs": [
+          {
+            "id": "saas",
+            "label": "SaaS & Web Development",
+            "steps": [
+              {
+                "period": "2017–2018",
+                "title": "My first e-commerce, never launched",
+                "text": "Car parts, a 14-day Shopify trial and no launch. First lesson: an idea isn't enough."
+              },
+              {
+                "period": "2019–2021",
+                "title": "Lyara and dropshipping",
+                "text": "Shopify, ads, copy, content. I lost money and gained a trade."
+              },
+              {
+                "period": "2022",
+                "title": "Be Social",
+                "text": "My first web agency. Clients yes, margins no. That's when I moved everything to development."
+              },
+              {
+                "period": "2023–2026",
+                "title": "Spotex SRL",
+                "text": "A software house founded with partners, then closed. I learned more there than in any course."
+              },
+              {
+                "period": "2025–2026",
+                "title": "LinkBay-CMS",
+                "text": "Born as a platform for agencies, trademark filed in 2025. Now I'm cutting it down to what matters: an SEO tool for decaying content."
+              },
+              {
+                "period": "2026",
+                "title": "RStudy and PivotCut",
+                "text": "An app to study without the chaos and a macOS app for 2D animation, heading to its first release on itch.io. Built in public."
+              }
+            ]
+          },
+          {
+            "id": "hardware",
+            "label": "Hardware & Automation",
+            "steps": [
+              {
+                "period": "2012–2016",
+                "title": "Automation technician",
+                "text": "PLCs, electronics, networks. That's where I learned software sooner or later touches something physical."
+              },
+              {
+                "period": "Lab",
+                "title": "Arduino and ESP32",
+                "text": "Prototypes on a cutting mat: sensors, lean firmware, data sent to a backend."
+              },
+              {
+                "period": "Automation",
+                "title": "n8n and Node-RED",
+                "text": "Flows that connect tools, CRMs and APIs. If you do a step by hand every week, it's a candidate."
+              },
+              {
+                "period": "2026",
+                "title": "Back to C",
+                "text": "To understand what happens underneath: memory, I/O, performance. I write about it on the blog."
+              },
+              {
+                "period": "Today",
+                "title": "Local AI",
+                "text": "Local models with Ollama and llama.cpp, for people who don't want their data leaving the building."
+              }
+            ]
+          },
+          {
+            "id": "education",
+            "label": "Academic background",
+            "steps": [
+              {
+                "period": "2012–2016",
+                "title": "Automation Technician diploma",
+                "text": "Istituto Tecnico Padri Somaschi. The basics: automation, electronics, PLCs."
+              },
+              {
+                "period": "2017–2018",
+                "title": "Full Stack Web Developer",
+                "text": "MUSA Formazione. Frontend, backend and databases, end to end."
+              },
+              {
+                "period": "2022–2025",
+                "title": "Business diploma (AFM)",
+                "text": "ITES Caio Plinio Secondo. Accounting and marketing: useful when a product also has to make economic sense."
+              },
+              {
+                "period": "2025 – ongoing",
+                "title": "Computer Engineering",
+                "text": "UNINETTUNO, Intelligent Systems. AI, embedded, IoT, databases."
+              }
+            ]
+          }
+        ]
+      },
+      "stack": {
+        "eyebrow": "Focus stack",
+        "title": "What I use, and what for",
+        "hint": "Hover or tap a badge to see where I use it.",
+        "filtersLabel": "Filter by category",
+        "all": "All",
+        "categories": {
+          "backend": "Backend",
+          "saas": "SaaS",
+          "embedded": "Embedded",
+          "tooling": "Tooling"
         },
-        {
-          "title": "What I use",
-          "text": "Full stack web. I can chew Python, but C is more fun. n8n and Node-RED for automations. Arduino and ESP32 when time's left."
-        },
-        {
-          "title": "Why I write",
-          "text": "Software, automation, leadership, startups, real mistakes. Systems that have to hold up outside of theory."
-        }
-      ],
-      "focusAreasTitle": "Where I get my hands dirty",
-      "focusAreas": [
-        "Full stack web",
-        "C (more fun)",
-        "Python (I get by)",
-        "n8n & Node-RED automations",
-        "Arduino & ESP32",
-        "Docker in production"
-      ],
-      "closing": "I build, break, fix and write down what I learn. If you're still not bored, I'm doing something right.",
+        "items": [
+          {
+            "name": "Python",
+            "category": "backend",
+            "use": "Scripts, APIs and integrations. My everyday language."
+          },
+          {
+            "name": "Flask",
+            "category": "backend",
+            "use": "Lean backends: webhooks, APIs, internal dashboards."
+          },
+          {
+            "name": "Quart",
+            "category": "backend",
+            "use": "Async Flask, when lots of calls are waiting around."
+          },
+          {
+            "name": "Full stack web",
+            "category": "saas",
+            "use": "From database to interface, deploy included."
+          },
+          {
+            "name": "Next.js & TypeScript",
+            "category": "saas",
+            "use": "This site. A typed frontend that doesn't blow up on the first refactor."
+          },
+          {
+            "name": "Multi-tenant",
+            "category": "saas",
+            "use": "Many clients on one platform, data never mixed. See LinkBay-CMS."
+          },
+          {
+            "name": "Tailwind CSS",
+            "category": "saas",
+            "use": "Interfaces that are quick to build and quick to change."
+          },
+          {
+            "name": "C",
+            "category": "embedded",
+            "use": "Algorithms, memory, firmware. C is the fun part."
+          },
+          {
+            "name": "ESP32",
+            "category": "embedded",
+            "use": "Built-in Wi-Fi: sensors that talk straight to an API."
+          },
+          {
+            "name": "Arduino",
+            "category": "embedded",
+            "use": "Quick prototypes to see if a physical idea holds up."
+          },
+          {
+            "name": "PLC",
+            "category": "embedded",
+            "use": "Where my diploma started: logic and industrial automation."
+          },
+          {
+            "name": "n8n",
+            "category": "tooling",
+            "use": "Automations between tools, CRMs and APIs without writing everything by hand."
+          },
+          {
+            "name": "Node-RED",
+            "category": "tooling",
+            "use": "Event-driven flows, handy when devices are involved."
+          },
+          {
+            "name": "Docker",
+            "category": "tooling",
+            "use": "In production: same environment everywhere, deploys without surprises."
+          },
+          {
+            "name": "Ollama & llama.cpp",
+            "category": "tooling",
+            "use": "Local AI, when data must not leave the company."
+          }
+        ]
+      },
       "cta": {
         "title": "Want to talk?",
         "text": "Got a process that wastes your time? Reach out.",
@@ -150,17 +364,17 @@
     "contact": {
       "metadata": {
         "title": "Contact | Alessio Quagliara",
-        "description": "Contact for automations, AI, and software-hardware integration: freelancers and industrial companies."
+        "description": "Contact for micro-SaaS, web apps, automation and API integrations: agencies, freelancers and SMEs."
       },
       "title": "Let's talk",
-      "intro": "Losing hours on documents, inventory or quotes? Or need software to talk to machines in production? Write with context. I reply with questions, not a pitch.",
+      "intro": "Losing hours copying data between tools, CRMs and quotes? Got a SaaS idea or an internal tool to build? Write with context. I reply with questions, not a pitch.",
       "description": "Below: where I can help and how to reach me.",
       "helpTitle": "I can help if...",
       "bullets": [
-        "You're a freelancer losing time on manual steps",
-        "You want to bring automations or AI into a company",
-        "You need software, Arduino, ESP32 and machines to talk",
-        "You want to follow the journey, mistakes included"
+        "You're an agency or freelancer losing time on manual steps",
+        "You want tools, CRMs, APIs and AI connected, no copy-paste",
+        "You need a web app or micro-SaaS built properly",
+        "You need physical devices (ESP32, sensors) talking to your software"
       ],
       "directContactsTitle": "Direct contacts",
       "emailLabel": "Email me",
@@ -179,7 +393,7 @@
         "description": "Curated selection of repositories and projects around small SaaS products, automation, AI/LLM tooling, and physical systems."
       },
       "title": "Projects",
-      "description": "Repositories and projects that show what I am building and learning: small SaaS products, automation, AI/LLM tooling, and operational software.",
+      "description": "Repositories and projects that show what I am building and learning: small SaaS products, automation, AI/LLM tooling, and internal tools.",
       "empty": "No featured repositories found. Add the `featured` topic to your GitHub repositories and set `GITHUB_USERNAME` in `.env.local`.",
       "cardNoDescription": "No description available.",
       "viewRepository": "View repository on GitHub",
@@ -349,7 +563,7 @@
       },
       "industrial": {
         "label": "Industrial automation and AI for SMEs",
-        "text": "Fewer manual handoffs between warehouse, production and office."
+        "text": "Fewer manual handoffs between ERP, production and office."
       }
     },
     "landingCommon": {
@@ -546,7 +760,7 @@
             "You want to \"do AI\" without knowing what for.",
             "You want a huge project without a clear problem."
           ],
-          "crossLinkText": "Got a warehouse or a production floor?",
+          "crossLinkText": "Running a company with more structured processes?",
           "crossLinkLabel": "This is your page"
         },
         "credibility": {
@@ -618,16 +832,16 @@
       "industrial": {
         "metadata": {
           "title": "Industrial Automation & AI for SMEs | Alessio Quagliara",
-          "description": "Practical automation and AI for manufacturing, logistics and industrial SMEs. Reduce manual handoffs and make operations easier to track."
+          "description": "Practical automation, integrations and AI for SMEs. Reduce manual handoffs and make operations easier to track."
         },
         "schema": {
           "serviceName": "Process automation and applied AI for industrial SMEs",
           "serviceType": "Industrial process automation and software integration"
         },
         "hero": {
-          "eyebrow": "Manufacturing · logistics · warehouse",
+          "eyebrow": "SMEs · integrations · applied AI",
           "title": "Industrial automation and AI for SMEs: fewer manual handoffs, clearer operations.",
-          "subtitle": "I take one real workflow — warehouse, production, data, communication — and connect it to the people and systems you already have. Without rebuilding everything.",
+          "subtitle": "I take one real workflow — ERP, production, data, communication — and connect it to the people and systems you already have. Without rebuilding everything.",
           "microcopy": "Nothing stops. Nothing gets rebuilt from scratch.",
           "secondaryCta": "Map your process",
           "emailSubject": "SME automation: an operational workflow to review",
@@ -676,7 +890,7 @@
         "build": {
           "eyebrow": "What I can build",
           "title": "Operational results, not tech for show",
-          "intro": "I don't replace your ERP, MES or WMS. I work next to them and plug the gaps between systems.",
+          "intro": "I don't replace your ERP, MES or management software. I work next to them and plug the gaps between systems.",
           "cards": [
             {
               "title": "Connect data and tools",
@@ -703,17 +917,17 @@
               "text": "Reading documents, routing requests, summarising issues. With a person checking."
             },
             {
-              "title": "Signals from the floor",
+              "title": "Signals from the physical world",
               "text": "Arduino, ESP32, sensors. When they're actually needed."
             }
           ],
           "iotNote": "I don't sell hardware by the kilo. I only suggest it when a physical data point is missing and there's no simpler way."
         },
         "constraint": {
-          "eyebrow": "From the floor to the software",
+          "eyebrow": "From the process to the software",
           "title": "Constraints first, technology second",
           "paragraphs": [
-            "I also work in logistics. You can't judge a workflow from a dashboard: it has to survive shifts, rush orders, absences and exceptions.",
+            "You can't judge a workflow from a dashboard: it has to survive rush orders, absences and exceptions.",
             "And I come from a software company where maintenance and thin resources were normal. I design for whoever uses the tool at 6 a.m. and whoever maintains it two years from now."
           ],
           "points": [
@@ -840,10 +1054,10 @@
         },
         "credibility": {
           "eyebrow": "Who's behind this",
-          "title": "I write software, but I know the warehouse",
+          "title": "I write software, but I start from the process",
           "paragraphs": [
             "Timings, handoffs, information that never arrives: I've seen them live, not on a slide.",
-            "Full stack developer (Python, Flask, Quart, Docker in production), n8n and Node-RED for automation, Computer Engineering student. I've also written about a Flask app born from real warehouse problems."
+            "Full stack developer (Python, Flask, Quart, Docker in production), n8n and Node-RED for automation, Computer Engineering student."
           ],
           "principles": [
             "Understand the problem first. Then decide whether to build.",
@@ -854,7 +1068,7 @@
           "title": "Questions companies ask",
           "items": [
             {
-              "question": "Do we need to replace our ERP, WMS or MES?",
+              "question": "Do we need to replace our ERP, management software or MES?",
               "answer": "No. I work next to them: connecting, collecting data, adding what's missing.",
               "pilot": false
             },
@@ -911,7 +1125,6 @@
         },
         "relatedPosts": [
           "quando-ho-capito-che-il-problema-non-era-lerp",
-          "flask-warehouse-app",
           "ai-pmi-como-ollama-llamacpp"
         ]
       }

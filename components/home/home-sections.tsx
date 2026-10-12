@@ -13,12 +13,35 @@ export const HOME_CONTACT_ID = "contatti";
 type HomeSectionsProps = {
   locale: Locale;
   content: Messages["site"]["home"]["sections"];
+  services: { title: string; text: string; href: string }[];
 };
 
-/** Dopo lo scrollytelling resta solo il box contatti, poi il footer. */
-export function HomeSections({ locale, content }: HomeSectionsProps) {
+/** Dopo lo scrollytelling: le due card servizi, il box contatti, poi il footer. */
+export function HomeSections({ locale, content, services }: HomeSectionsProps) {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pt-16 pb-24 sm:pt-20 sm:pb-28">
+      <SectionReveal motionPreset="dynamic" className="mb-8">
+        <h2 className="text-xs uppercase tracking-[0.28em] text-[#c9ddff]" data-reveal-item>
+          {content.services.title}
+        </h2>
+        <ul className="mt-5 grid gap-4 md:grid-cols-2">
+          {services.map((service) => (
+            <li key={service.href} data-reveal-item>
+              <Link
+                href={service.href}
+                className="group flex h-full flex-col rounded-[1.6rem] border border-[#8cb4ff]/18 bg-white/[0.05] p-7 transition hover:-translate-y-0.5 hover:border-[#8cb4ff]/45 hover:bg-white/[0.08]"
+              >
+                <span className="text-xl font-bold leading-snug text-white">{service.title}</span>
+                <span className="mt-3 text-base leading-7 text-[#d8e7ff]">{service.text}</span>
+                <span aria-hidden="true" className="mt-6 text-lg text-[#8cb4ff] transition group-hover:translate-x-1">
+                  →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </SectionReveal>
+
       <SectionReveal motionPreset="dynamic" id={HOME_CONTACT_ID} className="scroll-mt-24 rounded-[2.2rem] border border-[#8cb4ff]/18 bg-[radial-gradient(circle_at_top_left,rgba(67,120,255,0.18),transparent_30%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] shadow-[0_45px_100px_-70px_rgba(2,12,32,1)] backdrop-blur-md">
         <div className="px-8 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16">
         <div className="max-w-3xl" data-parallax>

@@ -28,7 +28,7 @@ import { buttonClass } from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type ExperienceLink = { label: string; href: string };
+type ExperienceLink = { label: string; href: string; note?: string };
 
 export type ScrollExperienceContent = {
   canvasLabel: string;
@@ -44,7 +44,7 @@ export type ScrollExperienceContent = {
     kicker: string;
     title: string;
     text: string;
-    metrics: { value: string; label: string }[];
+    tags: string[];
   };
   saas: {
     kicker: string;
@@ -432,14 +432,13 @@ export function ScrollExperience({ content, skipTo }: ScrollExperienceProps) {
                 <p className="experience__kicker">{hardware.kicker}</p>
                 <h2 className="experience__title">{hardware.title}</h2>
                 <p className="experience__body">{hardware.text}</p>
-                <dl className="mt-5 grid grid-cols-2 gap-3">
-                  {hardware.metrics.map((metric) => (
-                    <div key={metric.value} className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                      <dt className="text-base font-bold leading-snug text-white sm:text-lg">{metric.value}</dt>
-                      <dd className="mt-1 text-xs leading-5 text-[#c9ddff]">{metric.label}</dd>
-                    </div>
+                <ul className="mt-5 flex flex-wrap gap-2">
+                  {hardware.tags.map((tag) => (
+                    <li key={tag} className="experience__tag">
+                      {tag}
+                    </li>
                   ))}
-                </dl>
+                </ul>
               </div>
               {poster("hardware")}
             </article>
@@ -451,13 +450,14 @@ export function ScrollExperience({ content, skipTo }: ScrollExperienceProps) {
                 <p className="experience__body">{saas.text}</p>
                 <nav aria-label={saas.projectsLabel} className="mt-5">
                   <p className="experience__label">{saas.projectsLabel}</p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
+                  <ul className="mt-3 grid gap-2">
                     {saas.projects.map((link) => (
                       <li key={link.href}>
                         <Link href={link.href} className="experience__project">
                           <span className="experience__project-dot" aria-hidden="true" />
-                          {link.label}
-                          <span aria-hidden="true">↗</span>
+                          <span className="experience__project-name">{link.label}</span>
+                          {link.note && <span className="experience__project-note">{link.note}</span>}
+                          <span className="ml-auto" aria-hidden="true">↗</span>
                         </Link>
                       </li>
                     ))}

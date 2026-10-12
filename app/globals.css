@@ -1054,15 +1054,26 @@ html.lenis {
   transform: translateY(-1px);
 }
 
-/* Progetti: badge pieni e cliccabili. */
-.experience__project {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  border: 1px solid rgba(140, 180, 255, 0.55);
+/* Hardware: tag piccoli, solo testo. */
+.experience__tag {
+  border: 1px solid rgba(140, 180, 255, 0.35);
   border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e6f0ff;
+}
+
+/* Progetti: badge pieni e cliccabili, con una riga di descrizione. */
+.experience__project {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid rgba(140, 180, 255, 0.55);
+  border-radius: 0.9rem;
   background: #2664eb;
-  padding: 0.45rem 0.95rem;
+  padding: 0.5rem 0.95rem;
   font-size: 0.875rem;
   font-weight: 700;
   color: #fff;
@@ -1077,7 +1088,19 @@ html.lenis {
   transform: translateY(-1px);
 }
 
+.experience__project-name {
+  flex: none;
+}
+
+.experience__project-note {
+  min-width: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #d8e7ff;
+}
+
 .experience__project-dot {
+  flex: none;
   width: 0.45rem;
   height: 0.45rem;
   border-radius: 999px;
@@ -1328,5 +1351,266 @@ html.lenis {
 @media (prefers-reduced-motion: reduce) {
   .code-overlay__cursor {
     animation: none;
+  }
+}
+
+/* ---------- About ---------- */
+
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #9fc2ff;
+}
+
+.about-heading {
+  margin-top: 0.75rem;
+  max-width: 24ch;
+  font-size: clamp(1.75rem, 3.4vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+/* Badge tecnologici che galleggiano attorno alla foto. */
+.about-float {
+  z-index: 1;
+  border: 1px solid rgba(140, 180, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(6, 21, 54, 0.82);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #e6f0ff;
+  box-shadow: 0 16px 34px -18px rgba(2, 12, 32, 1);
+  backdrop-filter: blur(10px);
+  animation: about-float 6s ease-in-out infinite;
+}
+
+@keyframes about-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+/* Bento: bordo sottile, gradiente scuro, alone che si accende in hover. */
+.about-bento {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(140, 180, 255, 0.16);
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(38, 100, 235, 0.22), transparent 45%),
+    linear-gradient(160deg, rgba(10, 30, 72, 0.9), rgba(4, 14, 38, 0.95));
+  padding: 1.75rem;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-bento::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 0% 100%, rgba(124, 240, 181, 0.12), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.about-bento:hover {
+  transform: translateY(-4px);
+  border-color: rgba(140, 180, 255, 0.45);
+  box-shadow: 0 30px 60px -40px rgba(38, 100, 235, 0.8);
+}
+
+.about-bento:hover::after {
+  opacity: 1;
+}
+
+.about-bento__icon {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(140, 180, 255, 0.3);
+  border-radius: 0.9rem;
+  background: rgba(38, 100, 235, 0.18);
+  color: #cfe0ff;
+  transition: background 0.3s ease;
+}
+
+.about-bento:hover .about-bento__icon {
+  background: #2664eb;
+  color: #fff;
+}
+
+/* Tab della timeline e filtri dello stack. */
+.about-tab,
+.about-filter {
+  border-radius: 0.75rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #c9ddff;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.about-tab:hover,
+.about-filter:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.about-tab[aria-selected="true"],
+.about-filter[aria-pressed="true"] {
+  background: #2664eb;
+  color: #fff;
+}
+
+.about-filter {
+  border: 1px solid rgba(140, 180, 255, 0.25);
+  border-radius: 999px;
+}
+
+.about-filter[aria-pressed="true"] {
+  border-color: #2664eb;
+}
+
+.about-tab:focus-visible,
+.about-filter:focus-visible,
+.about-chip:focus-visible {
+  outline: 2px solid #8ab0ff;
+  outline-offset: 2px;
+}
+
+/* Timeline verticale: linea a sinistra, pallino per ogni tappa. */
+.about-timeline {
+  position: relative;
+  display: grid;
+  gap: 1.75rem;
+  border-left: 1px solid rgba(140, 180, 255, 0.25);
+  margin-left: 0.4rem;
+  padding-left: 1.75rem;
+}
+
+.about-timeline__step {
+  position: relative;
+  animation: about-step-in 0.45s ease both;
+}
+
+.about-timeline__dot {
+  position: absolute;
+  left: calc(-1.75rem - 0.4rem - 0.5px);
+  top: 0.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #2664eb;
+  border-radius: 999px;
+  background: #061536;
+  box-shadow: 0 0 0 4px rgba(38, 100, 235, 0.2);
+  transition: background 0.2s ease;
+}
+
+.about-timeline__step:hover .about-timeline__dot,
+.about-timeline__step:last-child .about-timeline__dot {
+  background: #7cf0b5;
+  border-color: #7cf0b5;
+}
+
+.about-timeline__period {
+  display: inline-block;
+  border-radius: 999px;
+  background: rgba(38, 100, 235, 0.2);
+  padding: 0.15rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #9fc2ff;
+}
+
+@keyframes about-step-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+}
+
+/* Badge dello stack. */
+.about-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(140, 180, 255, 0.25);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.55rem 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e6f0ff;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.about-chip:hover,
+.about-chip[aria-pressed="true"] {
+  border-color: rgba(140, 180, 255, 0.6);
+  background: rgba(38, 100, 235, 0.3);
+  transform: translateY(-2px);
+}
+
+.about-chip__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: #8cb4ff;
+}
+
+.about-chip__dot[data-category="saas"] {
+  background: #7cf0b5;
+}
+
+.about-chip__dot[data-category="embedded"] {
+  background: #ffb86b;
+}
+
+.about-chip__dot[data-category="tooling"] {
+  background: #d2a8ff;
+}
+
+.about-chip-enter {
+  animation: about-step-in 0.3s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-float,
+  .about-timeline__step,
+  .about-chip-enter {
+    animation: none;
+  }
+
+  .about-bento,
+  .about-chip {
+    transition: none;
+  }
+
+  .about-bento:hover,
+  .about-chip:hover,
+  .about-chip[aria-pressed="true"] {
+    transform: none;
   }
 }
