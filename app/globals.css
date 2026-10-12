@@ -993,3 +993,267 @@ body {
     animation: none;
   }
 }
+
+/* --- Scrollytelling home: "Cosa costruisco" (components/home/scroll-sequence.tsx) --- */
+
+/* Lenis gestisce lo scroll morbido: lo smooth nativo lo farebbe "doppio". */
+html.lenis {
+  scroll-behavior: auto;
+}
+
+.scrolly__track {
+  position: relative;
+}
+
+.scrolly__stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  /* Spazio per la navbar sticky */
+  padding: 6rem 3rem 2.5rem;
+  overflow: hidden;
+}
+
+.scrolly__copy {
+  position: relative;
+  z-index: 1;
+  width: min(34%, 24rem);
+}
+
+.scrolly__steps {
+  position: relative;
+  min-height: 15rem;
+}
+
+/* Chi esce sparisce in fretta, chi entra arriva dopo: niente testi sovrapposti. */
+.scrolly__step {
+  position: absolute;
+  inset: 0 0 auto 0;
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.scrolly__step[data-active="true"] {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.45s ease 0.18s,
+    transform 0.45s ease 0.18s;
+}
+
+/* Il canvas occupa la parte destra dello stage, il testo ci sta sopra a sinistra. */
+.scrolly__media {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  bottom: 1.5rem;
+  left: 22%;
+  /* Quando il MacBook si allarga, il bordo sinistro sfuma sotto al testo. */
+  mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+}
+
+.scrolly__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.scrolly__fallback {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.scrolly__progress {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(38, 100, 235, 0.14);
+  transition: opacity 0.5s ease;
+}
+
+.scrolly__progress[data-done="true"] {
+  opacity: 0;
+}
+
+.scrolly__progress span {
+  display: block;
+  height: 100%;
+  background: #2664eb;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* Reduced motion: niente scroll lungo, tutto visibile */
+.scrolly[data-mode="static"] .scrolly__stage {
+  position: relative;
+  height: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.45fr);
+  align-items: start;
+  gap: 2rem;
+}
+
+.scrolly[data-mode="static"] .scrolly__copy {
+  width: auto;
+}
+
+.scrolly[data-mode="static"] .scrolly__steps {
+  display: grid;
+  gap: 2rem;
+  min-height: 0;
+}
+
+.scrolly[data-mode="static"] .scrolly__step {
+  position: static;
+  opacity: 1;
+  transform: none;
+}
+
+.scrolly__static {
+  display: grid;
+  gap: 1rem;
+}
+
+.scrolly__static img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  /* Mobile: testo in alto, canvas sotto. */
+  .scrolly__stage {
+    align-items: flex-start;
+    padding: 5.5rem 1.25rem 1.5rem;
+  }
+
+  .scrolly__copy {
+    width: 100%;
+  }
+
+  .scrolly__steps {
+    min-height: 13rem;
+  }
+
+  .scrolly__media {
+    top: 45%;
+    left: 0;
+    mask-image: none;
+  }
+
+  .scrolly[data-mode="static"] .scrolly__stage {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* --- Codice sullo schermo del MacBook ------------------------------------ */
+
+.code-overlay {
+  position: absolute;
+  container-type: size;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.code-overlay[data-visible="true"],
+.code-overlay--static {
+  opacity: 1;
+}
+
+/* ?debug=1: area dello schermo sempre visibile, per calibrare SCREEN_RECT */
+.code-overlay[data-debug="true"] {
+  opacity: 1;
+  outline: 2px solid red;
+  background: rgba(13, 17, 23, 0.6);
+}
+
+.code-overlay__tabs,
+.code-overlay__code {
+  /* Il font scala con lo schermo disegnato (container query units). */
+  font-size: min(calc(100cqh / var(--code-rows)), calc(100cqw / var(--code-cols)));
+}
+
+.code-overlay__tabs {
+  display: flex;
+  border-bottom: 1px solid #30363d;
+  background: #161b22;
+}
+
+.code-overlay__tab {
+  padding: 0.45em 1em;
+  color: #8b949e;
+}
+
+.code-overlay__tab[data-active="true"] {
+  background: #0d1117;
+  color: #e6edf3;
+  box-shadow: inset 0 2px 0 #2664eb;
+}
+
+.code-overlay__code {
+  display: none;
+  margin: 0;
+  padding: 0.7em 1em;
+  line-height: 1.4;
+  white-space: pre;
+}
+
+.code-overlay__code[data-active="true"] {
+  display: block;
+}
+
+.code-overlay .tok-keyword {
+  color: #ff7b72;
+}
+
+.code-overlay .tok-string {
+  color: #a5d6ff;
+}
+
+.code-overlay .tok-comment {
+  color: #8b949e;
+  font-style: italic;
+}
+
+.code-overlay .tok-accent {
+  color: #d2a8ff;
+}
+
+.code-overlay__cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: #e6edf3;
+  animation: code-cursor 1s steps(1) infinite;
+}
+
+@keyframes code-cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-overlay__cursor {
+    animation: none;
+  }
+}

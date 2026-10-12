@@ -42,3 +42,5 @@ next-env.d.ts
 
 # Env
 .env.local
+# Sequenze TIFF sorgente dello scrollytelling (i WebP generati stanno in public/frames)
+/frames/

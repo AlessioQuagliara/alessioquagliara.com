@@ -72,19 +72,38 @@
         "whatIBuild": {
           "title": "Cosa costruisco",
           "subtitle": "Tre modi di togliere passaggi inutili.",
-          "cards": [
+          "canvasLabel": "Animazione: una scheda ESP32 ruota, si trasforma in un MacBook e sullo schermo si scrive codice.",
+          "steps": [
             {
-              "title": "SaaS costruiti in pubblico",
-              "text": "Piccoli SaaS costruiti e raccontati: scelte, errori, iterazioni."
+              "kicker": "Automazione fisica",
+              "title": "Codice che parla con le macchine",
+              "text": "Arduino, ESP32 ed embedded. Sensori, relè, motori: roba che si muove davvero."
             },
             {
-              "title": "Strumenti operativi",
-              "text": "Tool per magazzino, produzione, QR e tracciamento.",
+              "kicker": "Automazione fisica",
+              "title": "Il sensore legge, il firmware decide",
+              "text": "Logica piccola e chiara. Se sbaglio un pin me ne accorgo subito. A volte dall'odore."
+            },
+            {
+              "kicker": "Automazione fisica",
+              "title": "520 KB di RAM",
+              "text": "Su un ESP32 il codice brutto non si nasconde. Ottima palestra."
+            },
+            {
+              "kicker": "Strumenti operativi",
+              "title": "Tool per chi lavora davvero",
+              "text": "Magazzino, produzione, QR e tracciamento. Meno Excel che girano per email.",
               "badge": "Automazioni e AI per PMI e freelance."
             },
             {
-              "title": "Automazione fisica",
-              "text": "Arduino, ESP32 e embedded: codice che parla con sensori e macchine."
+              "kicker": "SaaS costruiti in pubblico",
+              "title": "Piccoli SaaS, raccontati",
+              "text": "Scelte, errori, iterazioni. Tutto in pubblico, anche quando va male."
+            },
+            {
+              "kicker": "Dal sensore al server",
+              "title": "Poi si scrive codice",
+              "text": "Un'API Flask che espone il dato. Un po' di C che lo ripulisce. Il resto è manutenzione."
             }
           ]
         },

@@ -72,19 +72,38 @@
         "whatIBuild": {
           "title": "What I Build",
           "subtitle": "Three ways to remove useless steps.",
-          "cards": [
+          "canvasLabel": "Animation: an ESP32 board spins, turns into a MacBook, and code gets typed on the screen.",
+          "steps": [
             {
-              "title": "SaaS built in public",
-              "text": "Small SaaS built and shared: choices, mistakes, iterations."
+              "kicker": "Physical automation",
+              "title": "Code that talks to machines",
+              "text": "Arduino, ESP32 and embedded. Sensors, relays, motors: stuff that actually moves."
             },
             {
-              "title": "Operational tools",
-              "text": "Tools for warehouse, production, QR and tracking.",
+              "kicker": "Physical automation",
+              "title": "The sensor reads, the firmware decides",
+              "text": "Small, clear logic. Wire the wrong pin and I know right away. Sometimes by the smell."
+            },
+            {
+              "kicker": "Physical automation",
+              "title": "520 KB of RAM",
+              "text": "On an ESP32, ugly code has nowhere to hide. Great gym."
+            },
+            {
+              "kicker": "Operational tools",
+              "title": "Tools for people who actually work",
+              "text": "Warehouse, production, QR and tracking. Fewer spreadsheets bouncing around by email.",
               "badge": "Automations and AI for SMEs and freelancers."
             },
             {
-              "title": "Physical automation",
-              "text": "Arduino, ESP32 and embedded: code that talks to sensors and machines."
+              "kicker": "SaaS built in public",
+              "title": "Small SaaS, shared openly",
+              "text": "Choices, mistakes, iterations. All in public, even when it goes wrong."
+            },
+            {
+              "kicker": "From sensor to server",
+              "title": "Then we write code",
+              "text": "A Flask API that exposes the reading. A bit of C that cleans it up. The rest is maintenance."
             }
           ]
         },
