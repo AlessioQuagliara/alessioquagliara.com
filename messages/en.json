@@ -13,7 +13,6 @@
         "about": "About",
         "education": "Education",
         "projects": "Projects",
-        "saas": "Web App & SaaS",
         "caseStudies": "Case studies",
         "blog": "Blog",
         "contact": "Contact",
@@ -300,9 +299,9 @@
             "use": "From database to interface, deploy included."
           },
           {
-            "name": "Next.js & TypeScript",
+            "name": "Jinja2",
             "category": "saas",
-            "use": "This site. A typed frontend that doesn't blow up on the first refactor."
+            "use": "Server-rendered pages with Flask: simple, fast, easy to maintain."
           },
           {
             "name": "Multi-tenant",
@@ -310,9 +309,9 @@
             "use": "Many clients on one platform, data never mixed. See LinkBay-CMS."
           },
           {
-            "name": "Tailwind CSS",
+            "name": "HTMX",
             "category": "saas",
-            "use": "Interfaces that are quick to build and quick to change."
+            "use": "Interactivity without a JavaScript framework: HTML asks, the server answers."
           },
           {
             "name": "C",
@@ -917,7 +916,7 @@
           "visualLayers": [
             {
               "name": "Frontend",
-              "tech": "Next.js · Tailwind"
+              "tech": "Jinja2 · HTMX"
             },
             {
               "name": "API",
@@ -938,12 +937,13 @@
           "title": "Boring technology, on purpose",
           "items": [
             {
-              "title": "Modern frontend",
+              "title": "Lightweight frontend",
               "tags": [
-                "Next.js",
-                "Tailwind CSS"
+                "Jinja2",
+                "HTML",
+                "HTMX"
               ],
-              "text": "Fast interfaces that are easy to change. This site is built that way."
+              "text": "Server-rendered HTML with Jinja2, interactivity with HTMX. Fast pages, little JavaScript, no build pipeline to maintain."
             },
             {
               "title": "Solid backend",

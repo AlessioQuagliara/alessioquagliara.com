@@ -13,7 +13,6 @@
         "about": "About",
         "education": "Formazione",
         "projects": "Progetti",
-        "saas": "Web App & SaaS",
         "caseStudies": "Casi studio",
         "blog": "Blog",
         "contact": "Contatti",
@@ -300,9 +299,9 @@
             "use": "Dal database all'interfaccia, deploy compreso."
           },
           {
-            "name": "Next.js & TypeScript",
+            "name": "Jinja2",
             "category": "saas",
-            "use": "Questo sito. Frontend tipizzato che non esplode al primo refactor."
+            "use": "Pagine generate dal server con Flask: semplici, veloci, facili da mantenere."
           },
           {
             "name": "Multi-tenant",
@@ -310,9 +309,9 @@
             "use": "Più clienti sulla stessa piattaforma, dati mai mescolati. Vedi LinkBay-CMS."
           },
           {
-            "name": "Tailwind CSS",
+            "name": "HTMX",
             "category": "saas",
-            "use": "Interfacce veloci da costruire e da cambiare."
+            "use": "Interattività senza un framework JavaScript: l'HTML chiede, il server risponde."
           },
           {
             "name": "C",
@@ -917,7 +916,7 @@
           "visualLayers": [
             {
               "name": "Frontend",
-              "tech": "Next.js · Tailwind"
+              "tech": "Jinja2 · HTMX"
             },
             {
               "name": "API",
@@ -938,12 +937,13 @@
           "title": "Tecnologie noiose, scelte apposta",
           "items": [
             {
-              "title": "Frontend moderno",
+              "title": "Frontend leggero",
               "tags": [
-                "Next.js",
-                "Tailwind CSS"
+                "Jinja2",
+                "HTML",
+                "HTMX"
               ],
-              "text": "Interfacce veloci e facili da cambiare. Questo sito è fatto così."
+              "text": "HTML generato dal server con Jinja2, interattività con HTMX. Pagine veloci, poco JavaScript, niente build da manutenere."
             },
             {
               "title": "Backend solido",
