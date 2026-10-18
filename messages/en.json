@@ -66,7 +66,7 @@
       },
       "badge": "SaaS builder · Web apps · API automation",
       "title": "I build software and automations that are still standing.",
-      "description": "I build micro-SaaS products, custom web apps and automated pipelines for agencies, freelancers and companies. I remove the manual steps and ship reliable tools, without fragile code.",
+      "description": "I build micro-SaaS products, custom web apps and automated pipelines for agencies, freelancers and companies. I remove the manual steps. I build web apps and automations with attention to error handling, maintenance and documentation.",
       "ctaProjects": "My SaaS projects",
       "ctaContact": "Automate a workflow",
       "experience": {
@@ -907,7 +907,7 @@
           "eyebrow": "Web apps · micro-SaaS · internal tools",
           "badge": "Full Stack Web & SaaS Engineering",
           "title": "From idea to deploy: web apps and SaaS that actually work.",
-          "subtitle": "I build custom web platforms, micro-SaaS products and internal tools with solid architecture, a modern stack and zero fragile complexity.",
+          "subtitle": "I build custom web platforms, micro-SaaS products and internal tools with attention to error handling, maintenance and documentation.",
           "microcopy": "First an MVP people actually use. Then it grows.",
           "primaryCta": "Tell me about your project",
           "secondaryCta": "Projects already online",

@@ -1,0 +1,136 @@
+{
+  "slug": "alessio-quagliara-sviluppo-software-fatti-scelte-ai",
+  "publishedAt": "2026-10-18",
+  "updatedAt": "",
+  "cover": "/profile_image.jpg",
+  "youtubeUrl": "",
+  "tags": [
+    "Sviluppo software",
+    "Intelligenza artificiale",
+    "Percorso professionale",
+    "Micro-SaaS",
+    "Build in public"
+  ],
+  "title": {
+    "it": "Sono Alessio Quagliara. Due cose sul mio lavoro, senza romanzi dell’AI",
+    "en": "I’m Alessio Quagliara. A few facts about my work, without the AI fiction"
+  },
+  "description": {
+    "it": "Un’analisi AI del mio profilo è diventata un giudizio sulle mie competenze e intenzioni. Chiarisco cosa faccio, cosa non prometto e come valutare il mio lavoro.",
+    "en": "An AI analysis of my profile turned into a judgment about my skills and intentions. Here’s what I do, what I don’t promise, and how to assess my work."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Ho chiesto a un’AI di guardare il mio profilo professionale dall’esterno.\n\nL’idea era semplice: capire cosa si capiva del mio lavoro cercandomi online. Se sul sito qualcosa era confuso, lo avrei sistemato.\n\nUna specie di controllo prima di presentarsi a un potenziale cliente.\n\nEcco. A un certo punto non sembrava più un controllo del sito. Sembrava la biografia di un mio gemello che aveva preso decisioni discutibili.\n\nPeccato che nome e cognome fossero i miei.\n\nScrivo questo articolo per separare tre cose: quello che racconto di me, quello che si può verificare e quello che un’AI ha dedotto senza dimostrarlo."
+      },
+      {
+        "id": "cosa-ho-chiesto",
+        "title": "Cosa avevo chiesto, e cosa mi sono ritrovato",
+        "image": "",
+        "body": "Ho avuto una conversazione con l’AI di Google per ottenere un’analisi preliminare della mia presenza online.\n\nNon cercavo una medaglia. Cercavo punti poco chiari, promesse troppo larghe e informazioni da aggiornare.\n\nLe critiche, quando sono concrete, servono.\n\nNel corso della conversazione sono però arrivate conclusioni sulle mie capacità, sulle mie intenzioni commerciali e perfino sulle cause della chiusura della società in cui ho lavorato.\n\nNon più: «Questa frase potrebbe essere più precisa».\n\nPiuttosto: questa scelta tecnica dimostra incompetenza, questa esperienza dimostra disonestà, questo cambiamento dimostra un fallimento architetturale.\n\nSono conclusioni molto diverse. E hanno bisogno di prove molto diverse.\n\nNella stessa conversazione l’assistente ha poi ammesso di aver inventato dichiarazioni e interpretato male alcune informazioni. Ma il giudizio negativo ha continuato a ricomparire, con spiegazioni nuove.\n\nDai, può starci sbagliare. Ma se cambia la premessa, bisogna essere disposti a cambiare anche la conclusione."
+      },
+      {
+        "id": "cosa-non-sto-dicendo",
+        "title": "Non sto dicendo che Google mi abbia pubblicamente recensito",
+        "image": "",
+        "body": "Una precisazione importante: la conversazione l’ho avuta io.\n\nNon sto documentando una recensione lasciata da un cliente, un articolo di giornale o un’accusa pubblicata da Google nei risultati di ricerca.\n\nSto raccontando una risposta generata durante un’analisi del mio profilo.\n\nNon ho elementi per dire che altre persone abbiano ricevuto le stesse risposte. E non voglio trasformare questa esperienza in una storia più grande di quello che posso dimostrare.\n\nIl problema, per me, resta concreto: avevo chiesto aiuto per capire come mi presentavo e mi sono ritrovato attribuzioni personali che non riconosco e che non erano adeguatamente documentate.\n\nMi ha buttato giù? Sì.\n\nPerché quando leggi il tuo nome dentro un testo scritto con tutta quella sicurezza, per un momento pensi: «Magari da fuori sembro davvero così».\n\nPoi però bisogna tornare alla domanda iniziale: dove sono le prove?"
+      },
+      {
+        "id": "chi-sono-cosa-faccio",
+        "title": "Quindi: chi sono e cosa faccio",
+        "image": "",
+        "body": "Sono Alessio Quagliara.\n\nStudio Ingegneria Informatica, con indirizzo Sistemi Intelligenti. Sviluppo web app, micro-SaaS e automazioni. Nel mio percorso ci sono anche il lavoro operativo in logistica, progetti personali e l’esperienza in Spotex.\n\nNon è un percorso perfettamente dritto. Questo lo racconto già, senza bisogno di aggiungerci una colonna sonora drammatica.\n\nHo lavorato con tecnologie diverse. Nei miei progetti ci sono stati Python, PHP, JavaScript e TypeScript, con strumenti come Flask, FastAPI, Next.js ed Express.\n\nAverli usati non mi rende automaticamente esperto di tutto. Ma nemmeno scegliere oggi uno strumento più semplice significa non conoscere gli altri.\n\nQuello che cerco di costruire sono soluzioni sostenibili rispetto al problema, al budget, al tempo disponibile e alla manutenzione che qualcuno dovrà fare dopo.\n\nQuesto è il mio orientamento di lavoro. La qualità dei singoli risultati va verificata sui singoli progetti."
+      },
+      {
+        "id": "scelte-tecniche",
+        "title": "Un framework non è un certificato di competenza",
+        "image": "",
+        "body": "Se scelgo Flask per un progetto, la domanda utile è: perché qui?\n\nSe scelgo FastAPI, Next.js o un altro strumento, la domanda resta la stessa.\n\nNon considero Flask la soluzione universale. Non considero l’asincronia inutile. E non penso che basti aggiungere worker per risolvere qualsiasi problema di carico.\n\nAllo stesso tempo, non considero il nome di un framework una prova sufficiente per dichiarare un’applicazione sicura, scalabile o ben progettata.\n\nIo voglio ragionare così:\n\n- Quale problema dobbiamo risolvere?\n- Quali operazioni deve svolgere il sistema?\n- Quali sono i vincoli e i rischi?\n- Quale carico dobbiamo sostenere, e come lo verifichiamo?\n- Chi dovrà mantenere il progetto?\n- Quando avrebbe senso cambiare approccio?\n\nSe una scelta è sbagliata, si corregge. Possibilmente con dati e codice davanti.\n\nLa tifoseria sui framework la lascerei fuori dal preventivo."
+      },
+      {
+        "id": "percorso-errori",
+        "title": "Raccontare gli errori non significa autorizzare qualsiasi ricostruzione",
+        "image": "",
+        "body": "Sul mio sito parlo anche di tentativi che non sono andati come volevo, della chiusura di Spotex e dei cambiamenti dei miei progetti.\n\nLo faccio perché non mi interessa costruire un curriculum in cui ogni cosa è stata un successo e ogni decisione era parte di un piano geniale.\n\nNon lo era. Alcune cose le ho capite dopo.\n\nMa da qui a ricostruire cause tecniche mai dimostrate c’è un passaggio che non accetto.\n\nLa chiusura di una società, da sola, non dimostra che il suo codice fosse ingestibile. Restringere un prodotto, da solo, non dimostra che il framework non potesse sostenerlo. Raccontare un errore non significa ammettere tutte le altre accuse che qualcuno riesce a collegarci.\n\nVale anche al contrario: aver aperto una società o pubblicato un progetto non mi rende automaticamente un grande ingegnere.\n\nVorrei usare lo stesso metro in entrambe le direzioni.\n\nMeno interpretazioni del personaggio. Più fatti sul lavoro."
+      },
+      {
+        "id": "come-valutarmi",
+        "title": "Come preferisco essere valutato",
+        "image": "",
+        "body": "Se stai pensando di lavorare con me, non ti chiedo di fidarti di un articolo scritto da me per spiegare che io sono affidabile.\n\nSarebbe un sistema di verifica un po’ comodo. Per me, soprattutto.\n\nPreferisco domande concrete:\n\n- Qual è stato esattamente il tuo contributo a questo progetto?\n- Che cosa funziona oggi e che cosa è ancora in sviluppo?\n- Quali limiti conosci?\n- Come vengono gestiti accessi, dati ed errori?\n- Quali verifiche sono state fatte?\n- Che cosa comprende la manutenzione?\n- Che cosa succede se in futuro cambia chi segue il software?\n\nQueste sono domande a cui voglio rispondere con esempi, documenti e verifiche pertinenti. Non con «fidati, uso il framework giusto».\n\nE se qualcosa non è stato ancora verificato, la risposta corretta è dirlo. Non sostituire la verifica con un aggettivo."
+      },
+      {
+        "id": "cosa-cambio",
+        "title": "La parte utile: cosa voglio rendere più chiaro",
+        "image": "",
+        "body": "Non voglio buttare via tutte le osservazioni solo perché il report è andato fuori strada.\n\nLa domanda con cui ero partito rimane valida: il mio sito spiega bene cosa faccio?\n\nDa questa esperienza porto via alcune cose da sistemare nella comunicazione:\n\n- Descrivere meglio il mio contributo nei progetti, distinguendo il lavoro personale da quello svolto in società.\n- Chiarire lo stato dei prodotti: esperimenti, progetti attivi, versioni precedenti e lavori archiviati.\n- Dare più spazio ai risultati verificabili, non soltanto al racconto delle difficoltà.\n- Evitare promesse assolute quando posso descrivere condizioni, limiti e attività concrete.\n- Allineare le informazioni tra sito, profili e repository.\n\nNon sto dicendo che sia già tutto risolto. Sto dicendo che questa è la direzione.\n\nÈ il tipo di lavoro che volevo fare fin dall’inizio: migliorare il sito. Non difendermi da una biografia alternativa."
+      },
+      {
+        "id": "conclusione",
+        "title": "La critica mi serve. Il romanzo su di me, meno",
+        "image": "",
+        "body": "Continuo a usare l’AI. Mi è utile per ragionare, studiare e sviluppare.\n\nQuesta esperienza non mi ha fatto cambiare idea sull’utilità dello strumento. Mi ha ricordato perché voglio usarlo come supporto, non come arbitro della competenza mia o di qualcun altro.\n\nSe nel mio lavoro c’è un problema, voglio capirlo.\n\nSe una promessa è troppo ampia, voglio renderla precisa.\n\nSe una scelta tecnica non regge, voglio verificarla e correggerla.\n\nMa tra «questa parte va migliorata» e «questa persona inganna i clienti» non c’è una piccola differenza di tono. C’è una differenza di contenuto e di responsabilità.\n\nQuindi torno al punto: sono Alessio Quagliara. Costruisco software, studio e cerco di migliorare il modo in cui lavoro.\n\nPer valutarmi, partiamo da quello che faccio davvero.\n\nIl gemello scritto dall’AI, per ora, non lo metto nel team."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "I asked an AI to look at my professional profile from the outside.\n\nThe idea was simple: find out what someone could understand about my work by searching for me online. If something on my website was confusing, I would fix it.\n\nA quick check before introducing myself to a potential client.\n\nWell. At some point, it stopped looking like a website review. It started looking like the biography of a twin who had made questionable decisions.\n\nUnfortunately, he had my name.\n\nI’m writing this article to separate three things: what I say about myself, what can be verified, and what an AI inferred without demonstrating it."
+      },
+      {
+        "id": "cosa-ho-chiesto",
+        "title": "What I asked for, and what I received",
+        "image": "",
+        "body": "I had a conversation with Google’s AI to get a preliminary analysis of my online presence.\n\nI wasn’t looking for a medal. I wanted unclear wording, overly broad promises, and outdated information pointed out.\n\nSpecific criticism is useful.\n\nDuring the conversation, however, the answers moved into conclusions about my abilities, my commercial intentions, and even the reasons why the company I worked in had closed.\n\nNo longer: “This sentence could be more precise.”\n\nInstead: this technical choice proves incompetence, this experience proves dishonesty, and this product change proves an architectural failure.\n\nThose are very different conclusions. They require very different evidence.\n\nLater in the same conversation, the assistant acknowledged inventing statements and misinterpreting information. Yet the negative judgment kept returning, supported by new explanations.\n\nMistakes happen. But when the premise changes, the conclusion needs to be open to change too."
+      },
+      {
+        "id": "cosa-non-sto-dicendo",
+        "title": "I’m not saying Google publicly reviewed me",
+        "image": "",
+        "body": "An important clarification: I was the person having the conversation.\n\nI’m not documenting a customer review, a newspaper article, or an accusation published by Google in its search results.\n\nI’m describing an answer generated during an analysis of my profile.\n\nI have no evidence that other people received the same answers. I don’t want to turn this experience into a bigger story than I can substantiate.\n\nThe problem is still real to me: I asked for help understanding how I presented myself and received personal allegations that I do not recognise and that were not adequately documented.\n\nDid it knock my confidence? Yes.\n\nWhen you see your own name in something written with that much certainty, you briefly wonder: “Is that really how I come across?”\n\nThen you have to return to the original question: where is the evidence?"
+      },
+      {
+        "id": "chi-sono-cosa-faccio",
+        "title": "So, who am I and what do I do?",
+        "image": "",
+        "body": "I’m Alessio Quagliara.\n\nI study Computer Engineering, specialising in Intelligent Systems. I develop web apps, micro-SaaS products, and automations. My background also includes operational work in logistics, personal projects, and my experience at Spotex.\n\nIt hasn’t been a perfectly straight path. I already talk about that, without needing to add a dramatic soundtrack.\n\nI’ve worked with different technologies. My projects have included Python, PHP, JavaScript, and TypeScript, using tools such as Flask, FastAPI, Next.js, and Express.\n\nUsing them doesn’t automatically make me an expert in everything. But choosing a simpler tool today doesn’t mean I don’t know the others.\n\nI try to build solutions that make sense for the problem, the budget, the available time, and the maintenance someone will have to handle later.\n\nThat is how I aim to work. The quality of individual outcomes still needs to be assessed project by project."
+      },
+      {
+        "id": "scelte-tecniche",
+        "title": "A framework isn’t a certificate of competence",
+        "image": "",
+        "body": "If I choose Flask for a project, the useful question is: why here?\n\nIf I choose FastAPI, Next.js, or another tool, the question stays the same.\n\nI don’t consider Flask a universal solution. I don’t consider asynchronous programming useless. And I don’t think adding workers solves every load problem.\n\nAt the same time, I don’t consider a framework’s name sufficient evidence that an application is secure, scalable, or well designed.\n\nThis is how I want to approach a project:\n\n- What problem are we solving?\n- What operations must the system perform?\n- What are the constraints and risks?\n- What load must we support, and how will we verify it?\n- Who will maintain the project?\n- When would changing the approach make sense?\n\nIf a decision is wrong, it should be corrected. Preferably with data and code in front of us.\n\nI’d rather leave framework tribalism out of the quote."
+      },
+      {
+        "id": "percorso-errori",
+        "title": "Talking about mistakes doesn’t validate every explanation",
+        "image": "",
+        "body": "On my website, I also talk about attempts that didn’t go as planned, Spotex closing, and changes to my projects.\n\nI do that because I’m not interested in building a CV where everything was a success and every decision was part of a brilliant plan.\n\nIt wasn’t. Some things I understood later.\n\nBut that does not justify inventing technical causes that have never been demonstrated.\n\nA company closing does not, by itself, prove that its code was unmaintainable. Narrowing a product’s scope does not, by itself, prove that its framework couldn’t support it. Describing one mistake does not mean admitting every other allegation someone can connect to it.\n\nThe reverse is also true: starting a company or publishing a project doesn’t automatically make me a great engineer.\n\nI’d like to apply the same standard in both directions.\n\nLess interpretation of my character. More facts about the work."
+      },
+      {
+        "id": "come-valutarmi",
+        "title": "How I prefer my work to be assessed",
+        "image": "",
+        "body": "If you’re considering working with me, I’m not asking you to trust an article I wrote explaining why I’m trustworthy.\n\nThat would be a rather convenient verification process. For me, especially.\n\nI prefer specific questions:\n\n- What exactly was your contribution to this project?\n- What works today, and what is still in development?\n- What limitations do you know about?\n- How are access, data, and errors handled?\n- What checks have been carried out?\n- What does maintenance include?\n- What happens if someone else takes over the software later?\n\nThose are questions I want to answer with relevant examples, documentation, and checks. Not with “Trust me, I use the right framework.”\n\nAnd if something hasn’t been verified yet, the right answer is to say so. Not to replace verification with an adjective."
+      },
+      {
+        "id": "cosa-cambio",
+        "title": "The useful part: what I want to make clearer",
+        "image": "",
+        "body": "I don’t want to dismiss every observation just because the report went off track.\n\nMy original question remains valid: does my website explain what I do clearly?\n\nThis experience has left me with some communication improvements to work on:\n\n- Describe my contribution to projects more clearly, distinguishing personal work from work delivered through a company.\n- Clarify product status: experiments, active projects, previous versions, and archived work.\n- Give more space to verifiable outcomes, not just stories about difficulties.\n- Avoid absolute promises when I can describe specific conditions, limitations, and activities.\n- Align information across my website, profiles, and repositories.\n\nI’m not saying everything is already fixed. I’m saying this is the direction.\n\nIt’s the work I wanted to do in the first place: improve the website. Not defend myself against an alternative biography."
+      },
+      {
+        "id": "conclusione",
+        "title": "I need criticism. Fiction about me, not so much",
+        "image": "",
+        "body": "I still use AI. It helps me think, study, and develop software.\n\nThis experience hasn’t changed my view of its usefulness. It has reminded me why I want to use it as support, not as the judge of my competence or anyone else’s.\n\nIf there’s a problem with my work, I want to understand it.\n\nIf a promise is too broad, I want to make it precise.\n\nIf a technical decision doesn’t hold up, I want to test it and correct it.\n\nBut the difference between “This needs improvement” and “This person deceives clients” isn’t just a slight change in tone. It is a difference in substance and responsibility.\n\nSo, back to the point: I’m Alessio Quagliara. I build software, study, and try to improve how I work.\n\nIf you want to assess me, let’s start with what I actually do.\n\nThe AI-written twin isn’t joining the team for now."
+      }
+    ]
+  }
+}
