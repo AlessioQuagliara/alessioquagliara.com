@@ -27,6 +27,8 @@ export type BlogCardData = {
   readingLabel: string;
   /** Etichetta "Video YouTube" se il post ha un video, altrimenti null. */
   youtubeLabel: string | null;
+  /** true nei primi 3 giorni dalla pubblicazione: mostra il badge "New". */
+  isNew: boolean;
 };
 
 type BlogListProps = {
@@ -53,6 +55,11 @@ export function BlogList({ cards, readPostLabel }: BlogListProps) {
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#06112a]/76 to-transparent" />
+              {card.isNew ? (
+                <span className="absolute left-4 top-4 rounded-full bg-[#2664eb] px-3 py-1 text-xs font-semibold text-white shadow">
+                  New
+                </span>
+              ) : null}
             </div>
             <div className="blog-card__body p-6">
               <div className="flex flex-wrap gap-2">

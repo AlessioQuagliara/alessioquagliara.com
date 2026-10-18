@@ -129,9 +129,12 @@ function normalizeSections(sections: Section[]): Section[] {
 }
 
 export function getAllBlogPosts(): BlogPost[] {
+  const now = Date.now();
   return readdirSync(postsDirectory)
     .filter((fileName) => fileName.endsWith(".json"))
     .map(readPost)
+    // Post programmati: con publishedAt nel futuro restano nascosti (anche 404 e sitemap).
+    .filter((post) => new Date(post.publishedAt).getTime() <= now)
     .sort(
       (a, b) =>
         new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()

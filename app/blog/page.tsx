@@ -44,6 +44,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const posts = getLocalizedBlogPosts(locale);
 
   // Dati card serializzabili, gia' localizzati, pronti per il client.
+  const now = Date.now();
   const cards: BlogCardData[] = posts.map((post) => ({
     slug: post.slug,
     href: withLang(`/blog/${post.slug}`, locale),
@@ -54,6 +55,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     dateLabel: formatDate(post.publishedAt, locale),
     readingLabel: blog.readingTime.replace("{minutes}", String(post.readingMinutes)),
     youtubeLabel: post.youtubeUrl ? blog.youtube : null,
+    isNew: now - new Date(post.publishedAt).getTime() < 3 * 24 * 60 * 60 * 1000,
   }));
 
   // Opzioni filtro con conteggio articoli per percorso (case-insensitive).
