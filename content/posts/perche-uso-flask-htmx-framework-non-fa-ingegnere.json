@@ -1,0 +1,137 @@
+{
+  "slug": "perche-uso-flask-htmx-framework-non-fa-ingegnere",
+  "publishedAt": "2026-10-20",
+  "updatedAt": "",
+  "cover": "/framework-fighters.jpeg",
+  "youtubeUrl": "",
+  "tags": [
+    "Flask",
+    "htmx",
+    "Python",
+    "Sviluppo software",
+    "Architettura software",
+    "Micro-SaaS"
+  ],
+  "title": {
+    "it": "Perché uso Flask e htmx: il framework non fa l’ingegnere",
+    "en": "Why I use Flask and htmx: the framework doesn’t make the engineer"
+  },
+  "description": {
+    "it": "Uso Flask e htmx per lavorare con strumenti che conosco, non perché siano migliori in assoluto. Come ragiono su requisiti, manutenzione e cambi di stack.",
+    "en": "I use Flask and htmx to work with tools I know, not because they are universally better. How I think about requirements, maintenance, and changing stacks."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Perché usi Flask e htmx? Perché non FastAPI? Perché non Next.js?\n\nLa risposta breve è: perché per alcuni dei progetti che sviluppo mi trovo bene così.\n\nQuella un po’ più lunga è questo articolo.\n\nNon penso che Flask sia superiore a tutto il resto. Non penso nemmeno che conoscere uno strumento mi autorizzi a usarlo per qualsiasi problema.\n\nPerò non vedo perché dovrei cambiare stack senza riuscire prima a rispondere a una domanda semplice:\n\nQuale problema concreto risolvo cambiandolo?\n\nSe la risposta è «sembra più moderno», per me non basta."
+      },
+      {
+        "id": "framework-non-fa-ingegnere",
+        "title": "Il framework non fa l’ingegnere",
+        "image": "",
+        "body": "Questa è la parte da cui parto.\n\nScegliere un framework non significa aver progettato il sistema.\n\nNel mio modo di lavorare, prima vengono le domande sul problema:\n\n- Che cosa deve fare il prodotto?\n- Chi lo userà e come?\n- Quali dati dobbiamo gestire?\n- Chi può vedere o modificare cosa?\n- Che cosa succede quando un’operazione fallisce?\n- Quali carichi dobbiamo sostenere?\n- Quanto tempo e budget abbiamo per sviluppo e manutenzione?\n\nPoi scelgo gli strumenti.\n\nNon posso mettere FastAPI nel progetto e considerare risolte sicurezza e prestazioni. Allo stesso modo, non posso scegliere Flask e usare il pragmatismo come scusa per non affrontarle.\n\nPer me «conta chi progetta» significa questo: la responsabilità delle decisioni rimane mia.\n\nIl framework mi aiuta. Non si presenta alla riunione al posto mio quando qualcosa non funziona."
+      },
+      {
+        "id": "perche-flask-htmx",
+        "title": "Perché Flask e htmx mi tornano comodi",
+        "image": "",
+        "body": "Mi piace lavorare con un flusso che riesco a seguire facilmente: arriva una richiesta, eseguo la logica necessaria e restituisco una risposta.\n\nPer molte delle interfacce che voglio costruire, preferisco mantenere sul server la generazione dell’HTML e usare htmx per aggiornare le parti della pagina che servono.\n\nUna tabella filtrata. Un form con il risultato dell’operazione. Lo stato di un’attività.\n\nNon voglio introdurre un’applicazione frontend separata se, per quel progetto, non riesco a identificarne il vantaggio.\n\nÈ una preferenza di lavoro, non una legge dell’informatica.\n\nMi interessa avere meno passaggi da seguire quando aggiungo una funzione o cerco un errore. Se riesco a ottenere l’interazione richiesta con questo approccio, per me è una buona ragione per prenderlo in considerazione.\n\nNon significa «zero JavaScript», «zero complessità» o «zero problemi».\n\nMagari. Avrei già finito parecchie cose."
+      },
+      {
+        "id": "conoscere-strumento",
+        "title": "Conoscere bene uno strumento è un vantaggio. Non una deroga",
+        "image": "",
+        "body": "Quando conosco bene uno strumento, so meglio dove cercare, quali comportamenti aspettarmi e quali errori evitare.\n\nQuesto, nelle mie decisioni, pesa.\n\nTra lavoro, università e progetti, il tempo disponibile non è una variabile decorativa. Devo considerare anche quanto mi costa imparare, integrare e mantenere una tecnologia diversa.\n\nNon perché studiare sia una perdita di tempo. Studio proprio perché voglio ampliare quello che so fare.\n\nMa distinguo due obiettivi:\n\n- Imparare una tecnologia nuova.\n- Consegnare una soluzione con vincoli precisi.\n\nA volte coincidono. Altre volte no.\n\nSe scelgo lo strumento che conosco meglio, devo comunque verificare che sia adatto al lavoro. La familiarità non cancella un limite tecnico.\n\nPerò, se quel limite non ostacola i requisiti del progetto, non considero obbligatorio aggiungere un cambio di stack alla lista delle cose da fare.\n\nLa lista, di solito, è già abbastanza creativa."
+      },
+      {
+        "id": "non-sono-alternative-identiche",
+        "title": "Flask, Quart, FastAPI e Next.js non sono nomi da mettere in classifica",
+        "image": "",
+        "body": "Ho usato strumenti diversi, tra cui FastAPI e Next.js. Non li considero avversari da sconfiggere per giustificare Flask.\n\nQuando confronto delle opzioni, cerco di chiarire prima quale parte del progetto sto decidendo.\n\nSto scegliendo come costruire un backend? Come esporre un’API? Come gestire l’interfaccia? Come organizzare l’intera applicazione?\n\nNon sono necessariamente la stessa decisione.\n\nPer questo non considero «Flask contro Next.js» una domanda completa. Devo specificare che applicazione voglio costruire e quali responsabilità assegno ai vari componenti.\n\nLo stesso vale per Flask e Quart: non li tratto come una singola etichetta da applicare senza pensarci. Se il modello di concorrenza è importante per il progetto, diventa una parte esplicita della valutazione.\n\nNon voglio sostenere che il mio stack preferito vinca ogni confronto.\n\nVoglio saper spiegare perché l’ho scelto in quel caso."
+      },
+      {
+        "id": "quando-cambio",
+        "title": "Quando cambierei approccio? Quando emerge un motivo concreto",
+        "image": "",
+        "body": "Non ho firmato un contratto di fedeltà con Flask.\n\nSe devo gestire molte operazioni I/O concorrenti, connessioni persistenti o flussi di aggiornamenti, voglio valutare esplicitamente il modello di esecuzione e gli strumenti adatti.\n\nSe devo esporre un’API per più client, voglio considerare contratti, validazione e documentazione.\n\nSe l’interfaccia richiede molta logica locale e interazioni complesse, voglio rivalutare anche le scelte frontend.\n\nSe entro in un team con convenzioni e competenze consolidate, considero quelle. Non arrivo con la mia cartella preferita pretendendo di riorganizzare la vita a tutti.\n\nE se le misurazioni mostrano che la soluzione scelta non raggiunge gli obiettivi, devo intervenire.\n\nA quel punto la domanda non è «come difendo Flask?».\n\nÈ «che cosa devo cambiare?».\n\nPotrebbe essere una query, il modo in cui eseguo un’attività, la configurazione, un componente o il framework. Non voglio decidere la risposta prima di aver individuato il problema."
+      },
+      {
+        "id": "semplice-non-significa-trascurato",
+        "title": "Semplice non significa senza test, sicurezza e manutenzione",
+        "image": "",
+        "body": "Quando parlo di semplicità, non intendo mettere tutto in un file e sperare che nessuno prema due pulsanti insieme.\n\nIntendo cercare una soluzione comprensibile rispetto alla complessità reale del problema.\n\nNel progetto rimangono comunque questioni da affrontare:\n\n- Validazione degli input e autorizzazioni.\n- Protezione dei dati e gestione dei segreti.\n- Errori, timeout e dipendenze esterne.\n- Test e verifiche dei comportamenti importanti.\n- Deploy, aggiornamenti e possibilità di recupero.\n- Documentazione e passaggio di consegne.\n\nQuesto elenco non è una certificazione automatica dei miei progetti. È il tipo di responsabilità di cui voglio discutere quando valuto una soluzione.\n\nSe dico «meno complessità» e poi salto questi punti, non sto semplificando. Sto rimandando problemi.\n\nE chiamarli debito tecnico non li rende rateizzabili senza interessi."
+      },
+      {
+        "id": "come-valutare-scelta",
+        "title": "La scelta la voglio spiegare, non farla accettare per fede",
+        "image": "",
+        "body": "Se un cliente o un collega mi chiede perché ho scelto Flask e htmx, «perché mi piacciono» non è tutta la risposta.\n\nVoglio riuscire a descrivere:\n\n1. Quali requisiti devo soddisfare.\n2. Perché questa soluzione mi sembra adeguata.\n3. Quali alternative ho considerato.\n4. Quali limiti sto accettando.\n5. Come intendo verificare il risultato.\n6. Quali condizioni mi farebbero cambiare decisione.\n\nNon mi serve trasformare ogni piccolo progetto in una tesi. Mi serve rendere leggibile il ragionamento.\n\nQuesto vale anche quando la scelta è FastAPI, Next.js o qualsiasi altra tecnologia.\n\nIl nome dello stack è l’inizio della spiegazione, non la conclusione."
+      },
+      {
+        "id": "conclusione",
+        "title": "Non devo adattarmi alla moda. Devo adattarmi al problema",
+        "image": "",
+        "body": "Quindi sì: uso Flask e htmx quando li considero adatti al progetto e al mio modo di lavorare.\n\nNon perché siano migliori in assoluto. Non perché le alternative siano inutili. Non perché non voglia più imparare niente.\n\nLi scelgo anche perché li conosco e perché questa familiarità ha un valore concreto nel lavoro che devo fare.\n\nSe cambiano i requisiti, devo essere disposto a cambiare scelta. Se un’altra tecnologia offre un vantaggio rilevante, voglio capirlo e valutarlo.\n\nQuello che non voglio fare è cambiare attrezzo soltanto per sentirmi autorizzato a chiamare professionale il mio lavoro.\n\nQuella parte me la devo guadagnare con le decisioni, le verifiche e quello che consegno.\n\nIl framework non fa l’ingegnere.\n\nE, purtroppo, non risponde nemmeno alle email dei clienti."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Why do you use Flask and htmx? Why not FastAPI? Why not Next.js?\n\nThe short answer is: because, for some of the projects I build, that approach works well for me.\n\nThe slightly longer answer is this article.\n\nI don’t think Flask is better than everything else. I also don’t think knowing a tool gives me permission to use it for every problem.\n\nBut before changing stacks, I want to answer a simple question:\n\nWhat specific problem will this change solve?\n\nIf the answer is “it looks more modern,” that isn’t enough for me."
+      },
+      {
+        "id": "framework-non-fa-ingegnere",
+        "title": "The framework doesn’t make the engineer",
+        "image": "",
+        "body": "This is where I start.\n\nChoosing a framework doesn’t mean the system has been designed.\n\nIn my approach, questions about the problem come first:\n\n- What does the product need to do?\n- Who will use it, and how?\n- What data must we manage?\n- Who can view or change what?\n- What happens when an operation fails?\n- What loads must we support?\n- What time and budget do we have for development and maintenance?\n\nThen I choose the tools.\n\nI can’t add FastAPI to a project and consider security and performance solved. Equally, I can’t choose Flask and use pragmatism as an excuse to ignore them.\n\nWhen I say the person designing the system matters, this is what I mean: responsibility for the decisions remains mine.\n\nThe framework helps me. It doesn’t attend the meeting in my place when something breaks."
+      },
+      {
+        "id": "perche-flask-htmx",
+        "title": "Why Flask and htmx suit the way I work",
+        "image": "",
+        "body": "I like working with a flow I can follow easily: a request arrives, I run the necessary logic, and I return a response.\n\nFor many of the interfaces I want to build, I prefer generating HTML on the server and using htmx to update the relevant parts of the page.\n\nA filtered table. A form showing the result of an operation. The status of a task.\n\nI don’t want to introduce a separate frontend application if I can’t identify its benefit for that project.\n\nThat is a working preference, not a law of computer science.\n\nI want fewer steps to follow when adding a feature or investigating a bug. If this approach delivers the required interaction, that is a good reason for me to consider it.\n\nIt doesn’t mean “zero JavaScript,” “zero complexity,” or “zero problems.”\n\nI wish. I would have finished quite a few things by now."
+      },
+      {
+        "id": "conoscere-strumento",
+        "title": "Knowing a tool well is an advantage, not an exemption",
+        "image": "",
+        "body": "When I know a tool well, I have a better idea of where to look, what behaviour to expect, and which mistakes to avoid.\n\nThat matters in my decisions.\n\nBetween work, university, and projects, available time isn’t a decorative variable. I also need to consider the cost of learning, integrating, and maintaining a different technology.\n\nNot because studying is a waste of time. I study precisely because I want to expand what I can do.\n\nBut I distinguish between two goals:\n\n- Learning a new technology.\n- Delivering a solution under specific constraints.\n\nSometimes they overlap. Sometimes they don’t.\n\nIf I choose the tool I know best, I still need to verify that it suits the job. Familiarity doesn’t remove a technical limitation.\n\nBut if that limitation doesn’t obstruct the project’s requirements, I don’t consider a stack change a mandatory addition to the task list.\n\nThe list is usually creative enough already."
+      },
+      {
+        "id": "non-sono-alternative-identiche",
+        "title": "Flask, Quart, FastAPI, and Next.js aren’t entries in a league table",
+        "image": "",
+        "body": "I’ve used different tools, including FastAPI and Next.js. I don’t consider them opponents I need to defeat to justify Flask.\n\nWhen comparing options, I first try to clarify which part of the project I’m deciding on.\n\nAm I choosing how to build a backend? How to expose an API? How to handle the interface? How to organise the entire application?\n\nThose aren’t necessarily the same decision.\n\nThat’s why I don’t consider “Flask versus Next.js” a complete question. I need to specify what application I’m building and which responsibilities belong to each component.\n\nThe same applies to Flask and Quart: I don’t treat them as a single label I can apply without thinking. If the concurrency model matters to the project, it becomes an explicit part of the evaluation.\n\nI don’t want to argue that my preferred stack wins every comparison.\n\nI want to explain why I chose it in that particular case."
+      },
+      {
+        "id": "quando-cambio",
+        "title": "When would I change the approach? When there’s a concrete reason",
+        "image": "",
+        "body": "I haven’t signed a loyalty agreement with Flask.\n\nIf I need to handle many concurrent I/O operations, persistent connections, or streams of updates, I want to evaluate the execution model and appropriate tools explicitly.\n\nIf I need to expose an API for several clients, I want to consider contracts, validation, and documentation.\n\nIf the interface needs substantial local logic and complex interactions, I want to reconsider the frontend choices too.\n\nIf I join a team with established conventions and skills, I take those into account. I don’t arrive with my favourite folder structure and demand that everyone reorganise their lives.\n\nAnd if measurements show that the chosen solution doesn’t meet its targets, I need to act.\n\nAt that point, the question isn’t “How do I defend Flask?”\n\nIt’s “What do I need to change?”\n\nIt might be a query, the way a task runs, configuration, a component, or the framework. I don’t want to choose the answer before identifying the problem."
+      },
+      {
+        "id": "semplice-non-significa-trascurato",
+        "title": "Simple doesn’t mean skipping tests, security, and maintenance",
+        "image": "",
+        "body": "When I talk about simplicity, I don’t mean putting everything in one file and hoping nobody presses two buttons at once.\n\nI mean looking for a solution that remains understandable relative to the problem’s actual complexity.\n\nThe project still has questions to address:\n\n- Input validation and authorisation.\n- Data protection and secrets management.\n- Errors, timeouts, and external dependencies.\n- Tests and checks for important behaviours.\n- Deployment, updates, and recovery options.\n- Documentation and handover.\n\nThis list isn’t an automatic certification of my projects. It describes the responsibilities I want to discuss when evaluating a solution.\n\nIf I say “less complexity” and then skip these points, I’m not simplifying. I’m postponing problems.\n\nCalling them technical debt doesn’t make the repayments interest-free."
+      },
+      {
+        "id": "come-valutare-scelta",
+        "title": "I want to explain the choice, not ask for blind trust",
+        "image": "",
+        "body": "If a client or colleague asks why I chose Flask and htmx, “because I like them” isn’t the whole answer.\n\nI want to explain:\n\n1. Which requirements I need to meet.\n2. Why this solution seems appropriate.\n3. Which alternatives I considered.\n4. Which limitations I’m accepting.\n5. How I intend to verify the outcome.\n6. Which conditions would make me reconsider.\n\nI don’t need to turn every small project into a dissertation. I need to make the reasoning understandable.\n\nThat applies equally when the choice is FastAPI, Next.js, or any other technology.\n\nThe stack’s name is the beginning of the explanation, not the conclusion."
+      },
+      {
+        "id": "conclusione",
+        "title": "I don’t need to follow trends. I need to respond to the problem",
+        "image": "",
+        "body": "So yes: I use Flask and htmx when I consider them appropriate for the project and the way I work.\n\nNot because they’re universally better. Not because the alternatives are useless. Not because I’ve decided to stop learning.\n\nI also choose them because I know them, and that familiarity has practical value in the work I need to do.\n\nIf the requirements change, I need to be willing to change the decision. If another technology offers a meaningful advantage, I want to understand and evaluate it.\n\nWhat I don’t want to do is change tools just to feel entitled to call my work professional.\n\nI need to earn that through my decisions, my checks, and what I deliver.\n\nThe framework doesn’t make the engineer.\n\nAnd unfortunately, it doesn’t answer client emails either."
+      }
+    ]
+  }
+}
