@@ -1,7 +1,7 @@
 {
   "slug": "codice-mezzo-non-fine-manifesto-build-in-public",
   "publishedAt": "2026-05-10",
-  "updatedAt": "",
+  "updatedAt": "2026-10-20",
   "cover": "/buildinpublic.png",
   "youtubeUrl": "https://www.youtube.com/watch?v=WW6NDy3ne7A&t=7s",
   "tags": [
@@ -23,25 +23,25 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "C’è una verità scomoda nel mondo dello sviluppo software, e pochi hanno il coraggio di dirla ad alta voce. Siamo circondati da codice splendido, architetture pulite e pattern over-ingegnerizzati, ma siamo a corto di **software che servano davvero al business**. Software che non accarezzino l’ego di chi li scrive, ma che risolvano un problema concreto a chi li usa.\n\nDa questa consapevolezza nasce un progetto diverso. Non l’ennesimo tutorial su come scalare a mille utenti in una notte, ma un **documentario in tempo reale**. Una serie di video in cui costruirò software as a service in pubblico, in modo totalmente trasparente, documentando ogni passo: dall’idea iniziale al lancio sul mercato, passando per i fallimenti, le ripartenze e le piccole, eventuali, vittorie."
+        "body": "Una cosa scomoda sul mondo dello sviluppo: siamo pieni di codice bellissimo, architetture pulite e pattern over-ingegnerizzati. E a corto di **software che servono davvero a qualcuno**.\n\nQuindi faccio una cosa diversa. Non l'ennesimo tutorial su come scalare a mille utenti in una notte. Una serie di video in cui costruisco SaaS in pubblico: dall'idea al lancio, fallimenti compresi. Soprattutto i fallimenti."
       },
       {
         "id": "il-punto-di-partenza-non-e-il-codice",
-        "title": "Il punto di partenza non è il codice",
+        "title": "Non si parte dal codice",
         "image": "",
-        "body": "Il vizio più grande del nostro settore è correre subito a programmare. Si apre l’IDE, si sceglie lo stack più trendy, si scrive codice pulito e si dimentica la domanda fondamentale: *a chi serve davvero questa soluzione?* Il risultato è un cimitero digitale di progetti perfetti che nessuno ha mai cercato.\n\nIn questa serie ribaltiamo la prospettiva. Non si parte da una tecnologia, ma da un’**idea validata sul mercato**. Un problema reale, individuato ascoltando le persone, analizzando le loro difficoltà. Solo dopo, e con molta umiltà, il codice entra in scena come semplice mezzo, non come fine. Perché il software non è il protagonista: è lo strumento che accende una soluzione e, con un po’ di fortuna e metodo, crea un’azienda."
+        "body": "Il vizio del nostro settore: aprire subito l'IDE. Stack di moda, codice pulito, e la domanda fondamentale dimenticata: *a chi serve?*\n\nRisultato: un cimitero di progetti perfetti che nessuno ha mai cercato.\n\nQui si parte da un problema vero, sentito dalle persone. Il codice arriva dopo. È un mezzo, non il protagonista."
       },
       {
         "id": "build-in-public-niente-filtri-niente-effetti-speciali",
-        "title": "Build in Public: niente filtri, niente effetti speciali",
+        "title": "Niente filtri",
         "image": "",
-        "body": "Questa serie non è un corso in cui chi parla ha già la soluzione in tasca. È l’esatto opposto. Farò **Build in Public**: lavorerò davanti a voi con trasparenza assoluta. Vuol dire che se un’idea non funziona la butterò via senza affezionarmi, girerò lo schermo e mostrerò gli errori, i dubbi, i pivot obbligati.\n\nNon ci saranno tagli nascosti né finali già scritti. Chi guarda potrà ripercorrere i miei stessi passaggi, e l’obiettivo è proprio questo: far sì che i miei sbagli diventino lezioni per voi, in modo che possiate evitarli quando toccherà a voi costruire qualcosa di vostro."
+        "body": "Non è un corso dove quello che parla ha già la soluzione in tasca. È il contrario.\n\nSe un'idea non funziona, la butto. Giro lo schermo e faccio vedere errori, dubbi, cambi di rotta. Niente tagli, niente finale già scritto.\n\nCosì i miei sbagli diventano lezioni per voi. Almeno serviranno a qualcuno."
       },
       {
         "id": "per-chi-e-pensata-questa-serie",
-        "title": "Per chi è pensata questa serie?",
+        "title": "Per chi è",
         "image": "",
-        "body": "Per chi non cerca la scorciatoia dei soldi facili, ma vuole capire come si passa da un problema concreto a un prodotto che vende. Per chi è stanco di sentirsi dire “scrivi codice pulito” senza aver mai validato un’idea. Per chi vuole vedere il dietro le quinte di un percorso imprenditoriale vero, sudato, pieno di incertezze. In altre parole, per chi vuole **costruire roba che funziona**.\n\nAdesso si comincia. Vediamo che succede."
+        "body": "Per chi non cerca soldi facili ma vuole capire come si passa da un problema a un prodotto che vende.\n\nPer chi è stufo di sentirsi dire \"scrivi codice pulito\" senza aver mai validato un'idea.\n\nPer chi vuole **costruire roba che funziona**.\n\nSi comincia. Vediamo che succede."
       }
     ],
     "en": [
@@ -49,25 +49,25 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "There’s an uncomfortable truth in the software development world, and few have the guts to say it out loud. We are surrounded by beautiful code, clean architectures and over-engineered patterns, but we are short on **software that truly serves the business**. Software that doesn’t stroke the ego of the creator, but solves a real problem for the end user.\n\nThis awareness gave birth to a different project. Not the umpteenth tutorial on how to scale to a thousand users overnight, but a **real-time documentary**. A video series in which I will build software as a service in public, with total transparency, chronicling every step: from the initial idea to the market launch, through failures, restarts and small, eventual, victories."
+        "body": "An uncomfortable truth about software development: we're full of beautiful code, clean architectures and over-engineered patterns. And short on **software that's actually useful to someone**.\n\nSo I'm doing something different. Not yet another tutorial on scaling to a thousand users overnight. A video series where I build SaaS in public: from idea to launch, failures included. Especially the failures."
       },
       {
         "id": "il-punto-di-partenza-non-e-il-codice",
-        "title": "The starting point is not the code",
+        "title": "You don't start from the code",
         "image": "",
-        "body": "The biggest vice in our industry is rushing to write code straight away. You open the IDE, pick the trendiest stack, write clean code and forget the fundamental question: *who really needs this solution?* The result is a digital graveyard of flawless projects that nobody ever searched for.\n\nIn this series we flip the perspective. We don’t start from a technology, but from a **market-validated idea**. A real problem, discovered by listening to people and analyzing their struggles. Only later, and with a lot of humility, code takes the stage as a simple means, not an end. Because software is not the hero—it’s the tool that sparks a solution and, with a bit of luck and method, creates a company."
+        "body": "Our industry's bad habit: opening the IDE right away. Trendy stack, clean code, and the key question forgotten: *who needs this?*\n\nResult: a graveyard of perfect projects nobody ever looked for.\n\nHere we start from a real problem, heard from real people. Code comes later. It's a tool, not the star."
       },
       {
         "id": "build-in-public-niente-filtri-niente-effetti-speciali",
-        "title": "Build in Public: no filters, no special effects",
+        "title": "No filters",
         "image": "",
-        "body": "This series is not a class where the speaker already has the answer in his pocket. It’s the exact opposite. I will do **Build in Public**: I will work in front of you with absolute transparency. It means that if an idea doesn’t work, I will throw it away without attachment; I’ll share my screen and show the mistakes, the doubts and the forced pivots.\n\nThere will be no hidden cuts or pre-written endings. Viewers will be able to retrace my same steps, and that’s exactly the goal: to turn my own mistakes into lessons for you, so you can avoid them when it’s your turn to build something of your own."
+        "body": "It's not a course where the guy talking already has the answer in his pocket. It's the opposite.\n\nIf an idea doesn't work, I bin it. I turn the screen around and show the mistakes, doubts, changes of direction. No cuts, no pre-written ending.\n\nSo my mistakes become lessons for you. At least they'll be useful to someone."
       },
       {
         "id": "per-chi-e-pensata-questa-serie",
-        "title": "Who is this series for?",
+        "title": "Who it's for",
         "image": "",
-        "body": "For those who are not looking for the get-rich-quick shortcut, but want to understand how to go from a concrete problem to a product that sells. For those who are tired of hearing “write clean code” without ever having validated an idea. For those who want to see behind the scenes of a real entrepreneurial journey—sweaty, uncertain, genuine. In other words, for those who want to **build stuff that works**.\n\nNow let’s begin. Let’s see what happens."
+        "body": "For people not looking for easy money, but wanting to see how you go from a problem to a product that sells.\n\nFor people tired of hearing \"write clean code\" without ever validating an idea.\n\nFor people who want to **build stuff that works**.\n\nHere we go. Let's see what happens."
       }
     ]
   }

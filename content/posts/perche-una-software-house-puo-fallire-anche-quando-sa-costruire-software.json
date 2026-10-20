@@ -1,7 +1,7 @@
 {
   "slug": "perche-una-software-house-puo-fallire-anche-quando-sa-costruire-software",
   "publishedAt": "2026-08-12",
-  "updatedAt": "",
+  "updatedAt": "2026-10-20",
   "cover": "/spotex-srl-cover.png",
   "youtubeUrl": "",
   "tags": [
@@ -28,73 +28,73 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Ora che la società è in liquidazione, posso raccontarla come si deve. Non come uno sfogo contro le persone. Come un'autopsia.\n\nPerché il punto non è chi ha sbagliato. Il punto è che i problemi non erano isolati: si moltiplicavano tra loro. Governance debole → comunicazione di merda → amministrazione confusa → decisioni lente → operatività a pezzi → rapporti da buttare.\n\nNon è la storia di chi aveva torto. È la storia di come abbiamo costruito una società, abbiamo sbagliato, e alla fine non c'era più niente da salvare."
+        "body": "Ora che la società è in liquidazione, posso raccontarla come si deve. Non come uno sfogo. Come un'autopsia.\n\nIl punto non è chi ha sbagliato. Il punto è che i problemi si moltiplicavano tra loro: governance debole → comunicazione di merda → amministrazione confusa → decisioni lente → operatività a pezzi → rapporti da buttare.\n\nSapevamo scrivere codice. Non sapevamo tenere in piedi un'azienda."
       },
       {
         "id": "governance-e-gestione-societaria",
-        "title": "Governance e gestione societaria",
+        "title": "Nessuno decideva",
         "image": "",
-        "body": "Il primo problema: nessuno decideva davvero.\n\nI ruoli formali esistevano. Sulle carte. Nei documenti. Nei verbali. Peccato che i poteri reali fossero un'altra cosa.\n\nLe decisioni importanti non seguivano un processo. Non erano documentate. Non erano condivise. Venivano prese, subite, o peggio: rimandate.\n\nRisultato: qualcuno lavorava, qualcun altro aveva la carica. Governance a puttane."
+        "body": "I ruoli c'erano. Sulla carta, nei verbali. I poteri veri erano un'altra cosa.\n\nLe decisioni importanti non avevano un processo. Non venivano scritte. Venivano prese, subite o, peggio, rimandate.\n\nRisultato: qualcuno lavorava, qualcun altro aveva la carica. Governance a puttane."
       },
       {
         "id": "quando-i-soci-smettono-di-comunicare",
-        "title": "Quando i soci smettono di comunicare",
+        "title": "Quando i soci non si parlano",
         "image": "",
-        "body": "Quando i soci smettono di parlarsi, ogni altro problema diventa irrisolvibile.\n\nLe comunicazioni importanti diventano sporadiche. Le richieste restano senza risposta. Le questioni si trascinano per settimane. Mesi. Anni.\n\nNon servono cento dipendenti per avere problemi di governance. Bastano tre persone che non riescono più a dirsi le cose in faccia.\n\n> [!TAKEAWAY]\n> In una società piccola, la comunicazione tra soci non è un dettaglio. È l'infrastruttura. Se crolla quella, crolla tutto il resto."
+        "body": "Quando i soci smettono di parlarsi, tutto il resto diventa irrisolvibile. Richieste senza risposta, questioni che si trascinano per mesi.\n\nNon servono cento dipendenti per avere problemi di governance. Bastano tre persone che non riescono più a dirsi le cose in faccia."
       },
       {
         "id": "amministrazione-contabilita-e-finanze",
-        "title": "Amministrazione, contabilità e finanze",
+        "title": "I numeri, questi sconosciuti",
         "image": "",
-        "body": "La parte amministrativa è diventata un pantano. Nessuno aveva una visione chiara di: quali clienti erano attivi, quali dovevano pagare, quali erano i costi ricorrenti, quali servizi erano davvero profittevoli, quanto valevano gli asset.\n\nSenza questi numeri, ogni decisione è una scommessa. E noi le scommesse le perdevamo.\n\nUn errore classico delle piccole aziende: confondere il fatturato con la sostenibilità.\n\n- Un cliente che deve pagare non è liquidità.\n- Un contratto non è margine.\n- Un progetto che fattura non è un progetto che guadagna.\n\nTre cose che tutti sanno e che nessuno applica finché non è troppo tardi."
+        "body": "Clienti attivi, chi doveva pagare, costi ricorrenti, servizi che rendevano davvero. Nessuno lo sapeva con certezza.\n\nSenza numeri ogni decisione è una scommessa. E noi le perdevamo.\n\nL'errore classico:\n- un cliente che deve pagare non è liquidità;\n- un contratto non è margine;\n- un progetto che fattura non è un progetto che guadagna.\n\nLo sanno tutti. Nessuno lo applica finché non è tardi."
       },
       {
         "id": "clienti-e-redditivita-reale",
-        "title": "Clienti e redditività reale",
+        "title": "Il cliente che costa",
         "image": "",
-        "body": "Anche i clienti hanno contribuito. Alcuni pagavano in ritardo. Altri chiedevano assistenza sproporzionata rispetto a quanto valevano.\n\nIl problema non era il cliente che non pagava. Era il rapporto tra quanto entrava e quanto lavoro ci costava.\n\nPer una software house piccola, un cliente da poche centinaia di euro l'anno può richiedere decine di ore di supporto, manutenzione, urgenze. A quel punto non è un cliente. È un costo con la faccia gentile.\n\n> [!NOTE]\n> Il numero di clienti non dice niente. Conta il margine reale dopo supporto, manutenzione, infrastruttura e tempo bruciato."
+        "body": "Alcuni clienti pagavano in ritardo. Altri chiedevano assistenza enorme per quello che pagavano.\n\nUn cliente da poche centinaia di euro l'anno che ti chiede decine di ore di supporto non è un cliente. È un costo con la faccia gentile.\n\nIl numero di clienti non dice niente. Conta quanto ti resta in tasca dopo."
       },
       {
         "id": "hosting-e-infrastruttura",
-        "title": "Hosting e infrastruttura",
+        "title": "L'infrastruttura a caso",
         "image": "",
-        "body": "L'infrastruttura era un altro punto debole. Domini, hosting, VPS, database, applicazioni, configurazioni diverse, tutte accumulate nel tempo. Nessuno standard.\n\nApp non containerizzate. Sistemi distribuiti ovunque. Roba che richiedeva manutenzione manuale per respirare.\n\nConseguenze:\n\n- Non sapevi dove fosse ogni applicazione.\n- I backup erano un atto di fede.\n- Trasferire un servizio era un incubo.\n- Documentare l'infrastruttura? Mai sentito.\n- Ridurre i costi? Dopo.\n- Intervenire in emergenza? Nel panico.\n\nA un certo punto è stato necessario razionalizzare. Troppo tardi. Quando la situazione è già complessa, ogni sistemata è un intervento d'emergenza."
+        "body": "Domini, hosting, VPS, database, configurazioni diverse accumulate negli anni. Nessuno standard, niente container, roba che stava in piedi solo a mano.\n\nQuindi:\n- dov'è quell'app? Boh;\n- i backup? Un atto di fede;\n- spostare un servizio? Un incubo;\n- documentazione? Mai sentita.\n\nQuando abbiamo deciso di mettere ordine era tardi. A quel punto ogni sistemata è un intervento d'emergenza."
       },
       {
         "id": "gestione-tecnica-e-sovraccarico-operativo",
-        "title": "Gestione tecnica e sovraccarico operativo",
+        "title": "Il tecnico tuttofare",
         "image": "",
-        "body": "Il problema non era la capacità tecnica. Quella c'era.\n\nIl problema era l'assenza di gestione strutturata. Si lavorava sulle emergenze. Non sui processi che le prevengono.\n\nProgetti, tecnologie, configurazioni e codice scritti in momenti diversi, senza standard per deployment, documentazione, backup, monitoraggio, manutenzione.\n\nRisultato: il tecnico è diventato anche sistemista, DevOps, supporto clienti e — ciliegina — l'unico che si ricordava come funzionava ogni singolo servizio.\n\nModello che regge per due clienti. Non scala. Mai.\n\n> [!WARNING]\n> Se l'azienda funziona solo perché una persona si ricorda tutto e c'è sempre, non hai un'infrastruttura. Hai un punto critico umano. E prima o poi si spegne."
+        "body": "La capacità tecnica c'era. Mancava la gestione. Si lavorava sulle emergenze, non sui processi che le evitano.\n\nRisultato: il tecnico è diventato anche sistemista, DevOps, supporto clienti e, ciliegina, l'unico che si ricordava come funzionava ogni servizio.\n\nRegge con due clienti. Non scala. Mai.\n\n> [!WARNING]\n> Se l'azienda funziona solo perché una persona si ricorda tutto, non hai un'infrastruttura. Hai un punto critico umano. E prima o poi si spegne."
       },
       {
         "id": "il-valore-della-documentazione",
-        "title": "Il valore della documentazione",
+        "title": "Scrivere le cose",
         "image": "",
-        "body": "Quando possiedi domini, server, applicazioni, database, account, contratti e clienti, queste informazioni vanno scritte da qualche parte. Altrimenti il valore dell'azienda vive nella testa di qualcuno. E la testa di qualcuno non è un asset aziendale.\n\nSe quella persona sparisce — o semplicemente è in ferie — domande banali diventano impossibili:\n\n- Questo dominio dove punta?\n- Questo cliente su quale server è?\n- Chi ha accesso a questo account?\n- Come si fa il backup?\n- Quale applicazione usa questo database?\n- Quanto paga questo cliente?\n\nDocumentare non è burocrazia. È quello che rende i tuoi asset vendibili, manutenibili e valutabili. Senza, valgono zero quando serve qualcuno al volante."
+        "body": "Se le informazioni su domini, server, account e clienti stanno solo nella testa di qualcuno, il valore dell'azienda sta lì. E la testa di qualcuno non è un asset aziendale.\n\nQuella persona va in ferie e domande banali diventano impossibili: questo dominio dove punta? Chi ha accesso a questo account? Come si fa il backup? Quanto paga questo cliente?\n\nDocumentare non è burocrazia. È quello che rende le tue cose vendibili e manutenibili."
       },
       {
         "id": "comunicazione-e-responsabilita",
-        "title": "Comunicazione e responsabilità",
+        "title": "\"Qualcuno deve farlo\"",
         "image": "",
-        "body": "La comunicazione si degrada in modo invisibile. Email senza risposta. Messaggi persi. Informazioni date a voce. Decisioni mai scritte.\n\nE senza traccia, non sai più:\n\n- Chi ha deciso cosa.\n- Quando.\n- Chi era responsabile.\n- Cosa sapeva chi.\n- Quali attività erano in giro.\n\nPoi subentra la regola non scritta delle aziende piccole: \"qualcuno deve farlo\". E quel qualcuno è sempre la persona più disponibile. O più competente. O più cogliona, dipende dai punti di vista.\n\nCosì ti ritrovi con responsabilità operative senza nessun potere decisionale. Che è il modo più elegante di farsi sfruttare senza rendersene conto."
+        "body": "Email senza risposta, messaggi persi, decisioni mai scritte. E dopo un po' non sai più chi ha deciso cosa, quando, e chi doveva occuparsene.\n\nPoi arriva la regola non scritta delle piccole aziende: \"qualcuno deve farlo\". E quel qualcuno è sempre il più disponibile. O il più competente. O il più coglione, dipende dai punti di vista.\n\nCosì ti ritrovi con tutte le responsabilità e nessun potere. Il modo più elegante di farsi sfruttare senza accorgersene."
       },
       {
         "id": "asset-strategia-e-costi",
-        "title": "Asset, strategia e costi",
+        "title": "Cosa vale davvero",
         "image": "",
-        "body": "Nel tempo si prendono decisioni che, col senno di poi, non stavano in piedi. Succede.\n\nLa difficoltà vera è distinguere tra un asset e lavoro tecnico che serve solo a tenere in piedi la baracca. Domini, clienti, contratti, hosting, applicazioni — hanno un valore. Ma va analizzato, non dato per scontato.\n\nRidurre tutto a \"quanto incassiamo di canoni\" significa ignorare clienti custom, software proprietario, manutenzione, infrastruttura, know-how. E significa anche non accorgersi che i costi ricorrenti stanno mangiando i ricavi.\n\nQuando te ne accorgi tardi, la razionalizzazione non è più una scelta strategica. È un'ambulanza."
+        "body": "Domini, clienti, contratti, hosting, applicazioni: hanno un valore. Ma va calcolato, non dato per scontato.\n\nRidurre tutto a \"quanto incassiamo di canoni\" vuol dire ignorare software, manutenzione, know-how. E non accorgersi che i costi fissi si stanno mangiando i ricavi.\n\nQuando te ne accorgi tardi, mettere ordine non è più strategia. È un'ambulanza."
       },
       {
         "id": "nessuno-aveva-una-visione-completa",
-        "title": "Nessuno aveva una visione completa",
+        "title": "La catena",
         "image": "",
-        "body": "Mettendo tutto insieme, questo è il cuore della storia.\n\nNon è stato un singolo problema a far fallire la società. È stata una catena:\n\n**governance debole → comunicazione scarsa → amministrazione confusa → poca visibilità finanziaria → decisioni lente → problemi con i clienti → infrastruttura ingestibile → sovraccarico operativo → rapporti distrutti.**\n\nOgni problema rendeva più difficile risolvere il successivo. E alla fine la società si è trovata in un punto dove continuare non aveva più senso.\n\nNessuno l'ha deciso. È successo. Come succedono quasi tutte le cose brutte in azienda: una piccola cosa alla volta."
+        "body": "Non è stato un problema solo. È stata una catena:\n\n**governance debole → comunicazione scarsa → amministrazione confusa → zero visibilità sui soldi → decisioni lente → problemi coi clienti → infrastruttura ingestibile → sovraccarico → rapporti distrutti.**\n\nOgni anello rendeva più difficile sistemare il successivo.\n\nNessuno l'ha deciso. È successo. Come quasi tutte le cose brutte in azienda: un pezzetto alla volta."
       },
       {
         "id": "la-liquidazione-e-la-lezione",
-        "title": "La liquidazione e la lezione",
+        "title": "La lezione",
         "image": "",
-        "body": "La liquidazione non è la fine improvvisa. È il punto finale di un processo iniziato molto prima.\n\nPrima si deteriora la collaborazione. Poi la governance. Poi la gestione economica. Poi l'operatività. Infine arriva il momento in cui devi ammettere che non ci sono più le condizioni.\n\nLa lezione è semplice, e fa male: puoi avere un prodotto tecnicamente valido e fallire lo stesso.\n\nPuoi avere codice, clienti, competenze, idee buone. Ma se mancano governance, contabilità, comunicazione, processi e controllo finanziario, stai costruendo qualcosa che funziona sulla scrivania e crolla nella realtà.\n\n> [!TAKEAWAY]\n> Una software house non è il software che produce. È l'insieme di processi, responsabilità, informazioni e decisioni che permettono a quel software di continuare a esistere. Il codice è la parte facile. Il resto è quello che ti tiene in piedi o ti fa sparire."
+        "body": "La liquidazione non arriva all'improvviso. Prima si rompe la collaborazione, poi la governance, poi i soldi, poi l'operatività. Alla fine ammetti che non c'è più niente da salvare.\n\nLa lezione fa male: puoi avere codice buono, clienti e competenze, e fallire lo stesso.\n\nIl codice è la parte facile. Il resto è quello che ti tiene in piedi o ti fa sparire.\n\nNella tua azienda, quanti di questi anelli riconosci?"
       }
     ],
     "en": [
@@ -102,73 +102,73 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Now that the company is in liquidation, I can tell the story properly. Not as a rant against people. As an autopsy.\n\nBecause the point isn't who was wrong. The point is that problems weren't isolated: they multiplied each other. Weak governance → shitty communication → messy admin → slow decisions → broken operations → ruined relationships.\n\nThis isn't the story of who was wrong. It's the story of how we built a company, made mistakes, and reached a point where nothing was left to save."
+        "body": "Now that the company is in liquidation, I can tell it properly. Not as a rant. As an autopsy.\n\nThe point isn't who got it wrong. The point is that the problems multiplied each other: weak governance → shitty communication → messy admin → slow decisions → broken operations → relationships in the trash.\n\nWe knew how to write code. We didn't know how to keep a company standing."
       },
       {
         "id": "governance-e-gestione-societaria",
-        "title": "Governance and Company Management",
+        "title": "Nobody was deciding",
         "image": "",
-        "body": "First problem: nobody was actually deciding.\n\nFormal roles existed. On paper. In documents. In minutes. Too bad real authority was something else.\n\nImportant decisions didn't follow a process. Weren't documented. Weren't shared. They were made, suffered, or — worse — postponed.\n\nResult: some people worked, others held a title. Governance down the drain."
+        "body": "Roles existed. On paper, in the minutes. Real power was something else.\n\nBig decisions had no process. They weren't written down. They were made, endured or, worse, postponed.\n\nResult: someone did the work, someone else had the title. Governance gone to hell."
       },
       {
         "id": "quando-i-soci-smettono-di-comunicare",
-        "title": "When Partners Stop Communicating",
+        "title": "When partners don't talk",
         "image": "",
-        "body": "When partners stop talking, every other problem becomes unsolvable.\n\nImportant communications become sporadic. Requests go unanswered. Issues drag on for weeks. Months. Years.\n\nYou don't need a hundred employees to have governance problems. Three people who can no longer tell each other things to their face is enough.\n\n> [!TAKEAWAY]\n> In a small company, partner communication isn't a detail. It's the infrastructure. If that collapses, everything else collapses with it."
+        "body": "When partners stop talking, everything else becomes unsolvable. Requests with no reply, issues dragging on for months.\n\nYou don't need a hundred employees to have governance problems. Three people who can't say things to each other's face are enough."
       },
       {
         "id": "amministrazione-contabilita-e-finanze",
-        "title": "Administration, Accounting, and Finance",
+        "title": "Numbers? Never heard of them",
         "image": "",
-        "body": "Administration became a swamp. Nobody had a clear view of: which clients were active, who owed money, what the recurring costs were, which services were actually profitable, what the assets were worth.\n\nWithout those numbers, every decision is a bet. And we kept losing bets.\n\nClassic small-business mistake: confusing revenue with sustainability.\n\n- A client who owes you money isn't cash.\n- A contract isn't margin.\n- A project that invoices isn't a project that earns.\n\nThree things everyone knows and nobody applies until it's too late."
+        "body": "Active clients, who owed money, recurring costs, which services actually made money. Nobody knew for sure.\n\nWithout numbers every decision is a bet. And we kept losing.\n\nThe classic mistake:\n- a client who owes you isn't cash;\n- a contract isn't margin;\n- a project that bills isn't a project that earns.\n\nEverybody knows it. Nobody applies it until it's too late."
       },
       {
         "id": "clienti-e-redditivita-reale",
-        "title": "Clients and Real Profitability",
+        "title": "The client who costs you",
         "image": "",
-        "body": "Clients contributed too. Some paid late. Others demanded support way out of proportion to what they were worth.\n\nThe problem wasn't the client who didn't pay. It was the ratio between what came in and what it cost us in work.\n\nFor a small software house, a client worth a few hundred euros a year can demand dozens of hours of support, maintenance, emergencies. At that point it's not a client. It's a cost with a friendly face.\n\n> [!NOTE]\n> The number of clients means nothing. What matters is the real margin after support, maintenance, infrastructure and burned time."
+        "body": "Some clients paid late. Others asked for huge support compared to what they paid.\n\nA client paying a few hundred euros a year who asks for dozens of hours of support isn't a client. It's a cost with a friendly face.\n\nThe number of clients means nothing. What counts is what's left in your pocket afterwards."
       },
       {
         "id": "hosting-e-infrastruttura",
-        "title": "Hosting and Infrastructure",
+        "title": "Random infrastructure",
         "image": "",
-        "body": "Infrastructure was another weak spot. Domains, hosting, VPS, databases, applications, different configs, all piled up over time. No standards.\n\nNon-containerized apps. Systems scattered everywhere. Stuff that needed manual maintenance just to breathe.\n\nConsequences:\n\n- You didn't know where each app lived.\n- Backups were an act of faith.\n- Moving a service was a nightmare.\n- Documenting infrastructure? Never heard of it.\n- Cutting costs? Later.\n- Emergency response? Panic mode.\n\nAt some point rationalization became necessary. Too late. When the situation is already complex, every fix is an emergency response."
+        "body": "Domains, hosting, VPS, databases, different configs piled up over the years. No standards, no containers, stuff that only stayed up by hand.\n\nSo:\n- where's that app? No idea;\n- backups? An act of faith;\n- moving a service? A nightmare;\n- documentation? Never heard of it.\n\nBy the time we decided to clean up it was late. At that point every fix is an emergency."
       },
       {
         "id": "gestione-tecnica-e-sovraccarico-operativo",
-        "title": "Technical Management and Operational Overload",
+        "title": "The do-everything tech guy",
         "image": "",
-        "body": "The problem wasn't technical skill. That was there.\n\nThe problem was the absence of structured management. We worked on emergencies. Not on the processes that prevent them.\n\nProjects, technologies, configs and code written at different times, with no standards for deployment, documentation, backups, monitoring, maintenance.\n\nResult: the technical guy also became sysadmin, DevOps, customer support and — cherry on top — the only one who remembered how each service worked.\n\nA model that holds for two clients. It doesn't scale. Ever.\n\n> [!WARNING]\n> If the company only works because one person remembers everything and is always around, you don't have infrastructure. You have a human single point of failure. And sooner or later it shuts off."
+        "body": "The technical skills were there. Management wasn't. We worked on emergencies, not on the processes that prevent them.\n\nResult: the tech guy also became sysadmin, DevOps, customer support and, cherry on top, the only one who remembered how every service worked.\n\nWorks with two clients. Doesn't scale. Ever.\n\n> [!WARNING]\n> If the company only works because one person remembers everything, you don't have infrastructure. You have a human single point of failure. And sooner or later it switches off."
       },
       {
         "id": "il-valore-della-documentazione",
-        "title": "The Value of Documentation",
+        "title": "Write things down",
         "image": "",
-        "body": "When you own domains, servers, applications, databases, accounts, contracts and clients, that information has to be written somewhere. Otherwise the company's value lives inside someone's head. And someone's head isn't a company asset.\n\nIf that person disappears — or is just on vacation — basic questions become impossible:\n\n- Where does this domain point?\n- Which server hosts this client?\n- Who has access to this account?\n- How are backups done?\n- Which application uses this database?\n- How much does this client pay?\n\nDocumenting isn't bureaucracy. It's what makes your assets sellable, maintainable and assessable. Without it, they're worth zero when someone needs to take the wheel."
+        "body": "If the info about domains, servers, accounts and clients lives only in someone's head, that's where the company's value lives. And someone's head isn't a company asset.\n\nThat person goes on vacation and basic questions become impossible: where does this domain point? Who has access to this account? How do we back up? How much does this client pay?\n\nDocumentation isn't bureaucracy. It's what makes your stuff sellable and maintainable."
       },
       {
         "id": "comunicazione-e-responsabilita",
-        "title": "Communication and Responsibility",
+        "title": "\"Someone has to do it\"",
         "image": "",
-        "body": "Communication degrades invisibly. Unanswered emails. Lost messages. Verbal info. Decisions never written down.\n\nAnd without a trail, you no longer know:\n\n- Who decided what.\n- When.\n- Who was responsible.\n- Who knew what.\n- What tasks were floating around.\n\nThen the unwritten rule of small companies kicks in: \"someone has to do it.\" And that someone is always the most available person. Or the most competent. Or the biggest sucker, depending on how you look at it.\n\nSo you end up with operational responsibility and zero decision-making power. Which is the most elegant way to get exploited without noticing."
+        "body": "Unanswered emails, lost messages, decisions never written down. After a while you don't know who decided what, when, or who was supposed to handle it.\n\nThen comes the unwritten rule of small companies: \"someone has to do it\". And that someone is always the most available. Or the most competent. Or the biggest sucker, depending on your point of view.\n\nSo you end up with all the responsibility and no power. The most elegant way to get exploited without noticing."
       },
       {
         "id": "asset-strategia-e-costi",
-        "title": "Assets, Strategy, and Costs",
+        "title": "What it's really worth",
         "image": "",
-        "body": "Over time you make decisions that, in hindsight, don't hold up. It happens.\n\nThe real difficulty is telling the difference between an asset and technical work that just keeps the whole thing standing. Domains, clients, contracts, hosting, applications — they have value. But it needs to be analyzed, not taken for granted.\n\nReducing everything to \"how much recurring revenue do we collect\" means ignoring custom clients, proprietary software, maintenance, infrastructure, know-how. And it also means not noticing that recurring costs are eating the revenue.\n\nWhen you notice too late, rationalization is no longer a strategic choice. It's an ambulance."
+        "body": "Domains, clients, contracts, hosting, applications: they have value. But it needs to be measured, not assumed.\n\nReducing everything to \"how much we make in fees\" means ignoring software, maintenance, know-how. And not noticing that fixed costs are eating the revenue.\n\nWhen you notice late, cleaning up isn't strategy anymore. It's an ambulance."
       },
       {
         "id": "nessuno-aveva-una-visione-completa",
-        "title": "No One Had a Complete View",
+        "title": "The chain",
         "image": "",
-        "body": "Putting it all together, this is the heart of the story.\n\nNo single problem made the company fail. It was a chain:\n\n**weak governance → poor communication → messy admin → low financial visibility → slow decisions → client problems → unmanageable infrastructure → operational overload → destroyed relationships.**\n\nEvery problem made the next one harder to fix. And eventually the company reached a point where continuing made no sense.\n\nNobody decided it. It happened. Like almost every bad thing in a company: one small thing at a time."
+        "body": "It wasn't one problem. It was a chain:\n\n**weak governance → poor communication → messy admin → zero visibility on money → slow decisions → client problems → unmanageable infrastructure → overload → broken relationships.**\n\nEach link made the next one harder to fix.\n\nNobody decided it. It happened. Like almost every bad thing in a company: one little piece at a time."
       },
       {
         "id": "la-liquidazione-e-la-lezione",
-        "title": "Liquidation and the Lesson",
+        "title": "The lesson",
         "image": "",
-        "body": "Liquidation isn't the sudden end. It's the final point of a process that started much earlier.\n\nFirst collaboration deteriorates. Then governance. Then financial management. Then operations. Finally the moment comes when you have to admit the conditions are gone.\n\nThe lesson is simple and it hurts: you can have a technically valid product and still fail.\n\nYou can have code, clients, skills, good ideas. But if governance, accounting, communication, processes and financial control are missing, you're building something that works on the desk and collapses in reality.\n\n> [!TAKEAWAY]\n> A software house isn't the software it produces. It's the combination of processes, responsibilities, information and decisions that let that software keep existing. Code is the easy part. The rest is what keeps you standing or makes you disappear."
+        "body": "Liquidation doesn't come out of nowhere. First collaboration breaks, then governance, then money, then operations. In the end you admit there's nothing left to save.\n\nThe lesson hurts: you can have good code, clients and skills, and still fail.\n\nCode is the easy part. The rest is what keeps you standing or makes you disappear.\n\nIn your company, how many of these links do you recognize?"
       }
     ]
   }

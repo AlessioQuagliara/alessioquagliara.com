@@ -1,7 +1,7 @@
 {
   "slug": "rstudy-studio-universitario-active-recall-ai",
   "publishedAt": "2026-09-22",
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-10-20",
   "cover": "/rstudy.png",
   "youtubeUrl": "",
   "tags": [
@@ -26,25 +26,25 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "L'AI ha moltiplicato le fonti. Le risposte. I riassunti. I video. I podcast. Le mappe concettuali fatte da qualcun altro.\n\nE poi arriva la sessione. E il risultato è sempre lo stesso: **caos totale**.\n\nCento pagine di dispense spezzate. Slide accumulate dal 2022. Rilettura passiva che ti ruba sei ore e non ti fissa un cazzo in testa.\n\nCosì ho iniziato a costruire [RStudy](https://alessioquagliara.github.io/RStudy/). Un'app desktop che mette ordine negli appunti e li trasforma in ripasso attivo. Tenendo i tuoi materiali sul tuo computer, non su quello di qualcun altro.\n\n<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7507005242148945921?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Post incorporato\"></iframe>"
+        "body": "L'AI ha moltiplicato tutto: fonti, risposte, riassunti, video, podcast, mappe fatte da altri.\n\nPoi arriva la sessione e il risultato è sempre lo stesso: **caos totale**. Dispense a pezzi, slide dal 2022, sei ore di rilettura che non ti lasciano in testa un cazzo.\n\nCosì mi sono scritto [RStudy](https://alessioquagliara.github.io/RStudy/): un'app desktop che mette ordine negli appunti e li trasforma in ripasso attivo. Con i tuoi file sul tuo computer, non su quello di qualcun altro.\n\n<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7507005242148945921?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Post incorporato\"></iframe>"
       },
       {
         "id": "il-problema-dello-studio-passivo",
-        "title": "Il paradosso dell'AI e i limiti della rilettura passiva",
+        "title": "Consultare non è imparare",
         "image": "",
-        "body": "C'è una differenza enorme tra consultare e imparare.\n\nAvere un chatbot che ti spiega il teorema non significa saperlo dimostrare quando sei sotto esame e ti tremano le mani. Significa solo che hai capito la spiegazione di qualcun altro per trenta secondi.\n\nLa scienza cognitiva è chiara da decenni su due cose:\n- **Active Recall**: ti sforzi di tirar fuori il concetto dalla memoria prima di guardare la risposta.\n- **Spaced Repetition (SRS)**: ripassi a intervalli calcolati in base a quanto ti è sembrato difficile.\n\nIl 90% dei software là fuori ha due problemi: vuole l'abbonamento mensile e vuole i tuoi appunti caricati sui suoi server.\n\nPasso.\n\n> [!TAKEAWAY]\n> Rileggere le dispense dieci volte ti dà la sensazione di sapere le cose. L'unica metrica che conta è se sai rispondere a una domanda senza guardare. Il resto è autoconvincimento."
+        "body": "Un chatbot che ti spiega il teorema non vuol dire saperlo dimostrare all'esame con le mani che tremano. Vuol dire che hai capito la spiegazione di qualcun altro per trenta secondi.\n\nLa scienza dice da decenni due cose:\n- **Active Recall**: tiri fuori il concetto dalla testa prima di guardare la risposta;\n- **Spaced Repetition**: ripassi a intervalli, in base a quanto ti è sembrato difficile.\n\nIl 90% delle app che lo fanno vuole due cose: l'abbonamento mensile e i tuoi appunti sui loro server.\n\nPasso."
       },
       {
         "id": "architettura-e-funzionalita",
-        "title": "Come funziona RStudy: dal testo al test in un click",
+        "title": "Come funziona",
         "image": "",
-        "body": "RStudy mette tutto il ciclo di preparazione in una schermata sola. Senza fronzoli:\n\n### 1. Dashboard e Gestione Corsi\nCFU, appelli, lezioni, flashcard da ripassare oggi. Tutto in un posto. Non devi più tenere tre file Excel e un quaderno.\n\n### 2. Editor Appunti e Studio AI\nEditor di scrittura in stile blocco note, supporto dettato vocale. Dalla sezione **Studio AI** il contenuto della lezione diventa:\n- **Riepilogo e Punti salienti**: la sintesi che avresti dovuto fare tu, ma non hai fatto.\n- **Diagrammi Mermaid**: mappe concettuali generate al volo.\n- **Presentazioni di ripasso**: slide a schermo intero per ripetere ad alta voce.\n- **Esercizi e Quiz**: domande a risposta multipla, aperte, e pezzi di codice corretti in automatico.\n\n### 3. Sistema di Flashcard Spaziato\nLe schede generate finiscono in una coda giornaliera divisa per difficoltà (*Facile*, *Media*, *Difficile*). I concetti che ti scassano la testa tornano fuori al momento giusto. Non quando decidi tu.\n\n> [!TIP]\n> Spezza l'argomento d'esame in moduli piccoli e indipendenti. I quiz vengono più precisi e il cervello non va in tilt."
+        "body": "Tutto in una schermata, senza fronzoli.\n\n### Dashboard e corsi\nCFU, appelli, lezioni, flashcard di oggi. Basta tre file Excel e un quaderno.\n\n### Appunti e Studio AI\nEditor tipo blocco note, anche a voce. Dalla sezione **Studio AI** la lezione diventa:\n- **riepilogo e punti chiave**: la sintesi che avresti dovuto fare tu;\n- **diagrammi Mermaid**: mappe concettuali al volo;\n- **slide di ripasso**: per ripetere ad alta voce;\n- **esercizi e quiz**: risposta multipla, aperte e codice corretto in automatico.\n\n### Flashcard\nUna coda giornaliera divisa in *Facile*, *Media*, *Difficile*. I concetti che ti scassano la testa tornano fuori al momento giusto. Non quando decidi tu."
       },
       {
         "id": "approccio-locale-first-e-lancio",
-        "title": "Architettura locale-first e verso il lancio ufficiale",
+        "title": "I tuoi dati, una licenza",
         "image": "",
-        "body": "Dalla prima riga di codice ho deciso due cose: i tuoi dati restano tuoi, e il software lo paghi una volta.\n\n- **Database locale**: appunti, materie e progressi vivono in SQLite sul tuo disco. Nessuno li legge.\n- **AI flessibile (Offline o Cloud)**: il motore di default gira al 100% offline con modelli locali compatti (llama.cpp). Se vuoi più velocità colleghi la tua chiave API (OpenAI-compatible / DeepSeek) senza intermediari.\n- **Zero abbonamenti**: licenza una tantum. Possiedi il software. Fine.\n\nIl progetto è in rifinitura finale. Il lancio è questione di poco.\n\n> [!NOTE]\n> Caratteristiche complete, roadmap e dettagli di rilascio li trovi sul sito ufficiale di [RStudy](https://alessioquagliara.github.io/RStudy/)."
+        "body": "Due regole dalla prima riga di codice: i dati restano tuoi, il software lo paghi una volta.\n- **Database locale**: tutto in SQLite sul tuo disco. Nessuno lo legge.\n- **AI offline o cloud**: di default gira offline con modelli locali (llama.cpp). Se vuoi più velocità, metti la tua chiave API (OpenAI-compatible o DeepSeek), senza intermediari.\n- **Zero abbonamenti**: licenza una tantum. Fine.\n\nSiamo alla rifinitura finale. Il lancio è vicino. Dettagli e roadmap su [RStudy](https://alessioquagliara.github.io/RStudy/).\n\nTu come studi: rileggi o ti interroghi?"
       }
     ],
     "en": [
@@ -52,25 +52,25 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "AI multiplied sources. Answers. Summaries. Videos. Podcasts. Concept maps made by someone else.\n\nAnd then exams show up. Same result every time: **total chaos**.\n\nA hundred pages of fragmented notes. Slides hoarded since 2022. Passive re-reading that steals six hours and doesn't stick anything in your head.\n\nSo I started building [RStudy](https://alessioquagliara.github.io/RStudy/). A desktop app that organizes your notes and turns them into active recall. Keeping your material on your machine, not someone else's.\n\n<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7507005242148945921?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
+        "body": "AI multiplied everything: sources, answers, summaries, videos, podcasts, mind maps made by someone else.\n\nThen exam season comes and the result is always the same: **total chaos**. Scattered notes, slides from 2022, six hours of rereading that leave absolutely nothing in your head.\n\nSo I wrote myself [RStudy](https://alessioquagliara.github.io/RStudy/): a desktop app that organizes your notes and turns them into active review. With your files on your computer, not someone else's.\n\n<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7507005242148945921?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
       },
       {
         "id": "il-problema-dello-studio-passivo",
-        "title": "The AI overload paradox and passive learning limits",
+        "title": "Looking it up isn't learning",
         "image": "",
-        "body": "There's a huge difference between looking things up and actually learning them.\n\nHaving a chatbot explain a theorem doesn't mean you can prove it under exam pressure with shaky hands. It just means you understood someone else's explanation for thirty seconds.\n\nCognitive science has been clear for decades about two things:\n- **Active Recall**: forcing your brain to retrieve the concept before checking the answer.\n- **Spaced Repetition (SRS)**: reviewing at calculated intervals based on how hard it felt.\n\n90% of the software out there has two problems: it wants a monthly subscription and it wants your notes on its servers.\n\nPass.\n\n> [!TAKEAWAY]\n> Re-reading slides ten times gives you the feeling of knowing things. The only metric that matters is whether you can answer a question without looking. The rest is self-convincing."
+        "body": "A chatbot explaining the theorem doesn't mean you can prove it in the exam with shaking hands. It means you understood someone else's explanation for thirty seconds.\n\nScience has said two things for decades:\n- **Active Recall**: pull the concept out of your head before looking at the answer;\n- **Spaced Repetition**: review at intervals, based on how hard it felt.\n\n90% of the apps that do this want two things: a monthly subscription and your notes on their servers.\n\nPass."
       },
       {
         "id": "architettura-e-funzionalita",
-        "title": "Inside RStudy: From raw notes to active quizzes",
+        "title": "How it works",
         "image": "",
-        "body": "RStudy puts the whole study cycle on one screen. No frills:\n\n### 1. Course & Exam Dashboard\nCredits, deadlines, lectures, flashcards due today. Everything in one place. No more juggling three spreadsheets and a notebook.\n\n### 2. Note Editor & AI Study Pack\nA block-note style editor with voice dictation. From the **AI Study** tab, lecture content becomes:\n- **Summary & Key Points**: the outline you were supposed to write and didn't.\n- **Mermaid Diagrams**: concept maps generated on the fly.\n- **Review Slides**: full-screen decks to rehearse out loud.\n- **Exercises & Quizzes**: multiple choice, open-ended, and code exercises with automatic grading.\n\n### 3. Spaced Flashcard Queue\nGenerated cards feed a daily queue split by difficulty (*Easy*, *Medium*, *Hard*). The concepts that wreck your brain come back at the right time. Not when you feel like it.\n\n> [!TIP]\n> Break exam topics into small independent modules. Quiz quality goes up and your brain stops melting."
+        "body": "All on one screen, no frills.\n\n### Dashboard and courses\nCredits, exam dates, lectures, today's flashcards. No more three Excel files and a notebook.\n\n### Notes and AI Study\nNotepad-style editor, voice dictation too. From the **AI Study** section a lecture becomes:\n- **summary and key points**: the summary you should have written;\n- **Mermaid diagrams**: mind maps on the fly;\n- **review slides**: to repeat out loud;\n- **exercises and quizzes**: multiple choice, open questions and auto-graded code.\n\n### Flashcards\nA daily queue split into *Easy*, *Medium*, *Hard*. The concepts that break your brain come back at the right moment. Not when you feel like it."
       },
       {
         "id": "approccio-locale-first-e-lancio",
-        "title": "Local-first architecture and upcoming launch",
+        "title": "Your data, one license",
         "image": "",
-        "body": "From the first line of code I decided two things: your data stays yours, and you pay once.\n\n- **Local database**: notes, subjects and progress live in SQLite on your disk. Nobody reads them.\n- **Flexible AI (Offline or Cloud)**: the default engine runs 100% offline with compact local models (llama.cpp). Want more speed? Plug in your own API key (OpenAI-compatible / DeepSeek) with no middleman.\n- **No subscriptions**: one-time license. You own the software. Done.\n\nFinal polish in progress. Launch is right around the corner.\n\n> [!NOTE]\n> Full feature list, roadmap and release details on the official [RStudy website](https://alessioquagliara.github.io/RStudy/)."
+        "body": "Two rules from the first line of code: your data stays yours, you pay for the software once.\n- **Local database**: everything in SQLite on your disk. Nobody reads it.\n- **Offline or cloud AI**: by default it runs offline with local models (llama.cpp). Want more speed? Plug in your own API key (OpenAI-compatible or DeepSeek), no middleman.\n- **Zero subscriptions**: one-time license. Done.\n\nWe're in the final polish. Launch is close. Details and roadmap on [RStudy](https://alessioquagliara.github.io/RStudy/).\n\nHow do you study: reread or quiz yourself?"
       }
     ]
   }

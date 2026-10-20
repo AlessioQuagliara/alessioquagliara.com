@@ -22,100 +22,102 @@
       {
         "id": "intro",
         "title": "",
-        "body": "Prima stagione di Build in Public chiusa. Zero righe di codice scritte.\n\nE non è successo per caso. È stata una scelta.\n\nIn questo episodio racconto perché ho ucciso la mia prima idea di SaaS — un tool sulle shipping policy per ecommerce — dopo aver parlato con persone vere. Non dopo sei mesi chiuso in casa a scrivere codice per niente.\n\n[Guarda il video su YouTube](https://www.youtube.com/@AlessioQuagliaraDev)",
-        "image": ""
+        "image": "",
+        "body": "Prima stagione di Build in Public chiusa. Righe di codice scritte: zero.\n\nNon per pigrizia. L'ho deciso io.\n\nHo ucciso la mia prima idea di SaaS, un tool per le shipping policy degli e-commerce, dopo aver parlato con persone vere. Non dopo sei mesi chiuso in casa a programmare per niente.\n\n[Guarda il video su YouTube](https://www.youtube.com/@AlessioQuagliaraDev)"
       },
       {
         "id": "il-contesto-un-saas-sulle-shipping-policy",
-        "title": "Il contesto: un SaaS sulle shipping policy",
-        "body": "Parto da un problema che vivo da anni: ogni volta che apro uno store Shopify nuovo devo riscrivere la pagina spedizioni/resi/policy da zero.\n\nNon è solo noiosa.\n\nÈ rischiosa: normative che cambiano, mercati diversi, lingue diverse, copy da adattare ogni volta. E la tentazione di copiare e incollare da altri siti è sempre lì, a un click di distanza.\n\nL'idea era semplice:\n\n- un micro-SaaS tipo \"Iubenda ma per le shipping policy\",\n- integrazione con le principali piattaforme ecommerce,\n- generazione e aggiornamento delle pagine policy in modo guidato.\n\nSulla carta, sensata. Come tutte le idee sulla carta.",
-        "image": "/buildinpublic.png"
+        "title": "L'idea",
+        "image": "/buildinpublic.png",
+        "body": "Ogni volta che apro uno store Shopify devo riscrivere da zero la pagina spedizioni e resi. Noiosa e pure rischiosa: regole che cambiano, mercati diversi, lingue diverse. E la tentazione del copia-incolla da altri siti è sempre lì.\n\nL'idea:\n- un micro-SaaS tipo \"Iubenda, ma per le shipping policy\";\n- collegato alle piattaforme e-commerce;\n- che genera e aggiorna le pagine.\n\nSulla carta sensata. Come tutte le idee sulla carta."
       },
       {
         "id": "il-test-landing-gruppi-facebook-frizione",
-        "title": "Il test: landing + gruppi Facebook + frizione",
-        "body": "Invece di partire dal codice, ho fatto la cosa meno sexy e più utile: una landing minimale e un giro serio di feedback.\n\n### 1. Landing minimale\n\nLanding super grezza, builder no-code.\n\nObiettivo: spiegare il problema in poche righe, far vedere l'idea, raccogliere email solo da chi si riconosceva nel problema.\n\nNiente design da Dribbble. Solo:\n\n- problema chiaro,\n- promessa minima,\n- form corto.\n\n### 2. Domanda pubblica nei gruppi ecommerce\n\nPoi ho portato la conversazione dove stanno quelli che potrebbero usarlo: gruppi Facebook di chi vende online.\n\nDomanda secca:\n\n> Quanto sono davvero importanti per voi le pagine spedizioni/resi/policy?\n> Avete mai visto casi in cui una pagina fatta male vi ha creato problemi, o una fatta bene vi ha salvato tempo, soldi e rogne?\n\nDa lì è uscito di tutto.",
-        "image": ""
+        "title": "Il test",
+        "image": "",
+        "body": "Invece del codice, la cosa meno sexy e più utile: una landing e un giro di feedback.\n\nLanding grezza, fatta con un builder no-code. Problema chiaro, promessa minima, form corto. Niente design da Dribbble.\n\nPoi sono andato nei gruppi Facebook di chi vende online e ho chiesto:\n\n> Quanto contano davvero per voi le pagine spedizioni e resi? Vi hanno mai creato problemi, o salvato da qualche rogna?\n\nNe è uscito di tutto."
       },
       {
         "id": "i-feedback-anche-brutali-che-hanno-cambiato-tutto",
-        "title": "I feedback (anche brutali) che hanno cambiato tutto",
-        "body": "Alcune risposte mi hanno confermato che il problema esiste.\n\n- \"Più chiara è la policy, meno resi o problemi hai.\"\n- \"Se vendi merce non coperta da diritto di reso, è fondamentale che sia chiarissima.\"\n- \"Se la fai bene, spesso hai ragione e risolvi i casini più in fretta.\"\n\nQuindi sì: l'area è reale. Tocca soldi, tempo e supporto.\n\nMa la maggioranza dei commenti andava in un'altra direzione:\n\n- \"Non stiamo parlando di marketing ma di termini di legge: ci pensa l'avvocato.\"\n- \"Il cliente non le leggerà mai, serve a tutelare il merchant.\"\n- \"Perché non paghi un avvocato che costa pure meno?\"\n- \"Esiste già Iubenda, LexDoIt e altri mille tool. Che cazzo devi sviluppare?\"\n\nE lì si accende la spia rossa.",
-        "image": ""
+        "title": "I feedback (anche brutali)",
+        "image": "",
+        "body": "Qualcuno mi ha dato ragione:\n- \"Più è chiara la policy, meno resi e problemi hai.\"\n- \"Se la fai bene, risolvi i casini più in fretta.\"\n\nMa la maggioranza diceva altro:\n- \"Sono termini di legge: ci pensa l'avvocato.\"\n- \"Il cliente non le legge mai.\"\n- \"Perché non paghi un avvocato, che costa pure meno?\"\n- \"Esiste già Iubenda, LexDoIt e altri mille tool. Che cazzo devi sviluppare?\"\n\nEcco, lì si è accesa la spia rossa."
       },
       {
         "id": "il-vero-problema-non-era-tecnico-era-strategico",
-        "title": "Il vero problema non era tecnico, era strategico",
-        "body": "Quello che ho capito da questa frizione è semplice:\n\n- la testa delle persone è settata su **\"avvocato + obbligo di legge\"**, non su \"software che mi migliora la vita\";\n- l'idea di \"un altro tool AI per le policy\" viene percepita come commodity. Nella migliore delle ipotesi. Nella peggiore, come fuffa;\n- per spostare questa percezione dovrei fare una guerra di educazione al mercato che, onestamente, non ho voglia né tempo di combattere.\n\nNon è la montagna su cui voglio arrampicarmi. Punto.",
-        "image": ""
+        "title": "Il problema non era tecnico",
+        "image": "",
+        "body": "La gente pensa **\"avvocato + obbligo di legge\"**, non \"software che mi semplifica la vita\".\n\nUn altro tool per le policy? Nel migliore dei casi una commodity. Nel peggiore, fuffa.\n\nPer cambiare questa idea dovrei fare una guerra per educare il mercato. Che non ho né voglia né tempo di combattere.\n\nNon è la montagna su cui voglio arrampicarmi. Punto."
       },
       {
         "id": "perche-ho-scelto-di-buttare-via-lidea",
-        "title": "Perché ho scelto di buttare via l'idea",
-        "body": "A quel punto avevo due strade:\n\n1. ignorare il rumore, convincermi che \"non hanno capito niente\" e chiudermi a scrivere codice per mesi;\n2. prendere sul serio i segnali, accettare che l'idea non mi accende più e staccare la spina prima di investirci troppo.\n\nHo scelto la seconda.\n\nNon perché sia impossibile costruire qualcosa in questo spazio.\n\nMa perché, con le risorse che ho e il tipo di solofounder che sono, l'energia che dovrei spendere per educare il mercato non sta in piedi rispetto al rischio/ritorno che voglio.\n\nE questo è esattamente il punto della serie: mostrare anche i progetti che MUOIONO in fretta. Non solo quelli che ce la fanno.",
-        "image": ""
+        "title": "Perché l'ho buttata",
+        "image": "",
+        "body": "Due strade:\n1. convincermi che \"non hanno capito niente\" e chiudermi mesi a programmare;\n2. ascoltare i segnali e staccare la spina prima di investirci troppo.\n\nHo scelto la seconda.\n\nNon perché sia impossibile fare qualcosa lì. Ma con le mie risorse, da solo, il gioco non vale la candela.\n\nEd è proprio il senso della serie: far vedere anche i progetti che muoiono in fretta. Non solo quelli che ce la fanno."
       },
       {
         "id": "la-vittoria-nascosta-tempo-e-focus-salvati",
-        "title": "La vittoria nascosta: tempo e focus salvati",
-        "body": "Dire \"ho fallito\" alla stagione 1 sembra deprimente.\n\nIn realtà:\n\n- ho speso settimane, non anni;\n- ho validato parlando con persone vere, non con il mio foglio Notion;\n- ho scoperto che posso buttare qualcosa senza sentirmi definito dal progetto.\n\nPer un solofounder, saper staccare la spina è una skill. Non un fallimento.\n\nOgni idea che ammazzi in fretta ti restituisce tempo, focus e lucidità per la prossima.\n\n> [!TAKEAWAY]\n> Ogni idea che ammazzi in fretta ti restituisce tempo, focus e lucidità per la prossima. Saper staccare la spina è una skill.",
-        "image": ""
+        "title": "La vittoria nascosta",
+        "image": "",
+        "body": "\"Ho fallito alla prima stagione\" suona deprimente. In realtà:\n- ho perso settimane, non anni;\n- ho validato con persone vere, non col mio foglio Notion;\n- ho scoperto che posso buttare un progetto senza sentirmi una merda.\n\nOgni idea che ammazzi in fretta ti restituisce tempo e testa per la prossima. Saper staccare la spina è una skill, non un fallimento."
       },
       {
         "id": "cosa-mi-porto-dietro-per-la-prossima-stagione",
-        "title": "Cosa mi porto dietro per la prossima stagione",
-        "body": "Da questa mini-stagione mi porto tre filtri chiari per le prossime idee:\n\n1. **Mercato che vede subito il valore del software**, non solo quello della consulenza.\n2. **Problema abbastanza doloroso** da far cercare attivamente soluzioni, non solo da far commentare sotto un post.\n3. **Spazio dove mi vedo volentieri per mesi**, non solo dove potrei fare \"un progettino interessante\".\n\nLa prossima stagione di Build in Public parte da qui.\n\nNon da un genio in garage che ha sempre ragione.\n\nMa da uno che preferisce fallire in pubblico, in piccolo, per aumentare le probabilità di centrare qualcosa di grosso tra qualche tentativo.\n\n---\n\nSe vuoi il racconto completo, con il dietro le quinte e tutta la parte emotiva, ecco l'episodio su YouTube:\n\n[▶ Guarda il video: Ho ucciso il mio primo SaaS prima di scrivere una riga di codice](https://www.youtube.com/watch?v=k75bpKJNW2w)",
-        "image": ""
+        "title": "Cosa mi porto dietro",
+        "image": "",
+        "body": "Tre filtri per le prossime idee:\n1. un mercato che capisce subito il valore del software, non solo della consulenza;\n2. un problema che fa abbastanza male da far cercare una soluzione, non solo commentare sotto un post;\n3. un settore dove mi vedo volentieri per mesi.\n\nMeglio fallire in pubblico e in piccolo, per avere più possibilità di beccare qualcosa di grosso dopo.\n\nTu quante idee hai ucciso prima di scrivere codice? E quante avresti dovuto?\n\n---\n\nIl racconto completo, con il dietro le quinte, è su YouTube:\n\n[▶ Guarda il video: Ho ucciso il mio primo SaaS prima di scrivere una riga di codice](https://www.youtube.com/watch?v=k75bpKJNW2w)"
       }
     ],
     "en": [
       {
         "id": "intro",
         "title": "",
-        "body": "First Build in Public season closed. Zero lines of code written.\n\nAnd it didn't happen by accident. It was a choice.\n\nIn this episode I explain why I killed my first SaaS idea — a tool around ecommerce shipping policies — after talking to real people. Not after six months locked at home writing code for nothing.\n\n[Watch the YouTube video](https://www.youtube.com/@AlessioQuagliaraDev)",
-        "image": ""
+        "image": "",
+        "body": "First season of Build in Public: done. Lines of code written: zero.\n\nNot out of laziness. I decided it.\n\nI killed my first SaaS idea, a shipping policy tool for online stores, after talking to real people. Not after six months locked at home coding for nothing.\n\n[Watch the video on YouTube](https://www.youtube.com/@AlessioQuagliaraDev)"
       },
       {
         "id": "the-context-a-saas-for-shipping-policies",
-        "title": "The context: a SaaS for shipping policies",
-        "body": "I started from a pain I've had for years: every time I spin up a new Shopify store, I have to rewrite the shipping/returns/policy page from scratch.\n\nIt's not just boring.\n\nIt's risky: regulations change, markets differ, languages differ, copy needs adapting every time. And the temptation to copy-paste from other sites is always one click away.\n\nThe idea was simple:\n\n- a micro-SaaS like \"Iubenda but for shipping policies\",\n- integrations with the main ecommerce platforms,\n- guided generation and updating of policy pages.\n\nOn paper, sensible. Like every idea on paper.",
-        "image": "/buildinpublic.png"
+        "title": "The idea",
+        "image": "/buildinpublic.png",
+        "body": "Every time I open a Shopify store I have to rewrite the shipping and returns page from scratch. Boring and risky too: rules that change, different markets, different languages. And the copy-paste-from-other-sites temptation is always right there.\n\nThe idea:\n- a micro-SaaS like \"Iubenda, but for shipping policies\";\n- connected to e-commerce platforms;\n- generating and updating the pages.\n\nMakes sense on paper. Like every idea on paper."
       },
       {
         "id": "the-test-landing-page-facebook-groups-friction",
-        "title": "The test: landing page + Facebook groups + friction",
-        "body": "Instead of starting with code, I did the least sexy and most useful thing: a minimal landing page and a serious feedback round.\n\n### 1. Minimal landing\n\nVery rough landing, no-code builder.\n\nGoal: explain the problem in a few lines, show the idea, collect emails only from people who felt the pain.\n\nNo Dribbble-level design. Just:\n\n- clear problem,\n- minimal promise,\n- short form.\n\n### 2. Asking publicly in ecommerce groups\n\nThen I brought the conversation where the potential users actually are: Facebook groups for online sellers.\n\nStraight question:\n\n> How important are your shipping/returns/policy pages really?\n> Have you ever seen cases where a bad page created issues, or a good one saved you time, money and headaches?\n\nThat's where everything came out.",
-        "image": ""
+        "title": "The test",
+        "image": "",
+        "body": "Instead of code, the least sexy and most useful thing: a landing page and a round of feedback.\n\nRough landing, built with a no-code builder. Clear problem, minimal promise, short form. No Dribbble design.\n\nThen I went to Facebook groups of people who sell online and asked:\n\n> How much do shipping and returns pages really matter to you? Have they ever caused you problems, or saved you from a headache?\n\nEverything came out."
       },
       {
         "id": "the-feedback-including-the-brutal-ones-that-changed-everything",
-        "title": "The feedback (including the brutal ones) that changed everything",
-        "body": "Some replies confirmed the problem is real.\n\n- \"The clearer the policy, the fewer returns and issues you have.\"\n- \"If you sell products not covered by standard return rights, the policy must be crystal clear.\"\n- \"If you do it well, you're often right and you solve disputes faster.\"\n\nSo yes: the space is real. It touches money, time and support.\n\nBut most comments went elsewhere:\n\n- \"We're not talking marketing, this is legal stuff: talk to a lawyer.\"\n- \"Customers will never read it, it's there to protect the merchant.\"\n- \"Why don't you just pay a lawyer, which is even cheaper?\"\n- \"Iubenda, LexDoIt and a thousand other tools already exist. What the hell are you building?\"\n\nAnd that's a big red warning light.",
-        "image": ""
+        "title": "The feedback (brutal included)",
+        "image": "",
+        "body": "Some people agreed:\n- \"The clearer the policy, the fewer returns and problems.\"\n- \"If you do it right, you sort out messes faster.\"\n\nBut most said something else:\n- \"These are legal terms: the lawyer handles it.\"\n- \"Customers never read them.\"\n- \"Why not pay a lawyer, it's even cheaper?\"\n- \"Iubenda, LexDoIt and a thousand other tools already exist. What the hell are you building?\"\n\nAnd that's when the red light went on."
       },
       {
         "id": "the-real-issue-wasnt-technical-it-was-strategic",
-        "title": "The real issue wasn't technical, it was strategic",
-        "body": "Here's what I got from this friction:\n\n- people's mental model is set on **\"lawyer + legal obligation\"**, not \"software that makes my life better\";\n- the idea of \"yet another AI policy tool\" is perceived as a commodity. Best case. Worst case, as fluff;\n- to shift that perception I'd need to fight a market education war that, honestly, I have neither the energy nor the appetite for.\n\nIt's just not the mountain I want to climb. Period.",
-        "image": ""
+        "title": "The problem wasn't technical",
+        "image": "",
+        "body": "People think **\"lawyer + legal obligation\"**, not \"software that makes my life easier\".\n\nAnother policy tool? At best a commodity. At worst, fluff.\n\nTo change that I'd have to fight a war to educate the market. Which I have neither the will nor the time for.\n\nNot the mountain I want to climb. Period."
       },
       {
         "id": "why-i-chose-to-kill-the-idea",
-        "title": "Why I chose to kill the idea",
-        "body": "At that point I had two paths:\n\n1. ignore the noise, convince myself \"they just don't get it\" and lock myself into building for months;\n2. take the signals seriously, admit the idea no longer excites me, and pull the plug before over-investing.\n\nI chose the second.\n\nNot because building something in this space is impossible.\n\nBut because, with my resources and the kind of solo founder I am, the energy I'd need to educate this market doesn't hold up against the risk/return I want.\n\nAnd that's exactly the point of the series: showing the projects that DIE quickly. Not only the ones that survive.",
-        "image": ""
+        "title": "Why I binned it",
+        "image": "",
+        "body": "Two roads:\n1. convince myself \"they just don't get it\" and lock myself in for months coding;\n2. listen to the signals and pull the plug before investing too much.\n\nI picked the second.\n\nNot because nothing can be built there. But with my resources, alone, it's not worth it.\n\nAnd that's exactly the point of the series: showing the projects that die fast too. Not just the ones that make it."
       },
       {
         "id": "the-hidden-win-time-and-focus-saved",
-        "title": "The hidden win: time and focus saved",
-        "body": "Saying \"I failed\" in season one sounds depressing.\n\nIn reality:\n\n- I spent weeks, not years;\n- I validated by talking to real people, not to my Notion page;\n- I found out I can drop a project without tying my identity to it.\n\nFor a solo founder, knowing when to pull the plug is a skill. Not a failure.\n\nEvery idea you kill early gives you back time, focus and clarity for the next one.\n\n> [!TAKEAWAY]\n> Every idea you kill early gives you back time, focus and clarity for the next one. Knowing when to pull the plug is a skill."
+        "title": "The hidden win",
+        "image": "",
+        "body": "\"I failed in season one\" sounds depressing. Actually:\n- I lost weeks, not years;\n- I validated with real people, not my Notion page;\n- I found out I can bin a project without feeling like crap.\n\nEvery idea you kill fast gives you back time and headspace for the next one. Knowing when to pull the plug is a skill, not a failure."
       },
       {
         "id": "what-im-taking-into-the-next-season",
-        "title": "What I'm taking into the next season",
-        "body": "From this mini-season I'm taking three clear filters for upcoming ideas:\n\n1. **A market that immediately sees the value of software**, not just of consulting.\n2. **A problem painful enough** that people actively look for solutions, not just comment under a post.\n3. **A space where I see myself happily spending months**, not just \"an interesting side project I could hack together\".\n\nThe next Build in Public season starts here.\n\nNot from a genius in a garage who's always right.\n\nBut from someone who prefers to fail in public, on small bets, to raise the odds of hitting something big a few attempts down the road.\n\n---\n\nIf you want the full story, with behind the scenes and the emotional side, here's the YouTube episode:\n\n[▶ Watch the video: I Killed My First SaaS Before Writing a Single Line of Code](https://www.youtube.com/watch?v=k75bpKJNW2w)",
-        "image": ""
+        "title": "What I'm taking with me",
+        "image": "",
+        "body": "Three filters for the next ideas:\n1. a market that immediately sees the value of software, not just consulting;\n2. a problem painful enough that people actively look for a fix, not just comment under a post;\n3. a space I'd happily spend months in.\n\nBetter to fail in public and small, to have a better shot at something big later.\n\nHow many ideas have you killed before writing code? And how many should you have?\n\n---\n\nThe full story, behind the scenes included, is on YouTube:\n\n[▶ Watch the video: I killed my first SaaS before writing a single line of code](https://www.youtube.com/watch?v=k75bpKJNW2w)"
       }
     ]
-  }
+  },
+  "updatedAt": "2026-10-20"
 }

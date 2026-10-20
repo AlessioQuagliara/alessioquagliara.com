@@ -1,7 +1,7 @@
 {
   "slug": "miglioramento-algoritmico-in-c-contare-lettere",
   "publishedAt": "2026-05-14",
-  "updatedAt": "",
+  "updatedAt": "2026-10-20",
   "cover": "/copertine-yt-C.png",
   "youtubeUrl": "https://www.youtube.com/@AlessioQuagliaraDev",
   "tags": [
@@ -24,31 +24,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "In questa nuova serie dedicata al **miglioramento algoritmico in C** (non un tutorial sul C puro) andiamo a vedere come ragionare meglio, come ottimizzare il codice e come ampliare la nostra capacità di visione e pensiero. Queste competenze sono fondamentali quando, durante il building pubblico, le risorse sul server aumentano e ci troviamo con software mal ottimizzati da sistemare. Impareremo a:\n\n- allocare risorse in modo efficiente\n- alleggerire il sovraccarico della CPU\n- delegare parti di calcolo a un linguaggio di basso livello per ottimizzare il routing in uno di alto livello"
+        "body": "Nuova serie: **miglioramento algoritmico in C**. Non un corso di C, eh. Un modo per allenarsi a ragionare meglio sul codice.\n\nPerché? Perché quando un progetto cresce e il server inizia a sudare, ti ritrovi con software scritto male da sistemare. E lì serve saper:\n- usare le risorse senza sprecarle;\n- non far friggere la CPU;\n- spostare i calcoli pesanti su un linguaggio a basso livello, lasciando il resto a quello ad alto livello."
       },
       {
         "id": "il-primo-esercizio",
         "title": "Il primo esercizio",
         "image": "",
-        "body": "L’esercizio proposto è il seguente:\n\n> Un file di testo, il cui nome viene richiesto all’utente, contiene caratteri qualsiasi. Scrivere un programma in **C89** che:\n> - conti quante lettere `'a'` minuscole sono presenti\n> - conti quanti caratteri totali sono presenti\n> - visualizzi i due risultati.\n> Utilizzare `fgetc()`.\n\n### Diagramma di flusso ragionato\n\nPrima di scrivere una riga di codice, disegniamo il flusso logico:\n\n1. **Start**\n2. Input: nome del file dall’utente\n3. Apertura del file in lettura\n4. Se il file non esiste → errore e uscita\n5. Se esiste → ciclo di lettura carattere per carattere fino a EOF\n6. Per ogni carattere:\n   - se è `'a'` → incrementa contatore `count_a`\n   - se **non** è newline `'\\n'` → incrementa `count_total`\n7. Stampa i due risultati\n8. Chiudi il file e termina"
+        "body": "> Un file di testo, il cui nome viene richiesto all'utente, contiene caratteri qualsiasi. Scrivere un programma in **C89** che:\n> - conti quante lettere `'a'` minuscole sono presenti\n> - conti quanti caratteri totali sono presenti\n> - visualizzi i due risultati.\n> Utilizzare `fgetc()`.\n\nPrima di scrivere codice, il flusso:\n1. chiedo il nome del file;\n2. lo apro in lettura; se non esiste, errore e fuori;\n3. leggo un carattere alla volta fino a EOF;\n4. se è `'a'` → `count_a++`; se non è `'\\n'` → `count_total++`;\n5. stampo, chiudo, fine."
       },
       {
         "id": "implementazione-in-c89",
-        "title": "Implementazione in C89",
+        "title": "Il codice",
         "image": "",
-        "body": "Ecco il codice completo, con le accortezze necessarie per evitare errori comuni (come la segmentation fault dovuta a puntatori mal gestiti):\n\n```c\n/*\nDOMANDA 1. (6 punti)\n\nUn file di testo, il cui nome viene richiesto all'utente,\ncontiene caratteri qualsiasi.\n\nScrivere un programma C89 che:\n- conti quante lettere 'a' minuscole sono presenti\n- conti quanti caratteri totali sono presenti\n- visualizzi i due risultati.\n\nUtilizzare fgetc().\n*/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\n#define MAX 20\n\nint main(){\n\n    char nome_file[MAX];\n\n    printf(\"Inserisci il nome file: \");\n    scanf(\"%s\", nome_file);\n\n    FILE *fp;\n    fp = fopen(nome_file, \"r\");\n\n    if(!fp){\n        return EXIT_FAILURE;\n    }\n\n    int ch, count_a = 0, count_total = 0;\n\n    while ( (ch = fgetc(fp)) != EOF ){\n        if(ch == 'a'){\n            count_a = count_a + 1;\n        }\n        if (ch != '\\n'){\n            count_total++;\n        }\n    }\n\n    printf(\"Ci sono %d lettere 'a' in totale\\n\", count_a);\n    printf(\"I caratteri totali sono: %d\", count_total);\n\n    fclose(fp);\n\n    return EXIT_SUCCESS;\n}\n```"
+        "body": "Eccolo:\n\n```c\n/*\nDOMANDA 1. (6 punti)\n\nUn file di testo, il cui nome viene richiesto all'utente,\ncontiene caratteri qualsiasi.\n\nScrivere un programma C89 che:\n- conti quante lettere 'a' minuscole sono presenti\n- conti quanti caratteri totali sono presenti\n- visualizzi i due risultati.\n\nUtilizzare fgetc().\n*/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\n#define MAX 20\n\nint main(){\n\n    char nome_file[MAX];\n\n    printf(\"Inserisci il nome file: \");\n    scanf(\"%s\", nome_file);\n\n    FILE *fp;\n    fp = fopen(nome_file, \"r\");\n\n    if(!fp){\n        return EXIT_FAILURE;\n    }\n\n    int ch, count_a = 0, count_total = 0;\n\n    while ( (ch = fgetc(fp)) != EOF ){\n        if(ch == 'a'){\n            count_a = count_a + 1;\n        }\n        if (ch != '\\n'){\n            count_total++;\n        }\n    }\n\n    printf(\"Ci sono %d lettere 'a' in totale\\n\", count_a);\n    printf(\"I caratteri totali sono: %d\", count_total);\n\n    fclose(fp);\n\n    return EXIT_SUCCESS;\n}\n```"
       },
       {
         "id": "perche-escludere-newline",
-        "title": "Perché escludere `\\n`?",
+        "title": "Perché escludo `\\n`?",
         "image": "",
-        "body": "Nel conteggio dei *caratteri totali* l’esercizio originale spesso si riferisce ai soli caratteri visibili o stampabili, escludendo il newline. Nel video abbiamo notato una discrepanza con i conteggi di un’intelligenza artificiale: il file conteneva 388 caratteri, esclusi i newline, e il programma, dopo aver aggiunto il controllo `ch != '\\n'`, ha prodotto lo stesso risultato. Senza quel filtro, i newline vengono contati in più, alterando il totale."
+        "body": "Di solito per \"caratteri totali\" si intendono quelli visibili, senza gli a capo.\n\nNel video il mio conteggio non tornava con quello di un'AI. Il file aveva 388 caratteri senza newline: aggiunto il controllo `ch != '\\n'`, il programma ha dato lo stesso numero. Senza quel filtro, gli a capo gonfiano il totale."
       },
       {
         "id": "lezioni-di-ottimizzazione-implicite",
-        "title": "Lezioni di ottimizzazione implicite",
+        "title": "Cosa insegna un esercizio così stupido",
         "image": "",
-        "body": "Anche se l’esercizio è semplice, ci insegna principi importanti:\n\n- **Usare un solo ciclo** per evitare di rileggere il file due volte (risparmio di I/O).\n- **Scartare subito i caratteri non necessari** (come `\\n`) senza memorizzarli.\n- **Gestire gli errori** (file non trovato) con `EXIT_FAILURE`.\n- **Rispettare lo standard C89** (dichiarazioni all’inizio del blocco, niente commenti `//`).\n\nDelegare operazioni di conteggio a un linguaggio come C, a basso livello, libera risorse nei linguaggi più alti, come Python e JavaScript, quando questi devono gestire routing o logiche complesse. Questo è il cuore della serie: **non scrivere tutto in C**, ma usare C per i colli di bottiglia computazionali.\n\n---\n\nProssimamente: gestione della memoria, puntatori e ottimizzazione di algoritmi di ordinamento. Buon coding!"
+        "body": "Stupido fino a un certo punto:\n- **un solo ciclo**: il file lo leggi una volta, non due;\n- **scarti subito** quello che non serve, senza salvarlo;\n- **gestisci l'errore** se il file non c'è (`EXIT_FAILURE`);\n- **C89 vuol dire C89**: dichiarazioni a inizio blocco, niente commenti `//`.\n\nIl punto della serie: non scrivere tutto in C. Usa il C solo dove c'è il collo di bottiglia, e lascia a Python o JavaScript il resto.\n\nProssima puntata: memoria, puntatori e algoritmi di ordinamento."
       }
     ],
     "en": [
@@ -56,31 +56,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "In this new series on **algorithmic improvement in C** (not a pure C tutorial), we will learn how to think better, optimize code, and expand our mental vision. These skills become crucial when, during public building, server resources grow and we face poorly optimized software. We will learn to:\n\n- allocate resources efficiently\n- reduce CPU overhead\n- delegate computation to a low-level language to optimize routing in a high-level one"
+        "body": "New series: **algorithmic improvement in C**. Not a C course, mind you. A way to practice thinking better about code.\n\nWhy? Because when a project grows and the server starts sweating, you end up with badly written software to fix. And then you need to know how to:\n- use resources without wasting them;\n- not fry the CPU;\n- move heavy computation to a low-level language, leaving the rest to the high-level one."
       },
       {
         "id": "il-primo-esercizio",
-        "title": "The First Exercise",
+        "title": "The first exercise",
         "image": "",
-        "body": "The exercise is:\n\n> A text file, whose name is requested from the user, contains arbitrary characters. Write a **C89** program that:\n> - counts how many lowercase letters `'a'` are present\n> - counts how many total characters are present\n> - displays both results.\n> Use `fgetc()`.\n\n### Reasoned flowchart\n\nBefore writing code, let's sketch the logic:\n\n1. **Start**\n2. Input: filename from user\n3. Open file in read mode\n4. If file does not exist → error and exit\n5. If exists → loop reading character by character until EOF\n6. For each character:\n   - if it's `'a'` → increment `count_a`\n   - if it's **not** newline `'\\n'` → increment `count_total`\n7. Print both results\n8. Close file and exit"
+        "body": "> A text file, whose name is requested from the user, contains arbitrary characters. Write a **C89** program that:\n> - counts how many lowercase `'a'` letters there are\n> - counts how many characters there are in total\n> - displays both results.\n> Use `fgetc()`.\n\nBefore writing code, the flow:\n1. ask for the file name;\n2. open it for reading; if it doesn't exist, error and out;\n3. read one character at a time until EOF;\n4. if it's `'a'` → `count_a++`; if it's not `'\\n'` → `count_total++`;\n5. print, close, done."
       },
       {
         "id": "implementazione-in-c89",
-        "title": "C89 Implementation",
+        "title": "The code",
         "image": "",
-        "body": "Here is the complete code, with necessary precautions to avoid common errors (like segmentation faults due to mishandled pointers):\n\n```c\n/*\nQUESTION 1. (6 points)\n\nA text file, whose name is requested from the user,\ncontains arbitrary characters.\n\nWrite a C89 program that:\n- counts how many lowercase letters 'a' are present\n- counts how many total characters are present\n- displays both results.\n\nUse fgetc().\n*/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\n#define MAX 20\n\nint main(){\n\n    char nome_file[MAX];\n\n    printf(\"Enter filename: \");\n    scanf(\"%s\", nome_file);\n\n    FILE *fp;\n    fp = fopen(nome_file, \"r\");\n\n    if(!fp){\n        return EXIT_FAILURE;\n    }\n\n    int ch, count_a = 0, count_total = 0;\n\n    while ( (ch = fgetc(fp)) != EOF ){\n        if(ch == 'a'){\n            count_a = count_a + 1;\n        }\n        if (ch != '\\n'){\n            count_total++;\n        }\n    }\n\n    printf(\"Total lowercase 'a': %d\\n\", count_a);\n    printf(\"Total characters (excluding newlines): %d\", count_total);\n\n    fclose(fp);\n\n    return EXIT_SUCCESS;\n}\n```"
+        "body": "Here it is:\n\n```c\n/*\nQUESTION 1. (6 points)\n\nA text file, whose name is requested from the user,\ncontains arbitrary characters.\n\nWrite a C89 program that:\n- counts how many lowercase letters 'a' are present\n- counts how many total characters are present\n- displays both results.\n\nUse fgetc().\n*/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\n#define MAX 20\n\nint main(){\n\n    char nome_file[MAX];\n\n    printf(\"Enter filename: \");\n    scanf(\"%s\", nome_file);\n\n    FILE *fp;\n    fp = fopen(nome_file, \"r\");\n\n    if(!fp){\n        return EXIT_FAILURE;\n    }\n\n    int ch, count_a = 0, count_total = 0;\n\n    while ( (ch = fgetc(fp)) != EOF ){\n        if(ch == 'a'){\n            count_a = count_a + 1;\n        }\n        if (ch != '\\n'){\n            count_total++;\n        }\n    }\n\n    printf(\"Total lowercase 'a': %d\\n\", count_a);\n    printf(\"Total characters (excluding newlines): %d\", count_total);\n\n    fclose(fp);\n\n    return EXIT_SUCCESS;\n}\n```"
       },
       {
         "id": "perche-escludere-newline",
-        "title": "Why Exclude `\\n`?",
+        "title": "Why exclude `\\n`?",
         "image": "",
-        "body": "When counting *total characters*, the original exercise usually refers to printable or visible characters only, excluding newlines. In the video we noticed a discrepancy with an AI's count: the file had 388 characters, excluding newlines, and the program, after adding `ch != '\\n'`, produced the same result. Without that filter, newlines are counted extra, skewing the total."
+        "body": "Usually \"total characters\" means the visible ones, without line breaks.\n\nIn the video my count didn't match an AI's. The file had 388 characters excluding newlines: after adding the `ch != '\\n'` check, the program gave the same number. Without that filter, line breaks inflate the total."
       },
       {
         "id": "lezioni-di-ottimizzazione-implicite",
-        "title": "Implicit Optimization Lessons",
+        "title": "What a dumb exercise teaches",
         "image": "",
-        "body": "Even a simple exercise teaches important principles:\n\n- **Use a single loop** to avoid reading the file twice, saving I/O.\n- **Immediately discard unnecessary characters** like `\\n` without storing them.\n- **Handle errors** such as a missing file with `EXIT_FAILURE`.\n- **Follow the C89 standard**: declarations at the beginning of the block and no `//` comments.\n\nDelegating counting operations to a low-level language like C frees resources in higher-level languages, such as Python and JavaScript, when they handle routing or complex logic. This is the core of the series: **don't write everything in C**, but use C for computational bottlenecks.\n\n---\n\nComing next: memory management, pointers, and sorting algorithm optimization. Happy coding!"
+        "body": "Dumb up to a point:\n- **one loop**: you read the file once, not twice;\n- **drop what you don't need** right away, without storing it;\n- **handle the error** if the file isn't there (`EXIT_FAILURE`);\n- **C89 means C89**: declarations at the top of the block, no `//` comments.\n\nThe point of the series: don't write everything in C. Use C only where the bottleneck is, and leave the rest to Python or JavaScript.\n\nNext episode: memory, pointers and sorting algorithms."
       }
     ]
   }

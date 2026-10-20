@@ -1,7 +1,7 @@
 {
   "slug": "chiudere-spotex-cosa-ho-imparato-dai-miei-clienti-e-perche-ho-deciso-di-cambiare-modello",
   "publishedAt": "2026-08-12",
-  "updatedAt": "",
+  "updatedAt": "2026-10-20",
   "cover": "/spotex-srl-cover.png",
   "youtubeUrl": "",
   "tags": [
@@ -28,61 +28,61 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Anni a costruire siti, piattaforme custom e sistemi software per clienti diversissimi tra loro. Poi la decisione di chiudere Spotex SRL.\n\nLa società è in liquidazione. Una parte dei clienti e dei rapporti è passata sotto Delta Software SRLS.\n\nMa per me non è stata solo una questione societaria. È stata l'occasione per fermarmi e guardare in faccia una cosa: come ho gestito i rapporti con i clienti.\n\nE devo ammettere che ho imparato molto. Soprattutto sui miei errori."
+        "body": "Anni a fare siti, piattaforme custom e software per clienti diversissimi. Poi la decisione: chiudere Spotex SRL.\n\nLa società è in liquidazione, una parte dei clienti è passata a Delta Software SRLS.\n\nMa la vera domanda non era societaria. Era: come ho gestito i clienti? E la risposta, diciamocelo, non è lusinghiera."
       },
       {
         "id": "clienti-progetti-e-rapporti-a-lungo-termine",
-        "title": "Clienti, progetti e rapporti a lungo termine",
+        "title": "Consegnare e seguire sono due lavori",
         "image": "",
-        "body": "In questi anni ho lavorato con realtà molto diverse: piccole attività locali, aziende industriali, startup, professionisti, gente che aveva solo bisogno di un sito.\n\nA volte siti vetrina semplici. A volte piattaforme intere costruite da zero.\n\nShopify, Express.js, EJS, PHP, MySQL, PostgreSQL, Socket.IO, Nginx, sistemi custom progettati praticamente da zero.\n\nAlcuni progetti duravano poche settimane. Altri diventavano percorsi di mesi.\n\nEd è proprio quella differenza che mi ha fatto capire una cosa: consegnare un progetto e gestire un cliente nel lungo periodo sono due lavori completamente diversi. E il secondo non lo pagava quasi nessuno."
+        "body": "Attività locali, aziende industriali, startup, professionisti. Siti vetrina e piattaforme fatte da zero. Shopify, Express.js, PHP, PostgreSQL, Socket.IO, Nginx, un po' di tutto.\n\nProgetti da poche settimane e progetti da mesi.\n\nE lì ho capito una cosa: consegnare un progetto e seguire un cliente per anni sono due lavori diversi. Il secondo non lo pagava quasi nessuno."
       },
       {
         "id": "il-caso-delle-piattaforme-custom",
-        "title": "Il caso delle piattaforme custom",
+        "title": "La piattaforma sottoprezzata",
         "image": "",
-        "body": "Uno dei progetti più pesanti è stata una piattaforma per una startup nel settore fondi pensione.\n\nBudget iniziale ridicolo rispetto al lavoro che poi è diventato. Otto mesi di sviluppo. E alla fine era un sistema serio.\n\nBackend Express.js. Frontend custom con EJS. PostgreSQL. Autenticazione JWT. Gestione sessioni e autorizzazioni. Sicurezza. Reverse proxy con Nginx. Protezioni a livello server. Comunicazione realtime con Socket.IO.\n\nC'era anche un sistema a camere, con utenti che potevano interagire solo in determinate condizioni e dopo aver accettato documenti specifici.\n\nIn parallelo seguivo SEO, personal branding e identità visiva del progetto.\n\nTecnicamente mi ha dato tantissimo. Commercialmente mi ha insegnato una lezione più importante: un progetto sottoprezzato diventa rapidamente un rapporto insostenibile.\n\nE il problema non è solo quanto ti pagano per sviluppare. È tutto quello che viene dopo. Hosting. Manutenzione. Richieste. Modifiche. Spiegazioni. Aggiornamenti. Aspettative. Tutte cose che continuano a esistere anche quando il progetto è \"consegnato\"."
+        "body": "Il progetto più pesante: una piattaforma per una startup nel settore fondi pensione.\n\nBudget ridicolo rispetto a quello che è diventato. Otto mesi di sviluppo: Express.js, EJS, PostgreSQL, JWT, permessi, Nginx, realtime con Socket.IO, pure un sistema a \"camere\" con accesso solo dopo aver accettato certi documenti. E intanto curavo anche SEO e immagine del progetto.\n\nTecnicamente mi ha dato tantissimo. Commercialmente mi ha insegnato che un progetto sottoprezzato diventa in fretta un rapporto insostenibile.\n\nPerché dopo la consegna c'è il resto: hosting, manutenzione, richieste, modifiche, spiegazioni. Che continuano a esistere anche quando il progetto è \"finito\"."
       },
       {
         "id": "cosa-mi-hanno-insegnato-i-piccoli-clienti",
-        "title": "Cosa mi hanno insegnato i piccoli clienti",
+        "title": "\"Ci metti cinque minuti\"",
         "image": "",
-        "body": "Strano da dire, ma le esperienze più formative non sono arrivate dai progetti tecnicamente più complessi.\n\nPiccoli e-commerce. Attività locali. Siti per ristoranti, erboristerie, artigiani, aziende familiari.\n\nA volte il progetto valeva poche centinaia di euro. A volte qualche migliaio. Ma il problema era sempre lo stesso: dopo la consegna, il confine tra \"progetto\" e \"assistenza\" diventava una cosa sfumata.\n\nUna modifica al testo.\nUna foto da sostituire.\nUn problema con la PEC.\nUna spiegazione da dare al cliente.\nUna modifica al menu.\nUn ritocco grafico.\n\n\"Ci metti cinque minuti.\"\n\nEd è quella frase lì che ho imparato a temere. Cinque minuti oggi. Mezz'ora domani. Mezz'ora moltiplicata per decine di richieste diventa una parte significativa della tua vita professionale. E nessuno te la paga.\n\n> [!TAKEAWAY]\n> Il problema non è la singola richiesta urgente. È l'accumulo di piccole eccezioni che il modello economico non ha mai previsto."
+        "body": "Le lezioni vere non sono arrivate dai progetti complessi. Sono arrivate da ristoranti, erboristerie, artigiani, piccoli e-commerce.\n\nProgetti da poche centinaia di euro, a volte qualche migliaio. E dopo la consegna:\n- un testo da cambiare;\n- una foto da sostituire;\n- la PEC che non va;\n- una voce di menu;\n- un ritocchino grafico.\n\n\"Ci metti cinque minuti.\"\n\nBrrr. Ecco, quella frase ho imparato a temerla. Cinque minuti oggi, mezz'ora domani, moltiplicato per decine di clienti. Un pezzo della tua vita lavorativa che nessuno ti paga."
       },
       {
         "id": "il-problema-non-erano-i-clienti",
-        "title": "Il problema non erano i clienti",
+        "title": "Il problema ero io",
         "image": "",
-        "body": "Oggi non dico che il problema fossero i clienti. In molti casi ero io che avevo creato quelle aspettative. Senza accorgermene.\n\nAvevo accettato prezzi troppo bassi.\nAvevo incluso cose che andavano fatturate a parte.\nAvevo risposto su WhatsApp.\nAvevo fatto modifiche \"al volo\".\nAvevo trasformato l'assistenza in qualcosa di indefinito.\n\nE soprattutto: non avevo mai stabilito chiaramente dove finiva il progetto e dove iniziava un nuovo lavoro.\n\nQuando sei giovane, tecnicamente capace e hai voglia di dimostrare quello che sai fare, è facile cascarci. Vuoi risolvere. Vuoi aiutare. Vuoi che il cliente sia contento.\n\nPoi ti accorgi che stai lavorando sempre. E che il modello economico non cresce insieme al lavoro."
+        "body": "Non do la colpa ai clienti. Quelle aspettative le avevo create io:\n- prezzi troppo bassi;\n- cose incluse che andavano fatturate;\n- assistenza su WhatsApp;\n- modifiche \"al volo\";\n- nessun confine tra progetto e lavoro nuovo.\n\nQuando sei giovane, sai fare le cose e vuoi dimostrarlo, ci caschi in pieno. Vuoi aiutare, vuoi il cliente contento.\n\nPoi ti accorgi che lavori sempre. E che i soldi non crescono insieme al lavoro."
       },
       {
         "id": "i-clienti-che-voglio-avere",
-        "title": "I clienti che voglio avere",
+        "title": "I clienti che voglio",
         "image": "",
-        "body": "Non è stato tutto negativo.\n\nHo avuto clienti che pagavano correttamente, rispettavano il lavoro e si sono fidati di me per anni. Alcuni volevano solo un sito e stop. Altri avevano bisogno di hosting e poco altro.\n\nQuesti rapporti mi hanno fatto capire che tipo di clientela voglio.\n\nNon cerco il cliente che paga di più. Cerco il cliente con cui esiste un rapporto chiaro. Punto.\n\nPoi ci sono stati i rapporti più complicati. Clienti che chiedevano modifiche in continuazione. Che consideravano ogni intervento incluso nel prezzo iniziale. Che contestavano piccoli aumenti. Che chiedevano assistenza su strumenti che non avevo nemmeno sviluppato io. Che scrivevano per questioni fuori dal servizio acquistato.\n\nAnche quei rapporti mi hanno lasciato qualcosa: non tutti i clienti sono clienti che voglio avere.\n\nQualche anno fa avrei fatto fatica ad accettare una frase così. Oggi la considero fondamentale."
+        "body": "Non è stato tutto nero. Ho avuto clienti che pagavano, rispettavano il lavoro e si sono fidati per anni.\n\nNon cerco quello che paga di più. Cerco un rapporto chiaro. Punto.\n\nPoi ci sono stati gli altri: modifiche infinite, tutto \"incluso\", piccoli aumenti contestati, assistenza su roba che non avevo nemmeno fatto io.\n\nAnche loro mi hanno insegnato qualcosa: non tutti i clienti sono clienti che voglio. Qualche anno fa questa frase non l'avrei mai detta."
       },
       {
         "id": "la-liquidazione-mi-ha-costretto-a-fare-ordine",
         "title": "La liquidazione mi ha costretto a fare ordine",
         "image": "",
-        "body": "La liquidazione ha trasformato questa riflessione in qualcosa di concreto.\n\nHo dovuto guardare uno per uno clienti, domini, server, hosting, progetti, pagamenti. Tutto quello che negli anni era stato costruito.\n\nE mi sono fatto una domanda semplice:\n\n> \"Se dovessi ricominciare oggi, costruirei l'azienda nello stesso modo?\"\n\nLa risposta è no.\n\nNon perché fosse tutto sbagliato. Tutt'altro. Tecnicamente ho imparato enormemente. Ho costruito sistemi complessi. Ho lavorato su architetture backend, sicurezza, database, realtime, SEO, infrastrutture, applicazioni custom.\n\nMa ho anche imparato che essere tecnicamente bravi non basta per costruire un'attività sostenibile. Serve progettare anche il modello di business. Cosa che non ho fatto."
+        "body": "Ho dovuto guardare uno per uno clienti, domini, server, hosting, pagamenti. E mi sono chiesto:\n\n> \"Se ricominciassi oggi, rifarei tutto uguale?\"\n\nNo.\n\nTecnicamente ho imparato un sacco: backend, sicurezza, database, realtime, infrastrutture. Ma saper fare software non basta per avere un'attività che sta in piedi. Serve progettare anche il modello di business. E io non l'avevo fatto."
       },
       {
         "id": "il-nuovo-modello",
-        "title": "Il nuovo modello",
+        "title": "Il modello nuovo",
         "image": "",
-        "body": "Per il futuro voglio muovermi in una direzione molto diversa. Tre livelli.\n\n### Hosting\n\nServizio semplice, standardizzato, possibilmente con infrastruttura italiana. Pochi piani, poche eccezioni, confini chiari.\n\nL'hosting deve generare ricavi ricorrenti senza diventare un secondo lavoro. Che è esattamente l'errore che ho fatto prima.\n\n### Consulenza\n\nNon voglio più vendere il mio tempo a caso.\n\nConsulenza selettiva. Prezzi e scope definiti. Se qualcuno vuole una modifica, una nuova funzionalità, un intervento tecnico: quello è un nuovo lavoro. Non \"ci metto cinque minuti\".\n\n### SaaS\n\nIl livello su cui voglio concentrarmi di più.\n\nProdotti piccoli, verticali, nati da problemi che ho incontrato davvero. Non l'ennesimo software enorme che prova a fare tutto. Strumenti che risolvono bene un problema specifico. Fine."
+        "body": "Tre livelli, con confini chiari.\n\n### Hosting\n\nSemplice, standard, possibilmente su infrastruttura italiana. Pochi piani, poche eccezioni. Deve portare entrate ricorrenti senza diventare un secondo lavoro. Come prima, appunto.\n\n### Consulenza\n\nNiente più tempo venduto a caso. Prezzo e perimetro definiti. Una modifica o una funzione nuova è un lavoro nuovo. Non \"cinque minuti\".\n\n### SaaS\n\nQuello su cui punto di più. Prodotti piccoli, verticali, nati da problemi che ho visto davvero. Non l'ennesimo software che vuole fare tutto. Uno che fa bene una cosa. Fine."
       },
       {
         "id": "la-lezione-piu-importante",
-        "title": "La lezione più importante",
+        "title": "La lezione",
         "image": "",
-        "body": "La cosa più importante che mi porto via da Spotex non è una tecnologia.\n\nNon è Express.js.\nNon è PostgreSQL.\nNon è Docker.\nNon è Socket.IO.\n\nÈ una cosa molto più semplice:\n\n**un'azienda deve essere progettata per non dipendere continuamente dalle persone che la mandano avanti.**\n\nSe ogni cliente deve parlare con me, non ho costruito un sistema.\n\nSe ogni problema richiede il mio intervento, non ho costruito un sistema.\n\nSe ogni richiesta diventa un'eccezione, non ho costruito un sistema.\n\nHo costruito un lavoro. Solo che era mio. E non potevo nemmeno prendermi ferie."
+        "body": "Da Spotex non mi porto via una tecnologia. Non Express, non PostgreSQL, non Docker.\n\nMi porto via questa: **un'azienda deve stare in piedi senza dipendere sempre dalle persone che la mandano avanti.**\n\nSe ogni cliente deve parlare con me, se ogni problema passa da me, se ogni richiesta è un'eccezione, non ho costruito un sistema.\n\nHo costruito un lavoro. Solo che era mio. E non potevo nemmeno andare in ferie."
       },
       {
         "id": "chiudere-non-significa-buttare-via-tutto",
-        "title": "Chiudere non significa buttare via tutto",
+        "title": "Chiudere non è buttare via",
         "image": "",
-        "body": "La liquidazione di Spotex non cancella quello che ho fatto.\n\nMi porto dietro anni di esperienza. Centinaia di problemi risolti. Architetture progettate. Errori commessi. Clienti conosciuti. E una quantità enorme di lezioni che sui libri non le trovi.\n\nAlcuni rapporti continueranno attraverso Delta Software SRLS. Altri finiranno. Altri verranno ridefiniti con regole più chiare.\n\nEd è probabilmente la cosa più sana che potesse succedere.\n\nPerché questa volta non voglio solo cambiare società. Voglio cambiare il modo in cui costruisco il mio lavoro.\n\nMeno personalizzazione inutile.\nMeno dipendenza dal mio tempo.\nMeno \"ci penso io\".\n\nPiù sistemi.\nPiù prodotti.\nPiù ricavi ricorrenti.\nE più libertà.\n\nSpotex è stata una parte importante del mio percorso. Ma non deve essere il modello del mio futuro. Anzi: il modello di prima lo tengo solo come esempio di cosa non rifare."
+        "body": "La liquidazione non cancella quello che ho fatto. Anni di problemi risolti, errori, clienti, lezioni che sui libri non trovi.\n\nAlcuni rapporti continuano con Delta Software SRLS. Altri finiscono. Altri ripartono con regole più chiare.\n\nQuesta volta non cambio solo società. Cambio come lavoro.\n\nMeno \"ci penso io\". Più sistemi, più prodotti, più entrate ricorrenti. E più libertà.\n\nIl modello di prima? Lo tengo come esempio di cosa non rifare.\n\nTu quante volte questa settimana hai sentito \"ci metti cinque minuti\"?"
       }
     ],
     "en": [
@@ -90,61 +90,61 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Years building websites, custom platforms and software systems for very different clients. Then the decision to close Spotex SRL.\n\nThe company is in liquidation. Part of the clients and relationships moved under Delta Software SRLS.\n\nBut for me it wasn't just a corporate matter. It was a chance to stop and look one thing in the face: how I handled client relationships.\n\nAnd I have to admit I learned a lot. Mostly about my own mistakes."
+        "body": "Years building websites, custom platforms and software for wildly different clients. Then the decision: close Spotex SRL.\n\nThe company is in liquidation, part of the clients moved to Delta Software SRLS.\n\nBut the real question wasn't about the company. It was: how did I handle clients? And the answer, let's be honest, isn't flattering."
       },
       {
         "id": "clienti-progetti-e-rapporti-a-lungo-termine",
-        "title": "Clients, Projects, and Long-Term Relationships",
+        "title": "Delivering and supporting are two jobs",
         "image": "",
-        "body": "Over the years I worked with very different realities: small local businesses, industrial companies, startups, professionals, people who just needed a website.\n\nSometimes simple showcase sites. Sometimes entire platforms built from scratch.\n\nShopify, Express.js, EJS, PHP, MySQL, PostgreSQL, Socket.IO, Nginx, custom systems built basically from zero.\n\nSome projects lasted a few weeks. Others turned into months-long journeys.\n\nAnd that difference taught me something: delivering a project and managing a client long-term are two completely different jobs. And the second one almost nobody paid for."
+        "body": "Local shops, industrial companies, startups, freelancers. Brochure sites and platforms built from scratch. Shopify, Express.js, PHP, PostgreSQL, Socket.IO, Nginx, a bit of everything.\n\nProjects lasting a few weeks and projects lasting months.\n\nAnd that's where I got it: delivering a project and supporting a client for years are two different jobs. Almost nobody paid for the second one."
       },
       {
         "id": "il-caso-delle-piattaforme-custom",
-        "title": "The Case of Custom Platforms",
+        "title": "The underpriced platform",
         "image": "",
-        "body": "One of the heaviest projects was a platform for a startup in the pension fund sector.\n\nInitial budget was ridiculous compared to what it became. Eight months of development. By the end it was a serious system.\n\nExpress.js backend. Custom EJS frontend. PostgreSQL. JWT authentication. Session and authorization management. Security. Nginx reverse proxy. Server-level protections. Realtime communication via Socket.IO.\n\nIt also had a room system, where users could interact only under specific conditions and after accepting particular documents.\n\nOn top of that I handled SEO, personal branding and visual identity for the project.\n\nTechnically it gave me a lot. Commercially it taught me something more important: an underpriced project quickly becomes an unsustainable relationship.\n\nAnd the problem isn't just how much you get paid to build. It's everything that comes after. Hosting. Maintenance. Requests. Changes. Explanations. Updates. Expectations. All things that keep existing even when the project is \"delivered.\""
+        "body": "The heaviest project: a platform for a startup in the pension fund sector.\n\nRidiculous budget compared to what it became. Eight months of development: Express.js, EJS, PostgreSQL, JWT, permissions, Nginx, realtime with Socket.IO, even a \"rooms\" system with access only after accepting certain documents. And I was also handling SEO and branding for it.\n\nTechnically it gave me a ton. Commercially it taught me that an underpriced project quickly turns into an unsustainable relationship.\n\nBecause after delivery there's everything else: hosting, maintenance, requests, changes, explanations. They keep existing even when the project is \"done\"."
       },
       {
         "id": "cosa-mi-hanno-insegnato-i-piccoli-clienti",
-        "title": "What Small Clients Taught Me",
+        "title": "\"It'll take you five minutes\"",
         "image": "",
-        "body": "Strange to say, but my most formative experiences didn't come from the technically complex projects.\n\nSmall e-commerce. Local businesses. Sites for restaurants, herbal shops, artisans, family businesses.\n\nSometimes the project was worth a few hundred euros. Sometimes a few thousand. But the problem was always the same: after delivery, the line between \"project\" and \"support\" got blurry.\n\nA text change.\nA photo swap.\nA certified email issue.\nAn explanation for the client.\nA menu update.\nA tiny design tweak.\n\n\"It'll only take five minutes.\"\n\nAnd that's the sentence I learned to fear. Five minutes today. Half an hour tomorrow. Half an hour times dozens of requests becomes a significant part of your working life. And nobody pays for it.\n\n> [!TAKEAWAY]\n> The problem isn't the single urgent request. It's the accumulation of small exceptions the business model never accounted for."
+        "body": "The real lessons didn't come from the complex projects. They came from restaurants, herbal shops, craftsmen, small online stores.\n\nProjects worth a few hundred euros, sometimes a few thousand. And after delivery:\n- a text to change;\n- a photo to swap;\n- certified email not working;\n- a menu item;\n- a little design tweak.\n\n\"It'll take you five minutes.\"\n\nBrrr. That's the sentence I learned to fear. Five minutes today, half an hour tomorrow, times dozens of clients. A chunk of your working life nobody pays for."
       },
       {
         "id": "il-problema-non-erano-i-clienti",
-        "title": "The Clients Were Not the Problem",
+        "title": "The problem was me",
         "image": "",
-        "body": "Today I don't say the clients were the problem. In many cases I created those expectations. Without noticing.\n\nI had accepted prices that were too low.\nI had included work that should have been invoiced separately.\nI had replied on WhatsApp.\nI had made changes \"on the fly.\"\nI had turned support into something undefined.\n\nAnd above all: I had never clearly set where the project ended and where new work began.\n\nWhen you're young, technically capable and eager to prove what you can do, it's easy to fall into this. You want to fix it. You want to help. You want the client happy.\n\nThen you realize you're working all the time. And the business model isn't growing with the work."
+        "body": "I don't blame the clients. I created those expectations:\n- prices too low;\n- things included that should have been billed;\n- support over WhatsApp;\n- changes \"on the fly\";\n- no line between the project and new work.\n\nWhen you're young, you can do the work and you want to prove it, you fall for it completely. You want to help, you want the client happy.\n\nThen you realize you're always working. And the money doesn't grow with the work."
       },
       {
         "id": "i-clienti-che-voglio-avere",
-        "title": "The Clients I Want to Work With",
+        "title": "The clients I want",
         "image": "",
-        "body": "Not everything was bad.\n\nI had clients who paid properly, respected the work and trusted me for years. Some just wanted a website, period. Others needed hosting and little else.\n\nThose relationships made me understand what kind of clients I want.\n\nI'm not looking for the client who pays the most. I'm looking for the client where there's a clear relationship. Period.\n\nThen there were the messier ones. Clients asking for constant changes. Clients who treated every intervention as included in the original price. Clients challenging small increases. Clients asking for support on tools I hadn't even built. Clients writing about stuff unrelated to what they bought.\n\nEven those relationships taught me something: not every client is a client I want.\n\nA few years ago I'd have struggled to accept a sentence like that. Today I consider it fundamental."
+        "body": "It wasn't all bad. I had clients who paid, respected the work and trusted me for years.\n\nI'm not looking for whoever pays the most. I'm looking for a clear relationship. Period.\n\nThen there were the others: endless changes, everything \"included\", small price increases disputed, support on stuff I hadn't even built.\n\nThey taught me something too: not every client is a client I want. A few years ago I'd never have said that."
       },
       {
         "id": "la-liquidazione-mi-ha-costretto-a-fare-ordine",
-        "title": "Liquidation Forced Me to Put Things in Order",
+        "title": "Liquidation forced me to clean up",
         "image": "",
-        "body": "Liquidation turned this reflection into something concrete.\n\nI had to look at clients, domains, servers, hosting, projects, payments one by one. Everything that had been built over the years.\n\nAnd I asked myself a simple question:\n\n> \"If I had to start again today, would I build the company the same way?\"\n\nThe answer is no.\n\nNot because everything was wrong. On the contrary. Technically I learned enormously. I built complex systems. I worked on backend architectures, security, databases, realtime, SEO, infrastructure, custom applications.\n\nBut I also learned that being technically good isn't enough to build a sustainable business. You have to design the business model too. Which I didn't."
+        "body": "I had to go through clients, domains, servers, hosting, payments one by one. And I asked myself:\n\n> \"If I started over today, would I do it all the same way?\"\n\nNo.\n\nTechnically I learned a lot: backend, security, databases, realtime, infrastructure. But knowing how to build software isn't enough to have a business that stands. You have to design the business model too. And I hadn't."
       },
       {
         "id": "il-nuovo-modello",
-        "title": "The New Model",
+        "title": "The new model",
         "image": "",
-        "body": "For the future I want to move in a very different direction. Three levels.\n\n### Hosting\n\nSimple, standardized service, ideally on Italian infrastructure. Few plans, few exceptions, clear boundaries.\n\nHosting should generate recurring revenue without becoming a second job. Which is exactly the mistake I made before.\n\n### Consulting\n\nI don't want to sell my time randomly anymore.\n\nSelective consulting. Defined prices and scope. If someone wants a change, a new feature, a technical intervention: that's new work. Not \"it'll take five minutes.\"\n\n### SaaS\n\nThe level I want to focus on most.\n\nSmall, vertical products, born from problems I actually hit. Not the thousandth huge software trying to do everything. Tools that solve one specific problem well. Period."
+        "body": "Three levels, with clear boundaries.\n\n### Hosting\n\nSimple, standard, ideally on Italian infrastructure. Few plans, few exceptions. It should bring recurring revenue without becoming a second job. Like before, exactly.\n\n### Consulting\n\nNo more selling my time at random. Defined price and scope. A change or a new feature is new work. Not \"five minutes\".\n\n### SaaS\n\nWhat I'm betting on most. Small, vertical products, born from problems I've actually seen. Not yet another do-everything software. One that does one thing well. That's it."
       },
       {
         "id": "la-lezione-piu-importante",
-        "title": "The Most Important Lesson",
+        "title": "The lesson",
         "image": "",
-        "body": "The most important thing I take from Spotex isn't a technology.\n\nIt's not Express.js.\nIt's not PostgreSQL.\nIt's not Docker.\nIt's not Socket.IO.\n\nIt's something much simpler:\n\n**a company must be designed so it doesn't constantly depend on the people running it.**\n\nIf every client has to talk to me, I haven't built a system.\n\nIf every problem requires my intervention, I haven't built a system.\n\nIf every request becomes an exception, I haven't built a system.\n\nI built a job. Only it was mine. And I couldn't even take vacation from it."
+        "body": "I'm not taking a technology away from Spotex. Not Express, not PostgreSQL, not Docker.\n\nI'm taking this: **a company has to stand without constantly depending on the people running it.**\n\nIf every client has to talk to me, every problem goes through me, every request is an exception, I haven't built a system.\n\nI've built a job. It just happened to be mine. And I couldn't even take a vacation."
       },
       {
         "id": "chiudere-non-significa-buttare-via-tutto",
-        "title": "Closing Does Not Mean Throwing Everything Away",
+        "title": "Closing isn't throwing it away",
         "image": "",
-        "body": "The liquidation of Spotex doesn't erase what I did.\n\nI carry years of experience. Hundreds of solved problems. Architectures designed. Mistakes made. Clients met. And an enormous number of lessons you don't find in books.\n\nSome relationships will continue through Delta Software SRLS. Others will end. Others will be redefined with clearer rules.\n\nAnd that's probably the healthiest thing that could have happened.\n\nBecause this time I don't just want to change company. I want to change how I build my work.\n\nLess useless customization.\nLess dependency on my time.\nLess \"I'll take care of it.\"\n\nMore systems.\nMore products.\nMore recurring revenue.\nAnd more freedom.\n\nSpotex was an important part of my journey. But it doesn't have to be the model for my future. Actually: the old model stays as an example of what not to do again."
+        "body": "Liquidation doesn't erase what I did. Years of problems solved, mistakes, clients, lessons you won't find in books.\n\nSome relationships continue with Delta Software SRLS. Some end. Some restart with clearer rules.\n\nThis time I'm not just changing company. I'm changing how I work.\n\nLess \"I'll handle it\". More systems, more products, more recurring revenue. And more freedom.\n\nThe old model? I'm keeping it as an example of what not to do again.\n\nHow many times this week have you heard \"it'll take you five minutes\"?"
       }
     ]
   }

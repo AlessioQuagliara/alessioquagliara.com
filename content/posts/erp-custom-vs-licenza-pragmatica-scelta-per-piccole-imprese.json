@@ -1,7 +1,7 @@
 {
   "slug": "erp-custom-vs-licenza-pragmatica-scelta-per-piccole-imprese",
   "publishedAt": "2026-07-25",
-  "updatedAt": "",
+  "updatedAt": "2026-10-20",
   "cover": "/sviluppo.jpg",
   "youtubeUrl": "",
   "tags": [
@@ -25,31 +25,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Nei gruppi di freelance girano sempre le stesse richieste: tizio ha bisogno di un ERP per la sua piccola azienda. Magari ha già fatto generare del codice dall'AI. E cerca qualcuno che lo aiuti a definire il progetto, portarlo online e testarlo.\n\nSembra un lavoro da sviluppatore. Normale.\n\nIn realtà il vero tema è un altro, e arriva prima del codice: ha senso costruirlo da zero?"
+        "body": "Nei gruppi di freelance gira sempre la stessa richiesta: \"Mi serve un ERP per la mia piccola azienda. Il codice l'ho già fatto generare dall'AI. Cerco qualcuno che lo metta online e lo testi.\"\n\nSembra un lavoro da sviluppatore. Normale.\n\nMa la vera domanda arriva prima del codice: ha senso farlo da zero?"
       },
       {
         "id": "un-erp-non-e-una-semplice-web-app",
-        "title": "Un ERP non è una semplice web app",
+        "title": "Un ERP non è una web app con due schermate in più",
         "image": "",
-        "body": "Quando un cliente pensa di avere un ERP in un mese, funzionante, senza problemi, c'è già il primo problema: le aspettative.\n\nUn ERP non è una web app con qualche schermata in più. È processi, ruoli, dati, permessi, flussi operativi, test, manutenzione, imprevisti. Più l'azienda è piccola, più devi evitare di infilare complessità inutile. Non aggiungerla. Toglierla."
+        "body": "\"Un ERP in un mese, funzionante, senza problemi.\" Ecco, il primo problema sono le aspettative.\n\nUn ERP è processi, ruoli, dati, permessi, test, manutenzione, imprevisti. E più l'azienda è piccola, più la complessità va tolta. Non aggiunta."
       },
       {
         "id": "la-domanda-giusta-non-e-possiamo-svilupparlo",
-        "title": "La domanda giusta non è \"possiamo svilupparlo?\"",
+        "title": "Non \"possiamo farlo?\" ma \"conviene?\"",
         "image": "",
-        "body": "Nella maggior parte dei casi la domanda giusta non è \"possiamo svilupparlo?\". È \"conviene davvero svilupparlo?\".\n\nSe esiste già una soluzione su licenza che copre buona parte delle necessità, partire da lì e personalizzare è quasi sempre più sensato. Riduci tempi, costi, rischio tecnico. E soprattutto riduci il rischio che il progetto muoia dopo sei mesi.\n\nPer una piccola impresa il valore non sta nell'avere un software unico al mondo. Sta nell'avere uno strumento affidabile che funziona davvero.\n\nLo sviluppo custom ha senso quando il processo è davvero specifico, quando il vantaggio competitivo nasce da quel flusso, o quando le soluzioni esistenti non coprono i requisiti chiave. In tutti gli altri casi, partire da una base esistente è la scelta razionale.\n\nNon significa rinunciare alla qualità. Significa non passare mesi a ricostruire funzioni che esistono già altrove, mature e testate."
+        "body": "Se esiste già un software su licenza che copre buona parte delle esigenze, partire da lì e personalizzarlo è quasi sempre la scelta giusta. Meno tempo, meno soldi, meno rischio che il progetto muoia dopo sei mesi.\n\nA una piccola impresa non serve un software unico al mondo. Serve uno che funziona.\n\nIl custom ha senso quando:\n- il processo è davvero particolare;\n- il vantaggio sul mercato nasce proprio da lì;\n- quello che c'è non copre le cose fondamentali.\n\nNegli altri casi, rifare da zero funzioni che esistono già, mature e testate, è buttare mesi."
       },
       {
         "id": "ai-e-operativita-non-sostituiscono-la-progettazione",
-        "title": "AI e operatività non sostituiscono la progettazione",
+        "title": "L'AI accelera. Non progetta",
         "image": "",
-        "body": "C'è poi la parte che tutti sottovalutano: l'operatività.\n\nPortare un ERP online non vuol dire \"mettere il progetto su un server\". Vuol dire gestire hosting, database, backup, test, permessi, monitoraggio, manutenzione continua. Ogni giorno.\n\nSe parti da codice generato dall'AI senza una direzione solida, ti ritrovi con un sistema fragile e impossibile da mantenere. E il cliente ti chiama ogni volta che si rompe.\n\nL'AI accelera. Non progetta. Sono due cose diverse."
+        "body": "Mettere online un ERP non è \"caricarlo su un server\". È hosting, database, backup, permessi, monitoraggio, manutenzione. Ogni giorno.\n\nParti da codice generato dall'AI senza una direzione? Ti ritrovi un sistema fragile che nessuno sa mantenere. E il cliente ti chiama ogni volta che si rompe."
       },
       {
         "id": "partire-dal-problema-reale",
-        "title": "Partire dal problema reale",
+        "title": "Prima il problema",
         "image": "",
-        "body": "Nel mio approccio parto sempre da quattro domande stupide:\n\n- Qual è il problema reale?\n- Quanto tempo c'è?\n- Quale budget ha senso?\n- Quanta complessità il cliente è davvero pronto a gestire?\n\nDa lì capisci se serve un ERP da personalizzare, un modulo da integrare, o un progetto più grosso. La tecnologia viene dopo. Non prima.\n\nPer questo, quando vedo richieste di questo tipo, rispondo diretto: prima valutiamo se conviene comprare una soluzione pronta o adattarne una esistente. È più onesto, più sostenibile e spesso anche più economico.\n\nE soprattutto evita di confondere la voglia di costruire con la necessità reale del cliente. Che è il modo più elegante di bruciare soldi e tempo di qualcun altro.\n\nAlla fine il miglior software non è quello che fa scena quando lo racconti. È quello che un'azienda riesce davvero a usare, mantenere e far crescere. Il resto è marketing."
+        "body": "Io parto sempre da quattro domande stupide:\n- qual è il problema vero?\n- quanto tempo c'è?\n- che budget ha senso?\n- quanta complessità il cliente riesce davvero a gestire?\n\nDa lì capisci se serve un gestionale da adattare, un modulo da integrare o un progetto grosso. La tecnologia viene dopo.\n\nQuindi a richieste così rispondo diretto: prima vediamo se conviene comprare qualcosa di pronto. È più onesto, e spesso costa meno.\n\nIl miglior software non è quello che fa scena. È quello che l'azienda riesce a usare e mantenere. Il resto è marketing.\n\nTu hai mai visto un ERP \"fatto in un mese\" sopravvivere al secondo anno?"
       }
     ],
     "en": [
@@ -57,31 +57,31 @@
         "id": "intro",
         "title": "",
         "image": "",
-        "body": "Freelance groups always have the same requests: someone needs an ERP for their small company. Maybe they already had AI generate some code. And they're looking for someone to help define the project, get it online and test it.\n\nLooks like a developer job. Standard.\n\nActually, the real topic is different, and it comes before the code: does it make sense to build it from scratch?"
+        "body": "Freelance groups always have the same request: \"I need an ERP for my small business. I already had AI generate the code. Looking for someone to put it online and test it.\"\n\nSounds like a developer job. Normal.\n\nBut the real question comes before the code: does it make sense to build it from scratch?"
       },
       {
         "id": "un-erp-non-e-una-semplice-web-app",
-        "title": "An ERP Is Not Just a Web App",
+        "title": "An ERP isn't a web app with two extra screens",
         "image": "",
-        "body": "When a client thinks they'll have a working ERP in a month, no problems, that's already the first problem: expectations.\n\nAn ERP is not a web app with a few extra screens. It's processes, roles, data, permissions, workflows, testing, maintenance, edge cases. The smaller the business, the more you need to avoid piling on useless complexity. Don't add it. Remove it."
+        "body": "\"An ERP in a month, working, no problems.\" Well, the first problem is the expectations.\n\nAn ERP is processes, roles, data, permissions, tests, maintenance, surprises. And the smaller the company, the more complexity you need to remove. Not add."
       },
       {
         "id": "la-domanda-giusta-non-e-possiamo-svilupparlo",
-        "title": "The Right Question Is Not \"Can We Build It?\"",
+        "title": "Not \"can we build it?\" but \"should we?\"",
         "image": "",
-        "body": "In most cases the right question isn't \"can we build it?\". It's \"should we really build it?\".\n\nIf a licensed solution already exists that covers most of the needs, starting there and customizing is almost always more sensible. Fewer hours, lower cost, lower technical risk. And above all, lower risk that the project dies six months in.\n\nFor a small business, the value isn't having a unique piece of software in the world. It's having a reliable tool that actually works.\n\nCustom development makes sense when the process is truly specific, when the competitive advantage comes from that workflow, or when existing solutions can't cover the key requirements. In every other case, starting from an existing base is the rational choice.\n\nThat doesn't mean giving up quality. It means not spending months rebuilding features that already exist elsewhere, mature and tested."
+        "body": "If licensed software already covers most of the needs, starting there and customizing is almost always the right call. Less time, less money, less risk of the project dying after six months.\n\nA small business doesn't need one-of-a-kind software. It needs software that works.\n\nCustom makes sense when:\n- the process is genuinely unusual;\n- the competitive edge comes from exactly that;\n- what exists doesn't cover the essentials.\n\nOtherwise, rebuilding features that already exist, mature and tested, is throwing months away."
       },
       {
         "id": "ai-e-operativita-non-sostituiscono-la-progettazione",
-        "title": "AI and Operations Cannot Replace Design",
+        "title": "AI speeds things up. It doesn't design",
         "image": "",
-        "body": "Then there's the part everyone underestimates: operations.\n\nPutting an ERP online doesn't mean \"deploying the project on a server.\" It means managing hosting, databases, backups, tests, permissions, monitoring, continuous maintenance. Every day.\n\nIf you start from AI-generated code with no solid direction, you end up with a fragile system that's impossible to maintain. And the client calls you every time it breaks.\n\nAI accelerates. It doesn't design. Two different things."
+        "body": "Putting an ERP online isn't \"uploading it to a server\". It's hosting, database, backups, permissions, monitoring, maintenance. Every day.\n\nStarting from AI-generated code with no direction? You end up with a fragile system nobody can maintain. And the client calls you every time it breaks."
       },
       {
         "id": "partire-dal-problema-reale",
-        "title": "Start from the Real Problem",
+        "title": "Problem first",
         "image": "",
-        "body": "In my approach I always start from four stupid questions:\n\n- What's the real problem?\n- How much time is there?\n- What budget makes sense?\n- How much complexity is the client actually ready to handle?\n\nFrom there you understand whether you need a customizable ERP, a module to integrate, or a bigger project. Technology comes after. Not before.\n\nThat's why, when I see requests like this, I answer straight: first, let's evaluate whether to buy a ready-made solution or adapt an existing one. It's more honest, more sustainable and often cheaper too.\n\nAnd above all it avoids confusing the desire to build with the client's real need. Which is the most elegant way to burn someone else's money and time.\n\nIn the end the best software isn't the one that looks impressive when you talk about it. It's the one a business can actually use, maintain and grow. The rest is marketing."
+        "body": "I always start from four dumb questions:\n- what's the real problem?\n- how much time is there?\n- what budget makes sense?\n- how much complexity can the client actually handle?\n\nThat tells you whether you need software to adapt, a module to integrate or a big project. Technology comes after.\n\nSo to requests like this I answer straight: first let's see if buying something ready makes more sense. It's more honest, and often cheaper.\n\nThe best software isn't the one that looks impressive. It's the one the company can actually use and maintain. The rest is marketing.\n\nHave you ever seen an ERP \"built in a month\" survive its second year?"
       }
     ]
   }
