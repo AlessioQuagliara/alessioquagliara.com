@@ -1,0 +1,99 @@
+{
+  "slug": "mastico-python-ma-mi-diverto-di-piu-in-c",
+  "publishedAt": "2026-10-23",
+  "updatedAt": "",
+  "cover": "/profile_image.jpeg",
+  "youtubeUrl": "",
+  "tags": [
+    "Build in Public",
+    "Sviluppo software",
+    "C++",
+    "AI"
+  ],
+  "title": {
+    "it": "Mastico Python, ma mi diverto di più in C. Quindi?",
+    "en": "I know some Python, but I have more fun with C. So what?"
+  },
+  "description": {
+    "it": "Perché ho scelto Crow e C++ come base per i miei nuovi progetti personali. Non una guerra tra linguaggi, ma una decisione su tempo, familiarità e quanto voglio delegare all’AI.",
+    "en": "Why I chose Crow and C++ as the default for my new personal projects. Not a language war, but a decision about time, familiarity and how much I want to delegate to AI."
+  },
+  "sections": {
+    "it": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "Nelle mie descrizioni dico di masticare Python, ma di divertirmi di più in C.\n\nSembra una frase buttata lì. In realtà, dietro c’è un problema abbastanza concreto: quando mi siedo al computer per lavorare a un progetto personale, quanto tempo passo a costruire e quanto a ricordarmi come si scrive quello che ho in testa?\n\nPerché tra sapere cosa vorrei fare e riuscire a farlo c’è una bella differenza. E se nel mezzo apro Claude Code e gli faccio fare tutto, magari l’app arriva anche alla fine.\n\nIo, però, ci sono arrivato insieme a lei?"
+      },
+      {
+        "id": "mastico-non-significa-padroneggio",
+        "title": "Ho scritto «mastico», non «padroneggio»",
+        "image": "",
+        "body": "Partiamo da qui, prima che diventi la solita discussione su quale linguaggio sia migliore.\n\nNon sto dicendo che Python non vada bene. Non sto dicendo che Flask sia una scelta sbagliata. E soprattutto non sto dicendo che C++ sia la risposta universale a qualsiasi progetto web.\n\nSto parlando di me.\n\nHo studiato C per circa quattro anni, tra superiori e università, e continuo a studiarlo nel corso avanzato. Questo non mi rende automaticamente esperto di C++, ci mancherebbe. C e C++ non sono la stessa cosa.\n\nPerò in C++ ritrovo una sintassi più familiare. Quando leggo o provo a scrivere qualcosa, ho una base a cui appoggiarmi.\n\nCon Python, invece, mi capita di interrompermi anche per ricordare operazioni e regole di base.\n\n«Ma Python è più semplice!»\n\nOttimo. Io intanto mi sono fermato di nuovo.\n\nIl punto è questo: non parto dallo stesso livello di padronanza. Se ignoro questa differenza, sto scegliendo come se avessi competenze che, oggi, non ho."
+      },
+      {
+        "id": "il-tempo-non-e-un-dettaglio",
+        "title": "Il tempo non è una nota a fondo pagina",
+        "image": "",
+        "body": "Lavoro dalle 8 alle 17. Torno a casa intorno alle 17:30.\n\nPoi mi alleno, devo studiare per l’università, mangiare, lavarmi e dormire. Sì, incredibilmente anche queste attività occupano tempo.\n\nI progetti personali devono stare lì in mezzo.\n\nQuindi, quando valuto uno stack, non posso ragionare come se avessi giornate intere da dedicare a confronti, prove e ripartenze.\n\nCambiare linguaggio ha un costo. Continuare a chiedermi se dovrei cambiarlo ne ha un altro.\n\nPython o C++? Flask o Crow? E se poi scopro qualcosa di più adatto? E se sto scegliendo male?\n\nBene. Nel frattempo la serata è finita e il progetto è ancora lì.\n\nNon voglio eliminare lo studio. Voglio smettere di riaprire la stessa decisione prima ancora di aver dato una possibilità concreta a quella precedente."
+      },
+      {
+        "id": "claude-code-e-la-scorciatoia",
+        "title": "«Tanto c’è Claude Code». Appunto.",
+        "image": "",
+        "body": "Quando hai poco tempo, delegare diventa parecchio invitante.\n\nNon ricordo come si fa questa cosa? Chiedo a Claude Code.\n\nDevo collegare questi pezzi? Chiedo a Claude Code.\n\nC’è un errore? Gli incollo l’errore e gli chiedo di sistemarlo.\n\nE avanti così.\n\nNon è una confessione contro l’AI. È il rischio che vedo nel mio modo di usarla: ottenere un’app funzionante senza aver seguito e compreso davvero come è stata costruita.\n\nChe l’app parta mi interessa, ovviamente. Ma mi interessa anche capire cosa sto guardando quando qualcosa non va.\n\nNon voglio neanche raccontarmi la favola opposta: «Da domani niente AI, scrivo tutto da solo e finalmente divento un vero sviluppatore».\n\nNon è questo il punto.\n\nVoglio usarla per spiegazioni, debugging e revisione. Se un passaggio non mi è chiaro, voglio farmelo spiegare, non limitarmi a chiedere il prossimo pezzo.\n\nLa differenza che cerco è tra farmi aiutare a capire e farmi sostituire mentre continuo a premere invio."
+      },
+      {
+        "id": "la-scelta-crow-cpp",
+        "title": "Quindi, Crow e C++. Senza riaprire il processo ogni volta.",
+        "image": "",
+        "body": "La decisione è questa: Crow e C++ diventano la scelta predefinita per i miei nuovi progetti personali.\n\nNon sto dicendo che riscriverò tutto quello che esiste. Non sto facendo una prescrizione per i progetti degli altri. E non sto giurando fedeltà eterna a un framework.\n\nSto scegliendo da dove partire, così da non doverlo decidere nuovamente a ogni idea.\n\nPerché C++? Per la familiarità che ritrovo nella sintassi, partendo dal C che ho studiato.\n\nPerché fissare anche Crow? Per chiudere, almeno per questi progetti, il confronto continuo tra framework e passare alla costruzione.\n\nQuesto non cancella quello che devo imparare. Non conosco automaticamente C++ perché ho studiato C, e scegliere uno stack non significa saperci già realizzare e mantenere un’applicazione.\n\nSignifica concentrare l’apprendimento necessario su una base che sento più familiare.\n\nSe poi un progetto avrà un vincolo concreto che richiede altro, valuterò altro. Un vincolo concreto, però. Non l’ennesimo dubbio aperto perché ho visto un confronto online."
+      },
+      {
+        "id": "decisione-non-risultato",
+        "title": "Ho scelto una base. Non ho ancora dimostrato che funzioni per me.",
+        "image": "",
+        "body": "Mettiamolo in chiaro: questo articolo documenta una decisione, non un risultato.\n\nNon ho ancora dimostrato che con Crow e C++ finirò prima i miei progetti. Non ho misurato un aumento di produttività. E non ho risolto magicamente il problema del tempo.\n\nHo individuato un punto da cui partire senza chiedermi ogni volta se dovrei essere da un’altra parte.\n\nQuello che voglio verificare è se riesco a costruire seguendo davvero i passaggi, a spiegarmi le scelte fatte e a modificare il progetto senza dover delegare ogni volta il ragionamento a Claude Code.\n\nPotrei trovare difficoltà che oggi sto sottovalutando. Le racconterò quando le avrò incontrate, non adesso per completare una bella storia.\n\nPer ora, quando scrivo «mastico Python, ma mi diverto di più in C», intendo questo: Python non è una competenza che voglio vendere come padronanza, e la familiarità con C è una base da cui voglio provare a costruire.\n\nNon sto cercando di vincere una discussione sui linguaggi.\n\nSto cercando di finire un progetto sapendo cosa ho fatto."
+      }
+    ],
+    "en": [
+      {
+        "id": "intro",
+        "title": "",
+        "image": "",
+        "body": "In my descriptions, I say I know some Python, but I have more fun with C.\n\nIt sounds like a throwaway line. Behind it, though, there’s a fairly concrete problem: when I sit down to work on a personal project, how much time do I spend building, and how much remembering how to write what I have in mind?\n\nBecause knowing what I want to do and actually doing it are two different things. And if I open Claude Code and let it handle everything in between, the app might reach the finish line.\n\nBut did I get there with it?"
+      },
+      {
+        "id": "mastico-non-significa-padroneggio",
+        "title": "I said «some Python», not «mastery»",
+        "image": "",
+        "body": "Let’s start here, before this becomes the usual argument about which language is better.\n\nI’m not saying Python is unsuitable. I’m not saying Flask is a bad choice. And I’m definitely not saying C++ is the universal answer to every web project.\n\nI’m talking about me.\n\nI studied C for roughly four years across secondary school and university, and I’m continuing with it in my advanced course. That doesn’t automatically make me a C++ expert. C and C++ are not the same thing.\n\nBut C++ gives me a more familiar syntax. When I read something or try to write it, I have a foundation to lean on.\n\nWith Python, I sometimes stop even to recall basic operations and rules.\n\n«But Python is simpler!»\n\nGreat. Meanwhile, I’ve stopped again.\n\nThat’s the point: I don’t have the same level of proficiency in both. If I ignore that difference, I’m making a choice as though I had skills I don’t currently have."
+      },
+      {
+        "id": "il-tempo-non-e-un-dettaglio",
+        "title": "Time isn’t a footnote",
+        "image": "",
+        "body": "I work from 8 a.m. to 5 p.m. I get home around 5:30.\n\nThen I train, study for university, eat, shower and sleep. Yes, surprisingly, those things take time too.\n\nPersonal projects have to fit somewhere in between.\n\nSo when I assess a stack, I can’t pretend I have entire days available for comparisons, experiments and fresh starts.\n\nChanging languages has a cost. Constantly wondering whether I should change has another one.\n\nPython or C++? Flask or Crow? What if I discover something more suitable? What if I’m choosing badly?\n\nRight. Meanwhile, the evening is over and the project is still sitting there.\n\nI’m not trying to avoid studying. I want to stop reopening the same decision before I’ve given the previous one a real chance."
+      },
+      {
+        "id": "claude-code-e-la-scorciatoia",
+        "title": "«Claude Code can do it anyway». Exactly.",
+        "image": "",
+        "body": "When time is short, delegating becomes very tempting.\n\nCan’t remember how to do something? Ask Claude Code.\n\nNeed to connect these pieces? Ask Claude Code.\n\nGot an error? Paste it in and ask for a fix.\n\nAnd so on.\n\nThis isn’t an anti-AI confession. It’s the risk I see in how I use it: getting a working app without really following and understanding how it was built.\n\nOf course I care whether the app runs. But I also care whether I understand what I’m looking at when something goes wrong.\n\nI don’t want to tell myself the opposite fairy tale either: «Starting tomorrow, no AI. I’ll write everything myself and finally become a real developer».\n\nThat’s not the point.\n\nI want to use it for explanations, debugging and review. If a step isn’t clear, I want help understanding it, rather than simply asking for the next piece.\n\nThe distinction I’m after is between getting help to understand and being replaced while I keep pressing enter."
+      },
+      {
+        "id": "la-scelta-crow-cpp",
+        "title": "So, Crow and C++. Without reopening the case every time.",
+        "image": "",
+        "body": "Here’s the decision: Crow and C++ become the default choice for my new personal projects.\n\nI’m not saying I’ll rewrite everything that already exists. I’m not prescribing a stack for anyone else’s projects. And I’m not pledging eternal loyalty to a framework.\n\nI’m choosing where to start, so I don’t have to make that decision again with every idea.\n\nWhy C++? Because its syntax feels more familiar, building on the C I’ve studied.\n\nWhy settle on Crow too? To close the constant framework comparison, at least for these projects, and move on to building.\n\nThat doesn’t erase what I still need to learn. Studying C doesn’t mean I automatically know C++, and choosing a stack doesn’t mean I can already build and maintain an application with it.\n\nIt means focusing the necessary learning on a foundation that feels more familiar.\n\nIf a project has a concrete constraint that requires something else, I’ll assess something else. A concrete constraint, though. Not another doubt triggered by an online comparison."
+      },
+      {
+        "id": "decisione-non-risultato",
+        "title": "I’ve chosen a foundation. I haven’t proved it works for me yet.",
+        "image": "",
+        "body": "Let’s be clear: this article documents a decision, not a result.\n\nI haven’t proved that Crow and C++ will help me finish projects sooner. I haven’t measured a productivity increase. And I haven’t magically solved my time problem.\n\nI’ve identified a starting point that doesn’t require me to keep wondering whether I should be somewhere else.\n\nWhat I want to test is whether I can build while genuinely following the steps, explain my decisions and modify the project without handing the reasoning over to Claude Code every time.\n\nI might encounter difficulties I’m currently underestimating. I’ll write about them when I encounter them, not invent them now to complete a neat story.\n\nFor now, when I write «I know some Python, but I have more fun with C», this is what I mean: I don’t want to sell my Python knowledge as mastery, and my familiarity with C is a foundation I want to try building on.\n\nI’m not trying to win an argument about programming languages.\n\nI’m trying to finish a project knowing what I’ve done."
+      }
+    ]
+  }
+}
