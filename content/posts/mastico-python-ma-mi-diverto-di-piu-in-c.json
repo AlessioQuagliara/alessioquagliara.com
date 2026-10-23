@@ -2,7 +2,7 @@
   "slug": "mastico-python-ma-mi-diverto-di-piu-in-c",
   "publishedAt": "2026-10-23",
   "updatedAt": "",
-  "cover": "/profile_image.jpeg",
+  "cover": "/profile_image.jpg",
   "youtubeUrl": "",
   "tags": [
     "Build in Public",
@@ -30,7 +30,7 @@
         "id": "mastico-non-significa-padroneggio",
         "title": "Ho scritto «mastico», non «padroneggio»",
         "image": "",
-        "body": "Partiamo da qui, prima che diventi la solita discussione su quale linguaggio sia migliore.\n\nNon sto dicendo che Python non vada bene. Non sto dicendo che Flask sia una scelta sbagliata. E soprattutto non sto dicendo che C++ sia la risposta universale a qualsiasi progetto web.\n\nSto parlando di me.\n\nHo studiato C per circa quattro anni, tra superiori e università, e continuo a studiarlo nel corso avanzato. Questo non mi rende automaticamente esperto di C++, ci mancherebbe. C e C++ non sono la stessa cosa.\n\nPerò in C++ ritrovo una sintassi più familiare. Quando leggo o provo a scrivere qualcosa, ho una base a cui appoggiarmi.\n\nCon Python, invece, mi capita di interrompermi anche per ricordare operazioni e regole di base.\n\n«Ma Python è più semplice!»\n\nOttimo. Io intanto mi sono fermato di nuovo.\n\nIl punto è questo: non parto dallo stesso livello di padronanza. Se ignoro questa differenza, sto scegliendo come se avessi competenze che, oggi, non ho."
+        "body": "Partiamo da qui, prima che diventi la solita discussione su quale linguaggio sia migliore.\n\nNon sto dicendo che Python non vada bene. Non sto dicendo che Flask sia una scelta sbagliata. E soprattutto non sto dicendo che C++ sia la risposta universale a qualsiasi progetto web.\n\nSto parlando di me.\n\nHo studiato C per circa 2 anni, tra superiori e università, e continuo a studiarlo nel corso avanzato. Questo non mi rende automaticamente esperto di C++, ci mancherebbe. C e C++ non sono la stessa cosa.\n\nPerò in C++ ritrovo una sintassi più familiare. Quando leggo o provo a scrivere qualcosa, ho una base a cui appoggiarmi.\n\nCon Python, invece, mi capita di interrompermi anche per ricordare operazioni e regole di base.\n\n«Ma Python è più semplice!»\n\nOttimo. Io intanto mi sono fermato di nuovo.\n\nIl punto è questo: non parto dallo stesso livello di padronanza. Se ignoro questa differenza, sto scegliendo come se avessi competenze che, oggi, non ho."
       },
       {
         "id": "il-tempo-non-e-un-dettaglio",
@@ -68,7 +68,7 @@
         "id": "mastico-non-significa-padroneggio",
         "title": "I said «some Python», not «mastery»",
         "image": "",
-        "body": "Let’s start here, before this becomes the usual argument about which language is better.\n\nI’m not saying Python is unsuitable. I’m not saying Flask is a bad choice. And I’m definitely not saying C++ is the universal answer to every web project.\n\nI’m talking about me.\n\nI studied C for roughly four years across secondary school and university, and I’m continuing with it in my advanced course. That doesn’t automatically make me a C++ expert. C and C++ are not the same thing.\n\nBut C++ gives me a more familiar syntax. When I read something or try to write it, I have a foundation to lean on.\n\nWith Python, I sometimes stop even to recall basic operations and rules.\n\n«But Python is simpler!»\n\nGreat. Meanwhile, I’ve stopped again.\n\nThat’s the point: I don’t have the same level of proficiency in both. If I ignore that difference, I’m making a choice as though I had skills I don’t currently have."
+        "body": "Let’s start here, before this becomes the usual argument about which language is better.\n\nI’m not saying Python is unsuitable. I’m not saying Flask is a bad choice. And I’m definitely not saying C++ is the universal answer to every web project.\n\nI’m talking about me.\n\nI studied C for roughly 2 years across secondary school and university, and I’m continuing with it in my advanced course. That doesn’t automatically make me a C++ expert. C and C++ are not the same thing.\n\nBut C++ gives me a more familiar syntax. When I read something or try to write it, I have a foundation to lean on.\n\nWith Python, I sometimes stop even to recall basic operations and rules.\n\n«But Python is simpler!»\n\nGreat. Meanwhile, I’ve stopped again.\n\nThat’s the point: I don’t have the same level of proficiency in both. If I ignore that difference, I’m making a choice as though I had skills I don’t currently have."
       },
       {
         "id": "il-tempo-non-e-un-dettaglio",
