@@ -34,6 +34,7 @@ export async function generateMetadata({
     description: metadata.description,
     alternates: {
       canonical: "/blog",
+      types: { "application/rss+xml": "/blog/rss.xml" },
     },
   };
 }
