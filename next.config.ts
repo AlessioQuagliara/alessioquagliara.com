@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
     // next/image negozia il formato in automatico via header Accept.
     formats: ["image/avif", "image/webp"],
   },
+  // Le vecchie pagine ora sono sezioni della home.
+  async redirects() {
+    return [
+      { source: "/about", destination: "/#chi-sono", permanent: true },
+      { source: "/formazione", destination: "/#esperienza", permanent: true },
+      { source: "/contact", destination: "/#contatti", permanent: true },
+      { source: "/projects", destination: "/#progetti", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

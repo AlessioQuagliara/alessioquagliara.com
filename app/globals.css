@@ -1,14 +1,22 @@
 @import "tailwindcss";
 @import "github-markdown-css/github-markdown-dark.css";
 
+/* Palette del sito: gli stessi blu di sempre, usati con meno effetti. */
 :root {
   --primary: #2664eb;
   --primary-strong: #1f55ca;
-  --surface: #0f2c6f;
-  --surface-2: #12347d;
+  --ink: #06112a; /* fondo */
+  --ink-2: #0b1f4b; /* superfici */
+  --ink-3: #12347d; /* bordi e superfici in hover */
   --foreground: #eef4ff;
   --muted-foreground: #c9ddff;
-  --border-soft: rgba(198, 220, 255, 0.3);
+  --soft: #8cb4ff; /* etichette e accenti chiari */
+  --border-soft: rgba(198, 220, 255, 0.16);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-code), ui-monospace, monospace;
 }
 
 html {
@@ -17,26 +25,36 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: #0b1f4b;
+  background-color: var(--ink);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  background-attachment: fixed;
 }
 
 .site-shell {
   min-height: 100vh;
-  background-image:
-    radial-gradient(
-      1200px circle at 12% -10%,
-      rgba(38, 100, 235, 0.5),
-      transparent 55%
-    ),
-    radial-gradient(
-      900px circle at 88% 8%,
-      rgba(38, 100, 235, 0.4),
-      transparent 50%
-    ),
-    linear-gradient(135deg, #06112a 0%, #0f2f75 46%, #2664eb 100%);
+  background-image: radial-gradient(
+    900px circle at 85% -10%,
+    rgba(38, 100, 235, 0.28),
+    transparent 60%
+  );
+}
+
+/* Etichetta di sezione: trattino blu + testo piccolo. */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--soft);
+}
+
+.section-label::before {
+  content: "";
+  width: 1.5rem;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--primary);
 }
 
 .fa-icon-shell {
@@ -105,23 +123,6 @@ body {
   animation: faShimmer 4.6s ease-in-out infinite;
 }
 
-.mobile-menu-link {
-  color: #ffffff;
-  font-size: clamp(1.6rem, 7vw, 2.4rem);
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  text-shadow: 0 6px 22px rgba(0, 0, 0, 0.42);
-  transform: translateX(0);
-  opacity: 1;
-  transition: transform 350ms ease, opacity 350ms ease, color 250ms ease;
-}
-
-.mobile-menu-link:hover {
-  color: #bfd5ff;
-  transform: translateX(8px);
-}
-
-
 .github-markdown-shell {
   margin-top: 2rem;
   border: 1px solid #30363d;
@@ -161,7 +162,6 @@ body {
     scroll-behavior: auto;
   }
 
-  .mobile-menu-link,
   .fa-icon-float,
   .fa-icon-pulse,
   .fa-icon-orbit,
@@ -170,6 +170,7 @@ body {
     transition: none !important;
   }
 }
+
 /* =========================================================================
    ESPERIENZA DI LETTURA DEL BLOG — LIGHT ONLY
    Design system dedicato agli articoli: tema chiaro permanente, tipografia,
@@ -751,7 +752,7 @@ body {
 .article-prose a:focus-visible,
 .toc__link:focus-visible,
 .toc__toggle:focus-visible,
-.blog-card:focus-within {
+.blog-row__link:focus-visible {
   outline: 2px solid var(--article-accent);
   outline-offset: 3px;
   border-radius: 6px;
@@ -761,40 +762,34 @@ body {
   outline-color: var(--toc-active);
 }
 
-/* --- Card lista blog: altezze uniformi + hover piu evidente -------------- */
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: transform 0.25s ease, border-color 0.25s ease,
-    box-shadow 0.25s ease;
+/* --- Lista articoli: righe, niente card ---------------------------------- */
+.blog-row {
+  border-top: 1px solid var(--article-border);
 }
 
-.blog-card:hover {
-  transform: translateY(-6px);
-  border-color: #c7d2fe;
-  box-shadow: 0 30px 60px -35px rgba(29, 78, 216, 0.4);
+.blog-row:last-child {
+  border-bottom: 1px solid var(--article-border);
 }
 
-.blog-card__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.blog-row__link {
+  display: grid;
+  gap: 0.5rem 2rem;
+  padding: 1.75rem 0;
 }
 
-.blog-card__body {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
+@media (min-width: 768px) {
+  .blog-row__link {
+    grid-template-columns: 11rem 1fr;
+  }
 }
 
-.blog-card__excerpt {
-  flex: 1 1 auto;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.blog-row__title {
+  transition: color 0.2s ease;
+}
+
+.blog-row__link:hover .blog-row__title,
+.blog-row__link:focus-visible .blog-row__title {
+  color: var(--article-link);
 }
 
 /* --- Filtri editoriali (percorsi) ---------------------------------------- */
@@ -893,7 +888,6 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .reading-progress__bar,
-  .blog-card,
   .blog-filter-pill,
   .toc__toggle-icon {
     transition: none !important;
@@ -901,1106 +895,5 @@ body {
 
   .blog-list-enter {
     animation: none;
-  }
-}
-
-/* --- Scrollytelling home a tutto schermo (components/home/scroll-experience.tsx) --- */
-
-/* Lenis gestisce lo scroll morbido: lo smooth nativo lo farebbe "doppio". */
-html.lenis {
-  scroll-behavior: auto;
-}
-
-.experience {
-  /* Altezza della navbar sticky: lo stage ci passa sotto. */
-  --nav-h: 4.5rem;
-  --experience-bg: #06112a;
-  --chapter-left: clamp(1.25rem, 5vw, 5rem);
-  position: relative;
-  margin-top: calc(-1 * var(--nav-h));
-  background: var(--experience-bg);
-}
-
-.experience__track {
-  position: relative;
-}
-
-.experience__stage {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-}
-
-.experience__canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Hero: velo a sinistra, il testo resta leggibile sopra le icone del frame. */
-.experience__stage::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(90deg, rgba(6, 17, 42, 0.78) 0%, rgba(6, 17, 42, 0.35) 38%, transparent 58%);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-}
-
-.experience__stage[data-chapter="hero"]::before {
-  opacity: 1;
-}
-
-.experience__chapters {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  pointer-events: none;
-}
-
-/* Chi esce sparisce in fretta, chi entra arriva dopo: niente testi sovrapposti. */
-.experience__chapter {
-  position: absolute;
-  top: calc(50% + var(--nav-h) / 2);
-  left: var(--chapter-left);
-  width: min(34rem, 42vw);
-  opacity: 0;
-  transform: translateY(calc(-50% + 18px));
-  pointer-events: none;
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-}
-
-.experience__chapter[data-active="true"] {
-  opacity: 1;
-  transform: translateY(-50%);
-  pointer-events: auto;
-  transition:
-    opacity 0.5s ease 0.15s,
-    transform 0.5s ease 0.15s;
-}
-
-.experience__chapter--hero {
-  width: min(40rem, 50vw);
-}
-
-/* Lo schermo del MacBook sta a destra del centro: la card resta stretta. */
-.experience__chapter--code {
-  width: min(25rem, 33vw);
-}
-
-.experience__card {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 1.75rem;
-  background: rgba(6, 17, 42, 0.74);
-  padding: 1.75rem;
-  box-shadow: 0 40px 90px -50px rgba(2, 12, 32, 1);
-  backdrop-filter: blur(14px);
-}
-
-.experience__kicker,
-.experience__label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #9fc2ff;
-}
-
-.experience__title {
-  margin-top: 0.75rem;
-  font-size: clamp(1.5rem, 2.4vw, 2.25rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: #fff;
-}
-
-.experience__body {
-  margin-top: 0.9rem;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: #d8e7ff;
-}
-
-/* Servizi: pulsanti pieni, chiari sul fondo scuro. */
-.experience__link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  border-radius: 0.9rem;
-  background: #fff;
-  padding: 0.65rem 0.95rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #0b2a6b;
-  box-shadow: 0 14px 30px -18px rgba(0, 0, 0, 0.9);
-  transition:
-    background 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.experience__link:hover {
-  background: #2664eb;
-  color: #fff;
-  transform: translateY(-1px);
-}
-
-/* Hardware: tag piccoli, solo testo. */
-.experience__tag {
-  border: 1px solid rgba(140, 180, 255, 0.35);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  padding: 0.3rem 0.8rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #e6f0ff;
-}
-
-/* Progetti: badge pieni e cliccabili, con una riga di descrizione. */
-.experience__project {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  border: 1px solid rgba(140, 180, 255, 0.55);
-  border-radius: 0.9rem;
-  background: #2664eb;
-  padding: 0.5rem 0.95rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #fff;
-  box-shadow: 0 12px 28px -16px rgba(38, 100, 235, 0.9);
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.experience__project:hover {
-  background: #1d4fc4;
-  transform: translateY(-1px);
-}
-
-.experience__project-name {
-  flex: none;
-}
-
-.experience__project-note {
-  min-width: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #d8e7ff;
-}
-
-.experience__project-dot {
-  flex: none;
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 999px;
-  background: #7cf0b5;
-  box-shadow: 0 0 0 3px rgba(124, 240, 181, 0.25);
-}
-
-.experience__progress {
-  position: absolute;
-  z-index: 4;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  background: rgba(140, 180, 255, 0.12);
-  transition: opacity 0.5s ease;
-}
-
-.experience__progress[data-done="true"] {
-  opacity: 0;
-}
-
-.experience__progress span {
-  display: block;
-  height: 100%;
-  background: #2664eb;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-/* "Salta l'animazione": visibile solo col focus da tastiera. */
-.experience__skip {
-  position: absolute;
-  z-index: 70;
-  top: calc(var(--nav-h) + 0.75rem);
-  left: var(--chapter-left);
-  border-radius: 999px;
-  background: #fff;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #12347d;
-  transform: translateY(-200%);
-  opacity: 0;
-}
-
-.experience__skip:focus-visible {
-  transform: none;
-  opacity: 1;
-}
-
-.experience__poster {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 1.5rem;
-}
-
-.experience__poster img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Mobile in verticale (stesso rapporto di NARROW_ASPECT): testo in alto, frame in una fascia sotto. */
-@media (max-aspect-ratio: 11/10) {
-  .experience__chapter,
-  .experience__chapter--hero,
-  .experience__chapter--code {
-    top: calc(var(--nav-h) + 1rem);
-    right: 1rem;
-    left: 1rem;
-    width: auto;
-    transform: translateY(18px);
-  }
-
-  .experience__chapter[data-active="true"] {
-    transform: none;
-  }
-
-  .experience__stage::before {
-    background: linear-gradient(180deg, rgba(6, 17, 42, 0.7) 0%, transparent 60%);
-  }
-
-  .experience__card {
-    border-radius: 1.25rem;
-    padding: 1.1rem 1.2rem;
-  }
-
-  .experience__body {
-    font-size: 0.875rem;
-    line-height: 1.6;
-  }
-
-  /* Ultimo capitolo: la card deve finire sopra lo schermo del MacBook. */
-  .experience[data-mode="scroll"] .experience__chapter--code .experience__title {
-    font-size: 1.3rem;
-  }
-
-  .experience[data-mode="scroll"] .experience__chapter--code .experience__body {
-    display: none;
-  }
-
-  .experience[data-mode="scroll"] .experience__chapter--code .experience__link {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.8rem;
-  }
-}
-
-/* Reduced motion: niente scrub, card verticali con i frame statici. */
-.experience[data-mode="static"] .experience__stage {
-  position: relative;
-  height: auto;
-}
-
-.experience[data-mode="static"] .experience__chapters {
-  position: relative;
-  display: grid;
-  gap: 3rem;
-  max-width: 72rem;
-  margin: 0 auto;
-  padding: calc(var(--nav-h) + 3rem) 1.25rem 4rem;
-}
-
-.experience[data-mode="static"] .experience__chapter {
-  position: relative;
-  inset: auto;
-  display: grid;
-  align-items: center;
-  gap: 1.5rem;
-  width: auto;
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
-}
-
-@media (min-width: 900px) {
-  .experience[data-mode="static"] .experience__chapter {
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  }
-}
-
-/* --- Codice sullo schermo del MacBook ------------------------------------ */
-
-.code-overlay {
-  position: absolute;
-  z-index: 2;
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  container-type: size;
-  overflow: hidden;
-  border-radius: 0.35rem;
-  background: #0d1117;
-  color: #e6edf3;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s ease;
-}
-
-.code-overlay[data-visible="true"],
-.code-overlay--static {
-  opacity: 1;
-}
-
-/* ?debug=1: area dello schermo sempre visibile, per calibrare SCREEN_BOUNDS */
-.code-overlay[data-debug="true"] {
-  opacity: 1;
-  outline: 2px solid red;
-  background: rgba(13, 17, 23, 0.6);
-}
-
-.code-overlay__tabs,
-.code-overlay__code {
-  /* Il font scala con lo schermo disegnato (container query units). */
-  font-size: min(calc(100cqh / var(--code-rows)), calc(100cqw / var(--code-cols)));
-}
-
-.code-overlay__tabs {
-  display: flex;
-  border-bottom: 1px solid #30363d;
-  background: #161b22;
-}
-
-.code-overlay__tab {
-  padding: 0.45em 1em;
-  color: #8b949e;
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.code-overlay__tab[data-active="true"] {
-  background: #0d1117;
-  color: #e6edf3;
-  box-shadow: inset 0 2px 0 #2664eb;
-}
-
-.code-overlay__code {
-  /* I due file stanno nella stessa cella: il cambio è una dissolvenza. */
-  grid-area: 2 / 1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  margin: 0;
-  padding: 0.7em 1em;
-  line-height: 1.4;
-  white-space: pre;
-}
-
-.code-overlay__code[data-active="true"] {
-  opacity: 1;
-}
-
-.code-overlay .tok-keyword {
-  color: #ff7b72;
-}
-
-.code-overlay .tok-string {
-  color: #a5d6ff;
-}
-
-.code-overlay .tok-comment {
-  color: #8b949e;
-  font-style: italic;
-}
-
-.code-overlay .tok-accent {
-  color: #d2a8ff;
-}
-
-.code-overlay__cursor {
-  display: inline-block;
-  width: 0.55em;
-  height: 1.1em;
-  margin-left: 1px;
-  vertical-align: text-bottom;
-  background: #e6edf3;
-  animation: code-cursor 1s steps(1) infinite;
-}
-
-@keyframes code-cursor {
-  50% {
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .code-overlay__cursor {
-    animation: none;
-  }
-}
-
-/* ---------- About ---------- */
-
-.about-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: #9fc2ff;
-}
-
-.about-heading {
-  margin-top: 0.75rem;
-  max-width: 24ch;
-  font-size: clamp(1.75rem, 3.4vw, 2.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  color: #fff;
-}
-
-/* Badge tecnologici che galleggiano attorno alla foto. */
-.about-float {
-  z-index: 1;
-  border: 1px solid rgba(140, 180, 255, 0.4);
-  border-radius: 999px;
-  background: rgba(6, 21, 54, 0.82);
-  padding: 0.4rem 0.9rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #e6f0ff;
-  box-shadow: 0 16px 34px -18px rgba(2, 12, 32, 1);
-  backdrop-filter: blur(10px);
-  animation: about-float 6s ease-in-out infinite;
-}
-
-@keyframes about-float {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-1deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(1deg);
-  }
-}
-
-/* Bento: bordo sottile, gradiente scuro, alone che si accende in hover. */
-.about-bento {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(140, 180, 255, 0.16);
-  border-radius: 1.75rem;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(38, 100, 235, 0.22), transparent 45%),
-    linear-gradient(160deg, rgba(10, 30, 72, 0.9), rgba(4, 14, 38, 0.95));
-  padding: 1.75rem;
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.about-bento::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 0% 100%, rgba(124, 240, 181, 0.12), transparent 50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.about-bento:hover {
-  transform: translateY(-4px);
-  border-color: rgba(140, 180, 255, 0.45);
-  box-shadow: 0 30px 60px -40px rgba(38, 100, 235, 0.8);
-}
-
-.about-bento:hover::after {
-  opacity: 1;
-}
-
-.about-bento__icon {
-  display: inline-flex;
-  width: 2.75rem;
-  height: 2.75rem;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(140, 180, 255, 0.3);
-  border-radius: 0.9rem;
-  background: rgba(38, 100, 235, 0.18);
-  color: #cfe0ff;
-  transition: background 0.3s ease;
-}
-
-.about-bento:hover .about-bento__icon {
-  background: #2664eb;
-  color: #fff;
-}
-
-/* Tab della timeline e filtri dello stack. */
-.ui-tab,
-.about-filter {
-  border-radius: 0.75rem;
-  padding: 0.55rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #c9ddff;
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-.ui-tab:hover,
-.about-filter:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.ui-tab[aria-selected="true"],
-.about-filter[aria-pressed="true"] {
-  background: #2664eb;
-  color: #fff;
-}
-
-.about-filter {
-  border: 1px solid rgba(140, 180, 255, 0.25);
-  border-radius: 999px;
-}
-
-.about-filter[aria-pressed="true"] {
-  border-color: #2664eb;
-}
-
-.ui-tab:focus-visible,
-.about-filter:focus-visible,
-.about-chip:focus-visible {
-  outline: 2px solid #8ab0ff;
-  outline-offset: 2px;
-}
-
-/* Timeline verticale: linea a sinistra, pallino per ogni tappa. */
-.about-timeline {
-  position: relative;
-  display: grid;
-  gap: 1.75rem;
-  border-left: 1px solid rgba(140, 180, 255, 0.25);
-  margin-left: 0.4rem;
-  padding-left: 1.75rem;
-}
-
-.about-timeline__step {
-  position: relative;
-  animation: about-step-in 0.45s ease both;
-}
-
-.about-timeline__dot {
-  position: absolute;
-  left: calc(-1.75rem - 0.4rem - 0.5px);
-  top: 0.2rem;
-  width: 0.8rem;
-  height: 0.8rem;
-  border: 2px solid #2664eb;
-  border-radius: 999px;
-  background: #061536;
-  box-shadow: 0 0 0 4px rgba(38, 100, 235, 0.2);
-  transition: background 0.2s ease;
-}
-
-.about-timeline__step:hover .about-timeline__dot,
-.about-timeline__step:last-child .about-timeline__dot {
-  background: #7cf0b5;
-  border-color: #7cf0b5;
-}
-
-.about-timeline__period {
-  display: inline-block;
-  border-radius: 999px;
-  background: rgba(38, 100, 235, 0.2);
-  padding: 0.15rem 0.65rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #9fc2ff;
-}
-
-@keyframes about-step-in {
-  from {
-    opacity: 0;
-    transform: translateX(-8px);
-  }
-}
-
-/* Badge dello stack. */
-.about-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: 1px solid rgba(140, 180, 255, 0.25);
-  border-radius: 0.85rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.55rem 0.95rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #e6f0ff;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.about-chip:hover,
-.about-chip[aria-pressed="true"] {
-  border-color: rgba(140, 180, 255, 0.6);
-  background: rgba(38, 100, 235, 0.3);
-  transform: translateY(-2px);
-}
-
-.about-chip__dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 999px;
-  background: #8cb4ff;
-}
-
-.about-chip__dot[data-category="saas"] {
-  background: #7cf0b5;
-}
-
-.about-chip__dot[data-category="embedded"] {
-  background: #ffb86b;
-}
-
-.about-chip__dot[data-category="tooling"] {
-  background: #d2a8ff;
-}
-
-.about-chip-enter {
-  animation: about-step-in 0.3s ease both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-float,
-  .about-timeline__step,
-  .about-chip-enter {
-    animation: none;
-  }
-
-  .about-bento,
-  .about-chip {
-    transition: none;
-  }
-
-  .about-bento:hover,
-  .about-chip:hover,
-  .about-chip[aria-pressed="true"] {
-    transform: none;
-  }
-}
-
-/* ---------- Landing servizi ---------- */
-
-/* Calcolatore ore: righe-checkbox cliccabili per intero. */
-.calc-task {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  gap: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.9rem;
-  background: rgba(255, 255, 255, 0.04);
-  padding: 0.6rem 0.85rem;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #e6f0ff;
-  transition:
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-
-.calc-task:hover {
-  border-color: rgba(140, 180, 255, 0.4);
-}
-
-.calc-task:has(:checked) {
-  border-color: rgba(124, 240, 181, 0.45);
-  background: rgba(124, 240, 181, 0.08);
-}
-
-.calc-task:has(:focus-visible) {
-  outline: 2px solid #8ab0ff;
-  outline-offset: 2px;
-}
-
-.calc-task__input {
-  width: 1.05rem;
-  height: 1.05rem;
-  flex: none;
-  accent-color: #2664eb;
-}
-
-/* Casi d'uso: tre riquadri problema → soluzione → risultato. */
-.usecase-step {
-  border-radius: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.4rem;
-  animation: about-step-in 0.4s ease both;
-}
-
-.usecase-step__label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.usecase-step--problem {
-  background: rgba(255, 120, 150, 0.08);
-  border-color: rgba(255, 150, 175, 0.25);
-  color: #ffe3ea;
-}
-
-.usecase-step--problem .usecase-step__label {
-  color: #ffb4c4;
-}
-
-.usecase-step--solution {
-  background: rgba(38, 100, 235, 0.22);
-  border-color: rgba(140, 180, 255, 0.35);
-  color: #edf4ff;
-}
-
-.usecase-step--solution .usecase-step__label {
-  color: #9fc2ff;
-}
-
-.usecase-step--result {
-  background: rgba(124, 240, 181, 0.1);
-  border-color: rgba(124, 240, 181, 0.35);
-  color: #e3fff2;
-}
-
-.usecase-step--result .usecase-step__label {
-  color: #7cf0b5;
-}
-
-.usecase-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  color: #9cbcff;
-  transform: rotate(90deg);
-}
-
-@media (min-width: 1024px) {
-  .usecase-arrow {
-    transform: none;
-  }
-}
-
-/* Prima / dopo. */
-.compare-toggle {
-  border-radius: 999px;
-  padding: 0.5rem 1.25rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #35548c;
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-.compare-toggle[data-variant="before"][aria-pressed="true"] {
-  background: #b4234a;
-  color: #fff;
-}
-
-.compare-toggle[data-variant="after"][aria-pressed="true"] {
-  background: #2664eb;
-  color: #fff;
-}
-
-.compare-toggle:focus-visible {
-  outline: 2px solid #2664eb;
-  outline-offset: 2px;
-}
-
-.compare-flow {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem 0.5rem;
-}
-
-.compare-flow__item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  animation: about-step-in 0.35s ease both;
-}
-
-.compare-flow__chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  border-radius: 0.8rem;
-  padding: 0.55rem 0.85rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.compare-flow__mark {
-  font-size: 0.75rem;
-}
-
-.compare-flow[data-state="before"] .compare-flow__chip {
-  border: 1px dashed #e2a3b3;
-  background: #fff1f4;
-  color: #8a1a37;
-}
-
-.compare-flow[data-state="before"] .compare-flow__item:nth-child(odd) .compare-flow__chip {
-  transform: rotate(-2deg);
-}
-
-.compare-flow[data-state="before"] .compare-flow__item:nth-child(even) .compare-flow__chip {
-  transform: rotate(2deg) translateY(4px);
-}
-
-.compare-flow[data-state="before"] .compare-flow__arrow {
-  color: #d16a86;
-}
-
-.compare-flow[data-state="after"] .compare-flow__chip {
-  border: 1px solid #b9d0ff;
-  background: #eaf2ff;
-  color: #12347d;
-}
-
-.compare-flow[data-state="after"] .compare-flow__mark {
-  color: #1a9a63;
-}
-
-.compare-flow[data-state="after"] .compare-flow__arrow {
-  font-weight: 700;
-  color: #2664eb;
-}
-
-/* Processo: freccia tra le card, solo su desktop. */
-.process-step__arrow {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .process-step__arrow {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    right: -1.05rem;
-    display: flex;
-    width: 1.6rem;
-    height: 1.6rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 999px;
-    background: #2664eb;
-    font-size: 0.8rem;
-    color: #fff;
-    transform: translateY(-50%);
-  }
-}
-
-/* Garanzie: bento chiaro. */
-.guarantee-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #d8e6ff;
-  border-radius: 1.75rem;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(38, 100, 235, 0.08), transparent 50%),
-    #fff;
-  padding: 1.75rem;
-  box-shadow: 0 25px 65px -52px rgba(15, 52, 125, 0.55);
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.guarantee-card:hover {
-  transform: translateY(-4px);
-  border-color: #9fc0ff;
-}
-
-.guarantee-card__icon {
-  display: inline-flex;
-  align-self: flex-start;
-  width: 2.75rem;
-  height: 2.75rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.9rem;
-  background: #2664eb;
-  color: #fff;
-}
-
-/* Form rapido nel box CTA. */
-.quick-form__field {
-  display: block;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.8rem;
-  background: rgba(4, 14, 38, 0.45);
-  padding: 0.65rem 0.85rem;
-  font-size: 0.95rem;
-  color: #fff;
-}
-
-.quick-form__field::placeholder {
-  color: #8fa8d6;
-}
-
-.quick-form__field:focus {
-  outline: 2px solid #8ab0ff;
-  outline-offset: 1px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .usecase-step,
-  .compare-flow__item {
-    animation: none;
-  }
-
-  .guarantee-card {
-    transition: none;
-  }
-
-  .guarantee-card:hover {
-    transform: none;
-  }
-}
-
-/* Selezione rapida del form: radio nascosti, etichette a pillola. */
-.quick-form__choice {
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 999px;
-  padding: 0.4rem 0.9rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #dbe8ff;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.quick-form__choice:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.quick-form__choice:has(:checked) {
-  border-color: #fff;
-  background: #fff;
-  color: #0b2a6b;
-}
-
-.quick-form__choice:has(:focus-visible) {
-  outline: 2px solid #8ab0ff;
-  outline-offset: 2px;
-}
-
-/* Landing SaaS: roadmap orizzontale su desktop, verticale su mobile. */
-.roadmap {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.roadmap__step {
-  position: relative;
-  padding-left: 3.25rem;
-}
-
-.roadmap__dot {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  width: 2.25rem;
-  height: 2.25rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: #2664eb;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #fff;
-  box-shadow: 0 0 0 6px rgba(38, 100, 235, 0.15);
-}
-
-.roadmap__step:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  left: 1.1rem;
-  top: 2.5rem;
-  bottom: -1.5rem;
-  width: 2px;
-  background: linear-gradient(180deg, #2664eb, rgba(38, 100, 235, 0.15));
-}
-
-@media (min-width: 1024px) {
-  .roadmap {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.25rem;
-  }
-
-  .roadmap__step {
-    padding-left: 0;
-    padding-top: 3.5rem;
-  }
-
-  .roadmap__step:not(:last-child)::before {
-    left: 2.75rem;
-    right: -1.25rem;
-    top: 1.1rem;
-    bottom: auto;
-    width: auto;
-    height: 2px;
-    background: linear-gradient(90deg, #2664eb, rgba(38, 100, 235, 0.2));
-  }
-}
-
-/* Card di prodotto: immagine che si avvicina in hover. */
-.product-card img {
-  transition: transform 0.5s ease;
-}
-
-.product-card:hover img {
-  transform: scale(1.04);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .product-card img {
-    transition: none;
-  }
-
-  .product-card:hover img {
-    transform: none;
   }
 }

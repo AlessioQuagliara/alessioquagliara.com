@@ -10,9 +10,9 @@ type ButtonClassOptions = {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "border border-[#2664eb] bg-[#2664eb] text-white shadow-[0_10px_30px_-12px_rgba(38,100,235,0.9)] hover:bg-[#1f55ca] hover:border-[#1f55ca]",
+    "border border-[#2664eb] bg-[#2664eb] text-white hover:bg-[#1f55ca] hover:border-[#1f55ca]",
   secondary:
-    "border border-[#95b7ff] bg-[#eaf0ff]/20 text-[#eef4ff] hover:border-[#c7daff] hover:bg-[#eaf0ff]/30",
+    "border border-white/20 bg-transparent text-[#eef4ff] hover:border-[#8cb4ff] hover:bg-white/5",
   ghost:
     "border border-transparent bg-transparent text-[#c9ddff] hover:bg-[#d7e5ff]/15 hover:text-white",
   danger:
@@ -35,7 +35,7 @@ export function buttonClass({
   className = "",
 }: ButtonClassOptions = {}): string {
   return [
-    "inline-flex items-center justify-center rounded-xl font-medium transition duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8ab0ff] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1f4b]",
+    "inline-flex items-center justify-center rounded-lg font-medium transition duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8ab0ff] focus-visible:ring-offset-2 focus-visible:ring-offset-[#06112a]",
     variantClasses[variant],
     sizeClasses[size],
     fullWidth ? "w-full" : "",

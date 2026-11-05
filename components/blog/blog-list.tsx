@@ -1,25 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import {
-  faCalendarDays,
-  faClock,
-  faVideo,
-} from "@fortawesome/free-solid-svg-icons";
-
-import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
-import { buttonClass } from "@/components/ui/button";
 
 /**
- * Dati di una card pronti al rendering: gia' localizzati e serializzabili,
+ * Dati di un articolo pronti al rendering: gia' localizzati e serializzabili,
  * cosi' possono attraversare il confine server -> client. I `tags` restano
  * disponibili per il filtro editoriale lato client.
  */
 export type BlogCardData = {
   slug: string;
   href: string;
-  cover: string;
   title: string;
   description: string;
   tags: string[];
@@ -33,82 +23,36 @@ export type BlogCardData = {
 
 type BlogListProps = {
   cards: BlogCardData[];
-  readPostLabel: string;
 };
 
-export function BlogList({ cards, readPostLabel }: BlogListProps) {
+/** Elenco a righe: data a sinistra, titolo e sommario a destra. */
+export function BlogList({ cards }: BlogListProps) {
   return (
-    <div className="grid gap-6 lg:grid-cols-3">
-      {cards.map((card, index) => (
-        <article
-          key={card.slug}
-          className="blog-card overflow-hidden rounded-3xl border border-[#e5e7eb] bg-white shadow-[0_20px_45px_-30px_rgba(15,23,42,0.35)]"
-        >
-          <Link href={card.href} className="group blog-card__link">
-            <div className="relative aspect-[16/9] overflow-hidden bg-[#07173c]">
-              <Image
-                src={card.cover}
-                alt={card.title}
-                fill
-                priority={index === 0}
-                sizes="(max-width: 1024px) 100vw, 33vw"
-                className="object-cover transition duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#06112a]/76 to-transparent" />
-              {card.isNew ? (
-                <span className="absolute left-4 top-4 rounded-full bg-[#2664eb] px-3 py-1 text-xs font-semibold text-white shadow">
-                  New
-                </span>
-              ) : null}
+    <ul>
+      {cards.map((card) => (
+        <li key={card.slug} className="blog-row">
+          <Link href={card.href} className="blog-row__link">
+            <div className="font-mono text-xs leading-7 text-[#6b7280]">
+              <p>{card.dateLabel}</p>
+              <p>{card.readingLabel}</p>
             </div>
-            <div className="blog-card__body p-6">
-              <div className="flex flex-wrap gap-2">
-                {card.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-[#e5e7eb] bg-[#f1f5f9] px-3 py-1 text-xs font-medium text-[#1d4ed8]"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <h2 className="mt-5 text-xl font-semibold leading-7 text-[#111827]">
+            <div>
+              <h2 className="blog-row__title text-xl font-semibold leading-snug text-[#0f172a]">
                 {card.title}
-              </h2>
-              <p className="blog-card__excerpt mt-3 text-[0.95rem] leading-7 text-[#4b5563]">
-                {card.description}
-              </p>
-
-              <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-[#6b7280]">
-                <span className="inline-flex items-center gap-2">
-                  <AnimatedFaIcon icon={faCalendarDays} animation="pulse" />
-                  {card.dateLabel}
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <AnimatedFaIcon icon={faClock} animation="float" />
-                  {card.readingLabel}
-                </span>
-                {card.youtubeLabel ? (
-                  <span className="inline-flex items-center gap-2">
-                    <AnimatedFaIcon icon={faVideo} animation="shimmer" />
-                    {card.youtubeLabel}
+                {card.isNew ? (
+                  <span className="ml-3 rounded bg-[#2664eb] px-2 py-0.5 align-middle text-xs font-semibold text-white">
+                    New
                   </span>
                 ) : null}
-              </div>
-
-              <span
-                className={buttonClass({
-                  variant: "outline",
-                  className: "mt-6",
-                })}
-              >
-                {readPostLabel}
-              </span>
+              </h2>
+              <p className="mt-2 leading-7 text-[#4b5563]">{card.description}</p>
+              <p className="mt-3 font-mono text-xs text-[#1d4ed8]">
+                {[...card.tags.slice(0, 4), card.youtubeLabel].filter(Boolean).join(" · ")}
+              </p>
             </div>
           </Link>
-        </article>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

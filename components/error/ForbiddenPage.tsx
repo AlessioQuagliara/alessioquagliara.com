@@ -5,7 +5,7 @@ import { buttonClass } from "@/components/ui/button";
 
 function ForbiddenPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 text-[#eef4ff] bg-[radial-gradient(1000px_circle_at_10%_-10%,rgba(38,100,235,0.35),transparent_55%),linear-gradient(135deg,#08142f_0%,#12347d_50%,#2664eb_100%)]">
+    <div className="min-h-[70vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 text-[#eef4ff]">
       <div className="max-w-md w-full text-center">
         {/* Error Illustration */}
         <div className="mb-8">
@@ -45,7 +45,7 @@ function ForbiddenPage() {
         {/* Actions */}
         <div className="space-y-4">
           <Link
-            href="/contact"
+            href="/#contatti"
             className={buttonClass({ variant: "primary", fullWidth: true })}
           >
             Contattami
@@ -71,7 +71,7 @@ function ForbiddenPage() {
           <p className="text-sm text-[#c8dcff]">
             Problemi di accesso?{' '}
             <a
-              href="https://discord.com/users/alessio_quagliara" 
+              href="mailto:quagliara.alessio@gmail.com" 
               className="font-medium text-white hover:underline"
             >
               Contatta l&apos;amministratore
