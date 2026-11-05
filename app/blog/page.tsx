@@ -36,6 +36,13 @@ export async function generateMetadata({
       canonical: "/blog",
       types: { "application/rss+xml": "/blog/rss.xml" },
     },
+    // Senza questo l'archivio eredita og:title e og:url della home dal root layout.
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      url: "/blog",
+      type: "website",
+    },
   };
 }
 

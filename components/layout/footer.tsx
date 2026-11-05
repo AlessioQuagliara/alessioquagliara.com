@@ -4,16 +4,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
-import { getLandingPath, resolveLocale, type LandingKey } from "@/lib/landings";
+import { resolveLocale } from "@/lib/landings";
 import { GITHUB_URL, INSTAGRAM_URL, LINKEDIN_URL, YOUTUBE_URL } from "@/lib/site-config";
-
-const SERVICE_KEYS: LandingKey[] = ["saas", "freelance", "industrial"];
 
 export function Footer() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const locale = resolveLocale(pathname, getLocaleFromLang(searchParams.get("lang")));
-  const { layout, services } = getMessages(locale).site;
+  const { layout } = getMessages(locale).site;
   const footer = layout.footer;
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
@@ -108,16 +106,16 @@ export function Footer() {
 
           <div>
             <h4 className="mb-4 text-sm font-semibold tracking-wider text-white uppercase">
-              {footer.section.services}
+              {footer.section.site}
             </h4>
             <div className="space-y-2">
-              {SERVICE_KEYS.map((key) => (
+              {(["projects", "caseStudies", "blog"] as const).map((key) => (
                 <Link
                   key={key}
-                  href={getLandingPath(key, locale)}
+                  href={withLang(key === "caseStudies" ? "/casi-studio" : `/${key}`, locale)}
                   className="block text-sm text-[#c8dcff] transition-colors duration-300 hover:text-[#5f95ff]"
                 >
-                  {services[key].label}
+                  {layout.navbar[key]}
                 </Link>
               ))}
             </div>

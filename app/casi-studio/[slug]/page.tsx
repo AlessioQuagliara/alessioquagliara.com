@@ -24,7 +24,6 @@ import {
   getLocalizedCaseStudy,
 } from "@/lib/case-studies";
 import { fillTemplate, getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
-import { getLandingPath } from "@/lib/landings";
 import { SITE_URL } from "@/lib/site-config";
 
 type CaseStudyPageProps = {
@@ -119,12 +118,6 @@ export default async function CaseStudyPage({ params, searchParams }: CaseStudyP
     ...relatedPosts.map(
       (post) => `- [${post.title}](${withLang(`/blog/${post.slug}`, locale)})`
     ),
-    "",
-    copy.servicesLinks,
-    "",
-    `- [${messages.services.saas.label}](${getLandingPath("saas", locale)})`,
-    `- [${messages.services.freelance.label}](${getLandingPath("freelance", locale)})`,
-    `- [${messages.services.industrial.label}](${getLandingPath("industrial", locale)})`,
   ].join("\n");
 
   // Il caso diventa una sequenza di sezioni come un post del blog:

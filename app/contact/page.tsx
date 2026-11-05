@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCalendarDays,
   faCheck,
   faCircleInfo,
   faComments,
@@ -10,7 +8,6 @@ import {
   faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
 import { SectionReveal } from "@/components/home/section-reveal";
-import { ServiceLinks } from "@/components/landing/service-links";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { getLocaleFromLang, getMessages } from "@/lib/i18n";
 
@@ -63,9 +60,6 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               </li>
             ))}
           </ul>
-          <div className="mt-8">
-            <ServiceLinks locale={locale} tone="dark" />
-          </div>
         </div>
 
         <div className="mt-10 rounded-3xl border border-[#c8dbff]/75 bg-white/90 p-6 text-[#12347d] shadow-[0_22px_46px_-36px_rgba(18,52,125,0.35)] sm:p-8" data-reveal-item>
@@ -73,7 +67,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             <AnimatedFaIcon icon={faIdCard} animation="float" className="text-[#2d5ab6]" />
             <span>{contact.directContactsTitle}</span>
           </h2>
-          <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-7 grid gap-4 sm:grid-cols-3">
             {/* CTA primaria: email in evidenza (riempita) */}
             <a
               href={`mailto:${contact.email}`}
@@ -82,7 +76,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               <AnimatedFaIcon icon={faEnvelope} animation="pulse" className="text-sm" />
               <span>{contact.emailLabel}</span>
             </a>
-            {/* CTA secondarie: canali social e chiamata */}
+            {/* CTA secondarie: canali social */}
             <a
               href={contact.githubUrl}
               target="_blank"
@@ -101,15 +95,6 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               <AnimatedFaIcon icon={faLinkedin} animation="float" className="text-sm" />
               <span>{contact.linkedinLabel}</span>
             </a>
-            <Link
-              href={contact.calendlyUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#d7e5ff] bg-[#f7fbff] px-4 py-3 text-center font-medium text-[#24498f] transition-colors hover:border-[#2664eb] hover:text-[#0d2d72] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2664eb] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-            >
-              <AnimatedFaIcon icon={faCalendarDays} animation="pulse" className="text-sm" />
-              <span>{contact.calendlyLabel}</span>
-            </Link>
           </div>
         </div>
 

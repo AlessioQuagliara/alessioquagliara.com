@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getLocaleFromPathname, withLang, type Locale } from "@/lib/i18n";
-import { CONTACT_EMAIL, SAME_AS, SITE_URL } from "@/lib/site-config";
 
 export type LandingKey = "freelance" | "industrial" | "saas";
 
@@ -99,86 +98,5 @@ export function buildLandingMetadata(
       images: ["/profile_image.jpg"],
     },
     robots: { index: true, follow: true },
-  };
-}
-
-type FaqItem = { question: string; answer: string };
-
-type LandingJsonLdInput = {
-  key: LandingKey;
-  locale: Locale;
-  seo: LandingSeo;
-  serviceName: string;
-  serviceType: string;
-  faq: FaqItem[];
-};
-
-/**
- * Grafo JSON-LD: la pagina (FAQPage, sottotipo di WebPage) descrive un
- * Service offerto da una Person. Nessuna Organization: è un personal brand.
- */
-export function buildLandingJsonLd({
-  key,
-  locale,
-  seo,
-  serviceName,
-  serviceType,
-  faq,
-}: LandingJsonLdInput) {
-  const url = `${SITE_URL}${getLandingPath(key, locale)}`;
-  const personId = `${SITE_URL}/#person`;
-
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": personId,
-        name: "Alessio Quagliara",
-        url: `${SITE_URL}/`,
-        image: `${SITE_URL}/profile_image.jpg`,
-        jobTitle: "Full Stack Developer",
-        knowsLanguage: ["it", "en"],
-        sameAs: SAME_AS,
-        contactPoint: {
-          "@type": "ContactPoint",
-          contactType: locale === "it" ? "richieste di lavoro" : "work enquiries",
-          email: CONTACT_EMAIL,
-          url: `${SITE_URL}${withLang("/contact", locale)}`,
-          availableLanguage: ["Italian", "English"],
-        },
-      },
-      {
-        "@type": "Service",
-        "@id": `${url}#service`,
-        name: serviceName,
-        serviceType,
-        description: seo.description,
-        url,
-        provider: { "@id": personId },
-        ...(key === "industrial"
-          ? { areaServed: { "@type": "Country", name: "Italy" } }
-          : {}),
-      },
-      {
-        "@type": faq.length > 0 ? "FAQPage" : "WebPage",
-        "@id": `${url}#webpage`,
-        url,
-        name: seo.title,
-        description: seo.description,
-        inLanguage: locale,
-        about: { "@id": `${url}#service` },
-        author: { "@id": personId },
-        ...(faq.length > 0
-          ? {
-              mainEntity: faq.map((item) => ({
-                "@type": "Question",
-                name: item.question,
-                acceptedAnswer: { "@type": "Answer", text: item.answer },
-              })),
-            }
-          : {}),
-      },
-    ],
   };
 }

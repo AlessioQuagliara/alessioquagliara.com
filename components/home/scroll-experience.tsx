@@ -57,9 +57,9 @@ export type ScrollExperienceContent = {
     kicker: string;
     title: string;
     text: string;
-    servicesLabel: string;
-    /** Link alla sezione contatti delle landing servizi. */
-    services: ExperienceLink[];
+    linksLabel: string;
+    /** Link ai casi studio e al blog. */
+    links: ExperienceLink[];
   };
 };
 
@@ -473,10 +473,10 @@ export function ScrollExperience({ content, skipTo }: ScrollExperienceProps) {
                 <h2 className="experience__title">{code.title}</h2>
                 <p className="experience__body">{code.text}</p>
 
-                <nav aria-label={code.servicesLabel} className="mt-5">
-                  <p className="experience__label">{code.servicesLabel}</p>
+                <nav aria-label={code.linksLabel} className="mt-5">
+                  <p className="experience__label">{code.linksLabel}</p>
                   <ul className="mt-2 grid gap-2">
-                    {code.services.map((link) => (
+                    {code.links.map((link) => (
                       <li key={link.href}>
                         <Link href={link.href} className="experience__link">
                           {link.label} <span aria-hidden="true">→</span>

@@ -16,11 +16,10 @@ import {
 import { AboutStack } from "@/components/about/about-stack";
 import { AboutTimeline } from "@/components/about/about-timeline";
 import { SectionReveal } from "@/components/home/section-reveal";
-import { ServiceLinks } from "@/components/landing/service-links";
 import { AnimatedFaIcon } from "@/components/ui/animated-fa-icon";
 import { buttonClass } from "@/components/ui/button";
 import { getLocaleFromLang, getMessages, withLang } from "@/lib/i18n";
-import { CALENDLY_URL } from "@/lib/site-config";
+import { CONTACT_EMAIL } from "@/lib/site-config";
 
 type AboutPageProps = {
   searchParams: Promise<{ lang?: string }>;
@@ -88,15 +87,10 @@ export default async function AboutPage({ searchParams }: AboutPageProps) {
             {hero.intro}
           </p>
           <div className="mt-8 flex flex-wrap gap-4" data-reveal-item>
-            <Link
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className={buttonClass({ variant: "primary", size: "lg" })}
-            >
+            <Link href={withLang("/projects", locale)} className={buttonClass({ variant: "primary", size: "lg" })}>
               {hero.primary}
             </Link>
-            <Link href={withLang("/projects", locale)} className={buttonClass({ variant: "secondary", size: "lg" })}>
+            <Link href={withLang("/blog", locale)} className={buttonClass({ variant: "secondary", size: "lg" })}>
               {hero.secondary}
             </Link>
           </div>
@@ -194,26 +188,18 @@ export default async function AboutPage({ searchParams }: AboutPageProps) {
         </h2>
         <p className="mt-4 max-w-3xl leading-8 text-blue-100/90" data-reveal-item>{cta.text}</p>
         <div className="mt-8 flex flex-wrap gap-4" data-reveal-item>
-          <Link
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noreferrer"
-            className={buttonClass({ variant: "primary", size: "lg" })}
-          >
+          <a href={`mailto:${CONTACT_EMAIL}`} className={buttonClass({ variant: "primary", size: "lg" })}>
             <span className="inline-flex items-center gap-2">
               <AnimatedFaIcon icon={faArrowRight} animation="float" />
               <span>{cta.primary}</span>
             </span>
-          </Link>
+          </a>
           <Link href={withLang("/contact", locale)} className={buttonClass({ variant: "secondary", size: "lg" })}>
             <span className="inline-flex items-center gap-2">
               <AnimatedFaIcon icon={faComments} animation="pulse" />
               <span>{cta.secondary}</span>
             </span>
           </Link>
-        </div>
-        <div className="mt-10" data-reveal-item>
-          <ServiceLinks locale={locale} tone="dark" showIntro={false} />
         </div>
       </SectionReveal>
     </div>

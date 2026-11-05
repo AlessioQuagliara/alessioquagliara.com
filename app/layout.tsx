@@ -4,7 +4,6 @@ import { headers } from "next/headers";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
-import { CalendlyWidget } from "@/components/layout/calendly-widget";
 import CookieConsent from "@/components/layout/cookie-consent";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import { Navbar } from "@/components/layout/navbar";
@@ -22,12 +21,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alessioquagliara.com"),
-  title:
-    siteMetadata.defaultTitle ??
-    "Software e automazioni per PMI e freelance | Alessio Quagliara",
-  description:
-    siteMetadata.defaultDescription ??
-    "Studente di Ingegneria Informatica appassionato di software, automazione industriale e AI. Documento in pubblico piccoli SaaS, esperimenti software e strumenti operativi.",
+  title: siteMetadata.defaultTitle,
+  description: siteMetadata.defaultDescription,
   icons: {
     icon: [
       { url: "/assets/favicon.ico" },
@@ -42,9 +37,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: siteMetadata.ogTitle ?? "Alessio Quagliara",
-    description:
-      siteMetadata.ogDescription ??
-      "Sviluppo software e automazioni che sono ancora in piedi. Aiuto PMI e freelance con le cose noiose.",
+    description: siteMetadata.ogDescription,
     url: "https://alessioquagliara.com",
     siteName: siteMetadata.ogTitle ?? "Alessio Quagliara",
     locale: siteMetadata.locale ?? "it_IT",
@@ -82,7 +75,6 @@ export default async function RootLayout({
           <Suspense fallback={null}>
             <Footer />
           </Suspense>
-          <CalendlyWidget />
           <CookieConsent />
         </div>
       </body>

@@ -46,6 +46,8 @@ export function fillTemplate(
 }
 
 export function withLang(path: string, locale: Locale): string {
+  // L'italiano è il default: link puliti, uguali all'URL canonico.
+  if (locale === "it") return path;
   const separator = path.includes("?") ? "&" : "?";
   return `${path}${separator}lang=${locale}`;
 }

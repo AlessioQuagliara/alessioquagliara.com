@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FreelanceLanding } from "@/components/landing/freelance-landing";
+import { ArchivedLanding } from "@/components/landing/archived-landing";
 import { getMessages } from "@/lib/i18n";
 import { buildLandingMetadata } from "@/lib/landings";
 
@@ -8,5 +8,5 @@ export function generateMetadata(): Metadata {
 }
 
 export default function Page() {
-  return <FreelanceLanding locale="en" />;
+  return <ArchivedLanding landing="freelance" locale="en" />;
 }

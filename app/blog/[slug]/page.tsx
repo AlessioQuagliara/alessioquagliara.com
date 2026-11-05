@@ -71,6 +71,7 @@ export async function generateMetadata({
     openGraph: {
       title: localizedPost.title,
       description: localizedPost.description,
+      url: `/blog/${localizedPost.slug}`,
       type: "article",
       publishedTime: localizedPost.publishedAt,
       modifiedTime: localizedPost.updatedAt,
