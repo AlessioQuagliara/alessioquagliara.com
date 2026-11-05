@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import { headers } from "next/headers";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
@@ -11,6 +12,9 @@ import { Footer } from "@/components/layout/footer";
 import { getLocaleFromLang, getMessages, LOCALE_HEADER } from "@/lib/i18n";
 
 config.autoAddCss = false;
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono-code" });
 
 const siteMessages = getMessages("it").site;
 const siteMetadata = siteMessages.metadata as Record<string, string>;
@@ -58,17 +62,15 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Le landing /en/... arrivano con l'header impostato da proxy.ts.
+  // proxy.ts copia `?lang` in un header: qui non leggo i searchParams.
   const lang = getLocaleFromLang((await headers()).get(LOCALE_HEADER));
 
   return (
-    <html lang={lang} data-scroll-behavior="smooth">
-      <body className="text-slate-50 antialiased">
+    <html lang={lang} data-scroll-behavior="smooth" className={`${inter.variable} ${mono.variable}`}>
+      <body className="font-sans antialiased">
         <div className="site-shell flex min-h-screen flex-col">
           <ScrollToTop />
-          <Suspense
-            fallback={<div className="h-16 border-b border-white/15 bg-[#12347d]/70" />}
-          >
+          <Suspense fallback={<div className="h-16" />}>
             <Navbar />
           </Suspense>
           <main className="flex-1">{children}</main>

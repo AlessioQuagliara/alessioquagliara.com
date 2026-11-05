@@ -15,7 +15,6 @@ export type BlogExplorerCopy = {
   title: string;
   subtitle: string;
   ariaLabel: string;
-  readPost: string;
   emptyTitle: string;
   emptyText: string;
   emptyCta: string;
@@ -81,12 +80,12 @@ export function BlogExplorer({ cards, options, copy }: BlogExplorerProps) {
 
       {visibleCards.length > 0 ? (
         <div key={activeId} className="blog-list-enter" aria-live="polite">
-          <BlogList cards={visibleCards} readPostLabel={copy.readPost} />
+          <BlogList cards={visibleCards} />
         </div>
       ) : (
         <div
           key={activeId}
-          className="blog-list-enter mx-auto max-w-xl rounded-3xl border border-dashed border-[#cbd5e1] bg-white/70 px-8 py-14 text-center"
+          className="blog-list-enter mx-auto max-w-xl rounded-xl border border-dashed border-[#cbd5e1] bg-white/70 px-8 py-14 text-center"
           aria-live="polite"
         >
           <h3 className="text-xl font-semibold text-[#0f172a]">

@@ -35,16 +35,6 @@ export function getLocaleFromPathname(pathname?: string | null): Locale | null {
   return isLocale(segment) ? segment : null;
 }
 
-/** Sostituisce i placeholder `{chiave}` nei testi dei messaggi. */
-export function fillTemplate(
-  template: string,
-  values: Record<string, string | number>
-): string {
-  return template.replace(/\{(\w+)\}/g, (match, key: string) =>
-    key in values ? String(values[key]) : match
-  );
-}
-
 export function withLang(path: string, locale: Locale): string {
   // L'italiano è il default: link puliti, uguali all'URL canonico.
   if (locale === "it") return path;

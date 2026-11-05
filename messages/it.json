@@ -10,53 +10,21 @@
     "layout": {
       "navbar": {
         "brand": "Alessio Quagliara",
-        "about": "About",
-        "education": "Formazione",
+        "about": "Chi sono",
+        "experience": "Esperienza",
         "projects": "Progetti",
-        "caseStudies": "Casi studio",
         "blog": "Blog",
         "contact": "Contatti",
         "languageLabel": "Lingua",
         "languageIt": "IT",
-        "languageEn": "EN"
+        "languageEn": "EN",
+        "openMenu": "Apri menu",
+        "closeMenu": "Chiudi menu"
       },
       "footer": {
-        "copyrightName": "Alessio Quagliara",
         "allRightsReserved": "Tutti i diritti riservati.",
-        "builtWith": "Costruito con Next.js, TypeScript e Tailwind CSS",
-        "email": "quagliara.alessio@gmail.com",
-        "brandName": "Alessio Quagliara",
-        "brandSubtitle": "Sviluppatore web, studente di Ingegneria Informatica",
-        "brandDescription": "Progetti, lavori fatti e articoli. Errori compresi.",
-        "section": {
-          "legal": "Legale",
-          "contacts": "Contatti",
-          "site": "Sito"
-        },
-        "links": {
-          "privacyPolicy": "Privacy Policy",
-          "blog": "Blog",
-          "contact": "Contatti"
-        },
-        "location": "Como (CO), Italia",
-        "social": {
-          "linkedin": {
-            "name": "LinkedIn",
-            "description": "Profilo professionale"
-          },
-          "github": {
-            "name": "GitHub",
-            "description": "Progetti open source"
-          },
-          "youtube": {
-            "name": "YouTube",
-            "description": "Video e tutorial"
-          },
-          "instagram": {
-            "name": "Instagram",
-            "description": "Momenti quotidiani"
-          }
-        }
+        "privacyPolicy": "Privacy Policy",
+        "social": "Profili social"
       }
     },
     "home": {
@@ -64,329 +32,110 @@
         "title": "Alessio Quagliara | Sviluppo web e Ingegneria Informatica",
         "description": "Sviluppo applicazioni web e studio Ingegneria Informatica. Qui raccolgo i progetti a cui ho lavorato e scrivo di sviluppo software."
       },
-      "badge": "Sviluppatore web · Ingegneria Informatica",
-      "title": "Sono Alessio Quagliara.",
-      "description": "Sviluppo applicazioni web e studio ingegneria informatica. Qui raccolgo i progetti a cui ho lavorato e scrivo di sviluppo software: scelte, tentativi e cose che sto ancora imparando.",
-      "ctaProjects": "Progetti",
-      "experience": {
-        "canvasLabel": "Animazione 3D: dal ritratto di Alessio al banco da lavoro con un ESP32 su un tappetino da taglio, fino a un MacBook sulla scrivania dove compare il codice.",
-        "skip": "Salta l'animazione",
-        "hardware": {
-          "kicker": "Per imparare",
-          "title": "Arduino ed ESP32 sul tappetino",
-          "text": "Li studio, non li vendo. Mi servono a capire cosa succede sotto il software. Spesso non funziona al primo colpo.",
-          "tags": [
-            "Arduino",
-            "ESP32",
-            "C"
-          ]
-        },
-        "saas": {
-          "kicker": "Progetti personali",
-          "title": "Cose che costruisco per conto mio",
-          "text": "App nate da un problema mio. Alcune sono ancora a metà: nelle pagine dei progetti c'è scritto cosa funziona e cosa no.",
-          "projectsLabel": "Progetti",
-          "projects": {
-            "RStudy": "Focus & micro-obiettivi",
-            "PivotCut": "Desktop 2D animation app",
-            "LinkBay-CMS": "Tool SEO, in sviluppo"
-          }
-        },
-        "code": {
-          "kicker": "Lavoro",
-          "title": "Siti e web app, in Spotex.",
-          "text": "In Spotex ho sviluppato siti e applicazioni web per clienti. Nei casi studio c'è quello che posso raccontare. Nello sviluppo uso anche l'AI: aiuta, ma il codice lo devo capire io.",
-          "linksLabel": "Da leggere"
-        }
-      },
-      "sections": {
-        "contactCta": {
-          "title": "Contatti",
-          "text": "Una domanda su un progetto o su un articolo? Ho scritto una scemenza? Scrivimi.",
-          "primary": "Scrivimi",
-          "secondary": "Vai ai contatti"
-        }
-      },
-      "ctaBlog": "Articoli"
-    },
-    "about": {
-      "metadata": {
-        "title": "About | Alessio Quagliara",
-        "description": "Chi sono: sviluppatore web, studente di Ingegneria Informatica (Sistemi Intelligenti). Ho lavorato in Spotex, oggi lavoro anche in magazzino."
-      },
       "hero": {
-        "status": "Studente di Ingegneria Informatica",
-        "title": "Sviluppo applicazioni web. E studio.",
-        "intro": "Sono Alessio. Studio Ingegneria Informatica, indirizzo Sistemi Intelligenti. In Spotex ho sviluppato siti e applicazioni web; oggi lavoro anche in magazzino. Uso l'AI quando scrivo codice, ma non è lei la storia: qui ci sono i progetti e quello che sto imparando.",
-        "photoAlt": "Ritratto di Alessio Quagliara",
-        "primary": "Guarda i progetti",
-        "secondary": "Leggi gli articoli",
-        "badges": [
+        "eyebrow": "Sviluppatore web · Ingegneria Informatica",
+        "title": "Sono Alessio Quagliara.",
+        "subtitle": "Sviluppo applicazioni web e studio ingegneria informatica.",
+        "description": "Qui raccolgo i progetti a cui ho lavorato e scrivo di sviluppo software: scelte, tentativi e cose che sto ancora imparando.",
+        "ctaProjects": "Progetti",
+        "ctaBlog": "Articoli",
+        "photoAlt": "Ritratto di Alessio Quagliara"
+      },
+      "about": {
+        "label": "Chi sono",
+        "title": "In breve",
+        "paragraphs": [
+          "Studio Ingegneria Informatica a UNINETTUNO, indirizzo Sistemi Intelligenti.",
+          "In Spotex ho sviluppato siti e applicazioni web per clienti. Oggi lavoro anche in magazzino."
+        ],
+        "stackTitle": "Cosa uso",
+        "stack": [
           "Python",
           "Flask",
-          "C",
+          "Jinja2",
           "HTMX",
-          "n8n",
+          "C",
           "Docker"
         ]
       },
-      "principles": {
-        "eyebrow": "Come lavoro",
-        "title": "Quattro regole. Le ho imparate sbagliando.",
-        "items": [
-          {
-            "title": "Pragmatismo architetturale",
-            "text": "La soluzione più semplice che regge. Niente microservizi per un form di contatto: con l'overengineering ho già dato."
-          },
-          {
-            "title": "Build in Public",
-            "text": "Progetti, numeri ed errori li scrivo sul blog. Anche quelli che mi fanno fare brutta figura."
-          },
-          {
-            "title": "Hardware, per curiosità",
-            "text": "Arduino, ESP32 e C li sto studiando per capire cosa c'è sotto il software. Roba da laboratorio, non da cliente."
-          },
-          {
-            "title": "Manutenibilità a lungo termine",
-            "text": "Codice che si capisce fra due anni, anche se a riaprirlo sarà qualcun altro. Meno pezzi, meno sorprese."
-          }
-        ]
-      },
-      "timeline": {
-        "eyebrow": "Percorso",
+      "experience": {
+        "label": "Esperienza",
         "title": "Da dove arrivo",
-        "tabs": [
+        "workTitle": "Lavoro",
+        "work": [
           {
-            "id": "saas",
-            "label": "Web development",
-            "steps": [
-              {
-                "period": "2017–2018",
-                "title": "Il primo e-commerce, mai lanciato",
-                "text": "Ricambi auto, 14 giorni di prova su Shopify e nessun lancio. Prima lezione: l'idea non basta."
-              },
-              {
-                "period": "2019–2021",
-                "title": "Lyara e dropshipping",
-                "text": "Shopify, ads, copy, contenuti. Ci ho rimesso soldi, ci ho guadagnato mestiere."
-              },
-              {
-                "period": "2022",
-                "title": "Be Social",
-                "text": "La prima web agency. Clienti sì, margini no. Da lì ho spostato tutto sullo sviluppo."
-              },
-              {
-                "period": "2023–2026",
-                "title": "Spotex SRL",
-                "text": "Una software house fondata da soci, poi chiusa. Ci ho sviluppato siti e applicazioni web per clienti. Ho imparato più lì che in qualsiasi corso."
-              },
-              {
-                "period": "2025–2026",
-                "title": "LinkBay-CMS",
-                "text": "Nata come piattaforma per agenzie, marchio depositato nel 2025. Ora la stringo su quello che serve: un tool SEO per i contenuti in calo."
-              },
-              {
-                "period": "2026",
-                "title": "RStudy e PivotCut",
-                "text": "Un'app per studiare senza caos e un'app macOS per l'animazione 2D, verso la prima release su itch.io. Costruite in pubblico."
-              }
-            ]
+            "period": "Oggi",
+            "title": "Magazzino",
+            "text": "Lavoro anche in magazzino, mentre studio."
           },
           {
-            "id": "hardware",
-            "label": "Hardware & esperimenti",
-            "steps": [
-              {
-                "period": "2012–2016",
-                "title": "Tecnico dell'automazione",
-                "text": "PLC, elettronica, reti. Lì ho capito che il software, prima o poi, tocca qualcosa di fisico."
-              },
-              {
-                "period": "Laboratorio",
-                "title": "Arduino ed ESP32",
-                "text": "Prototipi su un tappetino da taglio, per imparare: sensori, firmware essenziale, dati spediti a un backend."
-              },
-              {
-                "period": "Esperimenti",
-                "title": "n8n e Node-RED",
-                "text": "Flussi che collegano tool e API. Utili per capire come si parlano i sistemi."
-              },
-              {
-                "period": "2026",
-                "title": "Ritorno al C",
-                "text": "Per capire cosa succede sotto: memoria, I/O, performance. Ne scrivo sul blog."
-              },
-              {
-                "period": "Oggi",
-                "title": "AI in locale",
-                "text": "Provo modelli locali con Ollama e llama.cpp. Ne ho scritto sul blog."
-              }
-            ]
+            "period": "2023–2026",
+            "title": "Spotex SRL",
+            "text": "Software house fondata con dei soci, poi chiusa. Ci ho sviluppato siti e applicazioni web per clienti."
           },
           {
-            "id": "education",
-            "label": "Formazione accademica",
-            "steps": [
-              {
-                "period": "2012–2016",
-                "title": "Diploma Tecnico Automazione",
-                "text": "Istituto Tecnico Padri Somaschi. Le basi: automazione, elettronica, PLC."
-              },
-              {
-                "period": "2017–2018",
-                "title": "Full Stack Web Developer",
-                "text": "MUSA Formazione. Frontend, backend e database, dall'inizio alla fine."
-              },
-              {
-                "period": "2022–2025",
-                "title": "Diploma AFM",
-                "text": "ITES Caio Plinio Secondo. Contabilità e marketing: utili quando un prodotto deve anche stare in piedi economicamente."
-              },
-              {
-                "period": "2025 – in corso",
-                "title": "Ingegneria Informatica",
-                "text": "UNINETTUNO, Sistemi Intelligenti. AI, embedded, IoT, database."
-              }
-            ]
+            "period": "2022",
+            "title": "Be Social",
+            "text": "La prima web agency. Clienti sì, margini no. Da lì ho spostato tutto sullo sviluppo."
+          },
+          {
+            "period": "2019–2021",
+            "title": "Lyara e dropshipping",
+            "text": "Shopify, ads, copy, contenuti. Ci ho rimesso soldi, ci ho guadagnato mestiere."
+          }
+        ],
+        "educationTitle": "Formazione",
+        "education": [
+          {
+            "period": "2025 – in corso",
+            "title": "Ingegneria Informatica",
+            "text": "UNINETTUNO, indirizzo Sistemi Intelligenti."
+          },
+          {
+            "period": "2022–2025",
+            "title": "Diploma AFM",
+            "text": "ITES Caio Plinio Secondo. Amministrazione, finanza e marketing."
+          },
+          {
+            "period": "2017–2018",
+            "title": "Full Stack Web Developer",
+            "text": "MUSA Formazione. Frontend, backend e database."
+          },
+          {
+            "period": "2012–2016",
+            "title": "Diploma Tecnico Automazione",
+            "text": "Istituto Tecnico Padri Somaschi. Automazione, elettronica, PLC."
           }
         ]
       },
-      "stack": {
-        "eyebrow": "Focus stack",
-        "title": "Cosa uso, e per cosa",
-        "hint": "Passa sopra o tocca un badge per vedere dove lo uso.",
-        "filtersLabel": "Filtra per categoria",
-        "all": "Tutto",
-        "categories": {
-          "backend": "Backend",
-          "saas": "Web",
-          "embedded": "Embedded",
-          "tooling": "Tooling"
-        },
-        "items": [
-          {
-            "name": "Python",
-            "category": "backend",
-            "use": "Script, API e integrazioni. Lo mastico tutti i giorni."
-          },
-          {
-            "name": "Flask",
-            "category": "backend",
-            "use": "Backend snelli: webhook, API, pannelli interni."
-          },
-          {
-            "name": "Quart",
-            "category": "backend",
-            "use": "Flask asincrono, quando ci sono tante chiamate in attesa."
-          },
-          {
-            "name": "Full stack web",
-            "category": "saas",
-            "use": "Dal database all'interfaccia, deploy compreso."
-          },
-          {
-            "name": "Jinja2",
-            "category": "saas",
-            "use": "Pagine generate dal server con Flask: semplici, veloci, facili da mantenere."
-          },
-          {
-            "name": "Multi-tenant",
-            "category": "saas",
-            "use": "Più clienti sulla stessa piattaforma, dati mai mescolati. Vedi LinkBay-CMS."
-          },
-          {
-            "name": "HTMX",
-            "category": "saas",
-            "use": "Interattività senza un framework JavaScript: l'HTML chiede, il server risponde."
-          },
-          {
-            "name": "C",
-            "category": "embedded",
-            "use": "Algoritmi, memoria, firmware. Col C mi diverto."
-          },
-          {
-            "name": "ESP32",
-            "category": "embedded",
-            "use": "Lo sto studiando: sensori e Wi-Fi a bordo."
-          },
-          {
-            "name": "Arduino",
-            "category": "embedded",
-            "use": "I primi esperimenti con l'elettronica."
-          },
-          {
-            "name": "PLC",
-            "category": "embedded",
-            "use": "La base del diploma: logica e automazione industriale."
-          },
-          {
-            "name": "n8n",
-            "category": "tooling",
-            "use": "Automazioni tra tool e API, per prova."
-          },
-          {
-            "name": "Node-RED",
-            "category": "tooling",
-            "use": "Flussi a eventi, comodi quando di mezzo ci sono dispositivi."
-          },
-          {
-            "name": "Docker",
-            "category": "tooling",
-            "use": "In produzione: stesso ambiente ovunque, deploy senza sorprese."
-          },
-          {
-            "name": "Ollama & llama.cpp",
-            "category": "tooling",
-            "use": "Modelli in locale, per provare senza mandare dati fuori."
-          }
-        ]
+      "projects": {
+        "label": "Progetti",
+        "title": "Cose che ho costruito",
+        "intro": "Repository su GitHub: descrizioni e tag arrivano da lì.",
+        "empty": "In questo momento non riesco a caricare i progetti da GitHub.",
+        "github": "Tutto su GitHub"
       },
-      "cta": {
-        "title": "Vuoi scrivermi?",
-        "text": "Domande, correzioni, un progetto di cui parlare: la mail è sempre quella.",
-        "primary": "Scrivimi",
-        "secondary": "Vai ai contatti"
+      "posts": {
+        "label": "Blog",
+        "title": "Ultimi articoli",
+        "all": "Tutti gli articoli"
+      },
+      "contact": {
+        "label": "Contatti",
+        "title": "Due righe bastano",
+        "text": "Un'opportunità di lavoro, una proposta, una domanda su un progetto o un articolo? La mail è sempre quella.",
+        "cta": "Scrivimi una mail",
+        "book": "Parliamone"
       }
     },
-    "contact": {
-      "metadata": {
-        "title": "Contatti | Alessio Quagliara",
-        "description": "Come contattarmi: email, GitHub, LinkedIn."
-      },
-      "title": "Contatti",
-      "intro": "Una domanda su un progetto o su un articolo? Ho scritto qualcosa di sbagliato? Scrivimi.",
-      "description": "Rispondo appena posso. Tra università e magazzino, a volte ci metto un po'.",
-      "helpTitle": "Scrivimi se...",
-      "bullets": [
-        "Hai una domanda su un progetto o un articolo",
-        "Hai trovato un errore (succede)",
-        "Vuoi parlare di sviluppo web o di università",
-        "Hai un'opportunità di lavoro da sviluppatore"
-      ],
-      "directContactsTitle": "Contatti diretti",
-      "emailLabel": "Scrivimi via email",
-      "email": "quagliara.alessio@gmail.com",
-      "githubLabel": "GitHub",
-      "githubUrl": "https://github.com/AlessioQuagliara",
-      "linkedinLabel": "LinkedIn",
-      "linkedinUrl": "https://www.linkedin.com/in/alessio-quagliara-a1a91b1a8/",
-      "secondaryCta": "Preferisci scrivere prima? Mandami una mail."
-    },
     "projects": {
-      "metadata": {
-        "title": "Progetti | Alessio Quagliara",
-        "description": "Repository e progetti personali: web app, tool ed esperimenti, anche incompleti."
-      },
       "title": "Progetti",
-      "description": "Repository a cui lavoro o ho lavorato: app personali, esperimenti, cose ancora a metà.",
-      "empty": "Nessun repository in evidenza trovato. Aggiungi il topic `featured` ai tuoi repository GitHub e imposta `GITHUB_USERNAME` in `.env.local`.",
       "cardNoDescription": "Nessuna descrizione disponibile.",
       "viewRepository": "Visualizza repository su GitHub",
       "readmeUnavailable": "README non disponibile per questo progetto.",
       "notFoundTitle": "Progetto non trovato | Alessio Quagliara",
       "notFoundDescription": "I dettagli di questo progetto non sono disponibili.",
-      "detailsFallbackDescription": "Dettagli del repository, note di sviluppo e punti salienti dell'implementazione.",
-      "featured": "In evidenza"
+      "detailsFallbackDescription": "Dettagli del repository, note di sviluppo e punti salienti dell'implementazione."
     },
     "blog": {
       "metadata": {
@@ -396,7 +145,6 @@
       "title": "Blog",
       "description": "Scrivo mentre costruisco: software, automazioni, AI, errori veri.",
       "empty": "Nessun articolo pubblicato.",
-      "readPost": "Leggi articolo",
       "published": "Pubblicato",
       "readingTime": "{minutes} min di lettura",
       "youtube": "Video YouTube",
@@ -418,7 +166,6 @@
         "newsletterCta": "Scrivimi",
         "nextLabel": "Leggi il prossimo articolo"
       },
-      "microcopy": "Diario di bordo, senza filtri.",
       "explore": {
         "title": "Cosa vuoi esplorare?",
         "subtitle": "Fallimenti e-commerce, SaaS, AI, side projects: scegli un percorso.",
@@ -429,143 +176,6 @@
         "title": "Questo percorso è appena iniziato.",
         "text": "Sto ancora raccogliendo esperimenti ed errori. Torna presto o esplora tutto.",
         "cta": "Vedi tutti gli articoli"
-      }
-    },
-    "caseStudies": {
-      "metadata": {
-        "title": "Casi studio | Alessio Quagliara",
-        "description": "Lavori fatti in Spotex S.r.l. per clienti reali, anonimi. Cosa c'era da fare e cosa è stato fatto."
-      },
-      "title": "Casi studio",
-      "description": "Lavori fatti in Spotex per clienti veri, anonimi. Cosa c'era da fare e cosa è stato fatto. Numeri solo se misurati.",
-      "eyebrow": "Lavori fatti",
-      "empty": "Ancora niente. Sto raccogliendo i numeri, non li invento.",
-      "readCase": "Leggi il caso",
-      "back": "Torna ai casi studio",
-      "breadcrumb": "Casi studio",
-      "problem": "Il problema",
-      "solution": "Cosa ho fatto",
-      "results": "Risultati",
-      "source": "Fonte",
-      "noResults": "Nessun numero verificato da pubblicare.",
-      "spotexCredit": "Realizzato con {company}{period}.",
-      "spotexNote": "Spotex è in liquidazione. Ci ho lavorato come sviluppatore.",
-      "related": "Approfondimenti",
-      "draft": "Bozza: non pubblicata",
-      "constraints": "Vincoli",
-      "lessons": "Cosa ho imparato",
-      "anonymousNote": "Il cliente resta anonimo: niente nomi, niente screenshot. Lo schema in copertina è l'architettura, non il loro sito.",
-      "microcopy": "Clienti anonimi, codice vero.",
-      "cta": {
-        "heading": "Altro da leggere",
-        "subtitle": "Gli altri lavori, oppure due righe se hai domande.",
-        "nextLabel": "Leggi il prossimo caso",
-        "contactTitle": "Domande?",
-        "contactText": "Scrivimi, rispondo.",
-        "contactCta": "Scrivimi"
-      }
-    },
-    "education": {
-      "metadata": {
-        "title": "Formazione | Alessio Quagliara",
-        "description": "Percorso di formazione continua tra automazione, sviluppo software, visione di business e laurea in Ingegneria Informatica orientata ai sistemi intelligenti."
-      },
-      "eyebrow": "Percorso di Formazione",
-      "title": "Formazione costruita tra tecnica, software e sistemi reali",
-      "intro": "Nasce dall'incontro tra tecnica, sviluppo software e visione di business. Oggi il focus è AI, sistemi intelligenti e progettazione di soluzioni reali.",
-      "learningStatement": "La formazione continua non è un riempitivo: è il modo in cui tengo insieme crescita tecnica e visione di lungo periodo.",
-      "pillars": [
-        "Tecnica",
-        "Software",
-        "Business"
-      ],
-      "items": [
-        {
-          "institution": "Università Telematica Internazionale UNINETTUNO",
-          "period": "2025 - In Corso",
-          "status": "In Corso",
-          "title": "Laurea triennale in Ingegneria Informatica - Sistemi Intelligenti",
-          "description": "Percorso universitario orientato a programmazione avanzata, intelligenza artificiale, machine learning, reti neurali, sistemi embedded, IoT, cybersecurity e database, con attenzione ai sistemi intelligenti e alla progettazione software.",
-          "topics": [
-            "AI & Machine Learning",
-            "Sistemi Embedded",
-            "Cybersecurity",
-            "Database"
-          ],
-          "image": "/uninettuno.png"
-        },
-        {
-          "institution": "ITES Caio Plinio Secondo",
-          "period": "2022 - 2025",
-          "status": "",
-          "title": "Diploma in Amministrazione, Finanza e Marketing",
-          "description": "Percorso che ha rafforzato la comprensione di contabilità, marketing, logiche aziendali e sostenibilità economica dei progetti, aggiungendo una prospettiva utile anche nella costruzione di prodotti e servizi software.",
-          "topics": [
-            "Economia",
-            "Marketing",
-            "Business Logic",
-            "Contabilità"
-          ],
-          "image": "/caioplinio.png"
-        },
-        {
-          "institution": "MUSA Formazione",
-          "period": "2017 - 2018",
-          "status": "",
-          "title": "Certificazione Full Stack Web Developer",
-          "description": "Percorso intensivo orientato alla progettazione e allo sviluppo end-to-end di applicazioni web, che ha consolidato le basi pratiche su frontend, backend, database e logiche di prodotto.",
-          "topics": [
-            "PHP",
-            "JavaScript",
-            "HTML/CSS",
-            "Database"
-          ],
-          "image": "/musaformazione.png"
-        },
-        {
-          "institution": "Istituto Tecnico Padri Somaschi",
-          "period": "2012 - 2016",
-          "status": "",
-          "title": "Diploma in Tecnico Automazione",
-          "description": "Formazione tecnica che ha costruito le basi del mio rapporto con automazione industriale, elettronica, reti e programmazione, e che ancora oggi influenza il mio modo di ragionare su sistemi, hardware e integrazione col mondo reale.",
-          "topics": [
-            "Automazione",
-            "Elettronica",
-            "Reti",
-            "Programmazione PLC"
-          ],
-          "image": "/padrisomaschi.png"
-        }
-      ]
-    },
-    "landingCommon": {
-      "eyebrow": "Pagina archiviata",
-      "related": "Da leggere"
-    },
-    "landings": {
-      "freelance": {
-        "metadata": {
-          "title": "Automazioni per freelance: pagina archiviata | Alessio Quagliara",
-          "description": "Qui c'era un'offerta di automazioni per freelance e agenzie. Oggi non la offro: resta l'articolo sul tema."
-        },
-        "title": "Automazioni per freelance e agenzie",
-        "text": "Qui c'era un'offerta. Adesso non c'è più: in questo momento non sto seguendo freelance o agenzie con le automazioni. Sul tema ho scritto un articolo, quello resta."
-      },
-      "industrial": {
-        "metadata": {
-          "title": "Automazione e AI per PMI: pagina archiviata | Alessio Quagliara",
-          "description": "Qui c'era un'offerta di automazione e AI per aziende. Non è un servizio che offro: restano gli articoli sul tema."
-        },
-        "title": "Automazione e AI per PMI industriali",
-        "text": "Qui c'era un'offerta di automazione e AI per aziende. Non è un servizio che offro: non sono un consulente AI e non faccio integrazioni industriali. Di AI in locale e di magazzino ho scritto, quello sì."
-      },
-      "saas": {
-        "metadata": {
-          "title": "Sviluppo web app e SaaS: pagina archiviata | Alessio Quagliara",
-          "description": "Qui c'era una pagina che vendeva sviluppo di web app e SaaS. Le web app le sviluppo davvero: i progetti e i lavori fatti sono nelle pagine dedicate."
-        },
-        "title": "Sviluppo web app e SaaS",
-        "text": "Qui c'era una pagina che vendeva sviluppo di web app e SaaS, come un'agenzia. Le web app le sviluppo davvero, ma un'agenzia non sono. Quello che ho fatto è qui sotto."
       }
     }
   },

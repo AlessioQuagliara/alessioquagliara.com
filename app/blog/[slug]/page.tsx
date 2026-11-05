@@ -9,7 +9,6 @@ import {
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { SectionReveal } from "@/components/home/section-reveal";
 import { ArticleCta } from "@/components/blog/article-cta";
 import { ReadingProgress } from "@/components/blog/reading-progress";
 import { SectionBlocks } from "@/components/blog/section-blocks";
@@ -22,6 +21,7 @@ import {
   getLocalizedBlogPost,
   getLocalizedBlogPosts,
 } from "@/lib/blog";
+import { CONTACT_EMAIL } from "@/lib/site-config";
 import { extractToc } from "@/lib/toc";
 import { getLocaleFromLang, getMessages, withLang, type Locale } from "@/lib/i18n";
 
@@ -149,8 +149,8 @@ export default async function BlogPostPage({
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <SectionReveal motionPreset="dynamic" className="space-y-10">
-        <div data-reveal-item>
+      <div className="space-y-10">
+        <div>
           <Link
             href={withLang("/blog", locale)}
             className={buttonClass({ variant: "outline", className: "w-fit" })}
@@ -162,7 +162,7 @@ export default async function BlogPostPage({
           </Link>
         </div>
 
-        <header className="max-w-4xl" data-reveal-item>
+        <header className="max-w-4xl">
           <div className="flex flex-wrap gap-2">
             {localizedPost.tags.map((tag) => (
               <span
@@ -209,7 +209,7 @@ export default async function BlogPostPage({
 
         <div
           className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-[#e5e7eb] bg-[#f1f5f9] shadow-[0_24px_60px_-45px_rgba(15,23,42,0.4)]"
-          data-reveal-item
+         
         >
           <Image
             src={localizedPost.cover}
@@ -225,7 +225,7 @@ export default async function BlogPostPage({
           className={
             hasToc ? "article-layout article-layout--with-toc" : "article-layout"
           }
-          data-reveal-item
+         
         >
           <div className="article-main">
             <SectionBlocks
@@ -248,7 +248,7 @@ export default async function BlogPostPage({
                     }
                   : undefined
               }
-              newsletterHref={withLang("/contact", locale)}
+              newsletterHref={`mailto:${CONTACT_EMAIL}`}
               labels={{
                 heading: blog.cta.heading,
                 subtitle: blog.cta.subtitle,
@@ -267,7 +267,7 @@ export default async function BlogPostPage({
             </aside>
           ) : null}
         </div>
-      </SectionReveal>
+      </div>
     </article>
   );
 }
