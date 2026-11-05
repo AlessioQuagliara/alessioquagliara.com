@@ -6,7 +6,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 import CookieConsent from "@/components/layout/cookie-consent";
-import ScrollToTop from "@/components/layout/scroll-to-top";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { getLocaleFromLang, getMessages, LOCALE_HEADER } from "@/lib/i18n";
@@ -69,7 +68,6 @@ export default async function RootLayout({
     <html lang={lang} data-scroll-behavior="smooth" className={`${inter.variable} ${mono.variable}`}>
       <body className="font-sans antialiased">
         <div className="site-shell flex min-h-screen flex-col">
-          <ScrollToTop />
           <Suspense fallback={<div className="h-16" />}>
             <Navbar />
           </Suspense>
